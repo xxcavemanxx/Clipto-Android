@@ -1,0 +1,15 @@
+ext {
+    jarLibraryGroup = 'com.wb.android'
+
+    jarVersionMajor = 0
+    jarVersionMinor = 0
+    jarVersionPatch = 0
+
+    mavenReleasesRepo = 'https://mymavenrepo.com/repo/Ufh9uXJUcHoS1feAY0bx/'
+    mavenReleasesUsername = ''
+    mavenReleasesPassword = ''
+
+    mavenSnapshotsRepo = 'https://mymavenrepo.com/repo/Ufh9uXJUcHoS1feAY0bx/'
+    mavenSnapshotsUsername = ''
+    mavenSnapshotsPassword = ''
+}

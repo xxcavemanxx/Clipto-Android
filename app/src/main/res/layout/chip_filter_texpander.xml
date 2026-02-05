@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipView"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="4dp"
+        android:textAlignment="center"
+        android:textColor="?android:textColorPrimary"
+        app:checkedIconEnabled="false"
+        app:checkedIconVisible="false"
+        app:chipBackgroundColor="@drawable/texpander_bg_chip"
+        app:chipIconSize="16dp"
+        app:chipIconTint="?android:textColorPrimary"
+        app:chipMinHeight="30dp"
+        app:chipStrokeColor="?android:textColorPrimary"
+        app:chipStrokeWidth="2dp"
+        app:closeIconEnabled="false"
+        app:closeIconVisible="false"
+        app:iconEndPadding="0dp"
+        app:iconStartPadding="4dp"
+        app:textStartPadding="4dp" />
+
+</FrameLayoutExt>

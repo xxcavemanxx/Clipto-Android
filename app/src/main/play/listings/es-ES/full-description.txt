@@ -1,0 +1,104 @@
+Clipto es una nueva forma de organizar el trabajo diario con notas importantes o temporales cuando necesite hacerse de una manera ágil, conveniente y segura.
+
+
+SINCRONIZA CON MAC, WINDOWS, LINUX, Y NAVEGADORES
+Pruebe Clipto en la web y descargue las aplicaciones de escritorio desde https://clipto.pro.
+Clipto mantiene todo sincronizado.
+
+
+TRABAJA FUERA DE LÍNEA
+Cada acción funciona perfectamente fuera de línea. Si quiere sincronizar las notas entre sus dispositivos, simplemente acceda en todos ellos con la misma cuenta. Sino, simplemente no se registre y use manualmente las opciones de importar/exportar. Decida usted mismo.
+
+
+TOMA NOTAS DESDE EL PORTAPAPELES
+¡Clipto puede ser usado como gestor del portapapeles incluso en Android 10!
+
+
+ACTIVA EL PORTAPAPELES UNIVERSAL
+Con el portapapeles universal, puede copiar notas en un dispositivo y pegarlas en otro.
+
+
+ESCANEE CÓDIGOS DE BARRAS
+Clipto permite capturar notas con la cámara y guardarlas en la app.
+El escáner de códigos de barra admite la mayoría de formatos standar (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR Code).
+
+
+AÑADA ARCHIVOS
+Clipto puede guardar cualquier archivo (no sólo imágenes o fotos)
+
+
+PERSONALICE
+Una vez instalado, Clipto permite personalizarlo todo según sus necesidades:
+• Tema (blanco, sepia, verde, oscuro, azul oscuro, blurple oscuro, negro AMOLED)
+• Estilo de lista (cuadrícula, cómodo, condensado, previsualización)
+• Ordenar por campos (fecha de creación, fecha de uso, número de veces usado, título, texto, etiquetas, tamaño, carácteres)
+• Tamaño de texto (en lista y notas)
+• Fuente del texto (lista y notas)
+•Acciones por deslizamiento en la lista principal
+
+
+COMPARTA
+Cree un enlace público a una nota y hágala accesible en la web sin registro previo.
+Los enlaces públicos pueden combinar los siguientes atributos:
+• Contraseña definida por el usuario
+• Acceso de una sola vez
+• Accesos retardados
+• Tiempo de vigencia
+
+
+MEJORE SU PRODUCTIVIDAD
+Clipto está diseñado para ser simple, y permite tomar notas mediante cualquier método:
+✔ Acciones de notificación - acceda a las notas más recientes e interactúe con ellas mediante un solo toque;
+✔ Acciones contextuales - acceda a las mismas desde el texto seleccionado en cualquier aplicación activa;
+✔ Notas desde el portapapeles - guarde notas desde el portapapeles y utilícelas más tarde desde el historial del mismo;
+✔ Acciones del portapapeles - extraiga fragmentos de una nota y úselos con acciones de un solo toque;
+✔ Comparta acciones - capture notas desde cualquier texto o archivo;
+✔ Editor incorporado - cree notas de texto plano, markdown o HTML;
+✔ Acciones de un solo toque
+    • Texto a voz
+    •Redactar un email
+    • Escribir un SMS
+    • Escribir un tweet
+    • Añadir evento al calendario
+    • Insertar contacto
+    • Buscar en la web
+    • Buscar en Wikipedia
+    • Buscar en YouTube
+    • Traducir con Google
+    • Compartir con…
+    • Copiar al portapapeles
+    • Enviar como código QR
+    • Enviar como texto plano
+    • Enviar como Pdf
+    • Enviar como markdown
+    • Abrir página web
+    • Guardar email de contacto
+    • Guardar teléfono de contacto
+    • Marcar un número de teléfono
+
+
+IMPORTE DESDE OTRAS APLICACIONES DE NOTAS Y GESTORES DE PORTAPAPELES
+Se nos ha pedido poder importar notas desde otras aplicaciones populares. Así que lo hemos hecho, y ahora se admiten oficialmente los siguientes formatos de copia de seguridad:
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+Gestor del portapapeles
+• Google Keep (zip)
+
+
+PARTICIPE EN EL PROCESO DE DESARROLLO
+Cualquier característica nuevas añadida a la app proviene de los comentarios de los usuarios. Ellos usan la aplicación y guían su desarrollo con nuestra ayuda:)
+Simplemente solicítelo en Github - https://github.com/clipto-pro/Android
+
+
+TRADUZCA LA APLICACIÓN A SU IDIOMA
+¡Gracias a todos los colaboradores que nos ayudan a centrarnos en las nuevas funciones!
+Si Clipto no se ha traducido a su idioma (o solo esta parcialmente, o incluso mal) ayúdenos aquí - https://crowdin.com/project/clipto
+
+
+FORME PARTE DE LA COMUNIDAD
+Únase en Reddit - https://www.reddit.com/r/cliptopro
+Síganos en Twitter - https://twitter.com/CliptoPro
+Comparta y dele al like en Facebook - https://www.facebook.com/cliptopro
+
+¡Gracias!

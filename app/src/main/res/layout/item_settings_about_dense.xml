@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/discordButton"
+        android:layout_width="?attr/actionIconSize"
+        android:layout_height="?attr/actionIconSize"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/about.label.discord"
+        android:focusable="true"
+        android:src="@drawable/button_discord"
+        app:layout_constraintBottom_toTopOf="@id/versionTextView"
+        app:layout_constraintStart_toEndOf="@id/emailButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/redditButton"
+        android:layout_width="?attr/actionIconSize"
+        android:layout_height="?attr/actionIconSize"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/about.label.reddit"
+        android:focusable="true"
+        android:src="@drawable/button_reddit"
+        app:layout_constraintEnd_toStartOf="@id/emailButton"
+        app:layout_constraintTop_toTopOf="@id/discordButton" />
+
+    <ImageView
+        android:id="@+id/emailButton"
+        android:layout_width="?attr/actionIconSize"
+        android:layout_height="?attr/actionIconSize"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/about.label.email"
+        android:focusable="true"
+        android:src="@drawable/button_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/discordButton" />
+
+    <TextViewExt
+        android:id="@+id/versionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/changelogButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="App 1.0.0 (10000100)" />
+
+    <TextViewExt
+        android:id="@+id/changelogButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackground"
+        android:fontFamily="sans-serif"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/about.label.changelog"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/privacyPolicy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextViewExt
+        android:id="@+id/termsOfService"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?selectableItemBackground"
+        android:fontFamily="sans-serif"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/about.toc"
+        android:textAllCaps="false"
+        android:textColor="?colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/privacyPolicy"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextViewExt
+        android:id="@+id/privacyPolicy"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?selectableItemBackground"
+        android:fontFamily="sans-serif"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/about.policy"
+        android:textAllCaps="false"
+        android:textColor="?colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/termsOfService" />
+
+</androidx.constraintlayout.widget.ConstraintLayoutExt>

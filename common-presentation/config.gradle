@@ -1,0 +1,20 @@
+ext {
+    androidLibraryGroup = 'com.wb.android'
+
+    androidBuildToolsVersion = '30.0.3'
+    androidCompileSdkVersion = 30
+    androidTargetSdkVersion = 30
+    androidMinSdkVersion = 21
+
+    androidVersionMajor = 0
+    androidVersionMinor = 0
+    androidVersionPatch = 0
+
+    mavenReleasesRepo = 'https://mymavenrepo.com/repo/Ufh9uXJUcHoS1feAY0bx/'
+    mavenReleasesUsername = ''
+    mavenReleasesPassword = ''
+
+    mavenSnapshotsRepo = 'https://mymavenrepo.com/repo/Ufh9uXJUcHoS1feAY0bx/'
+    mavenSnapshotsUsername = ''
+    mavenSnapshotsPassword = ''
+}

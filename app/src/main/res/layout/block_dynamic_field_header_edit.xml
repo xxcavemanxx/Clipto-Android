@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:layout_marginStart="4dp"
+        android:padding="14dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/ivDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivDelete"
+        app:srcCompat="@drawable/clip_icon_dynamic"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivDelete"
+        app:layout_constraintEnd_toStartOf="@id/ivDelete"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="@id/ivDelete"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="@string/filter.deleted.title" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="?actionIconPadding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivCopy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/action_delete" />
+
+    <ImageView
+        android:id="@+id/ivCopy"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="?actionIconPadding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fast_action_copy" />
+
+</androidx.constraintlayout.widget.ConstraintLayoutExt>

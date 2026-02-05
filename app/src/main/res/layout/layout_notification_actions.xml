@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top">
+
+    <ImageView
+        android:id="@+id/notificationBackgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingEnd="0dp">
+
+        <ImageButton
+            android:id="@+id/actionStartStop"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|start"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/notification_action_pause"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/actionClipboard"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/notification_action_take_24"
+            tools:ignore="ContentDescription" />
+
+        <FrameLayout
+            android:id="@+id/actionDivider2"
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="#808080" />
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical|start"
+            android:lines="1"
+            android:maxLines="2"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/actionDelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|end"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/notification_action_delete"
+            tools:ignore="ContentDescription" />
+
+        <FrameLayout
+            android:id="@+id/actionDivider"
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:background="#808080" />
+
+        <ImageButton
+            android:id="@+id/actionPrev"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|end"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/notification_action_prev"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/actionCounterView"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginStart="-18dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:textAlignment="gravity"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/actionNext"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginStart="-18dp"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/notification_action_next"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</FrameLayout>

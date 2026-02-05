@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryInverse"
+    android:divider="?android:listDivider"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="0dp"
+        app:navigationContentDescription="@string/content.description.back"
+        app:titleTextColor="?android:textColorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayoutExt
+            android:id="@+id/settingsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/account_background"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/ShapeAppearance.CircleImageView" />
+
+
+            <TextViewExt
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="3"
+                android:minLines="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon" />
+
+            <TextViewExt
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/changePlanButton"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="0dp"
+                android:text="@string/account.sync.plan.button.change"
+                android:textAllCaps="false"
+                android:textColor="?textColorOnSurface"
+                app:backgroundTint="?colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+            <clipto.common.presentation.view.DividerView
+                android:id="@+id/accountDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@id/changePlanButton" />
+
+            <TextViewExt
+                android:id="@+id/syncTitleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/ic_sync"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:maxLines="10"
+                android:minLines="1"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/account.sync.title"
+                android:textAlignment="gravity"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@id/syncSwitch"
+                app:layout_constraintStart_toStartOf="@id/accountDivider"
+                app:layout_constraintTop_toBottomOf="@id/accountDivider" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/syncSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/syncTitleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/syncTitleView" />
+
+            <clipto.presentation.settings.SettingsDividerView
+                android:id="@+id/syncAction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@id/syncTitleView"
+                app:layout_constraintTop_toTopOf="@id/syncTitleView" />
+
+
+            <TextViewExt
+                android:id="@+id/signOutTitleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/ic_exit_to_app"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:maxLines="10"
+                android:minLines="1"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/account.button.sign_out"
+                android:textAlignment="gravity"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/accountDivider"
+                app:layout_constraintStart_toStartOf="@id/accountDivider"
+                app:layout_constraintTop_toBottomOf="@id/syncAction" />
+
+            <clipto.presentation.settings.SettingsDividerView
+                android:id="@+id/signOutAction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@id/signOutTitleView"
+                app:layout_constraintTop_toTopOf="@id/signOutTitleView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shareContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_invitation"
+                android:elevation="2dp"
+                android:padding="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/downloadDesktop"
+                app:layout_constraintTop_toBottomOf="@id/signOutAction"
+                app:layout_constraintVertical_bias="0.0"
+                tools:visibility="visible">
+
+                <TextViewExt
+                    android:id="@+id/titleView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/settings.campaign.share.title"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextViewExt
+                    android:id="@+id/learnMoreAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif"
+                    android:padding="4dp"
+                    android:text="@string/settings.campaign.share.more"
+                    android:textColor="?actionIconColorHighlight"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleView" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="12dp"
+                    android:background="?attr/colorPrimaryInverse"
+                    app:layout_constraintTop_toBottomOf="@id/learnMoreAction" />
+
+                <TextViewExt
+                    android:id="@+id/shareAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="4dp"
+                    android:text="@string/settings.campaign.share.action"
+                    android:textColor="?actionIconColorHighlight"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/shareStatistics"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider1"
+                    app:layout_goneMarginBottom="12dp"
+                    app:layout_goneMarginTop="12dp" />
+
+                <TextViewExt
+                    android:id="@+id/shareStatistics"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/shareAction"
+                    tools:text="@string/about.label.campaign.share.description"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/downloadDesktop"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/desktop.main.menu.download.for"
+                android:textAllCaps="false"
+                android:textColor="?android:textColorSecondary"
+                app:layout_anchorGravity="bottom"
+                app:layout_constraintBottom_toTopOf="@id/openInBrowser"
+                app:strokeColor="?android:textColorSecondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/openInBrowser"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/desktop.main.menu.open"
+                android:textAllCaps="false"
+                android:textColor="?android:textColorSecondary"
+                app:layout_anchorGravity="bottom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:strokeColor="?android:textColorSecondary" />
+
+        </androidx.constraintlayout.widget.ConstraintLayoutExt>
+
+    </ScrollView>
+
+</LinearLayout>

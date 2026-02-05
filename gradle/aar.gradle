@@ -1,0 +1,156 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'maven-publish'
+apply plugin: 'io.objectbox'
+apply plugin: 'dagger.hilt.android.plugin'
+
+configurations {
+    androidTestApi.exclude module: 'support-annotations'
+    androidTestApi.exclude module: 'jsr305'
+}
+
+dependencies {
+    api libpacks.java_kotlin
+    api "com.google.dagger:hilt-android:$hiltVersion"
+
+    kapt "com.google.dagger:hilt-compiler:$hiltVersion"
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
+    kapt libpacks.android_annotation_processors
+    kapt libpacks.android_arch_annotation_processors
+
+    androidTestApi libpacks.android_instrumentation_testing
+    testApi libpacks.android_unit_testing
+}
+
+androidExtensions {
+    experimental = true
+    defaultCacheImplementation = "SPARSE_ARRAY" // also HASH_MAP, NONE
+}
+
+android {
+    compileSdkVersion project.androidCompileSdkVersion
+    buildToolsVersion project.androidBuildToolsVersion
+
+    compileOptions {
+        sourceCompatibility = javaSourceCompatibility
+        targetCompatibility = javaTargetCompatibility
+    }
+
+    kotlinOptions {
+        jvmTarget = javaTargetCompatibility
+    }
+
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+        minSdkVersion project.androidMinSdkVersion
+        targetSdkVersion project.androidTargetSdkVersion
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    }
+
+    dexOptions {
+        jumboMode true
+        preDexLibraries = true
+        maxProcessCount 2
+        javaMaxHeapSize "2g"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        checkAllWarnings false
+        abortOnError false
+        quiet true
+    }
+}
+
+publishing {
+    publications {
+        aar(MavenPublication) {
+            dependencies
+            groupId project.androidLibraryGroup
+            version computeVersionName()
+            artifactId project.name
+
+            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.compile.allDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.group)
+                    dependencyNode.appendNode('artifactId', it.name)
+                    dependencyNode.appendNode('version', it.version)
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            def isRelease = !computeVersionName().endsWith('-SNAPSHOT')
+
+            url isRelease ? project.mavenReleasesRepo : project.mavenSnapshotsRepo
+            credentials {
+                username isRelease ? project.mavenReleasesUsername : project.mavenSnapshotsUsername
+                password isRelease ? project.mavenReleasesPassword : project.mavenSnapshotsPassword
+            }
+        }
+    }
+}
+
+task incrementAarModuleVersion doLast {
+    def currentVersion = computeVersionName()
+    def currentVersionMajor = project.androidVersionMajor
+    def currentVersionMinor = project.androidVersionMinor
+    def currentVersionPatch = project.androidVersionPatch
+    def updateStrategy = getProjectVersionUpdateStrategy()
+
+    switch (updateStrategy) {
+        case 'major':
+            project.androidVersionMajor += 1
+            project.androidVersionMinor = 0
+            project.androidVersionPatch = 0
+            break
+        case 'minor':
+            project.androidVersionMinor += 1
+            project.androidVersionPatch = 0
+            break
+        case 'patch':
+            project.androidVersionPatch += 1
+            break
+    }
+    def newVersion = computeVersionName()
+
+    if (newVersion != currentVersion) {
+        def configFile = new File(project.projectDir, "config.gradle")
+        String configFileText = configFile.getText()
+        configFileText = configFileText.replace("androidVersionMajor = $currentVersionMajor", "androidVersionMajor = $project.androidVersionMajor")
+        configFileText = configFileText.replace("androidVersionMinor = $currentVersionMinor", "androidVersionMinor = $project.androidVersionMinor")
+        configFileText = configFileText.replace("androidVersionPatch = $currentVersionPatch", "androidVersionPatch = $project.androidVersionPatch")
+        configFile.write(configFileText)
+
+        incrementModuleVersion(project.name, newVersion.replace('-SNAPSHOT', ''))
+    }
+}
+
+def computeVersionName() {
+    def version = String.format('%s.%s.%s',
+            project.androidVersionMajor,
+            project.androidVersionMinor,
+            project.androidVersionPatch)
+    def branch = getProjectCurrentBranch()
+    if (branch != 'master') {
+        version += '-SNAPSHOT'
+    }
+    return version
+}

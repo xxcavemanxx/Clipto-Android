@@ -1,0 +1,28 @@
+ext {
+    androidApplicationId = 'com.wb.clipboard'
+
+    androidBuildToolsVersion = '30.0.3'
+    androidCompileSdkVersion = 30
+    androidTargetSdkVersion = 30
+    androidMinSdkVersion = 21
+
+    androidVersionMajor = 7
+    androidVersionMinor = 3
+    androidVersionPatch = 8
+
+    androidBuildWithHistory = false
+
+    androidReleaseProguardFile = "assemble/release-rules.proguard"
+    androidMultidexProguardFile = "assemble/multidex-rules.proguard"
+
+    // generated as: keytool -genkey -v -keystore release.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-alias
+    androidReleaseSignStoreFile = "assemble/release-key.jks"
+    androidReleaseSignStorePassword = ''
+    androidReleaseSignKeyPassword = ''
+    androidReleaseSignKeyAlias = 'release-key'
+
+    // https://github.com/Triple-T/gradle-play-publisher
+    googlePlayServiceAccountEmail = 'google-play@wb-apps.iam.gserviceaccount.com'
+    serviceAccountCredentials = "assemble/googleplay.p12"
+    googlePlayTrack = System.getProperty('googlePlayTrack')
+}

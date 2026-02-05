@@ -1,0 +1,15 @@
+apply from: 'config.gradle'
+apply from: '../gradle/libraries.gradle'
+apply from: '../gradle/aar.gradle'
+
+dependencies {
+    api 'com.github.simonebortolin:FlowLayoutManager:1.8.0'
+    api 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
+    api 'com.github.grzegorzojdana:SpacingItemDecoration:1.1.0'
+    api 'com.andkulikov:transitionseverywhere:2.1.0'
+    api libpacks.java_utils
+    api libpacks.java_rxjava
+    api libpacks.android_rxjava
+    api libpacks.android_support
+    api libpacks.android_arch_components
+}

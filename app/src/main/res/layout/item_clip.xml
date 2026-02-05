@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
+
+    <View
+        android:id="@+id/bgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?listItemSelected"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/actionView"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="?actionIconPadding"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/action_copy"
+        tools:ignore="ContentDescription" />
+
+    <TextViewNotTouchable
+        android:id="@+id/middleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:minHeight="16dp"
+        android:minLines="1"
+        android:singleLine="false"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/actionView"
+        app:layout_constraintStart_toStartOf="@id/attr1Key"
+        app:layout_constraintTop_toBottomOf="@id/attr1Key"
+        app:layout_goneMarginEnd="16dp" />
+
+    <TextViewNotTouchable
+        android:id="@+id/attr1Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:singleLine="true"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/clip.attr.created" />
+
+    <TextViewNotTouchable
+        android:id="@+id/attr1Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:singleLine="true"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/attr1Key"
+        app:layout_constraintStart_toEndOf="@id/attr1Key"
+        app:layout_constraintTop_toTopOf="@id/attr1Key" />
+
+    <ImageView
+        android:id="@+id/publicLinkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/attr1Key"
+        app:layout_constraintStart_toEndOf="@id/attr1Value"
+        app:layout_constraintTop_toTopOf="@id/attr1Key"
+        app:srcCompat="@drawable/public_link"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible" />
+
+    <TextViewNotTouchable
+        android:id="@+id/attachmentsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_attachment_custom"
+        android:drawableStart="@drawable/attachment_small"
+        android:drawablePadding="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:singleLine="true"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/attr1Key"
+        app:layout_constraintStart_toEndOf="@id/publicLinkView"
+        app:layout_constraintTop_toTopOf="@id/attr1Key" />
+
+    <clipto.presentation.common.widget.RoundedBgTextView
+        android:id="@+id/tagsView"
+        style="@style/RoundedBgTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:drawablePadding="8dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textColor="?colorCustomTagText"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/attr1Key"
+        app:layout_constraintEnd_toStartOf="@id/actionView"
+        app:layout_constraintStart_toEndOf="@id/attachmentsView"
+        app:layout_constraintTop_toTopOf="@id/attr1Key"
+        app:layout_goneMarginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayoutExt>

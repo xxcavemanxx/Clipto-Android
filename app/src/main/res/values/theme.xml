@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorNegative">#ee494c</color>
+    <color name="colorPositive">#49b483</color>
+    <color name="colorAttention">#FFC400</color>
+    <color name="colorFloatingHint">#fff8c3</color>
+
+    <color name="backgroundDimColor">#80000000</color>
+    <color name="textInactiveColor">#ABABAB</color>
+    <color name="textDimColor">#fff</color>
+
+    <declare-styleable name="MyThemeAttributes">
+        <attr name="colorAccent" format="color" />
+        <attr name="colorPrimary" format="color" />
+        <attr name="colorPrimaryDark" format="color" />
+        <attr name="colorPrimaryLight" format="color" />
+        <attr name="colorPrimaryInverse" format="color" />
+        <attr name="colorContext" format="color" />
+        <attr name="colorHighlightBackground" format="color" />
+        <attr name="colorCustomTagBackground" format="color" />
+        <attr name="colorCustomTagText" format="color" />
+        <attr name="colorNotificationBackground" format="color" />
+
+        <attr name="listItemSelected" format="color" />
+
+        <attr name="textInactiveColor" format="color" />
+        <attr name="textColorTertiary" format="color" />
+        <attr name="textColorQuaternary" format="color" />
+        <attr name="textColorOnSurface" format="color" />
+
+        <attr name="actionIconPadding" format="dimension" />
+        <attr name="actionIconSize" format="dimension" />
+        <attr name="actionIconColorHighlight" format="color" />
+        <attr name="actionIconColorInactive" format="color" />
+        <attr name="actionIconColorNormal" format="color" />
+
+        <attr name="swipeActionDelete" format="color" />
+        <attr name="swipeActionStarred" format="color" />
+        <attr name="swipeActionCopy" format="color" />
+
+        <attr name="myBackgroundHighlight" format="color" />
+
+        <attr name="myTextAppearanceCaption" format="reference" />
+    </declare-styleable>
+
+    <!-- THEMES -->
+
+    <style name="MyTheme.Light.Loading">
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@drawable/activity_splash_launcher</item>
+        <item name="android:navigationBarColor">#FF122B37</item>
+        <item name="android:statusBarColor">#FF122B37</item>
+    </style>
+
+    <style name="MyTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorAccent">#f9aa33</item>
+        <item name="colorPrimary">#344955</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#4a6572</item>
+        <item name="colorPrimaryInverse">#fff</item>
+        <item name="colorContext">#fff</item>
+        <item name="colorCustomTagText">#fff</item>
+        <item name="colorCustomTagBackground">#CC344955</item>
+        <item name="colorHighlightBackground">#99FAAA32</item>
+        <item name="colorNotificationBackground">#fff</item>
+
+        <item name="listItemSelected">#4d344955</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#f9aa33</item>
+        <item name="actionIconColorInactive">#DADCE0</item>
+        <item name="actionIconColorNormal">#fff</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#B3000000</item>
+        <item name="actionMenuTextColor">#B3000000</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#f9aa33</item>
+
+        <item name="myBackgroundHighlight">#1A000000</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+        <item name="textInactiveColor">@color/textInactiveColor</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendarLight</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerThemeLight</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.White" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorAccent">#74b5e0</item>
+        <item name="colorPrimary">#fff</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#fff</item>
+        <item name="colorPrimaryInverse">#fff</item>
+        <item name="colorContext">#fff</item>
+        <item name="colorCustomTagText">#fff</item>
+        <item name="colorCustomTagBackground">#74b5e0</item>
+        <item name="colorHighlightBackground">#9975B5E0</item>
+        <item name="colorNotificationBackground">#fff</item>
+
+        <item name="listItemSelected">#80419FD9</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#74b5e0</item>
+        <item name="actionIconColorInactive">#89000000</item>
+        <item name="actionIconColorNormal">#B3000000</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:actionMenuTextColor">?attr/actionIconColorNormal</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="actionMenuTextColor">?attr/actionIconColorNormal</item>
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#74b5e0</item>
+
+        <item name="myBackgroundHighlight">#1A000000</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+
+        <item name="textInactiveColor">@color/textInactiveColor</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.Dark" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorAccent">#f9aa33</item>
+        <item name="colorPrimary">#FF2E3032</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#FF494B4C</item>
+        <item name="colorPrimaryInverse">#FF212121</item>
+        <item name="colorContext">#FF2E3032</item>
+        <item name="colorCustomTagText">#000</item>
+        <item name="colorCustomTagBackground">#CCf9aa33</item>
+        <item name="colorHighlightBackground">#99FAAA32</item>
+        <item name="colorNotificationBackground">#121212</item>
+
+        <item name="listItemSelected">#747778</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#f9aa33</item>
+        <item name="actionIconColorInactive">#DADCE0</item>
+        <item name="actionIconColorNormal">#fff</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_dark_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_dark_secondary</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#f9aa33</item>
+
+        <item name="myBackgroundHighlight">#1AFFFFFF</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+        <item name="textInactiveColor">#5A5A5A</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.DarkBlue" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorAccent">#5E8DC6</item>
+        <item name="colorPrimary">#212D3B</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#25374C</item>
+        <item name="colorPrimaryInverse">#1D2733</item>
+        <item name="colorContext">#212D3B</item>
+        <item name="colorCustomTagText">#000</item>
+        <item name="colorCustomTagBackground">#CC5E8DC6</item>
+        <item name="colorHighlightBackground">#995D8DC7</item>
+        <item name="colorNotificationBackground">#212D3B</item>
+
+        <item name="listItemSelected">#314A61</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#FF5E8DC6</item>
+        <item name="actionIconColorInactive">#DADCE0</item>
+        <item name="actionIconColorNormal">#fff</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#5E8DC6</item>
+
+        <item name="myBackgroundHighlight">#1AFFFFFF</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#fff</item>
+
+        <item name="textInactiveColor">#5A5A5A</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.DarkGreen" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorAccent">#94B042</item>
+        <item name="colorPrimary">#212919</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#212919</item>
+        <item name="colorPrimaryInverse">#0B1B07</item>
+        <item name="colorContext">#22291B</item>
+        <item name="colorCustomTagText">#000</item>
+        <item name="colorCustomTagBackground">#CC94B042</item>
+        <item name="colorHighlightBackground">#9994B042</item>
+        <item name="colorNotificationBackground">#0B1B07</item>
+
+        <item name="listItemSelected">#9994B041</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#94B042</item>
+        <item name="actionIconColorInactive">#DADCE0</item>
+        <item name="actionIconColorNormal">#fff</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">#516725</item>
+        <item name="swipeActionStarred">#94B042</item>
+
+        <item name="myBackgroundHighlight">#1AFFFFFF</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#fff</item>
+
+        <item name="textInactiveColor">#646C59</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.DarkBlurple" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorAccent">#7289DA</item>
+        <item name="colorPrimary">#2C2F33</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#2C2F33</item>
+        <item name="colorPrimaryInverse">#FF212121</item>
+        <item name="colorContext">#2C2F33</item>
+        <item name="colorCustomTagText">#000</item>
+        <item name="colorCustomTagBackground">#CCa5b9ff</item>
+        <item name="colorHighlightBackground">#997289DA</item>
+        <item name="colorNotificationBackground">#2C2F33</item>
+
+        <item name="listItemSelected">#33FFFFFF</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#7289DA</item>
+        <item name="actionIconColorInactive">#d4d4d5</item>
+        <item name="actionIconColorNormal">#fff</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_dark_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_dark_secondary</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#7289DA</item>
+
+        <item name="myBackgroundHighlight">#1AFFFFFF</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+        <item name="textInactiveColor">#5A5A5A</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.Sepia" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorAccent">#5E8DC6</item>
+        <item name="colorPrimary">#c0bba9</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#c0bba9</item>
+        <item name="colorPrimaryInverse">#F3EDDB</item>
+        <item name="colorContext">#F8F1DE</item>
+        <item name="colorCustomTagText">#fff</item>
+        <item name="colorCustomTagBackground">#CC5E8DC6</item>
+        <item name="colorHighlightBackground">#995D8DC7</item>
+        <item name="colorNotificationBackground">#F8F1DE</item>
+
+        <item name="listItemSelected">#DBE6E7</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#5E8DC6</item>
+        <item name="actionIconColorInactive">#89000000</item>
+        <item name="actionIconColorNormal">#B3000000</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:actionMenuTextColor">?attr/actionIconColorNormal</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="actionMenuTextColor">?attr/actionIconColorNormal</item>
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_sepia_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_sepia_secondary</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#5E8DC6</item>
+
+        <item name="myBackgroundHighlight">#1A000000</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+        <item name="textInactiveColor">@color/textInactiveColor</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendarLight</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerThemeLight</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.Black" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorAccent">#5E8DC6</item>
+        <item name="colorPrimary">#121212</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#121212</item>
+        <item name="colorPrimaryInverse">#000</item>
+        <item name="colorContext">#121212</item>
+        <item name="colorCustomTagText">#000</item>
+        <item name="colorCustomTagBackground">#CC5E8DC6</item>
+        <item name="colorHighlightBackground">#995D8DC7</item>
+        <item name="colorNotificationBackground">#121212</item>
+
+        <item name="listItemSelected">#2b2b2b</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#5E8DC6</item>
+        <item name="actionIconColorInactive">#929292</item>
+        <item name="actionIconColorNormal">#CDCDCD</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#CDCDCD</item>
+        <item name="actionMenuTextColor">#CDCDCD</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_black_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_black_secondary</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#5E8DC6</item>
+
+        <item name="myBackgroundHighlight">#1AFFFFFF</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+        <item name="textInactiveColor">#434242</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.Green" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorAccent">#fa5630</item>
+        <item name="colorPrimary">#DCDBC3</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#dcdbc3</item>
+        <item name="colorSecondary">#fa5630</item>
+        <item name="colorPrimaryInverse">#fffbe6</item>
+        <item name="colorContext">#fffbe6</item>
+        <item name="colorCustomTagText">#fff</item>
+        <item name="colorCustomTagBackground">#CC356859</item>
+        <item name="colorHighlightBackground">#99FA552F</item>
+        <item name="colorNotificationBackground">#fffbe6</item>
+
+        <item name="listItemSelected">#E2E9CE</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#fa5630</item>
+        <item name="actionIconColorInactive">#356859</item>
+        <item name="actionIconColorNormal">#356859</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#356859</item>
+        <item name="actionMenuTextColor">#356859</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_green_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_green_secondary</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#fa5630</item>
+
+        <item name="myBackgroundHighlight">#1A000000</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#fff</item>
+
+        <item name="textInactiveColor">@color/textInactiveColor</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendarLight</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerThemeLight</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.Pink" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorAccent">#fddbd1</item>
+        <item name="colorPrimary">#fedbd0</item>
+        <item name="colorPrimaryDark">?colorPrimaryInverse</item>
+        <item name="colorPrimaryLight">#feeae6</item>
+        <item name="colorPrimaryInverse">#fff</item>
+        <item name="colorContext">#fff</item>
+        <item name="colorCustomTagText">#fff</item>
+        <item name="colorCustomTagBackground">#CC442C2E</item>
+        <item name="colorHighlightBackground">#99fedbd0</item>
+        <item name="colorNotificationBackground">#fff</item>
+
+        <item name="listItemSelected">#4dfedbd0</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#f48aa6</item>
+        <item name="actionIconColorInactive">#B3442C2E</item>
+        <item name="actionIconColorNormal">#442C2E</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:windowBackground">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#442C2E</item>
+        <item name="actionMenuTextColor">#442C2E</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_pink_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_pink_secondary</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#f48aa6</item>
+
+        <item name="myBackgroundHighlight">#26442C2E</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#442C2E</item>
+
+        <item name="textInactiveColor">?android:textColorSecondary</item>
+
+        <item name="android:textColorLink">?actionIconColorHighlight</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendarLight</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerThemeLight</item>
+
+        <item name="toolbarNavigationButtonStyle">@style/MyToolbarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionOverflowButtonStyle</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="listPopupWindowStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+    </style>
+
+    <style name="MyTheme.Light.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.Dark.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.DarkBlurple.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.DarkBlue.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.DarkGreen.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.Sepia.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.Black.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.Green.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.White.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyTheme.Pink.Auth">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="actionBarTheme">@style/MyActionBarStyle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="colorPrimary">?colorPrimaryInverse</item>
+    </style>
+
+    <style name="MyMaterialDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:backgroundTint">?colorPrimaryInverse</item>
+        <item name="colorPrimary">?colorAccent</item>
+    </style>
+
+    <style name="CounterTextAppearance" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="HelperTextAppearance" parent="TextAppearance.Design.HelperText">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleStyle</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleStyle</item>
+        <item name="android:colorBackground">?colorPrimary</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="background">?colorPrimary</item>
+        <item name="elevation">1.5dp</item>
+    </style>
+
+    <style name="MyActionBarTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">?android:textColorSecondary</item>
+        <item name="android:editTextColor">?android:textColorPrimary</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="helperTextTextAppearance">@style/HelperTextAppearance</item>
+        <item name="counterTextAppearance">@style/CounterTextAppearance</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <item name="android:editTextStyle">@style/TextInputEditText</item>
+        <item name="hintTextColor">@color/color_edit_text_box</item>
+        <item name="boxStrokeColor">@color/color_edit_text_box</item>
+        <item name="boxCornerRadiusBottomStart">6dp</item>
+        <item name="boxCornerRadiusBottomEnd">6dp</item>
+        <item name="boxCornerRadiusTopStart">6dp</item>
+        <item name="boxCornerRadiusTopEnd">6dp</item>
+    </style>
+
+    <style name="TextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <style name="TextInputEditTextFilled" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyCalendar" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnPrimary">?actionIconColorNormal</item>
+        <item name="colorPrimary">?colorAccent</item>
+    </style>
+
+    <style name="MyCalendarLight" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnPrimary">?actionIconColorNormal</item>
+    </style>
+
+    <style name="MyMaterialTimePickerTheme" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorOnPrimary">?actionIconColorNormal</item>
+        <item name="colorPrimary">?colorAccent</item>
+    </style>
+
+    <style name="MyMaterialTimePickerThemeLight" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorOnPrimary">?actionIconColorNormal</item>
+    </style>
+
+    <style name="MyBottomBar" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="toolbarNavigationButtonStyle">@style/MyBottomBarNavigationButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyBottomBarOverflowButtonStyle</item>
+        <item name="actionOverflowButtonStyle">@style/MyBottomBarOverflowButtonStyle</item>
+        <item name="android:actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MyTheme.PopupMenu</item>
+        <item name="android:popupTheme">@style/MyActionBarPopupTheme</item>
+        <item name="popupTheme">@style/MyActionBarPopupTheme</item>
+        <item name="colorPrimary">?colorAccent</item>
+    </style>
+
+    <style name="MyActionBarPopupTheme" parent="@style/ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="colorPrimary">?android:textColorPrimary</item>
+        <item name="android:backgroundTint">?colorContext</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="android:textAppearance">?myTextAppearanceCaption</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+        <item name="queryBackground">@null</item>
+    </style>
+
+    <style name="MyActionOverflowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:tint">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyBottomBarOverflowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">?actionIconColorNormal</item>
+    </style>
+
+    <style name="MyBottomBarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:tint">?actionIconColorNormal</item>
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="android:colorControlNormal">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="MySlider" parent="Widget.MaterialComponents.Slider">
+        <item name="trackColorActive">@color/color_slider_enabled_disabled</item>
+        <item name="tickColorActive">@color/color_slider_enabled_disabled</item>
+        <item name="thumbColor">@color/color_slider_enabled_disabled</item>
+        <item name="trackColorInactive">?textInactiveColor</item>
+        <item name="tickColorInactive">?textInactiveColor</item>
+        <item name="haloColor">?colorHighlightBackground</item>
+        <item name="thumbRadius">12dp</item>
+        <item name="trackHeight">2dp</item>
+    </style>
+
+    <style name="MySeekBar.Discrete" parent="Widget.AppCompat.SeekBar.Discrete">
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="android:colorControlNormal">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="MyTheme.Light.Translucent" parent="MyTheme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.Dark.Translucent" parent="MyTheme.Dark">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.White.Translucent" parent="MyTheme.White">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.Sepia.Translucent" parent="MyTheme.Sepia">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.Green.Translucent" parent="MyTheme.Green">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.Pink.Translucent" parent="MyTheme.Pink">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.DarkBlue.Translucent" parent="MyTheme.DarkBlue">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.DarkGreen.Translucent" parent="MyTheme.DarkGreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.DarkBlurple.Translucent" parent="MyTheme.DarkBlurple">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyTheme.Black.Translucent" parent="MyTheme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="RoundedBgTextView" parent="@android:style/Widget.TextView">
+        <item name="roundedTextHorizontalPadding">6dp</item>
+        <item name="roundedTextVerticalPadding">1dp</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:padding">6dp</item>
+        <item name="roundedTextDrawable">@drawable/bg_tag_custom</item>
+        <item name="roundedTextDrawableLeft">@drawable/bg_tag_custom</item>
+        <item name="roundedTextDrawableMid">@drawable/bg_tag_custom</item>
+        <item name="roundedTextDrawableRight">@drawable/bg_tag_custom</item>
+    </style>
+
+    <style name="RoundedBgTextViewSecondary" parent="@android:style/Widget.TextView">
+        <item name="roundedTextHorizontalPadding">6dp</item>
+        <item name="roundedTextVerticalPadding">1dp</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:padding">6dp</item>
+        <item name="roundedTextDrawable">@drawable/bg_attachment_custom</item>
+        <item name="roundedTextDrawableLeft">@drawable/bg_attachment_custom</item>
+        <item name="roundedTextDrawableMid">@drawable/bg_attachment_custom</item>
+        <item name="roundedTextDrawableRight">@drawable/bg_attachment_custom</item>
+    </style>
+
+    <style name="MyCaption" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="MyTheme.Barcode" parent="MyTheme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorPrimaryLight">@android:color/black</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="MaterialButtonPrimary" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">?textColorOnSurface</item>
+        <item name="backgroundTint">?colorAccent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.07</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="MaterialButtonBorderless" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="ButtonPassCode">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ShapeAppearance.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="FloatingButtonIconOnly" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="backgroundTint">@color/color_button_accent</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">?textColorOnSurface</item>
+        <item name="iconTint">?textColorOnSurface</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconSize">16dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="FloatingButtonIconOnlyUnelevated" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="backgroundTint">@color/color_button_accent</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">?textColorOnSurface</item>
+        <item name="iconTint">?textColorOnSurface</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconSize">16dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="FloatingButtonIconOnlySecondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="backgroundTint">?attr/colorPrimaryInverse</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="strokeColor">?android:textColorPrimary</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="iconTint">?android:textColorPrimary</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconSize">16dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="FloatingButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:textColor">?textColorOnSurface</item>
+        <item name="backgroundTint">@color/color_button_accent</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="iconTint">?textColorOnSurface</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconSize">16dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="FloatingButtonUnelevated" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="backgroundTint">@color/color_button_accent</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">?textColorOnSurface</item>
+        <item name="iconTint">?textColorOnSurface</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconSize">16dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="MyMaterialButtonHighlighted" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="maxLines">1</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="backgroundTint">?myBackgroundHighlight</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="iconGravity">textTop</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyTitle" parent="">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MyActionButton">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:layout_width">?actionIconSize</item>
+        <item name="android:layout_height">?actionIconSize</item>
+        <item name="android:padding">?actionIconPadding</item>
+        <item name="android:tint">?android:textColorPrimary</item>
+        <item name="tint">?android:textColorPrimary</item>
+    </style>
+
+    <style name="CustomMediaRouterTheme" parent="Theme.MediaRouter">
+        <item name="mediaRouteButtonStyle">@style/CustomMediaRouteButtonStyle</item>
+    </style>
+
+    <style name="CustomMediaRouteButtonStyle" parent="Widget.MediaRouter.Light.MediaRouteButton">
+        <item name="mediaRouteButtonTint">#fff</item>
+    </style>
+
+    <style name="MyTheme.Preview" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="mediaRouteTheme">@style/CustomMediaRouterTheme</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+    <style name="MyTheme.Preview.Image" parent="MyTheme.Preview">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+    </style>
+
+    <style name="ShapeAppearance.MyTheme.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyTheme.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyTheme.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Widget.MyTheme.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="popupMenuBackground">@drawable/bg_popup_menu</item>
+    </style>
+
+</resources>

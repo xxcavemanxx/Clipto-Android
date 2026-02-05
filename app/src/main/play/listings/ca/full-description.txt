@@ -1,0 +1,104 @@
+Clipto és una nova forma d'organitzar el vostre treball diari amb notes quan necessiteu fer-ho d'una manera àgil, convenient i segura.
+
+
+SINCRONITZA AMB MAC, WINDOWS, LINUX I MÉS
+Proveu Clipto a la web i descarregueu-vos les aplicacions des de https://clipto.pro.
+Clipto manté tot sincronitzat.
+
+
+FORA DE LÍNIA
+Cada acció funciona fora de línia. Si voleu sincronitzar notes entre dispositius, simplement accediu amb el mateix compte. Si no, feis-ho amb la importació/exportació manuals. Trieu vosaltres mateixos.
+
+
+NOTES DES DEL PORTA-RETALLS
+Clipto funciona amb el porta-retalls també en Android 10!
+
+
+PORTA-RETALLS UNIVERSAL
+Amb el porta-retalls universal, podeu copiar notes en un dispositiu i afegir-les en un altre.
+
+
+ESCANEIG DE CODIS
+Clipto permet capturar notes amb la càmera i desar-les a l'aplicació.
+L'escàner de codi de barres admet la majoria de formats (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR Code).
+
+
+AFEGIU ARXIUS
+Clipto pot desar qualsevol arxiu (no només imatges o fotos)
+
+
+PERSONALITZEU
+Clipto us permet personalitzar-ho tot d'acord amb les vostres necessitats:
+• Tema (blanc, sèpia, verd, fosc, blau fosc, blurple fosc, negre AMOLED)
+• Estil de llista (quadrícula, còmode, condensat, previsualització)
+• Ordenar per camps (data de creació, ús, títol, text, etiquetes, tamany, caràcters)
+• Mida del text (a llista i notes)
+• Font del text (llista i notes)
+• Lliscar accions a la llista
+
+
+COMPARTIU
+Creeu un enllaç públic a una nota que sigui accessible sense registrar-se.
+Els enllaços públics poden combinar:
+• Contrasenyes
+• Accés d'única vegada
+• Accés retardat
+• Temps de vigència
+
+
+IMPULSEU LA PRODUCTIVITAT
+Clipto està dissenyat per ser simple, i permet prendre notes amb:
+✔ Accions de notificació - accés a les notes més recents;
+✔ Accions contextuals - accés des de qualsevol aplicació activa;
+✔ Notes des del porta-retalls - deseu notes i utilitzeu-les des de l'historial;
+✔ Accions del porta-retalls - seleccioneu parts de notes i useu-les amb altres accions;
+✔ Compartiu accions - captureu notes de qualsevol text o arxiu;
+✔ Editor incorporat - creeu notes de text pla, markdown o HTML;
+✔ Accions d'un sol toc
+    • Text a veu
+    • Escriviu un email
+    • Escriviu un SMS
+    • Escriviu un tuit
+    • Creeu un esdeveniment al calendari
+    • Inseriu un contacte
+    • Cerqueu al web
+    • Cerqueu a la Viquipèdia
+    • Cerqueu a Youtube
+    • Traduïu amb Google
+    • Compartiu amb…
+    • Copieu al porta-retalls
+    • Envieu com codi QR
+    • Envieu com Txt
+    • Envieu com Pdf
+    • Envieu com markdown
+    • Obriu pàgina web
+    • Deseu email del contacte
+    • Deseu telèfon del contacte
+    • Marqueu número de telèfon
+
+
+IMPORTEU DES D'ALTRES APLICACIONS
+Heu demanat poder importar notes des d'altres aplicacions populars. Doncs ara s'admeten els següents formats:
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+• Clipboard Manager
+• Google Keep (zip)
+
+
+IMPULSEU-NE EL DESENVOLUPAMENT
+Totes les característiques són el resultat dels comentaris dels usuaris. Vosaltres useu l'aplicació i en guieu el desenvolupament amb la nostra ajuda:)
+Feu-ne la sol·licitud a Github - https://github.com/clipto-pro/Android
+
+
+TRADUÏU L'APLICACIÓ AL VOSTRE IDIOMA
+Gràcies a tots els col·laboradors que ens ajuden a concentrar-nos en les noves funcions!
+Si Clipto no s'ha traduït al vostre idioma (o parcialment, o malament) ajudeu-nos aquí - https://crowdin.com/project/clipto
+
+
+SIGUEU PART DE LA NOSTRA COMUNITAT
+Afegiu-vos a Reddit - https://www.reddit.com/r/cliptopro
+Seguiu-nos a Twitter - https://twitter.com/CliptoPro
+Compartiu a Facebook - https://www.facebook.com/cliptopro
+
+Gràcies!

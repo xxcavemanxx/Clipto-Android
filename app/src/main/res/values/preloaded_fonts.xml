@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/advent_pro</item>
+        <item>@font/alegreya</item>
+        <item>@font/amatic_sc</item>
+        <item>@font/amiri</item>
+        <item>@font/cairo</item>
+        <item>@font/caveat</item>
+        <item>@font/caveat_brush</item>
+        <item>@font/gabriela</item>
+        <item>@font/gfs_didot</item>
+        <item>@font/hind</item>
+        <item>@font/kurale</item>
+        <item>@font/mountains_of_christmas</item>
+        <item>@font/new_rocker</item>
+        <item>@font/noto_sans</item>
+        <item>@font/noto_serif</item>
+        <item>@font/oswald</item>
+        <item>@font/philosopher</item>
+        <item>@font/poppins</item>
+        <item>@font/raleway</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_mono</item>
+        <item>@font/source_code_pro</item>
+        <item>@font/work_sans</item>
+        <item>@font/open_sans</item>
+        <item>@font/montserrat</item>
+        <item>@font/ubuntu</item>
+        <item>@font/ubuntu_mono</item>
+        <item>@font/jetbrains_mono</item>
+        <item>@font/manrope</item>
+        <item>@font/rubik</item>
+    </array>
+</resources>

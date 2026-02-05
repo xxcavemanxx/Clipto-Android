@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/btn1"
+        style="@style/ButtonPassCode"
+        android:layout_marginStart="24dp"
+        android:text="1"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn2"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn2"
+        style="@style/ButtonPassCode"
+        android:text="2"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btn5"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn3"
+        style="@style/ButtonPassCode"
+        android:layout_marginEnd="24dp"
+        android:text="3"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="@+id/btn2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn4"
+        style="@style/ButtonPassCode"
+        android:text="4"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn5"
+        app:layout_constraintEnd_toStartOf="@+id/btn5"
+        app:layout_constraintStart_toStartOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="@+id/btn5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn5"
+        style="@style/ButtonPassCode"
+        android:text="5"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btn8"
+        app:layout_constraintEnd_toStartOf="@+id/btn6"
+        app:layout_constraintStart_toEndOf="@+id/btn4"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn6"
+        style="@style/ButtonPassCode"
+        android:text="6"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn5"
+        app:layout_constraintEnd_toEndOf="@id/btn3"
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintTop_toTopOf="@+id/btn5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn7"
+        style="@style/ButtonPassCode"
+        android:text="7"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn8"
+        app:layout_constraintEnd_toStartOf="@+id/btn8"
+        app:layout_constraintStart_toStartOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        app:layout_constraintTop_toTopOf="@+id/btn8"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn8"
+        style="@style/ButtonPassCode"
+        android:text="8"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn7"
+        app:layout_constraintBottom_toTopOf="@id/btn0"
+        app:layout_constraintEnd_toStartOf="@+id/btn9"
+        app:layout_constraintStart_toEndOf="@+id/btn7"
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn9"
+        style="@style/ButtonPassCode"
+        android:text="9"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn8"
+        app:layout_constraintEnd_toEndOf="@id/btn3"
+        app:layout_constraintStart_toEndOf="@+id/btn8"
+        app:layout_constraintTop_toTopOf="@+id/btn8"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/btn0"
+        style="@style/ButtonPassCode"
+        android:text="0"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn8"
+        app:layout_constraintStart_toStartOf="@id/btn8"
+        app:layout_constraintTop_toBottomOf="@id/btn8"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        style="@style/ButtonPassCode"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/btn0"
+        app:layout_constraintEnd_toEndOf="@id/btn9"
+        app:layout_constraintStart_toEndOf="@id/btn0"
+        app:layout_constraintTop_toTopOf="@id/btn0"
+        app:srcCompat="@drawable/ic_delete_code" />
+
+    <ImageView
+        android:id="@+id/btnTouchId"
+        style="@style/ButtonPassCode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/btn0"
+        app:layout_constraintEnd_toEndOf="@id/btn9"
+        app:layout_constraintStart_toEndOf="@id/btn0"
+        app:layout_constraintTop_toTopOf="@id/btn0"
+        app:srcCompat="@drawable/ic_touch_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

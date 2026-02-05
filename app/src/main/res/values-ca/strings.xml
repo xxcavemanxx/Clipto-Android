@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Nova línia</string>
+    <string name="common_separator_space">Espai</string>
+    <string name="common_separator_comma">Coma</string>
+    <string name="confirm_exit_edit_mode_title">Surt del mode d\'edició?</string>
+    <string name="confirm_exit_edit_mode_description">Es perdran tots els canvis no desats.</string>
+    <string name="confirm_delete_note_title">Voleu eliminar la nota?</string>
+    <string name="confirm_delete_note_description">La nota seleccionada s\'esborrarà.</string>
+    <string name="link_preview_label">Carrega vista prèvia…</string>
+    <string name="link_preview_not_found">Sense vista preliminar</string>
+    <string name="link_preview_hide">Amaga vista prèvia</string>
+    <string name="link_preview_show">Mostra vista prèvia</string>
+    <string name="toast_downloaded">Descarregat %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Per sortir, premeu `Enrere` de nou</string>
+    <string name="essentials.errors.unknown">Error desconegut. Sisplau, intentau-ho novament</string>
+    <string name="error_data_empty">No s\'han trobat dades.</string>
+    <string name="error.unexpected">S\'ha produït un error inesperat</string>
+    <string name="error.unexpected.send">Clic en el botó \"Bug\" per comunicar un error</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Valora</string>
+    <string name="menu.edit">Edita</string>
+    <string name="menu.clear">Elimina</string>
+    <string name="menu.clear_all">Esborra-ho tot</string>
+    <string name="menu.share">Comparteix</string>
+    <string name="menu.fav">Favorits</string>
+    <string name="menu.delete">Esborra</string>
+    <string name="menu.empty">Buida</string>
+    <string name="menu.cancel">Cancel·la</string>
+    <string name="menu.settings">Configuració</string>
+    <string name="menu.display_options">Opcions de visualització</string>
+    <string name="menu.faq">Preguntes freqüents.</string>
+    <string name="menu.new">Nou</string>
+    <string name="menu.search">Cerca</string>
+    <string name="menu.print">Imprimeix</string>
+    <string name="menu.restore">Restaura</string>
+    <string name="menu.merge">Combina</string>
+    <string name="menu.copy_link">Copia l\'enllaç públic</string>
+    <string name="menu.share_link">Comparteix l\'enllaç públic</string>
+    <string name="menu.save_as">Anomena i desa…</string>
+    <string name="menu.rename">Canvia el nom</string>
+    <string name="menu.paste">Enganxa</string>
+    <string name="menu.copy">Copia</string>
+    <string name="menu.cut">Retalla</string>
+    <string name="menu.fullscreen.enter">Entra a la pantalla completa</string>
+    <string name="menu.fullscreen.exit">Surt de la pantalla completa</string>
+    <string name="menu_close">Tanca</string>
+    <string name="button.update">Actualitza</string>
+    <string name="button.install">Instal·la</string>
+    <string name="button.uninstall">Desinstal·la</string>
+    <string name="button.done">Fet</string>
+    <string name="button.undo">Desfés</string>
+    <string name="button.apply">Aplica</string>
+    <string name="button.change">Canvia</string>
+    <string name="button.save">Desa</string>
+    <string name="button.create">Crea</string>
+    <string name="button.send">Envia</string>
+    <string name="button.preview">Vista prèvia</string>
+    <string name="button.confirm">Confirma</string>
+    <string name="button.sync">Sincronitza ara</string>
+    <string name="button.yes">Sí</string>
+    <string name="button.no">No</string>
+    <string name="button.back">Torna</string>
+    <string name="button.continue">Continua</string>
+    <string name="button.finish">Acaba</string>
+    <string name="button.got_it">Entesos!</string>
+    <string name="button.get_started">Comença</string>
+    <string name="button.example">Exemple</string>
+    <string name="button_try_again">Torneu-ho a intentar</string>
+    <string name="button_insert">Insereix</string>
+    <string name="button_refresh">Recarregar</string>
+    <string name="notification.title.empty">Porta-retalls buit</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Torna</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Abreviatura</string>
+    <string name="common.label.description">Descripció</string>
+    <string name="common.action.confirm">Confirma aquesta acció</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Etiqueta nova</string>
+    <string name="tag.new.name">Nom de l\'etiqueta</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Mou a la carpeta</string>
+    <!-- MAIN -->
+    <string name="main.search">Cerca a les notes</string>
+    <string name="main.filter.all">Totes</string>
+    <string name="main.filter.no_tags">Sense etiquetar</string>
+    <string name="main.filter.filtered">Filtrades</string>
+    <string name="main.delete_selected.title">Esborrar seleccionada(es)?</string>
+    <string name="main.delete_selected.description">S\'esborraran totes les notes seleccionades.</string>
+    <string name="main.delete_merged.title">Esborrar notes seleccionades?</string>
+    <string name="main.delete_merged.description">Les notes s\'esborraran permanentment.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Sense notes.</string>
+    <string name="main.list.empty.caption">Nota: cada categoria té el seu ordre propi i altres possibles ajustaments. Podeu canviar-ne la configuració en qualsevol moment des de la llista (%s) o des del panell de navegació esquerre (%s).</string>
+    <string name="main.list.empty.caption.three_dot">menú de tres puntets</string>
+    <string name="main.list.empty.caption.long_tap">toc llarg en la categoria</string>
+    <string name="main.list.empty.description.all">Categoria general. Mostra les notes sense filtrar.</string>
+    <string name="main.list.empty.description.no_tags">Mostra les notes que no tenen etiquetes.</string>
+    <string name="main.list.empty.description.tags">Mostra notes i arxius marcats amb l\'etiqueta seleccionada.</string>
+    <string name="main.list.empty.description.filtered">S\'han filtrat les notes sense que s\'hagi trobat res.</string>
+    <string name="main.list.empty.description.starred">Mostra notes marcades amb l\'estrella.</string>
+    <string name="main.list.empty.description.deleted">Mostra notes i arxius que s\'han esborrat però que encara es poden recuperar. Els registres esborrats mantenen les etiquetes i altres atributs, però no estan disponibles en les categories corresponents.</string>
+    <string name="main.list.empty.description.clipboard">Mostra notes creades automàticament des del porta-retalls. Per defecte, el contingut del porta-retalls no es registra, però es pot activar en la configuració.</string>
+    <string name="main.list.empty.description.snippets">Mostra notes usades en altres notes. Qualsevol canvi en el text es reflecteix automàticament en les altres notes.</string>
+    <string name="main.filter.snippets">Fragments</string>
+    <string name="main.filter.filters">Filtres</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Fitxers</string>
+    <string name="main.filter.notes">Notes</string>
+    <string name="main.filter.tags">Etiquetes</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Recorda la darrera acció</string>
+    <string name="main_action_settings_remember_description">Quan s\'activa, l\'aplicació recorda la darrera acció i la fa servir el proper cop que es fa clic al Botó Flotant. A la vegada, es pot obrir una finestra amb una llista de totes les accions fent un toc llarg en el Botó Flotant.</string>
+    <string name="main_action_folders_move_note_title">Nota existent</string>
+    <string name="main_action_folders_move_note_description">Mou una nota existent a aquesta carpeta</string>
+    <string name="main_action_folders_move_file_title">Fitxer existent</string>
+    <string name="main_action_folders_move_file_description">Mou un fitxer existent a aquesta carpeta</string>
+    <string name="main_action_notes">Crear notes</string>
+    <string name="main_action_notes_new_title">Nova nota</string>
+    <string name="main_action_notes_new_description">Desar informació de text important i accedir-hi instantàniament en qualsevol moment des de qualsevol dispositiu</string>
+    <string name="main_action_notes_barcode_title">Escanejar codi de barres</string>
+    <string name="main_action_notes_barcode_description">Escanejar enllaços o text i desar-los com a una nota (s\'admeten la majoria de formats de codi de barres)</string>
+    <string name="main_action_notes_clipboard_title">Copiar des del porta-retalls</string>
+    <string name="main_action_notes_clipboard_description">Copiar el text actual del porta-retalls i desar-lo com a una nota</string>
+    <string name="main_action_notes_import_title">Importar des d\'un fitxer</string>
+    <string name="main_action_notes_import_description">Crear una nota amb text d\'un fitxer (tamany màxim %s kB)</string>
+    <string name="main_action_notes_import_error">El fitxer no pot passar de %s kilobytes</string>
+    <string name="main_action_files">Adjuntar fitxers</string>
+    <string name="main_action_files_file_title">Escollir arxiu</string>
+    <string name="main_action_files_file_description">Afegir qualsevol fitxer (foto, vídeo, pdf, etc.) d\'un màxim de %s MB</string>
+    <string name="main_action_files_photo_title">Fer foto</string>
+    <string name="main_action_files_photo_description">Fer una foto i desar-la a una nota</string>
+    <string name="main_action_files_record_title">Enregistrar vídeo</string>
+    <string name="main_action_files_record_description">Enregistrar un vídeo i desar-lo a una nota (tamany màxim %s MB)</string>
+    <string name="main_action_organize">Organitzar dades</string>
+    <string name="main_action_organize_tag_title">Etiqueta nova</string>
+    <string name="main_action_organize_tag_description">Crear una etiqueta que organitzi les notes i arxius per trobar-los més fàcilment</string>
+    <string name="main_action_organize_filter_title">Nou filtre</string>
+    <string name="main_action_organize_filter_description">Crear un filtre per trobar ràpidament la informació desitjada fent servir plantilles de cerca</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Reduïr tecleig repetitiu</string>
+    <string name="main_action_snippets_snippet_title">Fragment nou</string>
+    <string name="main_action_snippets_snippet_description">Crear una plantilla de text per evitar errors i tecleig repetitiu</string>
+    <string name="main_action_snippets_set_title">Nou joc de fragments</string>
+    <string name="main_action_snippets_set_description">Crear un joc de fragments per trobar-los més ràpidament</string>
+    <string name="main.actions.save_and_start_new_note">Desa i comença una nova nota</string>
+    <string name="main.actions.add_dynamic_value">Afegeix valor dinàmic</string>
+    <string name="main.actions.add_attachment">Afegeix un fitxer adjunt</string>
+    <string name="main.actions.sync_note">Sincronitza una nota</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Llisca a l\'esquerra</string>
+    <string name="main.swipe_actions.caption.right">Llisca a la dreta</string>
+    <string name="main.swipe_actions.fav">Marca amb l\'estrella</string>
+    <string name="main.swipe_actions.delete">Esborra</string>
+    <string name="main.swipe_actions.copy">Copia</string>
+    <string name="main.swipe_actions.none">Res</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Cerca avançada</string>
+    <string name="filter.hint.text">El text conté</string>
+    <string name="filter.label.no_tags">Sense etiquetar</string>
+    <string name="filter.label.fav">Destacades</string>
+    <string name="filter.label.platform">Plataforma</string>
+    <string name="filter.label.snippets">Fragments</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Notes del porta-retalls</string>
+    <string name="filter.clipboard.empty.title">Esborrar les notes del porta-retalls?</string>
+    <string name="filter.clipboard.empty.description">S\'esborraran permanentment totes les notes del porta-retalls (excepte les destacades i les etiquetades).</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Paperera de reciclatge</string>
+    <string name="filter.deleted.limit">Límit</string>
+    <string name="filter.deleted.empty.title">Buidar la paperera de reciclatge?</string>
+    <string name="filter.deleted.empty.description">S\'esborraran permanentment totes les notes a la paperera de reciclatge.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Límit</string>
+    <string name="filter.limit.description">Quan el nombre de notes superi el límit, les notes antigues s\'esborraran automàticament.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Nom del filtre</string>
+    <string name="filter_error_name_required">El filtre ha de tenir un nom únic</string>
+    <string name="filter_delete_title">Esborrar el filtre \'%s\'?</string>
+    <string name="filter_delete_description">El filtre s\'esborrarà permanentment.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">L\'etiqueta ha de tenir un nom únic</string>
+    <string name="filter.tag.rule.title">Regla d\'autoassignació</string>
+    <string name="filter.tag.rule.description">Si s\'activa, s\'assigna automàticament l\'etiqueta a notes noves que contenguin qualsevol de les paraules separades per comes.</string>
+    <string name="filter.tag.rule.hint">Paraules separades per comes</string>
+    <string name="filter.tag.delete.title">Esborrar l\'etiqueta \'%s\'?</string>
+    <string name="filter.tag.delete.description">L\'etiqueta s\'esborrarà permanentment.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Afegeix</string>
+    <string name="clip.hint.title">Sense títol</string>
+    <string name="clip.hint.tags">Toqueu per afegir etiqueta</string>
+    <string name="clip.hint.text">Toqueu per afegir text</string>
+    <string name="clip.snackbar.text.required">Cal emplenar la nota</string>
+    <string name="clip.snackbar.text.copied">Text copiat</string>
+    <string name="clip.attr.updated">Fet servir el</string>
+    <string name="clip.attr.edited">Editat el</string>
+    <string name="clip.attr.created">Creat el</string>
+    <string name="clip.attr.deleted">Esborrat el</string>
+    <string name="clip.attr.usageCount">Vegades utilitzat</string>
+    <string name="clip.attr.charsCount">Caràcters</string>
+    <string name="clip.attr.size">Mida</string>
+    <string name="clip_exit_without_save_title">Cancel·lar l\'edició de la nota?</string>
+    <string name="clip_exit_without_save_description">Es perdran tots els canvis.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Desa com</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">General</string>
+    <string name="clip_details_tab_tags">Etiquetes</string>
+    <string name="clip_details_tab_folder">Ubicació</string>
+    <string name="clip_details_tab_attachments">Adjunts</string>
+    <string name="clip_details_tab_dynamic">Valors dinàmics</string>
+    <string name="clip_details_tab_snippets">Fragments</string>
+    <string name="clip_details_tab_snippet_kits">Jocs de fragments</string>
+    <string name="clip_details_tab_dynamic_values">Valors</string>
+    <string name="clip_details_tab_dynamic_fields">Camps</string>
+    <string name="clip_details_tab_attributes">Atributs</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Fica el text en una nota</string>
+    <string name="clip.info.label.note.insert.remember">Recorda les meves preferències i no ho tornis a demanar (s\'accedirà al panell amb un toc llarg).</string>
+    <string name="clip.info.label.note.create">Crea una nota</string>
+    <string name="clip.info.label.position">Posició</string>
+    <string name="clip.info.label.beginning">A l\'inici</string>
+    <string name="clip.info.label.end">Al final</string>
+    <string name="clip.info.label.tags.edit">Edita etiquetes</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Text simple</string>
+    <string name="clip.text.type.link">Text amb enllaços</string>
+    <string name="clip.text.type.line_clickable">Text amb línies copiades</string>
+    <string name="clip.text.type.word_clickable">Text amb caràcters copiats</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Adjunt</string>
+    <string name="clip.add.attachment.tooltip">Un adjunt pot ser qualsevol arxiu (fot, vídeo, pdf, etc.) no major de %s megabits.</string>
+    <string name="clip.add.dynamic.title">Valor dinàmic</string>
+    <string name="clip.add.dynamic.tooltip">Un valor dinàmic és una forma de crear notes amb dades sempre actualitzades. En el mode de vista, el marcador inserit se substitueix pel valor real.</string>
+    <string name="clip.add.dynamic.value.date_time">Data/Hora</string>
+    <string name="clip.add.dynamic.value.platform">Plataforma</string>
+    <string name="clip.add.dynamic.value.ip">Adreça Ip</string>
+    <string name="clip.add.dynamic.value.date">Data</string>
+    <string name="clip.add.dynamic.value.time">Hora</string>
+    <string name="clip.add.dynamic.value.month">Mes</string>
+    <string name="clip.add.dynamic.value.timezone">Zona horària</string>
+    <string name="clip.add.dynamic.value.month_number">Nombre del mes</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Nombre del mes (començant per zero)</string>
+    <string name="clip.add.dynamic.value.year">Any</string>
+    <string name="clip.add.dynamic.value.year_short">Any (dos dígits)</string>
+    <string name="clip.add.dynamic.value.hour24">Hora (24 hores)</string>
+    <string name="clip.add.dynamic.value.hour12">Hora (12 hores)</string>
+    <string name="clip.add.dynamic.value.minutes">Minuts</string>
+    <string name="clip.add.dynamic.value.seconds">Segons</string>
+    <string name="clip.add.dynamic.value.am_pm">AM/PM</string>
+    <string name="clip.add.dynamic.value.day_of_week">Dia de la setmana</string>
+    <string name="clip.add.dynamic.value.day_of_month">Dia del mes</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Dia del mes (amb dos dígits)</string>
+    <string name="clip.add.dynamic.value.random_digit">Xifra aleatòria (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Caràcter alfabètic aleatori (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Fragment</string>
+    <string name="clip.add.snippet.new.hint">Introduïu el text per cercar o crear</string>
+    <string name="clip.add.snippet.tooltip">Els fragments són qualsevol nota el text de la qual podeu reutilitzar en una altra nota, però editant-lo en una. S\'accedeix als fragments creats des de la navegació de l\'esquerra.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Tipus de text</string>
+    <string name="text.config.size">Mida del text</string>
+    <string name="text.config.font">Font del text</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Ordenat per</string>
+    <string name="list.config.lines">Línies de text visibles</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Estil de llista</string>
+    <string name="list.style.description">Estil de la llista de notes</string>
+    <string name="list.style.default">Predeterminat</string>
+    <string name="list.style.comfortable">Còmode</string>
+    <string name="list.style.compact">Compacte</string>
+    <string name="list.style.preview">Vista prèvia</string>
+    <string name="list.style.grid">Graella</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Runes de millora</string>
+    <string name="runes.hint.description"><![CDATA[    Això és una manera de millorar les funcionalitats de l\'aplicació.
+    \n\n
+    Cada runa augmenta o modifica la funcionalitat bàsica i permet personalitzar l\'aplicació per poder ser-ne més productiu.
+    \n\n
+    Algunes runes són més útils, altres no tant, però aquesta funcionalitat dona possibilitats gairebé il·limitades a l\'aplicació.
+    \n\n
+    Proveu les runes existents, activeu-ne les que vulgueu, i suggeriu-ne idees per a noves per poder fer que l\'aplicació sigui més productiva:)
+    ]]></string>
+    <string name="runes_hotkeys_title">Hotkey Observer</string>
+    <string name="runes_hotkeys_description"><![CDATA[    Amb aquesta runa podeu configurar dreceres de teclat per controlar l\'aplicació i les seves accions.
+    \n
+    \n
+    Algunes dreceres estan predeterminades. Podeu esborrar-les o reassignar-les.
+    \n
+    \n
+    ```
+    \n
+    Segons l\'acció, la drecera serà monitoritzada dins de l\'aplicació o bé globalment des de fora.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Astral Sync</string>
+    <string name="runes.instant_sync.description"><![CDATA[    La runa permet:
+    \n
+    - Desar automàticament totes les dades en el núvol;
+    \n
+    - Accedir-ne instantàniament des d\'un altre dispositiu;
+    \n
+    - Desar no només notes, sinó també arxius de tot tipus;
+    \n\n
+    Per defecte; l\'aplicació funciona sense sincronització i desa les dades en el dispositiu.
+    \n
+    ```
+    \n
+    Un cop activada aquesta runa, totes les dades noves i anteriors se sincronitzaran en el núvol tan aviat com estigui disponible la connexió a Internet.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Iron Shield</string>
+    <string name="runes.pincode.description"><![CDATA[    La runa permet protegir l\'accés a l\'aplicació amb una contrasenya.
+    \n\n
+    Quan s\'activa, l\'accés es bloqueja després de **%s minuts** d\'inactivitat.
+    \n\n
+    **Important:** si oblideu la contrasenya, haureu de desinstal·lar i tornar a instal·lar l\'aplicació. En aquest cas, es perdran tots els canvis no sincronitzats.
+    ]]></string>
+    <string name="runes.theme.title">Chameleon Skin</string>
+    <string name="runes.theme.description"><![CDATA[    Per defecte, l\'aplicació utilitza un esquema de color que canvia automàticament entre clar i fosc, segons les preferències del sistema.
+    \n\n
+    Podeu activar-ne un altre que apareixi igual amb independència de les preferències del sistema.
+    ]]></string>
+    <string name="runes.clipboard.title">Clipboard</string>
+    <string name="runes.clipboard.description"><![CDATA[    La runa permet monitoritzar el porta-retalls i crear automàticament notes amb el seu text.
+    \n\n
+    Un cop activada, l\'aplicació mostrarà una notificació permanent en la barra d\'estat per permetre controlar el buffer.
+    \n\n
+    ```
+    \n
+    Si la notificació no apareix, l\'aplicació no està funcionant i no es farà un seguiment del buffer fins que no torneu a engegar l\'aplicació.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Keyboard Companion</string>
+    <string name="runes.texpander.description"><![CDATA[    Aquesta runa permet utilitzar l\'aplicació per omplir camps d\'introducció de text amb notes existents en gairebé **qualsevol aplicació**.
+    \n\n
+    Un cop activada, quan es fixa el focus en un camp d\'introducció de text, l\'aplicació mostra un panell flotant amb accions que us permeten controlar-ne el contingut.
+    \n\n
+    ####Comportament:
+    \n
+    - El panell es pot redimensionar.
+    \n
+    - El panell pot arrossegar-se a qualsevol lloc de la pantalla.
+    \n
+    - El panell es pot modificar automàticament d\'acord amb la possibilitat d\'emprar determinades accions.
+    \n
+    - El panell pot ocultar-se automàticament si es lleva el focus del camp.
+    \n
+    - El panell es pot amagar manualment (utilitzant l\'acció de la part superior dreta de la barra d\'eines) fins que novament s\'activi.
+    \n
+    - Si el panell no es mostra, se\'l pot activar des del Panell de Notificació o des de la Configuració Ràpida (si l\'opció apareix en el panell).
+    \n\n
+    ####Limitacions tècniques:
+    \n
+    - El panell utilitza el servei d\'accessibilitat i cal que sigui activat en la configuració del sistema.
+    \n
+    - El panell fa servir una pantalla flotant per mostrar-se per damunt d\'altres aplicacions i exigeix el corresponent permís en les preferències del sistema.
+    \n
+    - En certes aplicacions, el comportament automàtic no és possible, i per això podria usar-se amb restriccions i amb activació expressa.
+    \n\n
+    ####Avís:
+    \n
+    Si la runa s\'atura de funcionar després d\'una estona, sisplau llegiu [aquest article](%s) sobre com mantenir l\'aplicació en marxa en el vostre dispositiu. O contacteu amb mi per email, tal volta heu trobat una errada:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Activa</string>
+    <string name="runes.texpander.required.accessibility">Premeu aquí, després aneu a serveis Descarregats (instal·lats) i activeu el servei Keyboard Companion.</string>
+    <string name="runes.texpander.required.floating">Premeu aquí, després aneu a Altres permisos, i activeu el de Finestra emergent.</string>
+    <string name="runes.texpander.action.copy">Copia al porta-retalls</string>
+    <string name="runes.texpander.action.show">Premeu aquí per mostrar el panell flotant.</string>
+    <string name="runes.texpander.action.insert">Insereix</string>
+    <string name="runes.texpander.action.replace">Substitueix</string>
+    <string name="runes.texpander.hint.hide">Oculta fins que s\'activi des del Panell de Notificació o des de la Configuració Rápida.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">The Oculus</string>
+    <string name="runes.link_preview.description"><![CDATA[    Quan s\'activa aquesta runa, l\'aplicació intenta carregar la vista prèvia dels **enllaços http** desats en mode de vista de nota.
+    \n\n
+    En tal cas:
+    \n
+    - La imatge prèvia es pot obrir en una finestra separada i fer-ne zoom;
+    \n
+    - Si l\'enllaç és un vídeo, es pot reproduir amb l\'aplicació;
+    ]]></string>
+    <string name="runes.auto_save.title">Point of No Return</string>
+    <string name="runes.auto_save.description"><![CDATA[    Per defecte, quan es crea o edita una nota, heu de fer clic en el botó de desar per confirmar els canvis.
+    \n
+    \n
+    Amb aquesta runa, l\'aplicació desa automàticament tots els canvis fets.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Revive</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    Amb aquesta runa, en iniciar-se, l\'aplicació restaura el darrer filtre actiu de l\'anterior sessió.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Swipe Power</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    Amb aquesta runa, en la llista de notes, podeu establir-ne accions que s\'activen amb gestos de lliscar.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Shifted Focus</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    Per defecte, quan creeu una nota, el focus s\'estableix en el camp d\'introducció de text.
+    \n\n
+    Podeu fer servir aquesta runa per canviar aquest comportament i fixar el focus en qualsevol altre camp.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Blowing Copy</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    Quan s\'activa la runa, tota acció de copiar text dins Clipto (tret de les accions contextuals en els camps d\'introducció de text) oculta l\'aplicació.
+    \n
+    \n
+    Aquesta runa permet reduir el nombre de passos quan enganxeu text copiat fora de l\'aplicació.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Tentative Steps</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Amb aquesta runa, podeu activar certes accions amb un clic doble en comptes d\'un únic clic.
+    \n
+    \n
+    Aquest comportament pot ser útil per prevenir clics no desitjats.
+    ]]></string>
+    <string name="runes.loyalty.title">Inspiring Support</string>
+    <string name="runes.loyalty.description"><![CDATA[    Sense el vostre suport i suggerències, el producte no evoluciona en la direcció desitjada pels usuaris.
+    \n\n
+    >**Si teniu un minut**, no us oblideu de qualificar-nos en Google Play.
+    \n
+    \n
+    >**Si teniu més temps, i la traducció no us sembla correcta** - afegiu-vos al nostre projecte de localització.
+    \n
+    \n
+    >**Si trobeu errades, voleu més runes o només escriure\'ns** -el nostre email i la pàgina de github es troben sempre al vostre servei.
+    ]]></string>
+    <string name="runes.backup_restore.title">Time Machine</string>
+    <string name="runes.backup_restore.description"><![CDATA[    Juntament amb la sincronització en núvol, podeu desar còpies de seguretat manualment i recuperar-les més tard.
+    \n\n
+    A diferència de la sincronització en núvol, aquest mètode permet:
+    \n
+    - Prendre una instantània de totes les dades en un moment determinat;
+    \n
+    - Gestionar personalment la còpia de seguretat i el procés de recuperació;
+    \n
+    - Recuperar les dades a partir de la instantània presa;
+    \n\n
+    ```
+    \n
+    Restaura des d\'un arxiu d\'una manera suau. És a dir, les dades existents no s\'esborren, sinó que s\'afegeixen a les dades noves.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Configuració</string>
+    <string name="settings.campaign.rate.title">La vostra opinió importa</string>
+    <string name="settings.campaign.rate.message">Trigarà menys d\'un minut, però ens ajudarà a millorar.</string>
+    <string name="settings.campaign.rate.button">Valoreu-nos a Google Play</string>
+    <string name="settings.campaign.rate.question">Com ha estat l\'experiència amb Clipto?</string>
+    <string name="settings.campaign.rate.feedback.title">Comentaris</string>
+    <string name="settings.campaign.rate.feedback.message">Com podem millorar Clipto? La vostra opinió és molt important.</string>
+    <string name="settings.campaign.rate.feedback.toast">Podeu deixar un comentari positiu a Google Play? Gràcies pel vostre suport!</string>
+    <string name="settings.campaign.share.title">Porta un amic i reb una recompensa!</string>
+    <string name="settings.campaign.share.more">Més informació</string>
+    <string name="settings.campaign.share.action">Comparteix l\'enllaç</string>
+    <string name="settings.group.clipboard">Porta-retalls</string>
+    <string name="settings.group.behavior">Opcions</string>
+    <string name="settings.group.appearance">Aparença</string>
+    <string name="settings.group.backup">Còpia de seguretat i recuperació</string>
+    <string name="settings.group.security">Privacitat &amp; seguretat</string>
+    <string name="settings.group.runes">Runes</string>
+    <string name="settings.link_preview.title">Vista prèvia dels enllaços</string>
+    <string name="settings.auto_save.title">Sincronitza notes automàticament</string>
+    <string name="settings.auto_save.description">Clipto desa automàticament els canvis quan es creen o s\'editen notes.</string>
+    <string name="settings.focus_on_title.title">Centrar-se en el títol quan es creï una nota</string>
+    <string name="settings.focus_on_title.description">Quan es crea una nota, el focus es fixa en el camp de títol</string>
+    <string name="settings.track_clipboard.title">Notes del porta-retalls</string>
+    <string name="settings.track_clipboard.description">L\'app crearà continuament notes dels canvis del porta-retalls. En la barra d\'estat apareixerà una notificació permanent.</string>
+    <string name="settings.track_clipboard.q.message">A partir d\'Android Q, per prendre notes del porta-retalls utilitzeu el nou mètode.</string>
+    <string name="settings.track_clipboard.q.description">A partir d\'Android Q, si una app no s\'executa en primer pla, no té accés a les dades del porta-retalls.</string>
+    <string name="settings.track_clipboard.q.solution.title">Per evitar aquesta restricció, hi ha dues solucions:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">Acció \'Clipto…\' en lloc de \'Copia\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Quan seleccioneu text per copiar, utilitzeu \'Clipto…\' en lloc de \'Copia\', si està disponible al menú contextual de l\'app.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Acció \'Copia\' normal en combinació amb \'Enganxa\' en l\'àrea de notificacions</string>
+    <string name="settings.track_clipboard.q.solution.2">Si \'Clipto…\' no està disponible, o si tanmateix voleu usar \'Copia\', no us oblideu de clicar \'Enganxa\' en la notificació per prendre una nota del contingut del porta-retalls.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Acció \'Copia\' normal com era abans d\'Android Q</string>
+    <string name="settings.track_clipboard.q.solution.3">Aquesta solució requereix fer una configuració avançada en l\'app mitjançant un ordinador. Per fer que Clipto torni a funcionar, executeu les següents instruccions ADB en l\'ordinador:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Després d\'executar amb èxit hauríeu de veure una acció addicional en les notificacions de l\'app que us permet activar/desactivar la monitorització del porta-retalls. Aquesta advertència també desapareixerà de la configuració.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Emula l\'acció de copiar</string>
+    <string name="settings.track_clipboard.q.emulate.description">Les accions \'Clipto…\' i \'Enganxa\' crearan automàticament notes del text seleccionat o copiat, i el posaran en el portapapers si el seu contingut és diferent.</string>
+    <string name="settings.universal_clipboard.title">Porta-retalls universal</string>
+    <string name="settings.universal_clipboard.description">Qualsevol text copiat al porta-retalls se sincronitzarà en tots els dispositius. També s\'afegirà automàticament al porta-retalls quan s\'activi aquesta opció.</string>
+    <string name="settings.notification_style.title">Estil de les notificacions</string>
+    <string name="settings.notification_style.description">Estil de les notificacions permanents de la barra d\'estat.</string>
+    <string name="settings.notification_sound.title">Silencia les notificacions</string>
+    <string name="settings.notification_sound.description">Silencia les notificacions, llevat dels sons o vibracions configurats per a les notificacions o en el canal de notificacions.</string>
+    <string name="settings.hide_on_click.title">Amagar després de copiar</string>
+    <string name="settings.hide_on_click.description">L\'app s\'amagarà després de copiar una nota.</string>
+    <string name="settings.restore_filter.title">Recordar el darrer filtre</string>
+    <string name="settings.restore_filter.description">L\'app s\'obrirà amb el filtre de la darrera sessió.</string>
+    <string name="settings.pin_starred.title">Notes destacades</string>
+    <string name="settings.pin_starred.description">Les notes amb estrella es mostren primer en la llista, amb independència del filtre seleccionat.</string>
+    <string name="settings.theme.title">Tema</string>
+    <string name="settings.theme.description">Trieu esquemes de color personalitzats.</string>
+    <string name="settings.backup.title">Desa a un fitxer</string>
+    <string name="settings.backup.description">Exporta les notes a un fitxer.</string>
+    <string name="settings.restore.title">Recupera des d\'un arxiu</string>
+    <string name="settings.restore.description">Recupera notes d\'un arxiu (formats admesos: %s).</string>
+    <string name="settings.startup.title">Inici automàtic</string>
+    <string name="settings.startup.description">Permetre que l\'app s\'executi després de l\'inici del sistema.</string>
+    <string name="settings.language.title">Idioma</string>
+    <string name="settings.swipe_actions.title">Accions en lliscar</string>
+    <string name="settings.swipe_actions.description">Configurar les accions en lliscar per actuar ràpidament sobre les notes de la llista principal.</string>
+    <string name="settings.double_click.title">Accions de doble clic</string>
+    <string name="settings.double_click.description">Configurar accions executables només amb un doble clic.</string>
+    <string name="settings.double_click.action.exit">Botó tornar per sortir de l\'app</string>
+    <string name="settings.double_click.action.delete">Esborra nota</string>
+    <string name="settings.double_click.action.edit">Editar nota</string>
+    <string name="settings.double_click.toast">Clic un altre cop per completar</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">No mostris notes modificades</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Les notes amb un atribut assignat (etiqueta, favorit, títol, fragment) no es mostren en la categoria \'Notes des del porta-retalls\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">No mostris cap advertència sobre les restriccions del porta-papers</string>
+    <string name="settings.clipboard.ignore_q_warning.description">Si l\'aplicació funciona bé amb el porta-retalls, activeu aquest commutador per llevar de les notificacions l\'avís de les restriccions funcionals.</string>
+    <string name="settings.security.passcode.title">Codi d\'accés</string>
+    <string name="settings.security.passcode.description">Quan establiu un codi d\'accés, l\'app es tanca després de %s minuts d\'inactivitat.\n\nNota: si perdeu el codi, haureu d\'esborrar i reinstal·lar l\'app. Es perdran tots els canvis no sincronitzats.</string>
+    <string name="settings.security.fingerprint.title">Desbloqueja amb empremta</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Omet</string>
+    <string name="auth.set_passcode.label.set_passcode">Establiu un codi de seguretat per accedir a l\'app</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Torneu a introduir el codi d\'accés</string>
+    <string name="auth.set_fingerprint.title">Establiu Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Voleu utilitzar l\'empremta digital per desbloquejar l\'app?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Utilitza l\'empremta</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Omet per ara</string>
+    <string name="auth.fingerprint.touch_sensor">Confirma l\'empremta per continuar</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Introduïu el codi d\'accés actual</string>
+    <string name="change_passcode.set_new">Creeu un nou codi d\'accés</string>
+    <string name="change_passcode.reenter">Torneu a introduir el codi d\'accés</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Suport</string>
+    <string name="about.label.email.support.message">ESCRIVIU EL VOSTRE MISSATGE AQUÍ</string>
+    <string name="about.label.rate">Valoreu-nos a Google Play</string>
+    <string name="about.label.issue">Notificar un error</string>
+    <string name="about.label.translate">Ajudeu-nos amb la traducció</string>
+    <string name="about.label.changelog">Registre de canvis</string>
+    <string name="about.label.campaign.rate">Ajudeu-nos a millorar!</string>
+    <string name="about.label.campaign.share">Compartiu l\'enllaç</string>
+    <string name="about.label.campaign.share.description">%s persones s\'han unit a l\'app mitjançant el vostre enllaç.</string>
+    <string name="about.label.other">El que diuen de nosaltres</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Inicieu sessió per desar les notes i mantenir-les sincronitzades en tots els dispositius.</string>
+    <string name="account.title.required_authorization">Cal autorització</string>
+    <string name="account.description.required_authorization">Heu d\'estar autoritzat per executar aquesta acció</string>
+    <string name="account.title.authorized">Autoritzat</string>
+    <string name="account.button.sign_in">Inicia sessió</string>
+    <string name="account.button.sign_out">Tanca sessió</string>
+    <string name="account.dialog.sign_out.title">Tancant sessió</string>
+    <string name="account.dialog.sign_out.message">Voleu tancar la sessió? Es perdran així totes les dades no sincronitzades.</string>
+    <string name="account.plan.personal">Llicència personal</string>
+    <string name="account.plan.subscription">Pla de subscripció (sincronitza %s notes)</string>
+    <string name="account.plan.contributor">Pla del col·laborador (sincronitza %s notes)</string>
+    <string name="account.plan.yearly">Pla anual (sincronitza %s notes)</string>
+    <string name="account.plan.monthly">Pla mensual (sincronitza %s notes)</string>
+    <string name="account.plan.free">Pla gratuït (sincronitza %s notes)</string>
+    <string name="account.toolbar.title">Compte</string>
+    <string name="account.sync.title">Sincronitza notes automàticament</string>
+    <string name="account_rebuild_index_title">Refes l\'índex de dades</string>
+    <string name="account_rebuild_index_description">Si veieu diferents dades (etiquetes, arxius, notes, etc.) en dispositius distints, es recomana executar aquest procediment. Cal que torneu a registrar-vos quan el procediment s\'hagi completat.</string>
+    <string name="account_delete_title">Elimina el compte</string>
+    <string name="account_delete_confirm_title">Segur que vols eliminar el teu compte?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATENCIÓ! Si decidiu eliminar aquest compte, tant ell com les vostres dades personals     s\'esborraran de forma permanent i irreversible. Sisplau, assegureu-vos que no hi teniu informació valuosa.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">N\'esteu segurs?</string>
+    <string name="account_delete_confirm_again_description">Un cop confirmat, totes les dades del vostre compte s\'esborraran permanentment.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Gratis</string>
+    <string name="account.sync.plan.title">Sincronitza %s notes</string>
+    <string name="account.sync.plan.toolbar">Seleccioneu un pla</string>
+    <string name="account.sync.plan.button.active">Activa el pla</string>
+    <string name="account.sync.plan.button.select">Selecciona el pla</string>
+    <string name="account.sync.plan.button.change">Canvia el pla</string>
+    <string name="account.sync.plan.button.upgrade">Actualitza</string>
+    <string name="account.sync.plan.caption">Comenceu gratis, pagueu després només per les dades sincronitzades.</string>
+    <string name="account.sync.plan.hint">Nombre de notes que podeu sincronitzar entre dispositius (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Nombre il·limitat de notes sense sincronitzar.</string>
+    <string name="account.sync.plan.benefit.sync">Sincronitzeu %s notes entre els vostres dispositius.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">La sincronització ha superat el límit màxim</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">El nombre total de notes, incloent-hi la paperera, és de %s, que supera el límit màxim de %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Reduïu el nombre de notes per seleccionar aquest pla.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Heu assolit el límit del vostre pla. No us amoineu, l\'aplicació encara funciona fora de línia i no té cap restricció. Això no obstant, la sincronització s\'ha desactivat fins que no actualitzeu el vostre compte o no reduïu el nombre de notes fins el límit del pla actiu.</string>
+    <string name="account.sync.plan.contributor">Si heu ajudat a traduir l\'aplicació o heu donat suport al producte regularment, sisplau contacteu-nos per actualitzar el vostre compte.</string>
+    <string name="sync.free_limit_concept">El límit gratuït no està fixat, i es pot canviar amunt o avall depenent de diversos factors.</string>
+    <string name="sync.off.title">La nota no está sincronitzada</string>
+    <string name="sync.off.multiple.title">Les notes no estan sincronitzades</string>
+    <string name="sync.off.caption">Pot ser per una d\'aquestes raons:</string>
+    <string name="sync.off.reason.universal_clipboard">El porta-retalls universal no estava activat quan l\'aplicació va crear la nota.</string>
+    <string name="sync.off.reason.manual_off">Heu desactivat manualment la sincronització.</string>
+    <string name="sync.warning.title">Aquesta funció requereix sincronització</string>
+    <string name="sync.warning.description">La sincronització no és del tot gratuïta, i es pot desactivar fins que actualitzeu el vostre compte o reduïu el nombre de notes fins el límit del pla actual.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Accions ràpides</string>
+    <string name="fast_actions.compose_email">Escriu un correu electrònic</string>
+    <string name="fast_actions.send_message">Envia un missatge nou</string>
+    <string name="fast_actions.compose_sms">Escriu un SMS</string>
+    <string name="fast_actions.twitter_post">Escriu un tuit</string>
+    <string name="fast_actions.web_search">Cerca al web</string>
+    <string name="fast_actions.google_translate">Tradueix amb Google</string>
+    <string name="fast_actions.google_maps_search">Cerca a Google Maps</string>
+    <string name="fast_actions.wiki_search">Cerca a la Viquipèdia</string>
+    <string name="fast_actions.youtube_search">Cerca a YouTube</string>
+    <string name="fast_actions.duckduckgo_search">Cercar amb DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">Cercar amb Stack Overflow</string>
+    <string name="fast_actions.reddit_search">Cerca a Reddit</string>
+    <string name="fast_actions.play_url">Reproduir un enllaç</string>
+    <string name="fast_actions.send_as_file">Envia com a fitxer</string>
+    <string name="fast_actions.send_as_txt_file">Envia com a Txt</string>
+    <string name="fast_actions.send_as_pdf_file">Envia com a Pdf</string>
+    <string name="fast_actions.send_as_md_file">Envia com a Markdown</string>
+    <string name="fast_actions.export_to_file">Exporta a fitxer</string>
+    <string name="fast_actions.export_to_file.success">Exportada com %s</string>
+    <string name="fast_actions.calendar_event">Crear esdeveniment al calendari</string>
+    <string name="fast_actions.copy">Copia al porta-retalls</string>
+    <string name="fast_actions.copy_clear">Esborra del porta-retalls</string>
+    <string name="fast_actions.tts">Text a veu</string>
+    <string name="fast_actions.tts.max_length">El text no ha de ser més gran de %s caràcters</string>
+    <string name="fast_actions.share">Comparteix amb…</string>
+    <string name="fast_actions.send_as_qrcode">Envia com a codi QR</string>
+    <string name="fast_actions.dial_number">Marca un número de telèfon</string>
+    <string name="fast_actions.insert_contact">Inserta un contacte</string>
+    <string name="fast_actions.insert_contact_email">Desa email del contacte</string>
+    <string name="fast_actions.insert_contact_phone">Desa telèfon del contacte</string>
+    <string name="fast_actions.open_url">Obre una pàgina web</string>
+    <string name="fast_actions.short_link">Escurça l\'enllaç</string>
+    <string name="fast_actions.more">Mostra\'n més</string>
+    <string name="fast_actions.error">Error inesperat: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Predeterminat</string>
+    <string name="theme.sepia">Sèpia</string>
+    <string name="theme.dark">Fosc</string>
+    <string name="theme.dark_blue">Blau fosc</string>
+    <string name="theme.dark_green">Verd fosc</string>
+    <string name="theme.dark_blurple">Dark Blurple</string>
+    <string name="theme.black">Negre AMOLED</string>
+    <string name="theme.green">Verd</string>
+    <string name="theme.white">Blanc</string>
+    <string name="theme.pink">Rosa</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Dades d\'ús</string>
+    <string name="sort_order.modify_date">Data d\'edició</string>
+    <string name="sort_order.create_date">Data de creació</string>
+    <string name="sort_order.delete_date">Data d\'eliminació</string>
+    <string name="sort_order.usage_count">Vegades utilitzat</string>
+    <string name="sort_order.title">Títol</string>
+    <string name="sort_order.text">Text</string>
+    <string name="sort_order.tags">Etiquetes</string>
+    <string name="sort_order.size">Mida</string>
+    <string name="sort_order.name">Nom</string>
+    <string name="sort_order.notes_count">Nombre de notes</string>
+    <string name="sort_order.color">Color</string>
+    <string name="sort_order.manual">Manual</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Completat amb èxit</string>
+    <string name="backup.fail.title">Errada</string>
+    <string name="backup.fail.message">Error inesperat: %s</string>
+    <string name="restore.success.title">Completat amb èxit</string>
+    <string name="restore.fail.title">Errada</string>
+    <string name="restore.fail.message">Error inesperat: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Segur que voleu tancar aquesta finestra?</string>
+    <string name="clip.multiple.exit_without_save.description">Es perdran tots els canvis.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Etiquetes habituals</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Separador</string>
+    <string name="clip.multiple.merge.separator.line">Nova línia</string>
+    <string name="clip.multiple.merge.separator.space">Espai</string>
+    <string name="clip.multiple.merge.separator.other">Altres</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Controls</string>
+    <string name="notification.style.history">Historial del porta-retalls</string>
+    <string name="notification.style.actions">Accions del porta-retalls</string>
+    <string name="notification.track_clipboard.pause">El seguiment del porta-retalls s\'ha detingut</string>
+    <string name="notification.track_clipboard.resume">El seguiment del porta-retalls s\'ha reprès</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Fitxers adjunts</string>
+    <string name="attachments.type.photo">Fes una foto</string>
+    <string name="attachments.type.record">Enregistra vídeo</string>
+    <string name="attachments.type.file">Trieu un fitxer</string>
+    <string name="attachments.attr.created">Creat</string>
+    <string name="attachments.attr.name">Nom</string>
+    <string name="attachments.attr.type">Tipus</string>
+    <string name="attachments.attr.path">Ubicació</string>
+    <string name="attachments.attr.size">Mida</string>
+    <string name="attachments.state.downloaded">Descarregat</string>
+    <string name="attachments.state.uploaded">Pujat</string>
+    <string name="attachments.state.downloading">Descarregant…</string>
+    <string name="attachments.state.uploading">Pujant…</string>
+    <string name="attachments.label.insert">Afegeix a una nota</string>
+    <string name="attachments.label.download_url">L\'URL públic estarà disponible després de pujar el fitxer.</string>
+    <string name="contribute.annual.offer">Cancel·li en qualsevol moment des del centre de subscripció de Google Play.</string>
+    <string name="contribute.monthly.period">mes</string>
+    <string name="contribute.annual.period">any</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Surt</string>
+    <string name="desktop.tray.show">Mostra</string>
+    <string name="desktop.tray.show_in_taskbar">Mostra-ho a la barra de tasques</string>
+    <string name="desktop.update.action.download">Descarrega</string>
+    <string name="desktop.update.action.later">Més tard</string>
+    <string name="desktop.update.title">Nova versió disponible</string>
+    <string name="desktop.shortcuts.title">Dreceres de teclat</string>
+    <string name="desktop.shortcuts.dialog.define">Defineix drecera</string>
+    <string name="desktop.shortcuts.showHideApp">Mostra/amaga l\'app</string>
+    <string name="desktop.shortcuts.modeFullscreen">Activa mode complet</string>
+    <string name="desktop.shortcuts.modeComfortable">Activa mode còmode</string>
+    <string name="desktop.shortcuts.modeCompact">Activa mode compacte</string>
+    <string name="desktop.shortcuts.tagNext">Següent etiqueta</string>
+    <string name="desktop.shortcuts.tagPrev">Etiqueta anterior</string>
+    <string name="desktop.shortcuts.noteNext">Nota següent</string>
+    <string name="desktop.shortcuts.notePrev">Nota anterior</string>
+    <string name="desktop.shortcuts.noteNew">Nova nota</string>
+    <string name="desktop.shortcuts.noteSave">Desa la nota</string>
+    <string name="desktop.shortcuts.noteDelete">Esborra la nota</string>
+    <string name="desktop.shortcuts.noteCopy">Copia la nota</string>
+    <string name="desktop.shortcuts.notePrint">Imprimeix la nota</string>
+    <string name="desktop.shortcuts.noteFind">Cercar notes</string>
+    <string name="desktop.shortcuts.noteOpen">Obre nota</string>
+    <string name="desktop.shortcuts.noteEdit">Edita una nota</string>
+    <string name="desktop.shortcuts.contextModeSelect">Selecciona nota</string>
+    <string name="desktop.shortcuts.contextModeCancel">No seleccionis cap nota</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Selecciona totes les notes</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Desa des del porta-retalls</string>
+    <string name="desktop.attachments.browse">Deixa caure fitxers per afegir, o navega.</string>
+    <string name="desktop.main.content.under.development">El contingut s\'està desenvolupant…</string>
+    <string name="desktop.main.menu.download">Descarrega</string>
+    <string name="desktop.main.menu.download.for">Descarrega per a %s</string>
+    <string name="desktop.main.menu.download.android.apk">Aconsegueix l\'APK universal</string>
+    <string name="desktop.main.menu.resources">Recursos</string>
+    <string name="desktop.main.menu.open">Obre Clipto en el navegador</string>
+    <string name="desktop.main.features.title.1">Escriviu fàcil i ràpid en qualsevol dispositiu.</string>
+    <string name="desktop.main.features.title.2">Llibreta &amp; administrador del porta-retalls centrat en la velocitat i la productivitat que funciona tant en l\'ordinador com en el mòbil.</string>
+    <string name="desktop.main.features.title.3">El vostre company d\'escriptura personal.</string>
+    <string name="desktop.main.features.title.4">Una completa solució per fer feina de manera completa i eficient amb notes, fragments, porta-retalls, arxius i qualsevol altra informació important amb accés ràpid en qualsevol dispositiu.</string>
+    <string name="desktop.main.features.title.5">Què fa Clipto especial?</string>
+    <string name="desktop.get_started.language">Trieu el vostre idioma</string>
+    <string name="desktop.get_started.theme">Trieu el tema preferit</string>
+    <string name="desktop.auth.instruction">Instruccions d\'autorització</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Escaneja codi de barres</string>
+    <string name="barcode.prompt.point_at_a_barcode">Apunteu la càmera cap a un codi de barres</string>
+    <string name="barcode.prompt.hold_camera_steady">Manteniu la càmera fixa un moment</string>
+    <string name="barcode.prompt.move_camera_closer">Apropeu-vos per cercar</string>
+    <string name="barcode.prompt.searching">Cercant…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Error de font pel següent motiu: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Enllaç públic</string>
+    <string name="public.note.link.time.label">Temps de vigència</string>
+    <string name="public.note.link.time.or">o</string>
+    <string name="public.note.link.time.type.seconds">segons</string>
+    <string name="public.note.link.time.type.minutes">minuts</string>
+    <string name="public.note.link.time.type.hours">hores</string>
+    <string name="public.note.link.time.type.days">dies</string>
+    <string name="public.note.link.access_time">Temps d\'accés</string>
+    <string name="public.note.link.access_time.description">Si s\'activa, l\'enllaç només està disponible durant un temps des que es creat o actualitzat.</string>
+    <string name="public.note.link.access_time.label">Estarà disponible en</string>
+    <string name="public.note.link.access_password">Contrasenya d\'accés</string>
+    <string name="public.note.link.access_password.hint">Pista de contrasenya (opcional)</string>
+    <string name="public.note.link.access_password.placeholder">Contrasenya</string>
+    <string name="public.note.link.access_password.description">Si s\'activa, l\'enllaç només estarà disponible després de confirmar la contrasenya.</string>
+    <string name="public.note.link.time_to_expire">Temps fins expirar</string>
+    <string name="public.note.link.time_to_expire.description">Si s\'activa, l\'enllaç està vigent durant un temps determinat des que es creat o actualitzat.</string>
+    <string name="public.note.link.time_to_expire.label">Caduca en</string>
+    <string name="public.note.link.one_time_opening">Una sola vegada</string>
+    <string name="public.note.link.one_time_opening.description">Si s\'activa, l\'enllaç només serà vàlid per una vegada des que es va crear o actualitzar.</string>
+    <string name="public.note.link.action.remove">Elimina l\'enllaç</string>
+    <string name="public.note.link.action.remove.confirm.title">Eliminar l\'enllaç?</string>
+    <string name="public.note.link.action.remove.confirm.description">L\'enllaç deixarà d\'estar disponible.</string>
+    <string name="public.note.link.action.create">Crea un enllaç</string>
+    <string name="public.note.link.state.unavailable">No disponible</string>
+    <string name="public.note.link.state.postponed">Estarà disponible en:</string>
+    <string name="public.note.link.state.expires_in">Caduca en %s</string>
+    <string name="public.note.link.state.expired">Caducat</string>
+    <string name="public.note.link.state.locked">Bloquejat</string>
+    <string name="public.note.link.state.locked.wrong_password">Contrasenya incorrecta.</string>
+    <string name="about.policy">Política de privacitat</string>
+    <string name="about.toc">Condicions d\'ús</string>
+    <string name="about_pricing">Preus</string>
+    <string name="site.integrations.title">Integracions</string>
+    <string name="site.integrations.zapier.title">Integració de Zapier</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Connecteu Clipto amb Zapier i desenvolupeu els vostres fluxos de treball a tota velocitat.
+\n
+## El vostre porta-retalls com a punt de partida
+\n
+La forma més ràpida de desar informació important és seleccionar-la i copiar-la.
+\n
+Per començar a emprar aquesta funcionalitat amb Zapier, seguiu aquestes passes:
+\n
+1. Configureu en Zapier l\'activador **Text copiat al porta-retalls**.
+\n
+2. Instal·leu Clipto en el vostre dispositiu i **accediu** amb el mateix compte
+\n
+3. Obriu Clipto i activeu les opcions **Notes des del porta-retalls** i **Porta-retalls universal**
+\n
+4. Això és tot. Ara podeu usar la combinació **Ctrl+C** (o Copia en el menú contextual) per activar un flux de treball amb el text copiat.    ]]></string>
+    <string name="faq.title">Preguntes freqüents.</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notes** us ajuda a guardar informació important i accedir-hi en qualsevol moment en qualsevol dispositiu.
+    \n
+    \n
+    Per defecte, totes les notes es classifiquen en categories per accedir més ràpidament a les desitjades segons els seus atributs.
+    \n
+    ```
+    \n
+    Totes les notes es descarreguen el primer cop que hi accediu.
+    \n
+    \n
+    Tots els canvis se sincronitzen tot d\'una que Internet està disponible.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filtres** us ajuda a trobar la informació més aviat fent servir cerques predeterminades.
+    \n
+    ```
+    \n
+    Una plantilla de cerca pot contenir múltiples combinacions d\'etiquetes, intervals de temps, textos, regles d\'ordenació i de presentació, etc.
+    \n
+    \n
+    És a dir, guardant una d\'aquestes combinacions com a filtre us facilita recuperar les dades que estau cercant.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Cada filtre té els seus propis paràmetres per mostrar les dades a la llista.
+    \n
+    - Si s\'estableix la descripció, es mostrarà en lloc d\'aquest suggeriment.
+    \n
+    - El paràmetres del filtre se sincronitzen en tots els vostres dispositius.
+    \n
+    ```
+    \n
+    La paleta de colors canvia la tonalitat si cliqueu novament en el color seleccionat.
+    \n
+    \n
+    La regla d\'ordenació s\'inverteix si torneu a clicar-hi.
+    \n
+    \n
+    La descripció accepta el format markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    Les **etiquetes** ajuden a organitzar notes i arxius perquè siguin més bons de trobar.
+    \n
+    ```
+    \n
+    Podeu afegir múltiples etiquetes a qualsevol nota o arxiu.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Cada etiqueta té els seus propis paràmetres per mostrar les dades a la llista.
+    \n
+    - Si s\'estableix la descripció, es mostrarà en lloc d\'aquest suggeriment.
+    \n
+    - El paràmetres de l\'etiqueta se sincronitzen en tots els vostres dispositius.
+    \n
+    ```
+    \n
+    La paleta de colors canvia la tonalitat si cliqueu novament en el color seleccionat.
+    \n
+    \n
+    La regla d\'ordenació s\'inverteix si torneu a clicar-hi.
+    \n
+    \n
+    La descripció accepta el format markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    El paràmetres de cerca es poden guardar com a filtre per recuperar-los ràpidament.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    Els **fragments** eviten el tecleig repetitiu fent servir plantilles de text.
+    \n
+    \n
+    Un fragment pot ser una nota nova o ja existent. Pot ser estàtic o dinàmic, contenir camps d\'introducció manual o valors (dates, hores, etc.).
+    \n
+    \n
+    Els fragments s\'organitzen en jocs. Podeu crear-ne els vostres o instal·lar-los des de la biblioteca pública.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - El joc pot compartir-se amb altres usuaris.
+    \n
+    - El joc pot publicar-se a la biblioteca pública.
+    \n
+    - Si s\'estableix una descripció, es mostrarà en comptes d\'aquest text.
+    \n
+    ```
+    \n
+    La paleta de colors canvia de to si feu doble clic en el color seleccionat.
+    \n
+    \n
+    L\'ordre s\'inverteix si feis doble clic.
+    \n
+    \n
+    La descripció admet format markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Arxius** us ajuda a guardar qualsevol dada i accedir-hi a l\'instant des de qualsevol dispositiu.
+    \n
+    \n
+    **A diferència de notes**, els arxius no es descarreguen al vostre dispositiu quan inicieu sessió.
+    \n
+    \n
+    **En el seu lloc**, només es descarreguen al dispositiu les metadades de l\'arxiu per fer cerques i edicions.
+    \n
+    ```
+    \n
+    Tots els canvis se sincronitzen quan es disposa de connexió a Internet.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Carpetes** us ajuda a organitzar les notes i fer-les bones de trobar.
+    \n
+    \n
+    **Juntament amb les etiquetes**, les carpetes permeten organitzar dades de forma jerarquitzada.
+    \n
+    \n
+    **A diferència de les etiquetes**, un arxiu o nota només pot estar vinculat a una única carpeta.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Les abreviatures es poden usar:
+    \n
+    \n
+    - Per cercar ràpidament una nota amb una frase curta o de %s caràcters com a màxim.
+    \n
+    - Per inserir el text de la nota dins el camp d\'introducció quan s\'hi escriu una drecera començada per **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    La descripció es pot utilitzar per oferir informació addicional sobre una nota.
+    \n
+    \n
+    Admet format markdown de fins a %s caràcters.
+    ]]></string>
+    <string name="where_none_of">cap dels seleccionats</string>
+    <string name="where_any_of">qualsevol de les seleccionades</string>
+    <string name="where_all_of">totes les seleccionades</string>
+    <string name="where_after">Després</string>
+    <string name="where_before">Abans</string>
+    <string name="where_from">Des de</string>
+    <string name="where_to">A</string>
+    <string name="where_date_today">Avui</string>
+    <string name="where_date_tomorrow">Demà</string>
+    <string name="where_date_custom">Personalitza</string>
+    <string name="where_date_yesterday">Ahir</string>
+    <string name="where_date_last_7_days">Darrers 7 dies</string>
+    <string name="where_date_last_30_days">Darrers 30 dies</string>
+    <string name="where_date_last_90_days">Darrers 90 dies</string>
+    <string name="advanced_filter_block_text">El text conté</string>
+    <string name="advanced_filter_block_text_type">Escriptura de text</string>
+    <string name="advanced_filter_block_category">Ubicat a</string>
+    <string name="advanced_filter_block_tags">Etiquetes</string>
+    <string name="advanced_filter_block_created">Data de creació</string>
+    <string name="advanced_filter_block_updated">Data d\'actualització</string>
+    <string name="advanced_filter_block_only_public_links">Mostra només amb enllaços públics</string>
+    <string name="advanced_filter_block_only_attachments">Mostra només amb fitxers adjunts</string>
+    <string name="advanced_filter_block_only_not_synced">Mostra només sense sincronitzar</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">País</string>
+    <string name="snippet_kit_attr_snippets">Fragments</string>
+    <string name="snippet_kit_attr_language">Idioma</string>
+    <string name="snippet_kit_attr_downloads">Descàrregues</string>
+    <string name="snippet_kit_attr_created">Creat el</string>
+    <string name="snippet_kit_attr_updated">Actualitzat el</string>
+    <string name="snippet_kit_attr_category">Categoria</string>
+    <string name="snippet_kit_public_link">Enllaç públic</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    El joc de fragments es pot instal·lar des d\'una biblioteca pública
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Eliminar l\'enllaç?</string>
+    <string name="snippet_kit_public_link_remove_description">El joc de fragments ja no es podrà instal·lar des d\'aquest enllaç.</string>
+    <string name="snippet_kit_public_library">Biblioteca pública</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    El joc de fragments es pot instal·lar des d\'una biblioteca pública.
+    \n
+    \n
+    ```
+    \n
+    El joc ha de contenir com a mínim %s fragments per poder-se penjar a la biblioteca pública.
+    \n
+    ```
+    \n
+    \n
+    Quan col·loqueu un joc en la biblioteca pública, obtindreu automàticament una recompensa.
+    \n
+    \n
+    [Llegiu-ne més…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Eliminar de la biblioteca pública?</string>
+    <string name="snippet_kit_public_library_remove_description">El joc de fragments ja no es podrà instal·lar des de la biblioteca pública.</string>
+    <string name="snippet_kit_hint_name">Nom del joc de fragments</string>
+    <string name="snippet_kit_label_show_in_public_library">Mostra en la Biblioteca pública</string>
+    <string name="snippet_kit_error_name_required">El joc ha de tenir un nom únic</string>
+    <string name="snippet_kit_delete_title">Esborrar el joc \'%s\'?</string>
+    <string name="snippet_kit_delete_description">El joc de fragments s\'esborrarà permanentment.</string>
+    <string name="snippet_kit_uninstall_title">Vol desinstal·lar el joc %s?</string>
+    <string name="snippet_kit_uninstall_description">El joc de fragments s\'esborrarà permanentment, incloent-hi els fragments associats.</string>
+    <string name="snippet_kit_install_hint_title">Què vol dir instal·lar?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    El joc de fragments instal·lat podrá usar-se com si l\'haguéssiu creat vosaltres.
+    \n
+    \n
+    És a dir, podreu canviar-hi qualsevol nota, afegir-ne de noves, esborrar les existents, gestionar-ne els paràmetres, etc.
+    \n
+    \n
+    ```
+    \n
+    Qualsevol modificació vostra només estarà disponible per a vosaltres, sense que pugueu canviar el joc original.
+    \n
+    \n
+    Si el joc original s\'actualitza, podreu actualitzar manualment el que tingueu instal·lat.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Estat públic</string>
+    <string name="public_status_private">Privat</string>
+    <string name="public_status_blocked">Bloquejat</string>
+    <string name="public_status_review">En revisió</string>
+    <string name="public_status_review_details">Es torbarà una mica a publicar-se i estar disponible a la biblioteca pública.</string>
+    <string name="public_status_published">Publicat</string>
+    <string name="public_status_rejected">Rebutjat</string>
+    <string name="public_status_not_found">No s\'ha trobat</string>
+    <string name="public_status_deleted">Eliminat</string>
+    <string name="public_status_restricted">Restringit</string>
+    <string name="public_status_update_reason">Motiu de l\'actualització</string>
+    <string name="dynamic_text_hint_title">Text dinàmic</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    Si una nota conté text dinàmic, veureu una passa més quan faceu qualsevol acció en la nota.
+    \n
+    \n
+    En aquest passa, podreu definir valors en els camps d\'introducció de text i completar l\'acció amb el text modificat.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Text</string>
+    <string name="dynamic_text_view_mode_form">Formulari</string>
+    <string name="dynamic_value_date">Data/Hora</string>
+    <string name="dynamic_value_date_description">Crea un marcador que se substitueix per la data actual</string>
+    <string name="dynamic_value_device">Informació de l’aparell</string>
+    <string name="dynamic_value_device_description">Crea un marcador que se substitueix per informació del dispositiu</string>
+    <string name="dynamic_value_random">Aleatori</string>
+    <string name="dynamic_value_random_description">Crea un marcador que se substitueix per un valor aleatori d\'una llista personalitzable</string>
+    <string name="dynamic_value_clipboard">Porta-retalls</string>
+    <string name="dynamic_value_clipboard_description">Crea un marcador que se substitueix pel contingut del porta-retalls</string>
+    <string name="dynamic_value_snippet">Fragment</string>
+    <string name="dynamic_value_snippet_description">Crea un marcador que se substitueix pel contingut de la nota seleccionada</string>
+    <string name="dynamic_value_attr_device_type">Tipus d\'informació</string>
+    <string name="dynamic_field_date">Camp de data</string>
+    <string name="dynamic_field_date_description">Crea un camp d\'introducció de data</string>
+    <string name="dynamic_field_text">Camp de text</string>
+    <string name="dynamic_field_text_description">Crea un camp d\'introducció de text</string>
+    <string name="dynamic_field_number">Camp de nombre</string>
+    <string name="dynamic_field_number_description">Crea un camp d\'introducció de nombre</string>
+    <string name="dynamic_field_select">Camp de selecció</string>
+    <string name="dynamic_field_select_description">Crea un camp on seleccionar un o més elements</string>
+    <string name="dynamic_field_barcode_scanning">Camp de codi de barres</string>
+    <string name="dynamic_field_barcode_scanning_description">Crea un camp que permet escanejar un codi de barres i usar-ne el text com el valor del camp</string>
+    <string name="dynamic_field_text_toggle">Commutador de text</string>
+    <string name="dynamic_field_text_toggle_description">Crea un commutador que permet activar o desactivar un bloc de text</string>
+    <string name="dynamic_field_reference">Camp de referència</string>
+    <string name="dynamic_field_reference_description">Crea un camp que es refereix a un altre camp i n\'utilitza el valor</string>
+    <string name="dynamic_field_unknown">Camp desconegut</string>
+    <string name="dynamic_field_unknown_description">El camp no es pot mostrar. Tal volta és incorrecte o es va crear en una nova versió de l\'aplicació</string>
+    <string name="dynamic_field_date_format_date_time">Data/Hora (sistema)</string>
+    <string name="dynamic_field_date_format_date">Data (sistema)</string>
+    <string name="dynamic_field_date_format_time">Hora (sistema)</string>
+    <string name="dynamic_field_date_format_day_of_week">Dia de la setmana</string>
+    <string name="dynamic_field_date_format_day_of_month">Dia del mes (1-31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Dia del mes (01-31)</string>
+    <string name="dynamic_field_date_format_year">Any</string>
+    <string name="dynamic_field_date_format_year_short">Any (dos dígits)</string>
+    <string name="dynamic_field_date_format_month">Mes</string>
+    <string name="dynamic_field_date_format_month_number">Mes (1-12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Mes (01-12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hora (0-12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hora (00-12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hora (0-24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hora (00-24)</string>
+    <string name="dynamic_field_date_format_minute">Minut (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minut (01–60)</string>
+    <string name="dynamic_field_date_format_second">Segon (1-60)</string>
+    <string name="dynamic_field_date_format_second_zero">Segon (01-60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Zona horària</string>
+    <string name="dynamic_field_value_formatter_new_line">Línia nova</string>
+    <string name="dynamic_field_value_formatter_semicolon">Punt i coma</string>
+    <string name="dynamic_field_value_formatter_comma">Coma</string>
+    <string name="dynamic_field_value_formatter_space">Espai</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Llista ordenada</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Llista sense ordenar</string>
+    <string name="dynamic_field_attr_common_label">Etiqueta</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Sufix</string>
+    <string name="dynamic_field_attr_common_value">Valor</string>
+    <string name="dynamic_field_attr_common_required">Requerit</string>
+    <string name="dynamic_field_attr_common_placeholder">Marcador de posició</string>
+    <string name="dynamic_field_attr_common_default_value">Valor per defecte</string>
+    <string name="dynamic_field_attr_common_values_formatter">Separador de valors seleccionats</string>
+    <string name="dynamic_field_attr_select_multiple">Selecció múltiple</string>
+    <string name="dynamic_field_attr_select_user_input">Entrada d\'usuari</string>
+    <string name="dynamic_field_attr_text_multi_line">Text multi-línia</string>
+    <string name="dynamic_field_attr_text_max_length">Longitud màxima</string>
+    <string name="dynamic_field_attr_text_use_clipboard">El porta-retalls és el valor per defecte</string>
+    <string name="dynamic_field_attr_select_options">Opcions</string>
+    <string name="dynamic_field_attr_number_min">Valor mínim</string>
+    <string name="dynamic_field_attr_number_max">Valor màxim</string>
+    <string name="dynamic_field_attr_date_format">Format</string>
+    <string name="dynamic_field_attr_date_example">Exemple: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Escanejat múltiple</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Separador dels valors escanejats</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Títol del camp de referència</string>
+    <string name="dynamic_field_attr_ref_intrinsic">El camp té el seu propi valor</string>
+    <string name="select_option_ordering">Opcions d\'ordenació</string>
+    <string name="select_option_ordering_label_asc">Etiqueta (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Etiqueta (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Valor (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Valor (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Voleu esborrar aquest camp dinàmic del text?</string>
+    <string name="dynamic_field_confirm_delete_description">El marcador del camp s\'esborrarà del text original.</string>
+    <string name="dynamic_value_placeholder_copied_title">El marcador de valor dinàmic s\'ha copiat al porta-retalls</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    Si s\'obri una nota en mode d\'edició, el marcador s\'insereix automàticament en el text de la nota en el lloc del focus
+    o substitueix el fragment de text seleccionat.
+    \n
+    \n
+    En altre cas, es copia al porta-retalls.
+    \n
+    \n
+    **Marcador copiat:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Descarrega del núvol</string>
+    <string name="file_action_update_in_cloud">Actualitza en el núvol</string>
+    <string name="file_error_canceled">Cancel·lat per l\'usuari</string>
+    <string name="file_error_not_found">Arxiu no trobat. Intenteu pujar-lo un altre cop.</string>
+    <string name="file_attr_last_modified">Darrera modificació</string>
+    <string name="file_attr_updated">Actualitzat</string>
+    <string name="file_attr_location">Ubicació</string>
+    <string name="file_confirm_update_file">Actualitza el fitxer?</string>
+    <string name="file_confirm_update_file_description">L\'arxiu s\'actualitzarà en el núvol.</string>
+    <string name="file_error_name_required">Cal un nom per desar l\'arxiu</string>
+    <string name="file_action_new_file">Arxiu</string>
+    <string name="file_action_new_file_description">L\'arxiu es pujarà al núvol. Estarà disponible en la categoria Arxius i es podrà afegir a qualsevol nota.</string>
+    <string name="file_action_new_files">Arxius</string>
+    <string name="file_action_new_files_description">L\'arxiu es pujarà al núvol. Estarà disponible en la categoria Arxius i es podrà afegir a qualsevol nota.</string>
+    <string name="file_action_new_note">Nota</string>
+    <string name="file_action_new_note_description">L\'arxiu es pujarà al núvol i s\'afegirà a la nota tot just creada. L\'arxiu pujat estarà disponible a la categoria Arxiu.</string>
+    <string name="file_action_new_notes_description">L\'arxiu es pujarà al núvol i s\'afegirà a la nota tot just creada. L\'arxiu pujat estarà disponible a la categoria Arxiu.</string>
+    <string name="file_action_new_attachment">Adjunt</string>
+    <string name="file_action_new_attachment_description">L\'arxiu es pujarà al núvol i s\'afegirà a qualsevol nota existent. L\'arxiu pujat estarà disponible a la categoria Arxiu.</string>
+    <string name="file_action_new_attachments">Adjunts</string>
+    <string name="file_action_new_attachments_description">L\'arxiu es pujarà al núvol i s\'afegirà a qualsevol nota existent. L\'arxiu pujat estarà disponible a la categoria Arxiu.</string>
+    <string name="file_search_hint">Cerca fitxers</string>
+    <string name="file_type_any">Tots</string>
+    <string name="file_type_audio">Àudios</string>
+    <string name="file_type_video">Vídeos</string>
+    <string name="file_type_image">Imatges</string>
+    <string name="file_type_archive">Arxius</string>
+    <string name="file_type_document">Documents</string>
+    <string name="file_type_recycled">Paperera de reciclatge</string>
+    <string name="folder_select">Selecciona</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Carpeta arrel</string>
+    <string name="folder_search">Cerca en aquesta carpeta</string>
+    <string name="folder_error_name_required">Cal un nom únic per desar la carpeta aquí</string>
+    <string name="folder_error_empty">Aquesta carpeta és buida</string>
+    <string name="folder_delete_deep">Esborra la carpeta, incloent-hi tots els arxius i notes.</string>
+    <string name="folder_delete_weak">Esborra només la carpeta. Es podrà accedir als arxius i les notes en la carpeta arrel.</string>
+    <string name="clip_action_new_edit">Edita</string>
+    <string name="clip_action_new_edit_description">La nota es pot editar abans de desar-la o d\'usar-la a qualsevol acció.</string>
+    <string name="clip_action_new_insert">Inserir en</string>
+    <string name="clip_action_new_insert_description">El text d\'una nota es pot inserir en qualsevol altra. Seleccioneu la nota de destí i especifiqueu les opcions d\'inserció.</string>
+    <string name="clip_action_new_action">Accions</string>
+    <string name="clip_action_new_action_description">El text d\'una nota es pot usar per executar una acció.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">Exportada %s nota</item>
+        <item quantity="other">Exportades %s notes</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">Importada %s nota</item>
+        <item quantity="other">Importades %s notes</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">Esborrada %s nota</item>
+        <item quantity="other">Esborrades %s notes</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s nota</item>
+        <item quantity="other">%s notes</item>
+    </plurals>
+</resources>

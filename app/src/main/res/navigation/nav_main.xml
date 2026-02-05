@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_snippet_kit_details"
+        android:name="clipto.presentation.snippets.details.SnippetKitDetailsFragment"
+        tools:layout="@layout/fragment_snippet_kit_details" />
+
+    <fragment
+        android:id="@+id/fragment_snippet_kit_library"
+        android:name="clipto.presentation.snippets.library.SnippetKitLibraryFragment"
+        tools:layout="@layout/fragment_snippet_kit_library" />
+
+    <fragment
+        android:id="@+id/fragment_snippet_kit"
+        android:name="clipto.presentation.snippets.view.SnippetKitFragment"
+        tools:layout="@layout/fragment_attributed_object" />
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="clipto.presentation.main.list.MainListFragment"
+        tools:layout="@layout/fragment_main_list" />
+
+    <dialog
+        android:id="@+id/fragment_main_actions"
+        android:name="clipto.presentation.main.actions.MainActionsFragment"
+        tools:layout="@layout/fragment_blocks_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/fragment_runes"
+        android:name="clipto.presentation.runes.RunesFragment"
+        tools:layout="@layout/fragment_runes" />
+
+    <fragment
+        android:id="@+id/fragment_rune_settings"
+        android:name="clipto.presentation.runes.RuneSettingsFragment"
+        tools:layout="@layout/fragment_rune_settings" />
+
+    <fragment
+        android:id="@+id/fragment_settings"
+        android:name="clipto.presentation.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settings_to_change_passcode"
+            app:destination="@+id/fragment_change_passcode"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_change_passcode"
+        android:name="clipto.presentation.lockscreen.changepasscode.ChangePassCodeFragment"
+        tools:layout="@layout/fragment_change_passcode">
+
+        <action
+            android:id="@+id/action_change_passcode_to_set_touch_id"
+            app:destination="@+id/fragment_set_touch_id"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/fragment_settings" />
+
+        <action
+            android:id="@+id/action_change_passcode_to_set_touch_id_runes"
+            app:destination="@+id/fragment_set_touch_id"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/fragment_rune_settings" />
+
+        <action
+            android:id="@+id/action_change_passcode_to_runes"
+            app:destination="@+id/fragment_set_touch_id"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/fragment_runes" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_settings_swipe_actions"
+        android:name="clipto.presentation.settings.swipeactions.SwipeActionsFragment"
+        tools:layout="@layout/fragment_settings_swipe_actions" />
+
+    <fragment
+        android:id="@+id/fragment_settings_double_click_actions"
+        android:name="clipto.presentation.settings.doubleclickactions.DoubleClickActionsFragment"
+        tools:layout="@layout/fragment_settings_double_click_actions" />
+
+    <fragment
+        android:id="@+id/fragment_multiple_common_tags"
+        android:name="clipto.presentation.clip.tags.CommonTagsFragment"
+        tools:layout="@layout/fragment_blocks" />
+
+    <fragment
+        android:id="@+id/fragment_account"
+        android:name="clipto.presentation.account.AccountFragment"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/fragment_advanced_filter"
+        android:name="clipto.presentation.filter.advanced.AdvancedFilterFragment"
+        tools:layout="@layout/fragment_filter_advanced" />
+
+    <fragment
+        android:id="@+id/fragment_settings_q_warning"
+        android:name="clipto.presentation.settings.QWarningFragment"
+        tools:layout="@layout/fragment_settings_q_warning" />
+
+    <fragment
+        android:id="@+id/fragment_select_plan"
+        android:name="clipto.presentation.plan.SelectPlanFragment"
+        tools:layout="@layout/fragment_select_plan" />
+
+    <fragment
+        android:id="@+id/fragment_set_passcode"
+        android:name="clipto.presentation.lockscreen.passcode.SetPassCodeFragment"
+        tools:layout="@layout/fragment_set_passcode">
+
+        <action
+            android:id="@+id/action_set_passcode_to_set_touch_id"
+            app:destination="@+id/fragment_set_touch_id"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/fragment_main" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_clip"
+        android:name="clipto.presentation.clip.view.ClipFragment"
+        tools:layout="@layout/fragment_attributed_object" />
+
+    <fragment
+        android:id="@+id/fragment_file"
+        android:name="clipto.presentation.file.view.FileFragment"
+        tools:layout="@layout/fragment_attributed_object" />
+
+    <fragment
+        android:id="@+id/fragment_set_touch_id"
+        android:name="clipto.presentation.lockscreen.fingerprint.SetFingerprintFragment"
+        tools:layout="@layout/fragment_set_touch_id" />
+
+    <action
+        android:id="@+id/action_settings"
+        app:destination="@id/fragment_settings"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_runes"
+        app:destination="@id/fragment_runes"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_rune_settings"
+        app:destination="@id/fragment_rune_settings"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_common_tags"
+        app:destination="@id/fragment_multiple_common_tags"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_settings_swipe_actions"
+        app:destination="@id/fragment_settings_swipe_actions"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_settings_q_warning"
+        app:destination="@id/fragment_settings_q_warning"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_settings_double_click_actions"
+        app:destination="@id/fragment_settings_double_click_actions"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_account"
+        app:destination="@id/fragment_account"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_advanced_filter"
+        app:destination="@id/fragment_advanced_filter"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_select_plan"
+        app:destination="@id/fragment_select_plan"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_set_passcode"
+        app:destination="@+id/fragment_set_passcode" />
+
+    <action
+        android:id="@+id/action_clip"
+        app:destination="@+id/fragment_clip"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_file"
+        app:destination="@+id/fragment_file"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_rune_settings_to_change_passcode"
+        app:destination="@+id/fragment_change_passcode"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_main_actions"
+        app:destination="@+id/fragment_main_actions" />
+
+    <action
+        android:id="@+id/action_snippet_kit_details"
+        app:destination="@+id/fragment_snippet_kit_details"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_snippet_kit_library"
+        app:destination="@+id/fragment_snippet_kit_library"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <action
+        android:id="@+id/action_snippet_kit"
+        app:destination="@+id/fragment_snippet_kit"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+</navigation>

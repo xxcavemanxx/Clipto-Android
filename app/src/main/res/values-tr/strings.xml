@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">New Line</string>
+    <string name="common_separator_space">Boşluk</string>
+    <string name="common_separator_comma">Virgül</string>
+    <string name="confirm_exit_edit_mode_title">Exit edit mode?</string>
+    <string name="confirm_exit_edit_mode_description">All unsaved changes will be lost.</string>
+    <string name="confirm_delete_note_title">Delete note?</string>
+    <string name="confirm_delete_note_description">Selected note will be deleted.</string>
+    <string name="link_preview_label">Önizleme Yükle…</string>
+    <string name="link_preview_not_found">No preview</string>
+    <string name="link_preview_hide">Önizlemeyi Gizle</string>
+    <string name="link_preview_show">Önizlemeyi Göster</string>
+    <string name="toast_downloaded">Downloaded %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Çıkmak için tekrar \'Geri\' düğmesine tıklayın</string>
+    <string name="essentials.errors.unknown">Bilinmeyen hata. Lütfen tekrar deneyin</string>
+    <string name="error_data_empty">Veri bulunmadı.</string>
+    <string name="error.unexpected">Beklenmedik bir hata oluştu</string>
+    <string name="error.unexpected.send">Bir hata bildirmek için \'Hata\' düğmesine tıkla</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Değerlendir</string>
+    <string name="menu.edit">Düzenle</string>
+    <string name="menu.clear">Temizle</string>
+    <string name="menu.clear_all">Hepsini temizle</string>
+    <string name="menu.share">Paylaş</string>
+    <string name="menu.fav">Yıldızlı</string>
+    <string name="menu.delete">Sil</string>
+    <string name="menu.empty">Onayla</string>
+    <string name="menu.cancel">İptal</string>
+    <string name="menu.settings">Ayarlar</string>
+    <string name="menu.display_options">Görüntü seçenekleri</string>
+    <string name="menu.faq">S.S.S.</string>
+    <string name="menu.new">Yeni</string>
+    <string name="menu.search">Ara</string>
+    <string name="menu.print">Yazdır</string>
+    <string name="menu.restore">Geri Yükle</string>
+    <string name="menu.merge">Birleştir</string>
+    <string name="menu.copy_link">Herkese açık bağlantıyı kopyala</string>
+    <string name="menu.share_link">Herkese açık bağlantıyı paylaş</string>
+    <string name="menu.save_as">Farklı Kaydet…</string>
+    <string name="menu.rename">Yeniden Adlandır</string>
+    <string name="menu.paste">Yapıştır</string>
+    <string name="menu.copy">Kopyala</string>
+    <string name="menu.cut">Kes</string>
+    <string name="menu.fullscreen.enter">Enter Fullscreen</string>
+    <string name="menu.fullscreen.exit">Exit Fullscreen</string>
+    <string name="menu_close">Close</string>
+    <string name="button.update">Güncelle</string>
+    <string name="button.install">Kur</string>
+    <string name="button.uninstall">Kaldır</string>
+    <string name="button.done">Tamamlandı</string>
+    <string name="button.undo">Geri al</string>
+    <string name="button.apply">Uygula</string>
+    <string name="button.change">Değiştir</string>
+    <string name="button.save">Kaydet</string>
+    <string name="button.create">Oluştur</string>
+    <string name="button.send">Gönder</string>
+    <string name="button.preview">Önizleme</string>
+    <string name="button.confirm">Onayla</string>
+    <string name="button.sync">Şimdi Eşitle</string>
+    <string name="button.yes">Evet</string>
+    <string name="button.no">Hayır</string>
+    <string name="button.back">Geri</string>
+    <string name="button.continue">Devam Et</string>
+    <string name="button.finish">Bitir</string>
+    <string name="button.got_it">Anladım!</string>
+    <string name="button.get_started">Başla</string>
+    <string name="button.example">Örnek</string>
+    <string name="button_try_again">Tekrar dene</string>
+    <string name="button_insert">Ekle</string>
+    <string name="button_refresh">Yenile</string>
+    <string name="notification.title.empty">Pano boş</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Geri dön</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Kısaltma</string>
+    <string name="common.label.description">Açıklama</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Yeni etiket</string>
+    <string name="tag.new.name">Etiket adı</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Move to folder</string>
+    <!-- MAIN -->
+    <string name="main.search">Notları ara</string>
+    <string name="main.filter.all">Tümü</string>
+    <string name="main.filter.no_tags">Etiketlenmemiş</string>
+    <string name="main.filter.filtered">Filtrelenmiş</string>
+    <string name="main.delete_selected.title">Seçili not(lar) silinsin mi?</string>
+    <string name="main.delete_selected.description">Seçilen tüm notlar silinecek.</string>
+    <string name="main.delete_merged.title">Birleştirilmiş notları sil?</string>
+    <string name="main.delete_merged.description">Birleştirilmiş notlar kalıcı olarak silinecek.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Notlar bulunamadı.</string>
+    <string name="main.list.empty.caption">Not: her kategorinin kendi bireysel sıralaması ve diğer olası ayarları vardır. Ayarları istediğiniz zaman listeden (%s) veya sol gezinme çekmecesinden (%s) değiştirebilirsiniz.</string>
+    <string name="main.list.empty.caption.three_dot">üç nokta menüsü</string>
+    <string name="main.list.empty.caption.long_tap">kategoriye uzun dokunnma</string>
+    <string name="main.list.empty.description.all">Genel kategori. Filtreleme olmadan tüm notları görüntüler.</string>
+    <string name="main.list.empty.description.no_tags">Atanmış bir etiketi olmayan notları görüntüler.</string>
+    <string name="main.list.empty.description.tags">Seçilmiş etiketle işaretlenen notları ve dosyaları görüntüler.</string>
+    <string name="main.list.empty.description.filtered">Not filtreleme parametreleri için eşleşme bulunmadı.</string>
+    <string name="main.list.empty.description.starred">Yıldızlı bayrak ile işaretlenmiş olan notları gösterir.</string>
+    <string name="main.list.empty.description.deleted">Silinen ancak yine de geri yüklenebilen notları ve dosyaları görüntüler. Silinen kayıtlar atanmış etiketler ve diğer özniteliklerle kalır, ancak ilgili kategorilerde kullanılamaz.</string>
+    <string name="main.list.empty.description.clipboard">Uygulama tarafından panodan otomatik olarak oluşturulan notları görüntüler. Varsayılan olarak, pano izlenmez ve aktivasyon ayarlarda yapılabilir.</string>
+    <string name="main.list.empty.description.snippets">Diğer notlarda kullanılan notları görüntüler. Snippet\'teki herhangi bir değişiklik, kullanıldığı tüm notlara otomatik olarak yansıtılır.</string>
+    <string name="main.filter.snippets">Snippets</string>
+    <string name="main.filter.filters">Filtreler</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Dosyalar</string>
+    <string name="main.filter.notes">Notlar</string>
+    <string name="main.filter.tags">Etiketler</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Remember last action</string>
+    <string name="main_action_settings_remember_description">When activated, the app will remember the last action and use it the next time you click the Floating Button. At the same time, a window with a list of all actions can be opened with a long tap on the Floating Button.</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">Notlar oluştur</string>
+    <string name="main_action_notes_new_title">Yeni Not</string>
+    <string name="main_action_notes_new_description">Önemli metin bilgisi kaydedin ve aniden herhangi bir zamanda herhangi bir cihazda erişin</string>
+    <string name="main_action_notes_barcode_title">Barkod Tara</string>
+    <string name="main_action_notes_barcode_description">Bağlantıları veya metni tarayın ve not halinde kaydedin(çoğu standart barkod formatları desteklenir)</string>
+    <string name="main_action_notes_clipboard_title">Panodan Kopyala</string>
+    <string name="main_action_notes_clipboard_description">Panodan mevcut metni alın ve not olarak kaydedin</string>
+    <string name="main_action_notes_import_title">Dosyadan içe aktar</string>
+    <string name="main_action_notes_import_description">Bir dosyadan metin içeren bir not oluşturun (max. dosya boyutu %s kB)</string>
+    <string name="main_action_notes_import_error">Dosya boyutu %s kilobayttan daha büyük olmamalı</string>
+    <string name="main_action_files">Dosyalar ekle</string>
+    <string name="main_action_files_file_title">Dosya Seç</string>
+    <string name="main_action_files_file_description">Add any file (photo, video, pdf, etc.) of max. %s MB</string>
+    <string name="main_action_files_photo_title">Fotoğraf Çek</string>
+    <string name="main_action_files_photo_description">Bir fotoğraf çekin ve not olarak kaydedin</string>
+    <string name="main_action_files_record_title">Video Kaydet</string>
+    <string name="main_action_files_record_description">Bir video çekin ve not olarak kaydedin (max. video boyutu %s MB)</string>
+    <string name="main_action_organize">Veri düzenleyin</string>
+    <string name="main_action_organize_tag_title">Yeni etiket</string>
+    <string name="main_action_organize_tag_description">Notlarınızı ve dosyalarınızı bulmak daha kolay olacak şekilde düzenlemek için bir etiket oluşturun</string>
+    <string name="main_action_organize_filter_title">Yeni filtre</string>
+    <string name="main_action_organize_filter_description">Hazır arama şablonlarını kullanarak istediğiniz bilgileri daha hızlı bulmak için bir filtre oluşturun</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Reduce repetitive typing</string>
+    <string name="main_action_snippets_snippet_title">New snippet</string>
+    <string name="main_action_snippets_snippet_description">Create reusable text template to avoid repetitive typing and mistakes</string>
+    <string name="main_action_snippets_set_title">New snippet kit</string>
+    <string name="main_action_snippets_set_description">Create a kit of snippets to find common ones faster</string>
+    <string name="main.actions.save_and_start_new_note">Kaydet ve yeni bir not oluştur</string>
+    <string name="main.actions.add_dynamic_value">Dinamik değer Ekle</string>
+    <string name="main.actions.add_attachment">Dosya ekle</string>
+    <string name="main.actions.sync_note">Bir notu senkronize et</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Sola kaydır</string>
+    <string name="main.swipe_actions.caption.right">Sağa kaydır</string>
+    <string name="main.swipe_actions.fav">Yıldızla</string>
+    <string name="main.swipe_actions.delete">Sil</string>
+    <string name="main.swipe_actions.copy">Kopyala</string>
+    <string name="main.swipe_actions.none">Hiçbiri</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Gelişmiş Arama</string>
+    <string name="filter.hint.text">Metin içerir</string>
+    <string name="filter.label.no_tags">Etiketlenmemiş</string>
+    <string name="filter.label.fav">Yıldızlı</string>
+    <string name="filter.label.platform">Platform</string>
+    <string name="filter.label.snippets">Parçacıklar</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Panodaki notlar</string>
+    <string name="filter.clipboard.empty.title">Panodan notları temizle?</string>
+    <string name="filter.clipboard.empty.description">Panodaki tüm notlar (yıldızlı ve etiketli hariç) kalıcı olarak silinecektir.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Geri Dönüşüm Kutusu</string>
+    <string name="filter.deleted.limit">Limit</string>
+    <string name="filter.deleted.empty.title">Geri Dönüşüm Kutusu\'nu Boşalt?</string>
+    <string name="filter.deleted.empty.description">Geri Dönüşüm Kutusu\'ndaki tüm notlar kalıcı olarak silinecek.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Limit</string>
+    <string name="filter.limit.description">Notların sayısı bu kategorinin sınırını aştığında, sınırı aşan eski notlar kategoriden otomatik olarak silinir.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Filtre adı</string>
+    <string name="filter_error_name_required">Bu filtreyi kaydetmek için benzersiz bir ad gereklidir</string>
+    <string name="filter_delete_title">\'%s \' filtresini sil?</string>
+    <string name="filter_delete_description">Filtre kalıcı olarak silinecektir.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Bu etiketi kaydetmek için benzersiz bir ad gereklidir</string>
+    <string name="filter.tag.rule.title">Otomatik atama kuralı</string>
+    <string name="filter.tag.rule.description">Eğer etkinleştirilirse, etiket virgülle ayrılmış metinlerden herhangi birini içeriyorsa otomatik olarak yeni notlara atanır.</string>
+    <string name="filter.tag.rule.hint">Virgülle ayrılmış metin</string>
+    <string name="filter.tag.delete.title">\'%s \' etiketini sil?</string>
+    <string name="filter.tag.delete.description">Bu etiket kalıcı olarak silinecektir.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Ekle</string>
+    <string name="clip.hint.title">Adsız Not</string>
+    <string name="clip.hint.tags">Etiket eklemek için dokun</string>
+    <string name="clip.hint.text">Metin eklemek için dokun</string>
+    <string name="clip.snackbar.text.required">Metin gerekli</string>
+    <string name="clip.snackbar.text.copied">Metin kopyalandı</string>
+    <string name="clip.attr.updated">Kullanıldı</string>
+    <string name="clip.attr.edited">Düzenlendi</string>
+    <string name="clip.attr.created">Oluşturuldu</string>
+    <string name="clip.attr.deleted">Silindi</string>
+    <string name="clip.attr.usageCount">Kullanım sayısı</string>
+    <string name="clip.attr.charsCount">Karakter</string>
+    <string name="clip.attr.size">Boyut</string>
+    <string name="clip_exit_without_save_title">Notun düzenlenmesini iptal et?</string>
+    <string name="clip_exit_without_save_description">Yapılan değişiklikler kaybolacak.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Farklı Kaydet</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Genel</string>
+    <string name="clip_details_tab_tags">Etiketler</string>
+    <string name="clip_details_tab_folder">Location</string>
+    <string name="clip_details_tab_attachments">Ekler</string>
+    <string name="clip_details_tab_dynamic">Dinamik değerler</string>
+    <string name="clip_details_tab_snippets">Snippets</string>
+    <string name="clip_details_tab_snippet_kits">Snippet Kits</string>
+    <string name="clip_details_tab_dynamic_values">Değerler</string>
+    <string name="clip_details_tab_dynamic_fields">Alanlar</string>
+    <string name="clip_details_tab_attributes">Özellikler</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Bir nota metin ekle</string>
+    <string name="clip.info.label.note.insert.remember">Seçimlerimi hatırla ve tekrar sorma (panele uzun bir dokunuşla erişilebilir).</string>
+    <string name="clip.info.label.note.create">Yeni Not Oluştur</string>
+    <string name="clip.info.label.position">Konum</string>
+    <string name="clip.info.label.beginning">Başında</string>
+    <string name="clip.info.label.end">Sonunda</string>
+    <string name="clip.info.label.tags.edit">Etiketleri düzenle</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Düz Metin</string>
+    <string name="clip.text.type.link">Bağlantılı Metin</string>
+    <string name="clip.text.type.line_clickable">Kopyalanmış satırlı metin</string>
+    <string name="clip.text.type.word_clickable">Kopyalanmış sembollü metin</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Ek dosya</string>
+    <string name="clip.add.attachment.tooltip">Ek %s megabayttan büyük olmayan herhangi bir dosya (fotoğraf, video, pdf, vb.) olabilir).</string>
+    <string name="clip.add.dynamic.title">Dinamik değer</string>
+    <string name="clip.add.dynamic.tooltip">Dinamik değer, her zaman güncel verilerle notlar oluşturmanın bir yoludur. Görünüm modunda, eklenen yer tutucu gerçek verilerle değiştirilir.</string>
+    <string name="clip.add.dynamic.value.date_time">Tarih/Saat</string>
+    <string name="clip.add.dynamic.value.platform">Platform</string>
+    <string name="clip.add.dynamic.value.ip">Ip Adresi</string>
+    <string name="clip.add.dynamic.value.date">Tarih</string>
+    <string name="clip.add.dynamic.value.time">Tarih</string>
+    <string name="clip.add.dynamic.value.month">Ay</string>
+    <string name="clip.add.dynamic.value.timezone">Zaman Dilimi</string>
+    <string name="clip.add.dynamic.value.month_number">Ay Sayısı</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Ay Numarası (önde gelen sıfır ile)</string>
+    <string name="clip.add.dynamic.value.year">Yıl</string>
+    <string name="clip.add.dynamic.value.year_short">Yıl (kısa)</string>
+    <string name="clip.add.dynamic.value.hour24">Saat (24-saat zamanı)</string>
+    <string name="clip.add.dynamic.value.hour12">Saat (12-saat zamanı)</string>
+    <string name="clip.add.dynamic.value.minutes">Dakikalar</string>
+    <string name="clip.add.dynamic.value.seconds">Saniyeler</string>
+    <string name="clip.add.dynamic.value.am_pm">ÖÖ/ÖS</string>
+    <string name="clip.add.dynamic.value.day_of_week">Haftanın günü</string>
+    <string name="clip.add.dynamic.value.day_of_month">Ayın günü</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Ayın günü (önde gelen sıfır ile)</string>
+    <string name="clip.add.dynamic.value.random_digit">Rastgele Rakam (0–9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Rastgele Latin Karakteri (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Parça</string>
+    <string name="clip.add.snippet.new.hint">Bulmak veya oluşturmak için metin girin</string>
+    <string name="clip.add.snippet.tooltip">Snippet, metni başka bir notta yeniden kullanabileceğiniz, ancak birinde düzenleyebileceğiniz herhangi bir nottur. Oluşturulan snippet\'lere sol navigasyondan erişilebilir.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Metin Türü</string>
+    <string name="text.config.size">Metin Boyutu</string>
+    <string name="text.config.font">Metin Tipi</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Sırala</string>
+    <string name="list.config.lines">Görünür Metin Satırları</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Liste Stili</string>
+    <string name="list.style.description">Not Liste Stili</string>
+    <string name="list.style.default">Varsayılan</string>
+    <string name="list.style.comfortable">Rahat</string>
+    <string name="list.style.compact">Yoğunlaştırılmış</string>
+    <string name="list.style.preview">Önizleme</string>
+    <string name="list.style.grid">Izgara</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Beceri Rünleri</string>
+    <string name="runes.hint.description"><![CDATA[    Bu uygulamanın işlevselliğini geliştirmenin bir şeklidir.
+    \n\n
+    Her rün temel işlevselliği genişletir veya değiştirir ve uygulamayı en iyi üretkenliği elde etmek için özelleştirmenizi sağlar.
+    \n\n
+    Bazı rünler daha kullanışlı, diğerleri daha az, ama bu yaklaşım uygulamayı olasılıklarda neredeyse sınırsız hale getirir.
+    \n\n
+    Mevcut rünleri kontrol edin, istediğinizi etkinleştirin ve uygulamayı biraz daha üretken yapmak için fikirler gönderin:)
+    ]]></string>
+    <string name="runes_hotkeys_title">Hotkey Observer</string>
+    <string name="runes_hotkeys_description"><![CDATA[    With this rune you can configure hotkeys to control the application and the actions within it.
+    \n
+    \n
+    Some hotkeys are set by default. You can either clear them or reassign.
+    \n
+    \n
+    ```
+    \n
+    Depending on the action, the hotkey will be monitored either within the application or globally outside of it.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Astral Senkronizasyon</string>
+    <string name="runes.instant_sync.description"><![CDATA[    The rune opens an opportunity:
+    \n
+    - automatically save all data in the cloud;
+    \n
+    - instantly access it on any other device;
+    \n
+    - save not only text notes, but also files of any format;
+    \n\n
+    By default, the application works without synchronization and saves all data on the device.
+    \n
+    ```
+    \n
+    Once you activate this rune, all previously created and new data will be automatically synced to the cloud storage as soon as the internet connection is available.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Demir Kalkan</string>
+    <string name="runes.pincode.description"><![CDATA[    Rün uygulamaya erişimi bir şifre ile korumanıza izin verir.
+    \n\n
+    Etkinleştirildiğinde, erişim hareketsizlikten **%s dakika** sonra engellenir.
+    \n\n
+    **Önemli:** eğer şifrenizi unutursanız, uygulamayı kaldırmanız ve yeniden kurmanız gerekecek. Bu durumda, tüm senkronize edilmemiş değişiklikler kaybolacak.
+    ]]></string>
+    <string name="runes.theme.title">Chameleon Skin</string>
+    <string name="runes.theme.description"><![CDATA[    Varsayılan olarak, uygulama sistem ayarlarına bağlı olarak açık ve koyu arasında otomatik olarak değişen bir renk şeması kullanır.
+    \n\n
+    Sistem ayarlarından bağımsız olarak aynı görünecek başka bir temayı etkinleştirebilirsiniz.
+    ]]></string>
+    <string name="runes.clipboard.title">Pano</string>
+    <string name="runes.clipboard.description"><![CDATA[    Rün panoyu izlemeye ve otomatik olarak metin ile notlar oluşturmaya izin verir.
+    \n\n
+    Bir kez etkinleştirildiğinde, uygulama durum çubuğuna arabelleği takip etmek için kalıcı bir bildirim gösterir.
+    \n\n
+    ```
+    \n
+    Eğer bildirim gözükmüyorsa, uygulama çalışmıyor ve arabellek siz uygulamayı çalıştırana kadar izlenmeyecektir.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Klavye Arkadaşı</string>
+    <string name="runes.texpander.description"><![CDATA[    The rune gives you the ability to use the application to fill in input fields with existing notes in almost **any application**.
+    \n\n
+    Once activated, when you place focus in an input field, the app will display a floating panel with actions that allow you to control the content of the input field.
+    \n\n
+    #### Behavior features:
+    \n
+    - the panel can be resized;
+    \n
+    - the panel can be dragged anywhere on the screen;
+    \n
+    - the panel can be automatically modified depending on the possibility of using certain actions;
+    \n
+    - the panel can be automatically hidden if the field loses focus;
+    \n
+    - the panel can be manually hidden (using the top right action in the toolbar) until forced to be called again;
+    \n
+    - if the panel is not displayed, it can be explicitly called from the Notification Panel or Quick Settings (if the Tile is placed in the panel);
+    \n\n
+    #### Technical limitations:
+    \n
+    - the panel uses accessibility service and requires its activation in the system settings;
+    \n
+    - the panel uses a floating window to display on top of other applications and requires the corresponding permission in the system settings;
+    \n
+    - in some applications the automatic behavior of the panel is not possible, so it can be used with restrictions and explicit invocation;
+    \n\n
+    #### Notice:
+    \n
+    If the rune stops working after a while please read [this article](%s) how to keep the app running on your device. Or contact me by email, maybe you found some issue:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Etkinleştir</string>
+    <string name="runes.texpander.required.accessibility">Buraya dokun, sonra İndirilmiş (Kurulmuş) servislere git ve Klavye Arkadaşı servisini etkinleştir.</string>
+    <string name="runes.texpander.required.floating">Buraya dokun, ardından Diğer izinlere git ve açılır pencere iznini etkinleştir.</string>
+    <string name="runes.texpander.action.copy">Panoya Kopyala</string>
+    <string name="runes.texpander.action.show">Yüzen paneli göstermek için buraya dokun.</string>
+    <string name="runes.texpander.action.insert">Ekle</string>
+    <string name="runes.texpander.action.replace">Değiştir</string>
+    <string name="runes.texpander.hint.hide">Hide until called from the Notification Panel or Quick Settings.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">The Oculus</string>
+    <string name="runes.link_preview.description"><![CDATA[    Bu rün etkinleştirildiğinde, kaydedilen **https bağlantıları** için uygulama onların önizlemesini not gösterme modunda yükler.
+    \n\n
+    Bunu yaparken:
+    \n
+    - önizleme resmi ayrı bir pencerede açılabilir ve yakınlaştırılabilir;
+    \n
+    - Eğer bağlantı bir video ise, uygulama ile açılabilir;
+    ]]></string>
+    <string name="runes.auto_save.title">Geri dönüş noktası</string>
+    <string name="runes.auto_save.description"><![CDATA[    Varsayılan olarak, bir not oluşturduğunuzda veya düzenlediğinizde, değişikliklerinizi onaylamak için el ile kaydet tuşuna tıklamanız gerekir.
+    \n
+    \n
+    Bu rün ile, uygulama not düzenlerken yaptığınız her değişikliği otomatik kaydeder.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Canlandır</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    Bu rün ile, başlangıçta, uygulama önceki sezondan son aktif filtreyi geri yükleyecektir.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Kaydırma Gücü</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    Bu rün ile, notlar listesinde, kaydırma hareketlerine uygulanan eylemleri ayarlayabilirsiniz.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Kaydırılmış Odak</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    Varsayılan olarak, bir not oluşturduğunda, odak metin giriş alanında ayarlanır.
+    \n\n
+    Bu davranışı değiştirmek ve odağı başka bir alana ayarlamak için bu rünü kullanabilirsiniz.    ]]></string>
+    <string name="runes.hide_on_copy.title">Esen Kopya</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    Rün etkinleştirildiğinde, Clipto içindeki her metin kopyalama eyleminde (giriş alanlarındaki bağlamsal eylemler hariç) uygulamayı gizler.
+    \n
+    \n
+    Bu rün kopyalanan metni uygulamanın dışına yapıştırırken adım sayısını azaltır.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Geçici Adımlar</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Bu rünü kullanarak, seçilen eylemleri tek tıklama yerine çift tıklayarak aktif edecek şekilde ayarlayabilirsiniz
+    \n
+    \n
+    Bu davranış kazara tıklamaları önlemede kullanışlı olabilir.
+    ]]></string>
+    <string name="runes.loyalty.title">İlham Verici Destek</string>
+    <string name="runes.loyalty.description"><![CDATA[    Sizin desteğiniz ve geri bildiriminiz olmadan, bu ürün kullanıcılar için doğru yönde gelişmez.
+    \n\n
+    >**Eğer bir dakikanız varsa**, Google Play\'de bizi oylamayı unutmayın.
+    \n\n
+    >**Eğer daha fazla zamanınız varsa, ve çeviri doğru gözükmüyorsa** - yerelleştirme projemize katılın.
+    \n\n
+    >**Eğer hata bulduysanız, daha fazla rün istiyorsanız veya sadece bize yazmak istiyorsanız,** - epostamız ve github sayfamız daima sizin servisinizde.
+    ]]></string>
+    <string name="runes.backup_restore.title">Zaman Makinesi</string>
+    <string name="runes.backup_restore.description"><![CDATA[    Bulut senkronizasyonuna ek olarak, verilerinizi el ile yedekleyip sonra geri yükleyebilirsiniz.
+    \n\n
+    Bulut senkronizasyonundan farklı olarak, bu yaklaşım şunları sağlar:
+    \n
+    - şu anda tüm verilerin anlık görüntüsünü alın;
+    \n
+    - tüm yedekleme ve geri yükleme işlemini kendiniz yönetin;
+    \n
+    - önceden kaydedilmiş veri anlık görüntüsüne göre tüm verileri geri yükleyin;
+    \n\n
+    ```
+    \n
+    Bir dosyadan geri yükleme yumuşak modda yapılır. Yani, mevcut veri silinmez, ama yeni veri ile eklenir.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Ayarlar</string>
+    <string name="settings.campaign.rate.title">Fikriniz değerlidir</string>
+    <string name="settings.campaign.rate.message">Bir dakikadan az sürer ama bizim daha iyi olmamıza yardımcı olabilirsiniz.</string>
+    <string name="settings.campaign.rate.button">Google Play\'de bizi oyla</string>
+    <string name="settings.campaign.rate.question">Clipto ile deneyimin nasıldı?</string>
+    <string name="settings.campaign.rate.feedback.title">Geri bildirim</string>
+    <string name="settings.campaign.rate.feedback.message">Clipto\'yu nasıl geliştirebileceğimizi bize söyleyebilir misiniz?
+Görüşün çok önemli.</string>
+    <string name="settings.campaign.rate.feedback.toast">Google Play\'de güzel bir yorum bırakabilir misin?
+Desteğin için teşekkürler!</string>
+    <string name="settings.campaign.share.title">Arkadaşını getir, hediyeyi kap!</string>
+    <string name="settings.campaign.share.more">Daha fazlası için</string>
+    <string name="settings.campaign.share.action">Bağlantıyı paylaş</string>
+    <string name="settings.group.clipboard">Pano</string>
+    <string name="settings.group.behavior">Hareket</string>
+    <string name="settings.group.appearance">Görünüm</string>
+    <string name="settings.group.backup">Yedekleme ve Kurtarma</string>
+    <string name="settings.group.security">Gizlilik &amp; Güvenlik</string>
+    <string name="settings.group.runes">Rünler</string>
+    <string name="settings.link_preview.title">Bağlantıları Önizle</string>
+    <string name="settings.auto_save.title">Notları otomatik kaydet</string>
+    <string name="settings.auto_save.description">Uygulama not oluştururken veya düzenlerken değişiklikleri kaydeder.</string>
+    <string name="settings.focus_on_title.title">Bir not oluştururken başlığa odaklan</string>
+    <string name="settings.focus_on_title.description">Not oluştururken, odak başlık alanına ayarlanıcaktır</string>
+    <string name="settings.track_clipboard.title">Panodan Notlar</string>
+    <string name="settings.track_clipboard.description">Uygulama çalışırken, pano değişikliklerinden notlar oluşturur. Durum çubuğunda kalıcı bildirim konulacaktır.</string>
+    <string name="settings.track_clipboard.q.message">Android Q\'dan başlayarak, Panodan notlar oluşturmak için yeni yollarımızı kullanın.</string>
+    <string name="settings.track_clipboard.q.description">Android Q\'dan başlayarak, sadece şu anda odağı olan uygulama Pano verilerine erişebilir.</string>
+    <string name="settings.track_clipboard.q.solution.title">Bu kısıtlamayı atlamak için, aşağıdaki çözümlerden birini kullanın:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">\'Kopyala\' eylemi yerine \'Clipto…\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Kopyalayacak yazıyı seçtiğinizde, etkin uygulamanın içerik menüsünde mevcutsa \'Kopyala\' yerine \'Clipto…\' eylemini kullanın.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Bildirim alanında \'Yapıştır\' ile birlikte standart \'Kopyala\' eylemi</string>
+    <string name="settings.track_clipboard.q.solution.2">Eğer \'Clipto…\' eylemi mevcut değil veya hala standart \'Kopyala\' eylemini kullanmak istiyorsanız o zaman mevcut pano verilerinden bir not almak için bildirimdeki \'Yapıştır\' düğmesine tıklamayı unutmayın.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Android Q\'dan önce olduğu gibi standart \'Kopyala\' eylemi</string>
+    <string name="settings.track_clipboard.q.solution.3">Bu çözüm bir bilgisayar aracılığıyla uygulama ile yapılacak Gelişmiş Yapılandırma gerektirir. Clipto\'nun tekrar çalışmasını sağlamak için lütfen bilgisayarınızda aşağıdaki ADB komutlarını çalıştırın:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Başarılı bir şekilde çalıştırdıktan sonra pano izlemeyi açmanıza/kapatmanıza izin veren özel uygulama bildirimlerinde ek bir eylem görmelisiniz. Ayrıca bu uyarı ayarlardan kaybolacak.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Kopyala Eylemini Benzet</string>
+    <string name="settings.track_clipboard.q.emulate.description">Özel \'Clipto…\' ve \'Yapıştır\' eylemleri seçilen veya kopyalanan metinden otomatik olarak notlar oluşturacak ve içeriği farklıysa Panoya koyacaktır.</string>
+    <string name="settings.universal_clipboard.title">Evrensel pano</string>
+    <string name="settings.universal_clipboard.description">Panoya kopyalanan herhangi bir metin tüm cihazlarınız arasında senkronize edilecektir. Ayrıca bu ayarın etkinleştirildiği Panoya otomatik olarak eklenecektir.</string>
+    <string name="settings.notification_style.title">Bildirim Ayarları</string>
+    <string name="settings.notification_style.description">Notification style to use for a permanent notification in the status bar.</string>
+    <string name="settings.notification_sound.title">Sessiz bildirimler</string>
+    <string name="settings.notification_sound.description">Bildirim veya bildirim kanalında ayarlanan sesler veya titreşimler ne olursa olsun bildirimleri susturur.</string>
+    <string name="settings.hide_on_click.title">Kopyalarken gizle</string>
+    <string name="settings.hide_on_click.description">Not kopyalandıktan sonra uygulama gizlenecektir.</string>
+    <string name="settings.restore_filter.title">Son filtreyi hatırla</string>
+    <string name="settings.restore_filter.description">Uygulama, önceki oturumdan bir filtre ile açılacaktır.</string>
+    <string name="settings.pin_starred.title">Yıldızlı notları tuttur</string>
+    <string name="settings.pin_starred.description">Starred notes will be displayed first in the list, regardless of the selected filter.</string>
+    <string name="settings.theme.title">Tema</string>
+    <string name="settings.theme.description">Özel renk şeması seçin.</string>
+    <string name="settings.backup.title">Dosyaya yedekle</string>
+    <string name="settings.backup.description">Notlarınızı dosyaya dışa aktar.</string>
+    <string name="settings.restore.title">Dosyadan kurtar</string>
+    <string name="settings.restore.description">Restore notes from a file (supported formats: %s).</string>
+    <string name="settings.startup.title">Açılışta çalıştır</string>
+    <string name="settings.startup.description">Uygulamanın sistem önyüklemesi tamamlandıktan sonra kendisini başlatma izni verir.</string>
+    <string name="settings.language.title">Dil</string>
+    <string name="settings.swipe_actions.title">Kaydırma hareketleri</string>
+    <string name="settings.swipe_actions.description">Ana listede notlar üzerinde hızlı hareket etme için kaydırma hareketlerini düzenleyin.</string>
+    <string name="settings.double_click.title">Çift tıklama eylemleri</string>
+    <string name="settings.double_click.description">Configure actions to be completed only by using a double-click.</string>
+    <string name="settings.double_click.action.exit">Back button exits the app</string>
+    <string name="settings.double_click.action.delete">Notu sil</string>
+    <string name="settings.double_click.action.edit">Notu düzenle</string>
+    <string name="settings.double_click.toast">Tamamlamak için tekrar tıkla</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Değişmiş notları gösterme</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Özelliklerinden herhangi birinin atandığı notlar (etiket, favoriler işareti, başlık, snippet), \'Panodan Notlar\' kategorisinde gösterilmez.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Pano kısıtlamaları hakkında bir uyarı görüntüleme</string>
+    <string name="settings.clipboard.ignore_q_warning.description">Uygulama yapılandırılmışsa ve cihazınızdaki panoyla düzgün çalışıyorsa, işlevsel kısıtlamaları bildirimlerden kaldırmak için bu geçişi etkinleştirin.</string>
+    <string name="settings.security.passcode.title">Parola Kilidi</string>
+    <string name="settings.security.passcode.description">When you set up a passcode, the app will be locked after %s minutes of inactivity.\n\nNote: if you forget the passcode, you\'ll need to clear the application data. In this case, all unsynced changes will be lost.</string>
+    <string name="settings.security.fingerprint.title">Parmak izi ile Kilidi Aç</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Atla</string>
+    <string name="auth.set_passcode.label.set_passcode">Uygulamaya hızlıca ve güvenle erişmek için bir şifre koyun</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Şifreni yeniden gir</string>
+    <string name="auth.set_fingerprint.title">Set Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Uygulamanın kilidini açmak için parmak izi sensörü kullanmak ister misin?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Parmak izi kullan</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Şimdilik geç</string>
+    <string name="auth.fingerprint.touch_sensor">Devam etmek için parmak izini doğrula</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Geçerli parolanızı yazın</string>
+    <string name="change_passcode.set_new">Yeni şifrenizi oluşturun</string>
+    <string name="change_passcode.reenter">Şifrenizi tekrar girin</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Destek</string>
+    <string name="about.label.email.support.message">MESAJINIZI BURAYA YAZIN</string>
+    <string name="about.label.rate">Google Play\'de bizi oylayın</string>
+    <string name="about.label.issue">Sorun bildir</string>
+    <string name="about.label.translate">Çeviri ile bize yardım et</string>
+    <string name="about.label.changelog">Değişiklik listesi</string>
+    <string name="about.label.campaign.rate">Bizi iyileştirmeye yardım et!</string>
+    <string name="about.label.campaign.share">Uygulama bağlantısı paylaş</string>
+    <string name="about.label.campaign.share.description">%s kişi bağlantınız aracılığıyla uygulamamıza katıldı. Yardımınız için teşekkürler!</string>
+    <string name="about.label.other">Diğerleri bizim hakkımızda ne diyor</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Cihazlarınız arasında sekronizasyon sağlamak için giriş yapın.</string>
+    <string name="account.title.required_authorization">Yetkilendirme gerekmektedir</string>
+    <string name="account.description.required_authorization">Bu eylemi gerçekleştirmek için yetkili olmanız gerekiyor</string>
+    <string name="account.title.authorized">Yetkili</string>
+    <string name="account.button.sign_in">Giriş yap</string>
+    <string name="account.button.sign_out">Çıkış yap</string>
+    <string name="account.dialog.sign_out.title">Çıkış yapılıyor</string>
+    <string name="account.dialog.sign_out.message">Uygulamadan çıkmak istediğine emin misin? Senkronize edilmemiş tüm veriler kaybolacaktır.</string>
+    <string name="account.plan.personal">Kişisel Lisans</string>
+    <string name="account.plan.subscription">Abonelik planı (%s notlarını senkronize et)</string>
+    <string name="account.plan.contributor">Katılımcı planı (%s notlarını senkronize et)</string>
+    <string name="account.plan.yearly">Yıllık plan (%s notlarını senkronize et)</string>
+    <string name="account.plan.monthly">Aylık plan (%s notlarını senkronize et)</string>
+    <string name="account.plan.free">Temel plan (%s notlarını senkronize et)</string>
+    <string name="account.toolbar.title">Hesap</string>
+    <string name="account.sync.title">Notları otomatik olarak senkronize et</string>
+    <string name="account_rebuild_index_title">Rebuild data index</string>
+    <string name="account_rebuild_index_description">If you see different data (tags, files, notes, etc.) on different devices, it is recommended to perform this procedure. You will need to re-login when the procedure is complete.</string>
+    <string name="account_delete_title">Hesabı Sil</string>
+    <string name="account_delete_confirm_title">Hesabınızı silmek istiyor musunuz?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATTENTION! If you press DELETE below, your account and personal data will be deleted
+    permanently and irreversible, so please make sure the account contains no valuable data/information.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Emin misiniz?</string>
+    <string name="account_delete_confirm_again_description">Onayladıktan sonra, tüm hesap verileriniz kalıcı olarak silinir.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Ücretsiz</string>
+    <string name="account.sync.plan.title">%s notlarını senkronize et</string>
+    <string name="account.sync.plan.toolbar">Plan Seç</string>
+    <string name="account.sync.plan.button.active">Aktif plan</string>
+    <string name="account.sync.plan.button.select">Plan Seç</string>
+    <string name="account.sync.plan.button.change">Plan değiştir</string>
+    <string name="account.sync.plan.button.upgrade">Yükselt</string>
+    <string name="account.sync.plan.caption">Ücretsiz olarak başlayın, ardından yalnızca senkronize ettiğiniz veriler için ödeme yapın.</string>
+    <string name="account.sync.plan.hint">Cihazlar arasında senkronize edebileceğiniz not sayısı (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Sınırsız sayıda çevrimdışı not.</string>
+    <string name="account.sync.plan.benefit.sync">%s notu tüm cihazlarınızda senkronize et.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Senkronizasyon, maksimum limite ulaşıldığı için kapalıdır</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">Geri Dönüşüm kutunuz da dahil olmak üzere tüm notlarınızın toplam sayısı %s, izin verilen sınırını aşan %s\'dir.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Bu planı seçmek için notlarınızın sayısını azaltın.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Planının limitine ulaştın. Endişelenme, uygulama hala tamamen çevrimdışı kullanışlı ve herhangi bir kısıtlama yok. Ancak bulut senkronize planını yükseltene veya not sayısını etkin planın sınırına düşürene kadar cihazında devre dışı bırakıldı.</string>
+    <string name="account.sync.plan.contributor">Uygulamayı çevirmeye veya ürünü düzenli olarak desteklemeye yardımcı olduysan, lütfen hesabını yükseltmek için bize ulaş.</string>
+    <string name="sync.free_limit_concept">Ücretsiz limit sabit değildir ve çeşitli faktörlere bağlı olarak yukarı veya aşağı değiştirilebilir.</string>
+    <string name="sync.off.title">Not cihazlar arasında senkronize edilmedi</string>
+    <string name="sync.off.multiple.title">The notes are not synced between devices</string>
+    <string name="sync.off.caption">Bu aşağıdaki nedenlerden biri için mümkündür:</string>
+    <string name="sync.off.reason.universal_clipboard">Uygulama bu notu oluştururken Evrensel pano etkinleştirilmedi.</string>
+    <string name="sync.off.reason.manual_off">Senkronizasyonu el ile kapattın.</string>
+    <string name="sync.warning.title">İşlevsellik bulut senkronizasyonu kullanır</string>
+    <string name="sync.warning.description">Bulut senkronize tamamen ücretsiz değildir ve hesabınızı yükseltene veya aktif planın not sayısını limite düşürene kadar devre dışı bırakılabilir.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Hızlı Eylemler</string>
+    <string name="fast_actions.compose_email">E-posta oluştur</string>
+    <string name="fast_actions.send_message">Yeni bir mesaj gönder</string>
+    <string name="fast_actions.compose_sms">SMS oluştur</string>
+    <string name="fast_actions.twitter_post">Tweet oluştur</string>
+    <string name="fast_actions.web_search">Internet Araması</string>
+    <string name="fast_actions.google_translate">Google Çeviri</string>
+    <string name="fast_actions.google_maps_search">Google Haritalar Araması</string>
+    <string name="fast_actions.wiki_search">Vikipedi Araması</string>
+    <string name="fast_actions.youtube_search">Youtube Araması</string>
+    <string name="fast_actions.duckduckgo_search">DuckDuckGo Araması</string>
+    <string name="fast_actions.stackoverflow_search">Stack Overflow Araması</string>
+    <string name="fast_actions.reddit_search">Reddit Araması</string>
+    <string name="fast_actions.play_url">Bir bağlantı oynat</string>
+    <string name="fast_actions.send_as_file">Dosya olarak gönder</string>
+    <string name="fast_actions.send_as_txt_file">Txt olarak gönder</string>
+    <string name="fast_actions.send_as_pdf_file">Pdf olarak gönder</string>
+    <string name="fast_actions.send_as_md_file">Send as Markdown</string>
+    <string name="fast_actions.export_to_file">Dosya olarak dışa aktar</string>
+    <string name="fast_actions.export_to_file.success">%s olarak dışa aktarıldı</string>
+    <string name="fast_actions.calendar_event">Takvim olayı ekle</string>
+    <string name="fast_actions.copy">Panoya kopyala</string>
+    <string name="fast_actions.copy_clear">Clear from the clipboard</string>
+    <string name="fast_actions.tts">Metinden sese</string>
+    <string name="fast_actions.tts.max_length">Metin %s karakterden daha fazla olmamalı</string>
+    <string name="fast_actions.share">… İle paylaş</string>
+    <string name="fast_actions.send_as_qrcode">QR kodu olarak gönder</string>
+    <string name="fast_actions.dial_number">Telefon numarası tuşla</string>
+    <string name="fast_actions.insert_contact">Kişi ekle</string>
+    <string name="fast_actions.insert_contact_email">İletişim epostasını Kaydet</string>
+    <string name="fast_actions.insert_contact_phone">Save Contact phone</string>
+    <string name="fast_actions.open_url">Web sayfası aç</string>
+    <string name="fast_actions.short_link">Bağlantıyı kısalt</string>
+    <string name="fast_actions.more">Daha fazla göster</string>
+    <string name="fast_actions.error">Beklenmeyen hata: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Varsayılan</string>
+    <string name="theme.sepia">Sepya</string>
+    <string name="theme.dark">Koyu</string>
+    <string name="theme.dark_blue">Koyu Mavi</string>
+    <string name="theme.dark_green">Koyu Yeşil</string>
+    <string name="theme.dark_blurple">Dark Blurple</string>
+    <string name="theme.black">AMOLED Siyah</string>
+    <string name="theme.green">Yeşil</string>
+    <string name="theme.white">Beyaz</string>
+    <string name="theme.pink">Pembe</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Kullanım tarihi</string>
+    <string name="sort_order.modify_date">Tarihi düzenle</string>
+    <string name="sort_order.create_date">Tarih ekle</string>
+    <string name="sort_order.delete_date">Tarih sil</string>
+    <string name="sort_order.usage_count">Kullanım sayısı</string>
+    <string name="sort_order.title">Başlık</string>
+    <string name="sort_order.text">Metin</string>
+    <string name="sort_order.tags">Etiketler</string>
+    <string name="sort_order.size">Boyut</string>
+    <string name="sort_order.name">İsim</string>
+    <string name="sort_order.notes_count">Not sayısı</string>
+    <string name="sort_order.color">Renk</string>
+    <string name="sort_order.manual">El ile</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Başarı</string>
+    <string name="backup.fail.title">Başarısız</string>
+    <string name="backup.fail.message">Beklenmeyen hata: %s</string>
+    <string name="restore.success.title">Başarı</string>
+    <string name="restore.fail.title">Başarısız</string>
+    <string name="restore.fail.message">Beklenmeyen hata: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Bu pencereyi kapatmak istediğinden emin misin?</string>
+    <string name="clip.multiple.exit_without_save.description">Yapılan değişiklikler kaybolacak.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Yaygın etiketler</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Ayırıcı</string>
+    <string name="clip.multiple.merge.separator.line">Yeni satır</string>
+    <string name="clip.multiple.merge.separator.space">Boşluk</string>
+    <string name="clip.multiple.merge.separator.other">Diğer</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Tanımlanan düzen</string>
+    <string name="notification.style.history">Pano Geçmişi</string>
+    <string name="notification.style.actions">Pano Eylemleri</string>
+    <string name="notification.track_clipboard.pause">Panoyu izleme durduruldu</string>
+    <string name="notification.track_clipboard.resume">Panoyu izleme devam ediyor</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Ekler</string>
+    <string name="attachments.type.photo">Fotoğraf Çek</string>
+    <string name="attachments.type.record">Video Kaydet</string>
+    <string name="attachments.type.file">Dosya Seç</string>
+    <string name="attachments.attr.created">Oluşturuldu</string>
+    <string name="attachments.attr.name">İsim</string>
+    <string name="attachments.attr.type">Tür</string>
+    <string name="attachments.attr.path">Yol</string>
+    <string name="attachments.attr.size">Boyut</string>
+    <string name="attachments.state.downloaded">İndirildi</string>
+    <string name="attachments.state.uploaded">Yüklendi</string>
+    <string name="attachments.state.downloading">İndiriliyor…</string>
+    <string name="attachments.state.uploading">Yükleniyor…</string>
+    <string name="attachments.label.insert">Nota ekle</string>
+    <string name="attachments.label.download_url">Ortak url dosya yüklendikten sonra mevcut olur.</string>
+    <string name="contribute.annual.offer">Google Play Abonelik Merkezinde İstediğiniz zaman iptal edin.</string>
+    <string name="contribute.monthly.period">ay</string>
+    <string name="contribute.annual.period">yıl</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Çıkış</string>
+    <string name="desktop.tray.show">Göster</string>
+    <string name="desktop.tray.show_in_taskbar">Görev çubuğunda göster</string>
+    <string name="desktop.update.action.download">İndir</string>
+    <string name="desktop.update.action.later">Sonra</string>
+    <string name="desktop.update.title">Yeni sürüm mevcut</string>
+    <string name="desktop.shortcuts.title">Kısayol Tuşları</string>
+    <string name="desktop.shortcuts.dialog.define">Kısayol Belirleme</string>
+    <string name="desktop.shortcuts.showHideApp">Uygulamayı göster/gizle</string>
+    <string name="desktop.shortcuts.modeFullscreen">Tam Ekran Moduna Geç</string>
+    <string name="desktop.shortcuts.modeComfortable">Rahat Moda Geç</string>
+    <string name="desktop.shortcuts.modeCompact">Sıkı Moda Geç</string>
+    <string name="desktop.shortcuts.tagNext">Sıradaki Etiket</string>
+    <string name="desktop.shortcuts.tagPrev">Önceki Etiket</string>
+    <string name="desktop.shortcuts.noteNext">Sıradaki Not</string>
+    <string name="desktop.shortcuts.notePrev">Önceki Not</string>
+    <string name="desktop.shortcuts.noteNew">Yeni Not</string>
+    <string name="desktop.shortcuts.noteSave">Notu Kaydet</string>
+    <string name="desktop.shortcuts.noteDelete">Notu Sil</string>
+    <string name="desktop.shortcuts.noteCopy">Notu Kopyala</string>
+    <string name="desktop.shortcuts.notePrint">Notu Yazdır</string>
+    <string name="desktop.shortcuts.noteFind">Notları Ara</string>
+    <string name="desktop.shortcuts.noteOpen">Not Aç</string>
+    <string name="desktop.shortcuts.noteEdit">Not Düzenle</string>
+    <string name="desktop.shortcuts.contextModeSelect">Not Seç</string>
+    <string name="desktop.shortcuts.contextModeCancel">Tüm Notların Seçimini Kaldır</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Tüm Notları Seç</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Panodan Kaydet</string>
+    <string name="desktop.attachments.browse">Eklemek veya gözatmak için dosyaları bırakın.</string>
+    <string name="desktop.main.content.under.development">İçerik geliştirme aşamasında…</string>
+    <string name="desktop.main.menu.download">İndir</string>
+    <string name="desktop.main.menu.download.for">%s İçin indir</string>
+    <string name="desktop.main.menu.download.android.apk">Geleneksel APK yapısını al</string>
+    <string name="desktop.main.menu.resources">Kaynaklar</string>
+    <string name="desktop.main.menu.open">Clipto\'yu tarayıcında aç</string>
+    <string name="desktop.main.features.title.1">Her cihazda hızlı ve kolayca yazın.</string>
+    <string name="desktop.main.features.title.2">Hem masaüstünüzde hem de telefonunuzda çalışan hız ve üretkenliğe odaklanan hepsi-bir-arada Not Defteri &amp; Pano Yöneticisi.</string>
+    <string name="desktop.main.features.title.3">Kişisel yazma arkadaşınız.</string>
+    <string name="desktop.main.features.title.4">Notlar, snippet\'ler, pano, dosyalar ve herhangi bir cihaza hızlı erişim için önemli olan diğer bilgilerle rahat ve verimli çalışma için kapsamlı bir çözüm.</string>
+    <string name="desktop.main.features.title.5">Clipto\'yu özel yapan nedir?</string>
+    <string name="desktop.get_started.language">Dilini Seç</string>
+    <string name="desktop.get_started.theme">Choose preferred theme</string>
+    <string name="desktop.auth.instruction">Authorisation Instruction</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Barkodu Tara</string>
+    <string name="barcode.prompt.point_at_a_barcode">Kameranızı bir barkoda doğrultun</string>
+    <string name="barcode.prompt.hold_camera_steady">Kamerayı bir an için sabit tutun</string>
+    <string name="barcode.prompt.move_camera_closer">Aramak için yaklaşın</string>
+    <string name="barcode.prompt.searching">Aranıyor…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Yazı tipi isteği neden koduyla başarısız oldu: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Genel Link</string>
+    <string name="public.note.link.time.label">Belirli bir zamanda</string>
+    <string name="public.note.link.time.or">veya</string>
+    <string name="public.note.link.time.type.seconds">saniyeler</string>
+    <string name="public.note.link.time.type.minutes">dakikalar</string>
+    <string name="public.note.link.time.type.hours">saatler</string>
+    <string name="public.note.link.time.type.days">günler</string>
+    <string name="public.note.link.access_time">Erişim Zamanı</string>
+    <string name="public.note.link.access_time.description">If set, the link will only be available after a specified amount of time since its creation or subsequent update.</string>
+    <string name="public.note.link.access_time.label">Will be available in</string>
+    <string name="public.note.link.access_password">Erişim şifresi</string>
+    <string name="public.note.link.access_password.hint">Şifre ipucu (isteğe bağlı)</string>
+    <string name="public.note.link.access_password.placeholder">Şifre</string>
+    <string name="public.note.link.access_password.description">Kurulursa, bağlantı sadece şifre onaylandıktan sonra kullanılabilir.</string>
+    <string name="public.note.link.time_to_expire">Sona erme zamanı</string>
+    <string name="public.note.link.time_to_expire.description">If set, the link will be valid for a specified period of time after creation or subsequent update.</string>
+    <string name="public.note.link.time_to_expire.label">Süresinin dolmasına</string>
+    <string name="public.note.link.one_time_opening">Bir kerelik açılış</string>
+    <string name="public.note.link.one_time_opening.description">Kurulursa, bağlantı oluşturulduğu veya daha sonra güncellendiği andan itibaren yalnızca bir açılış için kullanılabilir.</string>
+    <string name="public.note.link.action.remove">Bağlantıyı kaldır</string>
+    <string name="public.note.link.action.remove.confirm.title">Bağlantıyı kaldır?</string>
+    <string name="public.note.link.action.remove.confirm.description">Bağlantı artık kullanılmayacak.</string>
+    <string name="public.note.link.action.create">Bir bağlantı oluştur</string>
+    <string name="public.note.link.state.unavailable">Mevcut değil</string>
+    <string name="public.note.link.state.postponed">Will be available in:</string>
+    <string name="public.note.link.state.expires_in">Expires in %s</string>
+    <string name="public.note.link.state.expired">Expired</string>
+    <string name="public.note.link.state.locked">Locked</string>
+    <string name="public.note.link.state.locked.wrong_password">Wrong password.</string>
+    <string name="about.policy">Gizlilik Politikası</string>
+    <string name="about.toc">Kullanım Şartları</string>
+    <string name="about_pricing">Pricing</string>
+    <string name="site.integrations.title">Integrations</string>
+    <string name="site.integrations.zapier.title">Zapier Integration</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Connect Clipto with Zapier and run your workflows at blazing speed.
+\n
+## Your clipboard as a workflow trigger
+\n
+The fastest way to save important information is to select and copy it.
+\n
+To start using this functionality with Zapier, just follow these steps:
+\n
+1. Configure in Zapier the trigger **Text Copied to the Clipboard**.
+\n
+2. Install Clipto on your device (mobile, desktop) and **sign in** with the same account
+\n
+3. Open Clipto and activate the settings **Notes from Clipboard** and **Universal Clipboard**
+\n
+4. That is all. Now you can use the standard combination **Ctrl+C** (or Copy in the context menu) to activate a workflow with copied text.
+    ]]></string>
+    <string name="faq.title">S.S.S.</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notes** help you keep important text information and access it instantly at any time on any device.
+    \n
+    \n
+    By default, all notes are divided into several categories for quick access to the right ones based on different attributes.
+    \n
+    ```
+    \n
+    All notes are downloaded to your device when you first sign in.
+    \n
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filters** help you find the information you want faster by using ready-made search templates.
+    \n
+    ```
+    \n
+    A search template can contain various combinations of tags, time intervals, texts, sorting and display rules, etc.
+    \n
+    \n
+    Therefore, saving any such combination as a filter makes it much easier to retrieve the data you are looking for when you access it again.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Each filter has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The filter settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** help to organise your notes and files to make them easier to find.
+    \n
+    ```
+    \n
+    You can add multiple tags to any note or file.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Each tag has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The tag settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    The search parameters can be saved as a filter for quick access again.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** help to avoid repetitive typing by using re-usable text templates.
+    \n
+    \n
+    A snippet can be any existing or new note. It can be either static or dynamic, contain fields for manual input and runtime values (dates, times, etc.).
+    \n
+    \n
+    Snippets are organized by kits. You can either create your own kit or install any from the public library.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - The kit can be shared with other users.
+    \n
+    - The kit can be published in the public library.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Abbreviation can be used:
+    \n
+    \n
+    - to quickly search for a note using a short phrase of %s characters max
+    \n
+    - to insert the text of the note into the input field when entering a shortcut with a leading symbol **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Description can be used to provide additional information about a note.
+    \n
+    \n
+    It supports markdown formatting of %s characters max.
+    ]]></string>
+    <string name="where_none_of">none of the selected</string>
+    <string name="where_any_of">any of the selected</string>
+    <string name="where_all_of">all selected</string>
+    <string name="where_after">After</string>
+    <string name="where_before">Before</string>
+    <string name="where_from">From</string>
+    <string name="where_to">To</string>
+    <string name="where_date_today">Today</string>
+    <string name="where_date_tomorrow">Tomorrow</string>
+    <string name="where_date_custom">Custom</string>
+    <string name="where_date_yesterday">Yesterday</string>
+    <string name="where_date_last_7_days">Last 7 days</string>
+    <string name="where_date_last_30_days">Last 30 days</string>
+    <string name="where_date_last_90_days">Last 90 days</string>
+    <string name="advanced_filter_block_text">Text contains</string>
+    <string name="advanced_filter_block_text_type">Text type</string>
+    <string name="advanced_filter_block_category">Located in</string>
+    <string name="advanced_filter_block_tags">Tags</string>
+    <string name="advanced_filter_block_created">Created date</string>
+    <string name="advanced_filter_block_updated">Updated date</string>
+    <string name="advanced_filter_block_only_public_links">Show only with public links</string>
+    <string name="advanced_filter_block_only_attachments">Show only with attachments</string>
+    <string name="advanced_filter_block_only_not_synced">Show only unsynced</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Country</string>
+    <string name="snippet_kit_attr_snippets">Snippets</string>
+    <string name="snippet_kit_attr_language">Dil</string>
+    <string name="snippet_kit_attr_downloads">İndirmeler</string>
+    <string name="snippet_kit_attr_created">Oluşturuldu</string>
+    <string name="snippet_kit_attr_updated">Güncellendi</string>
+    <string name="snippet_kit_attr_category">Category</string>
+    <string name="snippet_kit_public_link">Genel Link</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    The snippet kit can be installed from a public link
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Bağlantıyı kaldır?</string>
+    <string name="snippet_kit_public_link_remove_description">The snippet kit can no longer be installed from this link.</string>
+    <string name="snippet_kit_public_library">Public Library</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    The snippet kit can be installed from a public library.
+    \n
+    \n
+    ```
+    \n
+    The kit must contain at least %s snippets in order to be placed in the public library.
+    \n
+    ```
+    \n
+    \n
+    When you place a kit in the public library, you automatically get a benefit.
+    \n
+    \n
+    [Learn more…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Remove from the public library?</string>
+    <string name="snippet_kit_public_library_remove_description">The snippet kit can no longer be installed from the public library.</string>
+    <string name="snippet_kit_hint_name">Snippet kit name</string>
+    <string name="snippet_kit_label_show_in_public_library">Show in Public Library</string>
+    <string name="snippet_kit_error_name_required">Unique name is required to save this set</string>
+    <string name="snippet_kit_delete_title">Delete kit \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Snippet kit will be permanently deleted.</string>
+    <string name="snippet_kit_uninstall_title">Uninstall kit \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Snippet kit will be permanently deleted, including all associated snippets.</string>
+    <string name="snippet_kit_install_hint_title">What does it mean to install?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    The installed snippet kit will be available for use as if you had created it yourself.
+    \n
+    \n
+    That is, you can completely change any notes in it, add new ones, delete existing, manage the settings of the kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Any changes you make will only be available to you without the ability to change the original kit.
+    \n
+    \n
+    If the original kit has been updated, you can manually update the installed one.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Public Status</string>
+    <string name="public_status_private">Private</string>
+    <string name="public_status_blocked">Blocked</string>
+    <string name="public_status_review">In review</string>
+    <string name="public_status_review_details">It will take some time before the kit is published and available in the public library.</string>
+    <string name="public_status_published">Published</string>
+    <string name="public_status_rejected">Rejected</string>
+    <string name="public_status_not_found">Not found</string>
+    <string name="public_status_deleted">Deleted</string>
+    <string name="public_status_restricted">Restricted</string>
+    <string name="public_status_update_reason">Update reason</string>
+    <string name="dynamic_text_hint_title">Dynamic text</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    If a note contains dynamic fields, you will see this extra step whenever you perform any action on the note.
+    \n
+    \n
+    At this step you can define values in the input fields and complete the action with the changed text.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Text</string>
+    <string name="dynamic_text_view_mode_form">Form</string>
+    <string name="dynamic_value_date">Date/Time</string>
+    <string name="dynamic_value_date_description">Creates a placeholder that is replaced by the actual date</string>
+    <string name="dynamic_value_device">Device Info</string>
+    <string name="dynamic_value_device_description">Creates a placeholder that is replaced with information about the device</string>
+    <string name="dynamic_value_random">Random</string>
+    <string name="dynamic_value_random_description">Creates a placeholder that is replaced by a random value from a customizable list</string>
+    <string name="dynamic_value_clipboard">Clipboard</string>
+    <string name="dynamic_value_clipboard_description">Creates a placeholder that is replaced by the content of the clipboard</string>
+    <string name="dynamic_value_snippet">Snippet</string>
+    <string name="dynamic_value_snippet_description">Creates a placeholder that is replaced by the content of the selected note</string>
+    <string name="dynamic_value_attr_device_type">Information type</string>
+    <string name="dynamic_field_date">Date field</string>
+    <string name="dynamic_field_date_description">Creates a date input field</string>
+    <string name="dynamic_field_text">Text field</string>
+    <string name="dynamic_field_text_description">Creates a text input field</string>
+    <string name="dynamic_field_number">Number field</string>
+    <string name="dynamic_field_number_description">Creates a number input field</string>
+    <string name="dynamic_field_select">Selection field</string>
+    <string name="dynamic_field_select_description">Creates an input to select one or more items</string>
+    <string name="dynamic_field_barcode_scanning">Barcode scanning field</string>
+    <string name="dynamic_field_barcode_scanning_description">Creates a field that allows you to scan a barcode and use its text as the field value</string>
+    <string name="dynamic_field_text_toggle">Text toggle</string>
+    <string name="dynamic_field_text_toggle_description">Creates a toggle switch that can enable or disable a block of text</string>
+    <string name="dynamic_field_reference">Reference field</string>
+    <string name="dynamic_field_reference_description">Creates a field that refers to another field and uses its value</string>
+    <string name="dynamic_field_unknown">Unknown field</string>
+    <string name="dynamic_field_unknown_description">The field cannot be rendered. Perhaps it is incorrect or was created in a newer version of the application</string>
+    <string name="dynamic_field_date_format_date_time">Date/Time (system)</string>
+    <string name="dynamic_field_date_format_date">Date (system)</string>
+    <string name="dynamic_field_date_format_time">Time (system)</string>
+    <string name="dynamic_field_date_format_day_of_week">Day of week</string>
+    <string name="dynamic_field_date_format_day_of_month">Day of month (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Day of month (01–31)</string>
+    <string name="dynamic_field_date_format_year">Year</string>
+    <string name="dynamic_field_date_format_year_short">Year (short)</string>
+    <string name="dynamic_field_date_format_month">Month</string>
+    <string name="dynamic_field_date_format_month_number">Month (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Month (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hour (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hour (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hour (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hour (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minute (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minute (01–60)</string>
+    <string name="dynamic_field_date_format_second">Second (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Second (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Time Zone</string>
+    <string name="dynamic_field_value_formatter_new_line">New line</string>
+    <string name="dynamic_field_value_formatter_semicolon">Semicolon</string>
+    <string name="dynamic_field_value_formatter_comma">Comma</string>
+    <string name="dynamic_field_value_formatter_space">Space</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Ordered list</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Unordered list</string>
+    <string name="dynamic_field_attr_common_label">Label</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Suffix</string>
+    <string name="dynamic_field_attr_common_value">Value</string>
+    <string name="dynamic_field_attr_common_required">Required</string>
+    <string name="dynamic_field_attr_common_placeholder">Placeholder</string>
+    <string name="dynamic_field_attr_common_default_value">Default value</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formatter of selected values</string>
+    <string name="dynamic_field_attr_select_multiple">Multiple selection</string>
+    <string name="dynamic_field_attr_select_user_input">User input</string>
+    <string name="dynamic_field_attr_text_multi_line">Multi-line text</string>
+    <string name="dynamic_field_attr_text_max_length">Max length</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Clipboard is the default value</string>
+    <string name="dynamic_field_attr_select_options">Options</string>
+    <string name="dynamic_field_attr_number_min">Min value</string>
+    <string name="dynamic_field_attr_number_max">Max value</string>
+    <string name="dynamic_field_attr_date_format">Format</string>
+    <string name="dynamic_field_attr_date_example">Example: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Multiple scanning</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Formatter of scanned values</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Referenced field label</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Alanın kendi değeri var</string>
+    <string name="select_option_ordering">Sort options</string>
+    <string name="select_option_ordering_label_asc">Label (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Label (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Value (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Value (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Delete this dynamic field from the text?</string>
+    <string name="dynamic_field_confirm_delete_description">The placeholder of the field will be deleted from the original text.</string>
+    <string name="dynamic_value_placeholder_copied_title">The dynamic value placeholder has been copied to the clipboard</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">File not found. Try uploading it again.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">Updated</string>
+    <string name="file_attr_location">Location</string>
+    <string name="file_confirm_update_file">Update file?</string>
+    <string name="file_confirm_update_file_description">The file will be updated in the cloud storage.</string>
+    <string name="file_error_name_required">Name is required to save this file</string>
+    <string name="file_action_new_file">File</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Files</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">Note</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">Attachment</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Attachments</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">Search your files</string>
+    <string name="file_type_any">All</string>
+    <string name="file_type_audio">Audios</string>
+    <string name="file_type_video">Videos</string>
+    <string name="file_type_image">Images</string>
+    <string name="file_type_archive">Archives</string>
+    <string name="file_type_document">Documents</string>
+    <string name="file_type_recycled">Recycle Bin</string>
+    <string name="folder_select">Select</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">Edit</string>
+    <string name="clip_action_new_edit_description">The note can be edited before it is saved or used for any action.</string>
+    <string name="clip_action_new_insert">Insert into</string>
+    <string name="clip_action_new_insert_description">The text of a note can be inserted into any existing one. Select the target note and specify the insertion options.</string>
+    <string name="clip_action_new_action">Actions</string>
+    <string name="clip_action_new_action_description">The text of a note can be used to perform an action.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">Dışa aktarılan %s not</item>
+        <item quantity="other">Dışa atarılan %s notlar</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">İçe aktarılan %s not</item>
+        <item quantity="other">İçe aktarılan %s notlar</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">Silinmiş %s not</item>
+        <item quantity="other">Silinmiş %s notlar</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s not</item>
+        <item quantity="other">%s notlar</item>
+    </plurals>
+</resources>

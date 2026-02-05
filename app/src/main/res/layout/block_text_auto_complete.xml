@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <clipto.presentation.common.widget.AutoCompleteTextView
+        android:id="@+id/tvAutoComplete"
+        style="@style/TextInputEditTextFilled"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/bg_add_tags_field"
+        android:dropDownWidth="match_parent"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingStart="12dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="64dp"
+        android:paddingBottom="0dp"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbAutoComplete"
+        style="@style/FloatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:hapticFeedbackEnabled="true"
+        android:minHeight="28dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textAlignment="gravity"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:iconGravity="textStart" />
+
+</FrameLayout>

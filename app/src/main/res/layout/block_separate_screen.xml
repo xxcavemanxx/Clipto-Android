@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:maxLines="10"
+        android:minLines="1"
+        android:padding="16dp"
+        android:textAlignment="gravity"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/valueView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/settings.pin_starred.title" />
+
+    <TextView
+        android:id="@+id/valueView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="end"
+        android:maxWidth="120dp"
+        android:maxLines="2"
+        android:textAlignment="gravity"
+        android:textColor="@color/color_theme_accent"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/titleView"
+        app:layout_constraintEnd_toStartOf="@id/iconView"
+        app:layout_constraintTop_toTopOf="@id/titleView"
+        tools:text="Food"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iconView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:padding="14dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/titleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleView"
+        app:srcCompat="@drawable/ic_arrow_right"
+        app:tint="?android:textColorSecondary"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/badgeView"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:alpha="0.7"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/iconView"
+        app:layout_constraintTop_toTopOf="@id/iconView"
+        app:srcCompat="@drawable/ic_dot_highlight"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

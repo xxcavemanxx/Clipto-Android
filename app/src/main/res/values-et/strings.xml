@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Uus rida</string>
+    <string name="common_separator_space">Tühik</string>
+    <string name="common_separator_comma">Koma</string>
+    <string name="confirm_exit_edit_mode_title">Exit edit mode?</string>
+    <string name="confirm_exit_edit_mode_description">All unsaved changes will be lost.</string>
+    <string name="confirm_delete_note_title">Delete note?</string>
+    <string name="confirm_delete_note_description">Selected note will be deleted.</string>
+    <string name="link_preview_label">Eelvaate laadimine…</string>
+    <string name="link_preview_not_found">No preview</string>
+    <string name="link_preview_hide">Peida eelvaade</string>
+    <string name="link_preview_show">Kuva eelvaade</string>
+    <string name="toast_downloaded">Downloaded %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Vajutage väljumiseks uuesti `Tagasi` nuppu</string>
+    <string name="essentials.errors.unknown">Tundmatu viga. Palun proovige uuesti</string>
+    <string name="error_data_empty">Andmeid ei leitud.</string>
+    <string name="error.unexpected">Tekkis ootamatu viga</string>
+    <string name="error.unexpected.send">Click the \'Bug\' button to submit an error</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Hinda</string>
+    <string name="menu.edit">Muuda</string>
+    <string name="menu.clear">Tühjenda</string>
+    <string name="menu.clear_all">Tühjenda kõik</string>
+    <string name="menu.share">Jaga</string>
+    <string name="menu.fav">Märgistatud</string>
+    <string name="menu.delete">Kustuta</string>
+    <string name="menu.empty">Tühjenda</string>
+    <string name="menu.cancel">Loobu</string>
+    <string name="menu.settings">Seaded</string>
+    <string name="menu.display_options">Kuvamisvalikud</string>
+    <string name="menu.faq">KKK</string>
+    <string name="menu.new">Uus</string>
+    <string name="menu.search">Otsing</string>
+    <string name="menu.print">Prindi</string>
+    <string name="menu.restore">Taasta</string>
+    <string name="menu.merge">Lõimi</string>
+    <string name="menu.copy_link">Kopeeri avalik link</string>
+    <string name="menu.share_link">Jaga avaliku linki</string>
+    <string name="menu.save_as">Salvesta kui…</string>
+    <string name="menu.rename">Nimeta ümber</string>
+    <string name="menu.paste">Kleebi</string>
+    <string name="menu.copy">Kopeeri</string>
+    <string name="menu.cut">Lõika</string>
+    <string name="menu.fullscreen.enter">Sisene täisekraanile</string>
+    <string name="menu.fullscreen.exit">Välju täisekraanilt</string>
+    <string name="menu_close">Sulge</string>
+    <string name="button.update">Uuenda</string>
+    <string name="button.install">Paigalda</string>
+    <string name="button.uninstall">Desinstalli</string>
+    <string name="button.done">Valmis</string>
+    <string name="button.undo">Ennista</string>
+    <string name="button.apply">Rakenda</string>
+    <string name="button.change">Muuda</string>
+    <string name="button.save">Salvesta</string>
+    <string name="button.create">Loo</string>
+    <string name="button.send">Saada</string>
+    <string name="button.preview">Eelvaade</string>
+    <string name="button.confirm">Kinnita</string>
+    <string name="button.sync">Sünkrooni kohe</string>
+    <string name="button.yes">Jah</string>
+    <string name="button.no">Ei</string>
+    <string name="button.back">Tagasi</string>
+    <string name="button.continue">Jätka</string>
+    <string name="button.finish">Lõpeta</string>
+    <string name="button.got_it">Selge!</string>
+    <string name="button.get_started">Alusta</string>
+    <string name="button.example">Näide</string>
+    <string name="button_try_again">Proovi uuesti</string>
+    <string name="button_insert">Sisesta</string>
+    <string name="button_refresh">Värskenda</string>
+    <string name="notification.title.empty">Lõikelaud on tühi</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Mine tagasi</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Abbreviation</string>
+    <string name="common.label.description">Kirjeldus</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Uus silt</string>
+    <string name="tag.new.name">Sildi nimi</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Teisalda kausta</string>
+    <!-- MAIN -->
+    <string name="main.search">Otsi märkmeid</string>
+    <string name="main.filter.all">Kõik</string>
+    <string name="main.filter.no_tags">Sildistamata</string>
+    <string name="main.filter.filtered">Filtreeritud</string>
+    <string name="main.delete_selected.title">Kustutada valitud märkmed?</string>
+    <string name="main.delete_selected.description">Kõik valitud märkmed kustutatakse.</string>
+    <string name="main.delete_merged.title">Kustuta lõimitud märkmed?</string>
+    <string name="main.delete_merged.description">Merged notes will be permanently deleted.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Märkmeid ei leitud.</string>
+    <string name="main.list.empty.caption">Märkus: Igal kategoorial on individuaalne sorteerimine ja teised võimalikud seadistused. Seadistusi saate loendist muuta igal ajal (%s) või vasakust navigeerimismenüüst (%s).</string>
+    <string name="main.list.empty.caption.three_dot">kolme punkti menüü</string>
+    <string name="main.list.empty.caption.long_tap">pikk vajutus kategooriale</string>
+    <string name="main.list.empty.description.all">Üldkategooria. Kuvab kõik filtreerimata märkmed.</string>
+    <string name="main.list.empty.description.no_tags">Displays notes that do not have a tag assigned.</string>
+    <string name="main.list.empty.description.tags">Displays notes and files marked with the selected tag.</string>
+    <string name="main.list.empty.description.filtered">No matches found for note filtering parameters.</string>
+    <string name="main.list.empty.description.starred">Displays notes marked with the Starred flag.</string>
+    <string name="main.list.empty.description.deleted">Kuvab märkmed ja failid, mis on ära kustutatud, aga taastatavad. Kustutatud kirjed jäävad määratud siltide ja teiste omadustega, kuid pole vastavates kategooriates saadaval.</string>
+    <string name="main.list.empty.description.clipboard">Kuvab märkmed, mille rakendus lõi automaatselt lõikelaualt. Vaikimisi lõikelauda ei jälgita, aktiveerimine toimub seadetest.</string>
+    <string name="main.list.empty.description.snippets">Displays notes that are used in other notes. Any changes to the snippet are automatically reflected in all notes where it is used.</string>
+    <string name="main.filter.snippets">Snippets</string>
+    <string name="main.filter.filters">Filtrid</string>
+    <string name="main.filter.folders">Kaustad</string>
+    <string name="main.filter.files">Failid</string>
+    <string name="main.filter.notes">Märkmed</string>
+    <string name="main.filter.tags">Sildid</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Remember last action</string>
+    <string name="main_action_settings_remember_description">When activated, the app will remember the last action and use it the next time you click the Floating Button. At the same time, a window with a list of all actions can be opened with a long tap on the Floating Button.</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">Loo märkmeid</string>
+    <string name="main_action_notes_new_title">Uus märge</string>
+    <string name="main_action_notes_new_description">Salvestage oluline tekstiteave ning pääste sellele koheselt ligi igal ajal, igas seadmes</string>
+    <string name="main_action_notes_barcode_title">Skanni triipkoodi</string>
+    <string name="main_action_notes_barcode_description">Skannige linke või teksti ning salvestage need märkmesse (põhilistest triipkoodi formaatidest on enamik toetatud)</string>
+    <string name="main_action_notes_clipboard_title">Võta lõikelaualt</string>
+    <string name="main_action_notes_clipboard_description">Võtke käesolev tekst lõikelaualt ja salvestage see märkmesse</string>
+    <string name="main_action_notes_import_title">Impordi failist</string>
+    <string name="main_action_notes_import_description">Looge failist tekstiga märge (faili suurus mitte suurem kui %s kilobaiti)</string>
+    <string name="main_action_notes_import_error">Faili suurus ei tohi ületada %s kilobaiti</string>
+    <string name="main_action_files">Lisa faile</string>
+    <string name="main_action_files_file_title">Vali fail</string>
+    <string name="main_action_files_file_description">Lisage mis tahes fail (foto, video, pdf jne) mitte suurem kui %s megabaiti</string>
+    <string name="main_action_files_photo_title">Pildista</string>
+    <string name="main_action_files_photo_description">Tehke pilt ja salvestage see märkmesse</string>
+    <string name="main_action_files_record_title">Salvesta video</string>
+    <string name="main_action_files_record_description">Jäädvustage video ja salvestage see märkmesse (video suurus mitte suurem kui %s megabaiti)</string>
+    <string name="main_action_organize">Organiseeri andmeid</string>
+    <string name="main_action_organize_tag_title">Uus silt</string>
+    <string name="main_action_organize_tag_description">Looge märkmete ja failide organiseerimiseks silt, nii on neid lihtsam leida</string>
+    <string name="main_action_organize_filter_title">Uus filter</string>
+    <string name="main_action_organize_filter_description">Looge soovitud teabe kiiremaks leidmiseks filter, kasutades valmis tehtud otsingu malle</string>
+    <string name="main_action_organize_folder_title">Uus kaust</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Reduce repetitive typing</string>
+    <string name="main_action_snippets_snippet_title">New snippet</string>
+    <string name="main_action_snippets_snippet_description">Create reusable text template to avoid repetitive typing and mistakes</string>
+    <string name="main_action_snippets_set_title">New snippet kit</string>
+    <string name="main_action_snippets_set_description">Create a kit of snippets to find common ones faster</string>
+    <string name="main.actions.save_and_start_new_note">Salvesta ja alusta uut märget</string>
+    <string name="main.actions.add_dynamic_value">Lisa dünaamiline väärtus</string>
+    <string name="main.actions.add_attachment">Lisa manus</string>
+    <string name="main.actions.sync_note">Sünkrooni märge</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Vasakule viipamine</string>
+    <string name="main.swipe_actions.caption.right">Paremale viipamine</string>
+    <string name="main.swipe_actions.fav">Märgi tärniga</string>
+    <string name="main.swipe_actions.delete">Kustuta</string>
+    <string name="main.swipe_actions.copy">Kopeeri</string>
+    <string name="main.swipe_actions.none">Mitte kumbki</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Täpsem otsing</string>
+    <string name="filter.hint.text">Tekst sisaldab</string>
+    <string name="filter.label.no_tags">Sildistamata</string>
+    <string name="filter.label.fav">Märgistatud</string>
+    <string name="filter.label.platform">Platvorm</string>
+    <string name="filter.label.snippets">Snippetid</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Lõikelaua märkmed</string>
+    <string name="filter.clipboard.empty.title">Puhastada lõikelauad märkmetest?</string>
+    <string name="filter.clipboard.empty.description">Kõik märkmed lõikelaualt (välja arvatud märgistatud ja sildistatud) kustutatakse jäädavalt.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Prügikast</string>
+    <string name="filter.deleted.limit">Limiit</string>
+    <string name="filter.deleted.empty.title">Tühjendada prügikast?</string>
+    <string name="filter.deleted.empty.description">Kõik märkmed pürgikastis kustutatakse jäädavalt.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Limiit</string>
+    <string name="filter.limit.description">When the number of notes exceeds the category limit, old notes are automatically deleted.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Filtri nimi</string>
+    <string name="filter_error_name_required">Unique name is required to save this filter</string>
+    <string name="filter_delete_title">Delete filter \'%s\'?</string>
+    <string name="filter_delete_description">Filter will be permanently deleted.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Unique name is required to save this tag</string>
+    <string name="filter.tag.rule.title">Automaatse kategoriseerimise reegel</string>
+    <string name="filter.tag.rule.description">If activated, the tag will be automatically assigned to new notes if they contain any of the comma-separated texts.</string>
+    <string name="filter.tag.rule.hint">Komaga eraldatud tekst</string>
+    <string name="filter.tag.delete.title">Kustutada silt \'%s\'?</string>
+    <string name="filter.tag.delete.description">Silt kustutatakse jäädavalt.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Lisa</string>
+    <string name="clip.hint.title">Nimetu märge</string>
+    <string name="clip.hint.tags">Kliki sildi lisamiseks siia</string>
+    <string name="clip.hint.text">Kliki teksti lisamiseks siia</string>
+    <string name="clip.snackbar.text.required">Tekst on nõutud</string>
+    <string name="clip.snackbar.text.copied">Tekst on kopeeritud</string>
+    <string name="clip.attr.updated">Uuendatud</string>
+    <string name="clip.attr.edited">Muudetud</string>
+    <string name="clip.attr.created">Loodud</string>
+    <string name="clip.attr.deleted">Kustutatud</string>
+    <string name="clip.attr.usageCount">Kasutuskorda</string>
+    <string name="clip.attr.charsCount">Tähemärke</string>
+    <string name="clip.attr.size">Maht</string>
+    <string name="clip_exit_without_save_title">Cancel the editing of the note?</string>
+    <string name="clip_exit_without_save_description">Any changes made will be lost.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Salvesta kui</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Üldine</string>
+    <string name="clip_details_tab_tags">Sildid</string>
+    <string name="clip_details_tab_folder">Asukoht</string>
+    <string name="clip_details_tab_attachments">Manused</string>
+    <string name="clip_details_tab_dynamic">Dünaamilised väärtused</string>
+    <string name="clip_details_tab_snippets">Snippets</string>
+    <string name="clip_details_tab_snippet_kits">Snippet Kits</string>
+    <string name="clip_details_tab_dynamic_values">Väärtused</string>
+    <string name="clip_details_tab_dynamic_fields">Fields</string>
+    <string name="clip_details_tab_attributes">Atribuudid</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Insert text into a note</string>
+    <string name="clip.info.label.note.insert.remember">Mäleta minu valikuid ja ära rohkem küsi (paneel on ligipääsetav pika klikiga).</string>
+    <string name="clip.info.label.note.create">Loo märge</string>
+    <string name="clip.info.label.position">Positsioon</string>
+    <string name="clip.info.label.beginning">Alguses</string>
+    <string name="clip.info.label.end">Lõpus</string>
+    <string name="clip.info.label.tags.edit">Muuda silte</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Lihttekst</string>
+    <string name="clip.text.type.link">Tekst linkidega</string>
+    <string name="clip.text.type.line_clickable">Tekst kopeeritud ridadega</string>
+    <string name="clip.text.type.word_clickable">Text with Copied Tokens</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Manus</string>
+    <string name="clip.add.attachment.tooltip">Attachment can be any file (photo, video, pdf, etc.) of max. %s MB.</string>
+    <string name="clip.add.dynamic.title">Dünaamiline väärtus</string>
+    <string name="clip.add.dynamic.tooltip">Dynamic value is a way to create notes with always up-to-date data. In the view mode, the inserted placeholder is replaced with the actual data.</string>
+    <string name="clip.add.dynamic.value.date_time">Kuupäev/kellaaeg</string>
+    <string name="clip.add.dynamic.value.platform">Platvorm</string>
+    <string name="clip.add.dynamic.value.ip">IP aadress</string>
+    <string name="clip.add.dynamic.value.date">Kuupäev</string>
+    <string name="clip.add.dynamic.value.time">Kellaaeg</string>
+    <string name="clip.add.dynamic.value.month">Kuu</string>
+    <string name="clip.add.dynamic.value.timezone">Ajavöönd</string>
+    <string name="clip.add.dynamic.value.month_number">Kuu number</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Month Number (with leading zero)</string>
+    <string name="clip.add.dynamic.value.year">Aasta</string>
+    <string name="clip.add.dynamic.value.year_short">Aasta (lühike)</string>
+    <string name="clip.add.dynamic.value.hour24">Tund (24-tunnine kell)</string>
+    <string name="clip.add.dynamic.value.hour12">Tund (12-tunnine kell)</string>
+    <string name="clip.add.dynamic.value.minutes">Minutit</string>
+    <string name="clip.add.dynamic.value.seconds">Sekundit</string>
+    <string name="clip.add.dynamic.value.am_pm">AM/PM</string>
+    <string name="clip.add.dynamic.value.day_of_week">Nädalapäev</string>
+    <string name="clip.add.dynamic.value.day_of_month">Kuu päev</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Day of month (with leading zero)</string>
+    <string name="clip.add.dynamic.value.random_digit">Juhuslik number (0–9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Random Latin Character (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Snippetid</string>
+    <string name="clip.add.snippet.new.hint">Input text to find or create</string>
+    <string name="clip.add.snippet.tooltip">Snippet is any note whose text you can reuse in any other note, but edit in one. Created snippets may be accessed from the left navigation drawer.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Teksti liik</string>
+    <string name="text.config.size">Teksti suurus</string>
+    <string name="text.config.font">Teksti font</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Sorteeri</string>
+    <string name="list.config.lines">Visible Text Lines</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Loendi stiil</string>
+    <string name="list.style.description">Notes List Style</string>
+    <string name="list.style.default">Vaikimisi</string>
+    <string name="list.style.comfortable">Mugav</string>
+    <string name="list.style.compact">Kompaktne</string>
+    <string name="list.style.preview">Eelvaade</string>
+    <string name="list.style.grid">Ruudustik</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Oskusruunid</string>
+    <string name="runes.hint.description"><![CDATA[    This is a form of enhancement to the functionality of the application.
+    \n\n
+    Each rune extends or modifies the basic functionality and allows you to customize the application to achieve the most optimal productivity with it.
+    \n\n
+    Some runes are more useful, others less so, but this approach makes the app almost limitless in possibilities.
+    \n\n
+    Check out the existing runes, activate the ones you want and send ideas for new ones to make the app a little more productive:)
+    ]]></string>
+    <string name="runes_hotkeys_title">Hotkey Observer</string>
+    <string name="runes_hotkeys_description"><![CDATA[    With this rune you can configure hotkeys to control the application and the actions within it.
+    \n
+    \n
+    Some hotkeys are set by default. You can either clear them or reassign.
+    \n
+    \n
+    ```
+    \n
+    Depending on the action, the hotkey will be monitored either within the application or globally outside of it.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Astraalne sünkroon</string>
+    <string name="runes.instant_sync.description"><![CDATA[    The rune opens an opportunity:
+    \n
+    - automatically save all data in the cloud;
+    \n
+    - instantly access it on any other device;
+    \n
+    - save not only text notes, but also files of any format;
+    \n\n
+    By default, the application works without synchronization and saves all data on the device.
+    \n
+    ```
+    \n
+    Once you activate this rune, all previously created and new data will be automatically synced to the cloud storage as soon as the internet connection is available.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Raudne kilp</string>
+    <string name="runes.pincode.description"><![CDATA[    The rune allows you to protect access to the application with a password.
+    \n\n
+    When activated, access will be blocked after **%s minutes** of inactivity.
+    \n\n
+    **Important:** if you forget your password, you will need to clear the application data. In this case, all unsynced changes will be lost.
+    ]]></string>
+    <string name="runes.theme.title">Kameeleoni nahk</string>
+    <string name="runes.theme.description"><![CDATA[    By default, the application uses a color scheme that automatically changes between light and dark depending on the system settings.
+    \n\n
+    You can activate any other theme that will look the same regardless of the system settings.
+    ]]></string>
+    <string name="runes.clipboard.title">Lõikelaud</string>
+    <string name="runes.clipboard.description"><![CDATA[    The rune allows the app to monitor the clipboard and automatically create notes with text from it.
+    \n\n
+    Once activated, the app will display a permanent notification in the status bar to be able to keep track of the buffer.
+    \n\n
+    ```
+    \n
+    If the notification is not displayed, the application is not running and the buffer will not be tracked until you run the application again.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Keyboard Companion</string>
+    <string name="runes.texpander.description"><![CDATA[    The rune gives you the ability to use the application to fill in input fields with existing notes in almost **any application**.
+    \n\n
+    Once activated, when you place focus in an input field, the app will display a floating panel with actions that allow you to control the content of the input field.
+    \n\n
+    #### Behavior features:
+    \n
+    - the panel can be resized;
+    \n
+    - the panel can be dragged anywhere on the screen;
+    \n
+    - the panel can be automatically modified depending on the possibility of using certain actions;
+    \n
+    - the panel can be automatically hidden if the field loses focus;
+    \n
+    - the panel can be manually hidden (using the top right action in the toolbar) until forced to be called again;
+    \n
+    - if the panel is not displayed, it can be explicitly called from the Notification Panel or Quick Settings (if the Tile is placed in the panel);
+    \n\n
+    #### Technical limitations:
+    \n
+    - the panel uses accessibility service and requires its activation in the system settings;
+    \n
+    - the panel uses a floating window to display on top of other applications and requires the corresponding permission in the system settings;
+    \n
+    - in some applications the automatic behavior of the panel is not possible, so it can be used with restrictions and explicit invocation;
+    \n\n
+    #### Notice:
+    \n
+    If the rune stops working after a while please read [this article](%s) how to keep the app running on your device. Or contact me by email, maybe you found some issue:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Luba</string>
+    <string name="runes.texpander.required.accessibility">Tap here, then go to Downloaded (Installed) services and activate Keyboard Companion service.</string>
+    <string name="runes.texpander.required.floating">Tap here, then go to Other permissions and activate Display pop-up window permission.</string>
+    <string name="runes.texpander.action.copy">Kopeeri lõikelauale</string>
+    <string name="runes.texpander.action.show">Tap here to show the floating panel.</string>
+    <string name="runes.texpander.action.insert">Sisesta</string>
+    <string name="runes.texpander.action.replace">Asenda</string>
+    <string name="runes.texpander.hint.hide">Hide until called from the Notification Panel or Quick Settings.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">Okulaar</string>
+    <string name="runes.link_preview.description"><![CDATA[    When this rune is activated, for saved **http links** the application will try to load their preview in note view mode.
+    \n\n
+    In doing so:
+    \n
+    - the preview image can be opened in a separate window and zoomed in;
+    \n
+    - If the link is a video, it can be played with the application;
+    ]]></string>
+    <string name="runes.auto_save.title">Point of No Return</string>
+    <string name="runes.auto_save.description"><![CDATA[    By default, when you create or edit a note, you must manually click the save button to confirm your changes.
+    \n
+    \n
+    With this rune, the application will automatically save any changes you make while editing text.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Revive</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    With this rune, on startup, the application will restore the last active filter from the previous session.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Swipe Power</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    With this rune, in the list of notes, you can set up actions with them, applied to swipe gestures.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Nihutatud fookus</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    By default, when you create a note, the focus is set in the text input field.
+    \n\n
+    You can use this rune to change this behavior and set the focus to any other field.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Blowing Copy</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    When the rune is activated, any action of copying text inside Clipto (except contextual actions in input fields) will hide the application.
+    \n
+    \n
+    This rune allows you to minimize the number of steps when pasting copied text outside the application.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Tentative Steps</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Using this rune, you can set selected actions to be activated by double-clicking instead of single-clicking.
+    \n
+    \n
+    This behavior can be useful to prevent accidental clicks.
+    ]]></string>
+    <string name="runes.loyalty.title">Inspiring Support</string>
+    <string name="runes.loyalty.description"><![CDATA[    Without your support and feedback, the product will not evolve in the right direction for users.
+    \n\n
+    >**If you have a minute of time**, don\'t forget to rate us on Google Play.
+    \n
+    \n
+    >**If you have more time, and the translation doesn\'t look right** - join our localization project.
+    \n
+    \n
+    >**If you find bugs, want more runes or just want to write us** - our email and github page is always at your service.
+    ]]></string>
+    <string name="runes.backup_restore.title">Ajamasin</string>
+    <string name="runes.backup_restore.description"><![CDATA[    In addition to cloud synchronization, you can manually save backups of your data and restore them later.
+    \n\n
+    Unlike cloud synchronization, this approach allows:
+    \n
+    - take a snapshot of all data at the current moment of time;
+    \n
+    - manage the entire backup and recovery process by yourself;
+    \n
+    - restore the entire data based on the previously saved data snapshot;
+    \n\n
+    ```
+    \n
+    Restoring from a file is done in a soft mode. That is, the existing data is not deleted, but only supplemented with new data.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Seaded</string>
+    <string name="settings.campaign.rate.title">Teie arvamus on oluline</string>
+    <string name="settings.campaign.rate.message">See võtab vähem kui minut, kuid võib aidata meid paremaks muuta.</string>
+    <string name="settings.campaign.rate.button">Hinnake meid Google Play\'s</string>
+    <string name="settings.campaign.rate.question">How was your experience with Clipto?</string>
+    <string name="settings.campaign.rate.feedback.title">Tagasiside</string>
+    <string name="settings.campaign.rate.feedback.message">Can you tell us how we can improve Clipto? Your opinion is very important.</string>
+    <string name="settings.campaign.rate.feedback.toast">Can you leave a nice review on Google Play? Thanks for your support!</string>
+    <string name="settings.campaign.share.title">Too oma sõber ja saa boonust!</string>
+    <string name="settings.campaign.share.more">Lisateave</string>
+    <string name="settings.campaign.share.action">Jaga seda linki</string>
+    <string name="settings.group.clipboard">Lõikelaud</string>
+    <string name="settings.group.behavior">Käitumine</string>
+    <string name="settings.group.appearance">Välimus</string>
+    <string name="settings.group.backup">Varundamine ja taastamine</string>
+    <string name="settings.group.security">Privaatsus &amp; turvalisus</string>
+    <string name="settings.group.runes">Ruunid</string>
+    <string name="settings.link_preview.title">Eelvaate lingid</string>
+    <string name="settings.auto_save.title">Salvesta märkmed automaatselt</string>
+    <string name="settings.auto_save.description">Rakendus salvestab automaatselt muudatused kui loote või muudate märkmeid.</string>
+    <string name="settings.focus_on_title.title">Fokuseeri märkme loomisel pealkiri</string>
+    <string name="settings.focus_on_title.description">Märkme loomisel seatakse fookus pealkirja väljale</string>
+    <string name="settings.track_clipboard.title">Lõikelaua märkmed</string>
+    <string name="settings.track_clipboard.description">Rakenduse töötamise ajal luuakse lõikelauale kopeeritud tekstist automaatselt märkmed. Kiireks ligipääsuks paigutatakse olekuribale püsiv märguanne.</string>
+    <string name="settings.track_clipboard.q.message">Alates Android Q-st kasutage lõikelaual märkmete loomiseks meie uut lähenemisviisi.</string>
+    <string name="settings.track_clipboard.q.description">Starting in Android Q, only the app that currently has focus can access Clipboard data.</string>
+    <string name="settings.track_clipboard.q.solution.title">To bypass this restriction, use one of the following solutions:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">\'Clipto…\' action instead of \'Copy\'</string>
+    <string name="settings.track_clipboard.q.solution.1">When you have selected text to copy, use the \'Clipto…\' action instead of the \'Copy\' if it is available in the context menu of the active application.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Standard \'Copy\' action in combination with \'Paste\' in the notification area</string>
+    <string name="settings.track_clipboard.q.solution.2">If the \'Clipto…\' action is not available or you still want to use standard \'Copy\' action then do not forget to click on the \'Paste\' button in the notification to create a note from the current clipboard data.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Standard \'Copy\' action as it was before Android Q</string>
+    <string name="settings.track_clipboard.q.solution.3">This solution requires advanced configuration to be done with the app via a computer. To make Clipto work again please run the following ADB commands on your computer:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">After successful run you should see the additional action in the custom notifications of the app that lets you to turn on/off monitoring of the clipboard. Also this warning will be gone from the settings.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Emulate Copy Action</string>
+    <string name="settings.track_clipboard.q.emulate.description">When you tap the custom \'Clipto…\' or \'Paste\' action, the application will immediately create a note with the text from the clipboard instead of displaying a confirmation dialog.</string>
+    <string name="settings.universal_clipboard.title">Universaalne lõikelaud</string>
+    <string name="settings.universal_clipboard.description">Any text copied to the Clipboard will be synced between all your devices. It will also be automatically inserted into the Clipboard where this setting is activated.</string>
+    <string name="settings.notification_style.title">Teavituste stiil</string>
+    <string name="settings.notification_style.description">Notification style to use for a permanent notification in the status bar.</string>
+    <string name="settings.notification_sound.title">Vaiksed märguanded</string>
+    <string name="settings.notification_sound.description">Silences notifications, regardless of the sounds or vibrations set on the notification or notification channel.</string>
+    <string name="settings.hide_on_click.title">Peida kopeerimisel</string>
+    <string name="settings.hide_on_click.description">Rakendus peidetakse pärast märkme kopeerimist.</string>
+    <string name="settings.restore_filter.title">Mäleta eelmist filtrit</string>
+    <string name="settings.restore_filter.description">Rakendus avatakse eelmise sessiooni filtriga.</string>
+    <string name="settings.pin_starred.title">Kinnita märgistatud märkmed</string>
+    <string name="settings.pin_starred.description">Starred notes will be displayed first in the list, regardless of the selected filter.</string>
+    <string name="settings.theme.title">Teema</string>
+    <string name="settings.theme.description">Valige kohandatud värvilahendus.</string>
+    <string name="settings.backup.title">Backup to File</string>
+    <string name="settings.backup.description">Export your notes to a file.</string>
+    <string name="settings.restore.title">Taasta failist</string>
+    <string name="settings.restore.description">Taasta failist märkmed (toetatud formaadid: %s).</string>
+    <string name="settings.startup.title">Käivita avamisel</string>
+    <string name="settings.startup.description">Allows the app to have itself started as soon as the system has finished booting.</string>
+    <string name="settings.language.title">Keel</string>
+    <string name="settings.swipe_actions.title">Viipamise tegevused</string>
+    <string name="settings.swipe_actions.description">Configure swipe actions to quickly act on notes in the main list.</string>
+    <string name="settings.double_click.title">Topeltklõpsu toimingud</string>
+    <string name="settings.double_click.description">Seadistage toimingud, mida tuleb teha ainult topeltklõpsuga.</string>
+    <string name="settings.double_click.action.exit">Tagasi nupp väljub rakendusest</string>
+    <string name="settings.double_click.action.delete">Kustuta märge</string>
+    <string name="settings.double_click.action.edit">Muuda märget</string>
+    <string name="settings.double_click.toast">Lõpetamiseks topeltklõps</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Ära kuva muudetud märkmeid</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Notes, for which any of the attributes is assigned (tag, favorites flag, title, snippet), will not be shown in the category \'Notes from Clipboard\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Do not display a warning about clipboard restrictions</string>
+    <string name="settings.clipboard.ignore_q_warning.description">If the app is configured and works correctly with the clipboard on your device, enable this toggle to remove functional restrictions from notifications.</string>
+    <string name="settings.security.passcode.title">Pääsukoodi lukk</string>
+    <string name="settings.security.passcode.description">When you set up a passcode, the app will be locked after %s minutes of inactivity.\n\nNote: if you forget the passcode, you\'ll need to clear the application data. In this case, all unsynced changes will be lost.</string>
+    <string name="settings.security.fingerprint.title">Ava sõrmejäljega</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Jäta vahele</string>
+    <string name="auth.set_passcode.label.set_passcode">Set a passcode to access the app quickly and securely</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Kinnitage pääsukood</string>
+    <string name="auth.set_fingerprint.title">Set Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Kas soovite kasutada selle rakenduse avamiseks sõrmejälge?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Kasuta sõrmejälge</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Jäta vahele</string>
+    <string name="auth.fingerprint.touch_sensor">Kinnitage jätkamiseks sõrmejälg</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Sisestage olemasolev pääsukood</string>
+    <string name="change_passcode.set_new">Loo uus pääsukood</string>
+    <string name="change_passcode.reenter">Kinnitage pääsukood</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Tugi</string>
+    <string name="about.label.email.support.message">KIRJUTAGE OMA SÕNUM SIIA</string>
+    <string name="about.label.rate">Hinnake meid Google Play\'s</string>
+    <string name="about.label.issue">Teavita probleemist</string>
+    <string name="about.label.translate">Aidake meid tõlkimisega</string>
+    <string name="about.label.changelog">Muudatuste logi</string>
+    <string name="about.label.campaign.rate">Aidake meil saada paremaks!</string>
+    <string name="about.label.campaign.share">Jaga rakenduse linki</string>
+    <string name="about.label.campaign.share.description">%s inimest on liitunud selle rakendusega kasutades teie linki.</string>
+    <string name="about.label.other">Mida teised meie kohta ütlevad</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Logige sisse, et hoiustada oma märkmed pilves ja hoida need kõigis oma seadmetes sünkroniseerituna.</string>
+    <string name="account.title.required_authorization">Autoriseerimine on nõutud</string>
+    <string name="account.description.required_authorization">Selle toimingu jätkamiseks peate olema autoriseeritud</string>
+    <string name="account.title.authorized">Litsenseeritud</string>
+    <string name="account.button.sign_in">Logi sisse</string>
+    <string name="account.button.sign_out">Logi välja</string>
+    <string name="account.dialog.sign_out.title">Välja logimine</string>
+    <string name="account.dialog.sign_out.message">Kas te olete kindel, et soovite sellest rakendusest välja logida? Kõik sünkroniseerimata andmed kaovad.</string>
+    <string name="account.plan.personal">Personaalne litsents</string>
+    <string name="account.plan.subscription">Tellimuspakett (%s märkme sünkroniseerimine)</string>
+    <string name="account.plan.contributor">Panustaja pakett (%s märkme sünkroniseerimine)</string>
+    <string name="account.plan.yearly">Aastapakett (%s märkme sünkroniseerimine)</string>
+    <string name="account.plan.monthly">Kuupakett (%s märkme sünkroniseerimine)</string>
+    <string name="account.plan.free">Põhipakett (%s märkme sünkroniseerimine)</string>
+    <string name="account.toolbar.title">Konto</string>
+    <string name="account.sync.title">Sünkroniseeri märkmed automaatselt</string>
+    <string name="account_rebuild_index_title">Rebuild data index</string>
+    <string name="account_rebuild_index_description">If you see different data (tags, files, notes, etc.) on different devices, it is recommended to perform this procedure. You will need to re-login when the procedure is complete.</string>
+    <string name="account_delete_title">Konto kustutamine</string>
+    <string name="account_delete_confirm_title">Kas olete kindel, et soovite oma konto kustutada?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATTENTION! If you press DELETE below, your account and personal data will be deleted
+    permanently and irreversible, so please make sure the account contains no valuable data/information.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Kas olete kindel?</string>
+    <string name="account_delete_confirm_again_description">Once you confirm, all of your account data will be permanently deleted.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Tasuta</string>
+    <string name="account.sync.plan.title">Sünkrooni %s märget</string>
+    <string name="account.sync.plan.toolbar">Valige pakett</string>
+    <string name="account.sync.plan.button.active">Aktiivne pakett</string>
+    <string name="account.sync.plan.button.select">Valige pakett</string>
+    <string name="account.sync.plan.button.change">Muuta paketti</string>
+    <string name="account.sync.plan.button.upgrade">Upgrade</string>
+    <string name="account.sync.plan.caption">Alustage tasuta, seejärel makske sünkroniseeritud andmete eest.</string>
+    <string name="account.sync.plan.hint">Seadmete vahel sünkroniseeritavate märkmete arv (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Piiramatu arv võrguühenduseta märkmeid.</string>
+    <string name="account.sync.plan.benefit.sync">Sünkrooni %s märget kõigis oma seadmetes.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Sünkroniseerimine on väljas ületatud piiri tõttu</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">The total number of all your notes, including your Recycle Bin, is %s, which is over the allowed limit of %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Reduce the number of your notes to select this plan.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">You have reached the limit of your plan. Do not worry, the app is still fully functional offline and does not have any restrictions. However the cloud sync is disabled on your device until you upgrade your account or reduce the number of notes to the limit of the active plan.</string>
+    <string name="account.sync.plan.contributor">If you have helped translate the app or support the product on a regular basis, please contact us to upgrade your account.</string>
+    <string name="sync.free_limit_concept">The free limit is not fixed and can be changed either up or down depending on various factors.</string>
+    <string name="sync.off.title">The note is not synced between devices</string>
+    <string name="sync.off.multiple.title">The notes are not synced between devices</string>
+    <string name="sync.off.caption">This is possible for one of the following reasons:</string>
+    <string name="sync.off.reason.universal_clipboard">The Universal clipboard was not activated when the application created this note.</string>
+    <string name="sync.off.reason.manual_off">You manually turned off the synchronisation.</string>
+    <string name="sync.warning.title">Functionality uses cloud sync</string>
+    <string name="sync.warning.description">Cloud sync is not fully free and can be disabled on your device until you upgrade your account or reduce the number of notes to the limit of the active plan.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Kiirvalikud</string>
+    <string name="fast_actions.compose_email">Koosta e-kiri</string>
+    <string name="fast_actions.send_message">Saada uus sõnum</string>
+    <string name="fast_actions.compose_sms">Koosta SMS</string>
+    <string name="fast_actions.twitter_post">Koosta säuts</string>
+    <string name="fast_actions.web_search">Veebi otsing</string>
+    <string name="fast_actions.google_translate">Google\'i tõlge</string>
+    <string name="fast_actions.google_maps_search">Google\'i kaartide otsing</string>
+    <string name="fast_actions.wiki_search">Vikipeedia otsing</string>
+    <string name="fast_actions.youtube_search">YouTube\'i otsing</string>
+    <string name="fast_actions.duckduckgo_search">DuckDuckGo otsing</string>
+    <string name="fast_actions.stackoverflow_search">Stack Overflow otsing</string>
+    <string name="fast_actions.reddit_search">Reddit otsing</string>
+    <string name="fast_actions.play_url">Playback a link</string>
+    <string name="fast_actions.send_as_file">Saada failina</string>
+    <string name="fast_actions.send_as_txt_file">Saada kui Txt</string>
+    <string name="fast_actions.send_as_pdf_file">Saada kui Pdf</string>
+    <string name="fast_actions.send_as_md_file">Send as Markdown</string>
+    <string name="fast_actions.export_to_file">Ekspordi faili</string>
+    <string name="fast_actions.export_to_file.success">Eksporditud kui %s</string>
+    <string name="fast_actions.calendar_event">Lisa kalendri sündmus</string>
+    <string name="fast_actions.copy">Kopeeri lõikelauale</string>
+    <string name="fast_actions.copy_clear">Clear from the clipboard</string>
+    <string name="fast_actions.tts">Tekst kõneks</string>
+    <string name="fast_actions.tts.max_length">Text cannot exceed %s characters</string>
+    <string name="fast_actions.share">Jaga…</string>
+    <string name="fast_actions.send_as_qrcode">Saada QR koodina</string>
+    <string name="fast_actions.dial_number">Vali telefoninumber</string>
+    <string name="fast_actions.insert_contact">Sisesta kontakt</string>
+    <string name="fast_actions.insert_contact_email">Save Contact email</string>
+    <string name="fast_actions.insert_contact_phone">Save Contact phone</string>
+    <string name="fast_actions.open_url">Ava veebileht</string>
+    <string name="fast_actions.short_link">Lühenda linki</string>
+    <string name="fast_actions.more">Kuva rohkem</string>
+    <string name="fast_actions.error">Ootamatu tõrge: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Vaikimisi</string>
+    <string name="theme.sepia">Seepia</string>
+    <string name="theme.dark">Tume</string>
+    <string name="theme.dark_blue">Tumesinine</string>
+    <string name="theme.dark_green">Tumeroheline</string>
+    <string name="theme.dark_blurple">Sinakas lilla</string>
+    <string name="theme.black">AMOLED-must</string>
+    <string name="theme.green">Roheline</string>
+    <string name="theme.white">Valge</string>
+    <string name="theme.pink">Roosa</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Kasutuskuupäev</string>
+    <string name="sort_order.modify_date">Muutmiskuupäev</string>
+    <string name="sort_order.create_date">Loomiskuupäev</string>
+    <string name="sort_order.delete_date">Kustuta kuupäev</string>
+    <string name="sort_order.usage_count">Kasutuskorrad</string>
+    <string name="sort_order.title">Pealkiri</string>
+    <string name="sort_order.text">Tekst</string>
+    <string name="sort_order.tags">Sildid</string>
+    <string name="sort_order.size">Maht</string>
+    <string name="sort_order.name">Nimi</string>
+    <string name="sort_order.notes_count">Notes count</string>
+    <string name="sort_order.color">Värvi</string>
+    <string name="sort_order.manual">Manual</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Õnnestus</string>
+    <string name="backup.fail.title">Ebaõnnestumine</string>
+    <string name="backup.fail.message">Ootamatu tõrge: %s</string>
+    <string name="restore.success.title">Õnnestus</string>
+    <string name="restore.fail.title">Ebaõnnestumine</string>
+    <string name="restore.fail.message">Ootamatu tõrge: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Kas olete kindel, et soovite selle akna sulgeda?</string>
+    <string name="clip.multiple.exit_without_save.description">Any changes made will be lost.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Ühised sildid</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Eraldaja</string>
+    <string name="clip.multiple.merge.separator.line">Uus rida</string>
+    <string name="clip.multiple.merge.separator.space">Tühik</string>
+    <string name="clip.multiple.merge.separator.other">Muu</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Juhtnupud</string>
+    <string name="notification.style.history">Lõikelaua ajalugu</string>
+    <string name="notification.style.actions">Lõukelaua toimingud</string>
+    <string name="notification.track_clipboard.pause">Monitoring of the clipboard is paused</string>
+    <string name="notification.track_clipboard.resume">Monitoring of the clipboard is resumed</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Manused</string>
+    <string name="attachments.type.photo">Tee foto</string>
+    <string name="attachments.type.record">Salvesta video</string>
+    <string name="attachments.type.file">Vali fail</string>
+    <string name="attachments.attr.created">Loodud</string>
+    <string name="attachments.attr.name">Nimi</string>
+    <string name="attachments.attr.type">Liik</string>
+    <string name="attachments.attr.path">Tee</string>
+    <string name="attachments.attr.size">Maht</string>
+    <string name="attachments.state.downloaded">Allalaaditud</string>
+    <string name="attachments.state.uploaded">Üleslaaditud</string>
+    <string name="attachments.state.downloading">Allalaadimine…</string>
+    <string name="attachments.state.uploading">Üleslaadimine…</string>
+    <string name="attachments.label.insert">Lisa märkmele</string>
+    <string name="attachments.label.download_url">Avalik url on saadaval peale faili üleslaadimist.</string>
+    <string name="contribute.annual.offer">Cancel anytime from the Google Play Subscription Center.</string>
+    <string name="contribute.monthly.period">kuu</string>
+    <string name="contribute.annual.period">aasta</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Välju</string>
+    <string name="desktop.tray.show">Kuva</string>
+    <string name="desktop.tray.show_in_taskbar">Show in the taskbar</string>
+    <string name="desktop.update.action.download">Laadi alla</string>
+    <string name="desktop.update.action.later">Hiljem</string>
+    <string name="desktop.update.title">Uus versioon on saadaval</string>
+    <string name="desktop.shortcuts.title">Otsetee klahvid</string>
+    <string name="desktop.shortcuts.dialog.define">Määrake otsetee</string>
+    <string name="desktop.shortcuts.showHideApp">Kuva/Peida rakendus</string>
+    <string name="desktop.shortcuts.modeFullscreen">Lülita täisekraani režiimile</string>
+    <string name="desktop.shortcuts.modeComfortable">Lülita mugavale režiimile</string>
+    <string name="desktop.shortcuts.modeCompact">Lülita kompaktsele režiimile</string>
+    <string name="desktop.shortcuts.tagNext">Järgmine silt</string>
+    <string name="desktop.shortcuts.tagPrev">Eelmine silt</string>
+    <string name="desktop.shortcuts.noteNext">Järgmine märge</string>
+    <string name="desktop.shortcuts.notePrev">Eelmine märge</string>
+    <string name="desktop.shortcuts.noteNew">Uus märge</string>
+    <string name="desktop.shortcuts.noteSave">Salvesta märge</string>
+    <string name="desktop.shortcuts.noteDelete">Kustuta märge</string>
+    <string name="desktop.shortcuts.noteCopy">Kopeeri märge</string>
+    <string name="desktop.shortcuts.notePrint">Prindi märge</string>
+    <string name="desktop.shortcuts.noteFind">Otsi märkmeid</string>
+    <string name="desktop.shortcuts.noteOpen">Ava märge</string>
+    <string name="desktop.shortcuts.noteEdit">Muuda märget</string>
+    <string name="desktop.shortcuts.contextModeSelect">Vali märge</string>
+    <string name="desktop.shortcuts.contextModeCancel">Märkmete valimise tühistamine</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Vali kõik märkmed</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Save from Clipboard</string>
+    <string name="desktop.attachments.browse">Lohista failid manustamiseks või sirvi.</string>
+    <string name="desktop.main.content.under.development">Sisu on arendusjärgus…</string>
+    <string name="desktop.main.menu.download">Allalaadimine</string>
+    <string name="desktop.main.menu.download.for">Laadi alla %s\'ile</string>
+    <string name="desktop.main.menu.download.android.apk">Hankige universaalne APK</string>
+    <string name="desktop.main.menu.resources">Materjalid</string>
+    <string name="desktop.main.menu.open">Ava Clipto brauseris</string>
+    <string name="desktop.main.features.title.1">Kirjutage hõlpsasti ja kiiresti mis tahes seadmes.</string>
+    <string name="desktop.main.features.title.2">Kõik-ühes märkmik &amp; lõikelauahaldur keskendub kiirusele ja produktiivsusele, mis töötab nii teie töölaual kui ka telefonis.</string>
+    <string name="desktop.main.features.title.3">Your personal writing companion.</string>
+    <string name="desktop.main.features.title.4">A comprehensive solution for convenient and efficient work with notes, snippets, clipboard, files, and other information that requires quick access via any device.</string>
+    <string name="desktop.main.features.title.5">Mis teeb Clipto eriliseks?</string>
+    <string name="desktop.get_started.language">Valige oma keel</string>
+    <string name="desktop.get_started.theme">Valige eelistatud disain</string>
+    <string name="desktop.auth.instruction">Autoriseerimise juhend</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Skanni triipkoodi</string>
+    <string name="barcode.prompt.point_at_a_barcode">Suunake kaamera vöötkoodile</string>
+    <string name="barcode.prompt.hold_camera_steady">Hoidke kaamera hetkeks paigal</string>
+    <string name="barcode.prompt.move_camera_closer">Liikuge otsimiseks lähemale</string>
+    <string name="barcode.prompt.searching">Otsimine…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Font request failed with reason code: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Avalik link</string>
+    <string name="public.note.link.time.label">At a specified time</string>
+    <string name="public.note.link.time.or">või</string>
+    <string name="public.note.link.time.type.seconds">sekundit</string>
+    <string name="public.note.link.time.type.minutes">minutit</string>
+    <string name="public.note.link.time.type.hours">tundi</string>
+    <string name="public.note.link.time.type.days">päeva</string>
+    <string name="public.note.link.access_time">Ligipääsu aeg</string>
+    <string name="public.note.link.access_time.description">If set, the link will only be available after a specified amount of time since its creation or subsequent update.</string>
+    <string name="public.note.link.access_time.label">Will be available in</string>
+    <string name="public.note.link.access_password">Ligipääsu salasõna</string>
+    <string name="public.note.link.access_password.hint">Salasõna vihje (valikuline)</string>
+    <string name="public.note.link.access_password.placeholder">Salasõna</string>
+    <string name="public.note.link.access_password.description">If set, the link will only be available after password confirmation.</string>
+    <string name="public.note.link.time_to_expire">Aegumisaeg</string>
+    <string name="public.note.link.time_to_expire.description">If set, the link will be valid for a specified period of time after creation or subsequent update.</string>
+    <string name="public.note.link.time_to_expire.label">Aegub pärast</string>
+    <string name="public.note.link.one_time_opening">Ühekordne avamine</string>
+    <string name="public.note.link.one_time_opening.description">If set, the link will only be available for one opening from the time it was created or later updated.</string>
+    <string name="public.note.link.action.remove">Eemalda link</string>
+    <string name="public.note.link.action.remove.confirm.title">Eemalda link?</string>
+    <string name="public.note.link.action.remove.confirm.description">Link will not be available anymore.</string>
+    <string name="public.note.link.action.create">Loo link</string>
+    <string name="public.note.link.state.unavailable">Pole saadaval</string>
+    <string name="public.note.link.state.postponed">Will be available in:</string>
+    <string name="public.note.link.state.expires_in">Aegub pärast %s</string>
+    <string name="public.note.link.state.expired">Aegunud</string>
+    <string name="public.note.link.state.locked">Lukustatud</string>
+    <string name="public.note.link.state.locked.wrong_password">Vale salasõna.</string>
+    <string name="about.policy">Privaatsuspoliitika</string>
+    <string name="about.toc">Kasutustingimused</string>
+    <string name="about_pricing">Pricing</string>
+    <string name="site.integrations.title">Integratsioonid</string>
+    <string name="site.integrations.zapier.title">Zapier Integration</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Connect Clipto with Zapier and run your workflows at blazing speed.
+\n
+## Your clipboard as a workflow trigger
+\n
+The fastest way to save important information is to select and copy it.
+\n
+To start using this functionality with Zapier, just follow these steps:
+\n
+1. Configure in Zapier the trigger **Text Copied to the Clipboard**.
+\n
+2. Install Clipto on your device (mobile, desktop) and **sign in** with the same account
+\n
+3. Open Clipto and activate the settings **Notes from Clipboard** and **Universal Clipboard**
+\n
+4. That is all. Now you can use the standard combination **Ctrl+C** (or Copy in the context menu) to activate a workflow with copied text.
+    ]]></string>
+    <string name="faq.title">KKK</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notes** help you keep important text information and access it instantly at any time on any device.
+    \n
+    \n
+    By default, all notes are divided into several categories for quick access to the right ones based on different attributes.
+    \n
+    ```
+    \n
+    All notes are downloaded to your device when you first sign in.
+    \n
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filters** help you find the information you want faster by using ready-made search templates.
+    \n
+    ```
+    \n
+    A search template can contain various combinations of tags, time intervals, texts, sorting and display rules, etc.
+    \n
+    \n
+    Therefore, saving any such combination as a filter makes it much easier to retrieve the data you are looking for when you access it again.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Each filter has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The filter settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** help to organise your notes and files to make them easier to find.
+    \n
+    ```
+    \n
+    You can add multiple tags to any note or file.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Each tag has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The tag settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    The search parameters can be saved as a filter for quick access again.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** help to avoid repetitive typing by using re-usable text templates.
+    \n
+    \n
+    A snippet can be any existing or new note. It can be either static or dynamic, contain fields for manual input and runtime values (dates, times, etc.).
+    \n
+    \n
+    Snippets are organized by kits. You can either create your own kit or install any from the public library.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - The kit can be shared with other users.
+    \n
+    - The kit can be published in the public library.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Abbreviation can be used:
+    \n
+    \n
+    - to quickly search for a note using a short phrase of %s characters max
+    \n
+    - to insert the text of the note into the input field when entering a shortcut with a leading symbol **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Description can be used to provide additional information about a note.
+    \n
+    \n
+    It supports markdown formatting of %s characters max.
+    ]]></string>
+    <string name="where_none_of">ükski pole valitud</string>
+    <string name="where_any_of">any of the selected</string>
+    <string name="where_all_of">all selected</string>
+    <string name="where_after">Pärast</string>
+    <string name="where_before">Enne</string>
+    <string name="where_from">From</string>
+    <string name="where_to">To</string>
+    <string name="where_date_today">Täna</string>
+    <string name="where_date_tomorrow">Homme</string>
+    <string name="where_date_custom">Kohandatud</string>
+    <string name="where_date_yesterday">Eile</string>
+    <string name="where_date_last_7_days">Viimased 7 päeva</string>
+    <string name="where_date_last_30_days">Viimased 30 päeva</string>
+    <string name="where_date_last_90_days">Viimased 90 päeva</string>
+    <string name="advanced_filter_block_text">Tekst sisaldab</string>
+    <string name="advanced_filter_block_text_type">Teksti liik</string>
+    <string name="advanced_filter_block_category">Located in</string>
+    <string name="advanced_filter_block_tags">Sildid</string>
+    <string name="advanced_filter_block_created">Loomiskuupäev</string>
+    <string name="advanced_filter_block_updated">Updated date</string>
+    <string name="advanced_filter_block_only_public_links">Show only with public links</string>
+    <string name="advanced_filter_block_only_attachments">Show only with attachments</string>
+    <string name="advanced_filter_block_only_not_synced">Show only unsynced</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Riik</string>
+    <string name="snippet_kit_attr_snippets">Snippets</string>
+    <string name="snippet_kit_attr_language">Keel</string>
+    <string name="snippet_kit_attr_downloads">Allalaadimised</string>
+    <string name="snippet_kit_attr_created">Loodud</string>
+    <string name="snippet_kit_attr_updated">Uuendatud</string>
+    <string name="snippet_kit_attr_category">Kategooria</string>
+    <string name="snippet_kit_public_link">Avalik link</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    The snippet kit can be installed from a public link
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Remove the link?</string>
+    <string name="snippet_kit_public_link_remove_description">The snippet kit can no longer be installed from this link.</string>
+    <string name="snippet_kit_public_library">Public Library</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    The snippet kit can be installed from a public library.
+    \n
+    \n
+    ```
+    \n
+    The kit must contain at least %s snippets in order to be placed in the public library.
+    \n
+    ```
+    \n
+    \n
+    When you place a kit in the public library, you automatically get a benefit.
+    \n
+    \n
+    [Learn more…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Remove from the public library?</string>
+    <string name="snippet_kit_public_library_remove_description">The snippet kit can no longer be installed from the public library.</string>
+    <string name="snippet_kit_hint_name">Snippet kit name</string>
+    <string name="snippet_kit_label_show_in_public_library">Show in Public Library</string>
+    <string name="snippet_kit_error_name_required">Unique name is required to save this set</string>
+    <string name="snippet_kit_delete_title">Delete kit \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Snippet kit will be permanently deleted.</string>
+    <string name="snippet_kit_uninstall_title">Uninstall kit \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Snippet kit will be permanently deleted, including all associated snippets.</string>
+    <string name="snippet_kit_install_hint_title">What does it mean to install?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    The installed snippet kit will be available for use as if you had created it yourself.
+    \n
+    \n
+    That is, you can completely change any notes in it, add new ones, delete existing, manage the settings of the kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Any changes you make will only be available to you without the ability to change the original kit.
+    \n
+    \n
+    If the original kit has been updated, you can manually update the installed one.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Public Status</string>
+    <string name="public_status_private">Private</string>
+    <string name="public_status_blocked">Blokeeritud</string>
+    <string name="public_status_review">In review</string>
+    <string name="public_status_review_details">It will take some time before the kit is published and available in the public library.</string>
+    <string name="public_status_published">Avaldatud</string>
+    <string name="public_status_rejected">Tagasi lükatud</string>
+    <string name="public_status_not_found">Ei leitud</string>
+    <string name="public_status_deleted">Kustutatud</string>
+    <string name="public_status_restricted">Piiratud</string>
+    <string name="public_status_update_reason">Update reason</string>
+    <string name="dynamic_text_hint_title">Dynamic text</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    If a note contains dynamic fields, you will see this extra step whenever you perform any action on the note.
+    \n
+    \n
+    At this step you can define values in the input fields and complete the action with the changed text.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Tekst</string>
+    <string name="dynamic_text_view_mode_form">Vorm</string>
+    <string name="dynamic_value_date">Kuupäev/kellaaeg</string>
+    <string name="dynamic_value_date_description">Creates a placeholder that is replaced by the actual date</string>
+    <string name="dynamic_value_device">Device Info</string>
+    <string name="dynamic_value_device_description">Creates a placeholder that is replaced with information about the device</string>
+    <string name="dynamic_value_random">Random</string>
+    <string name="dynamic_value_random_description">Creates a placeholder that is replaced by a random value from a customizable list</string>
+    <string name="dynamic_value_clipboard">Clipboard</string>
+    <string name="dynamic_value_clipboard_description">Creates a placeholder that is replaced by the content of the clipboard</string>
+    <string name="dynamic_value_snippet">Snippet</string>
+    <string name="dynamic_value_snippet_description">Creates a placeholder that is replaced by the content of the selected note</string>
+    <string name="dynamic_value_attr_device_type">Information type</string>
+    <string name="dynamic_field_date">Date field</string>
+    <string name="dynamic_field_date_description">Creates a date input field</string>
+    <string name="dynamic_field_text">Text field</string>
+    <string name="dynamic_field_text_description">Creates a text input field</string>
+    <string name="dynamic_field_number">Number field</string>
+    <string name="dynamic_field_number_description">Creates a number input field</string>
+    <string name="dynamic_field_select">Selection field</string>
+    <string name="dynamic_field_select_description">Creates an input to select one or more items</string>
+    <string name="dynamic_field_barcode_scanning">Barcode scanning field</string>
+    <string name="dynamic_field_barcode_scanning_description">Creates a field that allows you to scan a barcode and use its text as the field value</string>
+    <string name="dynamic_field_text_toggle">Text toggle</string>
+    <string name="dynamic_field_text_toggle_description">Creates a toggle switch that can enable or disable a block of text</string>
+    <string name="dynamic_field_reference">Reference field</string>
+    <string name="dynamic_field_reference_description">Creates a field that refers to another field and uses its value</string>
+    <string name="dynamic_field_unknown">Unknown field</string>
+    <string name="dynamic_field_unknown_description">The field cannot be rendered. Perhaps it is incorrect or was created in a newer version of the application</string>
+    <string name="dynamic_field_date_format_date_time">Date/Time (system)</string>
+    <string name="dynamic_field_date_format_date">Date (system)</string>
+    <string name="dynamic_field_date_format_time">Time (system)</string>
+    <string name="dynamic_field_date_format_day_of_week">Day of week</string>
+    <string name="dynamic_field_date_format_day_of_month">Day of month (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Day of month (01–31)</string>
+    <string name="dynamic_field_date_format_year">Year</string>
+    <string name="dynamic_field_date_format_year_short">Year (short)</string>
+    <string name="dynamic_field_date_format_month">Month</string>
+    <string name="dynamic_field_date_format_month_number">Month (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Month (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hour (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hour (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hour (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hour (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minute (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minute (01–60)</string>
+    <string name="dynamic_field_date_format_second">Second (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Second (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Time Zone</string>
+    <string name="dynamic_field_value_formatter_new_line">New line</string>
+    <string name="dynamic_field_value_formatter_semicolon">Semicolon</string>
+    <string name="dynamic_field_value_formatter_comma">Comma</string>
+    <string name="dynamic_field_value_formatter_space">Space</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Ordered list</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Unordered list</string>
+    <string name="dynamic_field_attr_common_label">Label</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Suffix</string>
+    <string name="dynamic_field_attr_common_value">Väärtus</string>
+    <string name="dynamic_field_attr_common_required">Nõutud</string>
+    <string name="dynamic_field_attr_common_placeholder">Kohatäide</string>
+    <string name="dynamic_field_attr_common_default_value">Vaikeväärtus</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formatter of selected values</string>
+    <string name="dynamic_field_attr_select_multiple">Multiple selection</string>
+    <string name="dynamic_field_attr_select_user_input">User input</string>
+    <string name="dynamic_field_attr_text_multi_line">Multi-line text</string>
+    <string name="dynamic_field_attr_text_max_length">Max length</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Clipboard is the default value</string>
+    <string name="dynamic_field_attr_select_options">Options</string>
+    <string name="dynamic_field_attr_number_min">Min value</string>
+    <string name="dynamic_field_attr_number_max">Max value</string>
+    <string name="dynamic_field_attr_date_format">Format</string>
+    <string name="dynamic_field_attr_date_example">Example: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Multiple scanning</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Formatter of scanned values</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Referenced field label</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Field has its own value</string>
+    <string name="select_option_ordering">Sort options</string>
+    <string name="select_option_ordering_label_asc">Label (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Label (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Value (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Value (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Delete this dynamic field from the text?</string>
+    <string name="dynamic_field_confirm_delete_description">The placeholder of the field will be deleted from the original text.</string>
+    <string name="dynamic_value_placeholder_copied_title">The dynamic value placeholder has been copied to the clipboard</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">File not found. Try uploading it again.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">Updated</string>
+    <string name="file_attr_location">Asukoht</string>
+    <string name="file_confirm_update_file">Update file?</string>
+    <string name="file_confirm_update_file_description">The file will be updated in the cloud storage.</string>
+    <string name="file_error_name_required">Name is required to save this file</string>
+    <string name="file_action_new_file">File</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Failid</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">Note</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">Attachment</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Manused</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">Search your files</string>
+    <string name="file_type_any">Kõik</string>
+    <string name="file_type_audio">Audios</string>
+    <string name="file_type_video">Videod</string>
+    <string name="file_type_image">Pildid</string>
+    <string name="file_type_archive">Archives</string>
+    <string name="file_type_document">Dokumendid</string>
+    <string name="file_type_recycled">Recycle Bin</string>
+    <string name="folder_select">Vali</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">Edit</string>
+    <string name="clip_action_new_edit_description">The note can be edited before it is saved or used for any action.</string>
+    <string name="clip_action_new_insert">Insert into</string>
+    <string name="clip_action_new_insert_description">The text of a note can be inserted into any existing one. Select the target note and specify the insertion options.</string>
+    <string name="clip_action_new_action">Actions</string>
+    <string name="clip_action_new_action_description">The text of a note can be used to perform an action.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">Eksporditud %s märge</item>
+        <item quantity="other">Eksporditud %s märget</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">Imporditud %s märge</item>
+        <item quantity="other">Imporditud %s märget</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">Kustutatud %s märge</item>
+        <item quantity="other">Kustutatud %s märget</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s märge</item>
+        <item quantity="other">%s märget</item>
+    </plurals>
+</resources>

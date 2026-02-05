@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditTextExt
+        android:id="@+id/etClipTitle"
+        style="@style/TextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="48dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:minLines="1"
+        android:nextFocusForward="@+id/tagsEditText"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ivShowMore"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="?selectableItemBackground"
+        android:padding="14dp"
+        app:tint="?android:textColorSecondary"
+        tools:srcCompat="@drawable/ic_expand_more" />
+
+    <ImageView
+        android:id="@+id/highlightView"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.7"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_dot_highlight"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible" />
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:ellipsize="end"
+    android:maxWidth="280dp"
+    android:textColor="?android:textColorPrimary"
+    app:chipBackgroundColor="@color/color_dynamic_field_background"
+    app:chipMinHeight="28dp"
+    app:chipStrokeColor="?colorAccent"
+    app:chipStrokeWidth="1dp"
+    app:closeIconEnabled="false"
+    app:closeIconTint="?android:textColorPrimary" />

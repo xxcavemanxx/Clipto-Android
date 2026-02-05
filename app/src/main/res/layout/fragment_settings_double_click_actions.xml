@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryInverse"
+    android:divider="?android:listDivider"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="0dp"
+        app:navigationContentDescription="@string/content.description.back"
+        app:titleTextColor="?android:textColorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayoutExt
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <TextView
+                android:id="@+id/exitTheAppTitleView"
+                android:layout_width="0dp"
+                android:layout_height="?listPreferredItemHeight"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:maxLines="10"
+                android:minLines="1"
+                android:text="@string/settings.double_click.action.exit"
+                android:textAlignment="gravity"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@id/exitTheAppSwitch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/exitTheAppSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/exitTheAppTitleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/exitTheAppTitleView" />
+
+            <clipto.presentation.settings.SettingsDividerView
+                android:id="@+id/exitTheAppAction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@id/exitTheAppTitleView"
+                app:layout_constraintTop_toTopOf="@id/exitTheAppTitleView" />
+
+            <TextView
+                android:id="@+id/deleteNoteTitleView"
+                android:layout_width="0dp"
+                android:layout_height="?listPreferredItemHeight"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:maxLines="10"
+                android:minLines="1"
+                android:text="@string/settings.double_click.action.delete"
+                android:textAlignment="gravity"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@id/deleteNoteSwitch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/exitTheAppAction" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/deleteNoteSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/deleteNoteTitleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/deleteNoteTitleView" />
+
+            <clipto.presentation.settings.SettingsDividerView
+                android:id="@+id/deleteNoteAction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@id/deleteNoteTitleView"
+                app:layout_constraintTop_toTopOf="@id/deleteNoteTitleView" />
+
+            <TextView
+                android:id="@+id/editNoteTitleView"
+                android:layout_width="0dp"
+                android:layout_height="?listPreferredItemHeight"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:maxLines="10"
+                android:minLines="1"
+                android:text="@string/settings.double_click.action.edit"
+                android:textAlignment="gravity"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@id/editNoteSwitch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/deleteNoteAction" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/editNoteSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/editNoteTitleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editNoteTitleView" />
+
+            <clipto.presentation.settings.SettingsDividerView
+                android:id="@+id/editNoteAction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@id/editNoteTitleView"
+                app:layout_constraintTop_toTopOf="@id/editNoteTitleView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayoutExt>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bg_rune_item_flat"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:minHeight="64dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bgView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/vExpandCollapse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vExpandCollapse"
+        app:srcCompat="@drawable/bg_rune_item_icon_flat"
+        tools:tint="#FF3D00" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintTop_toTopOf="@id/bgView"
+        tools:srcCompat="@drawable/rune_pincode"
+        tools:tint="#1DE9B6" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/warningView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"
+        app:layout_constraintStart_toEndOf="@id/bgView"
+        app:layout_constraintTop_toTopOf="@id/bgView"
+        app:srcCompat="@drawable/ic_attention" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textAlignment="gravity"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/vExpandCollapse"
+        app:layout_constraintEnd_toStartOf="@id/ivExpand"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/bgView"
+        app:layout_constraintTop_toTopOf="@id/vExpandCollapse"
+        tools:text="Local Shield" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivExpand"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:padding="?actionIconPadding"
+        app:layout_constraintBottom_toBottomOf="@id/vExpandCollapse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vExpandCollapse"
+        app:srcCompat="@drawable/texpander_expand"
+        app:tint="?android:textColorSecondary" />
+
+    <View
+        android:id="@+id/vExpandCollapse"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="?selectableItemBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHint"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/vExpandCollapse"
+        app:layout_constraintStart_toEndOf="@id/nameView"
+        app:layout_constraintTop_toTopOf="@id/vExpandCollapse"
+        app:srcCompat="@drawable/settings_hint" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRuneSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vExpandCollapse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

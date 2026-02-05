@@ -1,0 +1,64 @@
+image: alvrme/alpine-android:android-30
+
+before_script:
+  # gradle cache
+  - chmod +x ./gradlew
+  - export GRADLE_USER_HOME=/cache/.gradle
+
+  # ssh access to git repository
+  - apk update && apk add git openssh-client
+  - eval $(ssh-agent -s)
+  - echo "$GIT_SSH_KEY" | ssh-add -
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - apk add --update ttf-dejavu ttf-ubuntu-font-family ca-certificates && rm -rf /var/cache/apk/*
+  - apk add --no-cache tzdata
+  - echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" >> $ANDROID_HOME/licenses/android-sdk-license
+  - echo "8933bad161af4178b1185d1a37fbf41ea5269c55" >> $ANDROID_HOME/licenses/android-sdk-license
+  - echo "d56f5187479451eabf01fb78af6dfcb131a6481e" >> $ANDROID_HOME/licenses/android-sdk-license
+
+  # git user config
+  - git config user.name "Gitlab CI Agent"
+  - git config user.email "ci@gitlab.com"
+  - git remote set-url origin $GIT_SSH_URL
+  - git checkout -f $CI_COMMIT_REF_NAME
+  - git pull origin $CI_COMMIT_REF_NAME
+
+stages:
+  - incrementVersion
+  - betaRelease
+  - publishResources
+
+incrementVersion:
+  stage: incrementVersion
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  only:
+    - master_pro
+  script:
+    - ./gradlew -g /cache/.gradle incrementApkModuleVersion --stacktrace
+
+betaRelease:
+  stage: betaRelease
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  only:
+    - master_pro
+  script:
+    - ./gradlew -g /cache/.gradle publishReleaseBundle -DgooglePlayTrack=alpha --stacktrace
+
+publishResources:
+  stage: publishResources
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  only:
+    - master_pro
+  script:
+    - ./gradlew -g /cache/.gradle publishListingRelease --stacktrace
+  when: manual

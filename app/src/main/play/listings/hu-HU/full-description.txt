@@ -1,0 +1,104 @@
+A Clipto segítségével új módon szervezheti napi munkáját akár fontos, akár ideiglenes jegyzetek segítségével, gyorsan, kényelmesen és megbízhatóan, amikor éppen szüksége van rájuk.
+
+
+Szinkronizálja jegyzeteit Mac-es, Windowsos, Linuxos számítógépével vagy éppen böngészőjéből
+Próbálja ki a Clipto webes változatát, és töltse le a számítógépes alkalmazást is a https://clipto.pro webhelyről.
+A Clipto mindent szinkronban tart.
+
+
+DOLGOZON NET NÉLKÜL
+Minden funkció offline is tökéletesen működik. Ha szeretné, hogy jegyzetei minden eszközén szinkronban legyenek, egyszerűen jelentkezzen be ugyanazzal a felhasználói fiókkal. Ha nem igényli a teljesen automatikus szinkronizálást, jelentkezzen ki, és használja a kézi import/export lehetőséget. Öné a döntés.
+
+
+JEGYZETELJEN A VÁGÓLAPON
+A Clipto-t már Android 10-zel is használhatja vágólap-kezelőként!
+
+
+KAPCSOLJA BE AZ UNIVEZÁLIS VÁGÓLAPOT
+Az univerzális vágólap segítségével az egyik eszközén másolhat, a másik pedig beilleszthet bármilyen jegyzetet.
+
+
+SZKENNELJEN VONALKÓDOT
+A Clipto-ból közvetlenül a telefon kamerájával készíthet fényképes jegyzeteket.
+A beépített vonalkódolvasó a legtöbb szabvány formátumot felismeri (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR-kód).
+
+
+FÁLJMELLÉKLETEK
+A Clipto-ban bármilyen fájlt csatolhat jegyzetihez (nem csak képeket)
+
+
+SZABJA SZEMÉLYRE
+Telepítés után a Clipto-t az utolsó apró részletig személyre szabhatja:
+- Témák (fehér, szépia, sötét, sötétkék, sötétlila, AMOLED fekete)
+- Listák (rács, kényelmes rács, sűrű rács, előnézeti lista)
+- Rendezés (létrehozás, utolsó használat, használati gyakoriság, cím, szöveg, cimkék, méret, karakterek száma alapján)
+- Betűméret (külön az áttekintés és a jegyzetek szövegéhez)
+- Betűtípus (külön az áttekintés és a jegyzetek szövegéhez)
+- Húzási műveletek az áttekintés nézetben
+
+
+MEGOSZTÁS
+Bármelyik jegyzethez nyilvános linket készíthet, mely bömgészőből regisztráció nélkül elérhető.
+A nyilvános linkek alábbi tulajdonságait jegyzetenként megadhatja:
+- saját jelszó
+- hozzáférés egyetlen alkalomra
+- késleltetett hozzáférés
+- lejárati idő
+
+
+FOKOZZA HATÉKONYSÁGÁT
+A Clipto tudatosan egyszerűnek terveztük, mégis teljes értékű jegyzet kezelő:
+✔ Értesítési parancsokkal elérheti az utolsó néhány jegyzetet, egyetlen érintéssel;
+✔ Helyzetfüggő parancsok - bármelyik futó alkalmazásból több Clipto műveletet is elvégezhet;
+✔ Készítsen jegyzetet közvetlenül a vágólap tartalmából - és használja őket vágólap előzményekként;
+✔ Vágólap-műveletek - a vágólapról egy érintéssel kiemelheti jegyzetei bármelyik részét;
+✔ Küldés - bármilyen fájlból vagy szövegből létrehozhat jegyzeteket;
+✔ Beépített szerkesztő - jegyzetelhet egyszerű szövegként, markdown vagy HTML formázással;
+✔ Egy érintéses funkciók
+    - Szövegolvasás
+    - Email írás
+    - SMS írás
+    - Küldés Twitterrel
+    - Naptári emlékeztető
+    - Új névjegy hozzáadása
+    - Webes keresés
+    - Wikipédia keresés
+    - Youtube keresés
+    - Fordítás Google-lel
+    - Megosztás…
+    - Vágólapra másolás
+    - Küldés QR kódként
+    - Küldés szövegként
+    - Küldés PDF-ben
+    - Küldés Markdown formázással
+    - Weboldal megnyitása
+    - Emailcím mentése
+    - Telefonszám mentése
+    - Telefonszám tárcsázása
+
+
+IMPORTÁLÁS MÁS JEGYZET ÉS VÁGÓLAP ALKALMAZÁSOKBÓL
+A felhasználók kérték, hogy lehessen jegyzeteket importálni néhány népszerű alkalmazásból. Ezért hivatalosan az alábbi import formátumokat támogatjuk:
+- Clipper+ JSON
+- Simplenote JSON
+- Clip Stack
+- Clipboard Manager
+- Google Keep (takeout zip)
+
+
+VEGYEN RÉSZT A FEJLESZTÉSBEN
+Minden új funkciót a felhasználók visszajelzései alapján fejlesztünk. Ön nemcsak használja a Clipto-t, de irányíthatja a fejlesztői munkát is:)
+Elég ha elküldi kérését a Github-ra - https//github.com/clipto-pro/Android
+
+
+FORDITSA LE A CLIPTO-T SAJÁT NYELVÉRE
+Köszönjük minden önkéntes segítségét, akik ezzel is segítenek, hogy ingyenesek maradjunk, és az új funkciókra koncentráljunk!
+Ha az Ön nyelvére még nem fordították le a Clipto-t (vagy csak részben, esetleg rosszul), itt segíthet - https://crowdin.com/project/clipto
+
+
+LEGYEN RÉSZE KÖZÖSSÉGÜNKNEK
+Csatlakozzon hozzánk a Redditen - https://www.reddit.com/r/cliptopro
+Kövessen a Twittteren - https://twitter.com/CliptoPro
+Kedvelje és ossza meg Facebook oldalonkat - https://www.facebook.com/cliptopro
+
+Köszönjük!

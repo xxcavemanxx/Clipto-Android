@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Новая строка</string>
+    <string name="common_separator_space">Пробел</string>
+    <string name="common_separator_comma">Запятая</string>
+    <string name="confirm_exit_edit_mode_title">Выйти из режима редактирования?</string>
+    <string name="confirm_exit_edit_mode_description">Все несохраненные изменения будут потеряны.</string>
+    <string name="confirm_delete_note_title">Удалить заметку?</string>
+    <string name="confirm_delete_note_description">Выбранная заметка будет удалена.</string>
+    <string name="link_preview_label">Загрузка предпросмотра…</string>
+    <string name="link_preview_not_found">Предпросмотр недоступен</string>
+    <string name="link_preview_hide">Скрыть</string>
+    <string name="link_preview_show">Показать</string>
+    <string name="toast_downloaded">Загружено %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Нажмите \'Назад\' еще раз чтобы выйти</string>
+    <string name="essentials.errors.unknown">Неизвестная ошибка. Попробуйте еще раз</string>
+    <string name="error_data_empty">Данные не найдены.</string>
+    <string name="error.unexpected">Произошла непредвиденная ошибка</string>
+    <string name="error.unexpected.send">Нажмите на кнопку \"Ошибка\", чтобы отправить нам детали</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Оценить</string>
+    <string name="menu.edit">Редактировать</string>
+    <string name="menu.clear">Очистить</string>
+    <string name="menu.clear_all">Очистить всё</string>
+    <string name="menu.share">Поделиться</string>
+    <string name="menu.fav">Избранное</string>
+    <string name="menu.delete">Удалить</string>
+    <string name="menu.empty">Очистить</string>
+    <string name="menu.cancel">Отменить</string>
+    <string name="menu.settings">Настройки</string>
+    <string name="menu.display_options">Параметры отображения</string>
+    <string name="menu.faq">Часто задаваемые вопросы</string>
+    <string name="menu.new">Новая</string>
+    <string name="menu.search">Поиск</string>
+    <string name="menu.print">Печать</string>
+    <string name="menu.restore">Восстановить</string>
+    <string name="menu.merge">Объединить</string>
+    <string name="menu.copy_link">Скопировать публичную ссылку</string>
+    <string name="menu.share_link">Поделиться публичной ссылкой</string>
+    <string name="menu.save_as">Сохранить как…</string>
+    <string name="menu.rename">Переименовать</string>
+    <string name="menu.paste">Вставить</string>
+    <string name="menu.copy">Скопировать</string>
+    <string name="menu.cut">Вырезать</string>
+    <string name="menu.fullscreen.enter">Войти в полноэкранный режим</string>
+    <string name="menu.fullscreen.exit">Выйти из полноэкранного режима</string>
+    <string name="menu_close">Закрыть</string>
+    <string name="button.update">Обновить</string>
+    <string name="button.install">Установить</string>
+    <string name="button.uninstall">Удалить</string>
+    <string name="button.done">Готово</string>
+    <string name="button.undo">Отмена</string>
+    <string name="button.apply">Применить</string>
+    <string name="button.change">Изменить</string>
+    <string name="button.save">Сохранить</string>
+    <string name="button.create">Создать</string>
+    <string name="button.send">Отправить</string>
+    <string name="button.preview">Просмотр</string>
+    <string name="button.confirm">Подтвердить</string>
+    <string name="button.sync">Синхронизировать сейчас</string>
+    <string name="button.yes">Да</string>
+    <string name="button.no">Нет</string>
+    <string name="button.back">Назад</string>
+    <string name="button.continue">Продолжить</string>
+    <string name="button.finish">Завершить</string>
+    <string name="button.got_it">Понятно!</string>
+    <string name="button.get_started">Начать</string>
+    <string name="button.example">Пример</string>
+    <string name="button_try_again">Попробовать еще раз</string>
+    <string name="button_insert">Вставить</string>
+    <string name="button_refresh">Обновить</string>
+    <string name="notification.title.empty">Буфер обмена пуст</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Назад</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Аббревиатура</string>
+    <string name="common.label.description">Описание</string>
+    <string name="common.action.confirm">Подтвердите выбранное действие</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Новый тег</string>
+    <string name="tag.new.name">Название тега</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Переместить в папку</string>
+    <!-- MAIN -->
+    <string name="main.search">Искать в заметках</string>
+    <string name="main.filter.all">Все</string>
+    <string name="main.filter.no_tags">Без тегов</string>
+    <string name="main.filter.filtered">Отфильтровано</string>
+    <string name="main.delete_selected.title">Удалить выбранные заметки?</string>
+    <string name="main.delete_selected.description">Все выбранные заметки будут удалены.</string>
+    <string name="main.delete_merged.title">Удалить объединенные заметки?</string>
+    <string name="main.delete_merged.description">Объединенные заметки будут удалены без возможности восстановления.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Заметки не найдены.</string>
+    <string name="main.list.empty.caption">Примечание: каждая категория имеет свою индивидуальную сортировку и другие возможные настройки. Настройки можно изменить в любое время из списка (%s) или из левой панели навигации (%s).</string>
+    <string name="main.list.empty.caption.three_dot">меню \'три точки\'</string>
+    <string name="main.list.empty.caption.long_tap">длительное нажатие на категорию</string>
+    <string name="main.list.empty.description.all">Общая категория. Отображает все заметки без фильтрации.</string>
+    <string name="main.list.empty.description.no_tags">Отображает заметки, для которых не назначен тег.</string>
+    <string name="main.list.empty.description.tags">Отображает заметки и файлы, помеченные выбранным тегом.</string>
+    <string name="main.list.empty.description.filtered">Заметки были отфильтрованы в соответствии с условиями, для которых ничего не было найдено.</string>
+    <string name="main.list.empty.description.starred">Отображает заметки, помеченные избранным.</string>
+    <string name="main.list.empty.description.deleted">Отображает заметки и файлы, которые были удалены, но все еще могут быть восстановлены обратно. Удаленные записи остаются с назначенными тегами и другими атрибутами, но недоступны в соответствующих категориях.</string>
+    <string name="main.list.empty.description.clipboard">Отображает заметки, которые были автоматически созданы приложением из буфера обмена. По умолчанию буфер обмена не отслеживается, и активация может быть произведена в настройках.</string>
+    <string name="main.list.empty.description.snippets">Отображает заметки, которые используются в других заметках. Любые изменения сниппета автоматически отражаются во всех заметках, где он используется.</string>
+    <string name="main.filter.snippets">Сниппеты</string>
+    <string name="main.filter.filters">Фильтры</string>
+    <string name="main.filter.folders">Папки</string>
+    <string name="main.filter.files">Файлы</string>
+    <string name="main.filter.notes">Заметки</string>
+    <string name="main.filter.tags">Теги</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Запоминать последнее действие</string>
+    <string name="main_action_settings_remember_description">При активации этой функции приложение запоминает последнее действие и использует его при следующем нажатии на плавающую кнопку. В то же время окно со списком всех действий можно открыть долгим нажатием на плавающую кнопку.</string>
+    <string name="main_action_folders_move_note_title">Существующую заметку</string>
+    <string name="main_action_folders_move_note_description">Переместить существующую заметку в текущую папку</string>
+    <string name="main_action_folders_move_file_title">Существующий файл</string>
+    <string name="main_action_folders_move_file_description">Переместить существующий файл в текущую папку</string>
+    <string name="main_action_notes">Создание заметок</string>
+    <string name="main_action_notes_new_title">Новая заметка</string>
+    <string name="main_action_notes_new_description">Создать новую текстовую заметку</string>
+    <string name="main_action_notes_barcode_title">Сканировать штрих-код</string>
+    <string name="main_action_notes_barcode_description">Отсканировать ссылку или текст и сохранить как заметку (поддерживается большинство стандартных форматов штрихкодов)</string>
+    <string name="main_action_notes_clipboard_title">Скопировать из буфера обмена</string>
+    <string name="main_action_notes_clipboard_description">Сохранить текущий текст из буфера обмена в виде заметки</string>
+    <string name="main_action_notes_import_title">Импортировать из файла</string>
+    <string name="main_action_notes_import_description">Создать заметку с текстом из файла (макс. размер файла %s килобайт)</string>
+    <string name="main_action_notes_import_error">Размер файла должен быть не более %s килобайт</string>
+    <string name="main_action_files">Добавление файлов</string>
+    <string name="main_action_files_file_title">Выбрать файл</string>
+    <string name="main_action_files_file_description">Добавить любой файл (фото, видео, pdf и т.д.) размером не более %s мегабайт</string>
+    <string name="main_action_files_photo_title">Сделать фото</string>
+    <string name="main_action_files_photo_description">Сделать фото и сохранить его в заметке</string>
+    <string name="main_action_files_record_title">Записать видео</string>
+    <string name="main_action_files_record_description">Записать видео и сохранить его в заметке (макс. размер видео %s мегабайт)</string>
+    <string name="main_action_organize">Организация данных</string>
+    <string name="main_action_organize_tag_title">Новый тег</string>
+    <string name="main_action_organize_tag_description">Создать новый тег для упорядочивания заметок и файлов, чтобы их было легче найти</string>
+    <string name="main_action_organize_filter_title">Новый фильтр</string>
+    <string name="main_action_organize_filter_description">Создать новый фильтр, чтобы быстрее найти нужную информацию с помощью готового шаблона поиска</string>
+    <string name="main_action_organize_folder_title">Новая папка</string>
+    <string name="main_action_organize_folder_description">Создать папку для упорядочивания заметок и файлов в иерархичном виде</string>
+    <string name="main_action_snippets">Создание шаблонов</string>
+    <string name="main_action_snippets_snippet_title">Новый сниппет</string>
+    <string name="main_action_snippets_snippet_description">Создать повторно используемый текстовый шаблон для уменьшения набора повторяющегося текста</string>
+    <string name="main_action_snippets_set_title">Новый набор сниппетов</string>
+    <string name="main_action_snippets_set_description">Создать набор сниппетов, чтобы находить нужные вам быстрее</string>
+    <string name="main.actions.save_and_start_new_note">Сохранить и создать новую заметку</string>
+    <string name="main.actions.add_dynamic_value">Добавить динамическое значение</string>
+    <string name="main.actions.add_attachment">Добавить вложение</string>
+    <string name="main.actions.sync_note">Синхронизировать заметку</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Свайп влево</string>
+    <string name="main.swipe_actions.caption.right">Свайп вправо</string>
+    <string name="main.swipe_actions.fav">Добавить в избранное</string>
+    <string name="main.swipe_actions.delete">Удалить</string>
+    <string name="main.swipe_actions.copy">Скопировать</string>
+    <string name="main.swipe_actions.none">Ничего</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Расширенный поиск</string>
+    <string name="filter.hint.text">Текст содержит</string>
+    <string name="filter.label.no_tags">Без тегов</string>
+    <string name="filter.label.fav">Избранное</string>
+    <string name="filter.label.platform">Платформа</string>
+    <string name="filter.label.snippets">Сниппеты</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Буфер обмена</string>
+    <string name="filter.clipboard.empty.title">Стереть заметки из буфера обмена?</string>
+    <string name="filter.clipboard.empty.description">Все заметки из буфера обмена (кроме избранных и отмеченных тегами) будут навсегда удалены.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Корзина</string>
+    <string name="filter.deleted.limit">Лимит</string>
+    <string name="filter.deleted.empty.title">Очистить корзину?</string>
+    <string name="filter.deleted.empty.description">Все заметки в корзине будут навсегда удалены.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Лимит</string>
+    <string name="filter.limit.description">Когда количество заметок превысит лимит данной категории, старые заметки, превышающие лимит, будут автоматически удаляться из категории.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Название фильтра</string>
+    <string name="filter_error_name_required">Требуется уникальное название для сохранения фильтра</string>
+    <string name="filter_delete_title">Удалить фильтр \'%s\'?</string>
+    <string name="filter_delete_description">Фильтр будет навсегда удален.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Требуется уникальное название для сохранения тега</string>
+    <string name="filter.tag.rule.title">Правило автоназначения</string>
+    <string name="filter.tag.rule.description">При активации, тег будет автоматически назначен новым заметкам, если они содержат какой-либо текст из перечисленных и разделенных запятыми.</string>
+    <string name="filter.tag.rule.hint">Текст с разделителями-запятыми</string>
+    <string name="filter.tag.delete.title">Удалить тег \'%s\'?</string>
+    <string name="filter.tag.delete.description">Тег будет навсегда удален.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Добавить</string>
+    <string name="clip.hint.title">Без названия</string>
+    <string name="clip.hint.tags">Коснитесь для добавления тега</string>
+    <string name="clip.hint.text">Коснитесь для добавления текста</string>
+    <string name="clip.snackbar.text.required">Текст обязателен</string>
+    <string name="clip.snackbar.text.copied">Текст скопирован</string>
+    <string name="clip.attr.updated">Использовано</string>
+    <string name="clip.attr.edited">Изменено</string>
+    <string name="clip.attr.created">Создано</string>
+    <string name="clip.attr.deleted">Удалено</string>
+    <string name="clip.attr.usageCount">Использовано раз</string>
+    <string name="clip.attr.charsCount">Символов</string>
+    <string name="clip.attr.size">Размер</string>
+    <string name="clip_exit_without_save_title">Отменить редактирование заметки?</string>
+    <string name="clip_exit_without_save_description">Все сделанные в процессе редактирования изменения будут потеряны.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Сохранить как</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Общее</string>
+    <string name="clip_details_tab_tags">Теги</string>
+    <string name="clip_details_tab_folder">Расположение</string>
+    <string name="clip_details_tab_attachments">Вложения</string>
+    <string name="clip_details_tab_dynamic">Динамические значения</string>
+    <string name="clip_details_tab_snippets">Сниппеты</string>
+    <string name="clip_details_tab_snippet_kits">Наборы сниппетов</string>
+    <string name="clip_details_tab_dynamic_values">Значения</string>
+    <string name="clip_details_tab_dynamic_fields">Поля ввода</string>
+    <string name="clip_details_tab_attributes">Атрибуты</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Вставить текст в заметку</string>
+    <string name="clip.info.label.note.insert.remember">Запомнить мой выбор и не спрашивать больше (к панели можно получить доступ длинным нажатием).</string>
+    <string name="clip.info.label.note.create">Создать заметку</string>
+    <string name="clip.info.label.position">Расположение</string>
+    <string name="clip.info.label.beginning">В начале</string>
+    <string name="clip.info.label.end">В конце</string>
+    <string name="clip.info.label.tags.edit">Присвоить теги</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Простой текст</string>
+    <string name="clip.text.type.link">Текст со ссылками</string>
+    <string name="clip.text.type.line_clickable">Текст с копируемыми строками</string>
+    <string name="clip.text.type.word_clickable">Текст с копируемыми лексемами</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Вложение</string>
+    <string name="clip.add.attachment.tooltip">Вложением может быть любой файл (фото, видео, pdf и т.д.) размером не более %s мегабайт.</string>
+    <string name="clip.add.dynamic.title">Динамическое значение</string>
+    <string name="clip.add.dynamic.tooltip">Динамическое значение - это способ создания заметок с всегда актуальными данными. В режиме просмотра вставленный специальный символ заменяется актуальными данными.</string>
+    <string name="clip.add.dynamic.value.date_time">Дата/Время</string>
+    <string name="clip.add.dynamic.value.platform">Платформа</string>
+    <string name="clip.add.dynamic.value.ip">IP адрес</string>
+    <string name="clip.add.dynamic.value.date">Дата</string>
+    <string name="clip.add.dynamic.value.time">Время</string>
+    <string name="clip.add.dynamic.value.month">Месяц</string>
+    <string name="clip.add.dynamic.value.timezone">Часовой пояс</string>
+    <string name="clip.add.dynamic.value.month_number">Месяц (номер)</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Месяц (с нулем в начале)</string>
+    <string name="clip.add.dynamic.value.year">Год</string>
+    <string name="clip.add.dynamic.value.year_short">Год (2-цифры)</string>
+    <string name="clip.add.dynamic.value.hour24">Час (24-часа)</string>
+    <string name="clip.add.dynamic.value.hour12">Час (12-часов)</string>
+    <string name="clip.add.dynamic.value.minutes">Минуты</string>
+    <string name="clip.add.dynamic.value.seconds">Секунды</string>
+    <string name="clip.add.dynamic.value.am_pm">AM/PM</string>
+    <string name="clip.add.dynamic.value.day_of_week">День недели</string>
+    <string name="clip.add.dynamic.value.day_of_month">День месяца</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">День месяца (с нулем в начале)</string>
+    <string name="clip.add.dynamic.value.random_digit">Случайная цифра (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Случайный латинский символ (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Сниппет</string>
+    <string name="clip.add.snippet.new.hint">Введите текст, чтобы найти или создать</string>
+    <string name="clip.add.snippet.tooltip">Сниппет - это любая заметка, текст которой можно использовать повторно в любой другой заметке, но редактировать в одной. Доступ к созданным сниппетам можно получить из навигации слева.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Тип текста</string>
+    <string name="text.config.size">Размер текста</string>
+    <string name="text.config.font">Шрифт текста</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Сортировка</string>
+    <string name="list.config.lines">Видимые строки текста</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Стиль списка</string>
+    <string name="list.style.description">Стиль списка заметок</string>
+    <string name="list.style.default">По умолчанию</string>
+    <string name="list.style.comfortable">Комфортный</string>
+    <string name="list.style.compact">Компактный</string>
+    <string name="list.style.preview">Предпросмотр</string>
+    <string name="list.style.grid">Сетка</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Руны навыков</string>
+    <string name="runes.hint.description"><![CDATA[Это своего рода форма усовершенствования функциональности приложения.
+    \n\n
+    Каждая руна расширяет или изменяет базовую функциональность и позволяет настроить приложение для достижения наиболее оптимальной продуктивности при работе с ним.
+    \n\n
+    Одни руны более полезны, другие - менее, тем не менее данный подход делает приложение практически безграничным в возможностях.
+    \n\n
+    Ознакомьтесь с существующими рунами, активируйте нужные вам и присылайте идеи для новых, чтобы сделать приложение чуть более продуктивным:)]]></string>
+    <string name="runes_hotkeys_title">Наблюдатель клавиш</string>
+    <string name="runes_hotkeys_description"><![CDATA[С помощью этой руны вы можете настраивать горячие клавиши для управления приложением и действиями внутри него.
+    \n
+    \n
+    Некоторые горячие клавиши уже установлены по-умолчанию. Вы можете их либо очистить либо изменить.
+    \n
+    \n
+    ```
+    \n
+    В зависимости от действия, горячие клавиши будут отслеживаться либо только в рамках приложения либо глобально.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Астральная синхронизация</string>
+    <string name="runes.instant_sync.description"><![CDATA[Руна открывает возможность:
+    \n
+    - автоматически сохранять все данные в облаке;
+    \n
+    - мгновенно получать доступ к ним на любых других устройствах;
+    \n
+    - сохранять в приложении не только текстовые заметки, но и файлы любого формата;
+    \n\n
+    По умолчанию приложение работает без синхронизации и сохраняет все данные на устройстве.
+    \n
+    ```
+    \n
+    Как только вы активируете данную руну, все ранее созданные и новые данные будут автоматически синхронизироваться с облачным хранилищем по мере доступности интернет соединения.
+    \n
+    ```]]></string>
+    <string name="runes.pincode.title">Железный щит</string>
+    <string name="runes.pincode.description"><![CDATA[Руна позволяет защитить доступ к приложению с помощью пароля.
+    \n\n
+    Когда активировано, доступ будет заблокирован после **%s минут** неактивности.
+    \n\n
+    **Важно:** если вы забудете пароль, вам нужно будет очистить данные приложения или переустановить его. При этом, все не синхронизированные изменения будут потеряны.    ]]></string>
+    <string name="runes.theme.title">Шкура хамелеона</string>
+    <string name="runes.theme.description"><![CDATA[По умолчанию приложение использует цветовую схему, которая автоматически меняется между светлой и темной в зависимости от системных настроек.
+    \n\n
+    Вы можете активировать любую другую тему, которая будет одинаково выглядеть независимо от системных настроек.]]></string>
+    <string name="runes.clipboard.title">Буфер обмена</string>
+    <string name="runes.clipboard.description"><![CDATA[Руна позволяет приложению отслеживать буфер обмена и автоматически создавать заметки с текстом из него.
+    \n\n
+    После активации, приложение будет отображать постоянное уведомление в статус баре, чтобы иметь возможность отслеживать буфер.
+    \n\n
+    ```
+    \n
+    Если уведомление не отображается, значит приложение не запущено и буфер отслеживаться не будет, пока вы не запустите приложение снова.
+    \n
+    ```]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Клавиатурный Компаньон</string>
+    <string name="runes.texpander.description"><![CDATA[    Руна дает вам возможность использовать приложение для заполнения полей ввода существующими заметками почти **во всех приложениях**.
+    \n\n
+    После активации, когда вы установите фокус в поле ввода, приложение отобразит плавающую панель с действиями, которые позволяют управлять содержимым поля.
+    \n\n
+    #### Особенности поведения:
+    \n
+- панель может быть изменена в размерах;
+    \n
+    - панель можно перетащить в любое место экрана;
+    \n
+    - панель может быть автоматически изменена в зависимости от возможности использования определенных действий;
+    \n
+    - панель может быть автоматически скрыта, если поле теряет фокус;
+    \n
+    - панель можно скрыть вручную (с помощью действия в верхнем правом углу панели) до тех пор, пока ее не понадобится вызвать снова;
+    \n
+    - если панель не отображается, ее можно явно вызвать из панели уведомлений (кликнув на соответствующее уведомление) или из панели быстрых настроек;
+    \n\n
+    #### Технические ограничения:
+    \n
+    - панель использует службу специальных возможностей и требует ее активации в настройках системы;
+    \n
+    - панель использует плавающее окно для отображения поверх других приложений и требует соответствующего разрешения в настройках системы;
+    \n
+    - В некоторых приложениях автоматическое поведение панели невозможно, поэтому она может использоваться с ограничениями и явным вызовом;
+    \n\n
+    #### Примечание:
+    \n
+    Если через некоторое время руна перестает работать, прочтите [эту статью](%s), как сохранить работоспособность приложения на вашем устройстве. Или свяжитесь со мной по электронной почте, возможно, вы нашли какую-то проблему:)    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Активировать</string>
+    <string name="runes.texpander.required.accessibility">Нажмите здесь, затем перейдите к Загруженным (Установленным) сервисам и активируйте службу \"Клавиатурный Компаньон\".</string>
+    <string name="runes.texpander.required.floating">Нажмите здесь, затем перейдите к разделу \"Другие разрешения\" и активируйте \"Отображать поверх других приложений\".</string>
+    <string name="runes.texpander.action.copy">Скопировать в буфер обмена</string>
+    <string name="runes.texpander.action.show">Нажмите здесь, чтобы показать плавающую панель.</string>
+    <string name="runes.texpander.action.insert">Вставить</string>
+    <string name="runes.texpander.action.replace">Заменить</string>
+    <string name="runes.texpander.hint.hide">Спрятать, пока не будет вызвана из Панели уведомлений или Быстрых настроек.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">Окулус</string>
+    <string name="runes.link_preview.description"><![CDATA[При активации данной руны, для сохраняемых **http-ссылок** приложение будет пытаться загрузить их предпросмотр в режиме просмотра заметки.
+    \n\n
+    При этом:
+    \n
+    - изображение предпросмотра сможет быть открыто в отдельном окне и увеличено;
+    \n
+    - если ссылка является видео, оно сможет быть воспроизведено средствами приложения;]]></string>
+    <string name="runes.auto_save.title">Точка невозврата</string>
+    <string name="runes.auto_save.description"><![CDATA[По умолчанию, в процессе создания или редактирования заметки, вам нужно вручную нажать на кнопку сохранения, чтобы подтвердить сделанные изменения.
+    \n
+    \n
+    С помощью этой руны приложение будет автоматически сохранять любые изменения в процессе редактирования текста.]]></string>
+    <string name="runes.remember_last_filter.title">Возрождение</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[С помощью этой руны, при запуске, приложение будет восстанавливать последний активный фильтр из предыдущей сессии.]]></string>
+    <string name="runes.swipe_actions.title">Сила свайпа</string>
+    <string name="runes.swipe_actions.description"><![CDATA[С помощью этой руны, в списке заметок, вы можете настроить действия с ними, применяемые на жесты свайпа.]]></string>
+    <string name="runes.focus_on_title.title">Смещенный фокус</string>
+    <string name="runes.focus_on_title.description"><![CDATA[По умолчанию, при создании заметки, фокус устанавливается в поле для ввода текста.
+    \n\n
+    С помощью этой руны вы можете изменить данное поведение и устанавливать фокус на любое другое поле.]]></string>
+    <string name="runes.hide_on_copy.title">Сдувающее копирование</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[Когда руна активирована, любое действие копирования текста внутри Clipto (кроме контекстных действий в полях ввода) будет скрывать приложение.
+    \n
+    \n
+    Данная руна позволяет минимизировать кол-во шагов при вставке скопированного текста за пределами приложения.]]></string>
+    <string name="runes.double_click_actions.title">Осторожные шаги</string>
+    <string name="runes.double_click_actions.description"><![CDATA[С помощью этой руны для некоторых действий вы можете задать их активацию по двойному нажатию вместо одинарного.
+    \n
+    \n
+    Такое поведение может быть полезно для предотвращения от случайных нажатий.]]></string>
+    <string name="runes.loyalty.title">Вдохновляющая поддержка</string>
+    <string name="runes.loyalty.description"><![CDATA[Без вашей поддержки и обратной связи продукт не будет развиваться в нужном для пользователей направлении.
+    \n\n
+    > **Если у вас есть минута времени** - не забывайте оценить нас на Google Play.
+    \n
+    \n
+    > **Если у вас есть больше времени и перевод выглядит некорректным**  - присоединяйтесь к нашему проекту локализации.
+    \n
+    \n
+    > **Если вы нашли ошибки, хотите больше новых рун или просто хотите нам написать** - наш email и github страничка всегда к вашим услугам.]]></string>
+    <string name="runes.backup_restore.title">Машина времени</string>
+    <string name="runes.backup_restore.description"><![CDATA[Помимо облачной синхронизации вы можете вручную сохранять бэкапы данных и восстанавливаться из них позднее.
+    \n\n
+    В отличие от облачной синхронизации, данный подход позволяет:
+    \n
+    - делать снимок всех данных на текущий момент времени;
+    \n
+    - самостоятельно управлять всем процессом резервного копирования и восстановления;
+    \n
+    - восстанавливать данные целиком, на основе ранее сохраненного снимка данных;
+    \n\n
+    ```
+    \n
+    Восстановление из файла происходит в мягком режиме. То есть существующие данные не удаляются, а лишь дополняются новыми.
+    \n
+    ```]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Настройки</string>
+    <string name="settings.campaign.rate.title">Ваше мнение важно</string>
+    <string name="settings.campaign.rate.message">Это займет меньше минуты, но поможет нам стать лучше.</string>
+    <string name="settings.campaign.rate.button">Оценить нас на Google Play</string>
+    <string name="settings.campaign.rate.question">Какой был ваш опыт с приложением?</string>
+    <string name="settings.campaign.rate.feedback.title">Обратная связь</string>
+    <string name="settings.campaign.rate.feedback.message">Можете сказать нам как мы можем улучшить Clipto? Ваше мнение очень важно для нас.</string>
+    <string name="settings.campaign.rate.feedback.toast">Можете написать приятный отзыв на Google Play? Спасибо за вашу поддержку!</string>
+    <string name="settings.campaign.share.title">Пригласите друга и получите бонус!</string>
+    <string name="settings.campaign.share.more">Узнать больше</string>
+    <string name="settings.campaign.share.action">Поделиться ссылкой</string>
+    <string name="settings.group.clipboard">Буфер обмена</string>
+    <string name="settings.group.behavior">Поведение</string>
+    <string name="settings.group.appearance">Оформление</string>
+    <string name="settings.group.backup">Резервное копирование</string>
+    <string name="settings.group.security">Конфиденциальность и безопасность</string>
+    <string name="settings.group.runes">Руны</string>
+    <string name="settings.link_preview.title">Предварительный просмотр ссылок</string>
+    <string name="settings.auto_save.title">Сохранять изменения автоматически</string>
+    <string name="settings.auto_save.description">Приложение будет автоматически сохранять изменения в процессе создания или редактирования заметок.</string>
+    <string name="settings.focus_on_title.title">Устанавливать фокус на заголовке при создании заметки</string>
+    <string name="settings.focus_on_title.description">При создании заметки фокус будет установлен в поле заголовка</string>
+    <string name="settings.track_clipboard.title">Буфер обмена</string>
+    <string name="settings.track_clipboard.description">Приложение будет создавать заметки с текстом из буфера обмена, если оно запущено. Постоянное уведомление будет отображаться в статус баре.</string>
+    <string name="settings.track_clipboard.q.message">Начиная с Android Q, для создания заметок из буфера обмена используйте наш новый подход.</string>
+    <string name="settings.track_clipboard.q.description">Начиная с Android Q, если приложение не в фокусе, оно не может получить доступ к буферу обмена устройства.</string>
+    <string name="settings.track_clipboard.q.solution.title">Для обхода этого ограничения используйте одно из следующих решений:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">Действие \'Clipto…\' вместо \'Скопировать\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Когда вы выбрали текст для копирования, используйте действие \'Clipto…\' вместо \'Копировать\', если оно доступно в контекстном меню активного приложения.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Стандартное действие \'Скопировать\' в сочетании с \'Вставить\', доступное в области уведомлений</string>
+    <string name="settings.track_clipboard.q.solution.2">Если действие \'Clipto…\' недоступно или вы все еще хотите использовать стандартное действие \'Скопировать\', то не забудьте нажать на кнопку \'Вставить\' в уведомлении, чтобы создать заметку из буфера обмена.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Стандартное действие \'Скопировать\' как это было до появления Android Q</string>
+    <string name="settings.track_clipboard.q.solution.3">Данное решение требует выполнения дополнительной настройки приложения при помощи компьютера. Для активации данного метода выполните следующие ADB команды на вашем компьютере:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">После успешной активации, в уведомлении приложения вы увидите дополнительное действие, позволяющее приостановить/возобновить отслеживание буфера. Также в настройках приложения пропадет данное предупреждение.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Эмулировать действие копирования</string>
+    <string name="settings.track_clipboard.q.emulate.description">Действия \'Clipto…\' и \'Вставить\' будут автоматически создавать заметки из выбранного или скопированного текста и вставлять текст в буфер обмена если его содержимое отличается.</string>
+    <string name="settings.universal_clipboard.title">Универсальный буфер обмена</string>
+    <string name="settings.universal_clipboard.description">Любой текст, скопированный в буфер обмена, будет автоматически синхронизирован между всеми вашими устройствами. В дополнение, он будет вставляться в буфер обмена устройств, где также активирована эта опция.</string>
+    <string name="settings.notification_style.title">Стиль уведомления</string>
+    <string name="settings.notification_style.description">Стиль постоянного уведомления в статус баре.</string>
+    <string name="settings.notification_sound.title">Тихие уведомления</string>
+    <string name="settings.notification_sound.description">Отключает звук уведомлений приложения, независимо от установленных на устройстве настроек.</string>
+    <string name="settings.hide_on_click.title">Скрывать при копировании</string>
+    <string name="settings.hide_on_click.description">Приложение будет скрыто после копирования заметки в буфер обмена.</string>
+    <string name="settings.restore_filter.title">Запоминать последний фильтр</string>
+    <string name="settings.restore_filter.description">Приложение будет открываться с фильтром из предыдущей сессии.</string>
+    <string name="settings.pin_starred.title">Закреплять избранные заметки</string>
+    <string name="settings.pin_starred.description">Избранные заметки будут отображаться первыми в списке, независимо от выбранного фильтра.</string>
+    <string name="settings.theme.title">Тема</string>
+    <string name="settings.theme.description">Выбрать свою цветовую схему.</string>
+    <string name="settings.backup.title">Экспорт в файл</string>
+    <string name="settings.backup.description">Экспортировать заметки в файл.</string>
+    <string name="settings.restore.title">Восстановить из файла</string>
+    <string name="settings.restore.description">Восстановить заметки из файла (поддерживаемые форматы: %s).</string>
+    <string name="settings.startup.title">Запускать при загрузке</string>
+    <string name="settings.startup.description">Позволяет приложению запускаться при загрузке устройства.</string>
+    <string name="settings.language.title">Язык</string>
+    <string name="settings.swipe_actions.title">Действия на свайпы</string>
+    <string name="settings.swipe_actions.description">Действия с заметками при свайпе в списке.</string>
+    <string name="settings.double_click.title">Действия двойного нажатия</string>
+    <string name="settings.double_click.description">Настроить действия, которые будут завершены только двойным нажатием.</string>
+    <string name="settings.double_click.action.exit">Кнопка Назад для выхода из приложения</string>
+    <string name="settings.double_click.action.delete">Удалить заметку</string>
+    <string name="settings.double_click.action.edit">Редактировать заметку</string>
+    <string name="settings.double_click.toast">Нажмите еще раз, чтобы завершить</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Не показывать изменённые заметки</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Заметки, для которых назначен какой-либо из атрибутов (тег, флаг избранного, заголовок, сниппет), не будут отображаться в категории «Заметки из буфера обмена».</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Не отображать предупреждение об ограничениях буфера обмена</string>
+    <string name="settings.clipboard.ignore_q_warning.description">Если приложение настроено и корректно работает с буфером обмена на вашем устройстве, включите этот переключатель, чтобы снять функциональные ограничения с уведомлений.</string>
+    <string name="settings.security.passcode.title">Блокировка паролем</string>
+    <string name="settings.security.passcode.description">Когда активировано, приложение будет заблокировано после %s минут неактивности.\n\nВажно: если вы забудете пароль, вам нужно будет очистить данные приложения или переустановить его. При этом, все не синхронизированные изменения будут потеряны.</string>
+    <string name="settings.security.fingerprint.title">Разблокировка отпечатком пальца</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Пропустить</string>
+    <string name="auth.set_passcode.label.set_passcode">Установите пароль для быстрого и безопасного доступа к приложению</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Введите пароль повторно</string>
+    <string name="auth.set_fingerprint.title">Использовать Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Вы хотите использовать датчик отпечатков пальцев для разблокировки приложения?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Использовать отпечаток пальца</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Пропустить сейчас</string>
+    <string name="auth.fingerprint.touch_sensor">Подтвердите отпечаток пальца, чтобы продолжить</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Введите текущий пароль</string>
+    <string name="change_passcode.set_new">Введите новый пароль</string>
+    <string name="change_passcode.reenter">Введите пароль повторно</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Поддержка</string>
+    <string name="about.label.email.support.message">НАПИШИТЕ ВАШ ЗАПРОС ЗДЕСЬ</string>
+    <string name="about.label.rate">Оценить нас на Google Play</string>
+    <string name="about.label.issue">Сообщить о проблеме</string>
+    <string name="about.label.translate">Помочь нам с переводом</string>
+    <string name="about.label.changelog">История изменений</string>
+    <string name="about.label.campaign.rate">Помогите нам стать лучше!</string>
+    <string name="about.label.campaign.share">Поделиться ссылкой на приложение</string>
+    <string name="about.label.campaign.share.description">%s людей воспользовались вашей ссылкой и зарегистрировались в приложении.</string>
+    <string name="about.label.other">Что о нас говорят другие</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Авторизуйтесь сейчас, чтобы синхронизировать данные между всеми вашими устройствами.</string>
+    <string name="account.title.required_authorization">Требуется авторизация</string>
+    <string name="account.description.required_authorization">Вы должны быть авторизованы для выполнения этого действия</string>
+    <string name="account.title.authorized">Авторизован</string>
+    <string name="account.button.sign_in">Войти</string>
+    <string name="account.button.sign_out">Выйти</string>
+    <string name="account.dialog.sign_out.title">Выход</string>
+    <string name="account.dialog.sign_out.message">Вы уверены, что хотите выйти из приложения? Все несохраненные данные будут потеряны.</string>
+    <string name="account.plan.personal">Персональная лицензия</string>
+    <string name="account.plan.subscription">Подписка (синхронизация %s заметок)</string>
+    <string name="account.plan.contributor">Подписка участника (синхронизация %s заметок)</string>
+    <string name="account.plan.yearly">Годовая подписка (синхронизация %s заметок)</string>
+    <string name="account.plan.monthly">Месячная подписка (синхронизация %s заметок)</string>
+    <string name="account.plan.free">Стартовый план (синхронизация %s заметок)</string>
+    <string name="account.toolbar.title">Аккаунт</string>
+    <string name="account.sync.title">Синхронизировать автоматически</string>
+    <string name="account_rebuild_index_title">Перестроить индекс данных</string>
+    <string name="account_rebuild_index_description">Если вы видите разные данные (теги, файлы, заметки и т. д.) на разных устройствах, рекомендуется выполнить эту процедуру. По завершении процедуры вам потребуется повторно авторизоваться в приложение.</string>
+    <string name="account_delete_title">Удалить аккаунт</string>
+    <string name="account_delete_confirm_title">Вы уверены, что хотите удалить этот акаунт?</string>
+    <string name="account_delete_confirm_description"><![CDATA[ВНИМАНИЕ! Если вы нажмете кнопку Удалить ниже, ваш аккаунт и личные данные будут удалены окончательно и необратимо, поэтому, пожалуйста, убедитесь, что аккаунт не содержит ценных данных/информации.]]></string>
+    <string name="account_delete_confirm_again_title">Вы уверены?</string>
+    <string name="account_delete_confirm_again_description">После подтверждения все данные вашего аккаунта будут удалены навсегда.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Бесплатно</string>
+    <string name="account.sync.plan.title">Синхронизация %s заметок</string>
+    <string name="account.sync.plan.toolbar">Выбор тарифного плана</string>
+    <string name="account.sync.plan.button.active">Активный тарифный план</string>
+    <string name="account.sync.plan.button.select">Выбрать план</string>
+    <string name="account.sync.plan.button.change">Сменить план</string>
+    <string name="account.sync.plan.button.upgrade">Обновить</string>
+    <string name="account.sync.plan.caption">Начните бесплатно, затем платите только за данные, которые вы синхронизируете.</string>
+    <string name="account.sync.plan.hint">Количество заметок, которое вы можете синхронизировать между устройствами (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Неограниченное кол-во заметок на устройстве.</string>
+    <string name="account.sync.plan.benefit.sync">Синхронизация %s заметок между вашими устройствами.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Синхронизация отключена из-за достигнутого лимита</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">Общее количество всех ваших заметок, включая корзину, составляет %s, что превышает допустимый лимит %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Уменьшите кол-во заметок, чтобы выбрать этот тарифный план.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Вы достигли предела своего тарифного плана. Не волнуйтесь, приложение по-прежнему полнофункционально в автономном режиме и не имеет никаких ограничений. Однако синхронизация между устройствами отключена до тех пор, пока вы не обновите план или не сократите количество заметок до лимита активного тарифного плана.</string>
+    <string name="account.sync.plan.contributor">Если вы помогали перевести приложение на свой язык или поддерживаете продукт на регулярной основе, пожалуйста свяжитесь с нами для обновления вашего аккаунта.</string>
+    <string name="sync.free_limit_concept">Бесплатный лимит не фиксирован и может быть изменен как в большую так и в меньшую сторону в зависимости от внешних факторов.</string>
+    <string name="sync.off.title">Заметка не синхронизирована между устройствами</string>
+    <string name="sync.off.multiple.title">Заметки не синхронизированы между устройствами</string>
+    <string name="sync.off.caption">Это возможно по одной из следующих причин:</string>
+    <string name="sync.off.reason.universal_clipboard">Универсальный буфер обмена не был активирован, когда приложение создало эту заметку из буфера обмена.</string>
+    <string name="sync.off.reason.manual_off">Вы вручную отключили автоматическую синхронизацию.</string>
+    <string name="sync.warning.title">Функциональность использует облачную синхронизацию</string>
+    <string name="sync.warning.description">Облачная синхронизация не является полностью бесплатной и может быть отключена на вашем устройстве пока вы не обновите ваш аккаунт или не уменьшите количество заметок до лимита активного тарифного плана.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Быстрые действия</string>
+    <string name="fast_actions.compose_email">Составить письмо</string>
+    <string name="fast_actions.send_message">Отправить новое сообщение</string>
+    <string name="fast_actions.compose_sms">Составить СМС</string>
+    <string name="fast_actions.twitter_post">Составить твит</string>
+    <string name="fast_actions.web_search">Поиск в Интернете</string>
+    <string name="fast_actions.google_translate">Google Перевод</string>
+    <string name="fast_actions.google_maps_search">Поиск в картах Google</string>
+    <string name="fast_actions.wiki_search">Поиск в Википедии</string>
+    <string name="fast_actions.youtube_search">Поиск на Youtube</string>
+    <string name="fast_actions.duckduckgo_search">Поиск в DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">Поиск на Stack Overflow</string>
+    <string name="fast_actions.reddit_search">Поиск на Reddit</string>
+    <string name="fast_actions.play_url">Воспроизвести ссылку</string>
+    <string name="fast_actions.send_as_file">Отправить как файл</string>
+    <string name="fast_actions.send_as_txt_file"> Отправить как TXT-файл</string>
+    <string name="fast_actions.send_as_pdf_file">Отправить как PDF-файл</string>
+    <string name="fast_actions.send_as_md_file">Отправить как Markdown-файл</string>
+    <string name="fast_actions.export_to_file">Экспортировать в файл</string>
+    <string name="fast_actions.export_to_file.success">Экспортировано как %s</string>
+    <string name="fast_actions.calendar_event">Добавить событие в календарь</string>
+    <string name="fast_actions.copy">Скопировать в буфер обмена</string>
+    <string name="fast_actions.copy_clear">Очистить из буфера обмена</string>
+    <string name="fast_actions.tts">Текст в речь</string>
+    <string name="fast_actions.tts.max_length">Текст должен содержать не более %s символов</string>
+    <string name="fast_actions.share">Поделиться с…</string>
+    <string name="fast_actions.send_as_qrcode">Отправить как QR код</string>
+    <string name="fast_actions.dial_number">Набрать номер телефона</string>
+    <string name="fast_actions.insert_contact">Добавить контакт</string>
+    <string name="fast_actions.insert_contact_email">Сохранить контактный email</string>
+    <string name="fast_actions.insert_contact_phone">Сохранить контактный телефон</string>
+    <string name="fast_actions.open_url">Открыть веб-страницу</string>
+    <string name="fast_actions.short_link">Сократить ссылку</string>
+    <string name="fast_actions.more">Ещё</string>
+    <string name="fast_actions.error">Unexpected error: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">По умолчанию</string>
+    <string name="theme.sepia">Сепия</string>
+    <string name="theme.dark">Тёмная</string>
+    <string name="theme.dark_blue">Тёмно-синяя</string>
+    <string name="theme.dark_green">Тёмно-зелёная</string>
+    <string name="theme.dark_blurple">Тёмно-пурпурная</string>
+    <string name="theme.black">AMOLED Чёрная</string>
+    <string name="theme.green">Зелёная</string>
+    <string name="theme.white">Белая</string>
+    <string name="theme.pink">Розовая</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Дата использования</string>
+    <string name="sort_order.modify_date">Дата изменения</string>
+    <string name="sort_order.create_date">Дата создания</string>
+    <string name="sort_order.delete_date">Дата удаления</string>
+    <string name="sort_order.usage_count">Кол-во использований</string>
+    <string name="sort_order.title">Название</string>
+    <string name="sort_order.text">Текст</string>
+    <string name="sort_order.tags">Теги</string>
+    <string name="sort_order.size">Размер</string>
+    <string name="sort_order.name">Название</string>
+    <string name="sort_order.notes_count">Количество заметок</string>
+    <string name="sort_order.color">Цвет</string>
+    <string name="sort_order.manual">Вручную</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Успешно</string>
+    <string name="backup.fail.title">Сбой</string>
+    <string name="backup.fail.message">Неизвестная ошибка: %s</string>
+    <string name="restore.success.title">Успешно</string>
+    <string name="restore.fail.title">Сбой</string>
+    <string name="restore.fail.message">Неизвестная ошибка: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Вы уверены, что хотите закрыть это окно?</string>
+    <string name="clip.multiple.exit_without_save.description">Любые сделанные вами изменения будут потеряны.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Общие теги</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Разделитель</string>
+    <string name="clip.multiple.merge.separator.line">Новая строка</string>
+    <string name="clip.multiple.merge.separator.space">Пробел</string>
+    <string name="clip.multiple.merge.separator.other">Другой</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Элементы управления</string>
+    <string name="notification.style.history">История буфера обмена</string>
+    <string name="notification.style.actions">Действия с буфером обмена</string>
+    <string name="notification.track_clipboard.pause">Отслеживание буфера обмена приостановлено</string>
+    <string name="notification.track_clipboard.resume">Отслеживание буфера обмена возобновлено</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Вложения</string>
+    <string name="attachments.type.photo">Сделать фото</string>
+    <string name="attachments.type.record">Записать видео</string>
+    <string name="attachments.type.file">Выбрать файл</string>
+    <string name="attachments.attr.created">Дата создания</string>
+    <string name="attachments.attr.name">Название</string>
+    <string name="attachments.attr.type">Тип</string>
+    <string name="attachments.attr.path">Путь</string>
+    <string name="attachments.attr.size">Размер</string>
+    <string name="attachments.state.downloaded">Скачано</string>
+    <string name="attachments.state.uploaded">Выгружено</string>
+    <string name="attachments.state.downloading">Загружается…</string>
+    <string name="attachments.state.uploading">Выгружается…</string>
+    <string name="attachments.label.insert">Добавить к заметке</string>
+    <string name="attachments.label.download_url">Публичная ссылка будет доступна после завершения выгрузки файла.</string>
+    <string name="contribute.annual.offer">Подписка может быть отменена в любое время из Центра подписки Google Play.</string>
+    <string name="contribute.monthly.period">месяц</string>
+    <string name="contribute.annual.period">год</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Выйти</string>
+    <string name="desktop.tray.show">Показать</string>
+    <string name="desktop.tray.show_in_taskbar">Показывать в панели задач</string>
+    <string name="desktop.update.action.download">Загрузить</string>
+    <string name="desktop.update.action.later">Позже</string>
+    <string name="desktop.update.title">Доступна новая версия</string>
+    <string name="desktop.shortcuts.title">Горячие клавиши</string>
+    <string name="desktop.shortcuts.dialog.define">Задать сочетание</string>
+    <string name="desktop.shortcuts.showHideApp">Показать/скрыть приложение</string>
+    <string name="desktop.shortcuts.modeFullscreen">Переключить в полноэкранный режим</string>
+    <string name="desktop.shortcuts.modeComfortable">Переключить в комфортный режим</string>
+    <string name="desktop.shortcuts.modeCompact">Переключить в компактный режим</string>
+    <string name="desktop.shortcuts.tagNext">Следующий тег</string>
+    <string name="desktop.shortcuts.tagPrev">Предыдущий тег</string>
+    <string name="desktop.shortcuts.noteNext">Следующая заметка</string>
+    <string name="desktop.shortcuts.notePrev">Предыдущая заметка</string>
+    <string name="desktop.shortcuts.noteNew">Новая заметка</string>
+    <string name="desktop.shortcuts.noteSave">Сохранить заметку</string>
+    <string name="desktop.shortcuts.noteDelete">Удалить заметку</string>
+    <string name="desktop.shortcuts.noteCopy">Копировать заметку</string>
+    <string name="desktop.shortcuts.notePrint">Печать заметки</string>
+    <string name="desktop.shortcuts.noteFind">Поиск заметок</string>
+    <string name="desktop.shortcuts.noteOpen">Открыть заметку</string>
+    <string name="desktop.shortcuts.noteEdit">Редактировать заметку</string>
+    <string name="desktop.shortcuts.contextModeSelect">Выделить заметку</string>
+    <string name="desktop.shortcuts.contextModeCancel">Снять выделение со всех заметок</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Выделить все заметки</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Сохранить из буфера обмена</string>
+    <string name="desktop.attachments.browse">Перетащите файлы в выделенную область или кликните для выбора.</string>
+    <string name="desktop.main.content.under.development">Содержание находится в стадии разработки…</string>
+    <string name="desktop.main.menu.download">Скачать</string>
+    <string name="desktop.main.menu.download.for">Скачать для %s</string>
+    <string name="desktop.main.menu.download.android.apk">Скачать универсальный APK</string>
+    <string name="desktop.main.menu.resources">Ресурсы</string>
+    <string name="desktop.main.menu.open">Открыть Clipto в браузере</string>
+    <string name="desktop.main.features.title.1">Пишите легко и быстро на любом устройстве.</string>
+    <string name="desktop.main.features.title.2">Многофункциональный блокнот и менеджер буфера обмена с акцентом на скорость и производительность, который работает как на рабочем столе, так и на мобильном устройстве.</string>
+    <string name="desktop.main.features.title.3">Ваш личный компаньон по письму.</string>
+    <string name="desktop.main.features.title.4">Комплексное решение для удобной и эффективной работы с заметками, сниппетами, буфером обмена, файлами и любой другой информацией, быстрый доступ к которой важен на любом устройстве.</string>
+    <string name="desktop.main.features.title.5">Что делает Clipto особенным?</string>
+    <string name="desktop.get_started.language">Выберите ваш язык</string>
+    <string name="desktop.get_started.theme">Выберите предпочтительную тему</string>
+    <string name="desktop.auth.instruction">Инструкция по авторизации</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Сканировать штрих-код</string>
+    <string name="barcode.prompt.point_at_a_barcode">Наведите камеру на штрих-код</string>
+    <string name="barcode.prompt.hold_camera_steady">Держите камеру неподвижной</string>
+    <string name="barcode.prompt.move_camera_closer">Наведите ближе</string>
+    <string name="barcode.prompt.searching">Поиск…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Запрос на загрузку шрифта завершился ошибкой: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Публичная ссылка</string>
+    <string name="public.note.link.time.label">В указанное время</string>
+    <string name="public.note.link.time.or">или</string>
+    <string name="public.note.link.time.type.seconds">секунд</string>
+    <string name="public.note.link.time.type.minutes">минут</string>
+    <string name="public.note.link.time.type.hours">часов</string>
+    <string name="public.note.link.time.type.days">дней</string>
+    <string name="public.note.link.access_time">Время доступа</string>
+    <string name="public.note.link.access_time.description">Если установлено, ссылка будет доступна только по истечении определенного периода времени с момента ее создания или последующего обновления.</string>
+    <string name="public.note.link.access_time.label">Будет доступна через</string>
+    <string name="public.note.link.access_password">Пароль доступа</string>
+    <string name="public.note.link.access_password.hint">Подсказка к паролю (необязательно)</string>
+    <string name="public.note.link.access_password.placeholder">Пароль</string>
+    <string name="public.note.link.access_password.description">Если установлено, ссылка будет доступна только после подтверждения пароля.</string>
+    <string name="public.note.link.time_to_expire">Время истечения</string>
+    <string name="public.note.link.time_to_expire.description">Если установлено, ссылка будет действительна в течение определенного периода времени после создания или последующего обновления.</string>
+    <string name="public.note.link.time_to_expire.label">Истекает через</string>
+    <string name="public.note.link.one_time_opening">Однократное открытие</string>
+    <string name="public.note.link.one_time_opening.description">Если установлено, ссылка будет доступна только для одного открытия с момента создания или последующего обновления.</string>
+    <string name="public.note.link.action.remove">Удалить ссылку</string>
+    <string name="public.note.link.action.remove.confirm.title">Удалить публичную ссылку?</string>
+    <string name="public.note.link.action.remove.confirm.description">Ссылка перестанет быть доступной.</string>
+    <string name="public.note.link.action.create">Создать ссылку</string>
+    <string name="public.note.link.state.unavailable">Недоступно</string>
+    <string name="public.note.link.state.postponed">Будет доступно через:</string>
+    <string name="public.note.link.state.expires_in">Истекает через %s</string>
+    <string name="public.note.link.state.expired">Срок действия истек</string>
+    <string name="public.note.link.state.locked">Заблокировано</string>
+    <string name="public.note.link.state.locked.wrong_password">Неверный пароль.</string>
+    <string name="about.policy">Политика конфиденциальности</string>
+    <string name="about.toc">Условия пользования</string>
+    <string name="about_pricing">Цены</string>
+    <string name="site.integrations.title">Интеграция</string>
+    <string name="site.integrations.zapier.title">Интеграция через Zapier</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Подключите Clipto к Zapier и выполняйте свои рабочие процессы с молниеносной скоростью.
+\n
+## Ваш буфер обмена как триггер рабочего процесса.
+\n
+Самый быстрый способ сохранить важную информацию - выбрать и скопировать ее.
+\n
+Чтобы начать использовать эту функциональность с Zapier, просто выполните следующие действия:
+\n
+1. Настройте в Zapier триггер **Текст, скопированный в буфер обмена**.
+\n
+2. Установите Clipto на ваше устройство (мобильное, настольное) и **войдите в систему** с той же учетной записью.
+\n
+3. Откройте Clipto и активируйте настройки **Заметки из буфера обмена** и **Универсальный буфера обмена**.
+\n
+4. Вот и все. Теперь вы можете использовать стандартную комбинацию **Ctrl+C** (или Copy в контекстном меню) для активации рабочего процесса с скопированным текстом.]]></string>
+    <string name="faq.title">Часто задаваемые вопросы</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Заметки** помогут вам сохранить важную текстовую информацию и получить к ней мгновенный доступ в любое время на любом устройстве.
+    \n
+    \n
+    По умолчанию, все заметки разделены на несколько категорий для быстрого доступа к нужным по различным атрибутам.
+    \n
+    ```
+    \n
+    Все заметки загружаются на ваше устройство при первом входе в систему.
+    \n
+    \n
+    Любые изменения синхронизируются, как только появляется доступ в Интернет.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Фильтры** помогут вам быстрее найти нужную информацию благодаря использованию готовых шаблонов поиска.
+    \n
+    ```
+    \n
+    Шаблон поиска может содержать различные комбинации тегов, временных интервалов, текстов, правил сортировки и отображения и т. д.
+    \n
+    \n
+    Поэтому сохранение любой такой комбинации в качестве фильтра значительно облегчает поиск нужных данных при повторном обращении к ним.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Каждый фильтр имеет свои настройки для отображения данных в списке.
+    \n
+    - Если описание задано, оно будет отображаться вместо этой подсказки.
+    \n
+    - Настройки фильтра синхронизируются на всех ваших устройствах.
+    \n
+    ```
+    \n
+    Палитра цветов меняет оттенок, если вы снова кликните по выбранному цвету.
+    \n
+    \n
+    Правило сортировки меняет свое направление, если вы щелкните по нему еще раз.
+    \n
+    \n
+    Описание поддерживает форматирование в формате markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Тэги** помогают упорядочить заметки и файлы, чтобы их было легче найти.
+    \n
+    ```
+    \n
+    Вы можете добавить несколько тегов к любой заметке или файлу.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Каждый тег имеет свои настройки для отображения данных в списке.
+    \n
+    - Если описание задано, оно будет отображаться вместо этой подсказки.
+    \n
+    - Настройки тега синхронизируются на всех ваших устройствах.
+    \n
+    ```
+    \n
+    Палитра цветов меняет оттенок, если вы снова кликните по выбранному цвету.
+    \n
+    \n
+    Правило сортировки меняет свое направление, если вы щелкните по нему еще раз.
+    \n
+    \n
+    Описание поддерживает форматирование в формате markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    Параметры поиска можно сохранить как фильтр для повторного быстрого доступа.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Сниппеты** помогают сократить повторяющийся набор текста, используя повторно используемые текстовые шаблоны.
+    \n
+    \n
+    Сниппетом может быть любая существующая или новая заметка. Сниппет может быть как статичным так и динамическим, содержать поля для ручного заполнения и значения времени исполнения (даты, время, и т. д.).
+    \n
+    \n
+    Сниппеты организуются в наборы. Вы можете как создать свой собственный набор так и установить любой из публичной библиотеки.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - Набор сниппетов может быть сделан доступным другим пользователям.
+    \n
+    - Набор сниппетов может быть опубликован в публичной библиотеке.
+    \n
+    - Если описание задано, оно будет отображаться вместо этой подсказки.
+    \n
+    - Настройки набора синхронизируются на всех ваших устройствах.
+    \n
+    ```
+    \n
+    Палитра цветов меняет оттенок, если вы снова кликните по выбранному цвету.
+    \n
+    \n
+    Правило сортировки меняет свое направление, если вы щелкните по нему еще раз.
+    \n
+    \n
+    Описание поддерживает форматирование в формате markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Файлы** помогают вам сохранить любые файлы и получить к ним мгновенный доступ в любое время на любом устройстве.
+    \n
+    \n
+    **В отличие от заметок**, файлы не загружаются на устройство при авторизации в приложение.
+    \n
+    \n
+    **Вместо этого**, загружаются только метаданные файлов для быстрого поиска и редактирования.
+    \n
+    ```
+    \n
+    Любые изменения синхронизируются, как только появляется доступ в Интернет.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Папки** помогают упорядочить заметки и файлы, чтобы их было легче найти.
+    \n
+    \n
+    **В дополнение к тегам**, папки позволяют организовать ваши данные в иерархичную структуру.
+    \n
+    \n
+    **В отличие от тегов**, файл или заметка может быть связан только с одной папкой.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Аббревиатура может быть использована:
+    \n
+    \n
+    - для быстрого поиска заметки по короткой фразе из %s символов максимум
+    \n
+    - для вставки текста заметки в поле ввода при вводе аббревиатуры с ведущим символом **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[Описание может быть использовано для предоставления дополнительной информации о заметке.
+    \n
+    \n
+    Поддерживается форматирование в формате markdown, не более %s символов.
+    ]]></string>
+    <string name="where_none_of">ни один из выбранных</string>
+    <string name="where_any_of">любой из выбранных</string>
+    <string name="where_all_of">все выбранные</string>
+    <string name="where_after">После</string>
+    <string name="where_before">До</string>
+    <string name="where_from">С</string>
+    <string name="where_to">По</string>
+    <string name="where_date_today">Сегодня</string>
+    <string name="where_date_tomorrow">Завтра</string>
+    <string name="where_date_custom">Другой</string>
+    <string name="where_date_yesterday">Вчера</string>
+    <string name="where_date_last_7_days">Последние 7 дней</string>
+    <string name="where_date_last_30_days">Последние 30 дней</string>
+    <string name="where_date_last_90_days">Последние 90 дней</string>
+    <string name="advanced_filter_block_text">Текст содержит</string>
+    <string name="advanced_filter_block_text_type">Тип текста</string>
+    <string name="advanced_filter_block_category">Расположено в</string>
+    <string name="advanced_filter_block_tags">Теги</string>
+    <string name="advanced_filter_block_created">Дата создания</string>
+    <string name="advanced_filter_block_updated">Дата изменения</string>
+    <string name="advanced_filter_block_only_public_links">Показывать только с публичными ссылками</string>
+    <string name="advanced_filter_block_only_attachments">Показывать только с вложениями</string>
+    <string name="advanced_filter_block_only_not_synced">Показывать только несинхронизированные</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Страна</string>
+    <string name="snippet_kit_attr_snippets">Сниппеты</string>
+    <string name="snippet_kit_attr_language">Язык</string>
+    <string name="snippet_kit_attr_downloads">Скачивания</string>
+    <string name="snippet_kit_attr_created">Создано</string>
+    <string name="snippet_kit_attr_updated">Обновлено</string>
+    <string name="snippet_kit_attr_category">Категория</string>
+    <string name="snippet_kit_public_link">Публичная ссылка</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    Набор сниппетов может быть установлен из публичной библиотеки
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Удалить публичную ссылку?</string>
+    <string name="snippet_kit_public_link_remove_description">Набор сниппетов нельзя будет установить, используя эту ссылку.</string>
+    <string name="snippet_kit_public_library">Публичная библиотека</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[Набор сниппетов может быть установлен из публичной библиотеки.
+    \n
+    \n
+    ```
+    \n
+    Набор должен содержать как минимум %s сниппетов для размещения в публичной библиотеке.
+    \n
+    ```
+    \n
+    \n
+    Когда вы размещаете набор в библиотеке, вы автоматически получаете выгоду.
+    \n
+    \n
+    [Узнать больше…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Удалить из публичной библиотеки?</string>
+    <string name="snippet_kit_public_library_remove_description">Набор сниппетов нельзя будет установить из публичной библиотеки.</string>
+    <string name="snippet_kit_hint_name">Название набора</string>
+    <string name="snippet_kit_label_show_in_public_library">Показать в публичной библиотеке</string>
+    <string name="snippet_kit_error_name_required">Требуется уникальное название для сохранения набора</string>
+    <string name="snippet_kit_delete_title">Удалить набор \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Набор сниппетов будет навсегда удален.</string>
+    <string name="snippet_kit_uninstall_title">Удалить набор \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Набор сниппетов будет навсегда удален, включая все связанные с ним сниппеты.</string>
+    <string name="snippet_kit_install_hint_title">Что значит установить?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[Установленный набор станет доступным для использования, как если бы вы сами создали его.
+    \n
+    \n
+    То есть, вы сможете полностью изменить любые сниппеты в установленном наборе, добавить новые, удалить существующие, изменять настройки набора и т. д.
+    \n
+    \n
+    ```
+    \n
+    Любые сделанные вами изменения будут доступны только вам и не затронут оригинальный набор.
+    \n
+    \n
+    Если оригинальный набор будет обновлен, вы сможете вручную обновить установленную версию.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Публичный статус</string>
+    <string name="public_status_private">Приватный</string>
+    <string name="public_status_blocked">Заблокирован</string>
+    <string name="public_status_review">Проверяется</string>
+    <string name="public_status_review_details">Это займет некоторое время, прежде чем набор будет опубликован и доступен в публичной библиотеке.</string>
+    <string name="public_status_published">Опубликован</string>
+    <string name="public_status_rejected">Отклонен</string>
+    <string name="public_status_not_found">Не найден</string>
+    <string name="public_status_deleted">Удален</string>
+    <string name="public_status_restricted">Ограничен</string>
+    <string name="public_status_update_reason">Причина обновления</string>
+    <string name="dynamic_text_hint_title">Динамический текст</string>
+    <string name="dynamic_text_hint_description"><![CDATA[Если заметка содержит динамические поля, вы увидите этот дополнительный шаг каждый раз, когда будете выполнять какие-либо действия с заметкой.
+    \n
+    \n
+    На этом шаге вы можете определить значения в полях ввода и завершить действие с измененным текстом.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Текст</string>
+    <string name="dynamic_text_view_mode_form">Форма</string>
+    <string name="dynamic_value_date">Дата/Время</string>
+    <string name="dynamic_value_date_description">Создаёт заполнитель, заменяющийся текущей датой</string>
+    <string name="dynamic_value_device">Информация об устройстве</string>
+    <string name="dynamic_value_device_description">Создает заполнитель, который заменяется информацией об устройстве</string>
+    <string name="dynamic_value_random">Случайный выбор</string>
+    <string name="dynamic_value_random_description">Создаёт заполнитель, заменяющийся одним из случайных значений преднастраиваемого списка</string>
+    <string name="dynamic_value_clipboard">Буфер обмена</string>
+    <string name="dynamic_value_clipboard_description">Создает заполнитель, который заменяется содержимым буфера обмена</string>
+    <string name="dynamic_value_snippet">Сниппет</string>
+    <string name="dynamic_value_snippet_description">Создает заполнитель, который заменяется содержимым выбранной заметки</string>
+    <string name="dynamic_value_attr_device_type">Тип информации</string>
+    <string name="dynamic_field_date">Поле ввода даты</string>
+    <string name="dynamic_field_date_description">Создает поле для ввода даты</string>
+    <string name="dynamic_field_text">Текстовое поле</string>
+    <string name="dynamic_field_text_description">Создает поле для ввода текста</string>
+    <string name="dynamic_field_number">Числовое поле</string>
+    <string name="dynamic_field_number_description">Создает поле для ввода числа</string>
+    <string name="dynamic_field_select">Поле выбора из списка</string>
+    <string name="dynamic_field_select_description">Создает поле для выбора одного или нескольких значений из списка</string>
+    <string name="dynamic_field_barcode_scanning">Поле для сканирования штрих-кодов</string>
+    <string name="dynamic_field_barcode_scanning_description">Создает поле, позволяющее сканировать штрихкод и использовать его текст в качестве значения поля</string>
+    <string name="dynamic_field_text_toggle">Переключатель текста</string>
+    <string name="dynamic_field_text_toggle_description">Создает переключатель, который может включать или выключать блок текста</string>
+    <string name="dynamic_field_reference">Ссылочное поле</string>
+    <string name="dynamic_field_reference_description">Создает поле, которое ссылается на другое поле и использует его значение</string>
+    <string name="dynamic_field_unknown">Неизвестное поле</string>
+    <string name="dynamic_field_unknown_description">Поле не может быть отображено. Возможно, оно некорректно или было создано в более новой версии приложения</string>
+    <string name="dynamic_field_date_format_date_time">Дата/Время (системное)</string>
+    <string name="dynamic_field_date_format_date">Дата (системная)</string>
+    <string name="dynamic_field_date_format_time">Время (системное)</string>
+    <string name="dynamic_field_date_format_day_of_week">День недели</string>
+    <string name="dynamic_field_date_format_day_of_month">День месяца (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">День месяца (01–31)</string>
+    <string name="dynamic_field_date_format_year">Год</string>
+    <string name="dynamic_field_date_format_year_short">Год (2-цифры)</string>
+    <string name="dynamic_field_date_format_month">Месяц</string>
+    <string name="dynamic_field_date_format_month_number">Месяц (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Месяц (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Час (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Час (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Час (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Час (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Минута (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Минута (01–60)</string>
+    <string name="dynamic_field_date_format_second">Секунда (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Секунда (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Часовой пояс</string>
+    <string name="dynamic_field_value_formatter_new_line">Новая строка</string>
+    <string name="dynamic_field_value_formatter_semicolon">Точка с запятой</string>
+    <string name="dynamic_field_value_formatter_comma">Запятая</string>
+    <string name="dynamic_field_value_formatter_space">Пробел</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Упорядоченный список</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Неупорядоченный список</string>
+    <string name="dynamic_field_attr_common_label">Название</string>
+    <string name="dynamic_field_attr_common_prefix">Префикс</string>
+    <string name="dynamic_field_attr_common_suffix">Суффикс</string>
+    <string name="dynamic_field_attr_common_value">Значение</string>
+    <string name="dynamic_field_attr_common_required">Обязательно для заполнения</string>
+    <string name="dynamic_field_attr_common_placeholder">Заполнитель</string>
+    <string name="dynamic_field_attr_common_default_value">Значение по умолчанию</string>
+    <string name="dynamic_field_attr_common_values_formatter">Форматер выбранных значений</string>
+    <string name="dynamic_field_attr_select_multiple">Множественный выбор</string>
+    <string name="dynamic_field_attr_select_user_input">Пользовательский ввод</string>
+    <string name="dynamic_field_attr_text_multi_line">Многострочный текст</string>
+    <string name="dynamic_field_attr_text_max_length">Максимальная длина</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Буфер обмена - значение по умолчанию</string>
+    <string name="dynamic_field_attr_select_options">Опции</string>
+    <string name="dynamic_field_attr_number_min">Мин. значение</string>
+    <string name="dynamic_field_attr_number_max">Макс. значение</string>
+    <string name="dynamic_field_attr_date_format">Формат</string>
+    <string name="dynamic_field_attr_date_example">Пример: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Множественное сканирование</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Форматер отсканированных значений</string>
+    <string name="dynamic_field_attr_toggle_text">Текст</string>
+    <string name="dynamic_field_attr_ref_value">Название ссылочного поля</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Поле имеет собственное значение</string>
+    <string name="select_option_ordering">Сортировать по:</string>
+    <string name="select_option_ordering_label_asc">По названию (А-Я)</string>
+    <string name="select_option_ordering_label_desc">По названию (Я-А)</string>
+    <string name="select_option_ordering_value_asc">По значению (А-Я)</string>
+    <string name="select_option_ordering_value_desc">По значению (Я-А)</string>
+    <string name="dynamic_field_confirm_delete_title">Удалить динамическое значение из текста?</string>
+    <string name="dynamic_field_confirm_delete_description">Заполнитель динамического значения будет удален из исходного текста.</string>
+    <string name="dynamic_value_placeholder_copied_title">Заполнитель динамического значения был скопирован в буфер обмена</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[Если заметка открыта в режиме редактирования, заполнитель автоматически вставляется в текст заметки в месте фокуса
+    или заменяет выделенный фрагмент текста.
+    \n
+    \n
+    В противном случае он копируется в буфер обмена.
+    \n
+    \n
+    **Копируемый объект:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Загрузить из облака</string>
+    <string name="file_action_update_in_cloud">Обновить в облаке</string>
+    <string name="file_error_canceled">Отменено пользователем</string>
+    <string name="file_error_not_found">Файл не найден. Попробуйте загрузить его повторно.</string>
+    <string name="file_attr_last_modified">Дата изменения</string>
+    <string name="file_attr_updated">Обновлено</string>
+    <string name="file_attr_location">Расположение</string>
+    <string name="file_confirm_update_file">Обновить файл?</string>
+    <string name="file_confirm_update_file_description">Файл будет обновлен в облачном хранилище.</string>
+    <string name="file_error_name_required">Название обязательно для сохранения файла</string>
+    <string name="file_action_new_file">Файл</string>
+    <string name="file_action_new_file_description">Файл будет загружен в облачное хранилище. Он будет доступен в категории \"Файлы\" и может быть прикреплен к любой заметке.</string>
+    <string name="file_action_new_files">Файлы</string>
+    <string name="file_action_new_files_description">Файлы будут загружены в облачное хранилище. Они будут доступны в категории \"Файлы\" и смогут быть прикреплены к любой заметке.</string>
+    <string name="file_action_new_note">Заметка</string>
+    <string name="file_action_new_note_description">Файл будет загружен в облачное хранилище и прикреплен к новой созданной заметке. Загруженный файл также будет доступен в категории Файлы.</string>
+    <string name="file_action_new_notes_description">Файлы будут загружены в облачное хранилище и прикреплены к новой созданной заметке. Загруженные файлы также будут доступны в категории Файлы.</string>
+    <string name="file_action_new_attachment">Вложение</string>
+    <string name="file_action_new_attachment_description">Файл будет загружен в облачное хранилище и прикреплен к существующей заметке. Он также будет доступен в категории Файлы.</string>
+    <string name="file_action_new_attachments">Вложения</string>
+    <string name="file_action_new_attachments_description">Файлы будут загружены в облачное хранилище и прикреплены к существующей заметке. Они также будут доступны в категории Файлы.</string>
+    <string name="file_search_hint">Поиск файлов</string>
+    <string name="file_type_any">Все</string>
+    <string name="file_type_audio">Аудио</string>
+    <string name="file_type_video">Видео</string>
+    <string name="file_type_image">Изображения</string>
+    <string name="file_type_archive">Архивы</string>
+    <string name="file_type_document">Документы</string>
+    <string name="file_type_recycled">Корзина</string>
+    <string name="folder_select">Выбрать</string>
+    <string name="folder_name">Название папки</string>
+    <string name="folder_root">Корневая папка</string>
+    <string name="folder_search">Искать в этой папке</string>
+    <string name="folder_error_name_required">Требуется уникальное название для сохранения папки здесь</string>
+    <string name="folder_error_empty">Эта папка пустая</string>
+    <string name="folder_delete_deep">Удалить папку, включая все файлы и заметки в ней.</string>
+    <string name="folder_delete_weak">Удалить только папку. Все файлы и заметки в ней будут перемещены в корневую папку.</string>
+    <string name="clip_action_new_edit">Правка</string>
+    <string name="clip_action_new_edit_description">Заметку можно отредактировать до того, как она будет сохранена или использована для каких-либо действий.</string>
+    <string name="clip_action_new_insert">Вставка</string>
+    <string name="clip_action_new_insert_description">Текст заметки можно вставить в любую существующую. Выберите целевую заметку и укажите параметры вставки.</string>
+    <string name="clip_action_new_action">Действия</string>
+    <string name="clip_action_new_action_description">Текст заметки может быть использован для выполнения действия.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">Экспортирована %s заметка</item>
+        <item quantity="few">Экспортировано %s заметки</item>
+        <item quantity="many">Экспортировано %s заметок</item>
+        <item quantity="other">Экспортировано %s заметок</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">Восстановлена %s заметка</item>
+        <item quantity="few">Восстановлено %s заметки</item>
+        <item quantity="many">Восстановлено %s заметок</item>
+        <item quantity="other">Восстановлено %s заметок</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">Удалена %s заметка</item>
+        <item quantity="few">Удалено %s заметки</item>
+        <item quantity="many">Удалено %s заметок</item>
+        <item quantity="other">Удалено %s заметок</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s заметка</item>
+        <item quantity="few">%s заметки</item>
+        <item quantity="many">%s заметок</item>
+        <item quantity="other">%s заметок</item>
+    </plurals>
+</resources>

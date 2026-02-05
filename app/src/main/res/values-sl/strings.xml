@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Nova vrstica</string>
+    <string name="common_separator_space">Presledek</string>
+    <string name="common_separator_comma">Vejica</string>
+    <string name="confirm_exit_edit_mode_title">Exit edit mode?</string>
+    <string name="confirm_exit_edit_mode_description">All unsaved changes will be lost.</string>
+    <string name="confirm_delete_note_title">Delete note?</string>
+    <string name="confirm_delete_note_description">Selected note will be deleted.</string>
+    <string name="link_preview_label">Naloži predogled…</string>
+    <string name="link_preview_not_found">No preview</string>
+    <string name="link_preview_hide">Skrij predogled</string>
+    <string name="link_preview_show">Prikaži predogled</string>
+    <string name="toast_downloaded">Downloaded %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Znova pritisnite \"nazaj\" za izhod.</string>
+    <string name="essentials.errors.unknown">Neznana napaka. Poskusi ponovno</string>
+    <string name="error_data_empty">Podatkov ni bilo mogoče najti.</string>
+    <string name="error.unexpected">Prišlo je do nepričakovane napake</string>
+    <string name="error.unexpected.send">Tapnite na gumb \'Napaka\', da pošljete poročilo</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Oceni</string>
+    <string name="menu.edit">Uredi</string>
+    <string name="menu.clear">Počisti</string>
+    <string name="menu.clear_all">Počisti vse</string>
+    <string name="menu.share">Deli</string>
+    <string name="menu.fav">Z zvezdico</string>
+    <string name="menu.delete">Izbriši</string>
+    <string name="menu.empty">Izprazni</string>
+    <string name="menu.cancel">Prekliči</string>
+    <string name="menu.settings">Nastavitve</string>
+    <string name="menu.display_options">Možnosti prikaza</string>
+    <string name="menu.faq">F.A.Q.</string>
+    <string name="menu.new">Novo</string>
+    <string name="menu.search">Išči</string>
+    <string name="menu.print">Tiskanje</string>
+    <string name="menu.restore">Obnovi</string>
+    <string name="menu.merge">Združi</string>
+    <string name="menu.copy_link">Kopiraj javno povezavo</string>
+    <string name="menu.share_link">Deli javno povezavo</string>
+    <string name="menu.save_as">Shrani kot …</string>
+    <string name="menu.rename">Preimenuj</string>
+    <string name="menu.paste">Prilepi</string>
+    <string name="menu.copy">Kopiraj</string>
+    <string name="menu.cut">Izreži</string>
+    <string name="menu.fullscreen.enter">Celozaslonski način</string>
+    <string name="menu.fullscreen.exit">Izhod iz celozaslonskega načina</string>
+    <string name="menu_close">Close</string>
+    <string name="button.update">Posodobi</string>
+    <string name="button.install">Namesti</string>
+    <string name="button.uninstall">Odstrani</string>
+    <string name="button.done">Opravljeno</string>
+    <string name="button.undo">Razveljavi</string>
+    <string name="button.apply">Uveljavi</string>
+    <string name="button.change">Spremeni</string>
+    <string name="button.save">Shrani</string>
+    <string name="button.create">Ustvari</string>
+    <string name="button.send">Pošlji</string>
+    <string name="button.preview">Predogled</string>
+    <string name="button.confirm">Potrdi</string>
+    <string name="button.sync">Sinhroniziraj zdaj</string>
+    <string name="button.yes">Da</string>
+    <string name="button.no">Ne</string>
+    <string name="button.back">Nazaj</string>
+    <string name="button.continue">Nadaljuj</string>
+    <string name="button.finish">Končaj</string>
+    <string name="button.got_it">Razumem!</string>
+    <string name="button.get_started">Začni</string>
+    <string name="button.example">Primer</string>
+    <string name="button_try_again">Poizkusi znova</string>
+    <string name="button_insert">Vstavi</string>
+    <string name="button_refresh">Osveži</string>
+    <string name="notification.title.empty">Odložišče je prazno</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Pojdi nazaj</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Okrajšava</string>
+    <string name="common.label.description">Opis</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Nova oznaka</string>
+    <string name="tag.new.name">Ime oznake</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Move to folder</string>
+    <!-- MAIN -->
+    <string name="main.search">Išči po beležkah</string>
+    <string name="main.filter.all">Vse</string>
+    <string name="main.filter.no_tags">Brez oznak</string>
+    <string name="main.filter.filtered">Filtrirano</string>
+    <string name="main.delete_selected.title">Izbriši izbrane beležke?</string>
+    <string name="main.delete_selected.description">Vse izbrane beležke bodo izbrisane.</string>
+    <string name="main.delete_merged.title">Izbriši združene beležke?</string>
+    <string name="main.delete_merged.description">Združene beležke bodo trajno izbrisane.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Beležke ni mogoče najti.</string>
+    <string name="main.list.empty.caption">Opomba: vsaka kategorija ima svoje razvrščevalne in druge nastavitve. Nastavitve lahko kadarkoli spremenite s seznama (%s) ali iz levega predala (%s).</string>
+    <string name="main.list.empty.caption.three_dot">meni s tremi pikami</string>
+    <string name="main.list.empty.caption.long_tap">pridržite kategorijo</string>
+    <string name="main.list.empty.description.all">Splošna kategorija. Prikaže vse beležke brez filtriranja.</string>
+    <string name="main.list.empty.description.no_tags">Prikaže beležke, ki nimajo dodeljene nobene oznake.</string>
+    <string name="main.list.empty.description.tags">Prikaže beležke in datoteke, označene z izbrano oznako.</string>
+    <string name="main.list.empty.description.filtered">Beležke so bile filtrirane glede na pogoje, za katere ni bilo mogoče najti ničesar.</string>
+    <string name="main.list.empty.description.starred">Prikaže beležke, označene z zvezdico.</string>
+    <string name="main.list.empty.description.deleted">Prikaže beležke in datoteke, ki so bile izbrisane, vendar jih je še vedno mogoče obnoviti. Dodeljene oznake in lastnosti ostanejo z izbrisanimi zapisi, vendar le-ti niso na voljo v pripadajočih kategorijah.</string>
+    <string name="main.list.empty.description.clipboard">Prikaže beležke, ki jih je program samodejno ustvaril iz odložišča. Privzeto se odložišču ne sledi, vendar lahko to aktivirate v nastavitvah.</string>
+    <string name="main.list.empty.description.snippets">Prikaže beležke, ki se uporabljajo v drugih beležkah. Spremembe v izrezku se takoj pokažejo v vseh beležkah, v kateri je uporabljen.</string>
+    <string name="main.filter.snippets">Izrezki</string>
+    <string name="main.filter.filters">Filtri</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Datoteke</string>
+    <string name="main.filter.notes">Beležke</string>
+    <string name="main.filter.tags">Oznake</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Remember last action</string>
+    <string name="main_action_settings_remember_description">When activated, the app will remember the last action and use it the next time you click the Floating Button. At the same time, a window with a list of all actions can be opened with a long tap on the Floating Button.</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">Ustvari beležke</string>
+    <string name="main_action_notes_new_title">Nova beležka</string>
+    <string name="main_action_notes_new_description">Shrani pomembne besedilne informacije in omogoči takojšnji dostop do njih na katerikoli napravi</string>
+    <string name="main_action_notes_barcode_title">Preberi črtno kodo</string>
+    <string name="main_action_notes_barcode_description">Preberi povezave ali besedilo in jih shrani kot beležko (podprtih je večina standardnih oblik črtnih kod)</string>
+    <string name="main_action_notes_clipboard_title">Kopiraj iz odložišča</string>
+    <string name="main_action_notes_clipboard_description">Shrani trenutno besedilo v odložišču kot beležko</string>
+    <string name="main_action_notes_import_title">Uvozi iz datoteke</string>
+    <string name="main_action_notes_import_description">Ustvari beležko z besedilom iz datoteke (do velikosti %s-ih kB)</string>
+    <string name="main_action_notes_import_error">Velikost datoteke je lahko največ %s kB.</string>
+    <string name="main_action_files">Dodaj datoteke</string>
+    <string name="main_action_files_file_title">Izberi datoteko</string>
+    <string name="main_action_files_file_description">Dodaj katerokoli datoteko (fotografijo, videoposnetek, PDF itd.) velikosti do %s MB</string>
+    <string name="main_action_files_photo_title">Posnemi fotografijo</string>
+    <string name="main_action_files_photo_description">Posnemi fotografijo in jo shrani kot beležko</string>
+    <string name="main_action_files_record_title">Posnemi video</string>
+    <string name="main_action_files_record_description">Posnemi video in ga shrani kot beležko (do velikosti %s-ih MB)</string>
+    <string name="main_action_organize">Organiziraj podatke</string>
+    <string name="main_action_organize_tag_title">Nova oznaka</string>
+    <string name="main_action_organize_tag_description">Ustvari oznako, da organizirate beležke in datoteke za lažje iskanje</string>
+    <string name="main_action_organize_filter_title">Nov filter</string>
+    <string name="main_action_organize_filter_description">Ustvari filter za hitrejše iskanje informacij z uporabo pripravljenih predlog za iskanje</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Zmanjšaj tipkanje ponavljajočih se besed</string>
+    <string name="main_action_snippets_snippet_title">Nov izrezek</string>
+    <string name="main_action_snippets_snippet_description">Ustvarite predlogo za večkratno uporabo besedila, da se izognete tipkanju ponavljajočih se besed in napakam.</string>
+    <string name="main_action_snippets_set_title">Nov paket izrezkov</string>
+    <string name="main_action_snippets_set_description">Ustvari paket izrezkov za hitrejše iskanje pogosto uporabljenih.</string>
+    <string name="main.actions.save_and_start_new_note">Shrani in ustvari novo beležko</string>
+    <string name="main.actions.add_dynamic_value">Dodaj dinamično vrednost</string>
+    <string name="main.actions.add_attachment">Dodajte prilogo</string>
+    <string name="main.actions.sync_note">Sinhroniziraj beležko</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Poteg levo</string>
+    <string name="main.swipe_actions.caption.right">Poteg desno</string>
+    <string name="main.swipe_actions.fav">Označi z zvezdico</string>
+    <string name="main.swipe_actions.delete">Izbriši</string>
+    <string name="main.swipe_actions.copy">Kopiraj</string>
+    <string name="main.swipe_actions.none">Brez</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Napredno iskanje</string>
+    <string name="filter.hint.text">Besedilo vsebuje</string>
+    <string name="filter.label.no_tags">Neoznačeno</string>
+    <string name="filter.label.fav">Z zvezdico</string>
+    <string name="filter.label.platform">Platforma</string>
+    <string name="filter.label.snippets">Izrezki</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Beležke iz odložišča</string>
+    <string name="filter.clipboard.empty.title">Počisti beležke iz odložišča?</string>
+    <string name="filter.clipboard.empty.description">Vse beležke iz odložišča (razen tistih z zvezdico in oznakami) bodo trajno izbrisane.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Koš</string>
+    <string name="filter.deleted.limit">Omejitev</string>
+    <string name="filter.deleted.empty.title">Izprazni koš?</string>
+    <string name="filter.deleted.empty.description">Vse beležke bodo trajno izbrisane iz koša.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Omejitev</string>
+    <string name="filter.limit.description">Ko število beležk preseže omejitev te kategorije, bodo stare beležke, ki presegajo omejitev, izbrisane iz te kategorije.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Ime filtra</string>
+    <string name="filter_error_name_required">Če želite shraniti ta filter, morate izbrati edinstveno ime.</string>
+    <string name="filter_delete_title">Izbriši filter \'%s\'?</string>
+    <string name="filter_delete_description">Filter bo trajno izbrisan.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Če želite shraniti to oznako, morate izbrati edinstveno ime.</string>
+    <string name="filter.tag.rule.title">Pravilo za samodejno dodelitev</string>
+    <string name="filter.tag.rule.description">Če je omogočeno, bo oznaka samodejno dodeljena novim beležkam, če vsebujejo vsaj enega od besedil, ločenih z vejico.</string>
+    <string name="filter.tag.rule.hint">Besedila, ločena z vejico</string>
+    <string name="filter.tag.delete.title">Izbriši oznako \'%s\'?</string>
+    <string name="filter.tag.delete.description">Oznaka bo trajno izbrisana.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Dodaj</string>
+    <string name="clip.hint.title">Brez naslova</string>
+    <string name="clip.hint.tags">Klikni za dodajanje oznake</string>
+    <string name="clip.hint.text">Klikni za dodajanje besedila</string>
+    <string name="clip.snackbar.text.required">Potrebno je besedilo</string>
+    <string name="clip.snackbar.text.copied">Besedilo je kopirano</string>
+    <string name="clip.attr.updated">Uporabljeno</string>
+    <string name="clip.attr.edited">Urejeno</string>
+    <string name="clip.attr.created">Ustvarjeno</string>
+    <string name="clip.attr.deleted">Izbrisano</string>
+    <string name="clip.attr.usageCount">Število uporab</string>
+    <string name="clip.attr.charsCount">Znakov</string>
+    <string name="clip.attr.size">Velikost</string>
+    <string name="clip_exit_without_save_title">Prekliči urejanje beležke?</string>
+    <string name="clip_exit_without_save_description">Vse spremembe bodo izgubljene.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Shrani kot</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Splošno</string>
+    <string name="clip_details_tab_tags">Oznake</string>
+    <string name="clip_details_tab_folder">Location</string>
+    <string name="clip_details_tab_attachments">Priloge</string>
+    <string name="clip_details_tab_dynamic">Dinamične vrednosti</string>
+    <string name="clip_details_tab_snippets">Izrezki</string>
+    <string name="clip_details_tab_snippet_kits">Paketi izrezkov</string>
+    <string name="clip_details_tab_dynamic_values">Vrednosti</string>
+    <string name="clip_details_tab_dynamic_fields">Polja</string>
+    <string name="clip_details_tab_attributes">Lastnosti</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Vstavi besedilo v beležko</string>
+    <string name="clip.info.label.note.insert.remember">Zapomni si moje izbire ne sprašuj več (dostop do plošče je mogoč s pridržanjem).</string>
+    <string name="clip.info.label.note.create">Ustvari beležko</string>
+    <string name="clip.info.label.position">Položaj</string>
+    <string name="clip.info.label.beginning">Na začetku</string>
+    <string name="clip.info.label.end">Na koncu</string>
+    <string name="clip.info.label.tags.edit">Uredi oznake</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Golo besedilo</string>
+    <string name="clip.text.type.link">Besedilo s povezavami</string>
+    <string name="clip.text.type.line_clickable">Besedilo s kopiranimi vrsticami</string>
+    <string name="clip.text.type.word_clickable">Besedilo s kopiranimi besedami</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Priloga</string>
+    <string name="clip.add.attachment.tooltip">Priloga je lahko katerakoli datoteka (fotografija, videoposnetek, dokument pdf itd.), ki ni večja od %s MB.</string>
+    <string name="clip.add.dynamic.title">Dinamična vrednost</string>
+    <string name="clip.add.dynamic.tooltip">Dinamična vrednost je način ustvarjanja beležk z vedno posodobljenimi podatki. V načinu pogleda se vstavljena ograda zamenja z dejanskimi podatki.</string>
+    <string name="clip.add.dynamic.value.date_time">Datum/Čas</string>
+    <string name="clip.add.dynamic.value.platform">Okolje</string>
+    <string name="clip.add.dynamic.value.ip">Naslov IP</string>
+    <string name="clip.add.dynamic.value.date">Datum</string>
+    <string name="clip.add.dynamic.value.time">Čas</string>
+    <string name="clip.add.dynamic.value.month">Mesec</string>
+    <string name="clip.add.dynamic.value.timezone">Časovni pas</string>
+    <string name="clip.add.dynamic.value.month_number">Število meseca</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Število meseca (z začetno ničlo)</string>
+    <string name="clip.add.dynamic.value.year">Leto</string>
+    <string name="clip.add.dynamic.value.year_short">Leto (krajše)</string>
+    <string name="clip.add.dynamic.value.hour24">Ura (24-urna oblika)</string>
+    <string name="clip.add.dynamic.value.hour12">Ura (12-urna oblika)</string>
+    <string name="clip.add.dynamic.value.minutes">Minute</string>
+    <string name="clip.add.dynamic.value.seconds">Sekunde</string>
+    <string name="clip.add.dynamic.value.am_pm">dop./pop.</string>
+    <string name="clip.add.dynamic.value.day_of_week">Dan v tednu</string>
+    <string name="clip.add.dynamic.value.day_of_month">Dan v mesecu</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Dan v mesecu (z začetno ničlo)</string>
+    <string name="clip.add.dynamic.value.random_digit">Naključna številka (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Naključni latinski znak (a-ž, A-Ž)</string>
+    <string name="clip.add.snippet.title">Izrezek</string>
+    <string name="clip.add.snippet.new.hint">Vnesite besedilo, ki ga želite poiskati ali ustvariti</string>
+    <string name="clip.add.snippet.tooltip">Izrezek je vsaka beležka, katere besedilo lahko uporabite v katerikoli drugi beležki, urejate pa v eni. Dostop do ustvarjenih izrezkov je mogoč z leve strani.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Vrsta besedila</string>
+    <string name="text.config.size">Velikost besedila</string>
+    <string name="text.config.font">Pisava besedila</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Razvrsti po</string>
+    <string name="list.config.lines">Vidne vrstice besedila</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Slog seznama</string>
+    <string name="list.style.description">Slog seznama beležk</string>
+    <string name="list.style.default">Privzeto</string>
+    <string name="list.style.comfortable">Udobno</string>
+    <string name="list.style.compact">Strnjeno</string>
+    <string name="list.style.preview">Predogled</string>
+    <string name="list.style.grid">Mreža</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Rune novih zmožnosti</string>
+    <string name="runes.hint.description"><![CDATA[    To je oblika izboljševanja delovanja programa.
+    \n\n
+    Vsaka runa razširi ali spremeni osnovno delovanje in omogoča prilagajanje programa, da z njim dosežete najbolj optimalno produktivnost.
+    \n\n
+    Nekatere rune so uporabnejše, druge spet manj, vendar naredi ta pristop program skoraj neomejen v zmožnostih.
+    \n\n
+    Oglejte si obstoječe rune, omogočite tiste, ki jih želite, ali pošljite ideje za nove, da izboljšate produktivnost programa:).
+    ]]></string>
+    <string name="runes_hotkeys_title">Opazovalec hitrih tipk</string>
+    <string name="runes_hotkeys_description"><![CDATA[    S to runo lahko nastavite hitre tipke za nadzor programa in dejanj v njem.
+    \n
+    \n
+    Nekatere hitre tipke so privzeto nastavljene. Lahko jih počistite ali ponovno nastavite.
+    \n
+    \n
+    ```
+    \n
+    Hitre tipke bodo, odvisno od dejanja, nadzirane znotraj programa ali v splošnem zunaj njega.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Astralna sinhronizacija</string>
+    <string name="runes.instant_sync.description"><![CDATA[    Ta runa nudi priložnost:
+    \n
+    - samodejnega shranjevanja vseh podatkov v oblak;
+    \n
+    - takojšnjega dostop do teh podatkov v vsaki drugi napravi;
+    \n
+    - shranjevanja ne samo besedilnih beležk, ampak tudi datotek v katerikoli obliki;
+    \n\n
+    Privzeto program deluje brez sinhronizacije in shrani vse podatke na napravi.
+    \n
+    ```
+    \n
+    Ko omogočite to runo, bodo vsi prej ustvarjeni in novi podatki samodejno sinhronizirani s shrambo v oblaku takoj, ko je internetna povezava na voljo.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Železni ščit</string>
+    <string name="runes.pincode.description"><![CDATA[    Ta runa omogoča zaščito dostopa do programa z geslom.
+    \n\n
+    Ko je omogočena, bo dostop blokiran po **%s-ih minutah** nedejavnosti.
+    \n\n
+    **Pomembno:** če pozabite geslo, boste morali program odstraniti in na novo namestiti. V tem primeru bodo vse nesinhronizirane spremembe izgubljene.
+    ]]></string>
+    <string name="runes.theme.title">Kameleonova koža</string>
+    <string name="runes.theme.description"><![CDATA[    Privzeto program uporablja barvno shemo, ki samodejno preklaplja med svetlo in temno glede na nastavitve sistema.
+    \n\n
+    Omogočite lahko katerokoli drugo temo, ki bo ostala nespremenjena ne glede na nastavitve sistema.
+    ]]></string>
+    <string name="runes.clipboard.title">Odložišče</string>
+    <string name="runes.clipboard.description"><![CDATA[    Ta runa omogoča programu, da nadzira odložišče in iz njenega besedila samodejno ustvari beležke.
+    \n\n
+    Ko je omogočena, bo program v sistemski vrstici prikazal trajno obvestilo, da lahko sledi medpomnilniku.
+    \n\n
+    ```
+    \n
+    Če obvestilo ni prikazano, se program ne izvaja in medpomnilniku ni mogoče slediti dokler programa znova ne zaženete.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Pomočnik za tipkovnico</string>
+    <string name="runes.texpander.description"><![CDATA[    Ta runa omogoča, da s programom izpolnjujete vnosna polja z obstoječimi beležkami v skoraj **vsakemu programu**.
+    \n\n
+    Ko je omogočeno, bo program, ko se osredotočite na vnosno polje, prikazal plavajočo ploščo z dejanji, ki omogočajo nadzor vsebine vnosnega polja.
+    \n\n
+    #### Značilnosti vedenja:
+    \n
+    - velikost plošče lahko spremenite;
+    \n
+    - ploščo lahko povlečete kamorkoli na zaslonu;
+    \n
+    - ploščo je mogoče samodejno spremeniti glede na možnost uporabe določenih dejanj;
+    \n
+    - ploščo je mogoče samodejno skriti, če polje izgubi žarišče;
+    \n
+    - ploščo je mogoče ročno skriti (z uporabo zgornjega desnega dejanja v orodni vrstici), dokler je ni treba ponovno prikazati;
+    \n
+    - če se plošča ne prikaže, jo lahko izrecno prikažete s plošče z obvestili ali s hitrih nastavitev (je na ploščo vstavljena ploščica);
+    \n\n
+    #### Tehnične omejitve:
+    \n
+    - plošča uporablja storitev dostopnosti in zahteva, da jo omogočite v nastavitvah sistema;
+    \n
+    - plošča uporablja plavajoče okno, da se lahko prikaže nad drugimi programi, kar zahteva ustrezno dovoljenje v nastavitvah sistema;
+    \n
+    - v nekaterih programih samodejno vedenje plošče ni mogoče, lahko pa jo uporabite z omejitvami in izrecnim prikazom;
+    \n\n
+    #### Opozorilo:
+    \n
+    Če runa po  nekaj časa preneha delovati, prosimo preberite [ta članek](%s) o tem, kako program ohraniti delujočega na vaši napravi. Lahko pa mi pišete, če ste naleteli kakšno težavo:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Omogoči</string>
+    <string name="runes.texpander.required.accessibility">Kliknite tukaj, nato pa pojdite v prejete (nameščene) storitve in omogočite storitev pomočnika za tipkovnico.</string>
+    <string name="runes.texpander.required.floating">Kliknite tukaj, nato pa pojdite v druga dovoljenja in omogočite dovoljenje za prikaz pojavnih oken.</string>
+    <string name="runes.texpander.action.copy">Kopiraj v odložišče</string>
+    <string name="runes.texpander.action.show">Kliknite tukaj, da prikažete plavajoče okno.</string>
+    <string name="runes.texpander.action.insert">Vstavi</string>
+    <string name="runes.texpander.action.replace">Zamenjaj</string>
+    <string name="runes.texpander.hint.hide">Skrij, dokler ga ne prikažem s plošče z obvestili ali s hitrih nastavitev.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">Okulus</string>
+    <string name="runes.link_preview.description"><![CDATA[    Ko je ta runa omogočena, bo program za shranjene **povezave http** v načinu pogleda beležk poizkusil naložiti njihov predogled.
+    \n\n
+    Možnosti uporabe:
+    \n
+    - sliko predogleda lahko odprete v ločenem oknu in si prilagodite povečavo;
+    \n
+    - če je povezava videoposnetek, ga lahko s programom predvajate;
+    ]]></string>
+    <string name="runes.auto_save.title">Točka brez povratka</string>
+    <string name="runes.auto_save.description"><![CDATA[    Privzeto je treba ob ustvarjanju ali urejanju beležke ročno klikniti na gumb za shranjevanje, da potrdite spremembe.
+    \n
+    \n
+    S to runo bo program samodejno shranjeval spremembe med urejanjem besedila.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Oživitev</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    S to runo bo program ob zagonu obnovil na zadnje dejavni filter iz prejšnje seje.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Moč potegov</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    S to runo lahko na seznamu beležk za njih nastavite dejanja potegov.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Prestavljeno žarišče</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    Privzeto program ob ustvarjanju beležke postavi žarišče na polje za vnos besedila.
+    \n\n
+    To runo lahko uporabite, da spremenite to vedenje in žarišče nastavite na katerokoli drugo polje.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Odpihnjena kopija</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    Ko je ta runa omogočena, bo vsako dejanje kopiranja besedila znotraj Clipta (razen dejanj vsebinskega menija iz vnosnih polj) skrilo program.
+    \n
+    \n
+    Ta runa omogoča zmanjšanje števila korakov pri lepljenju kopiranega besedila zunaj programa.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Preizkusni koraki</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    S to runo lahko določena dejanja aktivirate z dvoklikom namesto z enim.
+    \n
+    \n
+    To vedenje je lahko koristno za preprečitev naključnih klikov.
+    ]]></string>
+    <string name="runes.loyalty.title">Navdihujoča podpora</string>
+    <string name="runes.loyalty.description"><![CDATA[    Brez vaše podpore in povratnih informacij se izdelek ne bo razvijal v pravi smeri za uporabnike.
+    \n\n
+    >**Če imate minuto časa**, nas ne pozabite oceniti na Googlu Play.
+    \n
+    \n
+    >**Če imate več časa in prevod ni videti v redu**, se pridružite našemu projektu lokalizacije.
+    \n
+    \n
+    >**Če najdete hrošče, želite več run ali nam želite pisati**, sta vam naša e-pošta in stan na Githubu vedno na voljo.
+    ]]></string>
+    <string name="runes.backup_restore.title">Časovni stroj</string>
+    <string name="runes.backup_restore.description"><![CDATA[    Poleg sinhronizacije z oblakom lahko ročno shranjujete varnostne kopije svojih podatkov in jih kasneje obnovite.
+    \n\n
+    Za razliko od sinhronizacije z oblakom ta pristop omogoča:
+    \n
+    - zajemanje posnetkov stanja vseh podatkov v trenutnem času;
+    \n
+    - lastno upravljanje celotnega postopka varnostnega kopiranja in obnovitve;
+    \n
+    - obnovitev vseh podatkov glede na prej narejen posnetek stanja podatkov;
+    \n\n
+    ```
+    \n
+    Obnovitev iz datoteke se opravi v mehkem načinu. To pomeni, da se obstoječi podatki ne izbrišejo, ampak se dopolnijo z novimi.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Nastavitve</string>
+    <string name="settings.campaign.rate.title">Tvoje mnenje šteje</string>
+    <string name="settings.campaign.rate.message">Vzelo ti bo manj kot minuto, nam pa lahko pomaga, da se izboljšamo.</string>
+    <string name="settings.campaign.rate.button">Oceni nas na Trgovini Play</string>
+    <string name="settings.campaign.rate.question">Kakšna je bila vaša izkušnja s Cliptom?</string>
+    <string name="settings.campaign.rate.feedback.title">Povratne informacije</string>
+    <string name="settings.campaign.rate.feedback.message">Nam lahko zaupate, kako bi lahko izboljšali Clipto? Vaše mnenje je zelo pomembno.</string>
+    <string name="settings.campaign.rate.feedback.toast">Ali bi lahko pustili lepo oceno na Googlu Play? Hvala za vašo podporo!</string>
+    <string name="settings.campaign.share.title">Obvestite prijatelje o Cliptu in prejmite bonus!</string>
+    <string name="settings.campaign.share.more">Več o tem</string>
+    <string name="settings.campaign.share.action">Pošlji povezavo</string>
+    <string name="settings.group.clipboard">Odložišče</string>
+    <string name="settings.group.behavior">Vedenje</string>
+    <string name="settings.group.appearance">Videz</string>
+    <string name="settings.group.backup">Varnostno kopiranje in obnovitev</string>
+    <string name="settings.group.security">Zasebnost in varnost</string>
+    <string name="settings.group.runes">Rune</string>
+    <string name="settings.link_preview.title">Predogled povezav</string>
+    <string name="settings.auto_save.title">Samodejno shrani beležke</string>
+    <string name="settings.auto_save.description">Program bo samodejno shranjeval spremembe med ustvarjanjem ali urejanjem beležk.</string>
+    <string name="settings.focus_on_title.title">Osredotoči se na naslov ob ustvarjanju beležke</string>
+    <string name="settings.focus_on_title.description">Ob ustvarjanju beležke bo žarišče postavljeno na polje za naslov.</string>
+    <string name="settings.track_clipboard.title">Beležke iz odložišča</string>
+    <string name="settings.track_clipboard.description">Aplikacija bo ustvarila beležke iz sprememb v odložišču, medtem ko deluje. Trajno obvestilo bo postavljeno v statusni vrstici.</string>
+    <string name="settings.track_clipboard.q.message">Od Androida Q naprej lahko uporabite naš nov pristop do ustvarjanja beležk iz odložišča.</string>
+    <string name="settings.track_clipboard.q.description">Od Androida Q naprej ima dostop do podatkov v odložišču lahko samo program, ki je trenutno v žarišču.</string>
+    <string name="settings.track_clipboard.q.solution.title">Da zaobidete to omejitev, uporabite eno od naslednjih rešitev:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">Dejanje \'Clipto …\' namesto \'Kopiraj\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Ko izberete besedilo, ki ga želite kopirati, uporabite dejanje \'Clipto …\' namesto \'Kopiraj\', če je na voljo v vsebinskem meniju dejavnega programa.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Običajno dejanje \'Kopiraj\' v kombinaciji s \'Prilepi\' v področju z obvestili</string>
+    <string name="settings.track_clipboard.q.solution.2">Če dejanje \'Clipto …\' ni na voljo ali če želite uporabiti običajno dejanje \'Kopiraj\', potem ne pozabite klikniti na gumb \'Prilepi\' v obvestilu, da ustvarite beležko iz trenutnih podatkov v odložišču.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Običajno dejanje \'Kopiraj\', kot je bilo pred Androidom Q</string>
+    <string name="settings.track_clipboard.q.solution.3">Ta rešitev zahteva, da za program naredite napredno nastavitev preko računalnika. Da obnovite delovanje Clipta, na računalniku izvedite naslednje ukaze ADB:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Po uspešni izvedbi bi morali v obvestilih programa videti dodatno dejanje, ki omogoča vklop/izklop nadzora odložišča. To opozorilo pa bo izginilo iz nastavitev.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Posnemaj dejanje kopiranja</string>
+    <string name="settings.track_clipboard.q.emulate.description">Dejanji \'Clipto …\' in \'Prilepi\' po meri bosta iz izbranega ali kopiranega besedila samodejno ustvarili beležke in jih vstavila v odložišče, če je njegova vsebina drugačna.</string>
+    <string name="settings.universal_clipboard.title">Univerzalno odložišče</string>
+    <string name="settings.universal_clipboard.description">Vsako besedilo, kopirano v odložišče, bo sinhronizirano med vašimi napravami. Samodejno bo tudi vstavljeno v odložišče, kjer je ta nastavitev omogočena.</string>
+    <string name="settings.notification_style.title">Slog obvestila</string>
+    <string name="settings.notification_style.description">Slog obvestila, ki naj se uporabi za trajno obvestilo v vrstici stanja.</string>
+    <string name="settings.notification_sound.title">Tiha obvestila</string>
+    <string name="settings.notification_sound.description">Utiša obvestila ne glede na zvoke ali vibracije, ki ste jih nastavili za obvestilo ali kanal za obvestila.</string>
+    <string name="settings.hide_on_click.title">Skrij ob kopiranju</string>
+    <string name="settings.hide_on_click.description">Aplikacija bo skrita, potem ko bo beležka kopirana.</string>
+    <string name="settings.restore_filter.title">Zapomni si zadnji filter</string>
+    <string name="settings.restore_filter.description">Aplikacija bo odprta s filtrom iz prejšnje seje.</string>
+    <string name="settings.pin_starred.title">Pripni označene beležke</string>
+    <string name="settings.pin_starred.description">Oznake z zvezdico bodo prikazane kot prve na seznamu ne glede na izbran filter.</string>
+    <string name="settings.theme.title">Tema</string>
+    <string name="settings.theme.description">Izberi barvne sheme po meri.</string>
+    <string name="settings.backup.title">Varnostno kopiranje v datoteko</string>
+    <string name="settings.backup.description">Izvozi beležke v datoteko.</string>
+    <string name="settings.restore.title">Obnovi iz datoteke</string>
+    <string name="settings.restore.description">Obnovi beležke iz datoteke (podprte oblike: %s).</string>
+    <string name="settings.startup.title">Zaženi aplikacijo ob zagonu naprave</string>
+    <string name="settings.startup.description">Dovoli aplikaciji, da se zažene takoj, ko je končan zagon naprave.</string>
+    <string name="settings.language.title">Jezik</string>
+    <string name="settings.swipe_actions.title">Dejanja potegov</string>
+    <string name="settings.swipe_actions.description">Nastavi dejanja potegov za hitro opravilo na beležkah na glavnem seznamu.</string>
+    <string name="settings.double_click.title">Dejanja dvoklika</string>
+    <string name="settings.double_click.description">Nastavi dejanja, ki naj se izvedejo samo z dvoklikom.</string>
+    <string name="settings.double_click.action.exit">Gumb Nazaj za izhod iz programa</string>
+    <string name="settings.double_click.action.delete">Izbriši beležko</string>
+    <string name="settings.double_click.action.edit">Uredi beležko</string>
+    <string name="settings.double_click.toast">Dvoklik za dokončanje</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Ne prikaži spremenjenih beležk</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Beležke, katerim so bile dodeljene lastnosti (oznaka, zvezdica, naslov, izrezek), ne bodo prikazane v kategoriji \'Beležke iz odložišča\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Do not display a warning about clipboard restrictions</string>
+    <string name="settings.clipboard.ignore_q_warning.description">If the app is configured and works correctly with the clipboard on your device, enable this toggle to remove functional restrictions from notifications.</string>
+    <string name="settings.security.passcode.title">Zaklepanje z geslom</string>
+    <string name="settings.security.passcode.description">Ko nastavite geslo, se bo program zaklenil po %s minutah nedejavnosti.\n\nOpomba: če geslo pozabite, boste morali program odstraniti in ga ponovno namestiti. Vse nesinhronizirane spremembe bodo izgubljene.</string>
+    <string name="settings.security.fingerprint.title">Odkleni s prstnim odtisom</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Preskoči</string>
+    <string name="auth.set_passcode.label.set_passcode">Nastavite geslo za hiter in varen dostop do programa.</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Ponovno vnesite geslo</string>
+    <string name="auth.set_fingerprint.title">Nastavi Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Ali želite uporabiti tipalo prstnih odtisov za odklepanje programa?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Uporabi prstni odtis</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Preskoči za zdaj</string>
+    <string name="auth.fingerprint.touch_sensor">Potrdite prstni odtis za nadaljevanje.</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Vnesite obstoječe geslo.</string>
+    <string name="change_passcode.set_new">Ustvarite novo geslo.</string>
+    <string name="change_passcode.reenter">Ponovno vnesite geslo.</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Podpora</string>
+    <string name="about.label.email.support.message">TUKAJ NAPIŠI SPOROČILO</string>
+    <string name="about.label.rate">Oceni nas na Trgovini Play</string>
+    <string name="about.label.issue">Prijavi težavo</string>
+    <string name="about.label.translate">Pomagajte s prevajanjem</string>
+    <string name="about.label.changelog">Dnevnik sprememb</string>
+    <string name="about.label.campaign.rate">Pomagajte nam postati boljši!</string>
+    <string name="about.label.campaign.share">Deli povezavo do aplikacije</string>
+    <string name="about.label.campaign.share.description">%s ljudi se je pridružilo programu preko vaših povezav.</string>
+    <string name="about.label.other">Kaj drugi pravijo o nas</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Vpiši se za sinhronizacijo podatkov preko vseh tvojih naprav.</string>
+    <string name="account.title.required_authorization">Potrebna je overitev</string>
+    <string name="account.description.required_authorization">Za izvedbo tega dejanja morate biti overjeni.</string>
+    <string name="account.title.authorized">Overjeno</string>
+    <string name="account.button.sign_in">Vpis</string>
+    <string name="account.button.sign_out">Izpis</string>
+    <string name="account.dialog.sign_out.title">Izpisovanje</string>
+    <string name="account.dialog.sign_out.message">Ali se res želite izpisati iz programa? Vsi nesinhronizirani podatki bodo izgubljeni.</string>
+    <string name="account.plan.personal">Osebno dovoljenje</string>
+    <string name="account.plan.subscription">Naročnina (sinhroniziraj %s beležk)</string>
+    <string name="account.plan.contributor">Prispevkarska naročnina (sinhroniziraj %s beležk)</string>
+    <string name="account.plan.yearly">Letna naročnina (sinhroniziraj %s beležk)</string>
+    <string name="account.plan.monthly">Mesečna naročnina (sinhroniziraj %s beležk)</string>
+    <string name="account.plan.free">Osnovna naročnina (sinhroniziraj %s beležk)</string>
+    <string name="account.toolbar.title">Račun</string>
+    <string name="account.sync.title">Samodejno sinhroniziraj beležke</string>
+    <string name="account_rebuild_index_title">Rebuild data index</string>
+    <string name="account_rebuild_index_description">If you see different data (tags, files, notes, etc.) on different devices, it is recommended to perform this procedure. You will need to re-login when the procedure is complete.</string>
+    <string name="account_delete_title">Delete Account</string>
+    <string name="account_delete_confirm_title">Do you want to delete your account?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATTENTION! If you press DELETE below, your account and personal data will be deleted
+    permanently and irreversible, so please make sure the account contains no valuable data/information.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Are you sure?</string>
+    <string name="account_delete_confirm_again_description">Once you confirm, all of your account data will be permanently deleted.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Brezplačno</string>
+    <string name="account.sync.plan.title">Sinhroniziraj %s beležk</string>
+    <string name="account.sync.plan.toolbar">Izberite naročnino</string>
+    <string name="account.sync.plan.button.active">Dejavna naročnina</string>
+    <string name="account.sync.plan.button.select">Izberite naročnino</string>
+    <string name="account.sync.plan.button.change">Spremeni naročnino</string>
+    <string name="account.sync.plan.button.upgrade">Nadgradi</string>
+    <string name="account.sync.plan.caption">Začnite brezplačno, potem plačate samo za sinhronizirane podatke.</string>
+    <string name="account.sync.plan.hint">Število beležk, ki jih lahko sinhronizirate med napravami (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Neomejeno število nepovezanih beležk.</string>
+    <string name="account.sync.plan.benefit.sync">Sinhronizirajte %s beležk med vsemi vašimi napravami.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Sinhronizacija je izklopljena, ker ste dosegli omejitev.</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">Skupno število vaših beležk, vključno s košem, je %s, kar je več od dovoljene omejitve %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Za izbiro te naročnine morate zmanjšati število beležk.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Dosegli ste omejitev svoje naročnine. Ne skrbite, program še vedno v celoti deluje v nepovezanem načinu in nima omejitev. Toda na vaši napravi je sinhronizacija z oblakom onemogočena, dokler ne nadgradite račun ali zmanjšate število beležk na omejitev dejavnega računa.</string>
+    <string name="account.sync.plan.contributor">Če ste pomagali prevajati program ali ga redno podpirate, prosimo, navežite stik z nami, da vam nadgradimo račun.</string>
+    <string name="sync.free_limit_concept">Omejitev brezplačne različice se lahko spreminja glede na razne dejavnike.</string>
+    <string name="sync.off.title">Beležka ni sinhronizirana med napravami.</string>
+    <string name="sync.off.multiple.title">Beležke niso sinhronizirane med napravami.</string>
+    <string name="sync.off.caption">To se je zgodilo zaradi enega od naslednjih razlogov:</string>
+    <string name="sync.off.reason.universal_clipboard">Univerzalno odložišče ni bilo omogočeno, ko je program ustvaril to beležko.</string>
+    <string name="sync.off.reason.manual_off">Ročno ste izklopili sinhronizacijo.</string>
+    <string name="sync.warning.title">Značilnost uporablja sinhronizacijo z oblakom.</string>
+    <string name="sync.warning.description">Sinhronizacija z oblakom ni brezplačna in jo je mogoče na napravi onemogočiti, dokler ne nadgradite svojega računa ali zmanjšate število beležk na omejitev dejavne naročnine.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Hitra dejanja</string>
+    <string name="fast_actions.compose_email">Sestavi e-pošto</string>
+    <string name="fast_actions.send_message">Pošlji novo sporočilo</string>
+    <string name="fast_actions.compose_sms">Sestavi SMS</string>
+    <string name="fast_actions.twitter_post">Sestavi Tweet</string>
+    <string name="fast_actions.web_search">Spletno iskanje</string>
+    <string name="fast_actions.google_translate">Google Prevod</string>
+    <string name="fast_actions.google_maps_search">Iskanje v Google Zemljevidih</string>
+    <string name="fast_actions.wiki_search">Wikipedia iskanje</string>
+    <string name="fast_actions.youtube_search">Youtube iskanje</string>
+    <string name="fast_actions.duckduckgo_search">Iskanje DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">Iskanje Stack Overflow</string>
+    <string name="fast_actions.reddit_search">Iskanje Reddit</string>
+    <string name="fast_actions.play_url">Predvajaj povezavo</string>
+    <string name="fast_actions.send_as_file">Pošlji kot datoteko</string>
+    <string name="fast_actions.send_as_txt_file">Pošlji kot besedilo</string>
+    <string name="fast_actions.send_as_pdf_file">Pošlji kot PDF</string>
+    <string name="fast_actions.send_as_md_file">Pošlji kot Markdown</string>
+    <string name="fast_actions.export_to_file">Izvozi v datoteko</string>
+    <string name="fast_actions.export_to_file.success">Izvoženo kot %s</string>
+    <string name="fast_actions.calendar_event">Dodaj dogodek v koledar</string>
+    <string name="fast_actions.copy">Kopiraj v odložišče</string>
+    <string name="fast_actions.copy_clear">Clear from the clipboard</string>
+    <string name="fast_actions.tts">Pretvorba besedila v govor</string>
+    <string name="fast_actions.tts.max_length">Besedilo ne sme biti daljše od %s znakov.</string>
+    <string name="fast_actions.share">Pošlji s/z …</string>
+    <string name="fast_actions.send_as_qrcode">Pošlji kot kodo QR</string>
+    <string name="fast_actions.dial_number">Pokliči številko</string>
+    <string name="fast_actions.insert_contact">Vstavi stik</string>
+    <string name="fast_actions.insert_contact_email">Shrani e-pošto stika</string>
+    <string name="fast_actions.insert_contact_phone">Shrani številko stika</string>
+    <string name="fast_actions.open_url">Odpri spletno stran</string>
+    <string name="fast_actions.short_link">Skrajšaj povezavo</string>
+    <string name="fast_actions.more">Prikaži več</string>
+    <string name="fast_actions.error">Nepričakovana napaka: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Privzeto</string>
+    <string name="theme.sepia">Sepia</string>
+    <string name="theme.dark">Temno</string>
+    <string name="theme.dark_blue">Temno modra</string>
+    <string name="theme.dark_green">Temno zelena</string>
+    <string name="theme.dark_blurple">Temno modrijoličasta</string>
+    <string name="theme.black">AMOLED Črna</string>
+    <string name="theme.green">Zelena</string>
+    <string name="theme.white">Bela</string>
+    <string name="theme.pink">Rožnata</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Datumu uporabe</string>
+    <string name="sort_order.modify_date">Datumu urejanja</string>
+    <string name="sort_order.create_date">Datumu nastanka</string>
+    <string name="sort_order.delete_date">Izbriši datum</string>
+    <string name="sort_order.usage_count">Število uporab</string>
+    <string name="sort_order.title">Naslov</string>
+    <string name="sort_order.text">Tekst</string>
+    <string name="sort_order.tags">Oznake</string>
+    <string name="sort_order.size">Velikosti</string>
+    <string name="sort_order.name">Ime</string>
+    <string name="sort_order.notes_count">Število beležk</string>
+    <string name="sort_order.color">Barva</string>
+    <string name="sort_order.manual">Ročno</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Uspešno</string>
+    <string name="backup.fail.title">Neuspešno</string>
+    <string name="backup.fail.message">Nepričakovana napaka: %s</string>
+    <string name="restore.success.title">Uspešno</string>
+    <string name="restore.fail.title">Neuspešno</string>
+    <string name="restore.fail.message">Nepričakovana napaka: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Ali res želite zapreti to okno?</string>
+    <string name="clip.multiple.exit_without_save.description">Vse spremembe bodo izgubljene.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Pogoste oznake</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Ločevalnik</string>
+    <string name="clip.multiple.merge.separator.line">Nova vrstica</string>
+    <string name="clip.multiple.merge.separator.space">Presledek</string>
+    <string name="clip.multiple.merge.separator.other">Drugo</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Nadzorne tipke</string>
+    <string name="notification.style.history">Zgodovina odložišča</string>
+    <string name="notification.style.actions">Dejanja odložišča</string>
+    <string name="notification.track_clipboard.pause">Nadzor odložišča je v premoru.</string>
+    <string name="notification.track_clipboard.resume">Nadzor odložišča je obnovljen.</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Priloge</string>
+    <string name="attachments.type.photo">Posnemi fotografijo</string>
+    <string name="attachments.type.record">Posnemi video</string>
+    <string name="attachments.type.file">Izberi datoteko</string>
+    <string name="attachments.attr.created">Ustvarjeno</string>
+    <string name="attachments.attr.name">Ime</string>
+    <string name="attachments.attr.type">Vrsta</string>
+    <string name="attachments.attr.path">Pot</string>
+    <string name="attachments.attr.size">Velikost</string>
+    <string name="attachments.state.downloaded">Prejeto</string>
+    <string name="attachments.state.uploaded">Poslano</string>
+    <string name="attachments.state.downloading">Prejemanje …</string>
+    <string name="attachments.state.uploading">Pošiljanje …</string>
+    <string name="attachments.label.insert">Dodaj k beležki</string>
+    <string name="attachments.label.download_url">Javni URL bo na voljo, ko bo datoteka poslana.</string>
+    <string name="contribute.annual.offer">Prekličite kadarkoli iz središča za naročnine v Googlu Play.</string>
+    <string name="contribute.monthly.period">mesec</string>
+    <string name="contribute.annual.period">leto</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Izhod</string>
+    <string name="desktop.tray.show">Prikaži</string>
+    <string name="desktop.tray.show_in_taskbar">Prikaži v vrstici opravil</string>
+    <string name="desktop.update.action.download">Prejmi</string>
+    <string name="desktop.update.action.later">Kasneje</string>
+    <string name="desktop.update.title">Na voljo je nova različica!</string>
+    <string name="desktop.shortcuts.title">Bližnjične tipke</string>
+    <string name="desktop.shortcuts.dialog.define">Določi bližnjico</string>
+    <string name="desktop.shortcuts.showHideApp">Prikaži/Skrij program</string>
+    <string name="desktop.shortcuts.modeFullscreen">Preklopi celozaslonski način</string>
+    <string name="desktop.shortcuts.modeComfortable">Preklopi udoben način</string>
+    <string name="desktop.shortcuts.modeCompact">Preklopi strnjen način</string>
+    <string name="desktop.shortcuts.tagNext">Naslednja oznaka</string>
+    <string name="desktop.shortcuts.tagPrev">Prejšnja oznaka</string>
+    <string name="desktop.shortcuts.noteNext">Naslednja beležka</string>
+    <string name="desktop.shortcuts.notePrev">Prejšnja beležka</string>
+    <string name="desktop.shortcuts.noteNew">Nova beležka</string>
+    <string name="desktop.shortcuts.noteSave">Shrani beležko</string>
+    <string name="desktop.shortcuts.noteDelete">Izbriši beležko</string>
+    <string name="desktop.shortcuts.noteCopy">Kopiraj beležko</string>
+    <string name="desktop.shortcuts.notePrint">Natisni beležko</string>
+    <string name="desktop.shortcuts.noteFind">Išči v beležkah</string>
+    <string name="desktop.shortcuts.noteOpen">Odpri beležko</string>
+    <string name="desktop.shortcuts.noteEdit">Uredi beležko</string>
+    <string name="desktop.shortcuts.contextModeSelect">Izberi beležko</string>
+    <string name="desktop.shortcuts.contextModeCancel">Prekliči izbiro vseh beležk</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Izberi vse beležke</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Shrani iz odložišča</string>
+    <string name="desktop.attachments.browse">Spustite datoteke, da jih priložite ali brskate.</string>
+    <string name="desktop.main.content.under.development">Vsebina je v razvoju …</string>
+    <string name="desktop.main.menu.download">Prejmi</string>
+    <string name="desktop.main.menu.download.for">Prejmi za %s</string>
+    <string name="desktop.main.menu.download.android.apk">Dobi APK splošne gradnje</string>
+    <string name="desktop.main.menu.resources">Viri</string>
+    <string name="desktop.main.menu.open">Odpri Clipto v brskalniku</string>
+    <string name="desktop.main.features.title.1">Pišite hitro in enostavno na katerikoli napravi.</string>
+    <string name="desktop.main.features.title.2">Beležnica \'vse v enem\' in upravitelj odložišča s poudarkom na hitrosti in produktivnosti, ki deluje tako na namiznem računalniku kot telefonu.</string>
+    <string name="desktop.main.features.title.3">Vaš osebni pisalni spremljevalec.</string>
+    <string name="desktop.main.features.title.4">Celovita rešitev za priročno in učinkovito delo z beležkami, izrezki, odložiščem, datotekami in katerimikoli drugimi podatki, za katere je pomemben hiter dostop na katerikoli napravi.</string>
+    <string name="desktop.main.features.title.5">Kaj naredi Clipto posebnega?</string>
+    <string name="desktop.get_started.language">Izberite svoj jezik</string>
+    <string name="desktop.get_started.theme">Izberite priljubljeno temo</string>
+    <string name="desktop.auth.instruction">Navodila za overitev</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Preberi črtno kodo</string>
+    <string name="barcode.prompt.point_at_a_barcode">Usmerite fotoaparat v črtno kodo</string>
+    <string name="barcode.prompt.hold_camera_steady">Držite fotoaparat pri miru za trenutek</string>
+    <string name="barcode.prompt.move_camera_closer">Pomaknite se bližje za iskanje</string>
+    <string name="barcode.prompt.searching">Iskanje …</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Zahteva za pisavo je spodletela s kodo razloga: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Javna povezava</string>
+    <string name="public.note.link.time.label">Ob določenem času</string>
+    <string name="public.note.link.time.or">ali</string>
+    <string name="public.note.link.time.type.seconds">sekund</string>
+    <string name="public.note.link.time.type.minutes">minut</string>
+    <string name="public.note.link.time.type.hours">ur</string>
+    <string name="public.note.link.time.type.days">dni</string>
+    <string name="public.note.link.access_time">Čas razpoložljivosti</string>
+    <string name="public.note.link.access_time.description">Če je nastavljeno, bo povezava na voljo samo za navedeni čas od ustvaritve ali kasnejše posodobitve.</string>
+    <string name="public.note.link.access_time.label">Bo na voljo za</string>
+    <string name="public.note.link.access_password">Geslo za dostop</string>
+    <string name="public.note.link.access_password.hint">Namig za geslo (izbirno)</string>
+    <string name="public.note.link.access_password.placeholder">Geslo</string>
+    <string name="public.note.link.access_password.description">Če je nastavljeno, bo povezava na voljo samo po potrditvi gesla.</string>
+    <string name="public.note.link.time_to_expire">Čas do poteka</string>
+    <string name="public.note.link.time_to_expire.description">Če je nastavljeno, bo povezava veljavna za navedeni čas po ustvaritvi ali kasnejši posodobitvi.</string>
+    <string name="public.note.link.time_to_expire.label">Poteče čez</string>
+    <string name="public.note.link.one_time_opening">Enkratno odpiranje</string>
+    <string name="public.note.link.one_time_opening.description">Če je nastavljeno, bo povezava na voljo samo za eno odpiranje od časa ustvaritve ali kasnejše posodobitve.</string>
+    <string name="public.note.link.action.remove">Odstrani povezavo</string>
+    <string name="public.note.link.action.remove.confirm.title">Odstrani povezavo?</string>
+    <string name="public.note.link.action.remove.confirm.description">Povezava ne bo več na voljo.</string>
+    <string name="public.note.link.action.create">Ustvari povezavo</string>
+    <string name="public.note.link.state.unavailable">Ni na voljo.</string>
+    <string name="public.note.link.state.postponed">Bo na voljo čez:</string>
+    <string name="public.note.link.state.expires_in">Poteče čez %s.</string>
+    <string name="public.note.link.state.expired">Poteklo</string>
+    <string name="public.note.link.state.locked">Zaklenjeno</string>
+    <string name="public.note.link.state.locked.wrong_password">Napačno geslo.</string>
+    <string name="about.policy">Pravilnik o zasebnosti</string>
+    <string name="about.toc">Pogoji uporabe</string>
+    <string name="about_pricing">Pricing</string>
+    <string name="site.integrations.title">Vgradnje</string>
+    <string name="site.integrations.zapier.title">Vgradnja v Zapier</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Povežite Clipto z Zapierjem in izvajajte potek dela z bliskovito hitrostjo.
+\n
+## Odložišče kot sprožilec poteka dela
+\n
+Najhitrejši način shranjevanja pomembnih podatkov je, da jih izberete in kopirate.
+\n
+Da začnete uporabljati to zmožnost s Zapierjem, sledite tem korakom:
+\n
+1. V Zapierju nastavite sprožilec **Besedilo kopirano v odložišče**.
+\n
+2. Namestite Clipto na svojo (prenosno, namizno) napravo in se **vpišite** z istim računom.
+\n
+3. Odprite Clipto in omogočite nastavitvi **Beležke iz odložišča** in **Univerzalno odložišče**.
+\n
+4. To je vse. Zdaj lahko uporabljate običajno kombinacijo **Ctrl+C** (ali Kopiraj iz vsebinskega menija) za začetek poteka dela s kopiranim besedilom.
+    ]]></string>
+    <string name="faq.title">Pogosta vprašanja</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Beležke** vam pomagajo ohraniti pomembne besedilne informacije, in omogočajo takojšnji dostop do njih kadarkoli in na katerikoli napravi.
+    \n
+    \n
+    Privzeto so vse beležke razdeljene po kategorijah za hiter dostop do pravih glede na različne lastnosti.
+    \n
+    ```
+    \n
+    Vse beležke se ob prvem vpisu prenesejo na napravo.
+    \n
+    \n
+    Vse spremembe se sinhronizirajo takoj, ko je povezava do interneta na voljo.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filtri** z uporabo pripravljenih predlog pomagajo hitreje najti želene informacije.
+    \n
+    ```
+    \n
+    Iskalna predloga lahko vsebuje razne kombinacije oznak, časovnih razmikov, besedil, pravil za razvrščanje in prikaz itd.
+    \n
+    \n
+   Zaradi shranjevanja takih kombinacij kot filtrov je pridobivanje podatkov ob ponovnem iskanju lažje.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Vsak filter ima svoje nastavitve za prikazovanje podatkov na seznamu.
+    \n
+    - Če je nastavljen opis, bo ta prikazan namesto tega namiga.
+    \n
+    - Nastavitve filtrov se sinhronizirajo z vsemi vašimi napravami.
+    \n
+    ```
+    \n
+    Barvna paleta spremeni odtenek, če ponovno kliknete na izbrano barvo.
+    \n
+    \n
+    Pravilo razvrščevanja spremeni smer, če ponovno kliknete nanj.
+    \n
+    \n
+    Opis podpira oblikovanje z markdownom.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Oznake** pomagajo organizirati beležke in datoteke, da jih lahko lažje najdete.
+    \n
+    ```
+    \n
+    Vsaki beležki ali datoteki lahko dodate več oznak.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Vsaka oznaka ima svoje nastavitve za prikazovanje podatkov na seznamu.
+    \n
+    - Če je nastavljen opis, bo ta prikazan namesto tega namiga.
+    \n
+    - Nastavitve oznak se sinhronizirajo z vsemi vašimi napravami.
+    \n
+    ```
+    \n
+    Barvna paleta spremeni odtenek, če ponovno kliknete na izbrano barvo.
+    \n
+    \n
+    Pravilo razvrščevanja spremeni smer, če ponovno kliknete nanj.
+    \n
+    \n
+    Opis podpira oblikovanje z markdownom.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    Parametre iskanja lahko shranite kot filtre za hitrejše iskanje.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Izrezki** pomagajo, da se izognete tipkanju ponavljajočega se besedila z uporabo besedilnih predlog.
+    \n
+    \n
+    Izrezek je lahko obstoječa ali nova beležka. Lahko je statična ali dinamična, in lahko vsebuje polja za ročni vnos in spremenljivke (datum, čas itd.).
+    \n
+    \n
+    Izrezke lahko organizirate v pakete. Ustvarite lahko svoje ali jih namestite iz javne knjižnice.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - Pakete lahko delite z drugimi uporabniki.
+    \n
+    - Pakete lahko objavljate v javni knjižnici.
+    \n
+    - Če dodate opis, bo ta prikazan namesto tega namiga.
+    \n
+    ```
+    \n
+    Barvna paleta spremeni odtenek, če znova kliknete na izbrano barvo.
+    \n
+    \n
+    Pravilo razvrščanja obrne smer, če znova kliknete nanj.
+    \n
+    \n
+    Opis podpira oblikovanje z markdownom.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Okrajšava se uporablja:
+    \n
+    \n
+    - za hitro iskanje beležk z uporabo kratke fraze dolžine največ %s-ih znakov,
+    \n
+    - za vstavljanje besedila beležke v vnosno polje, ko vtipkate bližnjico z začetnim simbolom **%s**.
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Opis lahko uporabite za podajanje dodatnih informacij o beležki.
+    \n
+    \n
+    Podpira oblikovanje z markdownom dolžine največ %s-ih znakov.
+    ]]></string>
+    <string name="where_none_of">nič od izbranega</string>
+    <string name="where_any_of">karkoli od izbranega</string>
+    <string name="where_all_of">vse izbrano</string>
+    <string name="where_after">Po</string>
+    <string name="where_before">Pred</string>
+    <string name="where_from">Od</string>
+    <string name="where_to">Za</string>
+    <string name="where_date_today">Danes</string>
+    <string name="where_date_tomorrow">Jutri</string>
+    <string name="where_date_custom">Po meri</string>
+    <string name="where_date_yesterday">Včeraj</string>
+    <string name="where_date_last_7_days">Zadnjih 7 dni</string>
+    <string name="where_date_last_30_days">Zadnjih 30 dni</string>
+    <string name="where_date_last_90_days">Zadnjih 90 dni</string>
+    <string name="advanced_filter_block_text">Besedilo vsebuje</string>
+    <string name="advanced_filter_block_text_type">Vrsta besedila</string>
+    <string name="advanced_filter_block_category">Se nahaja v</string>
+    <string name="advanced_filter_block_tags">Oznake</string>
+    <string name="advanced_filter_block_created">Datum nastanka</string>
+    <string name="advanced_filter_block_updated">Datum posodobitve</string>
+    <string name="advanced_filter_block_only_public_links">Prikaži samo z javnimi povezavami</string>
+    <string name="advanced_filter_block_only_attachments">Prikaži samo s prilogami</string>
+    <string name="advanced_filter_block_only_not_synced">Prikaži samo nesinhonizirane</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Country</string>
+    <string name="snippet_kit_attr_snippets">Izrezki</string>
+    <string name="snippet_kit_attr_language">Jezik</string>
+    <string name="snippet_kit_attr_downloads">Prejemi</string>
+    <string name="snippet_kit_attr_created">Ustvarjeno</string>
+    <string name="snippet_kit_attr_updated">Posodobljeno</string>
+    <string name="snippet_kit_attr_category">Category</string>
+    <string name="snippet_kit_public_link">Javna povezava</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    Izrezek je mogoče namestiti iz javne povezave.
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Odstrani povezavo?</string>
+    <string name="snippet_kit_public_link_remove_description">Paketa izrezkov ni več mogoče namestiti iz te povezave.</string>
+    <string name="snippet_kit_public_library">Javna knjižnica</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    Izrezek je mogoče namestit iz javne knižnice.
+    \n
+    \n
+    ```
+    \n
+    Paket mora vsebovati vsaj %s izrezkov, da se ga lahko doda v javno knjižnico.
+    \n
+    ```
+    \n
+    \n
+    Ko paket dodate v javno knjižnico, samodejno pridobite koristi.
+    \n
+    \n
+    [Več o tem …](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Odstrani i z javne knjižnice?</string>
+    <string name="snippet_kit_public_library_remove_description">Paketa izrezkov ni več mogoče namestiti iz javne knjižnice.</string>
+    <string name="snippet_kit_hint_name">Ime paketa izrezkov</string>
+    <string name="snippet_kit_label_show_in_public_library">Prikaži v javni knjižnici</string>
+    <string name="snippet_kit_error_name_required">Če želite shraniti ta paket, morate izbrati edinstveno ime.</string>
+    <string name="snippet_kit_delete_title">Izbriši paket \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Paket izrezkov bo trajno izbrisan.</string>
+    <string name="snippet_kit_uninstall_title">Odstrani paket \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Paket izrezkov bo tajno izbrisan, vključno s povezanimi izrezki.</string>
+    <string name="snippet_kit_install_hint_title">Kaj pomeni namestiti?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    Nameščen paket izrezkov bo na voljo za uporabo, ker ste ga sami ustvarili.
+    \n
+    \n
+    To pomeni, da lahko popolnoma spremenite katerekoli beležke v njem, dodajate nove, brišete obstoječe, upravljate z nastavitvami paketa itd.
+    \n
+    \n
+    ```
+    \n
+    Vse spremembe bodo na voljo samo vam brez zmožnosti spreminjanja izvirnega paketa.
+    \n
+    \n
+    Če je bil izviren paket posodobljen, lahko ročno posodobite nameščenega.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Stanje</string>
+    <string name="public_status_private">Zasebno</string>
+    <string name="public_status_blocked">Blokirano</string>
+    <string name="public_status_review">V pregledu</string>
+    <string name="public_status_review_details">Do objave in razpoložljivosti paketa v javni knjižnici bo trajalo nekaj časa.</string>
+    <string name="public_status_published">Objavljeno</string>
+    <string name="public_status_rejected">Zavrnjeno</string>
+    <string name="public_status_not_found">Ni bilo najdeno</string>
+    <string name="public_status_deleted">Izbrisano</string>
+    <string name="public_status_restricted">Omejeno</string>
+    <string name="public_status_update_reason">Razlog za posodobitev</string>
+    <string name="dynamic_text_hint_title">Dinamično besedilo</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    Če beležka vsebuje dinamična polja, boste ob vsakem opravljenem dejanju na beležki videli ta dodatni korak.
+    \n
+    \n
+    Na tem koraku lahko določite vrednosti vnosnih polj in dokončate dejanje s spremenjenim besedilom.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Besedilo</string>
+    <string name="dynamic_text_view_mode_form">Oblika</string>
+    <string name="dynamic_value_date">Datum/Čas</string>
+    <string name="dynamic_value_date_description">Ustvari ogrado, ki jo nadomesti dejanski datum.</string>
+    <string name="dynamic_value_device">Podrobnosti o napravi</string>
+    <string name="dynamic_value_device_description">Ustvari ogrado, ki jo nadomestijo podrobnosti o napravi.</string>
+    <string name="dynamic_value_random">Naključno</string>
+    <string name="dynamic_value_random_description">Ustvari ogrado, ki jo nadomesti naključna vrednost s prilagodljivega seznama.</string>
+    <string name="dynamic_value_clipboard">Odložišče</string>
+    <string name="dynamic_value_clipboard_description">Ustvari ogrado, ki jo nadomesti vsebina odložišča.</string>
+    <string name="dynamic_value_snippet">Izrezek</string>
+    <string name="dynamic_value_snippet_description">Ustvari ogrado, ki jo nadomesti vsebina izbrane beležke.</string>
+    <string name="dynamic_value_attr_device_type">Vrsta podatka</string>
+    <string name="dynamic_field_date">Polje za datum</string>
+    <string name="dynamic_field_date_description">Ustvari polje za vnos datuma.</string>
+    <string name="dynamic_field_text">Polje za besedilo</string>
+    <string name="dynamic_field_text_description">Ustvari polje za vnos besedila.</string>
+    <string name="dynamic_field_number">Polje za števila</string>
+    <string name="dynamic_field_number_description">Ustvari polje za vnos števila.</string>
+    <string name="dynamic_field_select">Izbirno polje</string>
+    <string name="dynamic_field_select_description">Ustvari vnos za izbiro enega ali več predmetov.</string>
+    <string name="dynamic_field_barcode_scanning">Polje za branje črtne kode</string>
+    <string name="dynamic_field_barcode_scanning_description">Ustvari polje, ki omogoča branje črtne kode, nakar se njena vrednost uporabi za izpolnjevanje polja.</string>
+    <string name="dynamic_field_text_toggle">Text toggle</string>
+    <string name="dynamic_field_text_toggle_description">Creates a toggle switch that can enable or disable a block of text</string>
+    <string name="dynamic_field_reference">Reference field</string>
+    <string name="dynamic_field_reference_description">Creates a field that refers to another field and uses its value</string>
+    <string name="dynamic_field_unknown">Unknown field</string>
+    <string name="dynamic_field_unknown_description">The field cannot be rendered. Perhaps it is incorrect or was created in a newer version of the application</string>
+    <string name="dynamic_field_date_format_date_time">Datum/Čas (sistem)</string>
+    <string name="dynamic_field_date_format_date">Datum (sistem)</string>
+    <string name="dynamic_field_date_format_time">Čas (sistem)</string>
+    <string name="dynamic_field_date_format_day_of_week">Dan v tednu</string>
+    <string name="dynamic_field_date_format_day_of_month">Dan v mesecu (1-31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Dan v mesecu (01-31)</string>
+    <string name="dynamic_field_date_format_year">Leto</string>
+    <string name="dynamic_field_date_format_year_short">Leto (krajše)</string>
+    <string name="dynamic_field_date_format_month">Mesec</string>
+    <string name="dynamic_field_date_format_month_number">Mesec (1-12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Mesec (01-12)</string>
+    <string name="dynamic_field_date_format_hour_12">Ura (0-12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Ura (00-12)</string>
+    <string name="dynamic_field_date_format_hour_24">Ura (0-24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Ura (00-24)</string>
+    <string name="dynamic_field_date_format_minute">Minute (1-60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minute (01-60)</string>
+    <string name="dynamic_field_date_format_second">Sekunde (1-60)</string>
+    <string name="dynamic_field_date_format_second_zero">Sekunde (01-60)</string>
+    <string name="dynamic_field_date_format_am_pm">dop./pop.</string>
+    <string name="dynamic_field_date_format_time_zone">Časovni pas</string>
+    <string name="dynamic_field_value_formatter_new_line">Nova vrstica</string>
+    <string name="dynamic_field_value_formatter_semicolon">Podpičje</string>
+    <string name="dynamic_field_value_formatter_comma">Vejica</string>
+    <string name="dynamic_field_value_formatter_space">Presledek</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Urejen seznam</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Neurejen seznam</string>
+    <string name="dynamic_field_attr_common_label">Oznaka</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Suffix</string>
+    <string name="dynamic_field_attr_common_value">Vrednost</string>
+    <string name="dynamic_field_attr_common_required">Zahtevano</string>
+    <string name="dynamic_field_attr_common_placeholder">Ograda</string>
+    <string name="dynamic_field_attr_common_default_value">Privzeta vrednost</string>
+    <string name="dynamic_field_attr_common_values_formatter">Oblikovalnik izbranih vrednosti</string>
+    <string name="dynamic_field_attr_select_multiple">Večkratna izbira</string>
+    <string name="dynamic_field_attr_select_user_input">Uporabniški vnos</string>
+    <string name="dynamic_field_attr_text_multi_line">Večvrstično besedilo</string>
+    <string name="dynamic_field_attr_text_max_length">Največja dolžina</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Privzeta vrednost je odložišče</string>
+    <string name="dynamic_field_attr_select_options">Možnosti</string>
+    <string name="dynamic_field_attr_number_min">Najmanjša vrednost</string>
+    <string name="dynamic_field_attr_number_max">Največja vrednost</string>
+    <string name="dynamic_field_attr_date_format">Oblika</string>
+    <string name="dynamic_field_attr_date_example">Primer: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Večkratno branje</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Ločilo prebranih vrednosti</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Referenced field label</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Field has its own value</string>
+    <string name="select_option_ordering">Možnosti razvrščanja</string>
+    <string name="select_option_ordering_label_asc">Oznaka (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Oznaka (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Vrednost (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Vrednost (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Izbriši to dinamično polje iz besedila?</string>
+    <string name="dynamic_field_confirm_delete_description">Ograda polja bo izbrisana iz izvirnega besedila.</string>
+    <string name="dynamic_value_placeholder_copied_title">Ograda dinamične vrednosti je bila kopirana v odložišče.</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    Če je beležka odprta v načinu za urejanje, se ograda samodejno vstavi v besedilo na mestu kazalca ali nadomesti izbrano besedilo.
+    \n
+    \n
+    Drugače se kopira v odložišče.
+    \n
+    \n
+    **Kopirana ograda:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">File not found. Try uploading it again.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">Updated</string>
+    <string name="file_attr_location">Location</string>
+    <string name="file_confirm_update_file">Update file?</string>
+    <string name="file_confirm_update_file_description">The file will be updated in the cloud storage.</string>
+    <string name="file_error_name_required">Name is required to save this file</string>
+    <string name="file_action_new_file">File</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Files</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">Note</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">Attachment</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Attachments</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">Search your files</string>
+    <string name="file_type_any">All</string>
+    <string name="file_type_audio">Audios</string>
+    <string name="file_type_video">Videos</string>
+    <string name="file_type_image">Images</string>
+    <string name="file_type_archive">Archives</string>
+    <string name="file_type_document">Documents</string>
+    <string name="file_type_recycled">Recycle Bin</string>
+    <string name="folder_select">Select</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">Edit</string>
+    <string name="clip_action_new_edit_description">The note can be edited before it is saved or used for any action.</string>
+    <string name="clip_action_new_insert">Insert into</string>
+    <string name="clip_action_new_insert_description">The text of a note can be inserted into any existing one. Select the target note and specify the insertion options.</string>
+    <string name="clip_action_new_action">Actions</string>
+    <string name="clip_action_new_action_description">The text of a note can be used to perform an action.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">Izvožena je bila %s beležka.</item>
+        <item quantity="two">Izvoženi sta bili %s beležki.</item>
+        <item quantity="few">Izvožene so bile %s beležke.</item>
+        <item quantity="other">Izvoženih je bilo %s beležk.</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">Uvožena je bila %s beležka.</item>
+        <item quantity="two">Uvoženi sta bili %s beležki.</item>
+        <item quantity="few">Uvožene so bile %s beležke.</item>
+        <item quantity="other">Uvoženih je bilo %s beležk.</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">Izbrisana je bila %s beležka.</item>
+        <item quantity="two">Izbrisani sta bili %s beležki.</item>
+        <item quantity="few">Izbrisane so bile %s beležke.</item>
+        <item quantity="other">Izbrisanih je bilo %s beležk.</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s beležka</item>
+        <item quantity="two">%s beležki</item>
+        <item quantity="few">%s beležke</item>
+        <item quantity="other">%s beležk</item>
+    </plurals>
+</resources>

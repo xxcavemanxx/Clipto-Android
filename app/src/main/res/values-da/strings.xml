@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Ny linje</string>
+    <string name="common_separator_space">Mellemrum</string>
+    <string name="common_separator_comma">Komma</string>
+    <string name="confirm_exit_edit_mode_title">Forlad redigeringstilstand?</string>
+    <string name="confirm_exit_edit_mode_description">Alle ugemte ændringer vil gå tabt.</string>
+    <string name="confirm_delete_note_title">Slet notat?</string>
+    <string name="confirm_delete_note_description">Valgte notat slettes.</string>
+    <string name="link_preview_label">Indlæser forhåndsvisning…</string>
+    <string name="link_preview_not_found">Ingen forhåndsvisning</string>
+    <string name="link_preview_hide">Skjul forhåndsvisning</string>
+    <string name="link_preview_show">Vis forhåndsvisning</string>
+    <string name="toast_downloaded">%s downloadet</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Tryk på Tilbage-knappen igen for at afslutte</string>
+    <string name="essentials.errors.unknown">En ukendt fejl opstod. Forsøg igen</string>
+    <string name="error_data_empty">Ingen data fundet.</string>
+    <string name="error.unexpected">En ukendt fejl er opstået</string>
+    <string name="error.unexpected.send">Tryk på \'Fejl\'-knappen for at indsende en fejl</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Bedøm</string>
+    <string name="menu.edit">Redigér</string>
+    <string name="menu.clear">Ryd</string>
+    <string name="menu.clear_all">Ryd alle</string>
+    <string name="menu.share">Del</string>
+    <string name="menu.fav">Stjernemarkeret</string>
+    <string name="menu.delete">Slet</string>
+    <string name="menu.empty">Tøm</string>
+    <string name="menu.cancel">Annullér</string>
+    <string name="menu.settings">Indstillinger</string>
+    <string name="menu.display_options">Skærmindstillinger</string>
+    <string name="menu.faq">FAQ</string>
+    <string name="menu.new">Ny</string>
+    <string name="menu.search">Søg</string>
+    <string name="menu.print">Udskriv</string>
+    <string name="menu.restore">Gendan</string>
+    <string name="menu.merge">Flet</string>
+    <string name="menu.copy_link">Kopiér offentligt link</string>
+    <string name="menu.share_link">Del offentligt link</string>
+    <string name="menu.save_as">Gem som…</string>
+    <string name="menu.rename">Omdøb</string>
+    <string name="menu.paste">Indsæt</string>
+    <string name="menu.copy">Kopiér</string>
+    <string name="menu.cut">Klip</string>
+    <string name="menu.fullscreen.enter">Gå til fuldskærmsvisning</string>
+    <string name="menu.fullscreen.exit">Afslut fuldskærmsvisning</string>
+    <string name="menu_close">Close</string>
+    <string name="button.update">Opdatér</string>
+    <string name="button.install">Installér</string>
+    <string name="button.uninstall">Afinstallér</string>
+    <string name="button.done">Udført</string>
+    <string name="button.undo">Fortryd</string>
+    <string name="button.apply">Anvend</string>
+    <string name="button.change">Skift</string>
+    <string name="button.save">Gem</string>
+    <string name="button.create">Opret</string>
+    <string name="button.send">Send</string>
+    <string name="button.preview">Forhåndsvisning</string>
+    <string name="button.confirm">Bekræft</string>
+    <string name="button.sync">Synk nu</string>
+    <string name="button.yes">Ja</string>
+    <string name="button.no">Nej</string>
+    <string name="button.back">Tilbage</string>
+    <string name="button.continue">Fortsæt</string>
+    <string name="button.finish">Fuldfør</string>
+    <string name="button.got_it">Forstået!</string>
+    <string name="button.get_started">Kom godt i gang</string>
+    <string name="button.example">Eks.</string>
+    <string name="button_try_again">Forsøg igen</string>
+    <string name="button_insert">Indsæt</string>
+    <string name="button_refresh">Opfrisk</string>
+    <string name="notification.title.empty">Udklipsholder er tom</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Gå tilbage</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Forkortelse</string>
+    <string name="common.label.description">Beskrivelse</string>
+    <string name="common.action.confirm">Bekræft valgte handling</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Nyt tag</string>
+    <string name="tag.new.name">Tag-navn</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Flyt til mappe</string>
+    <!-- MAIN -->
+    <string name="main.search">Søg i notater</string>
+    <string name="main.filter.all">Alle</string>
+    <string name="main.filter.no_tags">Ikke taggede</string>
+    <string name="main.filter.filtered">Filtreret</string>
+    <string name="main.delete_selected.title">Slet valgte notat(er)?</string>
+    <string name="main.delete_selected.description">Alle markerede notater slettes.</string>
+    <string name="main.delete_merged.title">Slet flettede notater?</string>
+    <string name="main.delete_merged.description">Flettede notater slettes permanent.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Notater ikke fundet.</string>
+    <string name="main.list.empty.caption">Bemærk: Hver kategori har sin egen individuelle sorterings- og indstillingsmuligheder, som kan ændres enten fra listen (%s) eller venstre navigationsskuffe (%s).</string>
+    <string name="main.list.empty.caption.three_dot">trepriksmenu</string>
+    <string name="main.list.empty.caption.long_tap">langt tryk på kategorien</string>
+    <string name="main.list.empty.description.all">Generel kategori. Viser alle notater uden filtrering.</string>
+    <string name="main.list.empty.description.no_tags">Viser notater uden tiljnyttet tag.</string>
+    <string name="main.list.empty.description.tags">Viser notater og filer markeret med det valgte tag.</string>
+    <string name="main.list.empty.description.filtered">Ingen matches fundet for aktuelle notatfiltreringsparametre.</string>
+    <string name="main.list.empty.description.starred">Viser Stjernemarkerede notatet.</string>
+    <string name="main.list.empty.description.deleted">Viser notater og filer, som er slettet, men som stadig kan gendannes. Slettede poster bibeholder tildelte tags og andre attributter, men er ikke tilgængelige i de korresponderende kategorier.</string>
+    <string name="main.list.empty.description.clipboard">Viser noter, som appen automatisk har oprettet fra udklipsholderen. Som standard moniteres udklipsholderen ikke, men aktivering heraf kan ske via indstillingerne.</string>
+    <string name="main.list.empty.description.snippets">Viser notater, som bruges i andre notater. Evt. ændringer i uddraget afspejles automatisk i alle notater, hvori det bruges.</string>
+    <string name="main.filter.snippets">Uddrag</string>
+    <string name="main.filter.filters">Filtre</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Filer</string>
+    <string name="main.filter.notes">Notater</string>
+    <string name="main.filter.tags">Tags</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Husk seneste handling</string>
+    <string name="main_action_settings_remember_description">Når aktiveret, husker og benytter appen den seneste handling, næste gang der klikkes på den Flydende Knap. Samtidig kan et vindue med en liste over alle handlinger åbnes med et langt tryk på den Flydende Knap.</string>
+    <string name="main_action_folders_move_note_title">Eksisterende Notat</string>
+    <string name="main_action_folders_move_note_description">Flyt et eksisterende notat til den aktuelle mappe</string>
+    <string name="main_action_folders_move_file_title">Eksisterende fil</string>
+    <string name="main_action_folders_move_file_description">Flyt en eksisterende fil til den aktuelle mappe</string>
+    <string name="main_action_notes">Opret notater</string>
+    <string name="main_action_notes_new_title">Nyt notat</string>
+    <string name="main_action_notes_new_description">Gem vigtige tekstoplysninger og få straks adgang til dem når som helst på enhver enhed</string>
+    <string name="main_action_notes_barcode_title">Skan stregkode</string>
+    <string name="main_action_notes_barcode_description">Skan links eller tekster og gem dem som et notat (de fleste standardstregkodeformater understøttes)</string>
+    <string name="main_action_notes_clipboard_title">Kopiér fra udklipsholder</string>
+    <string name="main_action_notes_clipboard_description">Kopiér aktuel tekst fra udklipsholder og gem den som et notat</string>
+    <string name="main_action_notes_import_title">Importér fra fil</string>
+    <string name="main_action_notes_import_description">Opret et notat med tekst fra en fil (maks. filstørrelse %s kB)</string>
+    <string name="main_action_notes_import_error">Filstørrelsen må maks. udgøre %s kB</string>
+    <string name="main_action_files">Tilføj filer</string>
+    <string name="main_action_files_file_title">Vælg filer</string>
+    <string name="main_action_files_file_description">Tilføj enhver filtype (foto, video, PDF mv.) på maks. %s MB</string>
+    <string name="main_action_files_photo_title">Tag foto</string>
+    <string name="main_action_files_photo_description">Tag et foto og gem det som et notat</string>
+    <string name="main_action_files_record_title">Optag video</string>
+    <string name="main_action_files_record_description">Optag en video og gem den som et notat (videostørrelse maks. %s MB)</string>
+    <string name="main_action_organize">Organisér data</string>
+    <string name="main_action_organize_tag_title">Nyt tag</string>
+    <string name="main_action_organize_tag_description">Opret et tag for organisere notater og filer og gøre dem lettere at finde</string>
+    <string name="main_action_organize_filter_title">Nyt filter</string>
+    <string name="main_action_organize_filter_description">Opret er filter for hurtigere at finde ønskede oplysninger vha. færdiglavede søgeskabeloner</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Reducér repetitive indtastninger</string>
+    <string name="main_action_snippets_snippet_title">Nyt uddrag</string>
+    <string name="main_action_snippets_snippet_description">Opret genanvendelig tekstskabelon for at undgå repetitive indtastninger og fejl</string>
+    <string name="main_action_snippets_set_title">Nyt uddragssæt</string>
+    <string name="main_action_snippets_set_description">Opret et uddragssæt for hurtigere at finde almindelige forekomster</string>
+    <string name="main.actions.save_and_start_new_note">Gem, og start et nyt notat</string>
+    <string name="main.actions.add_dynamic_value">Tilføj dynamisk værdi</string>
+    <string name="main.actions.add_attachment">Tilføj vedhæftning</string>
+    <string name="main.actions.sync_note">Synk et notat</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Venstrestryg</string>
+    <string name="main.swipe_actions.caption.right">Højrestryg</string>
+    <string name="main.swipe_actions.fav">Stjernemarkér</string>
+    <string name="main.swipe_actions.delete">Slet</string>
+    <string name="main.swipe_actions.copy">Kopér</string>
+    <string name="main.swipe_actions.none">Intet</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Avanceret søgning</string>
+    <string name="filter.hint.text">Tekst indeholder</string>
+    <string name="filter.label.no_tags">Ikke-taggede</string>
+    <string name="filter.label.fav">Stjernemarkerede</string>
+    <string name="filter.label.platform">Platform</string>
+    <string name="filter.label.snippets">Uddrag</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Notater fra udklipsholder</string>
+    <string name="filter.clipboard.empty.title">Ryd notater fra udkliipsholder?</string>
+    <string name="filter.clipboard.empty.description">Alle notater fra udklipsholderen (undtagen stjernemarkerede og taggede) slettes permanent.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Papirkurv</string>
+    <string name="filter.deleted.limit">Maks. antal</string>
+    <string name="filter.deleted.empty.title">Tøm papirkurv?</string>
+    <string name="filter.deleted.empty.description">Alle notater i papirkurven slette permanent.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Maks. antal</string>
+    <string name="filter.limit.description">Når notatantallet overskrider kategorigrænsen, slettes de ældste notater automatisk.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Filternavn</string>
+    <string name="filter_error_name_required">Unikt navn kræves for at gemme dette filter</string>
+    <string name="filter_delete_title">Slet filteret \'%s\'?</string>
+    <string name="filter_delete_description">Filteret slettes permanent.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Unikt navn kræves for at gemme dette tag</string>
+    <string name="filter.tag.rule.title">Auto-tildel regel</string>
+    <string name="filter.tag.rule.description">Hvis aktiveret, tildeles nye notater indeholdende nogle af de kommaseparerede tekster automatisk dette tag.</string>
+    <string name="filter.tag.rule.hint">Kommasepareret tekst</string>
+    <string name="filter.tag.delete.title">Slet tagget \'%s\'?</string>
+    <string name="filter.tag.delete.description">Tagget slettes permanent.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Tilføj</string>
+    <string name="clip.hint.title">Unavngivet notat</string>
+    <string name="clip.hint.tags">Tryk hér for at tilføje et tag</string>
+    <string name="clip.hint.text">Tryk hér for at tilføje tekst</string>
+    <string name="clip.snackbar.text.required">Tekst kræves for at kunne gemme dette notat</string>
+    <string name="clip.snackbar.text.copied">Tekst kopieret til udklipsholder</string>
+    <string name="clip.attr.updated">Brugt</string>
+    <string name="clip.attr.edited">Redigeret</string>
+    <string name="clip.attr.created">Oprettet</string>
+    <string name="clip.attr.deleted">Slettet</string>
+    <string name="clip.attr.usageCount">Antal anvendelser</string>
+    <string name="clip.attr.charsCount">Tegn</string>
+    <string name="clip.attr.size">Størrelse</string>
+    <string name="clip_exit_without_save_title">Afbryd notatredigeringen?</string>
+    <string name="clip_exit_without_save_description">Alle ændring går tabt.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Gem som</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Generelt</string>
+    <string name="clip_details_tab_tags">Tags</string>
+    <string name="clip_details_tab_folder">Placering</string>
+    <string name="clip_details_tab_attachments">Vedhæftninger</string>
+    <string name="clip_details_tab_dynamic">Dynamiske værdier</string>
+    <string name="clip_details_tab_snippets">Uddrag</string>
+    <string name="clip_details_tab_snippet_kits">Uddragssæt</string>
+    <string name="clip_details_tab_dynamic_values">Værdier</string>
+    <string name="clip_details_tab_dynamic_fields">Felter</string>
+    <string name="clip_details_tab_attributes">Egenskaber</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Indsæt tekst i et notat</string>
+    <string name="clip.info.label.note.insert.remember">Husk mine valg og spørg ikke igen (panelet kan tilgås via et langt tryk).</string>
+    <string name="clip.info.label.note.create">Opret et notat</string>
+    <string name="clip.info.label.position">Placering</string>
+    <string name="clip.info.label.beginning">I starten</string>
+    <string name="clip.info.label.end">I slutningen</string>
+    <string name="clip.info.label.tags.edit">Redigér tags</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Simpel tekst</string>
+    <string name="clip.text.type.link">Tekst med links</string>
+    <string name="clip.text.type.line_clickable">Tekst med kopierede injer</string>
+    <string name="clip.text.type.word_clickable">Tekst med kopierede tokens</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Vedhæftning</string>
+    <string name="clip.add.attachment.tooltip">Vedhæftning kan være enhver filtype (foto, video, PDF mv.) på maks. %s MB.</string>
+    <string name="clip.add.dynamic.title">Dynamisk værdi</string>
+    <string name="clip.add.dynamic.tooltip">Dynamisk værdi er en måde at oprette noter med altid opdaterede data på. I visningstilstand erstattes den indsatte parameter med de faktiske data.</string>
+    <string name="clip.add.dynamic.value.date_time">Dato/Tid</string>
+    <string name="clip.add.dynamic.value.platform">Platform</string>
+    <string name="clip.add.dynamic.value.ip">IP-adresse</string>
+    <string name="clip.add.dynamic.value.date">Dato</string>
+    <string name="clip.add.dynamic.value.time">Klokkeslæt</string>
+    <string name="clip.add.dynamic.value.month">Måned</string>
+    <string name="clip.add.dynamic.value.timezone">Tidszone</string>
+    <string name="clip.add.dynamic.value.month_number">Månednr.</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Månednr. (inkl. indledende nul)</string>
+    <string name="clip.add.dynamic.value.year">År</string>
+    <string name="clip.add.dynamic.value.year_short">År (kort)</string>
+    <string name="clip.add.dynamic.value.hour24">Time (24-timers ur)</string>
+    <string name="clip.add.dynamic.value.hour12">Time (12-timers ur)</string>
+    <string name="clip.add.dynamic.value.minutes">Minutter</string>
+    <string name="clip.add.dynamic.value.seconds">Sekunder</string>
+    <string name="clip.add.dynamic.value.am_pm">AM/PM</string>
+    <string name="clip.add.dynamic.value.day_of_week">Ugedag</string>
+    <string name="clip.add.dynamic.value.day_of_month">Månedsdag</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Månedsdag (inkl. indledende nul)</string>
+    <string name="clip.add.dynamic.value.random_digit">Tilfældigt ciffer (0–9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Tilfældige latinske bogstaver (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Uddrag</string>
+    <string name="clip.add.snippet.new.hint">Angiv tekst for at finde/oprette</string>
+    <string name="clip.add.snippet.tooltip">Uddrag er et ethvert notat, hvis tekst kan genbruges i et andet vilkårligt notat, men redigeres fra ét notat. Oprettede uddrag kan tilgås fra venstre navigationsskuffe.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Teksttype</string>
+    <string name="text.config.size">Tekststørrelse</string>
+    <string name="text.config.font">Tekstskrifttype</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Sortér efter</string>
+    <string name="list.config.lines">Synlige tekstlinjer</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Listestil</string>
+    <string name="list.style.description">Notatlistestil</string>
+    <string name="list.style.default">Standard</string>
+    <string name="list.style.comfortable">Behagelig</string>
+    <string name="list.style.compact">Kondenseret</string>
+    <string name="list.style.preview">Forhåndsvisning</string>
+    <string name="list.style.grid">Gitter</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Færdighedsruner</string>
+    <string name="runes.hint.description"><![CDATA[    Dette er en form for forbedring af app-funktionaliteten.
+     \n\n
+     Hver rune udvider/ændrer den grundlæggende funktionalitet og muliggør app-tilpasning mhp. at opnå den mest optimale produktivitet.
+     \n\n
+     Visse runer er mere nyttige end andre, men denne tilgang gør appens muligheder næsten ubegrænsede.
+     \n\n
+     Tjek de eksisterende runer, aktivér de ønskede og indsend idéer til nye for at gøre appen lidt mere produktiv :-)
+    ]]></string>
+    <string name="runes_hotkeys_title">Genvejstastobservatør</string>
+    <string name="runes_hotkeys_description"><![CDATA[    Med denne rune kan genvejstaster opsættes til at styre appen og handlingerne heri.
+     \n
+     \n
+     Nogle genvejstaster er opsat som standard. Disse kan enten ryddes eller genopsættes.
+     \n
+     \n
+     ```
+     \n
+     Afhængigt af handlingen overvåges genvejstasten enten af selve appen eller på systemniveau.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Astral Synk</string>
+    <string name="runes.instant_sync.description"><![CDATA[    Runen muliggør at:
+     \n
+     - automatisk gemme alle data i skyen;
+     \n
+     - straks at adgang til dem på enhver anden enhed;
+     \n
+     - gem ikke kun tekstnotater, men også filer i ethvert format;
+     \n\n
+     Som standard fungerer appen uden synk og gemmer alle data på enheden.
+     \n
+     ```
+     \n
+     Når denne rune er aktiveret, synkes alle tidligere oprettede og nye data automatisk til skyen, så snart en Internetforbindelse er tilgængelig.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Skjold</string>
+    <string name="runes.pincode.description"><![CDATA[    Runen muliggør at adgangbeskytte appen med en adgangskode.
+     \n\n
+     Når aktiveret, blokeres adgangen efter **%s minutters** inaktivitet.
+     \n\n
+     **Vigtigt:** Glemmes adgangskoden, skal appen enten af- og geninstalleres, eller alle dens data skal ryddes. Alle usynkede ændringer mistes i så fald.
+    ]]></string>
+    <string name="runes.theme.title">Kamæleonskind</string>
+    <string name="runes.theme.description"><![CDATA[    Appen bruger som standard et farveskema, der automatisk skifter mellem lys og mørkt afhængigt af systemindstillingerne.
+     \n\n
+     Ethvert andet tema, med samme udseende uanset systemindstillingerne, kan aktiveres.
+    ]]></string>
+    <string name="runes.clipboard.title">Udklipsholder</string>
+    <string name="runes.clipboard.description"><![CDATA[    Runen giver appen mulighed for at monitere udklipsholderen og automatisk oprette notater med tekst fra herfra.
+     \n\n
+     Når aktiveret, viser appen en permanent notifikation på statusbjælken for at kunne monitere bufferen.
+     \n\n
+     ```
+     \n
+     Vise notifikationen ikke, kører appen ikke, og bufferen moniteres ikke, før appen igen eksekveres.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Tastaturhjælper</string>
+    <string name="runes.texpander.description"><![CDATA[    Runen muliggør brug af appen til at udfylde indtastningsfelter med eksisterende notater i næsten **enhver app**.
+    \n\n
+    Når aktiveret, viser appen et flydende panel med handlinger, som muliggør at kontrollere input i det indtastningsfelt, der fokuseres på.
+    \n\n
+    #### Adfærdsfunktioner:
+    \n
+    - panelet kan ændres;
+    \n\n
+    - panelet kan trækkes til hvor som helst på skærmen;
+    \n
+    - panelet kan automatisk ændres afhængigt af muligheden for at bruge visse handlinger;
+    \n
+    - panelet kan automatisk skjules, hvis feltet mister fokus;
+    \n
+    - panelet kan skjules manuelt (vha. øverste højre handling på værktøjsbjælken), indtil det kaldes frem igen;
+    \n
+    - hvis panelet ikke vises, kan det manuelt kaldes frem via Notifikationspanelet eller Hurtigindstillinger (hvis Flisen er placeret i panelet);
+    \n\n
+    #### Tekniske begrænsninger:
+    \n
+    - panelet bruger tilgængelighedstjeneste og kræver aktivering i systemindstillingerne
+    \n
+    - panelet bruger et flydende vindue til visning over andre apps og kræver den korresponderende tilladelse i systemindstillingerne;
+    \n
+    - i visse apps er panelets automatiske adfærd ikke mulig og kan kun bruges med begrænsninger og manuelt kaldes frem;
+    \n\n
+    #### Bemærk:
+    \n
+    Holder runen efter et stykke rid op med at fungere, så tjek [denne artikel](%s) om, hvordan appen holdes kørende på din enhed. Alternative, kontakt mig via e-mail, måske har du lokaliseret et problem:-)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Aktivér</string>
+    <string name="runes.texpander.required.accessibility">Tryk hér, gå derefter til Downloadede (installerede) tjenester og aktivér Tastaturhjælpertjenesten.</string>
+    <string name="runes.texpander.required.floating">Tryk hér, gå derefter til Andre tilladelser og aktivér tilladelsen Vis pop op-vindue.</string>
+    <string name="runes.texpander.action.copy">Kopiér til udklipsholder</string>
+    <string name="runes.texpander.action.show">Tryk hér for at vise det flydende panel.</string>
+    <string name="runes.texpander.action.insert">Indsæt</string>
+    <string name="runes.texpander.action.replace">Erstat</string>
+    <string name="runes.texpander.hint.hide">Skjul indtil kaldt frem via Notifikationspanelet eller Hurtigindstillinger.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">Okular</string>
+    <string name="runes.link_preview.description"><![CDATA[    Når denne rune er aktiveret, vil gemte **http-links** forsøge at indlæse deres forhåndsvisning i tilstanden notatevisning.
+     \n\n
+     Herved:
+     \n
+     - kan eksempelbilledet åbnes i et separat vindue og zoomes ind;
+     \n
+     - Er linket er en video, kan denne afspilles med appen;
+    ]]></string>
+    <string name="runes.auto_save.title">Ingen vej tilbage</string>
+    <string name="runes.auto_save.description"><![CDATA[    Når et notet oprettes/redigeres, skal der som standard manuelt klikke på knappen Gem for at bekræfte evt. ændringer.
+     \n
+     \n
+     Med denne rune gemmer appen automatisk de foretagne ændringer, mens der redigeres tekst.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Genopliv</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    Med denne rune gendanner appen ved opstart det sidste aktive filter fra den foregående session.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Strygestyring</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    Denne rune muliggør opsætning af strygegestushandlinger for enhver note i notelisten.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Skiftet fokus</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    Ved notatoprettelse sættes fokus som standard på tekstinputfeltet.
+     \n\n
+     Denne rune kan bruges til at ændre fokusadfærden (til ethvert andet felt).
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Kopieringsskift</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    Når runen er aktiveret, vil enhver tekstkopieringshandling i Clipto skkule selve appen (undtagen kontekstuelle handlinger i inputfelter).
+     \n
+     \n
+     Dette muliggør at minimere antallet af trin ifm. at indsætter kopieret tekst uden for appen.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Tentative Steps</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Vha. denne rune kan valgte valgte handlinger sættest til aktivering med dobbelttryk i stedet for enkelttryk.
+     \n
+     \n
+     Denne adfærd kan være nyttig til at forhindre utilsigtede klik.
+    ]]></string>
+    <string name="runes.loyalty.title">Inspirerende support</string>
+    <string name="runes.loyalty.description"><![CDATA[    Uden din støtte og feedback vil produktet ikke udvikle sig i den rigtige retning for brugerne.
+     \n\n
+     >** Har du et minuts tid**, så glem ikke at bedømme os på Google Play.
+     \n
+     \n
+     >**Har du mere tid, og oversættelsen ikke ser rigtig ud**- så tilmeld dig vores lokaliseringsprojekt.
+     \n
+     \n
+     >**Finder du fejl, ønsker flere runer eller blot vil skrive til os** - stårr vores e-mail og github-side altid til din rådighed.
+    ]]></string>
+    <string name="runes.backup_restore.title">Tidsmaskine</string>
+    <string name="runes.backup_restore.description"><![CDATA[    Ud over skysynk kan du manuelt gemme sikkerhedskopier af dine data til senere gendannelse.
+     \n\n
+     I modsætning til skysynk, muliggør denne fremgangsmåde at:
+     \n
+     - tage et snapshot af alle data på et givent tidspunkt;
+     \n
+     - håndtere hele sikkerhedskopierings- og gendannelsesprocessen selv
+     \n
+     - gendanne alle data baseret på det tidligere gemte data-snapshot;
+     \n\n
+     ```
+     \n
+     Gendannelse fra en fil sker i en "blød" tilstand, dvs., at de eksisterende data ikke slettes, men kun suppleres med nye data.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Indstillinger</string>
+    <string name="settings.campaign.rate.title">Dit mening er vigtigt</string>
+    <string name="settings.campaign.rate.message">Det tager mindre end et minut, men har en varig indvirkning på vores fremtidige forbedring.</string>
+    <string name="settings.campaign.rate.button">Bedøm på Google Play</string>
+    <string name="settings.campaign.rate.question">Hvordan var din oplevelse af Clipto?</string>
+    <string name="settings.campaign.rate.feedback.title">Feedback</string>
+    <string name="settings.campaign.rate.feedback.message">Kan du fortælle os, hvordan vi kan forbedre Clipto? Din mening er meget vigtig.</string>
+    <string name="settings.campaign.rate.feedback.toast">Kan du give en god anmeldelse på Google Play? Tak for din støtte!</string>
+    <string name="settings.campaign.share.title">Få en bonus ved at dele Clipto med dine venner!</string>
+    <string name="settings.campaign.share.more">Find ud af mere</string>
+    <string name="settings.campaign.share.action">Del linket</string>
+    <string name="settings.group.clipboard">Udklipsholder</string>
+    <string name="settings.group.behavior">Adfærd</string>
+    <string name="settings.group.appearance">Udseende</string>
+    <string name="settings.group.backup">Sikkerhedskopiering og Gendannelse</string>
+    <string name="settings.group.security">Fortrolighed og Sikkerhed</string>
+    <string name="settings.group.runes">Runer</string>
+    <string name="settings.link_preview.title">Forhåndsvis links</string>
+    <string name="settings.auto_save.title">Gem notater automatisk</string>
+    <string name="settings.auto_save.description">Appen gemmer automatisk ændringer under notatoprettelse eller -redigering.</string>
+    <string name="settings.focus_on_title.title">Fokusér på titlen ved notatoprettelse</string>
+    <string name="settings.focus_on_title.description">Ved notatoprettelse, sættes fokus på titelfeltet</string>
+    <string name="settings.track_clipboard.title">Notater fra udklipsholder</string>
+    <string name="settings.track_clipboard.description">Mens appen kører, opretter den automatisk notater fra tekst kopieret til udklipsholderen. En statisk notifikation placeres på statusbjælken for hurtig adgang.</string>
+    <string name="settings.track_clipboard.q.message">Fra og med Android Q, brug vores nye fremgangsmåde til at oprette notater fra udklipsholderen.</string>
+    <string name="settings.track_clipboard.q.description">Fra og med Android Q er det kun den app, der pt. har fokus, der har adgang til udklipsholderdata.</string>
+    <string name="settings.track_clipboard.q.solution.title">For at omgå denne restriktion, så brug en af flg. løsninger:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">\'Clipto…\'-handling i stedet for \'Kopiér\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Når teksten, der skal kopieres, er valgt, så brug handlingen \'Clipto…\' i stedet for \'Kopiér\', hvis den er tilgængelig fra kontekstmenuen i den aktive app.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Standard \'Kopiér\'-handling i kombination med\' Indsæt\' i notifikationsområdet</string>
+    <string name="settings.track_clipboard.q.solution.2">Er \'Clipto…\'-handlingen utilgængelig eller en standard \'Kopiér\'-handling ønskes brugt, så glem ikke at trykke på knappen \'Indsæt\' i notifikationen for at oprette et notat fra de aktuelle udklipsholderdata.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Standard \'Kopiér\'-handling, som den var før Android Q</string>
+    <string name="settings.track_clipboard.q.solution.3">Denne løsning kræver avanceret opsætning af appen via en computer. For at få Clipto til at fungere igen, så eksekvér flg. ADB-kommandoer på din computer:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Efter vellykket eksekvering, bør den ekstra handling ses i appens tilpassede notifikationer, der muliggør at slå monitering af udklipsholderen til/fra. Desuden forsvinder denne advarsel fra indstillingerne.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Emulér Kopiér-handling</string>
+    <string name="settings.track_clipboard.q.emulate.description">Ved tryk på den tilpassede \'Clipto…\'- eller \'Indsæt\'-handling, opretter appen straks et notat med teksten fra udklipsholderen uden først at vise en bekræftelsesdialog.</string>
+    <string name="settings.universal_clipboard.title">Universal udklipsholder</string>
+    <string name="settings.universal_clipboard.description">Enhver tekst kopieret til udklipsholderen synkes på tværs af alle dine enheder og indsættes også automatisk i enhedens udklipsholder, når denne indstilling er aktiveret.</string>
+    <string name="settings.notification_style.title">Notifikationsstil</string>
+    <string name="settings.notification_style.description">Notifikationsstilen, der skal bruges til en permanent statusbjælkenotifikation.</string>
+    <string name="settings.notification_sound.title">Tavsgjorte notifikationer</string>
+    <string name="settings.notification_sound.description">Tavsgør notifikationer uanset de lyde/vibrationer, som er opsat for notifikationen eller notifikationskanalen.</string>
+    <string name="settings.hide_on_click.title">Skjul ved Kopiér</string>
+    <string name="settings.hide_on_click.description">Appen skjules efter kopiering af et notat.</string>
+    <string name="settings.restore_filter.title">Husk seneste filter</string>
+    <string name="settings.restore_filter.description">Appen åbnes med filteret fra den seneste session.</string>
+    <string name="settings.pin_starred.title">Fastgør stjernemarkerede notater</string>
+    <string name="settings.pin_starred.description">Stjernemarkerede notater vises først på listen, uanset valgte filter.</string>
+    <string name="settings.theme.title">Tema</string>
+    <string name="settings.theme.description">Vælg tilpassede farveskemaer.</string>
+    <string name="settings.backup.title">Sikkerhedskopiér til fil</string>
+    <string name="settings.backup.description">Eksportere dine notater til en fil.</string>
+    <string name="settings.restore.title">Gendanne fra fil</string>
+    <string name="settings.restore.description">Gendanne notater fra en fil (understøttede formater: %s).</string>
+    <string name="settings.startup.title">Kør ved opstart</string>
+    <string name="settings.startup.description">Tillader, at appen selv starter efter system-boot.</string>
+    <string name="settings.language.title">Sprog</string>
+    <string name="settings.swipe_actions.title">Stryge-handlinger</string>
+    <string name="settings.swipe_actions.description">Opsæt stryge-handlinger for hurtigt at reagere på notater i hovedlisten.</string>
+    <string name="settings.double_click.title">Dobbelttryk-handlinger</string>
+    <string name="settings.double_click.description">Opsæt handlinger, som kun skal eksekveres vha. dobbelttryk.</string>
+    <string name="settings.double_click.action.exit">Tilbage-knap afslutter appen</string>
+    <string name="settings.double_click.action.delete">Slet notat</string>
+    <string name="settings.double_click.action.edit">Redigér notat</string>
+    <string name="settings.double_click.toast">Dobbelttryk for at eksekvere</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Vis ikke ændrede notater</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Notater, med tildelte attributterne (tag, favoritflag, titel, uddrag), vises ikke i kategorien \'Notater fra udklipsholder\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Vis ikke advarsel om udklipsholderrestriktioner</string>
+    <string name="settings.clipboard.ignore_q_warning.description">Er appen opsat og fungerer korrekt med enhedens udklipsholderen, så aktivér denne omskifter for at fjerne funktionelle begrænsninger fra notifikationer.</string>
+    <string name="settings.security.passcode.title">Adgangskode</string>
+    <string name="settings.security.passcode.description">Når der opsættes en adgangskode, låses appen efter %s minutters inaktivitet.\n\nBemærk: Glemmes adgangskoden, skal app-dataene ryddes, hvilket vil betyde tab af alle ikke-synkede ændringer.</string>
+    <string name="settings.security.fingerprint.title">Oplås med fingeraftryk</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Overspring</string>
+    <string name="auth.set_passcode.label.set_passcode">Opsæt en adgangskode for hurtig og sikker adgang til appen</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Gentag adgangskoden</string>
+    <string name="auth.set_fingerprint.title">Opsæt Berørings-ID</string>
+    <string name="auth.set_fingerprint.subtitle">Brug fingeraftrykssensoren til at oplåse appen?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Brug fingeraftryk</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Overspring for nu</string>
+    <string name="auth.fingerprint.touch_sensor">Bekræft fingeraftryk for at fortsætte</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Angiv aktuelle adgangskode</string>
+    <string name="change_passcode.set_new">Opret ny adgangskode</string>
+    <string name="change_passcode.reenter">Gentag adgangskoden</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Support</string>
+    <string name="about.label.email.support.message">SKRIV DIN BESKED HÉR</string>
+    <string name="about.label.rate">Bedøm os på Google Play</string>
+    <string name="about.label.issue">Anmeld et problem</string>
+    <string name="about.label.translate">Hjælp os med oversættelse</string>
+    <string name="about.label.changelog">Ændringslog</string>
+    <string name="about.label.campaign.rate">Hjælp os med at blive bedre!</string>
+    <string name="about.label.campaign.share">Del app-link</string>
+    <string name="about.label.campaign.share.description">%s personer har tilmeldt sig appen via dit link.</string>
+    <string name="about.label.other">Hvad andre siger om os</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Log ind for at gemme dine notater i skyen og holde dem synket på tværs af alle dine enheder.</string>
+    <string name="account.title.required_authorization">Godkendelse kræves</string>
+    <string name="account.description.required_authorization">Godkendelse kræves for at eksekvere denne handling</string>
+    <string name="account.title.authorized">Godkedt</string>
+    <string name="account.button.sign_in">Log ind</string>
+    <string name="account.button.sign_out">Log ud</string>
+    <string name="account.dialog.sign_out.title">Logger ud</string>
+    <string name="account.dialog.sign_out.message">Sikker på, at du vil logge ud af appen? Alle ikke-synkede data vil gå tabt.</string>
+    <string name="account.plan.personal">Personlig licens</string>
+    <string name="account.plan.subscription">Abonnementsplan (synk %s% notater)</string>
+    <string name="account.plan.contributor">Bidragsplan (synk %s% notater)</string>
+    <string name="account.plan.yearly">Årlig abonnementsplan (synk %s% notater)</string>
+    <string name="account.plan.monthly">Månedlig abonnementsplan (synk %s% notater)</string>
+    <string name="account.plan.free">Grundabonnementsplan (synk %s% notate)</string>
+    <string name="account.toolbar.title">Konto</string>
+    <string name="account.sync.title">Synk notater automatisk</string>
+    <string name="account_rebuild_index_title">Genopbyg dataindeks</string>
+    <string name="account_rebuild_index_description">Ses forskellige data (tags, filer, notater mv.) på forskellige enheder, anbefales det at udføre denne procedure. Der skal logges på igen, når proceduren er fuldført.</string>
+    <string name="account_delete_title">Slet konto</string>
+    <string name="account_delete_confirm_title">Slet din konto?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    BEMÆRK! Trykker du på SLET nedenfor, slettes din konto og personlige data
+    permanent og irreversibelt, så vær sikker på, at kontoen ikke indeholder vigtige data/oplysninger.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Helt sikker?</string>
+    <string name="account_delete_confirm_again_description">Trykker du BEKRÆFT, slettes alle dine kontodata permanent.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Gratis</string>
+    <string name="account.sync.plan.title">Synk %s notater</string>
+    <string name="account.sync.plan.toolbar">Vælg abonnementsplan</string>
+    <string name="account.sync.plan.button.active">Aktiv abonnementsplan</string>
+    <string name="account.sync.plan.button.select">Vælg abonnementsplan</string>
+    <string name="account.sync.plan.button.change">Skift abonnementsplan</string>
+    <string name="account.sync.plan.button.upgrade">Opgradér</string>
+    <string name="account.sync.plan.caption">Start gratis, betal kun for synket data.</string>
+    <string name="account.sync.plan.hint">Notatantal, som kan synkes på tværs af enheder (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Ubegrænset antal af offlinenotater.</string>
+    <string name="account.sync.plan.benefit.sync">Synk %s notater på tværs af alle dine enheder.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Synk er inaktiv, da grænsen er nået</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">Det samlede notatantal, inkl. papirkurven, udgør %s, hvilket er over den tilladte grænse på %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Reducér notatantallet for at vælge denne abonnementsplan.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Grænsen for abonnementsplanen er nået. Appen er stadig fuldt funktionel offline uden begrænsninger. Cloud-synk er dog deaktiveret på enheden, indtil kontoen opgraderes eller notatantallet reduceres til grænsen for den aktive abonnementsplan.</string>
+    <string name="account.sync.plan.contributor">Har du bidraget til app-oversættelsen eller støtter produktet løbende, så kontakt os for at opgradere din konto.</string>
+    <string name="sync.free_limit_concept">Gratisgrænsen er ikke fast, men kan ændres op/ned afhængigt af forskellige faktorer.</string>
+    <string name="sync.off.title">Notatet er ikke synket mellem forskellige enheder</string>
+    <string name="sync.off.multiple.title">Notaterne er ikke synket mellem forskellige enheder</string>
+    <string name="sync.off.caption">Dette er muligt pga. en af flg. årsager:</string>
+    <string name="sync.off.reason.universal_clipboard">Universaludklipsholderen blev ikke aktiveret, da appen oprettede dette notat.</string>
+    <string name="sync.off.reason.manual_off">Synk er manuelt blevet slået fra.</string>
+    <string name="sync.warning.title">Funktionalitet bruger cloud-synk</string>
+    <string name="sync.warning.description">Cloud-synk er ikke helt gratis og kan deaktiveres på enheden, indtil kontoen opgraderes eller notatantallet reduceres til grænsen for den aktive abonnementsplan.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Hurtighandlinger</string>
+    <string name="fast_actions.compose_email">Skriv en e-mail</string>
+    <string name="fast_actions.send_message">Send en ny besked</string>
+    <string name="fast_actions.compose_sms">Skriv en SMS</string>
+    <string name="fast_actions.twitter_post">Skriv et Tweet</string>
+    <string name="fast_actions.web_search">Websøgning</string>
+    <string name="fast_actions.google_translate">Google Oversæt</string>
+    <string name="fast_actions.google_maps_search">Google Maps-søgning</string>
+    <string name="fast_actions.wiki_search">Wikipedia-søgning</string>
+    <string name="fast_actions.youtube_search">YouTube-søgning</string>
+    <string name="fast_actions.duckduckgo_search">DuckDuckGo-søgning</string>
+    <string name="fast_actions.stackoverflow_search">Stack Overflow-søgning</string>
+    <string name="fast_actions.reddit_search">Reddit-søgning</string>
+    <string name="fast_actions.play_url">Afspil et medielink</string>
+    <string name="fast_actions.send_as_file">Send som fil</string>
+    <string name="fast_actions.send_as_txt_file">Send som TXT</string>
+    <string name="fast_actions.send_as_pdf_file">Send som PDF</string>
+    <string name="fast_actions.send_as_md_file">Send som markdown</string>
+    <string name="fast_actions.export_to_file">Eksportere til fil</string>
+    <string name="fast_actions.export_to_file.success">Eksporter som %s</string>
+    <string name="fast_actions.calendar_event">Tilføj en kalenderbegivenhed</string>
+    <string name="fast_actions.copy">Kopiér til udklipsholder</string>
+    <string name="fast_actions.copy_clear">Ryd fra udklipsholder</string>
+    <string name="fast_actions.tts">Tekst til tale</string>
+    <string name="fast_actions.tts.max_length">Tekstlængde kan ikke overstige %s tegn</string>
+    <string name="fast_actions.share">Del via…</string>
+    <string name="fast_actions.send_as_qrcode">Send som QR-kode</string>
+    <string name="fast_actions.dial_number">Ring et nummer op</string>
+    <string name="fast_actions.insert_contact">Indsæt en kontakt</string>
+    <string name="fast_actions.insert_contact_email">Gem kontakt e-mail</string>
+    <string name="fast_actions.insert_contact_phone">Gem kontaktelefonnr.</string>
+    <string name="fast_actions.open_url">Åbn en webside</string>
+    <string name="fast_actions.short_link">Forkort linket</string>
+    <string name="fast_actions.more">Vis flere</string>
+    <string name="fast_actions.error">Uventet fejl: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Standard</string>
+    <string name="theme.sepia">Mørkebrun</string>
+    <string name="theme.dark">Mørk</string>
+    <string name="theme.dark_blue">Mørkeblå</string>
+    <string name="theme.dark_green">Mørkegrøn</string>
+    <string name="theme.dark_blurple">Mørkviolet</string>
+    <string name="theme.black">AMOLED-sort</string>
+    <string name="theme.green">Grøn</string>
+    <string name="theme.white">Hvid</string>
+    <string name="theme.pink">Lyserød</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Brugsdata</string>
+    <string name="sort_order.modify_date">Redigeringsdato</string>
+    <string name="sort_order.create_date">Oprettelsesdato</string>
+    <string name="sort_order.delete_date">Sletningsdato</string>
+    <string name="sort_order.usage_count">Brugsantal</string>
+    <string name="sort_order.title">Titel</string>
+    <string name="sort_order.text">Tekst</string>
+    <string name="sort_order.tags">Tags</string>
+    <string name="sort_order.size">Størrelse</string>
+    <string name="sort_order.name">Navn</string>
+    <string name="sort_order.notes_count">Notatantal</string>
+    <string name="sort_order.color">Farve</string>
+    <string name="sort_order.manual">Manuel</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Udført</string>
+    <string name="backup.fail.title">Fejlet</string>
+    <string name="backup.fail.message">Uventet fejl: %s</string>
+    <string name="restore.success.title">Udført</string>
+    <string name="restore.fail.title">Fejlede</string>
+    <string name="restore.fail.message">Uventet fejl: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Sikker på, at dette vindue skal lukkes?</string>
+    <string name="clip.multiple.exit_without_save.description">Enhver foretaget ændring går tabt.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Almindelige tags</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Adskiller</string>
+    <string name="clip.multiple.merge.separator.line">Linjeskift</string>
+    <string name="clip.multiple.merge.separator.space">Mellemrum</string>
+    <string name="clip.multiple.merge.separator.other">Andet</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Kontroller</string>
+    <string name="notification.style.history">Udklipsholderhistorik</string>
+    <string name="notification.style.actions">Udklipsholderhandlinger</string>
+    <string name="notification.track_clipboard.pause">Monitering af udklipsholder er pauseret</string>
+    <string name="notification.track_clipboard.resume">Monitering af udklipsholder er genoptaget</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Vedhæftninger</string>
+    <string name="attachments.type.photo">Tag foto</string>
+    <string name="attachments.type.record">Optag video</string>
+    <string name="attachments.type.file">Vælg fil</string>
+    <string name="attachments.attr.created">Oprettet</string>
+    <string name="attachments.attr.name">Navn</string>
+    <string name="attachments.attr.type">Type</string>
+    <string name="attachments.attr.path">Sti</string>
+    <string name="attachments.attr.size">Størrelse</string>
+    <string name="attachments.state.downloaded">Downloadet</string>
+    <string name="attachments.state.uploaded">Uploadet</string>
+    <string name="attachments.state.downloading">Downloader…</string>
+    <string name="attachments.state.uploading">Uploader…</string>
+    <string name="attachments.label.insert">Føj til notat</string>
+    <string name="attachments.label.download_url">Offentlig URL vil være tilgængelig efter filupload.</string>
+    <string name="contribute.annual.offer">Afbryd når som helst via Google Play Abonnementscenter.</string>
+    <string name="contribute.monthly.period">måned</string>
+    <string name="contribute.annual.period">år</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Afslut</string>
+    <string name="desktop.tray.show">Vis</string>
+    <string name="desktop.tray.show_in_taskbar">Vis på procesbjælken</string>
+    <string name="desktop.update.action.download">Download</string>
+    <string name="desktop.update.action.later">Senere</string>
+    <string name="desktop.update.title">Ny version tilgængelig</string>
+    <string name="desktop.shortcuts.title">Genvejstaster</string>
+    <string name="desktop.shortcuts.dialog.define">Definér genvejstaster</string>
+    <string name="desktop.shortcuts.showHideApp">Vis/Skjul app</string>
+    <string name="desktop.shortcuts.modeFullscreen">Skift til/fra fuldskærmstilstannd</string>
+    <string name="desktop.shortcuts.modeComfortable">Skift til/fra komfortabel tilstand</string>
+    <string name="desktop.shortcuts.modeCompact">Skift til/fra kompakt tilstand</string>
+    <string name="desktop.shortcuts.tagNext">Næste tag</string>
+    <string name="desktop.shortcuts.tagPrev">Foregående tag</string>
+    <string name="desktop.shortcuts.noteNext">Næste notat</string>
+    <string name="desktop.shortcuts.notePrev">Foregående notat</string>
+    <string name="desktop.shortcuts.noteNew">Nyt notat</string>
+    <string name="desktop.shortcuts.noteSave">Gem notat</string>
+    <string name="desktop.shortcuts.noteDelete">Slet notat</string>
+    <string name="desktop.shortcuts.noteCopy">Kopiér notat</string>
+    <string name="desktop.shortcuts.notePrint">Udskriv notat</string>
+    <string name="desktop.shortcuts.noteFind">Søg efter notater</string>
+    <string name="desktop.shortcuts.noteOpen">Åbn notat</string>
+    <string name="desktop.shortcuts.noteEdit">Redigér notat</string>
+    <string name="desktop.shortcuts.contextModeSelect">Markér notat</string>
+    <string name="desktop.shortcuts.contextModeCancel">Afnarkér alle notater</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Markér alle notater</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Gem fra udklipsholder</string>
+    <string name="desktop.attachments.browse">Drop filer for at vedhæfte, eller gennemse.</string>
+    <string name="desktop.main.content.under.development">Indhold under udvikling…</string>
+    <string name="desktop.main.menu.download">Download</string>
+    <string name="desktop.main.menu.download.for">Download til %s</string>
+    <string name="desktop.main.menu.download.android.apk">Hent universal APK-installation</string>
+    <string name="desktop.main.menu.resources">Ressourcer</string>
+    <string name="desktop.main.menu.open">Åbn Clipto i din browser</string>
+    <string name="desktop.main.features.title.1">Skriv nemt og hurtigt på enhver enhed.</string>
+    <string name="desktop.main.features.title.2">Alt-i-en notesblok og udklipsholderhåndtering med fokus på hastighed og produktivitet, der fungerer på både computer og mobil.</string>
+    <string name="desktop.main.features.title.3">Din personlige skriveassistent.</string>
+    <string name="desktop.main.features.title.4">En komplet løsning til praktisk og effektivt arbejde med notater, uddrag, udklipsholder, filer og anden information, hvor hurtig adgang via enhver enhed er vigtig.</string>
+    <string name="desktop.main.features.title.5">Hvad gør Clipto til noget særligt?</string>
+    <string name="desktop.get_started.language">Vælg sprog</string>
+    <string name="desktop.get_started.theme">Vælg tema</string>
+    <string name="desktop.auth.instruction">Godkendelsesinstruktion</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Skan stregkode</string>
+    <string name="barcode.prompt.point_at_a_barcode">Ret kameraet mod stregkoden</string>
+    <string name="barcode.prompt.hold_camera_steady">Hold kameraet stille et øjeblik</string>
+    <string name="barcode.prompt.move_camera_closer">Gå tættere på for at søge</string>
+    <string name="barcode.prompt.searching">Søger…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Skrifttypeanmodning mislykkedes grundet: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Offentligt link</string>
+    <string name="public.note.link.time.label">På et bestemt tidspunkt</string>
+    <string name="public.note.link.time.or">eller</string>
+    <string name="public.note.link.time.type.seconds">sekunder</string>
+    <string name="public.note.link.time.type.minutes">minutter</string>
+    <string name="public.note.link.time.type.hours">timer</string>
+    <string name="public.note.link.time.type.days">dage</string>
+    <string name="public.note.link.access_time">Adgangstid</string>
+    <string name="public.note.link.access_time.description">Hvis indstillet, vil linket kun være tilgængeligt efter et bestemt tidsrum efter dets oprettelse eller efterfølgende opdatering.</string>
+    <string name="public.note.link.access_time.label">Vil være tilgængeligt om</string>
+    <string name="public.note.link.access_password">Adgangskode</string>
+    <string name="public.note.link.access_password.hint">Adgangskodetip (valgfrit)</string>
+    <string name="public.note.link.access_password.placeholder">Adgangskode</string>
+    <string name="public.note.link.access_password.description">Hvis indstillet, vil linket kun være tilgængeligt efter adgangskodebekræftelse.</string>
+    <string name="public.note.link.time_to_expire">Udløbstid</string>
+    <string name="public.note.link.time_to_expire.description">Hvis indstillet, er linket gyldigt i et angivet tidsrum efter oprettelse eller efterfølgende opdatering.</string>
+    <string name="public.note.link.time_to_expire.label">Udløber om</string>
+    <string name="public.note.link.one_time_opening">Engangsåbning</string>
+    <string name="public.note.link.one_time_opening.description">Hvis indstillet, vil linket kun være tilgængeligt for én åbning regnet fra oprettelsestidspunktet eller senere opdatering.</string>
+    <string name="public.note.link.action.remove">Fjern link</string>
+    <string name="public.note.link.action.remove.confirm.title">Fjern link?</string>
+    <string name="public.note.link.action.remove.confirm.description">Link vil ikke længere være tilgængeligt.</string>
+    <string name="public.note.link.action.create">Opret link</string>
+    <string name="public.note.link.state.unavailable">Utilgængeligt</string>
+    <string name="public.note.link.state.postponed">Vil blive tilgængeligt om:</string>
+    <string name="public.note.link.state.expires_in">Udløber om %s</string>
+    <string name="public.note.link.state.expired">Udløbet</string>
+    <string name="public.note.link.state.locked">Låst</string>
+    <string name="public.note.link.state.locked.wrong_password">Forkert adgangskode.</string>
+    <string name="about.policy">Fortrolighedspolitik</string>
+    <string name="about.toc">Tjenestevilkår</string>
+    <string name="about_pricing">Pricing</string>
+    <string name="site.integrations.title">Integrationer</string>
+    <string name="site.integrations.zapier.title">Zapier-integration</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Forbind Clipto med Zapier, og kør dine arbejdsgange i lynhurtigt tempo.
+\n
+## Din udklipsholder som en arbejdsgangsudløser
+\n
+Den hurtigste måde at gemme vigtige oplysninger på er at vælge og kopiere dem.
+\n
+For at begynde at bruge denne funktionalitet med Zapier, så følg blot disse trin:
+\n
+1. Opsæt i Zapier-udløseren **Tekst kopieret til udklipsholder**.
+\n
+2. Installér Clipto på enheden (mobil, computer) og **log ind** med den samme konto
+\n
+3. Åbn Clipto og aktivér indstillingerne **Notater fra udklipsholder** samt **Universaludklipsholder**
+\n
+4. Det er alt. Man kan nu bruge standardkombinationen **Ctrl + C** (eller Kopiér i genvejsmenuen) til at aktivere en arbejdsgang med kopieret tekst.
+    ]]></string>
+    <string name="faq.title">FAQ</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[     **Notater** hjælper dig til at gemme vigtige tekstoplysninger og tilgå dem med det samme når som helst på enhver enhed.
+     \n
+     \n
+     Som standard er alle notater opdelt i flere kategorier for hurtig tilgang til de rigtige, baseret på forskellige attributter.
+     \n
+     `````
+     \n
+     Alle notater downloades til enheden ved første indlogning.
+     \n
+     \n
+     Evt. ændringer synkes, så snart Internet er tilgængeligt.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filtre** hjælper med hurtigere at finde de ønskede oplysninger vha. færdige søgeskabeloner.
+     \n
+     `````
+     \n
+     En søgeskabelon kan indeholde forskellige kombinationer af tags, tidsintervaller, tekster, sorterings- og displayregler mv.
+     \n
+     \n
+     Derfor, når en sådan kombination gemmes som et filter, er det meget lettere at hente de data, man kigges efter, ved at tilgår dette igen.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Hvert filter har sine egne indstillinger til visning af data på listen.
+     \n
+     - Er beskrivelsen angivet, vises den i stedet for dette tip.
+     \n
+     - Filterindstillingerne synkes på tværs af alle enhederne.
+     \n
+     ``\'
+     \n
+     Farvepaletten skifter nuance ved tryk på den valgte farve igen.
+     \n
+     \n
+     Sorteringsreglen vender sin retning, hvis der trykkes på den igen.
+     \n
+     \n
+     Beskrivelsen understøtter markdown-formatering.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** hjælper med at organisere notater og filer, så de er lettere at finde.
+     \n
+     `````
+     \n
+     Flere tags føje til ethvert notat eller fil.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Hvert tag har sine egne indstillinger til visning af data på listen.
+     \n
+     - Hvis beskrivelsen er angivet, vises den i stedet for dette tip.
+     \n
+     - Tagindstillingerne synkes på tværs af alle enhederne.
+     \n
+     `` \'
+     \n
+     Farvepaletten skifter nuance, hvis der trykkes på den valgte farve igen.
+     \n
+     \n
+     Sorteringsreglen vender sin retning ved tryk på den igen.
+     \n
+     \n
+     Beskrivelsen understøtter markdown-formatering.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    Søgeparametrene kan gemmes som et filter for hurtig tilgang igen.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Uddrag** hjælper med at undgå repetitive indtastninger vha. genanvendelige tekstskabeloner.
+     \n
+     \n
+     Et uddrag kan være et hvilket som helst eksisterende eller nyt notat. Det kan være enten statisk eller dynamisk, indeholde felter til manuel input og runtime-værdier (datoer, tidspunkter mv.).
+     \n
+     \n
+     Uddrag er organiseret efter sæt. Der kan enten oprette sit eget sæt eller installere et fra det offentlige bibliotek.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - Sættet kan deles med andre brugere.
+     \n
+     - Sættet kan offentliggøres i det offentlige bibliotek.
+     \n
+     - Er beskrivelsen angivet, vises den i stedet for dette tip.
+     \n
+     `````
+     \n
+     Ved klik på den valgte farve igen, skifter farvepaletten nuance.
+     \n
+     \n
+     Sorteringsreglen reverseres ved klik på den igen.
+     \n
+     \n
+     Beskrivelsen understøtter markdown-formatering.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[     **Filer** hjælper dig med at beholde alle data og straks tilgå dem når som helst på enhver enhed.
+     \n
+     \n
+     **I modsætning til notater** downloades filer ikke til enheden ved første indlogning.
+     \n
+     \n
+     **I stedet** downloades kun filmetadata til enheden til hurtig søgning og redigering.
+     \n
+     ```
+     \n
+     Eventuelle ændringer synkroniseres, så snart internettet er tilgængeligt.
+     \n
+     ```
+     ]]></string>
+    <string name="hint_folders"><![CDATA[    **Mapper** hjælper med at organisere notater og filer, så de er lettere at finde.
+     \n
+     \n
+     **Ud over tags** giver mapper mulighed for at organisere data hierarkisk.
+     \n
+     \n
+     **Modsat tags** kan en fil eller notat kun linkes til én mappe.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Forkortelse kan anvendes:
+     \n
+     \n
+     - til hurtigt søgning af et notat vha. en kort sætning på maks.%s tegn
+     \n
+     - til at indsætte notatteksten i inputfeltet ved brug af en genvej med et ledende symbol **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Beskrivelse kan bruges til at give yderligere oplysninger om et notat.
+    \n
+    \n
+    Den understøtter markdown-formatering på maks. %s tegn.
+    ]]></string>
+    <string name="where_none_of">ingen af de valgte</string>
+    <string name="where_any_of">enhver af de valgte</string>
+    <string name="where_all_of">alle valgte</string>
+    <string name="where_after">Efter</string>
+    <string name="where_before">Inden</string>
+    <string name="where_from">Fra</string>
+    <string name="where_to">Til</string>
+    <string name="where_date_today">I dag</string>
+    <string name="where_date_tomorrow">I morgen</string>
+    <string name="where_date_custom">Tilpasset</string>
+    <string name="where_date_yesterday">I går</string>
+    <string name="where_date_last_7_days">Seneste 7 dage</string>
+    <string name="where_date_last_30_days">Seneste 30 dage</string>
+    <string name="where_date_last_90_days">Seneste 90 dage</string>
+    <string name="advanced_filter_block_text">Tekst indeholder</string>
+    <string name="advanced_filter_block_text_type">Teksttype</string>
+    <string name="advanced_filter_block_category">Placeret på/i</string>
+    <string name="advanced_filter_block_tags">Tags</string>
+    <string name="advanced_filter_block_created">Oprettelsesdato</string>
+    <string name="advanced_filter_block_updated">Opdateringsdato</string>
+    <string name="advanced_filter_block_only_public_links">Vis kun for offentlige links</string>
+    <string name="advanced_filter_block_only_attachments">Vis kun for vedhæftninger</string>
+    <string name="advanced_filter_block_only_not_synced">Vis kun ikke-synkede</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Land</string>
+    <string name="snippet_kit_attr_snippets">Uddrag</string>
+    <string name="snippet_kit_attr_language">Sprog</string>
+    <string name="snippet_kit_attr_downloads">Downloads</string>
+    <string name="snippet_kit_attr_created">Oprettet</string>
+    <string name="snippet_kit_attr_updated">Opdateret</string>
+    <string name="snippet_kit_attr_category">Kategori</string>
+    <string name="snippet_kit_public_link">Offentligt link</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    Uddragssættet kan installeres fra et offentligt link
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Fjern linket?</string>
+    <string name="snippet_kit_public_link_remove_description">Uddragssættet kan ikke længere installeres fra dette link.</string>
+    <string name="snippet_kit_public_library">Offentligt bibliotek</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    Uddragssættet kan installeres fra et offentligt bibliotek.
+     \n
+     \n
+     `````
+     \n
+     Sættet skal indeholde mindst %s uddrag for at blive placeret i det offentlige bibliotek.
+     \n
+     `````
+     \n
+     \n
+     Når et sæt placeres i det offentlige bibliotek, fås automatisk en fordel.
+     \n
+     \n
+     [Yderligere info…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Fjern fra det offentlige bibliotek?</string>
+    <string name="snippet_kit_public_library_remove_description">Uddragssættet kan ikke længere installeres fra det offentlige bibliotek.</string>
+    <string name="snippet_kit_hint_name">Uddragssætnavn</string>
+    <string name="snippet_kit_label_show_in_public_library">Vis i Offentligt bibliotek</string>
+    <string name="snippet_kit_error_name_required">Unikt navn kræves for at gemme dette sæt</string>
+    <string name="snippet_kit_delete_title">Slet sættet \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Uddragssættet slettes permanent.</string>
+    <string name="snippet_kit_uninstall_title">Afinstallér sættet \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Uddragssættet slettes permanent, inkl. alle tilknyttede uddrag.</string>
+    <string name="snippet_kit_install_hint_title">Hvad vil det sige at installere?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    Det installerede uddragssæt vil kunne bruges, som om man selv havde oprettet det.
+     \n
+     \n
+     Det vil sige, man kan helt ændre evt. notater i det, tilføje nye, slette eksisterende, håndtere indstillingerne for sættet mv.
+     \n
+     \n
+     `````
+     \n
+     Evt. ændringer, der foretages, er kun tilgængelige for en selv uden mulighed for at ændre det originale sæt.
+     \n
+     \n
+     Opdateres det originale sæt, kan det installerede sæt opdateres manuelt.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Offentlig status</string>
+    <string name="public_status_private">Privat</string>
+    <string name="public_status_blocked">Blokeret</string>
+    <string name="public_status_review">Til gennemsyn</string>
+    <string name="public_status_review_details">Det vil tage et stykke tid, før sættet offentliggøres og er tilgængeligt i det offentlige bibliotek.</string>
+    <string name="public_status_published">Udgivet</string>
+    <string name="public_status_rejected">Afvist</string>
+    <string name="public_status_not_found">Ikke fundet</string>
+    <string name="public_status_deleted">Slettet</string>
+    <string name="public_status_restricted">Begrænset</string>
+    <string name="public_status_update_reason">Opdateringsårsag</string>
+    <string name="dynamic_text_hint_title">Dynamisk tekst</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    Indeholder et notat dynamiske felter, ses dette ekstra trin, hver gang en handling på notatet udføres.
+     \n
+     \n
+     På dette trin kan værdier defineres i inputfelterne og handlingen fuldføres med den ændrede tekst.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Tekst</string>
+    <string name="dynamic_text_view_mode_form">Formular</string>
+    <string name="dynamic_value_date">Dato/Tid</string>
+    <string name="dynamic_value_date_description">Opretter en pladsholder, der erstattes af den aktuelle dato</string>
+    <string name="dynamic_value_device">Enhedsoplysninger</string>
+    <string name="dynamic_value_device_description">Opretter en pladsholder, der erstattes med oplysninger om enheden</string>
+    <string name="dynamic_value_random">Tilfældig</string>
+    <string name="dynamic_value_random_description">Opretter en pladsholder, der erstattes med en tilfældig værdi fra en tilpasbar liste</string>
+    <string name="dynamic_value_clipboard">Udklipsholder</string>
+    <string name="dynamic_value_clipboard_description">Opretter en pladsholder, der erstattes med indholdet i udklipsholderen</string>
+    <string name="dynamic_value_snippet">Uddrag</string>
+    <string name="dynamic_value_snippet_description">Opretter en pladsholder, der erstattes med indholdet af det valgte notat</string>
+    <string name="dynamic_value_attr_device_type">Informationstype</string>
+    <string name="dynamic_field_date">Datofelt</string>
+    <string name="dynamic_field_date_description">Opretter et datoinputfelt</string>
+    <string name="dynamic_field_text">Tekstfelt</string>
+    <string name="dynamic_field_text_description">Opretter et tekstinputfelt</string>
+    <string name="dynamic_field_number">Nummerfelt</string>
+    <string name="dynamic_field_number_description">Opretter et nummerinputfelt</string>
+    <string name="dynamic_field_select">Markeringsfelt</string>
+    <string name="dynamic_field_select_description">Opretter et input til valg af et eller flere emner</string>
+    <string name="dynamic_field_barcode_scanning">Stregkodeskanningsfelt</string>
+    <string name="dynamic_field_barcode_scanning_description">Opretter et felt, der giver muliggør at skanne en stregkode og bruge dens tekst som feltværdi</string>
+    <string name="dynamic_field_text_toggle">Tekstomskifter</string>
+    <string name="dynamic_field_text_toggle_description">Opretter en til/fra knap, der kan aktivere/deaktivere en tekstblok</string>
+    <string name="dynamic_field_reference">Referencefelt</string>
+    <string name="dynamic_field_reference_description">Opretter et felt, der refererer til et andet felt og bruger dets værdi</string>
+    <string name="dynamic_field_unknown">Ukendt felt</string>
+    <string name="dynamic_field_unknown_description">Feltet kan ikke gengives. Måske er det forkert eller blev oprettet i en nyere version af appen</string>
+    <string name="dynamic_field_date_format_date_time">Dato/Tid (system)</string>
+    <string name="dynamic_field_date_format_date">Dato (system)</string>
+    <string name="dynamic_field_date_format_time">Tid (system)</string>
+    <string name="dynamic_field_date_format_day_of_week">Ugedag</string>
+    <string name="dynamic_field_date_format_day_of_month">Månedsdag (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Månedsdag (01–31)</string>
+    <string name="dynamic_field_date_format_year">År</string>
+    <string name="dynamic_field_date_format_year_short">År (kort)</string>
+    <string name="dynamic_field_date_format_month">Måned</string>
+    <string name="dynamic_field_date_format_month_number">Måned (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Måned (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Time (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Time (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Time (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Time (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minut (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minut (01–60)</string>
+    <string name="dynamic_field_date_format_second">Sekund (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Sekund (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Tidszone</string>
+    <string name="dynamic_field_value_formatter_new_line">Ny linje</string>
+    <string name="dynamic_field_value_formatter_semicolon">Semikolon</string>
+    <string name="dynamic_field_value_formatter_comma">Komma</string>
+    <string name="dynamic_field_value_formatter_space">Mellemrum</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Sorteret liste</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Usorteret liste</string>
+    <string name="dynamic_field_attr_common_label">Etiket</string>
+    <string name="dynamic_field_attr_common_prefix">Præfiks</string>
+    <string name="dynamic_field_attr_common_suffix">Suffiks</string>
+    <string name="dynamic_field_attr_common_value">Værdi</string>
+    <string name="dynamic_field_attr_common_required">Obligatorisk</string>
+    <string name="dynamic_field_attr_common_placeholder">Pladsholder</string>
+    <string name="dynamic_field_attr_common_default_value">Standardværdi</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formaterer af valgte værdier</string>
+    <string name="dynamic_field_attr_select_multiple">Multivalg</string>
+    <string name="dynamic_field_attr_select_user_input">Brugerinput</string>
+    <string name="dynamic_field_attr_text_multi_line">Flerlinjetekst</string>
+    <string name="dynamic_field_attr_text_max_length">Maks. længde</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Udklipsholder er standardværdien</string>
+    <string name="dynamic_field_attr_select_options">Valgmuligheder</string>
+    <string name="dynamic_field_attr_number_min">Min. værdi</string>
+    <string name="dynamic_field_attr_number_max">Maks. værdi</string>
+    <string name="dynamic_field_attr_date_format">Formatér</string>
+    <string name="dynamic_field_attr_date_example">Eksempel %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Flere skanninger</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Skannede værdier formateres med</string>
+    <string name="dynamic_field_attr_toggle_text">Tekst</string>
+    <string name="dynamic_field_attr_ref_value">Refereret feltetiket</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Felt har sin egen værdi</string>
+    <string name="select_option_ordering">Sorteringsindstillinger</string>
+    <string name="select_option_ordering_label_asc">Etiket (A-Å)</string>
+    <string name="select_option_ordering_label_desc">Etiket (Å-A)</string>
+    <string name="select_option_ordering_value_asc">Værdi (A-Å)</string>
+    <string name="select_option_ordering_value_desc">Værdi (Å-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Slet dette dynamiske felt fra teksten?</string>
+    <string name="dynamic_field_confirm_delete_description">Feltpladsholderen slettes fra originalteksten.</string>
+    <string name="dynamic_value_placeholder_copied_title">Den dynamiske værdi-pladsholder er kopieret til udklipsholderen</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">Fil ikke fundet. Prøv at uploade den igen.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">Updated</string>
+    <string name="file_attr_location">Placering</string>
+    <string name="file_confirm_update_file">Opdatér fil?</string>
+    <string name="file_confirm_update_file_description">Filen opdateres på cloud-lagerpladsen.</string>
+    <string name="file_error_name_required">Navn kræves for at kunne gemme denne fil</string>
+    <string name="file_action_new_file">Fil</string>
+    <string name="file_action_new_file_description">Filen uploades til cloud-lagerpladsen. Den uploadede fil tilgængeliggøres i kategorien Filer og kan vedhæftes enhvert notat.</string>
+    <string name="file_action_new_files">Filer</string>
+    <string name="file_action_new_files_description">Filer uploades til cloud-lagerpladsen og vil være tilgængelige i kategorien Filer, hvorfra de vil kunne vedhæftes enhvert notat.</string>
+    <string name="file_action_new_note">Notat</string>
+    <string name="file_action_new_note_description">Filen uploades til cloud-lagerpladsen og vedhæftes det nyoprettede notat. Den uploadede fil tilgængeliggøres også i kategorien Filer.</string>
+    <string name="file_action_new_notes_description">Filer uploades til cloud-lagerpladsen og vedhæftes det nyoprettede notat. Filerne er også tilgængelige i kategorien Filer.</string>
+    <string name="file_action_new_attachment">Vedhæftning</string>
+    <string name="file_action_new_attachment_description">Filen uploades til cloud-lagerpladsen og vedhæftes et eksisterende notat. Den uploadede fil tilgængeliggøres også i kategorien Filer.</string>
+    <string name="file_action_new_attachments">Vedhæftninger</string>
+    <string name="file_action_new_attachments_description">Filer uploades til cloud-lagerpladsen og vedhæftes et eksisterende notat. Filerne er også tilgængelige i kategorien Filer.</string>
+    <string name="file_search_hint">Søg efter filer</string>
+    <string name="file_type_any">Alle</string>
+    <string name="file_type_audio">Lydfiler</string>
+    <string name="file_type_video">Videofiler</string>
+    <string name="file_type_image">Billedfiler</string>
+    <string name="file_type_archive">Komprimerede filer</string>
+    <string name="file_type_document">Dokumentfiler</string>
+    <string name="file_type_recycled">Papirkurv</string>
+    <string name="folder_select">Vælg</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Rodmappe</string>
+    <string name="folder_search">Søg i denne mappe</string>
+    <string name="folder_error_name_required">Unikt navn kræves for at gemme mappen her</string>
+    <string name="folder_error_empty">Denne mappe er tom</string>
+    <string name="folder_delete_deep">Slet mappen inkl. alle tilknyttede filer og notater.</string>
+    <string name="folder_delete_weak">Slet kun mappen. Alle tilknyttede filer og notater forbliver tilgængelige i rodmappen.</string>
+    <string name="clip_action_new_edit">Redigér</string>
+    <string name="clip_action_new_edit_description">Notarer kan redigeres, før det gemmes eller bruges ifm. en anden handling.</string>
+    <string name="clip_action_new_insert">Indsæt i</string>
+    <string name="clip_action_new_insert_description">Teksten i et notat kan indsættes i et vilkårligt, eksisterende notat. Vælg målnotat og angiv indsætningsmuligheder.</string>
+    <string name="clip_action_new_action">Handlinger</string>
+    <string name="clip_action_new_action_description">En notattekst kan bruges til handlingseksekvering.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">%s notat eksporteret</item>
+        <item quantity="other">%s notater eksporteret</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">%s notat importeret</item>
+        <item quantity="other">%s notater importeret</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">%s notat slettet</item>
+        <item quantity="other">%s notater slettet</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s notat</item>
+        <item quantity="other">%s notater</item>
+    </plurals>
+</resources>

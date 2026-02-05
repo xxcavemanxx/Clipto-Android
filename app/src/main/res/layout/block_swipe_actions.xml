@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="?android:listDivider"
+    android:dividerPadding="16dp"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <!-- RIGHT -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rightSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextViewExt
+            android:id="@+id/rightActionTitleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif"
+            android:maxLines="3"
+            android:minLines="1"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@id/rightActionView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Right swipe\nDelete" />
+
+        <TextViewExt
+            android:id="@+id/rightActionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/button.change"
+            android:textAllCaps="true"
+            android:textColor="?actionIconColorHighlight"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/rightActionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@id/rightActionTitleView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rightActionSettings"
+                android:layout_width="match_parent"
+                android:layout_height="?listPreferredItemHeightLarge"
+                android:animateLayoutChanges="true"
+                android:background="?attr/colorContext">
+
+                <View
+                    android:id="@+id/rightActionBackground"
+                    android:layout_width="112dp"
+                    android:layout_height="?listPreferredItemHeightLarge"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:background="#EF5350" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/rightActionIcon"
+                    android:layout_width="?actionIconSize"
+                    android:layout_height="?actionIconSize"
+                    android:layout_marginStart="16dp"
+                    android:padding="?actionIconPadding"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/swipe_action_delete" />
+
+                <View
+                    android:id="@+id/rightActionLeftStub"
+                    android:layout_width="80dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/bg_stub_rounded"
+                    app:layout_constraintBottom_toTopOf="@id/rightActionTextStub"
+                    app:layout_constraintStart_toEndOf="@+id/rightActionBackground"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <View
+                    android:id="@+id/rightActionTextStub"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_stub_rounded_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/rightActionEnd"
+                    app:layout_constraintStart_toEndOf="@+id/rightActionBackground"
+                    app:layout_constraintTop_toBottomOf="@id/rightActionLeftStub"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <View
+                    android:id="@+id/rightActionEnd"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- LEFT -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/leftSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextViewExt
+            android:id="@+id/leftActionTitleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif"
+            android:maxLines="3"
+            android:minLines="1"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@id/leftActionView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Left swipe\nDelete" />
+
+        <TextViewExt
+            android:id="@+id/leftActionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/button.change"
+            android:textAllCaps="true"
+            android:textColor="?actionIconColorHighlight"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/leftActionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@id/leftActionTitleView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/leftActionSettings"
+                android:layout_width="match_parent"
+                android:layout_height="?listPreferredItemHeightLarge"
+                android:animateLayoutChanges="true"
+                android:background="?attr/colorContext">
+
+                <View
+                    android:id="@+id/leftActionBackground"
+                    android:layout_width="112dp"
+                    android:layout_height="?listPreferredItemHeightLarge"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:background="#EF5350" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/leftActionIcon"
+                    android:layout_width="?actionIconSize"
+                    android:layout_height="?actionIconSize"
+                    android:layout_marginEnd="16dp"
+                    android:padding="?actionIconPadding"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_delete" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/leftActionStubIcon"
+                    android:layout_width="?actionIconSize"
+                    android:layout_height="?actionIconSize"
+                    android:padding="?actionIconPadding"
+                    android:src="@drawable/action_copy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/leftActionBackground"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="?actionIconColorInactive" />
+
+                <View
+                    android:id="@+id/leftActionLeftStub"
+                    android:layout_width="40dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_stub_rounded_right"
+                    app:layout_constraintBottom_toTopOf="@id/leftActionTextStub"
+                    app:layout_constraintStart_toEndOf="@id/leftActionStart"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <View
+                    android:id="@+id/leftActionTextStub"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_stub_rounded_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/leftActionStubIcon"
+                    app:layout_constraintStart_toEndOf="@id/leftActionStart"
+                    app:layout_constraintTop_toBottomOf="@id/leftActionLeftStub"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    app:layout_goneMarginEnd="16dp" />
+
+                <View
+                    android:id="@+id/leftActionStart"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

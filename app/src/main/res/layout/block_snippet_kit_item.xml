@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:padding="4dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:cardBackgroundColor="?colorContext"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="156dp"
+            android:layout_height="156dp">
+
+            <View
+                android:id="@+id/ivBackground"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/vShadow"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_snippet_kit_item"
+                app:layout_constraintBottom_toBottomOf="@id/ivBackground"
+                app:layout_constraintEnd_toEndOf="@id/ivBackground"
+                app:layout_constraintStart_toStartOf="@id/ivBackground"
+                app:layout_constraintTop_toTopOf="@id/ivBackground" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:textAlignment="viewStart"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@id/tvAuthor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="Markdown Syntax and others useful texts" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/ivBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="🇦🇪  Andreos Mikelus" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_floating_hint"
+                android:elevation="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/tvName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginTop="8dp"
+                tools:text="Published"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvSnippetsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:text="@string/snippet_kit_attr_snippets"
+                android:textAlignment="viewStart"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/glHorizontalMiddle"
+                app:layout_constraintStart_toStartOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvSnippetsValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/tvSnippetsTitle"
+                app:layout_constraintEnd_toEndOf="@id/tvSnippetsTitle"
+                app:layout_constraintStart_toStartOf="@id/tvName"
+                app:layout_constraintTop_toBottomOf="@id/ivBackground"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="61" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glHorizontalMiddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.55"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDownloadsValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/tvSnippetsValue"
+                app:layout_constraintEnd_toEndOf="@id/tvDownloadsTitle"
+                app:layout_constraintStart_toStartOf="@id/tvDownloadsTitle"
+                app:layout_constraintTop_toTopOf="@id/tvSnippetsValue"
+                tools:text="111" />
+
+            <TextView
+                android:id="@+id/tvDownloadsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:text="@string/snippet_kit_attr_downloads"
+                android:textAlignment="viewStart"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/tvSnippetsTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/glHorizontalMiddle"
+                app:layout_constraintTop_toTopOf="@id/tvSnippetsTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

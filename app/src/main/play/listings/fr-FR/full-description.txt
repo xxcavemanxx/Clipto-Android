@@ -1,0 +1,104 @@
+Clipto est une nouvelle façon d'organiser votre travail au quotidien avec des notes rapides, pratiques et fiables.
+
+
+SYNCHRONISATION AVEC MAC, WINDOWS, LINUX ET LE NAVIGATEUR
+Essayez Clipto et téléchargez la version pour ordinateur sur https://clipto.pro.
+Clipto garde tout synchronisé.
+
+
+FONCTIONNE HORS LIGNE
+Chaque action fonctionne hors ligne. Pour que les notes soient synchronisées sur tous vos appareils, connectez-vous avec le même compte. Ou sinon, utilisez les fonctionnalités d'importation/exportation manuelles. C'est à vous de décider.
+
+
+NOTES A PARTIR DU PRESSE-PAPIERS
+Clipto peut être utilisé comme gestionnaire de presse-papiers, même sur Android 10 !
+
+
+PRESSE-PAPIERS UNIVERSEL
+Avec le Presse-papiers universel, vous pouvez copier des notes sur un appareil, puis coller le contenu sur un autre.
+
+
+SCANNER DES CODES-BARRES
+Clipto permet d'utiliser l'appareil photo pour capturer des notes.
+Le lecteur de codes-barres lit la plupart des formats.
+
+
+AJOUTER DES FICHIERS
+Dans Clipto, vous pouvez stocker tous types de fichiers (pas seulement des images ou des photos)
+
+
+PERSONNALISATION
+Une fois installé, vous pouvez personnaliser Clipto en fonction de vos besoins :
+• Thème (blanc, sépia, vert, rose, bleu foncé, Indigo, noir AMOLED)
+• Style de liste (grille, confortable, compact, aperçu)
+• Trier par champs (date de création ou modification, nombre d'utilisation, titre, texte, balises, taille, caractères)
+• Taille du texte
+• Police du texte
+• Actions lors du balayage
+
+
+PARTAGER
+Créez un lien public sur une note et rendez-le accessible sur le Web, même sans inscription.
+Les liens publics peuvent être configurés selon vos besoins :
+• Accès par mot de passe
+• Accès unique
+• Délai d'expiration
+• Temps d'accès
+
+
+BOOSTER VOTRE PRODUCTIVITÉ
+Clipto fournit toutes les méthodes possibles pour prendre des notes :
+✔ Notification d'actions - accédez aux notes et aux actions en un clic;
+✔ Actions contextuelles - accédez à des fonctionnalités sur le texte sélectionné;
+✔ Notes du presse-papiers - enregistrez les notes du presse-papiers et utilisez-les plus tard;
+✔ Actions du presse-papiers - extrayez des parties de notes du presse-papiers et utilisez-le avec des actions en un clic;
+✔ Partage - capturez des notes à partir de n'importe quel texte ou fichier partagé;
+✔ Éditeur intégré - créez des notes en texte brut, Markdown, HTML;
+✔ Actions en un clic
+    • Texte pour parler
+    • Écrire un email
+    • Composer un SMS
+    • Composer un Tweet
+    • Ajouter au calendrier
+    • Insérer un contact
+    • Recherche Web
+    • Recherche Wikipédia
+    • Recherche Youtube
+    • Google Traduction
+    • Partager avec…
+    • Copier dans le Presse-papiers
+    • Envoyer comme code QR
+    • Envoyer comme texte
+    • Envoyer comme PDF
+    • Envoyer au format Markdown
+    • Ouvrir une page web
+    • Sauvegarder adresse e-mail du contact
+    • Sauvegarder numéro de téléphone du contact
+    • Composer un numéro de téléphone
+
+
+IMPORTEZ DEPUIS DE NOMBREUSES APPLICATIONS
+Vous avez demandé la possibilité d'importer vos notes à partir de certaines applications. Nous l'avons fait et supportons maintenant les formats de sauvegarde suivants :
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+• Clipboard Manager
+• Google Keep (extraire le zip)
+
+
+IMPLIQUEZ-VOUS DANS LE DÉVELOPPEMENT
+Toute nouvelle fonctionnalité que nous ajoutons est le résultat des commentaires des utilisateurs. Vous pouvez aider au développement de Clipto
+sur Github - https://github.com/clipto-pro/Android
+
+
+TRADUISEZ L'APPLI
+Merci à tous nos contributeurs qui nous aident à rester indépendant et à nous concentrer sur les nouvelles fonctionnalités !
+Si Clipto n'est pas traduit (ou partiellement, ou mal) dans votre langue, vous pouvez nous aider ici - https://crowdin.com/project/clipto
+
+
+REJOIGNEZ NOTRE COMMUNAUTÉ
+Sur Reddit - https://www.reddit.com/r/cliptopro
+Suivez-nous sur Twitter - https://twitter.com/CliptoPro
+Aimez sur Facebook - https://www.facebook.com/cliptopro
+
+Merci !

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottomSheetRoundedTopSpace">8dp</dimen>
+    <dimen name="bottomSheetSettingsTopSpace">0dp</dimen>
+    <dimen name="bottomSheetSettingsEndSpace">8dp</dimen>
+</resources>

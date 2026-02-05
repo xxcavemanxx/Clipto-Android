@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTheme.Light" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorAccent">#5E8DC6</item>
+        <item name="colorPrimary">#121212</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorPrimaryLight">#121212</item>
+        <item name="colorPrimaryInverse">#000</item>
+        <item name="colorContext">#121212</item>
+        <item name="colorCustomTagText">#000</item>
+        <item name="colorCustomTagBackground">#CC5E8DC6</item>
+        <item name="colorHighlightBackground">#995D8DC7</item>
+        <item name="colorNotificationBackground">#121212</item>
+
+        <item name="listItemSelected">#2b2b2b</item>
+
+        <item name="actionIconPadding">@dimen/actionIconPadding</item>
+        <item name="actionIconSize">@dimen/actionIconSize</item>
+        <item name="actionIconColorHighlight">#5E8DC6</item>
+        <item name="actionIconColorInactive">#929292</item>
+        <item name="actionIconColorNormal">#CDCDCD</item>
+        <item name="colorControlNormal">?android:textColorPrimary</item>
+
+        <item name="android:navigationBarColor">?colorPrimaryInverse</item>
+        <item name="android:actionMenuTextColor">#CDCDCD</item>
+        <item name="actionMenuTextColor">#CDCDCD</item>
+
+        <item name="materialAlertDialogTheme">@style/MyMaterialDialog</item>
+
+        <item name="android:textColorPrimary">@color/color_theme_black_primary</item>
+        <item name="android:textColorSecondary">@color/color_theme_black_secondary</item>
+
+        <item name="swipeActionDelete">@color/colorNegative</item>
+        <item name="swipeActionCopy">@color/colorPositive</item>
+        <item name="swipeActionStarred">#5E8DC6</item>
+
+        <item name="myBackgroundHighlight">#1AFFFFFF</item>
+        <item name="myTextAppearanceCaption">@style/MyCaption</item>
+
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+        <item name="colorOnSurface">?android:textColorPrimary</item>
+        <item name="textColorOnSurface">#000</item>
+
+        <item name="textInactiveColor">#434242</item>
+
+        <item name="materialCalendarTheme">@style/MyCalendar</item>
+        <item name="materialTimePickerTheme">@style/MyMaterialTimePickerTheme</item>
+    </style>
+
+</resources>

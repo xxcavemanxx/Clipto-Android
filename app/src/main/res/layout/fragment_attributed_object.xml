@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryInverse">
+
+    <clipto.presentation.common.fragment.attributed.AttributedObjectRecyclerView
+        android:id="@+id/rvBlocks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:paddingTop="56dp"
+        android:paddingBottom="56dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.87"
+            android:background="?attr/colorPrimaryInverse" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            style="@style/MyActionButton"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/menu.cancel"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            style="@style/MyActionButton"
+            android:layout_marginStart="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv1"
+            app:layout_constraintStart_toEndOf="@id/iv1"
+            app:layout_constraintTop_toTopOf="@id/iv1"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@drawable/filter_tag"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textColor="?android:textColorPrimary"
+            android:visibility="gone"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@id/iv3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/ivIcon" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            style="@style/MyActionButton"
+            android:contentDescription="@string/main.actions.save_and_start_new_note"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_note_add" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            style="@style/MyActionButton"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/menu.edit"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/autoSaveIconView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_edit" />
+
+        <clipto.presentation.common.view.RuneIconView
+            android:id="@+id/autoSaveIconView"
+            android:layout_width="?actionIconSize"
+            android:layout_height="?actionIconSize"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.87"
+            android:background="?attr/colorPrimaryInverse" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            style="@style/MyActionButton"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/menu.display_options"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_tune" />
+
+        <ImageView
+            android:id="@+id/iv8"
+            style="@style/MyActionButton"
+            android:contentDescription="@string/menu.copy"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv9"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_copy"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv9"
+            style="@style/MyActionButton"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more_vert" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbUndo"
+            style="@style/FloatingButtonIconOnlyUnelevated"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:visibility="gone"
+            app:icon="@drawable/clip_edit_undo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/mbPreview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbPreview"
+            style="@style/FloatingButtonUnelevated"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:fontFamily="sans-serif"
+            android:hapticFeedbackEnabled="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:icon="@drawable/clip_text_type_text"
+            tools:text="13000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbRedo"
+            style="@style/FloatingButtonIconOnlyUnelevated"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:visibility="gone"
+            app:icon="@drawable/clip_edit_redo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/mbPreview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <clipto.presentation.common.fragment.attributed.numberpicker.NumberPicker
+            android:id="@+id/pagePicker"
+            style="@style/NumberPicker.None.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:picker_orientation="horizontal"
+            app:picker_stepSize="1"
+            app:picker_tracker="linear" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

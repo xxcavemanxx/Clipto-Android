@@ -1,0 +1,11 @@
+[FEATURES]
+- Files can be attached to a new note right from the 'Share with Clipto' popup (it can be existing or new files as well)
+- In 'Folders Flat Mode' the app displays path of each file/note relative to the active folder
+- Added app guide block in the left navigation
+- Display related notes for file
+
+[FIXES]
+- Crashes
+- Translations
+
+if something does not work, please sing out and sign in again, probably you have missed the last two updates:)

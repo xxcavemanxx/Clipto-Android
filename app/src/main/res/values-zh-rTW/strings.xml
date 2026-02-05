@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">換行</string>
+    <string name="common_separator_space">空格</string>
+    <string name="common_separator_comma">逗號</string>
+    <string name="confirm_exit_edit_mode_title">退出編輯模式？</string>
+    <string name="confirm_exit_edit_mode_description">所有未儲存的更改都將丟失。</string>
+    <string name="confirm_delete_note_title">刪除筆記？</string>
+    <string name="confirm_delete_note_description">所選的筆記將被刪除。</string>
+    <string name="link_preview_label">載入預覽…</string>
+    <string name="link_preview_not_found">無預覽</string>
+    <string name="link_preview_hide">隱藏預覽</string>
+    <string name="link_preview_show">顯示預覽</string>
+    <string name="toast_downloaded">已下載 %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">再次按下「返回鍵」退出</string>
+    <string name="essentials.errors.unknown">未知錯誤。請重試</string>
+    <string name="error_data_empty">找不到資料。</string>
+    <string name="error.unexpected">發生未預期的錯誤。</string>
+    <string name="error.unexpected.send">按下「錯誤」按鈕提交錯誤</string>
+    <!-- COMMON -->
+    <string name="menu.rate">評分</string>
+    <string name="menu.edit">編輯</string>
+    <string name="menu.clear">清空</string>
+    <string name="menu.clear_all">全部清除</string>
+    <string name="menu.share">分享</string>
+    <string name="menu.fav">已加星號</string>
+    <string name="menu.delete">刪除</string>
+    <string name="menu.empty">清空</string>
+    <string name="menu.cancel">取消</string>
+    <string name="menu.settings">設定</string>
+    <string name="menu.display_options">顯示選項</string>
+    <string name="menu.faq">常見問題</string>
+    <string name="menu.new">新增</string>
+    <string name="menu.search">搜索</string>
+    <string name="menu.print">列印</string>
+    <string name="menu.restore">恢復</string>
+    <string name="menu.merge">合併</string>
+    <string name="menu.copy_link">複製公開連結</string>
+    <string name="menu.share_link">分享公開連結</string>
+    <string name="menu.save_as">另存為…</string>
+    <string name="menu.rename">重命名</string>
+    <string name="menu.paste">貼上</string>
+    <string name="menu.copy">複製</string>
+    <string name="menu.cut">剪下</string>
+    <string name="menu.fullscreen.enter">全螢幕顯示</string>
+    <string name="menu.fullscreen.exit">退出全螢幕</string>
+    <string name="menu_close">關閉</string>
+    <string name="button.update">更新</string>
+    <string name="button.install">安裝</string>
+    <string name="button.uninstall">移除</string>
+    <string name="button.done">完成</string>
+    <string name="button.undo">撤銷</string>
+    <string name="button.apply">確定</string>
+    <string name="button.change">更改</string>
+    <string name="button.save">儲存</string>
+    <string name="button.create">新增</string>
+    <string name="button.send">傳送</string>
+    <string name="button.preview">預覽</string>
+    <string name="button.confirm">確認</string>
+    <string name="button.sync">立即同步</string>
+    <string name="button.yes">確認</string>
+    <string name="button.no">取消</string>
+    <string name="button.back">返回</string>
+    <string name="button.continue">繼續</string>
+    <string name="button.finish">完成</string>
+    <string name="button.got_it">好的！</string>
+    <string name="button.get_started">開始使用</string>
+    <string name="button.example">範例</string>
+    <string name="button_try_again">重試</string>
+    <string name="button_insert">插入</string>
+    <string name="button_refresh">重新整理</string>
+    <string name="notification.title.empty">剪貼簿為空</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">返回</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">縮寫</string>
+    <string name="common.label.description">說明</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">新增標籤</string>
+    <string name="tag.new.name">標籤名稱</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Move to folder</string>
+    <!-- MAIN -->
+    <string name="main.search">搜索您的筆記</string>
+    <string name="main.filter.all">全部</string>
+    <string name="main.filter.no_tags">無標籤</string>
+    <string name="main.filter.filtered">已篩選</string>
+    <string name="main.delete_selected.title">刪除所選的筆記？</string>
+    <string name="main.delete_selected.description">所選的筆記將被刪除。</string>
+    <string name="main.delete_merged.title">刪除已合併的筆記？</string>
+    <string name="main.delete_merged.description">已合併的筆記將被永久刪除。</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">找不到筆記。</string>
+    <string name="main.list.empty.caption">注意：每個類別都有其單獨排序和其他設定。您可以隨時從列表 (%s) 或左側導航抽屜 (%s) 中更改設定。</string>
+    <string name="main.list.empty.caption.three_dot">三點選單</string>
+    <string name="main.list.empty.caption.long_tap">長按類別</string>
+    <string name="main.list.empty.description.all">一般類別。顯示未經篩選的所有筆記。</string>
+    <string name="main.list.empty.description.no_tags">顯示未含標籤的筆記。</string>
+    <string name="main.list.empty.description.tags">顯示含有所選標籤的筆記和檔案。</string>
+    <string name="main.list.empty.description.filtered">找不到符合條件的筆記。</string>
+    <string name="main.list.empty.description.starred">顯示已加星號的筆記。</string>
+    <string name="main.list.empty.description.deleted">顯示已刪除但仍可以還原的筆記和檔案。 保留已刪除記錄的標籤和其他屬性，但在相應類別中不可用。</string>
+    <string name="main.list.empty.description.clipboard">顯示應用程式從剪貼簿自動建立的筆記。預設情況下，不監控剪貼簿，您可以在設定中啟用。</string>
+    <string name="main.list.empty.description.snippets">顯示在其他筆記中所使用的筆記內容。對文字所做的任何更改都將自動同步更新到其他筆記中。</string>
+    <string name="main.filter.snippets">摘錄</string>
+    <string name="main.filter.filters">篩選</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">檔案</string>
+    <string name="main.filter.notes">筆記</string>
+    <string name="main.filter.tags">標籤</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">記住上次的設定</string>
+    <string name="main_action_settings_remember_description">啟用後，應用程式將記住上次的設定並在下次按下浮動按鈕時使用。此外，您還可以透過長按浮動按鈕開啟具有所有動作列表的視窗。</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">建立筆記</string>
+    <string name="main_action_notes_new_title">新增筆記</string>
+    <string name="main_action_notes_new_description">儲存重要的文字資訊，在任何裝置上隨時存取</string>
+    <string name="main_action_notes_barcode_title">掃描條碼</string>
+    <string name="main_action_notes_barcode_description">掃描連結或文字並將其另存為筆記（支持大多數的標準條碼格式）</string>
+    <string name="main_action_notes_clipboard_title">從剪貼簿導入</string>
+    <string name="main_action_notes_clipboard_description">從剪貼簿中存取目前的文字內容並將其另存為筆記</string>
+    <string name="main_action_notes_import_title">從檔案導入</string>
+    <string name="main_action_notes_import_description">使用檔案中的文字內容建立筆記 (檔案小於 %s kB)</string>
+    <string name="main_action_notes_import_error">檔案小於 %s kilobytes</string>
+    <string name="main_action_files">新增檔案</string>
+    <string name="main_action_files_file_title">選擇檔案</string>
+    <string name="main_action_files_file_description">新增小於 %s MB 的任意檔案（照片，影片，pdf 等）</string>
+    <string name="main_action_files_photo_title">拍照</string>
+    <string name="main_action_files_photo_description">拍攝照片並將其儲存到筆記中</string>
+    <string name="main_action_files_record_title">錄影</string>
+    <string name="main_action_files_record_description">錄製影片並將其儲存到筆記中（影片小於 %s MB）</string>
+    <string name="main_action_organize">資料庫</string>
+    <string name="main_action_organize_tag_title">新標籤</string>
+    <string name="main_action_organize_tag_description">新增一個標籤來整理您的筆記和檔案，使其更容易被找到</string>
+    <string name="main_action_organize_filter_title">新篩選器</string>
+    <string name="main_action_organize_filter_description">使用已有的搜尋模板，建立一個可以快速找到資訊的篩選器</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">避免重複輸入</string>
+    <string name="main_action_snippets_snippet_title">新增摘錄</string>
+    <string name="main_action_snippets_snippet_description">建立可以重複使用的文字範本</string>
+    <string name="main_action_snippets_set_title">新增摘錄工具箱</string>
+    <string name="main_action_snippets_set_description">建立一個摘錄工具箱以便更快搜尋經常使用的筆記。</string>
+    <string name="main.actions.save_and_start_new_note">儲存並建立新的筆記</string>
+    <string name="main.actions.add_dynamic_value">新增動態值</string>
+    <string name="main.actions.add_attachment">新增附件</string>
+    <string name="main.actions.sync_note">同步一則筆記</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">向左滑動</string>
+    <string name="main.swipe_actions.caption.right">向右滑動</string>
+    <string name="main.swipe_actions.fav">標記為星號</string>
+    <string name="main.swipe_actions.delete">刪除</string>
+    <string name="main.swipe_actions.copy">複製</string>
+    <string name="main.swipe_actions.none">無</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">進階搜尋</string>
+    <string name="filter.hint.text">文本包含</string>
+    <string name="filter.label.no_tags">無標籤</string>
+    <string name="filter.label.fav">已加星號</string>
+    <string name="filter.label.platform">平臺</string>
+    <string name="filter.label.snippets">摘錄</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">從剪貼簿複製的筆記</string>
+    <string name="filter.clipboard.empty.title">清除剪貼簿的筆記？</string>
+    <string name="filter.clipboard.empty.description">剪貼簿中的所有筆記將被永久刪除（不含已加星號和帶標籤的筆記）。</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">回收箱</string>
+    <string name="filter.deleted.limit">限制</string>
+    <string name="filter.deleted.empty.title">清空回收箱？</string>
+    <string name="filter.deleted.empty.description">回收箱中的所有筆記將被永久刪除。</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">限制</string>
+    <string name="filter.limit.description">當筆記數量超過上限時，超過限制的舊筆記會自動從類別中刪除。</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">篩選器名稱</string>
+    <string name="filter_error_name_required">無法儲存重複名稱的篩選器</string>
+    <string name="filter_delete_title">刪除篩選器「%s」？</string>
+    <string name="filter_delete_description">篩選器將被永久刪除。</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">無法儲存重複名稱的標籤</string>
+    <string name="filter.tag.rule.title">自動分配規則</string>
+    <string name="filter.tag.rule.description">若啟用該選項，則標籤中包含任何逗號分隔的文字內容，將自動分配給新筆記。</string>
+    <string name="filter.tag.rule.hint">逗號分隔的文字內容</string>
+    <string name="filter.tag.delete.title">刪除標籤「%s」？</string>
+    <string name="filter.tag.delete.description">標籤將被永久刪除。</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">新增</string>
+    <string name="clip.hint.title">無標題筆記</string>
+    <string name="clip.hint.tags">點選新增標籤</string>
+    <string name="clip.hint.text">點選新增筆記</string>
+    <string name="clip.snackbar.text.required">筆記內容不能為空</string>
+    <string name="clip.snackbar.text.copied">筆記已複製到剪貼簿</string>
+    <string name="clip.attr.updated">最近使用</string>
+    <string name="clip.attr.edited">編輯於</string>
+    <string name="clip.attr.created">創建於</string>
+    <string name="clip.attr.deleted">刪除於</string>
+    <string name="clip.attr.usageCount">使用次數</string>
+    <string name="clip.attr.charsCount">字數</string>
+    <string name="clip.attr.size">檔案大小</string>
+    <string name="clip_exit_without_save_title">您要取消編輯筆記嗎？</string>
+    <string name="clip_exit_without_save_description">您所做的任何更改都將遺失。</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">另存為</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">一般</string>
+    <string name="clip_details_tab_tags">標籤</string>
+    <string name="clip_details_tab_folder">Location</string>
+    <string name="clip_details_tab_attachments">附件</string>
+    <string name="clip_details_tab_dynamic">動態值</string>
+    <string name="clip_details_tab_snippets">摘錄</string>
+    <string name="clip_details_tab_snippet_kits">摘錄工具箱</string>
+    <string name="clip_details_tab_dynamic_values">數值</string>
+    <string name="clip_details_tab_dynamic_fields">欄位</string>
+    <string name="clip_details_tab_attributes">屬性</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">將文字插入筆記</string>
+    <string name="clip.info.label.note.insert.remember">記住選擇，不再詢問（長按即可訪問儀表板）。</string>
+    <string name="clip.info.label.note.create">建立新筆記</string>
+    <string name="clip.info.label.position">位置</string>
+    <string name="clip.info.label.beginning">起始</string>
+    <string name="clip.info.label.end">最後</string>
+    <string name="clip.info.label.tags.edit">編輯標籤</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">純文本</string>
+    <string name="clip.text.type.link">複製連結</string>
+    <string name="clip.text.type.line_clickable">帶有複製行的文字</string>
+    <string name="clip.text.type.word_clickable">複製單詞</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">附件</string>
+    <string name="clip.add.attachment.tooltip">附件無任何限制（圖片，影片，pdf 等），大小不得超過 %s MB。</string>
+    <string name="clip.add.dynamic.title">動態值</string>
+    <string name="clip.add.dynamic.tooltip">動態值是一種使用最新資料建立筆記的方法。在檢視模式中，插入的佔位符將替換為實際值。</string>
+    <string name="clip.add.dynamic.value.date_time">日期／時間</string>
+    <string name="clip.add.dynamic.value.platform">平臺</string>
+    <string name="clip.add.dynamic.value.ip">IP 位址</string>
+    <string name="clip.add.dynamic.value.date">日期</string>
+    <string name="clip.add.dynamic.value.time">時間</string>
+    <string name="clip.add.dynamic.value.month">幾月</string>
+    <string name="clip.add.dynamic.value.timezone">時區</string>
+    <string name="clip.add.dynamic.value.month_number">月份數字</string>
+    <string name="clip.add.dynamic.value.month_number_zero">月份數字（以 0 開頭）</string>
+    <string name="clip.add.dynamic.value.year">西元幾年</string>
+    <string name="clip.add.dynamic.value.year_short">西元幾年 (yy)</string>
+    <string name="clip.add.dynamic.value.hour24">小時（24 小時制）</string>
+    <string name="clip.add.dynamic.value.hour12">小時 （12 小時制）</string>
+    <string name="clip.add.dynamic.value.minutes">分鐘</string>
+    <string name="clip.add.dynamic.value.seconds">秒</string>
+    <string name="clip.add.dynamic.value.am_pm">上午 / 下午</string>
+    <string name="clip.add.dynamic.value.day_of_week">星期幾</string>
+    <string name="clip.add.dynamic.value.day_of_month">每月幾號</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">每月幾號（以 0 開頭）</string>
+    <string name="clip.add.dynamic.value.random_digit">隨機數字 (0–9)</string>
+    <string name="clip.add.dynamic.value.random_latin">隨機拉丁字母 (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">摘錄</string>
+    <string name="clip.add.snippet.new.hint">輸入文字進行查詢或直接新增內容</string>
+    <string name="clip.add.snippet.tooltip">摘錄是指可以在其他筆記中重複使用的文字，只需修改其文字內容即可自動同步更新到其他筆記中。您可以在左側導航抽屜中找到您建立的摘錄。</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">文本類型：</string>
+    <string name="text.config.size">文字大小</string>
+    <string name="text.config.font">文字字型</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">排序方式</string>
+    <string name="list.config.lines">筆記顯示行數</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">列表樣式</string>
+    <string name="list.style.description">筆記列表樣式</string>
+    <string name="list.style.default">預設</string>
+    <string name="list.style.comfortable">自適應</string>
+    <string name="list.style.compact">精簡</string>
+    <string name="list.style.preview">預覽</string>
+    <string name="list.style.grid">網格</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">技能符文</string>
+    <string name="runes.hint.description"><![CDATA[    這些符文可以增強應用程式的功能。
+    \n\n
+    每個符文都可以擴展或修改基礎功能，並允許使用者自訂應用程式以提高生產力。
+    \n\n
+    不是每個符文都能滿足您的需求，不過也因為這樣，符文具有無限的可能性。
+    \n\n
+    探索現有的符文，並解鎖您想要的。您還可以向我們分享新的想法或創意，使應用程式更有效率:)
+    ]]></string>
+    <string name="runes_hotkeys_title">鍵盤快速鍵</string>
+    <string name="runes_hotkeys_description"><![CDATA[    使用此符文，您可以設定快速鍵來控制應用程式和其中的動作。
+    \n
+    \n
+    有些快速鍵為預設值。您可以刪除或重新組合。
+    \n
+    \n
+    ```
+    \n
+    根據動作的不同，鍵盤快速鍵僅在應用程式內或外部處於活動狀態。
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">多端同步</string>
+    <string name="runes.instant_sync.description"><![CDATA[    符文提供了以下效果加成：
+    \n
+    - 自動將所有資料上傳到雲端
+    \n
+    - 在多個裝置中隨時存取
+    \n
+    - 不僅可以儲存純文字筆記，還可以儲存其它類型的檔案
+    \n\n
+    預設情况下，應用程式會先將資料儲存在裝置中。
+    \n
+    ```
+    \n
+    啟用符文後，如果網路連線可用，所有儲存在應用程式中的資料都將自動同步到雲端。
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">鎖定模式</string>
+    <string name="runes.pincode.description"><![CDATA[    使用此符文，您可以設定密碼鎖定應用程式。
+    \n\n
+    啟用符文後，應用程式將在閒置【%s 分鐘】後自動鎖定。
+    \n\n
+    ※注意：如果忘記密碼，則需要刪除並重新安裝該應用程式。所有未同步的更改都將遺失。
+    ]]></string>
+    <string name="runes.theme.title">變色龍</string>
+    <string name="runes.theme.description"><![CDATA[    預設情況下，應用程式將根據系統設定自動切換淺色與深色主題。
+    \n\n
+    無論系統設定為何，您都可以啟用任何一個您喜歡的主题。
+    ]]></string>
+    <string name="runes.clipboard.title">剪貼簿</string>
+    <string name="runes.clipboard.description"><![CDATA[    使用此符文，應用程式會監控剪貼簿，並自動從剪貼簿複製的文字中建立筆記。
+    \n\n
+    啟用符文後，應用程式將在通知欄顯示一個永久通知，以便能隨時存取剪貼簿內容。
+    \n\n
+    ```
+    \n
+    如果未顯示通知，則代表應用程式已關閉，您可以重新開啟應用程式，此時剪貼簿功能即可恢復正常。
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">鍵盤精靈</string>
+    <string name="runes.texpander.description"><![CDATA[    使用此符文，您可以在【任何應用程式】的輸入欄位中填入您的筆記內容。
+    \n\n
+    啟用符文後，當您將游標聚焦於輸入欄位時，應用程式會彈出一個浮動視窗，您可以在該處編輯輸入的內容。
+    \n\n
+    #### 浮動視窗的功能特色：
+    \n
+    -  自由調整大小；
+    \n
+    - 移動到任意位置；
+    \n
+    - 根據特定動作的可能性自動修正；
+    \n
+    - 結束輸入狀態時，自動隱藏；
+    \n
+    - 從工具列的右上角手動隱藏，直到下次重新喚醒；
+    \n
+    - 如果浮動視窗沒有顯示，您可以從通知面板或快速設定（前提是您已將按鈕放在手機的下拉選單中）重新喚醒；
+    \n\n
+    #### 技術限制：
+    \n
+    - 在系統設定中開啟無障礙功能選單，並選擇啟用鍵盤精靈；
+    \n
+    - 允許顯示在其它應用程式上層
+    \n
+    - 在某些應用程式中，您需要手動喚醒浮動視窗（部分功能限制）
+    \n\n
+    #### 注意：
+    \n如果您的符文在啟用後很快就停止運行，請先閱讀  [這篇文章] (%s) 以瞭解如何使應用程式在背景執行。
+    \n您也可以透過電子郵件向我們回報錯誤:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">啟用</string>
+    <string name="runes.texpander.required.accessibility">點選此處，前往無障礙設定（已下載的服務），並啟用鍵盤精靈。</string>
+    <string name="runes.texpander.required.floating">點選此處前往權限設定，並允許顯示在其它應用程式上層。</string>
+    <string name="runes.texpander.action.copy">複製到剪貼簿</string>
+    <string name="runes.texpander.action.show">點選此處以顯示浮動面板。</string>
+    <string name="runes.texpander.action.insert">插入</string>
+    <string name="runes.texpander.action.replace">取代</string>
+    <string name="runes.texpander.hint.hide">隱藏浮動面板。您可以從通知欄或快捷設定中重新啟用。</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">預覽內容</string>
+    <string name="runes.link_preview.description"><![CDATA[    啟用符文後，筆記中若存在** http 網址**，則應用程式將嘗試在筆記中顯示網頁預覽畫面。
+    \n\n
+    除此之外：
+    \n
+    - 您可以直接在預覽窗格中預覽圖片並點選放大；
+    \n
+    - 也可以直接在應用程式中的播放影片連結。
+    ]]></string>
+    <string name="runes.auto_save.title">自動存檔</string>
+    <string name="runes.auto_save.description"><![CDATA[    預設情況下，建立或編輯筆記時，必須手動按下儲存按鈕以確認所做的更改。
+    \n
+    \n
+    啟用此符文，編輯文本時將自動儲存任何更改。
+    ]]></string>
+    <string name="runes.remember_last_filter.title">記住選擇</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    使用此符文，在開啟應用程式後，將會還原上次會話所使用的篩選器。
+    ]]></string>
+    <string name="runes.swipe_actions.title">滑動手勢</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    使用此符文，您可以在筆記列表中自行設定滑動操作。
+    ]]></string>
+    <string name="runes.focus_on_title.title">焦點轉移</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    預設情況下，建立新筆記時，游標將位於文字輸入欄位。
+    \n\n
+    使用此符文，您可以將游標移動到其他欄位。
+    ]]></string>
+    <string name="runes.hide_on_copy.title">減少步驟</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    When the rune is activated, any action of copying text inside Clipto (except contextual actions in input fields) will hide the application.
+    \n
+    \n
+    This rune allows you to minimize the number of steps when pasting copied text outside the application.
+    ]]></string>
+    <string name="runes.double_click_actions.title">動作提示</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    使用此符文，您可以強制修改某些動作僅能透過連按兩下設定
+    \n
+    \n
+    此設定可以有效防止意外點擊。
+    ]]></string>
+    <string name="runes.loyalty.title">支持發展</string>
+    <string name="runes.loyalty.description"><![CDATA[    沒有您的支援和意見回饋，我們可能無法為所有使用者提供更好的產品。
+    \n\n
+    > 如果您有時間的話，請在 Google Play 給我們評分。
+    \n
+    \n
+    > 如果您有更多時間的話，請加入軟體本地化項目，快點幫忙提交翻譯條目！！！
+    \n
+    \n
+    > 如果您發現任何錯誤，期望更多技能符文，或者單純只是想寫信給我們。我們的電子郵件和 GitHub Issues 頁面隨時歡迎您。
+    ]]></string>
+    <string name="runes.backup_restore.title">本地備份</string>
+    <string name="runes.backup_restore.description"><![CDATA[    In addition to cloud synchronization, you can manually save backups of your data and restore them later.
+    \n\n
+    Unlike cloud synchronization, this approach allows:
+    \n
+    - take a snapshot of all data at the current moment of time;
+    \n
+    - manage the entire backup and recovery process by yourself;
+    \n
+    - restore the entire data based on the previously saved data snapshot;
+    \n\n
+    ```
+    \n
+    Restoring from a file is done in a soft mode. That is, the existing data is not deleted, but only supplemented with new data.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">設定</string>
+    <string name="settings.campaign.rate.title">您的意見很重要</string>
+    <string name="settings.campaign.rate.message">這需要的時間不到一分鐘, 但可以幫助我們變得更好。</string>
+    <string name="settings.campaign.rate.button">請前往Google Play為我們評分！</string>
+    <string name="settings.campaign.rate.question">您對 Clipto 的評價？</string>
+    <string name="settings.campaign.rate.feedback.title">意見反應</string>
+    <string name="settings.campaign.rate.feedback.message">告訴我們如何改善 Clipto？我們非常重視您的意見。</string>
+    <string name="settings.campaign.rate.feedback.toast">您可以在 Google Play 上為我們留下好評嗎？感謝支持！</string>
+    <string name="settings.campaign.share.title">推薦給朋友可以獲得獎勵！</string>
+    <string name="settings.campaign.share.more">瞭解更多</string>
+    <string name="settings.campaign.share.action">分享連結</string>
+    <string name="settings.group.clipboard">剪貼簿</string>
+    <string name="settings.group.behavior">動作</string>
+    <string name="settings.group.appearance">外觀</string>
+    <string name="settings.group.backup">備份與還原</string>
+    <string name="settings.group.security">隱私 &amp; 安全</string>
+    <string name="settings.group.runes">符文</string>
+    <string name="settings.link_preview.title">預覽連結</string>
+    <string name="settings.auto_save.title">自動儲存筆記</string>
+    <string name="settings.auto_save.description">建立或編輯筆記時，應用程式將自動儲存更改。</string>
+    <string name="settings.focus_on_title.title">建立筆記時，游標將聚焦於標題上</string>
+    <string name="settings.focus_on_title.description">建立筆記時，游標將自動聚焦在標題欄位</string>
+    <string name="settings.track_clipboard.title">從剪貼簿複製的筆記</string>
+    <string name="settings.track_clipboard.description">應用程式將記錄剪貼簿內容變化來建立新筆記。並同時在通知欄顯示一個永久通知。</string>
+    <string name="settings.track_clipboard.q.message">從Android Q開始我們使用新的方法從剪貼簿中記錄筆記。</string>
+    <string name="settings.track_clipboard.q.description">從 Android Q 開始，只有當前在前景執行的應用程式，才能訪問剪貼簿資料。</string>
+    <string name="settings.track_clipboard.q.solution.title">要繞過此限制，請使用以下解決方案之一：</string>
+    <string name="settings.track_clipboard.q.solution.1.title">使用 \'Clipto…\' 取代「複製」動作</string>
+    <string name="settings.track_clipboard.q.solution.1">長按選擇要複製的文字後，如果應用程式可用，則使用 \'Clipto…\' 取代「複製」 動作。</string>
+    <string name="settings.track_clipboard.q.solution.2.title">通知欄中的標準「複製」與「黏貼」 選項</string>
+    <string name="settings.track_clipboard.q.solution.2">若 \'Clipto…\' 不可用或您仍想使用標準的「複製」動作，記得按下通知中的「黏貼」以從目前剪貼簿資料中記錄筆記。</string>
+    <string name="settings.track_clipboard.q.solution.3.title">與 Android Q 之前一樣的標準“複製”操作</string>
+    <string name="settings.track_clipboard.q.solution.3">此解決方案需要透過電腦對應用程式進行高級配置。 要使 Clipto 重新工作，請在電腦上運行以下 ADB 命令：</string>
+    <string name="settings.track_clipboard.q.solution.3.description">成功運行後，您應該能在應用程式的自訂通知中看到額外動作，該動作允許您開啟或關閉對剪貼簿的監控。此警告也將從設定中消失。</string>
+    <string name="settings.track_clipboard.q.emulate.title">模擬複製動作</string>
+    <string name="settings.track_clipboard.q.emulate.description">\'Clipto…\' 和「黏貼」動作將根據所選或已複製的文字自動建立新筆記，如果兩者內容不同，則將其放入剪貼簿中。</string>
+    <string name="settings.universal_clipboard.title">通用剪貼簿</string>
+    <string name="settings.universal_clipboard.description">複製到剪貼簿的任何文字內容都將在所有裝置之間同步。啟用該選項後，它也會自動新增到剪貼簿。</string>
+    <string name="settings.notification_style.title">通知樣式</string>
+    <string name="settings.notification_style.description">設定通知欄的剪貼簿樣式。</string>
+    <string name="settings.notification_sound.title">靜音通知</string>
+    <string name="settings.notification_sound.description">靜音通知，忽略通知設定或系統通知中的鈴聲和振動設定。</string>
+    <string name="settings.hide_on_click.title">複製後隱藏</string>
+    <string name="settings.hide_on_click.description">複製筆記後將自動退出應用程式。</string>
+    <string name="settings.restore_filter.title">記住上次的篩選器</string>
+    <string name="settings.restore_filter.description">應用程式將以上次會話中使用的篩選器開啟。</string>
+    <string name="settings.pin_starred.title">置頂已加星號的筆記</string>
+    <string name="settings.pin_starred.description">已加星號的筆記將優先顯示於列表中，不受篩選器的影響。</string>
+    <string name="settings.theme.title">主題</string>
+    <string name="settings.theme.description">選擇自訂主題配色</string>
+    <string name="settings.backup.title">備份至檔案</string>
+    <string name="settings.backup.description">將筆記匯出到檔案。</string>
+    <string name="settings.restore.title">從檔案還原</string>
+    <string name="settings.restore.description">從檔案還原筆記（支持格式：%s）。</string>
+    <string name="settings.startup.title">隨系統啟動</string>
+    <string name="settings.startup.description">允許應用程式在系統完成啟動後立即自行啟動。</string>
+    <string name="settings.language.title">語言</string>
+    <string name="settings.swipe_actions.title">滑動操作</string>
+    <string name="settings.swipe_actions.description">配置滑動操作以快速處理主列表中的筆記。</string>
+    <string name="settings.double_click.title">按兩下動作</string>
+    <string name="settings.double_click.description">設定連按兩下後可執行的動作。</string>
+    <string name="settings.double_click.action.exit">返回鍵以退出應用程式</string>
+    <string name="settings.double_click.action.delete">刪除筆記</string>
+    <string name="settings.double_click.action.edit">編輯筆記</string>
+    <string name="settings.double_click.toast">連按兩下以完成</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">不再顯示已更改的筆記</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">已分配屬性的筆記（含有標籤，星號，標題，摘錄），將不再顯示在「從剪貼簿複製的筆記」中。</string>
+    <string name="settings.clipboard.ignore_q_warning.title">隱藏關於剪貼簿板限制的警告</string>
+    <string name="settings.clipboard.ignore_q_warning.description">如果應用程式已設定為裝置的預設剪貼簿管理，請啟用該項以刪除有關功能限制的通知。</string>
+    <string name="settings.security.passcode.title">密碼鎖</string>
+    <string name="settings.security.passcode.description">設定密碼後，應用程式將在閒置 %s 分鐘後自動鎖定。\n\n注意：如果忘記密碼，則需要刪除並重新安裝該應用程式。所有未同步的更改都將遺失。</string>
+    <string name="settings.security.fingerprint.title">使用指紋解鎖</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">跳過</string>
+    <string name="auth.set_passcode.label.set_passcode">設定密碼以快速且安全地訪問應用程式</string>
+    <string name="auth.set_passcode.label.reenter_passcode">重新輸入密碼</string>
+    <string name="auth.set_fingerprint.title">設定 Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">您想使用指紋感測器來解鎖應用程式嗎？</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">使用指紋解鎖</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">暫時跳過</string>
+    <string name="auth.fingerprint.touch_sensor">確認指紋以繼續</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">輸入您目前的密碼</string>
+    <string name="change_passcode.set_new">建立新密碼</string>
+    <string name="change_passcode.reenter">重新輸入密碼</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - 支持</string>
+    <string name="about.label.email.support.message">在這裡寫下您的留言</string>
+    <string name="about.label.rate">請前往Google Play為我們評分！</string>
+    <string name="about.label.issue">問題回報</string>
+    <string name="about.label.translate">幫助我們翻譯應用程式</string>
+    <string name="about.label.changelog">更新記錄</string>
+    <string name="about.label.campaign.rate">幫助我們變得更好!</string>
+    <string name="about.label.campaign.share">分享應用程式連結</string>
+    <string name="about.label.campaign.share.description">有 %s 人使用您分享的連結註冊了應用程式。感謝您的分享！</string>
+    <string name="about.label.other">瀏覽他人評價</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">立即登入，將筆記上傳到雲端並在多個裝置之間同步。</string>
+    <string name="account.title.required_authorization">需要授權</string>
+    <string name="account.description.required_authorization">您必須獲得授權才能執行此動作</string>
+    <string name="account.title.authorized">已授權</string>
+    <string name="account.button.sign_in">登入</string>
+    <string name="account.button.sign_out">登出</string>
+    <string name="account.dialog.sign_out.title">正在登出</string>
+    <string name="account.dialog.sign_out.message">您確定要退出應用程式嗎？所有未同步資料都將丟失。</string>
+    <string name="account.plan.personal">個人憑證</string>
+    <string name="account.plan.subscription">訂閱方案(同步 %s 則筆記)</string>
+    <string name="account.plan.contributor">貢獻者方案(同步 %s 則筆記)</string>
+    <string name="account.plan.yearly">年費方案(同步 %s 則筆記)</string>
+    <string name="account.plan.monthly">月度方案(同步 %s 則筆記)</string>
+    <string name="account.plan.free">免費方案(同步 %s 則筆記)</string>
+    <string name="account.toolbar.title">帳戶</string>
+    <string name="account.sync.title">自動同步筆記</string>
+    <string name="account_rebuild_index_title">重建資料索引</string>
+    <string name="account_rebuild_index_description">如果您在其他裝置上發現資料（標籤、檔案、筆記等）沒有正確同步，我們建議您按照下列步驟操作。之後，您需要再次登入您的帳戶。</string>
+    <string name="account_delete_title">刪除帳戶</string>
+    <string name="account_delete_confirm_title">您確定要刪除這個帳戶嗎？</string>
+    <string name="account_delete_confirm_description"><![CDATA[    警告！當您按下右下角的「刪除」按鈕，您的帳戶和個人資料將被永久刪除，而且無法復原
+    請您再次仔細檢查筆記內有沒有留下重要的資料。
+    ]]></string>
+    <string name="account_delete_confirm_again_title">您確定要刪除嗎？</string>
+    <string name="account_delete_confirm_again_description">確定後，您的所有帳號資料將被永久刪除。</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">免費</string>
+    <string name="account.sync.plan.title">同步 %s 則筆記</string>
+    <string name="account.sync.plan.toolbar">選擇方案</string>
+    <string name="account.sync.plan.button.active">啟用方案</string>
+    <string name="account.sync.plan.button.select">選擇方案</string>
+    <string name="account.sync.plan.button.change">變更方案</string>
+    <string name="account.sync.plan.button.upgrade">升級</string>
+    <string name="account.sync.plan.caption">Clipto 可以免費使用，僅需為您額外同步的資料付費。</string>
+    <string name="account.sync.plan.hint">您可以在多個裝置之間同步的筆記數量 (%s)</string>
+    <string name="account.sync.plan.benefit.offline">無限數量的離線筆記。</string>
+    <string name="account.sync.plan.benefit.sync">在所有裝置之間同步 %s 則筆記。</string>
+    <string name="account.sync.plan.warning.limit_reached.title">筆記數量達到上限，同步已關閉。</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">包含回收箱在內的所有筆記總數為 %s，超過了 %s 則上限。</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">減少筆記數量以選擇此方案。</string>
+    <string name="account.sync.plan.warning.limit_reached.description">已達到此方案的筆記上限。別擔心，該應用程式仍可以在離線情況下使用，並且沒有任何限制。然而，在您升級帳戶或將筆記數量減少到限制之下前，裝置上的雲端同步功能將被停用。</string>
+    <string name="account.sync.plan.contributor">如果您定期幫助翻譯應用程式或支持該軟體，請聯絡我們升級您的帳戶。</string>
+    <string name="sync.free_limit_concept">免費方案的上傳限制可能會因各種因素而改變。</string>
+    <string name="sync.off.title">筆記未同步到其它裝置</string>
+    <string name="sync.off.multiple.title">筆記未同步到其它裝置</string>
+    <string name="sync.off.caption">這可能是由於：</string>
+    <string name="sync.off.reason.universal_clipboard">當應用程式建立此筆記時，通用剪貼簿尚未啟用。</string>
+    <string name="sync.off.reason.manual_off">已手動關閉同步。</string>
+    <string name="sync.warning.title">使用雲端同步功能</string>
+    <string name="sync.warning.description">雲端同步並非完全免費，在您升級帳戶或筆記數量小於已啟用的方案限制前，此功能可能會被停用。</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">快速操作</string>
+    <string name="fast_actions.compose_email">撰寫電子郵件</string>
+    <string name="fast_actions.send_message">傳送新訊息</string>
+    <string name="fast_actions.compose_sms">撰寫簡訊</string>
+    <string name="fast_actions.twitter_post">分享到Tweet</string>
+    <string name="fast_actions.web_search">網頁搜尋</string>
+    <string name="fast_actions.google_translate">Google 翻譯</string>
+    <string name="fast_actions.google_maps_search">Google 地圖搜尋</string>
+    <string name="fast_actions.wiki_search">維基百科搜尋</string>
+    <string name="fast_actions.youtube_search">YouTube 搜索</string>
+    <string name="fast_actions.duckduckgo_search">DuckDuckGo 搜尋</string>
+    <string name="fast_actions.stackoverflow_search">Stack Overflow 搜尋</string>
+    <string name="fast_actions.reddit_search">Reddit 搜尋</string>
+    <string name="fast_actions.play_url">播放連結</string>
+    <string name="fast_actions.send_as_file">作為檔案傳送</string>
+    <string name="fast_actions.send_as_txt_file">以 Txt 格式傳送</string>
+    <string name="fast_actions.send_as_pdf_file">以 Pdf 格式傳送</string>
+    <string name="fast_actions.send_as_md_file">以 Markdown 格式傳送</string>
+    <string name="fast_actions.export_to_file">匯出檔案</string>
+    <string name="fast_actions.export_to_file.success">已導出為 %s</string>
+    <string name="fast_actions.calendar_event">添加日曆事件</string>
+    <string name="fast_actions.copy">複製到剪貼簿</string>
+    <string name="fast_actions.copy_clear">從剪貼簿中刪除</string>
+    <string name="fast_actions.tts">文字轉語音</string>
+    <string name="fast_actions.tts.max_length">文字長度不得超過 %s 個字元</string>
+    <string name="fast_actions.share">分享至…</string>
+    <string name="fast_actions.send_as_qrcode">透過 QR Code 分享</string>
+    <string name="fast_actions.dial_number">撥打電話號碼</string>
+    <string name="fast_actions.insert_contact">插入聯絡人</string>
+    <string name="fast_actions.insert_contact_email">儲存聯絡人電子信箱</string>
+    <string name="fast_actions.insert_contact_phone">儲存聯絡人電話</string>
+    <string name="fast_actions.open_url">開啟網頁</string>
+    <string name="fast_actions.short_link">縮短連結</string>
+    <string name="fast_actions.more">顯示更多</string>
+    <string name="fast_actions.error">異常錯誤: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">預設</string>
+    <string name="theme.sepia">復古</string>
+    <string name="theme.dark">夜間</string>
+    <string name="theme.dark_blue">深藍</string>
+    <string name="theme.dark_green">深綠</string>
+    <string name="theme.dark_blurple">夜間藍</string>
+    <string name="theme.black">AMOLED 黑色</string>
+    <string name="theme.green">綠色</string>
+    <string name="theme.white">白色</string>
+    <string name="theme.pink">粉色</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">使用日期</string>
+    <string name="sort_order.modify_date">編輯日期</string>
+    <string name="sort_order.create_date">創建日期</string>
+    <string name="sort_order.delete_date">刪除日期</string>
+    <string name="sort_order.usage_count">使用次數</string>
+    <string name="sort_order.title">標題</string>
+    <string name="sort_order.text">文本</string>
+    <string name="sort_order.tags">標籤</string>
+    <string name="sort_order.size">檔案大小</string>
+    <string name="sort_order.name">名稱</string>
+    <string name="sort_order.notes_count">筆記數量</string>
+    <string name="sort_order.color">顏色</string>
+    <string name="sort_order.manual">手動</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">備份成功</string>
+    <string name="backup.fail.title">備份失敗</string>
+    <string name="backup.fail.message">異常錯誤: %s</string>
+    <string name="restore.success.title">還原成功</string>
+    <string name="restore.fail.title">還原失敗</string>
+    <string name="restore.fail.message">異常錯誤: %s</string>
+    <string name="clip.multiple.exit_without_save.title">您確定要關閉此視窗嗎？</string>
+    <string name="clip.multiple.exit_without_save.description">您所做的任何更改都將遺失。</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">一般標籤</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">分隔符</string>
+    <string name="clip.multiple.merge.separator.line">換行</string>
+    <string name="clip.multiple.merge.separator.space">空格</string>
+    <string name="clip.multiple.merge.separator.other">其它</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">控制</string>
+    <string name="notification.style.history">剪貼簿歷史</string>
+    <string name="notification.style.actions">剪貼簿功能</string>
+    <string name="notification.track_clipboard.pause">暫停記錄剪貼簿</string>
+    <string name="notification.track_clipboard.resume">恢復記錄剪貼簿</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">附件</string>
+    <string name="attachments.type.photo">拍照</string>
+    <string name="attachments.type.record">錄影</string>
+    <string name="attachments.type.file">選擇檔案</string>
+    <string name="attachments.attr.created">已建立</string>
+    <string name="attachments.attr.name">名稱</string>
+    <string name="attachments.attr.type">類型</string>
+    <string name="attachments.attr.path">路徑</string>
+    <string name="attachments.attr.size">檔案大小</string>
+    <string name="attachments.state.downloaded">已下載</string>
+    <string name="attachments.state.uploaded">已上傳</string>
+    <string name="attachments.state.downloading">正在下載……</string>
+    <string name="attachments.state.uploading">正在上傳……</string>
+    <string name="attachments.label.insert">新增到筆記</string>
+    <string name="attachments.label.download_url">上傳檔案後，即可訪問公開連結。</string>
+    <string name="contribute.annual.offer">隨時可以從 Google Play 訂閱中心取消訂閱。</string>
+    <string name="contribute.monthly.period">月</string>
+    <string name="contribute.annual.period">年</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">退出</string>
+    <string name="desktop.tray.show">顯示</string>
+    <string name="desktop.tray.show_in_taskbar">在工作列中顯示</string>
+    <string name="desktop.update.action.download">下載</string>
+    <string name="desktop.update.action.later">稍後</string>
+    <string name="desktop.update.title">有新版本可用！</string>
+    <string name="desktop.shortcuts.title">快速鍵</string>
+    <string name="desktop.shortcuts.dialog.define">自訂快捷鍵</string>
+    <string name="desktop.shortcuts.showHideApp">顯示／隱藏 應用程式</string>
+    <string name="desktop.shortcuts.modeFullscreen">切換為全螢幕模式</string>
+    <string name="desktop.shortcuts.modeComfortable">切換為自適應模式</string>
+    <string name="desktop.shortcuts.modeCompact">切換為緊湊模式</string>
+    <string name="desktop.shortcuts.tagNext">下一個標籤</string>
+    <string name="desktop.shortcuts.tagPrev">上一個標籤</string>
+    <string name="desktop.shortcuts.noteNext">下一則筆記</string>
+    <string name="desktop.shortcuts.notePrev">上一則筆記</string>
+    <string name="desktop.shortcuts.noteNew">新增筆記</string>
+    <string name="desktop.shortcuts.noteSave">儲存筆記</string>
+    <string name="desktop.shortcuts.noteDelete">刪除筆記</string>
+    <string name="desktop.shortcuts.noteCopy">複製筆記</string>
+    <string name="desktop.shortcuts.notePrint">列印筆記</string>
+    <string name="desktop.shortcuts.noteFind">搜尋筆記</string>
+    <string name="desktop.shortcuts.noteOpen">打開筆記</string>
+    <string name="desktop.shortcuts.noteEdit">編輯筆記</string>
+    <string name="desktop.shortcuts.contextModeSelect">選擇筆記</string>
+    <string name="desktop.shortcuts.contextModeCancel">取消選擇全部筆記</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">選擇全部筆記</string>
+    <string name="desktop.shortcuts.saveFromClipboard">從剪貼簿中儲存</string>
+    <string name="desktop.attachments.browse">點選「瀏覽」按鈕或直接將檔案拖曳到附件。</string>
+    <string name="desktop.main.content.under.development">新功能開發中……</string>
+    <string name="desktop.main.menu.download">下載</string>
+    <string name="desktop.main.menu.download.for">下載 %s</string>
+    <string name="desktop.main.menu.download.android.apk">下載通用的 APK 版本</string>
+    <string name="desktop.main.menu.resources">相關資源</string>
+    <string name="desktop.main.menu.open">在瀏覽器中開啟 Clipto</string>
+    <string name="desktop.main.features.title.1">在任何裝置上方便且快速地同步記錄。</string>
+    <string name="desktop.main.features.title.2">多平台的筆記 &amp; 剪貼簿管理──手機與電腦之間快速同步，進而提升您的效率和生產力。</string>
+    <string name="desktop.main.features.title.3">您的私人寫作夥伴。</string>
+    <string name="desktop.main.features.title.4">使用筆記，摘錄，剪貼簿，檔案和其它重要資訊以便輕鬆且方便地完成工作，並且可以在任何裝置上快速訪問。</string>
+    <string name="desktop.main.features.title.5">Clipto 特別在哪裡？</string>
+    <string name="desktop.get_started.language">選擇您的語言</string>
+    <string name="desktop.get_started.theme">選擇偏好主題</string>
+    <string name="desktop.auth.instruction">授權說明</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">掃描條碼</string>
+    <string name="barcode.prompt.point_at_a_barcode">將相機對準條碼</string>
+    <string name="barcode.prompt.hold_camera_steady">拍照時請保持相機穩定</string>
+    <string name="barcode.prompt.move_camera_closer">靠近以便進行搜索</string>
+    <string name="barcode.prompt.searching">搜尋中……</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">字體請求失敗，錯誤代碼：%1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">公開連結</string>
+    <string name="public.note.link.time.label">指定時間</string>
+    <string name="public.note.link.time.or">或</string>
+    <string name="public.note.link.time.type.seconds">秒</string>
+    <string name="public.note.link.time.type.minutes">分鐘</string>
+    <string name="public.note.link.time.type.hours">小時</string>
+    <string name="public.note.link.time.type.days">天</string>
+    <string name="public.note.link.access_time">訪問時間</string>
+    <string name="public.note.link.access_time.description">啟用後，該連結將僅在其建立或後續更新的指定時間後可用。</string>
+    <string name="public.note.link.access_time.label">將於</string>
+    <string name="public.note.link.access_password">訪問密碼</string>
+    <string name="public.note.link.access_password.hint">密碼提示（可選）</string>
+    <string name="public.note.link.access_password.placeholder">密碼</string>
+    <string name="public.note.link.access_password.description">啟用後，該連結將僅在密碼確認後可用。</string>
+    <string name="public.note.link.time_to_expire">有效時間</string>
+    <string name="public.note.link.time_to_expire.description">啟用後，該連結將僅在其建立或後續更新後的指定時間段內可用。</string>
+    <string name="public.note.link.time_to_expire.label">到期時間</string>
+    <string name="public.note.link.one_time_opening">一次性連結</string>
+    <string name="public.note.link.one_time_opening.description">啟用後，該連結將僅在其建立或後續更新時可用。</string>
+    <string name="public.note.link.action.remove">刪除連結</string>
+    <string name="public.note.link.action.remove.confirm.title">刪除連結？</string>
+    <string name="public.note.link.action.remove.confirm.description">該連結將無法訪問。</string>
+    <string name="public.note.link.action.create">建立連結</string>
+    <string name="public.note.link.state.unavailable">不可用</string>
+    <string name="public.note.link.state.postponed">將於：</string>
+    <string name="public.note.link.state.expires_in">於 %s 到期</string>
+    <string name="public.note.link.state.expired">已到期</string>
+    <string name="public.note.link.state.locked">已鎖定</string>
+    <string name="public.note.link.state.locked.wrong_password">密碼錯誤</string>
+    <string name="about.policy">隱私政策</string>
+    <string name="about.toc">服務條款</string>
+    <string name="about_pricing">定價</string>
+    <string name="site.integrations.title">整合</string>
+    <string name="site.integrations.zapier.title">Zapier 集成</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Connect Clipto with Zapier and run your workflows at blazing speed.
+\n
+## Your clipboard as a workflow trigger
+\n
+The fastest way to save important information is to select and copy it.
+\n
+To start using this functionality with Zapier, just follow these steps:
+\n
+1. Configure in Zapier the trigger **Text Copied to the Clipboard**.
+\n
+2. Install Clipto on your device (mobile, desktop) and **sign in** with the same account
+\n
+3. Open Clipto and activate the settings **Notes from Clipboard** and **Universal Clipboard**
+\n
+4. That is all. Now you can use the standard combination **Ctrl+C** (or Copy in the context menu) to activate a workflow with copied text.
+    ]]></string>
+    <string name="faq.title">常見問題</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notes** help you keep important text information and access it instantly at any time on any device.
+    \n
+    \n
+    By default, all notes are divided into several categories for quick access to the right ones based on different attributes.
+    \n
+    ```
+    \n
+    All notes are downloaded to your device when you first sign in.
+    \n
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filters** help you find the information you want faster by using ready-made search templates.
+    \n
+    ```
+    \n
+    A search template can contain various combinations of tags, time intervals, texts, sorting and display rules, etc.
+    \n
+    \n
+    Therefore, saving any such combination as a filter makes it much easier to retrieve the data you are looking for when you access it again.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Each filter has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The filter settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** help to organise your notes and files to make them easier to find.
+    \n
+    ```
+    \n
+    You can add multiple tags to any note or file.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Each tag has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The tag settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    The search parameters can be saved as a filter for quick access again.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** help to avoid repetitive typing by using re-usable text templates.
+    \n
+    \n
+    A snippet can be any existing or new note. It can be either static or dynamic, contain fields for manual input and runtime values (dates, times, etc.).
+    \n
+    \n
+    Snippets are organized by kits. You can either create your own kit or install any from the public library.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - The kit can be shared with other users.
+    \n
+    - The kit can be published in the public library.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Abbreviation can be used:
+    \n
+    \n
+    - to quickly search for a note using a short phrase of %s characters max
+    \n
+    - to insert the text of the note into the input field when entering a shortcut with a leading symbol **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    這是一個有關筆記附加資訊的說明。
+    \n
+    \n
+    支援最多 %s 個字符的 markdown 格式。
+    ]]></string>
+    <string name="where_none_of">未選取的</string>
+    <string name="where_any_of">已選取的</string>
+    <string name="where_all_of">全選</string>
+    <string name="where_after">之後</string>
+    <string name="where_before">之前</string>
+    <string name="where_from">從</string>
+    <string name="where_to">到</string>
+    <string name="where_date_today">今天</string>
+    <string name="where_date_tomorrow">明天</string>
+    <string name="where_date_custom">自訂</string>
+    <string name="where_date_yesterday">昨天</string>
+    <string name="where_date_last_7_days">最近 7 天</string>
+    <string name="where_date_last_30_days">最近 30 天</string>
+    <string name="where_date_last_90_days">最近 90 天</string>
+    <string name="advanced_filter_block_text">文字包含</string>
+    <string name="advanced_filter_block_text_type">文字類型</string>
+    <string name="advanced_filter_block_category">位於</string>
+    <string name="advanced_filter_block_tags">標籤</string>
+    <string name="advanced_filter_block_created">建立日期</string>
+    <string name="advanced_filter_block_updated">更新日期</string>
+    <string name="advanced_filter_block_only_public_links">僅顯示公開連結</string>
+    <string name="advanced_filter_block_only_attachments">僅顯示附件</string>
+    <string name="advanced_filter_block_only_not_synced">僅顯示未同步</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">國家／地區</string>
+    <string name="snippet_kit_attr_snippets">摘錄</string>
+    <string name="snippet_kit_attr_language">語言</string>
+    <string name="snippet_kit_attr_downloads">下載</string>
+    <string name="snippet_kit_attr_created">建立於</string>
+    <string name="snippet_kit_attr_updated">更新於</string>
+    <string name="snippet_kit_attr_category">類別</string>
+    <string name="snippet_kit_public_link">公開連結</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    可透過公開連結安裝摘錄工具箱
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">刪除連結？</string>
+    <string name="snippet_kit_public_link_remove_description">無法透過連結安裝摘錄工具箱。</string>
+    <string name="snippet_kit_public_library">公共資料庫</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    The snippet kit can be installed from a public library.
+    \n
+    \n
+    ```
+    \n
+    The kit must contain at least %s snippets in order to be placed in the public library.
+    \n
+    ```
+    \n
+    \n
+    When you place a kit in the public library, you automatically get a benefit.
+    \n
+    \n
+    [Learn more…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">從公共資料庫中移除分享？</string>
+    <string name="snippet_kit_public_library_remove_description">無法透過公共資料庫安裝摘錄工具箱。</string>
+    <string name="snippet_kit_hint_name">摘錄工具箱名稱</string>
+    <string name="snippet_kit_label_show_in_public_library">顯示公共資料庫</string>
+    <string name="snippet_kit_error_name_required">無法儲存重複名稱的設定</string>
+    <string name="snippet_kit_delete_title">刪除摘錄工具箱「%s」？</string>
+    <string name="snippet_kit_delete_description">摘錄工具箱將被永久刪除。</string>
+    <string name="snippet_kit_uninstall_title">移除摘錄工具箱「%s」？</string>
+    <string name="snippet_kit_uninstall_description">摘錄工具箱和所有相關的摘錄將被永久刪除。</string>
+    <string name="snippet_kit_install_hint_title">什麼是安裝？</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    The installed snippet kit will be available for use as if you had created it yourself.
+    \n
+    \n
+    That is, you can completely change any notes in it, add new ones, delete existing, manage the settings of the kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Any changes you make will only be available to you without the ability to change the original kit.
+    \n
+    \n
+    If the original kit has been updated, you can manually update the installed one.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">公開狀態</string>
+    <string name="public_status_private">私人</string>
+    <string name="public_status_blocked">鎖定</string>
+    <string name="public_status_review">審查中</string>
+    <string name="public_status_review_details">It will take some time before the kit is published and available in the public library.</string>
+    <string name="public_status_published">已發佈</string>
+    <string name="public_status_rejected">Rejected</string>
+    <string name="public_status_not_found">找不到</string>
+    <string name="public_status_deleted">已刪除</string>
+    <string name="public_status_restricted">已限制</string>
+    <string name="public_status_update_reason">更新原因</string>
+    <string name="dynamic_text_hint_title">Dynamic text</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    If a note contains dynamic fields, you will see this extra step whenever you perform any action on the note.
+    \n
+    \n
+    At this step you can define values in the input fields and complete the action with the changed text.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">文本</string>
+    <string name="dynamic_text_view_mode_form">表單</string>
+    <string name="dynamic_value_date">日期 / 時間</string>
+    <string name="dynamic_value_date_description">Creates a placeholder that is replaced by the actual date</string>
+    <string name="dynamic_value_device">裝置資訊</string>
+    <string name="dynamic_value_device_description">Creates a placeholder that is replaced with information about the device</string>
+    <string name="dynamic_value_random">隨機</string>
+    <string name="dynamic_value_random_description">Creates a placeholder that is replaced by a random value from a customizable list</string>
+    <string name="dynamic_value_clipboard">剪貼簿</string>
+    <string name="dynamic_value_clipboard_description">Creates a placeholder that is replaced by the content of the clipboard</string>
+    <string name="dynamic_value_snippet">摘錄</string>
+    <string name="dynamic_value_snippet_description">Creates a placeholder that is replaced by the content of the selected note</string>
+    <string name="dynamic_value_attr_device_type">資訊類型</string>
+    <string name="dynamic_field_date">日期欄位</string>
+    <string name="dynamic_field_date_description">Creates a date input field</string>
+    <string name="dynamic_field_text">文字欄位</string>
+    <string name="dynamic_field_text_description">Creates a text input field</string>
+    <string name="dynamic_field_number">數字欄位</string>
+    <string name="dynamic_field_number_description">Creates a number input field</string>
+    <string name="dynamic_field_select">選擇欄位</string>
+    <string name="dynamic_field_select_description">Creates an input to select one or more items</string>
+    <string name="dynamic_field_barcode_scanning">Barcode scanning field</string>
+    <string name="dynamic_field_barcode_scanning_description">Creates a field that allows you to scan a barcode and use its text as the field value</string>
+    <string name="dynamic_field_text_toggle">Text toggle</string>
+    <string name="dynamic_field_text_toggle_description">Creates a toggle switch that can enable or disable a block of text</string>
+    <string name="dynamic_field_reference">Reference field</string>
+    <string name="dynamic_field_reference_description">Creates a field that refers to another field and uses its value</string>
+    <string name="dynamic_field_unknown">未知欄位</string>
+    <string name="dynamic_field_unknown_description">The field cannot be rendered. Perhaps it is incorrect or was created in a newer version of the application</string>
+    <string name="dynamic_field_date_format_date_time">日期／時間（系統）</string>
+    <string name="dynamic_field_date_format_date">日期（系統）</string>
+    <string name="dynamic_field_date_format_time">時間（系統）</string>
+    <string name="dynamic_field_date_format_day_of_week">Day of week</string>
+    <string name="dynamic_field_date_format_day_of_month">Day of month (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Day of month (01–31)</string>
+    <string name="dynamic_field_date_format_year">Year</string>
+    <string name="dynamic_field_date_format_year_short">西元幾年 (yy)</string>
+    <string name="dynamic_field_date_format_month">Month</string>
+    <string name="dynamic_field_date_format_month_number">Month (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Month (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hour (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hour (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hour (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hour (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minute (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minute (01–60)</string>
+    <string name="dynamic_field_date_format_second">Second (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Second (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">上午 / 下午</string>
+    <string name="dynamic_field_date_format_time_zone">時區</string>
+    <string name="dynamic_field_value_formatter_new_line">換行</string>
+    <string name="dynamic_field_value_formatter_semicolon">分號</string>
+    <string name="dynamic_field_value_formatter_comma">逗號</string>
+    <string name="dynamic_field_value_formatter_space">空格</string>
+    <string name="dynamic_field_value_formatter_ordered_list">有序清單</string>
+    <string name="dynamic_field_value_formatter_unordered_list">無序清單</string>
+    <string name="dynamic_field_attr_common_label">標籤</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Suffix</string>
+    <string name="dynamic_field_attr_common_value">數值</string>
+    <string name="dynamic_field_attr_common_required">必填</string>
+    <string name="dynamic_field_attr_common_placeholder">佔位符</string>
+    <string name="dynamic_field_attr_common_default_value">預設值</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formatter of selected values</string>
+    <string name="dynamic_field_attr_select_multiple">多選</string>
+    <string name="dynamic_field_attr_select_user_input">使用者輸入</string>
+    <string name="dynamic_field_attr_text_multi_line">多行文字框</string>
+    <string name="dynamic_field_attr_text_max_length">最大長度</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Clipboard is the default value</string>
+    <string name="dynamic_field_attr_select_options">選項</string>
+    <string name="dynamic_field_attr_number_min">最小值</string>
+    <string name="dynamic_field_attr_number_max">最大值</string>
+    <string name="dynamic_field_attr_date_format">格式</string>
+    <string name="dynamic_field_attr_date_example">範例：%s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Multiple scanning</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Formatter of scanned values</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Referenced field label</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Field has its own value</string>
+    <string name="select_option_ordering">排序選項</string>
+    <string name="select_option_ordering_label_asc">標籤 (A-Z)</string>
+    <string name="select_option_ordering_label_desc">標籤 (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Value (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Value (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Delete this dynamic field from the text?</string>
+    <string name="dynamic_field_confirm_delete_description">The placeholder of the field will be deleted from the original text.</string>
+    <string name="dynamic_value_placeholder_copied_title">The dynamic value placeholder has been copied to the clipboard</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">File not found. Try uploading it again.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">已更新</string>
+    <string name="file_attr_location">Location</string>
+    <string name="file_confirm_update_file">更新檔案？</string>
+    <string name="file_confirm_update_file_description">The file will be updated in the cloud storage.</string>
+    <string name="file_error_name_required">需要輸入檔案名稱才能儲存</string>
+    <string name="file_action_new_file">檔案</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Files</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">筆記</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">附件</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Attachments</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">搜尋檔案</string>
+    <string name="file_type_any">所有</string>
+    <string name="file_type_audio">音訊</string>
+    <string name="file_type_video">影片</string>
+    <string name="file_type_image">圖片</string>
+    <string name="file_type_archive">封存</string>
+    <string name="file_type_document">文件</string>
+    <string name="file_type_recycled">回收箱</string>
+    <string name="folder_select">選擇</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">編輯</string>
+    <string name="clip_action_new_edit_description">您可以在儲存或執行任何動作之前編輯這則筆記。</string>
+    <string name="clip_action_new_insert">Insert into</string>
+    <string name="clip_action_new_insert_description">The text of a note can be inserted into any existing one. Select the target note and specify the insertion options.</string>
+    <string name="clip_action_new_action">動作</string>
+    <string name="clip_action_new_action_description">The text of a note can be used to perform an action.</string>
+    <plurals name="backup.success.message">
+        <item quantity="other">已導出 %s 筆記</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="other">已導入 %s 則筆記</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="other">已刪除 %s 筆記</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="other">%s 筆記</item>
+    </plurals>
+</resources>

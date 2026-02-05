@@ -1,0 +1,7 @@
+apply from: 'config.gradle'
+apply from: '../gradle/libraries.gradle'
+apply from: '../gradle/jar.gradle'
+
+dependencies {
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.0'
+}

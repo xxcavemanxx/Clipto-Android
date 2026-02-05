@@ -1,0 +1,104 @@
+Clipto ist eine neue Möglichkeit, Ihre tägliche Arbeit mit wichtigen oder temporären Notizen zu organisieren, wenn Sie diese schnell, bequem und zuverlässig erledigen müssen.
+
+
+SYNCHRONISIERUNG MIT MAC, WINDOWS, LINUX UND BROWSER
+Probieren Sie Clipto im Internet aus und laden Sie die Desktop-Anwendungen von unserer Website https://clipto.pro herunter.
+Clipto hält alles synchron.
+
+
+OFFLINE ARBEITEN
+Jede Tätigkeit funktioniert vollständig offline. Wenn Sie Ihre Notizen auf allen Ihren Geräten synchronisieren möchten, melden Sie sich einfach mit demselben Konto an. Falls nicht, melden Sie sich einfach nicht an und verwenden Sie manuelle Import-/Exportfunktionen. Es liegt ganz bei Ihnen.
+
+
+NOTIZEN AUS DER ZWISCHENABLAGE NEHMEN
+Clipto kann auch unter Android 10 als Clipboard-Manager verwendet werden!
+
+
+UNIVERSELLE ZWISCHENABLAGE AKTIVIEREN
+Mit der universellen Zwischenablage können Sie Notizen auf ein Gerät kopieren und den Inhalt dann auf einem anderen Gerät wieder einfügen.
+
+
+BARCODE SCANNEN
+Mit Clipto können Sie Ihre Kamera verwenden, um Notizen zu erfassen und in der App zu speichern.
+Barcode-Scannen am Gerät liest die meisten Standardformate (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR-Code).
+
+
+DATEIEN HINZUFÜGEN
+In Clipto können Sie beliebige Dateien speichern (nicht nur Bilder oder Fotos)
+
+
+PERSONALISIEREN
+Sobald Clipto installiert ist, können Sie jedes noch so kleine Verhalten an Ihre Bedürfnisse anpassen:
+- Thema (Weiß, Sepia, Grün, Dunkel, Dunkelblau, Dunkelviolett, AMOLED Schwarz)
+- Listenstil ( Raster, komfortable Liste, komprimierte Liste, Vorschauliste)
+- Sortieren nach (Erstellungsdatum, Nutzungsdatum, Nutzungsanzahl, Titel, Text, Tags, Größe, Zeichen)
+- Textgröße (sowohl für Listen- als auch für Notizbildschirm)
+- Textschriftart (sowohl für Listen- als auch für Notizbildschirm)
+- Wisch-Aktionen in der Hauptliste
+
+
+TEILEN
+Erstellen Sie einen öffentlichen Link in einer Notiz und machen Sie diesen ohne Registrierung im Web verfügbar.
+Öffentliche Links können eine beliebige Kombination der folgenden Attribute haben:
+- Benutzerdefiniertes Passwort
+- Einmaliger Zugang
+- Verzögerter Zugang
+- Verfallszeit
+
+
+VERBESSERN SIE IHRE PRODUKTIVITÄT
+Clipto ist auf Einfachheit konzipiert und bietet alle möglichen Methoden zum notieren:
+✔ Benachrichtigungsaktionen - Zugriff auf die neuesten Notizen und Ein-Tippen-Aktionen mit ihnen;
+✔ Kontextuelle Aktionen - Zugriff auf erweiterte Funktionen über den ausgewählten Text in jeder aktiven Anwendung;
+✔ Notizen aus der Zwischenablage - speichern Sie Notizen aus der Zwischenablage und verwenden Sie sie später als Zwischenablagenverlauf;
+✔ Aktionen in der Zwischenablage - Extrahieren Sie Teile von Notizen aus der Zwischenablage und verwenden Sie sie mit Ein-Tippen-Aktionen;
+✔ Gemeinsame Aktionen - Erfassen Sie Notizen von jedem gemeinsam genutzten Text oder jeder gemeinsam genutzten Datei;
+✔ In-App-Editor - Erstellen von Notizen in einfachem Text, Markdown, HTML;
+✔ One-Tap-Aktionen
+    • Text in Sprache
+    - Eine E-Mail verfassen
+    - SMS verfassen
+    - Einen Tweet komponieren
+    - Ein Kalenderereignis hinzufügen
+    - Einen Kontakt einfügen
+    - Web-Suche
+    - Wikipedia-Suche
+    - YouTube-Suche
+    - Google Übersetzen
+    • Teilen mit…
+    - In die Zwischenablage kopieren
+    • Als QR-Code senden
+    • Als Text schicken
+    • Als Pdf schicken
+    • Als Markdown senden
+    • Eine Webseite öffnen
+    • Kontakt-E-Mail speichern
+    • Kontakttelefon speichern
+    • Eine Telefonnummer wählen
+
+
+IMPORT AUS ANDEREN NOTIZAPPLIKATIONEN UND ZWISCHENABLAGE-MANAGERN
+Sie fragten nach der Möglichkeit, Ihre Notizen aus einigen gängigen Anwendungen importieren zu können. Wir haben es also getan und unterstützen nun offiziell die folgenden Sicherungsformate:
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+• Clipboard Manager
+• Google Keep (takeout zip)
+
+
+GET INVOLVED IN THE DEVELOPMENT PROCESS
+Any new feature that we add to the app is the result of user's feedback. You use the app and you guide its development with our labor help:)
+Just create your request on Github - https://github.com/clipto-pro/Android
+
+
+TRANSLATE THE APP INTO YOUR LANGUAGE
+Thanks to all our contributors who help us to stay free and concentrate on new features!
+If Clipto is not translated (or partially, or wrongly) on your language please help us here - https://crowdin.com/project/clipto
+
+
+BECOME PART OF OUR COMMUNITY
+Join us on Reddit - https://www.reddit.com/r/cliptopro
+Follow us on Twitter - https://twitter.com/CliptoPro
+Like and Share us on Facebook - https://www.facebook.com/cliptopro
+
+Thanks!

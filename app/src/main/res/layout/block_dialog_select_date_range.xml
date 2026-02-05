@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFrom"
+        style="@style/TextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:hint="@string/where_from"
+        android:minHeight="56dp"
+        app:counterEnabled="false"
+        app:endIconDrawable="@drawable/ic_time_picker"
+        app:endIconMode="custom"
+        app:endIconTint="?android:textColorPrimary"
+        app:startIconDrawable="@drawable/ic_date_picker"
+        app:startIconTint="?android:textColorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvFrom"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textAlignment="center"
+            android:textColorHint="?android:textColorSecondary"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTo"
+        style="@style/TextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:hint="@string/where_to"
+        android:minHeight="56dp"
+        app:counterEnabled="false"
+        app:endIconDrawable="@drawable/ic_time_picker"
+        app:endIconMode="custom"
+        app:endIconTint="?android:textColorPrimary"
+        app:startIconDrawable="@drawable/ic_date_picker"
+        app:startIconTint="?android:textColorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvTo"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textAlignment="center"
+            android:textColorHint="?android:textColorSecondary"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

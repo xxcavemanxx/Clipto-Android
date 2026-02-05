@@ -1,0 +1,131 @@
+ext {
+    javaSourceCompatibility = JavaVersion.VERSION_1_8
+    javaTargetCompatibility = JavaVersion.VERSION_1_8
+
+    rxJavaVersion = '2.2.21'
+    objectboxVersion = '2.9.0'
+    archWorkVersion = '2.5.0'
+    archNavigationVersion = '2.3.5'
+    lifecycleVersion = '2.3.1'
+    markwonVersion = '4.6.2'
+    glideVersion = '4.12.0'
+
+    libpacks = [
+            android_support                   : [
+                    'androidx.core:core-ktx:1.3.2',
+                    'androidx.paging:paging-runtime:2.1.2',
+                    'androidx.paging:paging-runtime-ktx:2.1.2',
+                    "com.github.bumptech.glide:glide:${glideVersion}",
+                    "androidx.constraintlayout:constraintlayout:2.1.0",
+                    "com.google.android.material:material:1.5.0-alpha02"
+            ],
+            android_rxjava                    : [
+                    "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+                    'io.reactivex.rxjava2:rxandroid:2.1.1'
+            ],
+
+            android_arch_components           : [
+                    'androidx.browser:browser:1.0.0',
+                    "androidx.lifecycle:lifecycle-service:$lifecycleVersion",
+                    "androidx.navigation:navigation-fragment-ktx:$archNavigationVersion"
+            ],
+
+            android_arch_work           : [
+                    "androidx.work:work-runtime-ktx:$archWorkVersion"
+            ],
+
+            android_annotation_processors     : [
+                    "io.objectbox:objectbox-processor:${objectboxVersion}",
+                    "com.github.bumptech.glide:compiler:${glideVersion}"
+            ],
+
+            android_arch_annotation_processors: [
+                    "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion",
+            ],
+
+            android_unit_testing              : [
+                    "androidx.arch.core:core-testing:2.0.0",
+                    'org.robolectric:robolectric:3.6.1',
+                    'androidx.test.ext:junit:1.0.0'
+            ],
+
+            android_instrumentation_testing   : [
+                    'androidx.test.espresso:espresso-core:3.1.0',
+                    'androidx.test.espresso:espresso-intents:3.1.0',
+                    'androidx.test.espresso:espresso-web:3.1.0',
+                    'androidx.test.uiautomator:uiautomator:2.2.0',
+                    'androidx.arch.core:core-testing:2.0.0',
+                    'androidx.test:runner:1.1.0',
+                    'org.mockito:mockito-android:2.22.0'
+            ],
+
+            android_instrumentation_testing_utils   : [
+                    'androidx.test:orchestrator:1.1.0'
+            ],
+
+            android_charts                    : [
+                    'com.github.PhilJay:MPAndroidChart:v3.0.3'
+            ],
+
+            android_objectbox                 : [
+                    "com.getkeepsafe.relinker:relinker:1.4.3",
+                    "io.objectbox:objectbox-android:$objectboxVersion",
+                    "io.objectbox:objectbox-kotlin:$objectboxVersion"
+            ],
+
+            android_markwon                   : [
+                    "io.noties.markwon:core:$markwonVersion",
+                    "io.noties.markwon:ext-strikethrough:$markwonVersion",
+                    "io.noties.markwon:ext-tables:$markwonVersion",
+                    "io.noties.markwon:ext-tasklist:$markwonVersion",
+                    "io.noties.markwon:ext-latex:$markwonVersion",
+                    "io.noties.markwon:html:$markwonVersion",
+                    "io.noties.markwon:image:$markwonVersion",
+                    "io.noties.markwon:image-glide:$markwonVersion",
+                    "io.noties.markwon:linkify:$markwonVersion",
+                    "io.noties.markwon:editor:$markwonVersion",
+                    'com.caverock:androidsvg:1.4',
+                    'com.atlassian.commonmark:commonmark:0.15.2',
+                    'com.atlassian.commonmark:commonmark-ext-gfm-strikethrough:0.15.2',
+                    'com.atlassian.commonmark:commonmark-ext-gfm-tables:0.15.2'
+            ],
+
+            java_objectbox                    : [
+                    "io.objectbox:objectbox-java:$objectboxVersion"
+            ],
+
+            java_utils                        : [
+                    'org.greenrobot:essentials:3.1.0'
+            ],
+
+            java_rxjava                       : [
+                    "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+                    'com.squareup.okhttp3:okhttp:4.9.2',
+                    'com.google.code.gson:gson:2.8.7'
+            ],
+
+            java_rest                         : [
+                    'com.squareup.retrofit2:retrofit:2.4.0',
+                    'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
+                    'com.squareup.retrofit2:converter-gson:2.4.0',
+                    'com.squareup.okhttp3:okhttp:4.9.2',
+                    'com.squareup.okhttp3:logging-interceptor:4.9.2',
+                    'com.squareup.okhttp3:okhttp-urlconnection:4.9.2',
+                    'org.greenrobot:essentials:3.1.0',
+                    'com.google.code.gson:gson:2.8.7'
+            ],
+
+            java_kotlin                       : [
+                    "org.jetbrains.kotlin:kotlin-stdlib:${kotlinPluginVersion}"
+            ],
+
+            java_unit_testing                 : [
+                    'junit:junit:4.12',
+                    'commons-io:commons-io:2.5',
+                    'io.jsonwebtoken:jjwt:0.9.0',
+                    'org.mockito:mockito-core:2.22.0',
+                    'com.github.tomakehurst:wiremock:2.8.0',
+                    "org.jetbrains.kotlin:kotlin-test-junit:${kotlinPluginVersion}"
+            ]
+    ]
+}

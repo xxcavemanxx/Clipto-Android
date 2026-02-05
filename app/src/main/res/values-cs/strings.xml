@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Nový řádek</string>
+    <string name="common_separator_space">Mezera</string>
+    <string name="common_separator_comma">Čárka</string>
+    <string name="confirm_exit_edit_mode_title">Ukončit režim úprav?</string>
+    <string name="confirm_exit_edit_mode_description">Veškeré neuložené změny budou ztraceny.</string>
+    <string name="confirm_delete_note_title">Odstranit poznámku?</string>
+    <string name="confirm_delete_note_description">Vybraná poznámka bude odstraněna.</string>
+    <string name="link_preview_label">Zobrazit náhled…</string>
+    <string name="link_preview_not_found">Bez náhledu</string>
+    <string name="link_preview_hide">Skrýt náhled</string>
+    <string name="link_preview_show">Zobrazit náhled</string>
+    <string name="toast_downloaded">Downloaded %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">K ukončení stiskni znovu tlačítko \'Zpět\'</string>
+    <string name="essentials.errors.unknown">Došlo k neznámé chybě. Prosím, opakujte akci.</string>
+    <string name="error_data_empty">Nenalezena žádná data.</string>
+    <string name="error.unexpected">Došlo k neočekávané chybě</string>
+    <string name="error.unexpected.send">Klikněte na \"Bug\" tlačítko k odeslání chyby</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Ohodnotit</string>
+    <string name="menu.edit">Upravit</string>
+    <string name="menu.clear">Vymazat</string>
+    <string name="menu.clear_all">Vyčistit vše</string>
+    <string name="menu.share">Sdílet</string>
+    <string name="menu.fav">Označené hvězdičkou</string>
+    <string name="menu.delete">Smazat</string>
+    <string name="menu.empty">Vyprázdnit</string>
+    <string name="menu.cancel">Zrušit</string>
+    <string name="menu.settings">Nastavení</string>
+    <string name="menu.display_options">Volby zobrazení</string>
+    <string name="menu.faq">Nejčastější dotazy</string>
+    <string name="menu.new">Nová</string>
+    <string name="menu.search">Hledat</string>
+    <string name="menu.print">Tisk</string>
+    <string name="menu.restore">Obnovit</string>
+    <string name="menu.merge">Sloučit</string>
+    <string name="menu.copy_link">Kopírovat veřejný odkaz</string>
+    <string name="menu.share_link">Sdílet veřejný odkaz</string>
+    <string name="menu.save_as">Uložit jako…</string>
+    <string name="menu.rename">Přejmenovat</string>
+    <string name="menu.paste">Vložit</string>
+    <string name="menu.copy">Kopírovat</string>
+    <string name="menu.cut">Vyjmout</string>
+    <string name="menu.fullscreen.enter">Spustit režim celé obrazovky</string>
+    <string name="menu.fullscreen.exit">Ukončit režim celé obrazovky</string>
+    <string name="menu_close">Zavřít</string>
+    <string name="button.update">Aktualizovat</string>
+    <string name="button.install">Nainstalovat</string>
+    <string name="button.uninstall">Odinstalovat</string>
+    <string name="button.done">Hotovo</string>
+    <string name="button.undo">Zpět</string>
+    <string name="button.apply">Použít</string>
+    <string name="button.change">Změnit</string>
+    <string name="button.save">Uložit</string>
+    <string name="button.create">Vytvořit</string>
+    <string name="button.send">Odeslat</string>
+    <string name="button.preview">Náhled</string>
+    <string name="button.confirm">Potvrdit</string>
+    <string name="button.sync">Synchronizovat</string>
+    <string name="button.yes">Ano</string>
+    <string name="button.no">Ne</string>
+    <string name="button.back">Zpět</string>
+    <string name="button.continue">Pokračovat</string>
+    <string name="button.finish">Hotovo</string>
+    <string name="button.got_it">Rozumím!</string>
+    <string name="button.get_started">Začít</string>
+    <string name="button.example">Příklad</string>
+    <string name="button_try_again">Zkuste to znovu</string>
+    <string name="button_insert">Vložit</string>
+    <string name="button_refresh">Obnovit</string>
+    <string name="notification.title.empty">Schránka je prázdná</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Zpět</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Zkratka</string>
+    <string name="common.label.description">Popis</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Nový štítek</string>
+    <string name="tag.new.name">Název śtítku</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Move to folder</string>
+    <!-- MAIN -->
+    <string name="main.search">Hledat v poznámkách</string>
+    <string name="main.filter.all">Vše</string>
+    <string name="main.filter.no_tags">Bez tagu</string>
+    <string name="main.filter.filtered">Filtrováno</string>
+    <string name="main.delete_selected.title">Odstranit vybrané?</string>
+    <string name="main.delete_selected.description">Všechny vybrané poznámky budou odstraněny.</string>
+    <string name="main.delete_merged.title">Smazat sloučené poznámky?</string>
+    <string name="main.delete_merged.description">Sloučené poznámky budou navždy odstraněny.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Poznámky nenalezeny.</string>
+    <string name="main.list.empty.caption">Pozn.: každá kategorie má své vlastní řazení a jiná další nastavení. Ta můžete upravovat kdykoliv přímo ze seznamu (%s) či z levého vysouvacího panelu (%s).</string>
+    <string name="main.list.empty.caption.three_dot">menu třech teček</string>
+    <string name="main.list.empty.caption.long_tap">dlouho stiskni kategorii</string>
+    <string name="main.list.empty.description.all">Všeobecná kategorie. Zobrazí všechny poznámky bez filtrování.</string>
+    <string name="main.list.empty.description.no_tags">Zobrazí poznámky bez štítku.</string>
+    <string name="main.list.empty.description.tags">Zobrazí poznámky a soubory se zvoleným štítkem.</string>
+    <string name="main.list.empty.description.filtered">Pro vybrané položky filtru nebylo nic nalezeno.</string>
+    <string name="main.list.empty.description.starred">Zobrazí poznámky označené hvězdičkou.</string>
+    <string name="main.list.empty.description.deleted">Zobrazí smazané poznámky a soubory, které je stále možno obnovit. Smazané záznamy si ponechávají štítky a ostatní atributy, ale nejsou viditelné v jejich kategoriích.</string>
+    <string name="main.list.empty.description.clipboard">Zobrazí poznámky, které byly automaticky vytvořeny aplikací ze schránky. Ve výchozím nastavení však schránka není sledována. Tuto funkci můžete aktivovat v nastavení.</string>
+    <string name="main.list.empty.description.snippets">Zobrazí poznámky, které jsou obsaženy v jiných. Jakékoliv změny v útržku se projeví ve všech poznámkách, ve kterých byl obsažen.</string>
+    <string name="main.filter.snippets">Útržky</string>
+    <string name="main.filter.filters">Filtry</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Soubory</string>
+    <string name="main.filter.notes">Poznámky</string>
+    <string name="main.filter.tags">Štítky</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Remember last action</string>
+    <string name="main_action_settings_remember_description">When activated, the app will remember the last action and use it the next time you click the Floating Button. At the same time, a window with a list of all actions can be opened with a long tap on the Floating Button.</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">Vytvořit poznámku</string>
+    <string name="main_action_notes_new_title">Nová poznámka</string>
+    <string name="main_action_notes_new_description">Ukládejte důležité informace psaním a přistupujte k nim kdy budete chtít, a to na jakémkoliv zařízení</string>
+    <string name="main_action_notes_barcode_title">Skenovat čarový kód</string>
+    <string name="main_action_notes_barcode_description">Skenujte odkazy či text a uložte je do poznámky (nejběžnější čárové kódy jsou podporovány)</string>
+    <string name="main_action_notes_clipboard_title">Zkopírovat ze schránky</string>
+    <string name="main_action_notes_clipboard_description">Uložte to co máte ve schránce do nové poznámky</string>
+    <string name="main_action_notes_import_title">Importovat ze souboru</string>
+    <string name="main_action_notes_import_description">Vytvořte novou poznámku ze souboru (max. velikost %s kB)</string>
+    <string name="main_action_notes_import_error">Velikost souboru musí být nanejvýš %s kilobajtů</string>
+    <string name="main_action_files">Přidat soubory</string>
+    <string name="main_action_files_file_title">Vybrat soubor</string>
+    <string name="main_action_files_file_description">Přidejte libovolný soubor (foto, video, pdf, atd.) s max. %s MB</string>
+    <string name="main_action_files_photo_title">Pořídit fotku</string>
+    <string name="main_action_files_photo_description">Vyfoťte něco a uložte tuto fotku do nové poznámky</string>
+    <string name="main_action_files_record_title">Nahrát video</string>
+    <string name="main_action_files_record_description">Nahrajte něco a uložte toto video do nové poznámky (max. velikost %s MB)</string>
+    <string name="main_action_organize">Zorganizovat data</string>
+    <string name="main_action_organize_tag_title">Nový štítek</string>
+    <string name="main_action_organize_tag_description">Vytvořte si štítky, aby se vám ve vašich poznámkách lépe hledalo</string>
+    <string name="main_action_organize_filter_title">Nový filtr</string>
+    <string name="main_action_organize_filter_description">Vytvořte si filtr abyste našli běžně vyhledávané skupiny poznámek rychle, a to s pomocí předpřipravených šablon</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Omezte opakované psaní</string>
+    <string name="main_action_snippets_snippet_title">Nový útržek</string>
+    <string name="main_action_snippets_snippet_description">Vytvořte si text, který byste chtěli použít vícekrát, abyste nemuseli psát jednu věc pořád dokola a vyvarovali se tak i chybám</string>
+    <string name="main_action_snippets_set_title">Založit sadu útržků</string>
+    <string name="main_action_snippets_set_description">Vytvořte si sadu útržků abyste našli ty, které běžně používáte, rychleji</string>
+    <string name="main.actions.save_and_start_new_note">Ulož a vytvoř novou poznámku</string>
+    <string name="main.actions.add_dynamic_value">Přidat dynamickou hodnotu</string>
+    <string name="main.actions.add_attachment">Přidat přílohu</string>
+    <string name="main.actions.sync_note">Synchronizovat poznámku</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Posun vlevo</string>
+    <string name="main.swipe_actions.caption.right">Posun vpravo</string>
+    <string name="main.swipe_actions.fav">Označit hvězdičkou</string>
+    <string name="main.swipe_actions.delete">Smazat</string>
+    <string name="main.swipe_actions.copy">Kopírovat</string>
+    <string name="main.swipe_actions.none">Nic</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Pokročilé vyhledávání</string>
+    <string name="filter.hint.text">Text obsahuje</string>
+    <string name="filter.label.no_tags">Bez tagu</string>
+    <string name="filter.label.fav">S hvězdičkou</string>
+    <string name="filter.label.platform">Platforma</string>
+    <string name="filter.label.snippets">Útržky</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Poznámky ze schránky</string>
+    <string name="filter.clipboard.empty.title">Vymazat poznámky ze schránky?</string>
+    <string name="filter.clipboard.empty.description">Veškeré poznámky ze schránky (mimo pozn. s hvězdičkou či štítkem) budou navždy smazány.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Koš</string>
+    <string name="filter.deleted.limit">Limit</string>
+    <string name="filter.deleted.empty.title">Vysypat koš?</string>
+    <string name="filter.deleted.empty.description">Veškeré poznámky v koši budou navždy smazány.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Limit</string>
+    <string name="filter.limit.description">Jakmile počet poznámek překročí limit v této kategorii, staré poznámky přes limit budou automaticky smazány z kategorie.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Název filtru</string>
+    <string name="filter_error_name_required">Pro uložení filtru je vyžadován unikátní název</string>
+    <string name="filter_delete_title">Odebrat filtr \'%s\'?</string>
+    <string name="filter_delete_description">Filtr bude navždy smazán.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Pro uložení štítku je vyžadován unikátní název</string>
+    <string name="filter.tag.rule.title">Pravidlo auto-přiřazení</string>
+    <string name="filter.tag.rule.description">Jakmile aktivováno, štítek bude automatiky přiřazován novým poznámkám, pokud obsahují jakýkoliv výraz z textu děleného čárkou.</string>
+    <string name="filter.tag.rule.hint">Text dělený čárkou</string>
+    <string name="filter.tag.delete.title">Odebrat štítek \'%s\'?</string>
+    <string name="filter.tag.delete.description">Štítek bude navždy smazán.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Přidat</string>
+    <string name="clip.hint.title">Poznámka bez názvu</string>
+    <string name="clip.hint.tags">Pro přidání tagu klepni sem</string>
+    <string name="clip.hint.text">Pro vložení textu klepni sem</string>
+    <string name="clip.snackbar.text.required">K uložení této poznámky je nutné vložit text</string>
+    <string name="clip.snackbar.text.copied">Text byl zkopírován do schránky.</string>
+    <string name="clip.attr.updated">Použito</string>
+    <string name="clip.attr.edited">Upraveno</string>
+    <string name="clip.attr.created">Vytvořeno</string>
+    <string name="clip.attr.deleted">Odstraněno</string>
+    <string name="clip.attr.usageCount">Počítadlo použití</string>
+    <string name="clip.attr.charsCount">Počet znaků</string>
+    <string name="clip.attr.size">Velikost</string>
+    <string name="clip_exit_without_save_title">Zrušit úpravu poznámky?</string>
+    <string name="clip_exit_without_save_description">Veškeré změny budou ztraceny.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Uložit jako</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Všeobecné</string>
+    <string name="clip_details_tab_tags">Štítky</string>
+    <string name="clip_details_tab_folder">Location</string>
+    <string name="clip_details_tab_attachments">Přílohy</string>
+    <string name="clip_details_tab_dynamic">Dynamická proměnná</string>
+    <string name="clip_details_tab_snippets">Výstřižky</string>
+    <string name="clip_details_tab_snippet_kits">Sady útržků</string>
+    <string name="clip_details_tab_dynamic_values">Hodnoty</string>
+    <string name="clip_details_tab_dynamic_fields">Kolonka</string>
+    <string name="clip_details_tab_attributes">Vlastnosti</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Vložit text do poznámky</string>
+    <string name="clip.info.label.note.insert.remember">Zapamatuj si má rozhodnutí a už se nepej (panel může být vyvolán dlouhým dotekem).</string>
+    <string name="clip.info.label.note.create">Vytvořit poznámku</string>
+    <string name="clip.info.label.position">Pozice</string>
+    <string name="clip.info.label.beginning">Na začátek</string>
+    <string name="clip.info.label.end">Na konec</string>
+    <string name="clip.info.label.tags.edit">Upravit štítky</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Prostý text</string>
+    <string name="clip.text.type.link">Text s odkazy</string>
+    <string name="clip.text.type.line_clickable">Text s kopírovanými linkami</string>
+    <string name="clip.text.type.word_clickable">Text s kopírovanými tokeny</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Příloha</string>
+    <string name="clip.add.attachment.tooltip">Přílohou může být jakýkoli soubor (foto, video, pdf, atd.) do %s megabajtů.</string>
+    <string name="clip.add.dynamic.title">Dynamická proměnná</string>
+    <string name="clip.add.dynamic.tooltip">Dynamická proměnná umožňuje vytvářet poznámky s daty vždy aktuálními. V náhledu je pak zástupný text nahrazen za aktuální data.</string>
+    <string name="clip.add.dynamic.value.date_time">Datum/Čas</string>
+    <string name="clip.add.dynamic.value.platform">Platforma</string>
+    <string name="clip.add.dynamic.value.ip">IP adresa</string>
+    <string name="clip.add.dynamic.value.date">Datum</string>
+    <string name="clip.add.dynamic.value.time">Čas</string>
+    <string name="clip.add.dynamic.value.month">Měsíc</string>
+    <string name="clip.add.dynamic.value.timezone">Časové pásmo</string>
+    <string name="clip.add.dynamic.value.month_number">Číslo měsíce</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Číslo měsíce (s vodící nulou)</string>
+    <string name="clip.add.dynamic.value.year">Rok</string>
+    <string name="clip.add.dynamic.value.year_short">Rok (zkráceně)</string>
+    <string name="clip.add.dynamic.value.hour24">Hodin (24-hodinový formát)</string>
+    <string name="clip.add.dynamic.value.hour12">Hodin (12-ti hodinový formát)</string>
+    <string name="clip.add.dynamic.value.minutes">Minut</string>
+    <string name="clip.add.dynamic.value.seconds">Sekund</string>
+    <string name="clip.add.dynamic.value.am_pm">dop./odp.</string>
+    <string name="clip.add.dynamic.value.day_of_week">Den v týdnu</string>
+    <string name="clip.add.dynamic.value.day_of_month">Dne v měsíci</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Den v měsící (s vodící nulou)</string>
+    <string name="clip.add.dynamic.value.random_digit">Náhodná číslice (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Náhodný latinský znak (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Útržek</string>
+    <string name="clip.add.snippet.new.hint">Zadej text k nalezení či vytvoření</string>
+    <string name="clip.add.snippet.tooltip">Útržek je libovolnou poznámkou, jejíž text můžete použít v jakékoliv jiné poznámce, ale upravovat pouze v jediné (výchozí). Vytvořené útržky naleznete v levém vysouvacím panelu.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Typ textu</string>
+    <string name="text.config.size">Velikost textu</string>
+    <string name="text.config.font">Písmo</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Seřadit dle</string>
+    <string name="list.config.lines">Počet linek textu</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Styl seznamu</string>
+    <string name="list.style.description">Styl seznamu poznámek</string>
+    <string name="list.style.default">Výchozí </string>
+    <string name="list.style.comfortable">Pohodlný</string>
+    <string name="list.style.compact">Zúžený</string>
+    <string name="list.style.preview">Náhled</string>
+    <string name="list.style.grid">Nástěnka</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Runy dovedností</string>
+    <string name="runes.hint.description"><![CDATA[    Tyto runy jsou formou nastavitelných funkcí/vylepšení aplikace.
+    \n\n
+    Každá runa rozšiřuje základní funkce a umožňuje vám nastavit si aplikaci podle sebe pro zajištění co nejvyšší produktivity.
+    \n\n
+    Některé runy jsou užitečnější, jiné zas ne. Tento přístup však jejími možnostmi dělá aplikaci téměř neomezenou.
+    \n\n
+    Vyzkoušeje existující runy, aktivujte ty, které budete chtít, a zašlete nápady pro nové, abychom mohli aplikaci udělat zas o něco produktivnější :)
+    ]]></string>
+    <string name="runes_hotkeys_title">Hlídač zkratek</string>
+    <string name="runes_hotkeys_description"><![CDATA[    S touto runou můžete nakonfigurovat zkratky pro ovládání aplikace klávesnicí.
+    \n
+    \n
+    Někeré zkratky jsou již nastavené jako výchozí. Můžete je však libovolně vymazat či přepsat.
+    \n
+    \n
+    ```
+    \n
+    V závislosti na akci bude zkraka monitorována v aplikaci či (vč.) mimo ni.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Hvězdná synchronizace</string>
+    <string name="runes.instant_sync.description"><![CDATA[    Tato runa nabízí příležitost:
+    \n
+    - automaticky ukládeje všechna data v cloudu;
+    \n
+    - přistupujte k datům z jakéhokoli vašeho zařízení;
+    \n
+    - nechte ukládat libovolné soubory;
+    \n\n
+    Ve výchozím nastavení aplikace funguje bez synchronizace a ukládá všechna data na zařízení.
+    \n
+    ```
+    \n
+    Po aktivaci této runy se všechna předchozí i stávající data synchronizují s cloudem, ve chvíli, kdy bude internet k dispozici.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Železný štít</string>
+    <string name="runes.pincode.description"><![CDATA[    Umožňuje vám chránit přístup k aplikaci heslem.
+    \n\n
+    Po aktivaci bude aplikace zamykána vždy po  **%s minutách** neaktivity. 
+    \n\n
+    **Důležité.** Pokud zapomenete heslo, budete muset aplikaci odinstalovat a znovu nainstalovat. V tomto případě budou všechna data, která se nestihla synchronizovat, ztracena.
+    ]]></string>
+    <string name="runes.theme.title">Kůže chameleona</string>
+    <string name="runes.theme.description"><![CDATA[    Ve výchozím nastavení aplikace užívá barevného schéma, automaticky měněného mezi světlým a tmavým motivem v závislosti na systémovém nastavení.
+    \n\n
+    Tímto můžete nastavit jakýkoliv jiný motiv, který se již automaticky měnit nebude.
+    ]]></string>
+    <string name="runes.clipboard.title">Hlídač schránky</string>
+    <string name="runes.clipboard.description"><![CDATA[    Tato runa umožňuje aplikaci monitorovat schránku a automaticky vytvářet poznámky z jejího textu.
+    \n\n
+    Po aktivaci aplikace zobrazí permanentní upozornění v liště abyste mohli kontrolovat tento obsah.
+    \n\n
+    ```
+    \n
+    Pokud se upozornění nezobrazuje, aplikace neběží (např. byla uspána) a obsah nebude hlídán dokud aplikaci neotevřete znovu.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Přítel na klávesnici</string>
+    <string name="runes.texpander.description"><![CDATA[    Tato runa umožňuje přímo vkládat text do polí téměř v **jakékoli aplikaci**
+    \n\n
+    Po aktivaci funguje následovně: Po kliknutí do libovolného textového políčka aplikace zobrazí spolu s vaší aplikací pohyblivý panel, který vám umožní upravovat (vkládat) aktuální obsah políčka vzhledem k poznámkám v této aplikaci.
+    \n\n
+    #### Možnosti interakce:
+    \n
+    - panelu může měnit jeho velikost;
+    \n
+    - panel může být přesunut kamkoliv na obrazovce;
+    \n
+    - panel může být automaticky přizpůsoben vzhledem k pravděpodobnosti užití vybraných akcí;
+    \n
+    - panel je automaticky skryt v případě zaměření jiného objektu mimo políčko;
+    \n
+    - panel může být manuálně skryt, dokud nebude manuálně nevyvolán;
+    \n
+    - pokud se panel nezobrazuje, může být vyvolán z lišty upozornění, případně v Quick Settings (pokud jste si ho tam přidali);
+    \n\n
+    #### Technická omezení:
+    \n
+    - panel funguje jako služba usnadnění přístupu a je třeba ji aktivovat v nastavení systému;
+    \n
+    - panel užívá plovoucího panelu (zobrazení nad aktuální aplikací) a tak vyžaduje aktivaci souvisejícího oprávnění nastavení
+    \n
+    - v některých aplikacích je automatické chování (predikce) nemožná, ale je možno ji jinak užívat nadále
+    \n\n
+    #### Doplněk:
+    \n
+    Pokud runa přestane po chvíli fungovat, prosím přečtěte si [tento článek](%s), jak zajistit aby aplikace zůstala běžet. Případně mě kontaktujte na email, třeba jste narazil(a) na nějaký zádrhel :)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Aktivovat</string>
+    <string name="runes.texpander.required.accessibility">Klepněte zde, pak přejděte na Stažené (nainstalované) služby a aktivujte doprovodnou službu klávesnice.</string>
+    <string name="runes.texpander.required.floating">Klepněte zde, pak přejděte na další oprávnění a aktivujte zobrazení pop-up okna oprávnění.</string>
+    <string name="runes.texpander.action.copy">Zkopírovat do schránky</string>
+    <string name="runes.texpander.action.show">Klikněte zde pro zobrazení plovoucího panelu.</string>
+    <string name="runes.texpander.action.insert">Vložit</string>
+    <string name="runes.texpander.action.replace">Nahradit</string>
+    <string name="runes.texpander.hint.hide">Skrýt, dokud nevyvolám z lišty upozornění či Quick Settings.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">Vševidoucí oko</string>
+    <string name="runes.link_preview.description"><![CDATA[    Jakmile je tato runa aktivována, aplikace se bude snažit pro ukládáné **odkazy http** (internetové stránky) poskytnout náhled do jejich obsahu.
+    \n\n
+    Přičemž:
+    \n
+    - náhledový obrázek může být otevřen v novém okně i přiblížen;
+    \n
+    - v připadě videa (stránka jej obsahuje) může být přehrán přímo v aplikaci;
+    ]]></string>
+    <string name="runes.auto_save.title">Nenávratná chvíle</string>
+    <string name="runes.auto_save.description"><![CDATA[    Když, ve výchozím nastavení, vytváříte či upravujete poznámku, musíte kliknout na tlačítko pro uložení, abyste potvrdili vaše úpravy.
+    \n
+    \n
+    S touto runou bude aplikace ukládat vaše úpravy automaticky kdykoliv.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Vzkříšení</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    S touto runou bude aplikace obnovena do posledního zaznamenaného stavu. Aktivují se tak posledně užité filtry.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Síla přejíždění</string>
+    <string name="runes.swipe_actions.description"><![CDATA[S touto runou, efektivní v seznamu poznámek, můžeš nastavit význam gest přejíždění prstem.    ]]></string>
+    <string name="runes.focus_on_title.title">Alternativní fokus</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    Když, ve výchozím nastavení, vytváříte poznámku, aplikace zaměří políčko popisku poznámky.
+    \n\n
+    Touto runou můžete změnit prvek, na který se aplikace zaměří (zvolí) pokaždé, když poznámku vytváříte.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Odpalovací kopírování</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    Po aktivaci je při jakémkoli kopírování textu (mimo kontextuální nabídku v textových polích) aplikace skryta.
+    \n
+    \n
+    Runa vám tak urychlí o pár kroků práci při kopírování textu do jiných aplikací.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Provizorní krok</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    S touto runou můžete někerým interakcím s aplikací přidat o krok navíc - dvoj-kilk namísto jednoho.
+    \n
+    \n
+    Tím především spolehlivěji zabráníte překliknutí.
+    ]]></string>
+    <string name="runes.loyalty.title">Inspirující podpora</string>
+    <string name="runes.loyalty.description"><![CDATA[    Bez vaší podpory a zpětné vazby by se aplikace nerorzostla pro uživatele tím správným směrem.
+    \n\n
+    >**Pokud byste měli minutku**, nezapomeňte nás ohodnotit na Google Play. 
+    \n
+    \n
+    >**Pokud byste měli více času a překlad vám nesedí** - připojte se k našemu lakalizačnímu projektu.
+    \n
+    \n
+    >**Pokud naleznete chyby, chcete víc run či nám jen napsat** - náš email a github je vám vždy k službám.
+    ]]></string>
+    <string name="runes.backup_restore.title">Stroj času</string>
+    <string name="runes.backup_restore.description"><![CDATA[    Dodatečně k synchronizaci s cloudem můžete ručně ukládat zálohy vašich dat a obnovit je později.
+    \n\n
+    Narozdíl od cloudové synchronizace vám tento přístup umožňuje:
+    \n
+    - pořídit snímek dat v jendom momentu;
+    \n
+    - sám spravovat proces zálohování a obnovení;
+    \n
+    - obnovit veškerá data z předchozího snímku;
+    \n\n
+    ```
+    \n
+    Obnovení dat ze souboru je prováděno v jemném režimu, tj. existující data nejsou mazána, ale obohacena novými daty.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Nastavení</string>
+    <string name="settings.campaign.rate.title">Váš názor je důležitý</string>
+    <string name="settings.campaign.rate.message">Zabere méně jak minutu, ale dlouho ovlivňuje náš budoucí pokrok.</string>
+    <string name="settings.campaign.rate.button">Ohodnoťte nás v Google Play</string>
+    <string name="settings.campaign.rate.question">Jak se vám líbí aplikace Clipto?</string>
+    <string name="settings.campaign.rate.feedback.title">Zpětná vazba</string>
+    <string name="settings.campaign.rate.feedback.message">Můžete nám popsat jak vylepšit Clipto? Na vašem názoru záleží.</string>
+    <string name="settings.campaign.rate.feedback.toast">Můžete nás pěkně ohodnotit na Google Play? Děkujeme za vaší podporu!</string>
+    <string name="settings.campaign.share.title">Získej bonus sdílením Clipto se svými kamarády!</string>
+    <string name="settings.campaign.share.more">Další informace</string>
+    <string name="settings.campaign.share.action">Sdílet odkaz</string>
+    <string name="settings.group.clipboard">Schránka</string>
+    <string name="settings.group.behavior">Chování</string>
+    <string name="settings.group.appearance">Vzhled</string>
+    <string name="settings.group.backup">Zálohování a Obnovení</string>
+    <string name="settings.group.security">Soukromí a Zabezpečení</string>
+    <string name="settings.group.runes">Runy</string>
+    <string name="settings.link_preview.title">Poskytnout náhled odkazů</string>
+    <string name="settings.auto_save.title">Ukládat poznámky automaticky</string>
+    <string name="settings.auto_save.description">Aplikace bude automaticky ukládat změny při tvorbě či úpravách poznámek.</string>
+    <string name="settings.focus_on_title.title">Zaměř nadpis při tvorbě poznámek</string>
+    <string name="settings.focus_on_title.description">Při tvorbě poznámek bude aplikace prvotně zaměřovat políčko s nadpisem</string>
+    <string name="settings.track_clipboard.title">Poznámky ze schránky</string>
+    <string name="settings.track_clipboard.description">Zatímco aplikace běží, poznámky budou automaticky vytvářeny z textu kopírovaného do schránky. V systémovém panelu upozornění bude pro jednodušší přístup jedno stálé upozornění vytvořeno.</string>
+    <string name="settings.track_clipboard.q.message">Od systémové verze Android Q užívejte našeho nového postupu pro tvorbu poznámek ze schránky.</string>
+    <string name="settings.track_clipboard.q.description">Od systémové verze Android Q může pouze aplikace, která je zaměřena, přistoupit k datům vaší schránky.</string>
+    <string name="settings.track_clipboard.q.solution.title">Pro překročení tohoto omezení, následujte jednoho z následujících řešení:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">\'Clipto…\' kontextová akce namísto \'Kopírovat\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Jakmile jste označil(a) text pro zkopírování, použijte funkci \'Clipto…\' namísto \'Kopírovat\', pokud je v této nabidce dostupná (kontextové menu políčka).</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Standardní akce \'Kopírovat\' v kombinaci s \'Vložit\' v systémové liště upozornění</string>
+    <string name="settings.track_clipboard.q.solution.2">Pokud není akce \'Clipto…\' dostupná, nebo chcete raději užívat standardní akci \'Kopírovat\', nezapomeňte kliknout na tlačítko \'Vložit\' v systémové liště upozornéní pro pořízení poznámky ze schránky.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Standardní akce \'Kopírovat\' jak fungovala před verzí Android Q</string>
+    <string name="settings.track_clipboard.q.solution.3">Tato metoda vyžaduje pokročilé nastavení této aplikace skze počítač. Aby tato metoda fungovala je zapotřebí na počítači zadat následující příkazy:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Po uspěšném zadání a spuštění příkazů byste měl(a) vidět dodatečnou možnost ve speciálním upozornění této aplikace, které vám umožňuje přepínat sledování schránky. Mimo jiné toto upozornění zmizí z nastavení, v případě úspěchu.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Emulovat akci Kopirovat</string>
+    <string name="settings.track_clipboard.q.emulate.description">Speciální akce \'Clipto…\' a \'Vložit\' automaticky utvářejí poznámky z vybraného či kopírovaného textu a vkládají jej do schránky, pokud se jejich obsahy vzájemně liší.</string>
+    <string name="settings.universal_clipboard.title">Univerzální Schránka</string>
+    <string name="settings.universal_clipboard.description">Jakýkoliv text kopírovaný do schránky bude synchronizován napříč vašimi zařízeními. Dále bude také automaticky vkládán do schránky, kde je toto nastavení aktivním.</string>
+    <string name="settings.notification_style.title">Styl upozornění</string>
+    <string name="settings.notification_style.description">Styl, který užívá stálé upozornění. To se nachází v systémové liště upozornění.</string>
+    <string name="settings.notification_sound.title">Tiché upozornění</string>
+    <string name="settings.notification_sound.description">Tlumí upozornění nehledě na systémové nastavení hlasitosti upozonění.</string>
+    <string name="settings.hide_on_click.title">Skrýt po zkopírování</string>
+    <string name="settings.hide_on_click.description">Aplikace bude po zkopírování poznámky skryta.</string>
+    <string name="settings.restore_filter.title">Zapamatovat si poslední filtr</string>
+    <string name="settings.restore_filter.description">Aplikace bude otevřena s posledně zaznamenaným filtrem.</string>
+    <string name="settings.pin_starred.title">Připnout označené hvězničkou</string>
+    <string name="settings.pin_starred.description">Poznámky označené hvězdičou budou zobrazeny jako první, nehledě na nastavení filtru.</string>
+    <string name="settings.theme.title">Motiv</string>
+    <string name="settings.theme.description">Zvolte si vlastní barevné schéma.</string>
+    <string name="settings.backup.title">Zálohovat do souboru</string>
+    <string name="settings.backup.description">Exportujte své poznámky do souboru.</string>
+    <string name="settings.restore.title">Obnovit ze souboru</string>
+    <string name="settings.restore.description">Obnoví poznámky ze souboru (podporovanými formáty jsou: %s).</string>
+    <string name="settings.startup.title">Spouštět se systémem</string>
+    <string name="settings.startup.description">Umožnuje aplikaci se spustit automaticky po načtení systému.</string>
+    <string name="settings.language.title">Jazyk</string>
+    <string name="settings.swipe_actions.title">Akce přejetím prstem</string>
+    <string name="settings.swipe_actions.description">Nastavte poznámkám (v hlavním seznamu) akce pro gesta přejetí prstem.</string>
+    <string name="settings.double_click.title">Akce dvojkliku</string>
+    <string name="settings.double_click.description">Nastavte si akce vyhrazené pro užití dvojklikem.</string>
+    <string name="settings.double_click.action.exit">Tlačítko \'Zpět\' ukončí aplikaci</string>
+    <string name="settings.double_click.action.delete">Odstranit poznámku</string>
+    <string name="settings.double_click.action.edit">Upravit poznámku</string>
+    <string name="settings.double_click.toast">Dvojklik pro dokončení</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Nezobrazovat upravené poznámky</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Poznámky, které mají přiřazený alespoň jeden atribut (štítek, značka Oblíbené, nadpis, útržek), nebudou zobrazeny v kategorii \'Poznámky ze schránky\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Nezobrazovat upozornění na omezení funkcí schránky</string>
+    <string name="settings.clipboard.ignore_q_warning.description">Pokud je aplikace nakonfigurována a schránka na vašem zařízení funguje správně, povolením tohoto nastavení odeberete z oznámení o funkčních omezeních.</string>
+    <string name="settings.security.passcode.title">Zámek s přístupovým kódem</string>
+    <string name="settings.security.passcode.description">Při nastavení přístupového kódu bude aplikace po %s minutách neaktivity uzamčena.\n\nPozn.: Pokud zapomenete přístupový kód budete muset aplikaci odinstalova a znovu nainstalovat. V tomto případě budou všechna data, která se nestihla synchronizovat, ztracena.</string>
+    <string name="settings.security.fingerprint.title">Odemčení otiskem prstu</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Vynechat</string>
+    <string name="auth.set_passcode.label.set_passcode">Nastavte si přístupový kód, abyste mohli aplikaci používat bezpečně i rychle</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Znovu zadejte váš přístupový kód</string>
+    <string name="auth.set_fingerprint.title">Nastavte si Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Chcete využít senzoru otisku prstů pro odemčení aplikace?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Použít otisk prstu</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Prozatím přeskočit</string>
+    <string name="auth.fingerprint.touch_sensor">Potvrďte otisk prstu pro pokračování</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Zadejte váš současný přístupový kód</string>
+    <string name="change_passcode.set_new">Vytvořte si váš nový přístupový kód</string>
+    <string name="change_passcode.reenter">Znovu zadejte váš přístupový kód</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Podpora</string>
+    <string name="about.label.email.support.message">PIŠTE SVOU ZPRÁVU ZDE</string>
+    <string name="about.label.rate">Ohodnoťte nás v Google Play</string>
+    <string name="about.label.issue">Náhlásit chybu</string>
+    <string name="about.label.translate">Pomozte nám s překladem</string>
+    <string name="about.label.changelog">Seznam změn</string>
+    <string name="about.label.campaign.rate">Pomozte nám stát se lepšími!</string>
+    <string name="about.label.campaign.share">Sdílet odkaz na aplikaci</string>
+    <string name="about.label.campaign.share.description">%s lidí se připojilo k aplikaci skrze váš odkaz.</string>
+    <string name="about.label.other">Co o nás říkají jiní</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Přihlašte se, abyste nechali své poznámky ukládat v cloudu a synchronizovali je napříč vašimi zařízeními.</string>
+    <string name="account.title.required_authorization">Je vyžadováno ověření</string>
+    <string name="account.description.required_authorization">Musíte být ověřeni, abyste s touto akcí mohli pokračovat dále</string>
+    <string name="account.title.authorized">Ověřen(a)</string>
+    <string name="account.button.sign_in">Přihlásit se</string>
+    <string name="account.button.sign_out">Odhlásit se</string>
+    <string name="account.dialog.sign_out.title">Odhlašuji se</string>
+    <string name="account.dialog.sign_out.message">Opravdu se chcete odhlásit z aplikace? Všechna data, která nebyla synchronizována, budou ztracena.</string>
+    <string name="account.plan.personal">Osobní licence</string>
+    <string name="account.plan.subscription">Předplatné (synchronizujte %s poznámek)</string>
+    <string name="account.plan.contributor">Přispěvatelské předplatné (synchronizujte %s poznámek)</string>
+    <string name="account.plan.yearly">Roční předplatné (synchronizujte %s poznámek)</string>
+    <string name="account.plan.monthly">Měsíční předplatné (synchronizujte %s poznámek)</string>
+    <string name="account.plan.free">Základní předplatné (synchronizujte %s poznámek)</string>
+    <string name="account.toolbar.title">Účet</string>
+    <string name="account.sync.title">Synchronizujte poznámky automaticky</string>
+    <string name="account_rebuild_index_title">Rebuild data index</string>
+    <string name="account_rebuild_index_description">If you see different data (tags, files, notes, etc.) on different devices, it is recommended to perform this procedure. You will need to re-login when the procedure is complete.</string>
+    <string name="account_delete_title">Smazat účet</string>
+    <string name="account_delete_confirm_title">Opravdu si přejete smazat tento účet?</string>
+    <string name="account_delete_confirm_description"><![CDATA[POZORNOST! 
+Pokud stisknete VYMAZAT, váš účet a osobní údaje budou trvale a nevratně smazány, zkontrolujte prosím, zda účet neobsahuje žádná důležitá data/informace.    ]]></string>
+    <string name="account_delete_confirm_again_title">Jsi si jistý/á?</string>
+    <string name="account_delete_confirm_again_description">Jakmile potvrdíte svou volbu, budou všechna data vašeho účtu trvale odstraněna.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Zdarma</string>
+    <string name="account.sync.plan.title">Synchronizujte %s poznámek</string>
+    <string name="account.sync.plan.toolbar">Vyberte si předplatné</string>
+    <string name="account.sync.plan.button.active">Aktivní předplatné</string>
+    <string name="account.sync.plan.button.select">Vyberte si předplatné</string>
+    <string name="account.sync.plan.button.change">Změnit plán</string>
+    <string name="account.sync.plan.button.upgrade">Upgradovat</string>
+    <string name="account.sync.plan.caption">Začni zdarma, pak plať jen za to, co synchronizuješ.</string>
+    <string name="account.sync.plan.hint">Počet poznámek, které můžeš synchronizovat napříč zařízeními (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Neomezený počet offline poznámek.</string>
+    <string name="account.sync.plan.benefit.sync">Snchronizuj %s poznámek napříč svými zařízeními.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Synchronizace vypnuta z důvodu překročení limitu</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">Celkový počet poznámek, vč. koše, je %s, což je přes povolený limit (%s).</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Sniž počet svých poznámek vzhledem k výši udávané tvým plánem.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Dosáhli jste limitu svého plánu. Nebojte se, aplikace je stále plně funkční offline a nemá žádná omezení. Cloudová synchronizace je však ve vašem zařízení nyní zakázána, dokud neprovedete upgrade svého účtu nebo nesnížíte počet poznámek na hranici vašeho aktivního plánu.</string>
+    <string name="account.sync.plan.contributor">Pokud si pomohl s překladem aplikace nebo jsi pravidelně podporoval tuto aplikaci, prosím dej nám vědět a my ti upgradujeme účet.</string>
+    <string name="sync.free_limit_concept">Omezení volného plánu není fixní a může být obousměrně měněn v závislosti na okolnostech.</string>
+    <string name="sync.off.title">Poznámka není synchronizována napříč zařízeními</string>
+    <string name="sync.off.multiple.title">Poznámky nejsou synchronizovány napříč zařízeními</string>
+    <string name="sync.off.caption">Tomu jest pravděpodobně z následujících důvodů:</string>
+    <string name="sync.off.reason.universal_clipboard">Runa Univerzální Schránka nebyla aktivována předtím, než aplikace vytvořila tuto poznámku.</string>
+    <string name="sync.off.reason.manual_off">Vypnul(a) jste synchronizaci.</string>
+    <string name="sync.warning.title">Tato funkce užívá cloudové synchronizace</string>
+    <string name="sync.warning.description">Cloudová synchronizace, narozdíl od zbytku aplikace, není zcela zdarma a může být na zařízení deaktivována do doby pořízení jiného plánu nebo omezení počtu aktivních poznámek (vysypaný koš) pod limit volného plánu.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Rychlé akce</string>
+    <string name="fast_actions.compose_email">Napsat email</string>
+    <string name="fast_actions.send_message">Odeslat zprávu</string>
+    <string name="fast_actions.compose_sms">Napsat SMS</string>
+    <string name="fast_actions.twitter_post">Napsat Tweet</string>
+    <string name="fast_actions.web_search">Vyhledávání na webu</string>
+    <string name="fast_actions.google_translate">Překladač Google</string>
+    <string name="fast_actions.google_maps_search">Hledat v mapách Google</string>
+    <string name="fast_actions.wiki_search">Hledat na Wikipedii</string>
+    <string name="fast_actions.youtube_search">Hledat na YouTube</string>
+    <string name="fast_actions.duckduckgo_search">Hledat na DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">Hledat na Stack Overflow</string>
+    <string name="fast_actions.reddit_search">Hledat na Redditu</string>
+    <string name="fast_actions.play_url">Přehrát odkaz</string>
+    <string name="fast_actions.send_as_file">Odeslat jako soubor</string>
+    <string name="fast_actions.send_as_txt_file">Odeslat jako TXT</string>
+    <string name="fast_actions.send_as_pdf_file">Odeslat jako PDF</string>
+    <string name="fast_actions.send_as_md_file">Odeslat jako Markdown</string>
+    <string name="fast_actions.export_to_file">Exportovat do souboru</string>
+    <string name="fast_actions.export_to_file.success">Exportováno jako %s</string>
+    <string name="fast_actions.calendar_event">Přidat do kalendáře</string>
+    <string name="fast_actions.copy">Zkopírovat do schránky</string>
+    <string name="fast_actions.copy_clear">Vymazat ze schránky</string>
+    <string name="fast_actions.tts">Převod textu na řeč</string>
+    <string name="fast_actions.tts.max_length">Text by neměl mít více jak %s znaků</string>
+    <string name="fast_actions.share">Sdílet s…</string>
+    <string name="fast_actions.send_as_qrcode">Odeslat jako QR kód</string>
+    <string name="fast_actions.dial_number">Vytočit číslo</string>
+    <string name="fast_actions.insert_contact">Vložit kontakt</string>
+    <string name="fast_actions.insert_contact_email">Uložit kontaktní email</string>
+    <string name="fast_actions.insert_contact_phone">Uložit kontakt</string>
+    <string name="fast_actions.open_url">Otevřít webovou stránku</string>
+    <string name="fast_actions.short_link">Zkrátit odkaz</string>
+    <string name="fast_actions.more">Zobrazit více</string>
+    <string name="fast_actions.error">Neočekávaná chyba: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Výchozí</string>
+    <string name="theme.sepia">Sépiový</string>
+    <string name="theme.dark">Tmavý</string>
+    <string name="theme.dark_blue">Tmavý - Modrý</string>
+    <string name="theme.dark_green">Tmavý - Zelený</string>
+    <string name="theme.dark_blurple">Tmavý - Modrofialový</string>
+    <string name="theme.black">AMOLED Černý</string>
+    <string name="theme.green">Zelený</string>
+    <string name="theme.white">Bílý</string>
+    <string name="theme.pink">Růžový</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Datum použití</string>
+    <string name="sort_order.modify_date">Datum úpravy</string>
+    <string name="sort_order.create_date">Datum vytvoření</string>
+    <string name="sort_order.delete_date">Odstranit datum</string>
+    <string name="sort_order.usage_count">Počet použití</string>
+    <string name="sort_order.title">Nadpis</string>
+    <string name="sort_order.text">Obsah</string>
+    <string name="sort_order.tags">Štítky</string>
+    <string name="sort_order.size">Velikost</string>
+    <string name="sort_order.name">Název</string>
+    <string name="sort_order.notes_count">Počet poznámek</string>
+    <string name="sort_order.color">Barva</string>
+    <string name="sort_order.manual">Manuální</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Úspěch</string>
+    <string name="backup.fail.title">Selhání</string>
+    <string name="backup.fail.message">Neočekávaná chyba: %s</string>
+    <string name="restore.success.title">Úspěch</string>
+    <string name="restore.fail.title">Selhání</string>
+    <string name="restore.fail.message">Neočekávaná chyba: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Určitě chcete zavřít toto okno?</string>
+    <string name="clip.multiple.exit_without_save.description">Veškeré změny budou ztraceny.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Štítky</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Oddělovač</string>
+    <string name="clip.multiple.merge.separator.line">Nový řádek</string>
+    <string name="clip.multiple.merge.separator.space">Mezera</string>
+    <string name="clip.multiple.merge.separator.other">Jiný znak</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Akce</string>
+    <string name="notification.style.history">Historie schránky</string>
+    <string name="notification.style.actions">Akce schránky</string>
+    <string name="notification.track_clipboard.pause">Sledování schránky je pozastaveno</string>
+    <string name="notification.track_clipboard.resume">Sledování schránky je obnoveno</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Přílohy</string>
+    <string name="attachments.type.photo">Pořídit fotku</string>
+    <string name="attachments.type.record">Nahrát video</string>
+    <string name="attachments.type.file">Zvolit soubor</string>
+    <string name="attachments.attr.created">Vytvořeno</string>
+    <string name="attachments.attr.name">Název</string>
+    <string name="attachments.attr.type">Typ</string>
+    <string name="attachments.attr.path">Cesta</string>
+    <string name="attachments.attr.size">Velikost</string>
+    <string name="attachments.state.downloaded">Staženo</string>
+    <string name="attachments.state.uploaded">Nahráno</string>
+    <string name="attachments.state.downloading">Stahování…</string>
+    <string name="attachments.state.uploading">Nahrávání…</string>
+    <string name="attachments.label.insert">Přidat k poznámce</string>
+    <string name="attachments.label.download_url">Veřejná URL bude dostupná po nahrání souboru.</string>
+    <string name="contribute.annual.offer">Zrušte kdykoliv v centru předplatných Google Play (Google Play Subscription Center).</string>
+    <string name="contribute.monthly.period">měsíc</string>
+    <string name="contribute.annual.period">rok</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Ukončit</string>
+    <string name="desktop.tray.show">Zobrazit</string>
+    <string name="desktop.tray.show_in_taskbar">Zobrazovat na hlavním panelu</string>
+    <string name="desktop.update.action.download">Stáhnout</string>
+    <string name="desktop.update.action.later">Později</string>
+    <string name="desktop.update.title">Nová verze je dostupná</string>
+    <string name="desktop.shortcuts.title">Klávesové zkratky</string>
+    <string name="desktop.shortcuts.dialog.define">Zvolte zkratku</string>
+    <string name="desktop.shortcuts.showHideApp">Zobrazit/skrýt aplikaci</string>
+    <string name="desktop.shortcuts.modeFullscreen">Přepnout režim celé obrazovky</string>
+    <string name="desktop.shortcuts.modeComfortable">Přepnout režim pohodlného zobrazení</string>
+    <string name="desktop.shortcuts.modeCompact">Přepnout režim zúženého zobrazení</string>
+    <string name="desktop.shortcuts.tagNext">Další štítek</string>
+    <string name="desktop.shortcuts.tagPrev">Předchozí štítek</string>
+    <string name="desktop.shortcuts.noteNext">Další poznámka</string>
+    <string name="desktop.shortcuts.notePrev">Předchozí poznámka</string>
+    <string name="desktop.shortcuts.noteNew">Nová poznámka</string>
+    <string name="desktop.shortcuts.noteSave">Uložit poznámku</string>
+    <string name="desktop.shortcuts.noteDelete">Odstranit poznámku</string>
+    <string name="desktop.shortcuts.noteCopy">Zkopírovat poznámku</string>
+    <string name="desktop.shortcuts.notePrint">Vytisknout poznámku</string>
+    <string name="desktop.shortcuts.noteFind">Hledat poznámky</string>
+    <string name="desktop.shortcuts.noteOpen">Otevřít poznámku</string>
+    <string name="desktop.shortcuts.noteEdit">Upravit poznámku</string>
+    <string name="desktop.shortcuts.contextModeSelect">Vybrat poznámku</string>
+    <string name="desktop.shortcuts.contextModeCancel">Zrušit výběr všech poznámek</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Vybrat všechny poznámky</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Uložit ze schránky</string>
+    <string name="desktop.attachments.browse">Přesuňte sem soubor k přiložení.</string>
+    <string name="desktop.main.content.under.development">Tento obsah je ve vývoji…</string>
+    <string name="desktop.main.menu.download">Stáhnout</string>
+    <string name="desktop.main.menu.download.for">Stáhnout pro %s</string>
+    <string name="desktop.main.menu.download.android.apk">Získat univerzální APK</string>
+    <string name="desktop.main.menu.resources">Zdroje</string>
+    <string name="desktop.main.menu.open">Otevřít Clipto v prohlížeči</string>
+    <string name="desktop.main.features.title.1">Pište snadno a odkudkoli na libovolném zařízení.</string>
+    <string name="desktop.main.features.title.2">Multifunkční poznámkový blok a správce schránky, zaměřující se na rychlé a produktivní užívání jak na počítači, tak i na mobilu.</string>
+    <string name="desktop.main.features.title.3">Váš osobní pomocník při psaní takřka čehokoliv.</string>
+    <string name="desktop.main.features.title.4">Komplexní řešení pro pohodlnou a efektivní práci s poznámkami, útržky, schránkou, soubory a dalšími informacemi důležitými pro rychlý přístup na jakémkoli zařízení.</string>
+    <string name="desktop.main.features.title.5">Co je na Clipto tak výjmečného?</string>
+    <string name="desktop.get_started.language">Vyberte svůj jazyk</string>
+    <string name="desktop.get_started.theme">Vybrat upřednostňovaný motiv</string>
+    <string name="desktop.auth.instruction">Instrukce pro ověření</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Skenovat čarový kód</string>
+    <string name="barcode.prompt.point_at_a_barcode">Namiřte fotoaparát na QR kód</string>
+    <string name="barcode.prompt.hold_camera_steady">Držte svoji kameru na malou chvíli v klidu</string>
+    <string name="barcode.prompt.move_camera_closer">Přesunte se blíže pro vyhledání</string>
+    <string name="barcode.prompt.searching">Probíhá hledání…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Požadavek na získání písma neuspěl s kódem: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Veřejný odkaz</string>
+    <string name="public.note.link.time.label">Ve vybranou chvíli</string>
+    <string name="public.note.link.time.or">nebo</string>
+    <string name="public.note.link.time.type.seconds">sekund</string>
+    <string name="public.note.link.time.type.minutes">minut</string>
+    <string name="public.note.link.time.type.hours">hodin</string>
+    <string name="public.note.link.time.type.days">dní</string>
+    <string name="public.note.link.access_time">Čas přístupu</string>
+    <string name="public.note.link.access_time.description">Pokud nastaveno, odkaz bude k dispozici pouze po určité době od jeho vytvoření či poslední aktualizace.</string>
+    <string name="public.note.link.access_time.label">Dostupný za</string>
+    <string name="public.note.link.access_password">Přístupové heslo</string>
+    <string name="public.note.link.access_password.hint">Nápověda k heslu (nepovinné)</string>
+    <string name="public.note.link.access_password.placeholder">Heslo</string>
+    <string name="public.note.link.access_password.description">Pokud nastaveno, odkaz bude dostupný pouze po ověření hesla.</string>
+    <string name="public.note.link.time_to_expire">Čas vypršení</string>
+    <string name="public.note.link.time_to_expire.description">Pokud nastaveno, odkaz bude platný po určitou dobu od vzniku či aktualizaci.</string>
+    <string name="public.note.link.time_to_expire.label">Vyprší za</string>
+    <string name="public.note.link.one_time_opening">Jednorázový náhled</string>
+    <string name="public.note.link.one_time_opening.description">Pokud nastaveno, odkaz bude moci být otevřen pouze jednou od vytvoření či pozdější aktualizace.</string>
+    <string name="public.note.link.action.remove">Odebrat odkaz</string>
+    <string name="public.note.link.action.remove.confirm.title">Odebrat odkaz?</string>
+    <string name="public.note.link.action.remove.confirm.description">Odkaz již nebude dostupný.</string>
+    <string name="public.note.link.action.create">Vytvořit odkaz</string>
+    <string name="public.note.link.state.unavailable">Nedostupné</string>
+    <string name="public.note.link.state.postponed">Dostupný za:</string>
+    <string name="public.note.link.state.expires_in">Vyprší za %s</string>
+    <string name="public.note.link.state.expired">Vypršelo</string>
+    <string name="public.note.link.state.locked">Zamčeno</string>
+    <string name="public.note.link.state.locked.wrong_password">Chybné heslo.</string>
+    <string name="about.policy">Ochrana osobních údajů</string>
+    <string name="about.toc">Podmínky používání</string>
+    <string name="about_pricing">Ceník</string>
+    <string name="site.integrations.title">Integrace</string>
+    <string name="site.integrations.zapier.title">Zapier Integrace</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Propojte Clipto se Zapier a rozbíhejte svá workflows rychlostí světla
+\n
+## Vaše chránka jako spouštěč workflow
+\n
+Nejrychlejší způsob jak uložit důležitou informaci je ji označit a zkopírovat.
+\n
+Abyste začali využívat této funkcionality se Zapier, postupujte následovně:
+\n
+1. Nakonfigurujte v Zapier spouštěč **Text zkopírován do schránky**
+\n
+2. Nainstalujte Clipto na vašem zařízení (mobil, počítač) a **přihlašte se** pod stejným účtem
+\n
+3. Otevřte Clipto a aktivujte runy **Poznámky ze schránky** and **Univerzální Schránka**
+\n
+4. Toť vše. Nyní můžete využít standardní kombinace **Ctrl+C** (pro kopírování v kontextuální nabídce) pro aktivaci workflow, související s kopírovaným textem.
+    ]]></string>
+    <string name="faq.title">Nejčastější dotazy.</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[** Poznámky ** vám pomohou uchovat důležité textové informace a mít k nim okamžitý přístup kdykoli a na jakémkoli zařízení.
+    \n
+    \n
+Ve výchozím nastavení jsou všechny poznámky rozděleny do několika kategorií pro urychlení přístup k těm správným na základě různých atributů.
+    \n
+    ```
+    \n
+Všechny poznámky se stáhnou do vašeho zařízení při prvním přihlášení.
+    \n
+    \n
+Všechny změny jsou synchronizovány, jakmile je k dispozici internet.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    ** Filtry ** vám pomohou rychleji najít požadované informace pomocí předpřipravených šablon pro vyhledávání.
+    \n
+    ```
+    \n
+    Šablona vyhledávání může obsahovat různé kombinace značek, časových intervalů, textů, pravidel řazení a zobrazení atd.
+    \n
+    \n
+     Uložení jakékoli takové kombinace jako filtru proto výrazně usnadní načtení dat, která hledáte, při opětovném přístupu.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Each filter has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The filter settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** help to organise your notes and files to make them easier to find.
+    \n
+    ```
+    \n
+    You can add multiple tags to any note or file.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Each tag has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The tag settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    Parametry vyhledávání mohou být vámi, pro rychlejší přístup, uloženy jako filtr.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** help to avoid repetitive typing by using re-usable text templates.
+    \n
+    \n
+    A snippet can be any existing or new note. It can be either static or dynamic, contain fields for manual input and runtime values (dates, times, etc.).
+    \n
+    \n
+    Snippets are organized by kits. You can either create your own kit or install any from the public library.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - The kit can be shared with other users.
+    \n
+    - The kit can be published in the public library.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Zkratku můžete použít:
+    \n
+    \n
+    - pro vyhledání poznámky pomocí krátké fráze, max. o %s znacích
+    \n
+    - pro vložení textu poznámky do pole při zadávání zkratky se symbolem **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Popis může sloužit jako pomocná informace ohledně obsahu poznámky.
+    \n
+    \n
+    Podporuje psaní v jazyce Markdown o max. %s znacích.
+    ]]></string>
+    <string name="where_none_of">mimo vybrané</string>
+    <string name="where_any_of">libovolný z vybraných</string>
+    <string name="where_all_of">vše vybrané</string>
+    <string name="where_after">Po</string>
+    <string name="where_before">Před</string>
+    <string name="where_from">Od</string>
+    <string name="where_to">Do</string>
+    <string name="where_date_today">Dnešek</string>
+    <string name="where_date_tomorrow">Zítřek</string>
+    <string name="where_date_custom">Vlastní</string>
+    <string name="where_date_yesterday">Včerejšek</string>
+    <string name="where_date_last_7_days">Posledních 7 dní</string>
+    <string name="where_date_last_30_days">Posledních 30 dní</string>
+    <string name="where_date_last_90_days">Posledních 90 dní</string>
+    <string name="advanced_filter_block_text">Text obsahuje</string>
+    <string name="advanced_filter_block_text_type">Druh textu</string>
+    <string name="advanced_filter_block_category">Umístěn v</string>
+    <string name="advanced_filter_block_tags">Štítky</string>
+    <string name="advanced_filter_block_created">Vytvořeno</string>
+    <string name="advanced_filter_block_updated">Aktualizováno</string>
+    <string name="advanced_filter_block_only_public_links">Zobrazit výhradně pozn. s veřejnými odkazy</string>
+    <string name="advanced_filter_block_only_attachments">Zobrazit výhradně pozn. s přilohami</string>
+    <string name="advanced_filter_block_only_not_synced">Zobrazit výhradně nesynchronizované</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Country</string>
+    <string name="snippet_kit_attr_snippets">Útržky</string>
+    <string name="snippet_kit_attr_language">Jazyk</string>
+    <string name="snippet_kit_attr_downloads">Stažení</string>
+    <string name="snippet_kit_attr_created">Vytvořeno</string>
+    <string name="snippet_kit_attr_updated">Aktualizováno</string>
+    <string name="snippet_kit_attr_category">Category</string>
+    <string name="snippet_kit_public_link">Veřejný odkaz</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    Sady útržků mohou být nainstalovány z veřejného odkazu
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Odebrat odkaz?</string>
+    <string name="snippet_kit_public_link_remove_description">Tato sada útržků již z tohoto odkazu nebude dostupná.</string>
+    <string name="snippet_kit_public_library">Veřejná knihovna</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    Sada útřžku může být nainstalována z veřejné knihovny.
+    \n
+    \n
+    ```
+    \n
+    Sada musí obsahovat alespoň %s útržků aby mohla být zařazena do veřejné knihovny.
+    \n
+    ```
+    \n
+    \n
+    Jakmile zpřístupníte útržek do veřejné knihovny automaticky získáváte výhody.
+    \n
+    \n
+    [Zjistěte více…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Odebrat z veřejné knihovny?</string>
+    <string name="snippet_kit_public_library_remove_description">Tuto sadu útržků již nebude možno z veřejné knihovny nainstalovat.</string>
+    <string name="snippet_kit_hint_name">Název sady útržků</string>
+    <string name="snippet_kit_label_show_in_public_library">Zobrazit v knihovně útržků</string>
+    <string name="snippet_kit_error_name_required">Pro uložení filtru je vyžadován unikátní název</string>
+    <string name="snippet_kit_delete_title">Odebrat sadu \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Sada útržků bude navždy smazána.</string>
+    <string name="snippet_kit_uninstall_title">Odinstalovat sadu \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Sada útržků bude navždy smazána, včetně všech souvisejících útržků.</string>
+    <string name="snippet_kit_install_hint_title">Co to znamená – nainstalovat?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    The installed snippet kit will be available for use as if you had created it yourself.
+    \n
+    \n
+    That is, you can completely change any notes in it, add new ones, delete existing, manage the settings of the kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Any changes you make will only be available to you without the ability to change the original kit.
+    \n
+    \n
+    If the original kit has been updated, you can manually update the installed one.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Stav uveřejnění</string>
+    <string name="public_status_private">Soukromá</string>
+    <string name="public_status_blocked">Blokována</string>
+    <string name="public_status_review">Ověřuje se</string>
+    <string name="public_status_review_details">Chvíli potrvá, než bude sada vydána a dostupna ve veřejné knihovně.</string>
+    <string name="public_status_published">Uveřejněna</string>
+    <string name="public_status_rejected">Zamítnuta</string>
+    <string name="public_status_not_found">Nenalezena</string>
+    <string name="public_status_deleted">Odstraněna</string>
+    <string name="public_status_restricted">Omezena</string>
+    <string name="public_status_update_reason">Důvod aktualizace</string>
+    <string name="dynamic_text_hint_title">Dynamický obsah</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    Pokud poznámka obsahuje dynamické pole, zobrazí se tento provizorní krok při jakékoliv manipulaci s poznámkou.
+    \n
+    \n
+    V tomto kroku můžete definovat hodnoty vstupních polí a dokončit danou akci s upraveným textem.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Text</string>
+    <string name="dynamic_text_view_mode_form">Formulář</string>
+    <string name="dynamic_value_date">Datum/Čas</string>
+    <string name="dynamic_value_date_description">Vytvoří zástupce, který bude nahrazen za aktuální datum</string>
+    <string name="dynamic_value_device">Informace o zařízení</string>
+    <string name="dynamic_value_device_description">Vytvoří zástupce, který bude nahrazen za informace o zařízení</string>
+    <string name="dynamic_value_random">Náhodná hodnota</string>
+    <string name="dynamic_value_random_description">Vytvoří zástupce, který bude nahrazen za náhodnou hodnotu z přizpůsobitelného seznamu</string>
+    <string name="dynamic_value_clipboard">Schránka</string>
+    <string name="dynamic_value_clipboard_description">Vytvoří zástupce, který bude nahrazen za obsah schránky</string>
+    <string name="dynamic_value_snippet">Útržek</string>
+    <string name="dynamic_value_snippet_description">Vytvoří zástupce, který bude nahrazen za obsah vybrané poznámky</string>
+    <string name="dynamic_value_attr_device_type">Druh informace</string>
+    <string name="dynamic_field_date">Pole Datum</string>
+    <string name="dynamic_field_date_description">Vytvoří pole s možností výberu libovolného data</string>
+    <string name="dynamic_field_text">Textové pole</string>
+    <string name="dynamic_field_text_description">Vytvoří pole s možností zadání libovolného textu</string>
+    <string name="dynamic_field_number">Pole Číslo</string>
+    <string name="dynamic_field_number_description">Vytvoří pole s možností zadání libovolného čísla</string>
+    <string name="dynamic_field_select">Výběrové pole</string>
+    <string name="dynamic_field_select_description">Umožní vytvořit vlastní pole hodnot s možností zadání libovolné z nich</string>
+    <string name="dynamic_field_barcode_scanning">Pole Skenování</string>
+    <string name="dynamic_field_barcode_scanning_description">Vytvoří pole s možností skenování čárového kódu – využije jeho text/obsah jako hodnotu</string>
+    <string name="dynamic_field_text_toggle">Volitelný text</string>
+    <string name="dynamic_field_text_toggle_description">Vytvoří pole s možností zápisu textu tak, aby se dal přepínat (deaktivovat)</string>
+    <string name="dynamic_field_reference">Referenční pole</string>
+    <string name="dynamic_field_reference_description">Vytvoří pole s možností odkázat na jiné pole používajíc jeho hodnotu</string>
+    <string name="dynamic_field_unknown">Neznámé pole</string>
+    <string name="dynamic_field_unknown_description">Toto pole nemůže být správně vykresleno. Nejspíše je špatně, nebo bylo vytvořeno s novější verzí aplikace</string>
+    <string name="dynamic_field_date_format_date_time">Datum/Čas (systémový)</string>
+    <string name="dynamic_field_date_format_date">Datum (systémový)</string>
+    <string name="dynamic_field_date_format_time">Čas (systémový)</string>
+    <string name="dynamic_field_date_format_day_of_week">Den v týdnu</string>
+    <string name="dynamic_field_date_format_day_of_month">Den v měsíci (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Den v měsíci (01–31)</string>
+    <string name="dynamic_field_date_format_year">Rok</string>
+    <string name="dynamic_field_date_format_year_short">Rok (zkráceně)</string>
+    <string name="dynamic_field_date_format_month">Měsíc</string>
+    <string name="dynamic_field_date_format_month_number">Měsíc (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Měsíc (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hodina (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hodina (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hodina (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hodina (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minuta (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minuta (01–60)</string>
+    <string name="dynamic_field_date_format_second">Sekunda (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Sekunda (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">dop./odp.</string>
+    <string name="dynamic_field_date_format_time_zone">Časové pásmo</string>
+    <string name="dynamic_field_value_formatter_new_line">Nová řádka</string>
+    <string name="dynamic_field_value_formatter_semicolon">Středník</string>
+    <string name="dynamic_field_value_formatter_comma">Čárka</string>
+    <string name="dynamic_field_value_formatter_space">Mezera</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Číslovaný seznam</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Nečíslovaný seznam</string>
+    <string name="dynamic_field_attr_common_label">Název</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Sufix</string>
+    <string name="dynamic_field_attr_common_value">Hodnota</string>
+    <string name="dynamic_field_attr_common_required">Vyžadováno</string>
+    <string name="dynamic_field_attr_common_placeholder">Zástupce (text)</string>
+    <string name="dynamic_field_attr_common_default_value">Výchozí hodnota</string>
+    <string name="dynamic_field_attr_common_values_formatter">Oddělovač vybraných hodnot</string>
+    <string name="dynamic_field_attr_select_multiple">Vícenásobný výběr</string>
+    <string name="dynamic_field_attr_select_user_input">Uživatelský vstup</string>
+    <string name="dynamic_field_attr_text_multi_line">Víceřádkový text</string>
+    <string name="dynamic_field_attr_text_max_length">Maximální délka</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Obsah schránky je výchozí hodnotou</string>
+    <string name="dynamic_field_attr_select_options">Možnosti</string>
+    <string name="dynamic_field_attr_number_min">Minimální hodnota</string>
+    <string name="dynamic_field_attr_number_max">Maximální hodnota</string>
+    <string name="dynamic_field_attr_date_format">Formát</string>
+    <string name="dynamic_field_attr_date_example">Příklad: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Vícenásobné skenování</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Oddělovač skenovaných hodnot</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Název odkazovaného pole</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Pole má svou vlastní hodnotu</string>
+    <string name="select_option_ordering">Možnosti řazení</string>
+    <string name="select_option_ordering_label_asc">Název (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Název (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Hodnota (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Hodnota (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Odstranit z textu toto dynamické pole?</string>
+    <string name="dynamic_field_confirm_delete_description">Zástupce tohoto pole bude odstraněn z původního textu.</string>
+    <string name="dynamic_value_placeholder_copied_title">Dynamická hodnota byla zkopírována do schránky</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Stáhnout z Cloudového uložiště</string>
+    <string name="file_action_update_in_cloud">Aktualizovat v Cloudovém uložišti</string>
+    <string name="file_error_canceled">Zrušeno uživatelem</string>
+    <string name="file_error_not_found">Soubor nenalezen. Zkuste ho nahrát znovu.</string>
+    <string name="file_attr_last_modified">Naposledy upraveno</string>
+    <string name="file_attr_updated">Aktualizováno</string>
+    <string name="file_attr_location">Location</string>
+    <string name="file_confirm_update_file">Aktualizovat soubor?</string>
+    <string name="file_confirm_update_file_description">Soubor bude v cloudovém uložišti aktualizován.</string>
+    <string name="file_error_name_required">K uložení této poznámky je vyžadován název</string>
+    <string name="file_action_new_file">Soubor</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Files</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">Poznámku</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">Přílohu</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Attachments</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">Search your files</string>
+    <string name="file_type_any">All</string>
+    <string name="file_type_audio">Audios</string>
+    <string name="file_type_video">Videos</string>
+    <string name="file_type_image">Images</string>
+    <string name="file_type_archive">Archives</string>
+    <string name="file_type_document">Documents</string>
+    <string name="file_type_recycled">Recycle Bin</string>
+    <string name="folder_select">Select</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">Upravit</string>
+    <string name="clip_action_new_edit_description">Poznámka může být předem upravena, než s ní začnete dělat cokoliv dalšího.</string>
+    <string name="clip_action_new_insert">Vložit do</string>
+    <string name="clip_action_new_insert_description">Text poznámky je možno vložit do libovolné jiné. Zvolte cílenou poznámku a upřesněte možnosti vložení.</string>
+    <string name="clip_action_new_action">Akce</string>
+    <string name="clip_action_new_action_description">Text poznámky může být užit pro provedení akce.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">Exportována %s poznámka</item>
+        <item quantity="few">Exportovány %s poznámky</item>
+        <item quantity="many">Exportováno %s poznámek</item>
+        <item quantity="other">Exportováno %s poznámek</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">Importována %s poznámka</item>
+        <item quantity="few">Importovány %s poznámky</item>
+        <item quantity="many">Importováno %s poznámek</item>
+        <item quantity="other">Importováno %s poznámek</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">Smazána %s poznámka</item>
+        <item quantity="few">Smazány %s poznámky</item>
+        <item quantity="many">Smazáno %s poznámek</item>
+        <item quantity="other">Smazáno %s poznámek</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s poznámka</item>
+        <item quantity="few">%s poznámky</item>
+        <item quantity="many">%s poznámek</item>
+        <item quantity="other">%s poznámek</item>
+    </plurals>
+</resources>

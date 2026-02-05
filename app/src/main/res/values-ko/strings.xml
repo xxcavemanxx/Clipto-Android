@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">새 줄</string>
+    <string name="common_separator_space">공백</string>
+    <string name="common_separator_comma">쉼표</string>
+    <string name="confirm_exit_edit_mode_title">편집 모드에서 나가시겠습니까?</string>
+    <string name="confirm_exit_edit_mode_description">저장하지 않은 모든 변경 사항이 손실됩니다.</string>
+    <string name="confirm_delete_note_title">노트를 삭제하시겠습니까?</string>
+    <string name="confirm_delete_note_description">선택한 노트가 삭제됩니다.</string>
+    <string name="link_preview_label">미리보기를 가져오는 중…</string>
+    <string name="link_preview_not_found">미리보기 없음</string>
+    <string name="link_preview_hide">미리보기 숨기기</string>
+    <string name="link_preview_show">미리보기 표시</string>
+    <string name="toast_downloaded">%s 다운로드 완료</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">종료하려면 \'뒤로\' 버튼을 한 번 더 눌러주세요</string>
+    <string name="essentials.errors.unknown">알 수 없는 오류가 발생했습니다. 다시 시도해 주세요.</string>
+    <string name="error_data_empty">데이터를 찾을 수 없습니다</string>
+    <string name="error.unexpected">예기치 못한 오류가 발생했습니다</string>
+    <string name="error.unexpected.send">\'버그\' 버튼을 눌러 오류를 전송해주세요</string>
+    <!-- COMMON -->
+    <string name="menu.rate">평가하기</string>
+    <string name="menu.edit">편집</string>
+    <string name="menu.clear">삭제</string>
+    <string name="menu.clear_all">모두 지우기</string>
+    <string name="menu.share">공유</string>
+    <string name="menu.fav">중요 표시</string>
+    <string name="menu.delete">삭제</string>
+    <string name="menu.empty">비우기</string>
+    <string name="menu.cancel">취소</string>
+    <string name="menu.settings">설정</string>
+    <string name="menu.display_options">옵션 표시</string>
+    <string name="menu.faq">자주 묻는 질문</string>
+    <string name="menu.new">신규</string>
+    <string name="menu.search">검색</string>
+    <string name="menu.print">인쇄</string>
+    <string name="menu.restore">복원</string>
+    <string name="menu.merge">병합</string>
+    <string name="menu.copy_link">공개 링크 복사</string>
+    <string name="menu.share_link">공개 링크 공유</string>
+    <string name="menu.save_as">다른 이름으로 저장…</string>
+    <string name="menu.rename">이름 변경</string>
+    <string name="menu.paste">붙여넣기</string>
+    <string name="menu.copy">복사</string>
+    <string name="menu.cut">잘라내기</string>
+    <string name="menu.fullscreen.enter">전체화면</string>
+    <string name="menu.fullscreen.exit">전체화면 종료</string>
+    <string name="menu_close">닫기</string>
+    <string name="button.update">업데이트</string>
+    <string name="button.install">설치</string>
+    <string name="button.uninstall">설치 제거</string>
+    <string name="button.done">완료</string>
+    <string name="button.undo">실행취소</string>
+    <string name="button.apply">적용</string>
+    <string name="button.change">변경</string>
+    <string name="button.save">저장</string>
+    <string name="button.create">생성</string>
+    <string name="button.send">전송</string>
+    <string name="button.preview">미리보기</string>
+    <string name="button.confirm">확인</string>
+    <string name="button.sync">지금 동기화</string>
+    <string name="button.yes">예</string>
+    <string name="button.no">아니요</string>
+    <string name="button.back">뒤로</string>
+    <string name="button.continue">계속</string>
+    <string name="button.finish">마침</string>
+    <string name="button.got_it">확인!</string>
+    <string name="button.get_started">시작하기</string>
+    <string name="button.example">예시</string>
+    <string name="button_try_again">재시도</string>
+    <string name="button_insert">삽입</string>
+    <string name="button_refresh">새로고침</string>
+    <string name="notification.title.empty">클립보드 비어있음</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">뒤로 가기</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">약어</string>
+    <string name="common.label.description">설명</string>
+    <string name="common.action.confirm">선택한 동작이 맞는지 확인</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">새 태그</string>
+    <string name="tag.new.name">태그 이름</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">폴더로 이동</string>
+    <!-- MAIN -->
+    <string name="main.search">노트 검색</string>
+    <string name="main.filter.all">전체</string>
+    <string name="main.filter.no_tags">태그 미지정</string>
+    <string name="main.filter.filtered">필터 된</string>
+    <string name="main.delete_selected.title">선택한 노트를 삭제할까요?</string>
+    <string name="main.delete_selected.description">선택한 모든 노트가 제거됩니다.</string>
+    <string name="main.delete_merged.title">병합된 노트를 지울까요?</string>
+    <string name="main.delete_merged.description">병합된 노트가 영구적으로 제거될 것입니다.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">노트를 찾을 수 없습니다.</string>
+    <string name="main.list.empty.caption">참고: 카테고리마다 각각의 정렬 설정이나 기타 설정이 있을 수 있습니다. 원한다면 해당 설정들을 목록(%s)이나 좌측 탐색 창(%s)에서 변경할 수 있습니다.</string>
+    <string name="main.list.empty.caption.three_dot">세 점 메뉴</string>
+    <string name="main.list.empty.caption.long_tap">카테고리를 길게 누르세요</string>
+    <string name="main.list.empty.description.all">기본 카테고리. 모든 노트를 여기서 볼 수 있습니다.</string>
+    <string name="main.list.empty.description.no_tags">태그가 없는 노트를 여기서 볼 수 있습니다.</string>
+    <string name="main.list.empty.description.tags">해당 태그가 붙어 있는 노트와 파일을 여기서 볼 수 있습니다.</string>
+    <string name="main.list.empty.description.filtered">설정한 조건에 맞는 노트가 없습니다.</string>
+    <string name="main.list.empty.description.starred">즐겨찾기한 노트를 여기서 볼 수 있습니다.</string>
+    <string name="main.list.empty.description.deleted">삭제되었지만 다시 복원할 수 있는 노트와 파일을 표시합니다. 삭제된 기록의 태그와 기타 속성은 유지되지만 해당 카테고리에서는 볼 수 없습니다.</string>
+    <string name="main.list.empty.description.clipboard">앱이 클립보드에서 자동으로 생성한 노트를 표시합니다. 기본적으로 클립보드는 추적되지 않으며 설정에서 활성화할 수 있습니다.</string>
+    <string name="main.list.empty.description.snippets">다른 노트에 쓰인 글을 표시합니다. 스니펫을 수정하면 스니펫이 쓰인 모든 노트에 자동으로 반영됩니다.</string>
+    <string name="main.filter.snippets">스니펫</string>
+    <string name="main.filter.filters">필터</string>
+    <string name="main.filter.folders">폴더</string>
+    <string name="main.filter.files">파일</string>
+    <string name="main.filter.notes">노트</string>
+    <string name="main.filter.tags">태그</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">마지막 동작 기억</string>
+    <string name="main_action_settings_remember_description">켜져 있다면, 앱이 마지막 동작을 기억하고 다음에 플로팅 버튼을 눌렀을 때 활용합니다. 동시에 플로팅 버튼을 길게 눌러서 전체 동작 목록을 볼 수 있게 됩니다.</string>
+    <string name="main_action_folders_move_note_title">기존 노트</string>
+    <string name="main_action_folders_move_note_description">기존 노트를 현재 폴더로 이동합니다</string>
+    <string name="main_action_folders_move_file_title">기존 파일</string>
+    <string name="main_action_folders_move_file_description">기존 파일을 현재 폴더로 이동합니다</string>
+    <string name="main_action_notes">노트 생성</string>
+    <string name="main_action_notes_new_title">새 노트</string>
+    <string name="main_action_notes_new_description">중요한 텍스트 정보를 저장하고 언제 어느 기기에서나 곧바로 불러오세요</string>
+    <string name="main_action_notes_barcode_title">바코드 스캔</string>
+    <string name="main_action_notes_barcode_description">링크나 텍스트를 스캔하여 노트로 저장하세요 (대부분의 표준 바코드 유형 지원됨)</string>
+    <string name="main_action_notes_clipboard_title">클립보드에서 가져오기</string>
+    <string name="main_action_notes_clipboard_description">클립보드의 현재 텍스트를 가져와 노트로 저장하세요</string>
+    <string name="main_action_notes_import_title">파일에서 불러오기</string>
+    <string name="main_action_notes_import_description">파일을 통해 텍스트가 써 있는 노트를 만드세요 (%sKB 이상의 파일 미지원)</string>
+    <string name="main_action_notes_import_error">파일 크기는 %sKB 이하여야 합니다</string>
+    <string name="main_action_files">파일 추가</string>
+    <string name="main_action_files_file_title">파일 선택</string>
+    <string name="main_action_files_file_description">%sMB 이하의 어떤 파일이든(사진, 비디오, PDF 등) 제한 없이 추가하세요</string>
+    <string name="main_action_files_photo_title">사진 촬영</string>
+    <string name="main_action_files_photo_description">사진을 찍어 노트로 저장하세요</string>
+    <string name="main_action_files_record_title">동영상 녹화</string>
+    <string name="main_action_files_record_description">동영상을 찍어 노트로 저장하세요 (%sMB 이상의 파일 미지원)</string>
+    <string name="main_action_organize">데이터 체계화</string>
+    <string name="main_action_organize_tag_title">새 태그</string>
+    <string name="main_action_organize_tag_description">찾기 쉽도록 노트나 파일에 태그를 붙여 체계화하세요</string>
+    <string name="main_action_organize_filter_title">새 필터</string>
+    <string name="main_action_organize_filter_description">이미 만들어진 검색 템플릿을 바탕으로 빠르게 정보를 찾을 수 있도록 해 주는 필터를 만드세요</string>
+    <string name="main_action_organize_folder_title">새 폴더</string>
+    <string name="main_action_organize_folder_description">새 폴더를 만들어서 노트와 파일을 친숙한 계층 구조로 관리하도록 합니다</string>
+    <string name="main_action_snippets">반복되는 타이핑 줄이기</string>
+    <string name="main_action_snippets_snippet_title">새 스니펫</string>
+    <string name="main_action_snippets_snippet_description">반복 작업과 오타를 방지하기 위해 여러 번 쓸 수 있는 텍스트 템플릿을 만듭니다</string>
+    <string name="main_action_snippets_set_title">새 스니펫 도구</string>
+    <string name="main_action_snippets_set_description">일반적인 양식을 더 빨리 찾기 위해 스니펫 도구를 생성합니다</string>
+    <string name="main.actions.save_and_start_new_note">저장하고 새 노트 쓰기</string>
+    <string name="main.actions.add_dynamic_value">변수 입력</string>
+    <string name="main.actions.add_attachment">파일 첨부</string>
+    <string name="main.actions.sync_note">노트 동기화</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">왼쪽으로 밀기</string>
+    <string name="main.swipe_actions.caption.right">오른쪽으로 밀기</string>
+    <string name="main.swipe_actions.fav">즐겨찾기에 추가</string>
+    <string name="main.swipe_actions.delete">삭제</string>
+    <string name="main.swipe_actions.copy">복사</string>
+    <string name="main.swipe_actions.none">없음</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">고급 검색</string>
+    <string name="filter.hint.text">검색할 문자열</string>
+    <string name="filter.label.no_tags">태그 미지정</string>
+    <string name="filter.label.fav">즐겨찾기</string>
+    <string name="filter.label.platform">플랫폼</string>
+    <string name="filter.label.snippets">스니펫</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">클립보드 노트</string>
+    <string name="filter.clipboard.empty.title">클립보드 노트를 비울까요?</string>
+    <string name="filter.clipboard.empty.description">모든 클립보드 노트(즐겨찾기 노트나 태그된 노트 제외)를 영구적으로 삭제합니다.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">휴지통</string>
+    <string name="filter.deleted.limit">제한</string>
+    <string name="filter.deleted.empty.title">휴지통을 비울까요?</string>
+    <string name="filter.deleted.empty.description">휴지통 안 모든 노트가 영구적으로 제거됩니다.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">제한</string>
+    <string name="filter.limit.description">이 카테고리에 해당하는 노트의 개수가 제한 범위를 초과하면, 해당 카테고리의 오래된 노트부터 자동으로 삭제될 것입니다.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">필터 이름</string>
+    <string name="filter_error_name_required">이름이 겹치는 필터는 저장할 수 없습니다</string>
+    <string name="filter_delete_title">\'%s\' 필터를 삭제할까요?</string>
+    <string name="filter_delete_description">필터는 영구적으로 제거될 것입니다.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">이름이 겹치는 태그는 저장할 수 없습니다</string>
+    <string name="filter.tag.rule.title">자동 할당 규칙</string>
+    <string name="filter.tag.rule.description">켜두면, 이 태그가 쉼표로 구분된 텍스트 중 하나 이상을 포함한 노트에 자동으로 할당됩니다.</string>
+    <string name="filter.tag.rule.hint">쉼표로 구분된 텍스트</string>
+    <string name="filter.tag.delete.title">\'%s\' 태그를 삭제할까요?</string>
+    <string name="filter.tag.delete.description">태그는 영구적으로 제거될 것입니다.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">추가</string>
+    <string name="clip.hint.title">제목 없는 노트</string>
+    <string name="clip.hint.tags">탭해서 태그 추가</string>
+    <string name="clip.hint.text">탭해서 텍스트 추가</string>
+    <string name="clip.snackbar.text.required">노트를 저장하려면 내용이 있어야 합니다</string>
+    <string name="clip.snackbar.text.copied">텍스트가 클립보드로 복사되었습니다!</string>
+    <string name="clip.attr.updated">사용일</string>
+    <string name="clip.attr.edited">편집한 시간</string>
+    <string name="clip.attr.created">생성일</string>
+    <string name="clip.attr.deleted">삭제한 시간</string>
+    <string name="clip.attr.usageCount">사용 횟수</string>
+    <string name="clip.attr.charsCount">글자 수</string>
+    <string name="clip.attr.size">크기</string>
+    <string name="clip_exit_without_save_title">노트 수정을 취소할까요?</string>
+    <string name="clip_exit_without_save_description">모든 변경 내용이 손실됩니다.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">저장 형식</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">일반</string>
+    <string name="clip_details_tab_tags">태그</string>
+    <string name="clip_details_tab_folder">경로</string>
+    <string name="clip_details_tab_attachments">첨부 파일</string>
+    <string name="clip_details_tab_dynamic">변수</string>
+    <string name="clip_details_tab_snippets">스니펫</string>
+    <string name="clip_details_tab_snippet_kits">스니펫 도구</string>
+    <string name="clip_details_tab_dynamic_values">값</string>
+    <string name="clip_details_tab_dynamic_fields">입력란</string>
+    <string name="clip_details_tab_attributes">속성</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">노트에 텍스트 삽입</string>
+    <string name="clip.info.label.note.insert.remember">선택을 기억하고 다시 묻지 않기 (길게 탭하여 설정 변경 가능)</string>
+    <string name="clip.info.label.note.create">노트 작성</string>
+    <string name="clip.info.label.position">위치</string>
+    <string name="clip.info.label.beginning">시작 부분에</string>
+    <string name="clip.info.label.end">끝 부분에</string>
+    <string name="clip.info.label.tags.edit">태그 편집</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">일반 텍스트</string>
+    <string name="clip.text.type.link">링크 포함 텍스트</string>
+    <string name="clip.text.type.line_clickable">복사된 줄을 포함한 텍스트</string>
+    <string name="clip.text.type.word_clickable">복사된 토큰을 포함한 텍스트</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">첨부파일</string>
+    <string name="clip.add.attachment.tooltip">%sMB 이하의 어떤 파일이든(사진, 비디오, PDF 등) 제한 없이 저장할 수 있습니다.</string>
+    <string name="clip.add.dynamic.title">변수</string>
+    <string name="clip.add.dynamic.tooltip">변수는 항상 최신 데이터가 담긴 노트를 만드는 방법입니다. 보기 모드에서는, 플레이스홀더 부분이 실제 값으로 치환됩니다.</string>
+    <string name="clip.add.dynamic.value.date_time">날짜/시간</string>
+    <string name="clip.add.dynamic.value.platform">플랫폼</string>
+    <string name="clip.add.dynamic.value.ip">IP 주소</string>
+    <string name="clip.add.dynamic.value.date">날짜</string>
+    <string name="clip.add.dynamic.value.time">시간</string>
+    <string name="clip.add.dynamic.value.month">월</string>
+    <string name="clip.add.dynamic.value.timezone">시간대</string>
+    <string name="clip.add.dynamic.value.month_number">월 번호</string>
+    <string name="clip.add.dynamic.value.month_number_zero">월 번호(0으로 채움)</string>
+    <string name="clip.add.dynamic.value.year">년</string>
+    <string name="clip.add.dynamic.value.year_short">년(짧은꼴)</string>
+    <string name="clip.add.dynamic.value.hour24">시각 (24시간제)</string>
+    <string name="clip.add.dynamic.value.hour12">시각 (12시간제)</string>
+    <string name="clip.add.dynamic.value.minutes">분</string>
+    <string name="clip.add.dynamic.value.seconds">초</string>
+    <string name="clip.add.dynamic.value.am_pm">오전/오후</string>
+    <string name="clip.add.dynamic.value.day_of_week">날짜(주)</string>
+    <string name="clip.add.dynamic.value.day_of_month">날짜(월)</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">날짜(월, 0으로 채움)</string>
+    <string name="clip.add.dynamic.value.random_digit">임의 숫자 (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">임의 라틴 문자 (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">스니펫</string>
+    <string name="clip.add.snippet.new.hint">생성/검색할 텍스트 입력</string>
+    <string name="clip.add.snippet.tooltip">스니펫은 다른 노트에서 재사용할 수 있으나 한 곳에서만 편집이 가능한 노트를 말합니다. 만든 스니펫은 좌측 탐색 창에서 볼 수 있습니다.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">텍스트 유형</string>
+    <string name="text.config.size">글자 크기</string>
+    <string name="text.config.font">텍스트 글꼴</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">정렬 기준</string>
+    <string name="list.config.lines">표시할 최대 줄 수</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">목록 스타일</string>
+    <string name="list.style.description">노트 리스트 스타일</string>
+    <string name="list.style.default">기본</string>
+    <string name="list.style.comfortable">널널하게</string>
+    <string name="list.style.compact">빽빽하게</string>
+    <string name="list.style.preview">미리보기</string>
+    <string name="list.style.grid">격자</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">스킬 룬</string>
+    <string name="runes.hint.description"><![CDATA[    스킬 룬은 앱을 더욱 유용하게 해주는 기능들입니다.
+    \n\n
+    각 룬은 기존의 기능을 확장하거나 변형하며, 사용자가 애플리케이션을 커스터마이즈하여 최적의 생산성을 낼 수 있도록 해 줍니다.
+    \n\n
+    어떤 룬은 유용하고 어떤 룬은 별로 유용하지 않으나, 이러한 점을 바탕으로 룬들이 애플리케이션에게 무한한 가능성과 활용성을 가져다 주고 있습니다.
+    \n\n
+    현재 존재하는 룬들을 둘러보고, 원하는 룬을 활성화하거나 새로운 룬에 대한 아이디어를 보내서 앱의 생산성을 향상해 보세요 :)
+    ]]></string>
+    <string name="runes_hotkeys_title">단축키 관리자</string>
+    <string name="runes_hotkeys_description"><![CDATA[    이 룬을 사용하면 앱이나 동작을 제어하는 단축키를 설정할 수 있습니다.
+    \n
+    \n
+    일부 단축키는 기본으로 설정되어 있습니다. 이를 지우거나 재할당할 수도 있습니다.
+    \n
+    \n
+    ```
+    \n
+    동작의 종류에 따라, 단축키가 애플리케이션 내부에서만 인식되거나 외부에서도 인식됩니다.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">환상적인 동기화</string>
+    <string name="runes.instant_sync.description"><![CDATA[    이 룬은 아래와 같은 기능을 제공합니다:
+    \n
+    - 모든 데이터를 클라우드에 자동 저장
+    \n
+    - 다른 기기에서 곧바로 접근
+    \n
+    - 텍스트 노트뿐 아니라, 어떤 종류의 파일이든 저장
+    \n\n
+    기본적으로 이 앱은 기기의 모든 데이터를 동기화한 채 돌아가지 않습니다.
+    \n
+    ```
+    \n
+    일단 이 룬을 활성화하면 인터넷 연결이 가능한 경우 이전에 생성한 데이터 및 이후 생성할 데이터가 자동으로 클라우드 저장소로 저장됩니다.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">강철 방패</string>
+    <string name="runes.pincode.description"><![CDATA[    이 룬을 활성화하면 암호를 통해 앱을 잠글 수 있습니다.
+    \n\n
+    이 룬을 활성화하면, **%s분** 동안 앱을 사용하지 않은 경우 앱이 잠깁니다.
+    \n\n
+    **중요: 암호를 잊어버린 경우 앱을 삭제 및 재설치해야 합니다. 이 경우, 동기화하지 않은 모든 변경사항이 소실됩니다.    ]]></string>
+    <string name="runes.theme.title">카멜레온 스킨</string>
+    <string name="runes.theme.description"><![CDATA[    기본적으로는 애플리케이션이 시스템 설정에 의해 자동으로 밝은 테마와 어두운 테마를 택하여 쓰도록 구현되어 있습니다.
+    \n\n
+    여기서는 시스템 설정에 무관하게 원하는 테마를 쓸 수 있습니다.
+    ]]></string>
+    <string name="runes.clipboard.title">클립보드</string>
+    <string name="runes.clipboard.description"><![CDATA[    이 룬을 사용하면 앱이 클립보드를 확인하고 이로부터 자동으로 노트를 생성하도록 합니다.
+    \n\n
+    이 룬을 사용하면, 클립보드를 계속 추적할 수 있도록 상단 바에 고정 알림이 표시됩니다.
+    \n\n
+    ```
+    \n
+    만약 알림이 표시되지 않는 경우, 애플리케이션이 꺼져 있고 클립보드를 추적하고 있지 않는 상태에 있다는 의미이며 앱을 다시 실행할 때까지 클립보드 추적은 중단됩니다.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">키보드 도우미</string>
+    <string name="runes.texpander.description"><![CDATA[    이 룬은 거의 **모든 앱**에서 노트의 내용으로 입력란을 채울 수 있도록 해줍니다.
+    \n\n
+    켠 다음 입력란을 활성화하면 앱이 입력란의 내용을 수정할 수 있는 플로팅 창을 띄울 것입니다.
+    \n\n
+    #### 기능:
+    \n
+    - 창을 화면의 어디에나 둘 수 있습니다;
+    \n
+    - 사용할 수 있는 작업의 종류에 따라 창이 저절로 바뀝니다;
+    \n
+    - 입력 상태가 끝나면 창이 저절로 사라집니다;
+    \n
+    - (도구모음에서) 다음에 강제로 호출할 때까지 창을 수동으로 숨길 수 있습니다;
+    \n
+    - 창이 뜨지 않는 경우 알림창에서 (해당하는 알림을 눌러서) 또는 입력란을 두 번 눌러서 띄울 수 있습니다;
+    \n\n
+    #### 기술적 제한:
+    \n
+    - 창을 띄우는 데에는 접근성 서비스가 쓰이며 시스템 설정에서 이를 활성화해야 합니다;
+    \n
+    - 다른 앱 위에 플로팅 창을 띄우는 데에는 그에 맞는 시스템 설정의 권한이 필요합니다;
+    \n
+    - 일부 애플리케이션에서는 창이 자동으로 동작하지 않으므로 수동으로 활성화한 뒤 제한된 기능만을 사용할 수 있습니다;
+    \n\n
+    #### 공지:
+    \n
+    룬이 활성화된 후 곧 작동을 멈추는 경우 [이 문서](%s)를 읽고 앱 실행을 계속 유지하는 방법을 알아보세요. 혹은 오류를 찾은 것일 수도 있으니 메일로 문의해주세요:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">활성화</string>
+    <string name="runes.texpander.required.accessibility">여기를 누르고 다운로드한(설치한) 서비스로 간 다음 키보드 도우미 서비스를 켜세요.</string>
+    <string name="runes.texpander.required.floating">여기를 누르고 기타 권한으로 간 다음 팝업 창 표시 권한을 켜세요.</string>
+    <string name="runes.texpander.action.copy">클립보드로 복사</string>
+    <string name="runes.texpander.action.show">여기를 눌러 플로팅 창을 띄우세요.</string>
+    <string name="runes.texpander.action.insert">삽입</string>
+    <string name="runes.texpander.action.replace">수정</string>
+    <string name="runes.texpander.hint.hide">빠른 설정창이나 알림창에서 호출할 때까지 보이지 않습니다.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">오큘러스</string>
+    <string name="runes.link_preview.description"><![CDATA[    이 룬을 활성화하면 **http 링크**를 저장한 경우 애플리케이션이 해당 사이트의 미리보기를 불러올 것입니다.
+    \n\n
+    또한 아래 기능도 활성화됩니다:
+    \n
+    - 미리보기 이미지는 분할 화면으로 열 수 있으며 확대할 수 있음
+    \n
+    - 동영상 링크를 쓴 경우 애플리케이션에서 동영상을 재생할 수 있음
+    ]]></string>
+    <string name="runes.auto_save.title">포인트 오브 노 리턴</string>
+    <string name="runes.auto_save.description"><![CDATA[    기본적으로는 노트를 생성하거나 편집할 때 반드시 수동으로 저장 버튼을 눌러 변경 사항을 저장해야 합니다.
+    \n
+    \n
+    이 룬을 사용하면 텍스트를 변경할 때 변경 사항이 자동으로 저장됩니다.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">부활</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[  이 룬을 사용하면, 앱이 시작할 때 최근 사용했던 필터를 불러옵니다.    ]]></string>
+    <string name="runes.swipe_actions.title">스와이프 파워</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    이 룬을 사용하면 노트 목록에서 스와이프 제스처로 시행할 기능을 지정할 수 있습니다.
+    ]]></string>
+    <string name="runes.focus_on_title.title">커서 위치 변경</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    기본적으로 새 노트를 생성하면 커서가 텍스트 입력란에 위치합니다.
+    \n\n
+    이 룬을 사용하면 노트 생성 시 커서 위치를 다른 곳으로 지정할 수 있습니다.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">복사 시 숨김</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    이 룬이 활성화된 경우 Clipto로 텍스트를 복사할 시(입력창에서 컨텍스트 메뉴로 복사한 경우 제외) 앱이 최소화됩니다.
+    \n
+    \n
+    이 룬을 사용하면 복사한 텍스트를 응용 프로그램 외부에 붙여넣을 때 단계 수를 최소화할 수 있습니다.
+    ]]></string>
+    <string name="runes.double_click_actions.title">조심스럽게</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    이 룬을 사용하면 일부 동작에 대해 한 번 클릭하는 대신 두 번 클릭하여 활성화되도록 설정할 수 있습니다.
+    \n
+    \n
+    터치 실수를 막는 데 유용합니다.
+    ]]></string>
+    <string name="runes.loyalty.title">동기를 주는 지원</string>
+    <string name="runes.loyalty.description"><![CDATA[    여러분의 지원과 피드백이 없으면, 사용자에게 옳은 방향으로 제품을 개선하지 못할 것입니다.
+    \n\n
+    >**시간이 조금 있다면**, Google Play에서 앱을 평가해주세요.
+    \n
+    \n
+    >**시간이 조금 많고 번역에 올바르지 않은 부분이 있다면** - 번역 프로젝트에 참여해주세요.
+    \n
+    \n
+    >**버그를 찾았거나, 더 많은 룬을 원하거나, 그냥 보내고 싶은 것이 있다면** - 저희의 이메일과 Github 페이지는 항상 열려 있습니다.
+    ]]></string>
+    <string name="runes.backup_restore.title">타임머신</string>
+    <string name="runes.backup_restore.description"><![CDATA[    자동 동기화에 더하여, 원할 때 데이터를 수동으로 백업하고 불러올 수도 있습니다.
+    \n\n
+    클라우드 동기화와 달리 수동으로 백업하면:
+    \n
+    - 그 시간의 모든 데이터를 남길 수 있습니다
+    \n
+    - 백업 및 복원 전 과정을 관리할 수 있습니다
+    \n
+    - 이전에 남긴 데이터 전체를 복원할 수 있습니다
+    \n\n
+    ```
+    \n
+    파일로부터 복원 시 이미 존재하는 데이터는 지워지지 않고, 백업했던 데이터가 추가되는 방식으로 진행됩니다.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">설정</string>
+    <string name="settings.campaign.rate.title">당신의 의견이 필요합니다</string>
+    <string name="settings.campaign.rate.message">1분보다 적은 시간이 들지만, 향후 앱을 개선해 나가는 데 큰 영향을 줍니다.</string>
+    <string name="settings.campaign.rate.button">Google Play에서 평가하기</string>
+    <string name="settings.campaign.rate.question">Clipto를 사용하며 어땠나요?</string>
+    <string name="settings.campaign.rate.feedback.title">피드백</string>
+    <string name="settings.campaign.rate.feedback.message">Clipto를 어떻게 개선할지 알려주실 수 있나요? 당신의 의견이 매우 중요합니다.</string>
+    <string name="settings.campaign.rate.feedback.toast">구글 플레이에서 좋은 리뷰를 남겨주실 수 있나요? 지원에 감사드립니다!</string>
+    <string name="settings.campaign.share.title">Clipto Pro를 친구들과 공유해서 상품을 받으세요!</string>
+    <string name="settings.campaign.share.more">더 알아보기</string>
+    <string name="settings.campaign.share.action">링크 공유</string>
+    <string name="settings.group.clipboard">클립보드</string>
+    <string name="settings.group.behavior">동작</string>
+    <string name="settings.group.appearance">모양</string>
+    <string name="settings.group.backup">백업 &amp; 복원</string>
+    <string name="settings.group.security">개인정보보호 &amp; 보안</string>
+    <string name="settings.group.runes">룬</string>
+    <string name="settings.link_preview.title">링크 미리보기</string>
+    <string name="settings.auto_save.title">노트를 자동으로 저장</string>
+    <string name="settings.auto_save.description">노트를 만들거나 편집할 때 변경 사항은 자동 저장됩니다.</string>
+    <string name="settings.focus_on_title.title">노트 생성 시 제목에 커서 위치</string>
+    <string name="settings.focus_on_title.description">노트를 생성할 때, 제목 입력란에 자동으로 커서가 위치할 것입니다.</string>
+    <string name="settings.track_clipboard.title">클립보드 노트</string>
+    <string name="settings.track_clipboard.description">앱이 작동하는 중에는 클립보드로 복사된 텍스트로부터 자동으로 노트를 생성합니다. 또한 이를 빠르게 활용할 수 있도록 상태 바에 고정 알림을 답니다.</string>
+    <string name="settings.track_clipboard.q.message">안드로이드 Q부터는 클립보드로부터 노트를 생성하는 새 방법을 사용하시길 바랍니다.</string>
+    <string name="settings.track_clipboard.q.description">안드로이드 Q부터는 현재 활성화 중인 앱만 클립보드 데이터에 접근할 수 있습니다.</string>
+    <string name="settings.track_clipboard.q.solution.title">이 제한을 우회하려면, 다음 해결 방법을 써보세요.</string>
+    <string name="settings.track_clipboard.q.solution.1.title">\'복사\' 대신 \'Clipto…\' 버튼 이용</string>
+    <string name="settings.track_clipboard.q.solution.1">복사할 글자를 선택했을 때 뜨는 메뉴에서, 가능하다면 \'복사\' 버튼 대신 \'Clipto…\' 버튼을 눌러주세요.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">\'복사\' 버튼을 누른 후 내용을 알림창에 붙여넣기</string>
+    <string name="settings.track_clipboard.q.solution.2">만약 \'Clipto…\' 버튼이 없거나 기존의 \'복사\' 버튼을 그대로 사용하고 싶다면 알림 창에 해당 텍스트를 붙여 넣으셔야 클립보드 데이터로부터 노트를 생성할 수 있습니다.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">\'복사\' 버튼을 안드로이드 Q 이전의 버전처럼 이용하기</string>
+    <string name="settings.track_clipboard.q.solution.3">복사 버튼을 이전과 같이 쓰려면 컴퓨터를 이용해 고급 설정을 진행해야 합니다. Clipto를 예전처럼 사용하고 싶으시면 컴퓨터에서 아래 ADB 명령어를 실행해주세요:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">성공적으로 실행했다면 클립보드 추적을 켜고 끌 수 있도록 알림이 뜰 것입니다. 또한 이 경고는 설정에서 사라집니다.</string>
+    <string name="settings.track_clipboard.q.emulate.title">대체 복사 버튼</string>
+    <string name="settings.track_clipboard.q.emulate.description">앱에서 사용자의 \'Clipto…\' 및 \'Paste\' 동작을 감지해 선택 또는 복사한 문자열을 자동으로 가져와 노트를 생성하고, 만약 기존의 클립보드 내용과 다르다면 해당 문자열을 클립보드에 넣도록 합니다.</string>
+    <string name="settings.universal_clipboard.title">전역 클립보드</string>
+    <string name="settings.universal_clipboard.description">클립보드로 복사한 모든 텍스트는 당신의 모든 기기에 동기화될 것입니다. 또한 이 설정이 켜진 경우에는 한 기기에서 클립보드에 동기화된 텍스트가 다른 기기의 클립보드로 삽입될 것입니다.</string>
+    <string name="settings.notification_style.title">알림 스타일</string>
+    <string name="settings.notification_style.description">상태 바에 상주하는 알림의 서식을 지정합니다.</string>
+    <string name="settings.notification_sound.title">무음 알림</string>
+    <string name="settings.notification_sound.description">알림이나 알림 채널의 소리 및 진동 설정과 무관하게 알림을 무음으로 설정합니다.</string>
+    <string name="settings.hide_on_click.title">복사 시 숨기기</string>
+    <string name="settings.hide_on_click.description">노트가 복사된 후 앱을 숨깁니다.</string>
+    <string name="settings.restore_filter.title">마지막 필터 기억</string>
+    <string name="settings.restore_filter.description">마지막 세션에서 사용한 필터를 활성화한 상태에서 앱을 엽니다.</string>
+    <string name="settings.pin_starred.title">즐겨찾기한 노트 고정</string>
+    <string name="settings.pin_starred.description">즐겨찾기한 노트가 필터에 상관없이 목록 최상단에 나옵니다.</string>
+    <string name="settings.theme.title">테마</string>
+    <string name="settings.theme.description">색 구성을 지정하세요.</string>
+    <string name="settings.backup.title">파일로 백업</string>
+    <string name="settings.backup.description">노트를 파일로 내보냅니다.</string>
+    <string name="settings.restore.title">파일에서 복원</string>
+    <string name="settings.restore.description">파일로부터 노트를 불러옵니다(지원 포맷: %s).</string>
+    <string name="settings.startup.title">부팅 시 실행</string>
+    <string name="settings.startup.description">시스템이 부팅을 마쳤을 때 저절로 시작하도록 설정합니다.</string>
+    <string name="settings.language.title">언어</string>
+    <string name="settings.swipe_actions.title">스와이프 동작</string>
+    <string name="settings.swipe_actions.description">노트를 빠르게 관리할 수 있도록 스와이프했을 때의 동작을 설정합니다.</string>
+    <string name="settings.double_click.title">더블 클릭 동작</string>
+    <string name="settings.double_click.description">더블 클릭을 해야만 완료되는 동작을 설정합니다.</string>
+    <string name="settings.double_click.action.exit">뒤로가기 버튼으로 종료</string>
+    <string name="settings.double_click.action.delete">노트 삭제</string>
+    <string name="settings.double_click.action.edit">노트 편집</string>
+    <string name="settings.double_click.toast">더블 클릭해서 계속</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">변경사항 노트 숨기기</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">어떤 종류의 속성(태그, 즐겨찾기, 제목, 스니펫)이든 속성이 부여된 노트의 경우, \'클립보드 노트\' 카테고리에서 숨겨집니다.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">클립보드 제한 사항에 대한 경고 숨기기</string>
+    <string name="settings.clipboard.ignore_q_warning.description">앱을 장치의 클립보드와 함께 정상 작동하도록 설정한 경우, 기능 제한에 대한 알림을 제거하려면 이 설정을 켜세요.</string>
+    <string name="settings.security.passcode.title">비밀번호 잠금</string>
+    <string name="settings.security.passcode.description">비밀번호를 설정하면, 앱이 %s분 동안 쓰이지 않는 경우 자동으로 잠기게 됩니다.\n\n참고: 비밀번호를 잊어버린 경우, 앱을 제거한 후 다시 설치해야 합니다. 동기화하지 않은 변경 사항이 사라질 수 있습니다.</string>
+    <string name="settings.security.fingerprint.title">지문으로 잠금 해제</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">건너뛰기</string>
+    <string name="auth.set_passcode.label.set_passcode">비밀번호를 설정해 앱을 빠르고 안전하게 이용해보세요.</string>
+    <string name="auth.set_passcode.label.reenter_passcode">비밀번호 다시 입력</string>
+    <string name="auth.set_fingerprint.title">터치 ID 설정</string>
+    <string name="auth.set_fingerprint.subtitle">앱을 잠금 해제할 때 지문인식 센서를 사용하시겠습니까?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">지문인식 사용</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">일단 건너뛰기</string>
+    <string name="auth.fingerprint.touch_sensor">계속하려면 지문을 인식시키세요</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">현재 비밀번호 입력</string>
+    <string name="change_passcode.set_new">새 비밀번호 생성</string>
+    <string name="change_passcode.reenter">비밀번호 재입력</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - 지원</string>
+    <string name="about.label.email.support.message">당신의 의견을 쓰세요</string>
+    <string name="about.label.rate">Google Play에서 평가하기</string>
+    <string name="about.label.issue">문제점 신고하기</string>
+    <string name="about.label.translate">번역에 기여하기</string>
+    <string name="about.label.changelog">변경 내역</string>
+    <string name="about.label.campaign.rate">더 나은 서비스를 제공할 수 있도록 도와주십시오</string>
+    <string name="about.label.campaign.share">앱 링크 공유하기</string>
+    <string name="about.label.campaign.share.description">%s명이 당신의 링크를 통해 앱을 쓰게 되었습니다.</string>
+    <string name="about.label.other">관련한 게시글들</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">노트를 클라우드에 보관하고 기기 간 동기화를 활성화하려면 회원가입을 해주세요.</string>
+    <string name="account.title.required_authorization">권한이 필요합니다</string>
+    <string name="account.description.required_authorization">이 작업을 진행하려면 권한이 있어야 합니다</string>
+    <string name="account.title.authorized">권한 부여됨</string>
+    <string name="account.button.sign_in">로그인</string>
+    <string name="account.button.sign_out">로그아웃</string>
+    <string name="account.dialog.sign_out.title">로그아웃하려고 합니다</string>
+    <string name="account.dialog.sign_out.message">정말 앱에서 로그아웃하시겠습니까? 동기화되지 않은 데이터는 사라집니다.</string>
+    <string name="account.plan.personal">개인 라이선스</string>
+    <string name="account.plan.subscription">구독 플랜 (노트 %s개 동기화)</string>
+    <string name="account.plan.contributor">기여자 플랜 (노트 %s개 동기화)</string>
+    <string name="account.plan.yearly">연간 플랜 (노트 %s개 동기화)</string>
+    <string name="account.plan.monthly">월간 플랜 (노트 %s개 동기회)</string>
+    <string name="account.plan.free">무료 플랜 (노트 %s개 동기화)</string>
+    <string name="account.toolbar.title">계정</string>
+    <string name="account.sync.title">노트를 자동으로 동기화</string>
+    <string name="account_rebuild_index_title">데이터 색인 재구축</string>
+    <string name="account_rebuild_index_description">다른 장치에서 볼 때 다른 데이터(태그, 파일, 노트 등)가 표시된다면, 이 절차를 진행하는 것이 좋습니다. 절차를 완료한 후에는 다시 로그인해야 합니다.</string>
+    <string name="account_delete_title">계정 삭제</string>
+    <string name="account_delete_confirm_title">계정을 삭제하시겠습니까?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    경고! 이 계정을 삭제하는 경우, 당신의 계정과 개인 데이터가 영구적으로 제거되며 되돌릴 수 없습니다.
+    중요한 정보가 없는지 다시 한 번 확인해주세요.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">계속하시겠습니까?</string>
+    <string name="account_delete_confirm_again_description">확인을 누르면, 모든 계정 데이터가 영구적으로 제거될 것입니다.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">무료</string>
+    <string name="account.sync.plan.title">노트 %s개 동기화</string>
+    <string name="account.sync.plan.toolbar">플랜 선택</string>
+    <string name="account.sync.plan.button.active">플랜 활성화</string>
+    <string name="account.sync.plan.button.select">플랜 선택</string>
+    <string name="account.sync.plan.button.change">플랜 변경</string>
+    <string name="account.sync.plan.button.upgrade">업그레이드</string>
+    <string name="account.sync.plan.caption">무료로 시작해서, 동기화한 데이터에 해당하는 민큼만 비용을 지불하세요.</string>
+    <string name="account.sync.plan.hint">기기 간 동기화가 가능한 노트의 수 (%s개)</string>
+    <string name="account.sync.plan.benefit.offline">오프라인 노트 수 무제한.</string>
+    <string name="account.sync.plan.benefit.sync">모든 기기에 %s개의 노트 동기화.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">최대 업로드 가능 개수에 도달해 동기화가 중지되었습니다</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">모든 노트의 개수입니다. 휴지통 속 노트를 포함하면 %s개입니다. %s개 제한에 다다랐습니다.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">이 플랜을 선택하려면 노트의 개수를 줄이세요.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">이 플랜에서의 최대 동기화 수에 도달했습니다. 단 오프라인 환경에서는 앱을 여전히 제한없이 쓸 수 있으니 걱정 마세요. 하지만 플랜을 업그레이드하거나 노트의 수를 현재 사용하는 플랜에 맞게 줄이지 않으면 동기화 설정이 비활성화됩니다.</string>
+    <string name="account.sync.plan.contributor">만약 번역에 도움을 제공하였거나 정기적으로 제품을 지원한 경우, 연락하여 주시면 플랜을 업그레이드하여 드리겠습니다.</string>
+    <string name="sync.free_limit_concept">무료 요금제의 업로드 제한은 다양한 이유로 변동할 수 있습니다.</string>
+    <string name="sync.off.title">이 노트는 동기화되지 않았습니다</string>
+    <string name="sync.off.multiple.title">노트들이 동기화되지 않았습니다</string>
+    <string name="sync.off.caption">아래 원인들 중 한 가지 때문일 수 있습니다:</string>
+    <string name="sync.off.reason.universal_clipboard">이 노트를 생성하였을 때 전역 클립보드 설정이 꺼져 있었던 경우</string>
+    <string name="sync.off.reason.manual_off">동기화 설정을 수동으로 끈 경우</string>
+    <string name="sync.warning.title">클라우드 동기화 기능을 사용합니다</string>
+    <string name="sync.warning.description">클라우드 동기화는 완전한 무료 서비스가 아니며 계정을 업그레이드하거나 동기화된 노트의 수가 현재 플랜의 한계보다 적어질 때까지 비활성화될 수 있습니다.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">빠른 작업</string>
+    <string name="fast_actions.compose_email">이메일 생성</string>
+    <string name="fast_actions.send_message">새 메시지 전송</string>
+    <string name="fast_actions.compose_sms">SMS 생성</string>
+    <string name="fast_actions.twitter_post">트윗 생성</string>
+    <string name="fast_actions.web_search">웹 검색</string>
+    <string name="fast_actions.google_translate">구글 번역</string>
+    <string name="fast_actions.google_maps_search">구글 지도 검색</string>
+    <string name="fast_actions.wiki_search">위키백과 검색</string>
+    <string name="fast_actions.youtube_search">YouTube 검색</string>
+    <string name="fast_actions.duckduckgo_search">덕덕고 검색</string>
+    <string name="fast_actions.stackoverflow_search">스택 오버플로우 검색</string>
+    <string name="fast_actions.reddit_search">레딧 검색</string>
+    <string name="fast_actions.play_url">링크 재생</string>
+    <string name="fast_actions.send_as_file">파일로 전송</string>
+    <string name="fast_actions.send_as_txt_file">텍스트 파일로 전송</string>
+    <string name="fast_actions.send_as_pdf_file">PDF로 전송</string>
+    <string name="fast_actions.send_as_md_file">마크다운으로 전송</string>
+    <string name="fast_actions.export_to_file">파일로 내보내기</string>
+    <string name="fast_actions.export_to_file.success">%s 형태로 내보냈습니다</string>
+    <string name="fast_actions.calendar_event">일정 이벤트 추가</string>
+    <string name="fast_actions.copy">클립보드로 복사</string>
+    <string name="fast_actions.copy_clear">클립보드에서 제거</string>
+    <string name="fast_actions.tts">텍스트 음성 합성</string>
+    <string name="fast_actions.tts.max_length">텍스트가 %s자를 초과해서는 안 됩니다</string>
+    <string name="fast_actions.share">공유…</string>
+    <string name="fast_actions.send_as_qrcode">QR 코드로 전송</string>
+    <string name="fast_actions.dial_number">전화 걸기</string>
+    <string name="fast_actions.insert_contact">연락처 생성</string>
+    <string name="fast_actions.insert_contact_email">연락 이메일 저장</string>
+    <string name="fast_actions.insert_contact_phone">연락 전화번호 저장</string>
+    <string name="fast_actions.open_url">웹 페이지 열기</string>
+    <string name="fast_actions.short_link">링크 단축</string>
+    <string name="fast_actions.more">더보기</string>
+    <string name="fast_actions.error">예기치 않은 오류: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">기본</string>
+    <string name="theme.sepia">세피아</string>
+    <string name="theme.dark">어둡게</string>
+    <string name="theme.dark_blue">짙은 파랑</string>
+    <string name="theme.dark_green">진한 초록</string>
+    <string name="theme.dark_blurple">보랏빛 군청색</string>
+    <string name="theme.black">완전 검정</string>
+    <string name="theme.green">녹색</string>
+    <string name="theme.white">흰색</string>
+    <string name="theme.pink">분홍</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">사용한 날짜</string>
+    <string name="sort_order.modify_date">편집한 날짜</string>
+    <string name="sort_order.create_date">생성한 날짜</string>
+    <string name="sort_order.delete_date">삭제한 날짜</string>
+    <string name="sort_order.usage_count">사용 횟수</string>
+    <string name="sort_order.title">제목</string>
+    <string name="sort_order.text">내용</string>
+    <string name="sort_order.tags">태그</string>
+    <string name="sort_order.size">크기</string>
+    <string name="sort_order.name">이름</string>
+    <string name="sort_order.notes_count">노트 개수</string>
+    <string name="sort_order.color">색</string>
+    <string name="sort_order.manual">수동</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">성공</string>
+    <string name="backup.fail.title">실패</string>
+    <string name="backup.fail.message">예기치 않은 오류: %s</string>
+    <string name="restore.success.title">성공</string>
+    <string name="restore.fail.title">실패</string>
+    <string name="restore.fail.message">예기치 않은 오류: %s</string>
+    <string name="clip.multiple.exit_without_save.title">정말로 이 탭을 닫으시겠어요?</string>
+    <string name="clip.multiple.exit_without_save.description">변경 내용이 손실됩니다.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">일반 태그</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">구분</string>
+    <string name="clip.multiple.merge.separator.line">새 줄</string>
+    <string name="clip.multiple.merge.separator.space">공백</string>
+    <string name="clip.multiple.merge.separator.other">기타</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">제어</string>
+    <string name="notification.style.history">클립보드 기록</string>
+    <string name="notification.style.actions">클립보드 기능</string>
+    <string name="notification.track_clipboard.pause">클립보드 추적 중지됨</string>
+    <string name="notification.track_clipboard.resume">클립보드 추적 재개됨</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">첨부 파일</string>
+    <string name="attachments.type.photo">사진 촬영</string>
+    <string name="attachments.type.record">동영상 녹화</string>
+    <string name="attachments.type.file">파일 선택</string>
+    <string name="attachments.attr.created">생성함</string>
+    <string name="attachments.attr.name">이름</string>
+    <string name="attachments.attr.type">유형</string>
+    <string name="attachments.attr.path">경로</string>
+    <string name="attachments.attr.size">크기</string>
+    <string name="attachments.state.downloaded">내려받음</string>
+    <string name="attachments.state.uploaded">업로드됨</string>
+    <string name="attachments.state.downloading">다운로드 중…</string>
+    <string name="attachments.state.uploading">업로드 중…</string>
+    <string name="attachments.label.insert">노트에 추가</string>
+    <string name="attachments.label.download_url">파일이 완전히 올라간 후 공용 URL을 설정할 수 있습니다.</string>
+    <string name="contribute.annual.offer">구글 플레이의 정기 결제 페이지에서 언제든 취소할 수 있습니다.</string>
+    <string name="contribute.monthly.period">월</string>
+    <string name="contribute.annual.period">년</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">종료</string>
+    <string name="desktop.tray.show">표시</string>
+    <string name="desktop.tray.show_in_taskbar">작업 표시줄에서 보기</string>
+    <string name="desktop.update.action.download">다운로드</string>
+    <string name="desktop.update.action.later">나중에</string>
+    <string name="desktop.update.title">새 버전을 이용할 수 있습니다</string>
+    <string name="desktop.shortcuts.title">단축키</string>
+    <string name="desktop.shortcuts.dialog.define">단축키 정의</string>
+    <string name="desktop.shortcuts.showHideApp">앱 보이기/숨기기</string>
+    <string name="desktop.shortcuts.modeFullscreen">전체 화면 전환</string>
+    <string name="desktop.shortcuts.modeComfortable">널널한 화면 모드 전환</string>
+    <string name="desktop.shortcuts.modeCompact">빽빽한 화면 모드 전환</string>
+    <string name="desktop.shortcuts.tagNext">다음 태그</string>
+    <string name="desktop.shortcuts.tagPrev">이전 태그</string>
+    <string name="desktop.shortcuts.noteNext">다음 노트</string>
+    <string name="desktop.shortcuts.notePrev">이전 노트</string>
+    <string name="desktop.shortcuts.noteNew">새 노트</string>
+    <string name="desktop.shortcuts.noteSave">노트 저장</string>
+    <string name="desktop.shortcuts.noteDelete">노트 삭제</string>
+    <string name="desktop.shortcuts.noteCopy">노트 복사</string>
+    <string name="desktop.shortcuts.notePrint">노트 출력</string>
+    <string name="desktop.shortcuts.noteFind">노트 검색</string>
+    <string name="desktop.shortcuts.noteOpen">노트 열기</string>
+    <string name="desktop.shortcuts.noteEdit">노트 수정</string>
+    <string name="desktop.shortcuts.contextModeSelect">노트 선택</string>
+    <string name="desktop.shortcuts.contextModeCancel">전부 선택 해제</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">전부 선택</string>
+    <string name="desktop.shortcuts.saveFromClipboard">클립보드 저장</string>
+    <string name="desktop.attachments.browse">첨부하려면 파일을 끌어다 놓거나, 파일을 찾으세요.</string>
+    <string name="desktop.main.content.under.development">현재도 계속해서 개발하는 중입니다….</string>
+    <string name="desktop.main.menu.download">다운로드</string>
+    <string name="desktop.main.menu.download.for">%s용 다운로드</string>
+    <string name="desktop.main.menu.download.android.apk">유니버셜 APK 빌드 받기</string>
+    <string name="desktop.main.menu.resources">리소스</string>
+    <string name="desktop.main.menu.open">브라우저에서 Clipto 열기</string>
+    <string name="desktop.main.features.title.1">어떤 기기에서든 쉽고 빠르게 필기하세요.</string>
+    <string name="desktop.main.features.title.2">다용도 메모장 &amp; 클립보드 매니저는 어디서든 사용할 수 있으며 속도와 실용성을 중시합니다.</string>
+    <string name="desktop.main.features.title.3">당신의 개인적인 글쓰기 동반자.</string>
+    <string name="desktop.main.features.title.4">노트, 스니펫, 클립보드, 파일 및 기타 정보를 이용하여 편안하고 효율적으로 작업할 수 있고, 어떤 장치에서든 접근할 수 있습니다.</string>
+    <string name="desktop.main.features.title.5">Clipto가 특별한 이유</string>
+    <string name="desktop.get_started.language">언어 선택</string>
+    <string name="desktop.get_started.theme">테마 선택</string>
+    <string name="desktop.auth.instruction">인증 안내</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">바코드 스캔</string>
+    <string name="barcode.prompt.point_at_a_barcode">바코드에 카메라를 가져다 대세요</string>
+    <string name="barcode.prompt.hold_camera_steady">잠시 카메라가 흔들리지 않게 해주세요</string>
+    <string name="barcode.prompt.move_camera_closer">더 가까이 대주세요</string>
+    <string name="barcode.prompt.searching">검색 중…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">글꼴 요청이 실패했습니다. 오류 코드: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">공용 링크</string>
+    <string name="public.note.link.time.label">지정 시간에서만</string>
+    <string name="public.note.link.time.or">또는</string>
+    <string name="public.note.link.time.type.seconds">초</string>
+    <string name="public.note.link.time.type.minutes">분</string>
+    <string name="public.note.link.time.type.hours">시간</string>
+    <string name="public.note.link.time.type.days">일</string>
+    <string name="public.note.link.access_time">접근 횟수</string>
+    <string name="public.note.link.access_time.description">제작한 시점이나 최근 편집한 시점 이후로 지정한 횟수만큼만 링크로 접속할 수 있도록 합니다.</string>
+    <string name="public.note.link.access_time.label">이용 가능할 때까지 남은 시간</string>
+    <string name="public.note.link.access_password">접근 비밀번호</string>
+    <string name="public.note.link.access_password.hint">비밀번호 힌트 (선택사항)</string>
+    <string name="public.note.link.access_password.placeholder">비밀번호</string>
+    <string name="public.note.link.access_password.description">비밀번호를 설정한 경우 비밀번호 인증을 거쳐야만 링크를 통해 접근할 수 있습니다.</string>
+    <string name="public.note.link.time_to_expire">만료 시점</string>
+    <string name="public.note.link.time_to_expire.description">제작한 시점이나 최근 편집한 시점 이후로 지정한 기간 동안만 링크로 접속할 수 있도록 합니다.</string>
+    <string name="public.note.link.time_to_expire.label">만료 시까지</string>
+    <string name="public.note.link.one_time_opening">한 번만 허용</string>
+    <string name="public.note.link.one_time_opening.description">처음 생성한 시점 또는 마지막으로 편집한 시점 이후로 링크를 통해 한 번만 들어올 수 있게 합니다.</string>
+    <string name="public.note.link.action.remove">링크 제거</string>
+    <string name="public.note.link.action.remove.confirm.title">링크를 제거할까요?</string>
+    <string name="public.note.link.action.remove.confirm.description">링크가 더 이상 유효하지 않게 됩니다.</string>
+    <string name="public.note.link.action.create">링크 생성</string>
+    <string name="public.note.link.state.unavailable">이용 불가</string>
+    <string name="public.note.link.state.postponed">이용 가능할 때까지 남은 시간:</string>
+    <string name="public.note.link.state.expires_in">%s 후 만료</string>
+    <string name="public.note.link.state.expired">만료됨</string>
+    <string name="public.note.link.state.locked">잠김</string>
+    <string name="public.note.link.state.locked.wrong_password">비밀번호가 틀렸습니다</string>
+    <string name="about.policy">개인정보취급방침</string>
+    <string name="about.toc">이용 약관</string>
+    <string name="about_pricing">가격</string>
+    <string name="site.integrations.title">연동</string>
+    <string name="site.integrations.zapier.title">자피어 연동</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Clipto를 Zapier와 연결하고, 사용자 작업을 빠르게 실행하세요.
+\n
+## 클립보드를 작업 트리거로 설정 
+\n
+선택 및 복사만으로 중요한 정보를 가장 빠르게 저장하세요.
+\n
+Zapier에서 이 기능을 사용하려면, 아래와 같이 하세요.
+\n
+1. Zapier의 **클립보드에 복사된 텍스트** 트리거를 설정합니다
+\n
+2. 사용자의 장치(모바일, PC)에 Clipto를 설치하고, 동일한 계정으로 **로그인**합니다
+\n
+3. Clipto를 열고 **클립보드의 노트**와 **공용 클립보드** 설정을 켭니다
+\n
+4. 끝났습니다. 이제 표준 단축키인 **Ctrl+C**(혹은 우클릭 후 복사)를 통해 복사한 텍스트를 가지고 작업을 시작할 수 있습니다.    ]]></string>
+    <string name="faq.title">자주 묻는 질문</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **노트**는 중요한 텍스트 정보를 보관하고 언제 어느 기기에서나 곧바로 접근할 수 있도록 해 줍니다.
+    \n
+    \n
+    기본적으로, 모든 노트는 찾기 편하도록 다양한 속성에 따라 여러 카테고리로 나뉩니다.
+    \n
+    ```
+    \n
+    처음 로그인할 때 모든 노트가 기기에 다운로드됩니다.
+    \n
+    \n
+    인터넷을 사용할 수 있는 즉시 모든 변경 사항이 동기화됩니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **필터는** 이미 만들어진 검색 템플릿을 통해 원하는 정보를 빠르게 찾을 수 있도록 해 줍니다.
+    \n
+    ```
+    \n
+    검색 템플릿에는 태그, 시간 범위, 텍스트, 정렬이나 표시 규칙 등의 다양한 조합이 포함될 수 있습니다.
+    \n
+    \n
+    따라서 필터로 이런 조합을 저장하면 데이터를 다시 찾을 때 훨씬 쉽게 찾을 수 있습니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - 각 필터에는 목록에서 데이터를 어떻게 표시할지 고유의 설정이 있습니다.
+    \n
+    - 설명을 작성하면, 이 도움말 대신 표시됩니다.
+    \n
+    - 필터 설정은 모든 기기에 동기화됩니다.
+    \n
+    ```
+    \n
+    선택한 색상을 다시 누르면 색상 팔레트의 색조가 바뀝니다.
+    \n
+    \n
+    정렬 규칙을 다시 누르면 정렬 순서가 반전됩니다.
+    \n
+    \n
+    마크다운 포맷을 이용해 설명을 작성할 수 있습니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **태그**는 노트나 파일을 더 쉽게 찾을 수 있도록 정리해줍니다.
+    \n
+    ```
+    \n
+    임의의 파일이나 노트에 태그 여러 개를 달 수 있습니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - 각 태그에는 목록에서 데이터를 어떻게 표시할지 고유의 설정이 있습니다.
+    \n
+    - 설명을 작성하면, 이 도움말 대신 표시됩니다.
+    \n
+    - 태그 설정은 모든 기기에 동기화됩니다.
+    \n
+    ```
+    \n
+    선택한 색상을 다시 누르면 색상 팔레트의 색조가 바뀝니다.
+    \n
+    \n
+    정렬 규칙을 다시 누르면 정렬 순서가 반전됩니다.
+    \n
+    \n
+    마크다운 포맷을 이용해 설명을 작성할 수 있습니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    나중에 빨리 쓸 수 있도록 검색 매개변수를 필터로 저장할 수 있습니다.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **스니펫**은 재사용 가능한 텍스트 템플릿을 이용해 반복 작업을 방지하는 기능입니다.
+    \n
+    \n
+    기존 노트나 새로운 노트 상관없이 모든 노트가 스니펫이 될 수 있습니다. 스니펫은 정적일 수도 동적일 수도 있으며, 수동 입력을 위한 입력란이나 런타임 변수(날짜, 시간 등)가 들어갈 수도 있습니다.
+    \n
+    \n
+    스니펫은 스니펫 도구라는 단위로 묶입니다. 자신만의 도구를 만들거나 공용 라이브러리를 통해 도구를 설치할 수도 있습니다.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - 도구를 다른 사용자와 공유할 수 있습니다.
+    \n
+    - 도구를 공용 라이브러리에 배포할 수 있습니다.
+    \n
+    - 설명을 작성하면, 이 도움말 대신 표시됩니다.
+    \n
+    ```
+    \n
+    선택한 색상을 다시 누르면 색상 팔레트의 색조가 바뀝니다.
+    \n
+    \n
+    정렬 규칙을 다시 누르면 정렬 순서가 반전됩니다.
+    \n
+    \n
+    마크다운 포맷을 이용해 설명을 작성할 수 있습니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **파일** 기능을 통해 어떤 데이터든 보관할 수 있고 언제 어떤 기기에서든 즉시 접근할 수 있습니다.
+    \n
+    \n
+    **노트와 달리**, 파일은 첫 로그인 시 기기로 다운로드되지 않습니다.
+    \n
+    \n
+    **대신**, 빠른 검색 및 수정을 위해 기기에는 파일 메타데이터만 다운로드됩니다.
+    \n
+    ```
+    \n
+    모든 변경 사항은 인터넷에 접속하는 즉시 동기화됩니다.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **폴더**는 노트와 파일을 체계적으로 분류해 찾기 쉽게 해줍니다.
+    \n
+    \n
+    **태그 기능에 더해서**, 폴더는 데이터를 계층적으로 관리할 수 있도록 해줍니다.
+    \n
+    \n
+    **태그와는 달리**, 하나의 파일이나 노트는 하나의 폴더에만 들어갈 수 있습니다.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    약어는…
+    \n
+    \n
+    - 최대 %s글자의 짧은 문구를 사용하여 노트를 빠르게 검색할 때 쓰입니다
+    \n
+    - 바로가기(선행 기호 **%s**)를 입력할 때 입력란에 노트 본문을 삽입할 때 쓰입니다
+    ]]></string>
+    <string name="hint_description"><![CDATA[    설명은 노트에 대해 추가적인 정보를 제공하고자 할 때 쓸 수 있습니다.
+    \n
+    \n
+    최대 %s자의 마크다운 형식을 지원합니다.
+    ]]></string>
+    <string name="where_none_of">선택한 항목 없음</string>
+    <string name="where_any_of">일부 포함</string>
+    <string name="where_all_of">모두 포함</string>
+    <string name="where_after">후</string>
+    <string name="where_before">전</string>
+    <string name="where_from">시작</string>
+    <string name="where_to">끝</string>
+    <string name="where_date_today">오늘</string>
+    <string name="where_date_tomorrow">내일</string>
+    <string name="where_date_custom">사용자 지정</string>
+    <string name="where_date_yesterday">어제</string>
+    <string name="where_date_last_7_days">지난 7일</string>
+    <string name="where_date_last_30_days">지난 30일</string>
+    <string name="where_date_last_90_days">지난 90일</string>
+    <string name="advanced_filter_block_text">텍스트 포함</string>
+    <string name="advanced_filter_block_text_type">텍스트 유형</string>
+    <string name="advanced_filter_block_category">위치</string>
+    <string name="advanced_filter_block_tags">태그</string>
+    <string name="advanced_filter_block_created">생성한 날짜</string>
+    <string name="advanced_filter_block_updated">수정한 날짜</string>
+    <string name="advanced_filter_block_only_public_links">공개 링크가 있는 것만 표시</string>
+    <string name="advanced_filter_block_only_attachments">첨부 파일이 있는 것만 표시</string>
+    <string name="advanced_filter_block_only_not_synced">동기화되지 않은 것만 표시</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">국가</string>
+    <string name="snippet_kit_attr_snippets">스니펫</string>
+    <string name="snippet_kit_attr_language">언어</string>
+    <string name="snippet_kit_attr_downloads">다운로드</string>
+    <string name="snippet_kit_attr_created">생성일</string>
+    <string name="snippet_kit_attr_updated">수정일</string>
+    <string name="snippet_kit_attr_category">카테고리</string>
+    <string name="snippet_kit_public_link">공용 링크</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    공용 링크를 통하여 스니펫 도구를 설치할 수 있습니다
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">링크를 제거할까요?</string>
+    <string name="snippet_kit_public_link_remove_description">이 링크로는 스니펫 도구를 설치할 수 없게 됩니다.</string>
+    <string name="snippet_kit_public_library">공용 라이브러리</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    스니펫 도구를 공용 라이브러리에서 설치해 접근할 수 있습니다.
+    \n
+    \n
+    ```
+    \n
+    도구가 공용 라이브러리에 게재되려면 최소한 스니펫 %s개가 들어 있어야 합니다.
+    \n
+    ```
+    \n
+    \n
+    도구를 공용 라이브러리에 게재하면 자동으로 보상을 받습니다.
+    \n
+    \n
+    [더보기…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">공용 라이브러리에서 제거할까요?</string>
+    <string name="snippet_kit_public_library_remove_description">공용 라이브러리를 통해 스니펫 도구를 설치할 수 없게 됩니다.</string>
+    <string name="snippet_kit_hint_name">스니펫 도구 이름</string>
+    <string name="snippet_kit_label_show_in_public_library">공용 라이브러리에 표시</string>
+    <string name="snippet_kit_error_name_required">이름이 겹치는 도구는 저장할 수 없습니다</string>
+    <string name="snippet_kit_delete_title">\'%s\' 도구를 삭제할까요?</string>
+    <string name="snippet_kit_delete_description">스니펫 도구가 영구적으로 제거될 것입니다.</string>
+    <string name="snippet_kit_uninstall_title">\'%s\' 도구를 제거할까요?</string>
+    <string name="snippet_kit_uninstall_description">스니펫 도구와 모든 관련된 스니펫이 영구적으로 제거될 것입니다.</string>
+    <string name="snippet_kit_install_hint_title">설치란 무엇입니까?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    설치한 스네핏 도구는 자신이 만든 것처럼 사용할 수 있습니다.
+    \n
+    \n
+    곧 메모를 완전히 바꾸고, 새 메모를 추가하고, 기존 메모를 삭제하고, 도구 설정을 관리하는 등의 작업을 수행할 수 있습니다.
+    \n
+    \n
+    ```
+    \n
+    변경 사항은 원본 도구에 반영되지 않으며 자신에게만 반영됩니다.
+    \n
+    \n
+    기존 도구가 업데이트된 경우, 설치한 도구를 수동으로 업데이트할 수 있습니다.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">공개 상태</string>
+    <string name="public_status_private">비공개</string>
+    <string name="public_status_blocked">차단됨</string>
+    <string name="public_status_review">검토 중</string>
+    <string name="public_status_review_details">도구가 배포되고 공용 라이브러리에 등록되기까지 시간이 좀 걸립니다.</string>
+    <string name="public_status_published">배포됨</string>
+    <string name="public_status_rejected">거부됨</string>
+    <string name="public_status_not_found">찾을 수 없음</string>
+    <string name="public_status_deleted">삭제됨</string>
+    <string name="public_status_restricted">제한됨</string>
+    <string name="public_status_update_reason">업데이트 사유</string>
+    <string name="dynamic_text_hint_title">동적 텍스트</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    노트에 동적 입력란이 있다면, 노트에서 작업을 수행할 때마다 이 추가 단계가 표시됩니다.
+    \n
+    \n
+    이 단계에서는 입력란의 값을 정의하고 바뀐 텍스트로 작업을 완료할 수 있습니다.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">텍스트</string>
+    <string name="dynamic_text_view_mode_form">양식</string>
+    <string name="dynamic_value_date">날짜/시간</string>
+    <string name="dynamic_value_date_description">실제 날짜로 치환되는 자리 표시자를 만듭니다</string>
+    <string name="dynamic_value_device">기기 정보</string>
+    <string name="dynamic_value_device_description">기기 정보로 치환되는 자리 표시자를 만듭니다</string>
+    <string name="dynamic_value_random">무작위</string>
+    <string name="dynamic_value_random_description">사용자 지정한 목록에서 추출된 임의의 값으로 치환되는 자리 표시자를 만듭니다</string>
+    <string name="dynamic_value_clipboard">클립보드</string>
+    <string name="dynamic_value_clipboard_description">클립보드 내용으로 치환되는 자리 표시자를 만듭니다</string>
+    <string name="dynamic_value_snippet">스니펫</string>
+    <string name="dynamic_value_snippet_description">선택한 노트의 내용으로 치환되는 자리 표시자를 만듭니다</string>
+    <string name="dynamic_value_attr_device_type">정보 형식</string>
+    <string name="dynamic_field_date">날짜 입력란</string>
+    <string name="dynamic_field_date_description">날짜 입력란 생성</string>
+    <string name="dynamic_field_text">텍스트 입력란</string>
+    <string name="dynamic_field_text_description">텍스트 입력란 생성</string>
+    <string name="dynamic_field_number">숫자 입력란</string>
+    <string name="dynamic_field_number_description">숫자 입력란 생성</string>
+    <string name="dynamic_field_select">선택 입력란</string>
+    <string name="dynamic_field_select_description">하나 이상의 항목을 선택하는 입력란 생성</string>
+    <string name="dynamic_field_barcode_scanning">바코드 스캔 입력란</string>
+    <string name="dynamic_field_barcode_scanning_description">바코드를 스캔하여 텍스트 입력값으로 사용할 수 있도록 하는 입력란을 생성합니다</string>
+    <string name="dynamic_field_text_toggle">텍스트 토글</string>
+    <string name="dynamic_field_text_toggle_description">텍스트 블록을 켜거나 끌 수 있는 토글 스위치를 생성합니다</string>
+    <string name="dynamic_field_reference">참조 입력란</string>
+    <string name="dynamic_field_reference_description">다른 입력란을 참조하고 값을 이용하는 입력란을 생성합니다</string>
+    <string name="dynamic_field_unknown">알 수 없는 입력란</string>
+    <string name="dynamic_field_unknown_description">입력란을 구현할 수 없습니다. 올바르지 않은 형식이거나 상위 버전의 애플리케이션에서 만든 것일 수 있습니다</string>
+    <string name="dynamic_field_date_format_date_time">날짜/시간 (시스템)</string>
+    <string name="dynamic_field_date_format_date">날짜 (시스템)</string>
+    <string name="dynamic_field_date_format_time">시간 (시스템)</string>
+    <string name="dynamic_field_date_format_day_of_week">날짜(주)</string>
+    <string name="dynamic_field_date_format_day_of_month">날짜(월, 1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">날짜(월, 01–31)</string>
+    <string name="dynamic_field_date_format_year">년</string>
+    <string name="dynamic_field_date_format_year_short">년(짧은꼴)</string>
+    <string name="dynamic_field_date_format_month">월</string>
+    <string name="dynamic_field_date_format_month_number">월 (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">월 (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">시 (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">시 (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">시 (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">시 (00–24)</string>
+    <string name="dynamic_field_date_format_minute">분 (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">분 (01–60)</string>
+    <string name="dynamic_field_date_format_second">초 (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">초 (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">오전/오후</string>
+    <string name="dynamic_field_date_format_time_zone">시간대</string>
+    <string name="dynamic_field_value_formatter_new_line">줄바꿈</string>
+    <string name="dynamic_field_value_formatter_semicolon">쌍반점</string>
+    <string name="dynamic_field_value_formatter_comma">쉼표</string>
+    <string name="dynamic_field_value_formatter_space">공백</string>
+    <string name="dynamic_field_value_formatter_ordered_list">번호가 있는 목록</string>
+    <string name="dynamic_field_value_formatter_unordered_list">번호가 없는 목록</string>
+    <string name="dynamic_field_attr_common_label">라벨</string>
+    <string name="dynamic_field_attr_common_prefix">접두어</string>
+    <string name="dynamic_field_attr_common_suffix">접미어</string>
+    <string name="dynamic_field_attr_common_value">값</string>
+    <string name="dynamic_field_attr_common_required">필수</string>
+    <string name="dynamic_field_attr_common_placeholder">자리 표시자</string>
+    <string name="dynamic_field_attr_common_default_value">기본값</string>
+    <string name="dynamic_field_attr_common_values_formatter">선택한 값들의 형식 지정자</string>
+    <string name="dynamic_field_attr_select_multiple">다중 선택</string>
+    <string name="dynamic_field_attr_select_user_input">사용자 입력</string>
+    <string name="dynamic_field_attr_text_multi_line">여러 줄</string>
+    <string name="dynamic_field_attr_text_max_length">최대 길이</string>
+    <string name="dynamic_field_attr_text_use_clipboard">클립보드를 기본값으로 설정</string>
+    <string name="dynamic_field_attr_select_options">설정</string>
+    <string name="dynamic_field_attr_number_min">최솟값</string>
+    <string name="dynamic_field_attr_number_max">최댓값</string>
+    <string name="dynamic_field_attr_date_format">형식</string>
+    <string name="dynamic_field_attr_date_example">예시: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">다중 스캔</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">스캔한 값의 형식 구분자</string>
+    <string name="dynamic_field_attr_toggle_text">텍스트</string>
+    <string name="dynamic_field_attr_ref_value">참조한 입력란 라벨</string>
+    <string name="dynamic_field_attr_ref_intrinsic">입력란에 고유한 값 존재</string>
+    <string name="select_option_ordering">정렬 기준</string>
+    <string name="select_option_ordering_label_asc">라벨 (A-Z)</string>
+    <string name="select_option_ordering_label_desc">라벨 (Z-A)</string>
+    <string name="select_option_ordering_value_asc">값 (A-Z)</string>
+    <string name="select_option_ordering_value_desc">값 (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">텍스트에서 이 동적 입력란을 지울까요?</string>
+    <string name="dynamic_field_confirm_delete_description">입력란에 대응하는 자리 표시자가 텍스트에서 삭제될 것입니다.</string>
+    <string name="dynamic_value_placeholder_copied_title">동적 변수 자리 표시자가 클립보드로 복사되었습니다</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    노트가 편집 모드에서 열려 있으면 노트 본문의 커서 위치에 자리 표시자가 자동으로 삽입됩니다.
+    또는 선택한 텍스트 블록을 바꿉니다.
+    \n
+    \n
+    아닌 경우, 자리 표시자가 클립보드로 복사됩니다.
+    \n
+    \n
+    **복사한 자리 표시자:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">클라우드에서 내려받기</string>
+    <string name="file_action_update_in_cloud">클라우드에서 업데이트</string>
+    <string name="file_error_canceled">사용자가 취소함</string>
+    <string name="file_error_not_found">파일을 찾을 수 없습니다. 다시 업로드하세요.</string>
+    <string name="file_attr_last_modified">최근 수정일</string>
+    <string name="file_attr_updated">갱신일</string>
+    <string name="file_attr_location">경로</string>
+    <string name="file_confirm_update_file">파일을 업데이트할까요?</string>
+    <string name="file_confirm_update_file_description">파일은 클라우드 저장소에 업데이트됩니다.</string>
+    <string name="file_error_name_required">이 파일을 저장하려면 이름이 필요합니다</string>
+    <string name="file_action_new_file">파일</string>
+    <string name="file_action_new_file_description">파일리 클라우드 저장소에 업로드 됩니다. 업로드된 파일은 \'파일 카테고리\'에 존재하고, 모든 노틍 첨부될수 있습니다.</string>
+    <string name="file_action_new_files">파일</string>
+    <string name="file_action_new_files_description">파일은 클라우드 저장소에 업로드 됩니다. 업로드된 파일은 \'파일 카테고리\'에 존재하고, 모든 노트에 첨부 될 수 있습니다.</string>
+    <string name="file_action_new_note">노트</string>
+    <string name="file_action_new_note_description">파일이 클라우드 저장소에 업로드되고 새로 생성된 메모에 첨부됩니다. 업로드된 파일은 \'파일\' 카테고리에서도 볼 수 있습니다.</string>
+    <string name="file_action_new_notes_description">파일이 클라우드 저장소에 업로드 되고, 새로 생성된 메모에 첨부됩니다. 업로드된 파일은 \'파일 카테고리\'에서도 사용할 수 있습니다.</string>
+    <string name="file_action_new_attachment">파일 첨부</string>
+    <string name="file_action_new_attachment_description">파일이 클라우드 저장소에 업로드되고 새로 생성된 메모에 첨부됩니다. 업로드된 파일은 파일 카테고리에서도 사용할 수 있습니다.</string>
+    <string name="file_action_new_attachments">첨부파일</string>
+    <string name="file_action_new_attachments_description">파일이 클라우드 저장소에 업로드 되고, 새로 생성된 메모에 첨부 됩니다. 업로드된 파일은 \'파일 카테고리\'에서도 사용할 수 있습니다.</string>
+    <string name="file_search_hint">파일 검색</string>
+    <string name="file_type_any">전체</string>
+    <string name="file_type_audio">오디오</string>
+    <string name="file_type_video">동영상</string>
+    <string name="file_type_image">사진</string>
+    <string name="file_type_archive">압축</string>
+    <string name="file_type_document">문서</string>
+    <string name="file_type_recycled">휴지통</string>
+    <string name="folder_select">선택</string>
+    <string name="folder_name">폴더 이름</string>
+    <string name="folder_root">최상위 폴더</string>
+    <string name="folder_search">폴더 내 검색</string>
+    <string name="folder_error_name_required">이름이 겹치는 폴더는 여기 생성할 수 없습니다</string>
+    <string name="folder_error_empty">폴더가 비어있습니다</string>
+    <string name="folder_delete_deep">폴더와 그 내부의 파일 및 노트 전체를 삭제합니다.</string>
+    <string name="folder_delete_weak">폴더만 삭제합니다. 내부의 파일과 노트는 삭제되지 않고 최상위 폴더에 보관됩니다.</string>
+    <string name="clip_action_new_edit">편집</string>
+    <string name="clip_action_new_edit_description">메모를 저장하거나 작업에 사용하기 전에 메모를 편집할 수 있습니다.</string>
+    <string name="clip_action_new_insert">삽입</string>
+    <string name="clip_action_new_insert_description">메모의 텍스트는 기존 메모에 삽입할 수 있습니다. 대상 메모를 선택하고 삽입 옵션을 지정 하세요.</string>
+    <string name="clip_action_new_action">작업 수행</string>
+    <string name="clip_action_new_action_description">메모의 텍스트는 작업을 수행하는 데 사용할 수 있습니다.</string>
+    <plurals name="backup.success.message">
+        <item quantity="other">노트 %s개를 내보냈습니다</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="other">노트 %s개를 불러왔습니다</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="other">노트 %s개를 삭제했습니다</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="other">노트 %s개</item>
+    </plurals>
+</resources>

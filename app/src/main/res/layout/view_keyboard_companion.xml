@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clipto.presentation.runes.keyboard_companion.CompanionContentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentView"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayoutExt
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/texpander_bg_toolbar"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/action_drag"
+            app:tint="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="1"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp"
+            tools:text="Some field under focus" />
+
+        <TextView
+            android:id="@+id/counterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="1"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="12sp"
+            tools:text="(123)" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/minimizeActionView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/runes.texpander.hint.hide"
+            android:focusable="true"
+            android:padding="8dp"
+            android:rotationX="180"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/texpander_minimize" />
+
+    </LinearLayoutExt>
+
+    <LinearLayoutExt
+        android:id="@+id/actionsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/undoView"
+            style="@style/FloatingButtonIconOnly"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="12dp"
+            android:enabled="false"
+            android:visibility="visible"
+            app:icon="@drawable/clip_edit_undo"
+            app:iconTint="?textColorOnSurface" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showClipsActionView"
+            style="@style/FloatingButton"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textAlignment="gravity"
+            android:textColor="?textColorOnSurface"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:icon="@drawable/texpander_expand"
+            app:iconTint="?textColorOnSurface"
+            app:textAllCaps="true"
+            tools:text="Insert" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/redoView"
+            style="@style/FloatingButtonIconOnly"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="0dp"
+            android:visibility="visible"
+            app:icon="@drawable/clip_edit_redo"
+            app:iconTint="?textColorOnSurface" />
+
+    </LinearLayoutExt>
+
+    <androidx.constraintlayout.widget.ConstraintLayoutExt
+        android:id="@+id/detailsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/texpander_bg_toolbar"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <EditText
+            android:id="@+id/searchView"
+            style="@style/TextInputEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:hint="@string/main.search"
+            android:imeActionLabel="@string/main.search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/filterView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayoutExt
+            android:id="@+id/filterView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/searchView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/searchView">
+
+            <TextView
+                android:id="@+id/filterCounterView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="1"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp"
+                tools:text="(123)" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/filterIconView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="2dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/action_filter"
+                app:tint="?android:textColorPrimary" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/filterOpenState"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/texpander_expand"
+                app:tint="?android:textColorSecondary" />
+
+        </LinearLayoutExt>
+
+        <clipto.common.presentation.view.DividerView
+            android:id="@+id/searchViewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+        <androidx.recyclerview.widget.RecyclerViewExt
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="40dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchViewDivider" />
+
+        <TextViewExt
+            android:id="@+id/emptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/main.list.empty"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchViewDivider"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <FrameLayoutExt
+            android:id="@+id/resizeView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom|end"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/action_resize"
+                app:tint="?android:textColorSecondary" />
+
+        </FrameLayoutExt>
+
+    </androidx.constraintlayout.widget.ConstraintLayoutExt>
+
+</clipto.presentation.runes.keyboard_companion.CompanionContentLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150" android:shape="rectangle">
+    <item android:state_activated="false">
+        <shape>
+            <solid android:color="?textInactiveColor" />
+            <corners android:radius="8dp" />
+            <size android:width="16dp" android:height="16dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="?actionIconColorHighlight" />
+            <corners android:radius="8dp" />
+            <size android:width="16dp" android:height="16dp" />
+        </shape>
+    </item>
+</selector>

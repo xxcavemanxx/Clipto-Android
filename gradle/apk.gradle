@@ -1,0 +1,246 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.github.triplet.play'
+apply plugin: 'io.objectbox'
+apply plugin: 'com.akaita.android.easylauncher'
+apply plugin: 'dagger.hilt.android.plugin'
+
+play {
+    serviceAccountCredentials = file(project.serviceAccountCredentials)
+    serviceAccountEmail = project.googlePlayServiceAccountEmail
+    track = project.googlePlayTrack ?: 'alpha'
+    defaultToAppBundles = true
+}
+
+configurations {
+    androidTestImplementation.exclude module: 'support-annotations'
+    androidTestImplementation.exclude module: 'jsr305'
+}
+
+dependencies {
+    implementation libpacks.java_kotlin
+    implementation libpacks.android_arch_components
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    implementation 'androidx.hilt:hilt-work:1.0.0'
+
+    kapt "com.google.dagger:hilt-compiler:$hiltVersion"
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
+    kapt libpacks.android_annotation_processors
+    kapt libpacks.android_arch_annotation_processors
+
+    testImplementation libpacks.android_unit_testing
+    androidTestUtil libpacks.android_instrumentation_testing_utils
+    androidTestImplementation libpacks.android_instrumentation_testing
+}
+
+androidExtensions {
+    experimental = true
+    defaultCacheImplementation = "SPARSE_ARRAY" // also HASH_MAP, NONE
+}
+
+android {
+    compileSdkVersion project.androidCompileSdkVersion
+    buildToolsVersion project.androidBuildToolsVersion
+
+    compileOptions {
+        sourceCompatibility javaSourceCompatibility
+        targetCompatibility javaTargetCompatibility
+    }
+
+    kotlinOptions {
+        jvmTarget = javaTargetCompatibility
+    }
+
+    defaultConfig {
+        testBuildType "debug"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+        applicationId project.androidApplicationId
+        minSdkVersion project.androidMinSdkVersion
+        targetSdkVersion project.androidTargetSdkVersion
+        vectorDrawables.useSupportLibrary = true
+        versionName computeVersionName()
+        versionCode computeVersionCode()
+        resConfigs "en", "ru", "zh", "es", "hi", "zh-rCN", "zh-rTW", "de", "ar", "sl", "fr", "pt-rBR", "fil", "it", "be", "tr", "vi", "el", "es-rUS", "uk", "ja", "bn", "da", "et", "hu", "sv", "cs", "nl", "ko", "pl", "bg", "in"
+    }
+
+    testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    }
+
+    dexOptions {
+        jumboMode true
+        preDexLibraries = true
+        maxProcessCount 2
+        javaMaxHeapSize "2g"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        checkAllWarnings false
+        abortOnError false
+        quiet true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(project.androidReleaseSignStoreFile)
+            storePassword project.androidReleaseSignStorePassword
+            keyPassword project.androidReleaseSignKeyPassword
+            keyAlias project.androidReleaseSignKeyAlias
+        }
+    }
+
+    buildTypes.all {
+        matchingFallbacks = ['debug', 'release']
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            useProguard false
+            testCoverageEnabled false
+            versionNameSuffix "-debug"
+            applicationIdSuffix ".debug"
+            signingConfig signingConfigs.debug
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            versionNameSuffix "-release"
+            applicationIdSuffix ".pro"
+            signingConfig signingConfigs.release
+            proguardFiles file(project.androidReleaseProguardFile)
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/proguard/*'
+        exclude '**/*.kotlin_module'
+        exclude "**/*.java"
+        exclude "**/*.readme"
+        exclude "**/*.version"
+        exclude '**/*.txt'
+        exclude '**/*.xml'
+        exclude '**/*.png'
+        exclude '**/*.proto'
+        exclude '**/package.html'
+        exclude '**/module-info.class'
+        exclude '**/publicsuffixes.gz'
+    }
+}
+
+easylauncher {
+    buildTypes {
+        debug { filters = redRibbonFilter() }
+    }
+}
+
+tasks.whenTaskAdded { t ->
+    if (t.name == 'assembleRelease') {
+        if (project.androidBuildWithHistory) {
+            println "use history prior to androidBuildWithHistory=${project.androidBuildWithHistory}"
+            t.doLast {
+                def version = computeVersionName()
+                println "=== copy released files === ${project.buildDir} - ${version} - ${project.projectDir}"
+                if (!tasks.findByName("copyRelease")) {
+                    task copyRelease(type: Copy) {
+                        from("${project.buildDir}/outputs/apk/release") {
+                            include '*-release.apk'
+                            include 'output.json'
+                        }
+                        from("${project.buildDir}/outputs/mapping/release") {
+                            include 'mapping.txt'
+                        }
+                        into("${project.projectDir}/market/builds/${version}")
+                        includeEmptyDirs = false
+                    }
+                }
+                tasks.findByName("copyRelease").execute()
+            }
+        }
+    }
+}
+
+task incrementApkModuleVersion doLast {
+    def currentVersion = computeVersionName()
+    def currentVersionMajor = project.androidVersionMajor
+    def currentVersionMinor = project.androidVersionMinor
+    def currentVersionPatch = project.androidVersionPatch
+    def updateStrategy = getProjectVersionUpdateStrategy()
+
+    switch (updateStrategy) {
+        case 'major':
+            project.androidVersionMajor += 1
+            project.androidVersionMinor = 0
+            project.androidVersionPatch = 0
+            break
+        case 'minor':
+            project.androidVersionMinor += 1
+            project.androidVersionPatch = 0
+            break
+        case 'patch':
+            project.androidVersionPatch += 1
+            break
+    }
+    def newVersion = computeVersionName()
+
+    if (newVersion != currentVersion) {
+        // update changelog
+        File playDir = new File(project.projectDir, 'src/main/play/release-notes')
+        playDir.eachDir { dir ->
+            File whatsNewFile = new File(dir, "${project.googlePlayTrack}.txt")
+            if (whatsNewFile.exists()) {
+                println "check file: ${whatsNewFile.path}"
+                File changeLogFile = new File(dir, 'changelog.txt');
+                println "update changelog: ${changeLogFile.path}"
+                String changeLogFileText = changeLogFile.getText()
+                changeLogFileText += "\n\n${newVersion}:\n${whatsNewFile.text}"
+                changeLogFile.write(changeLogFileText.trim())
+            }
+        }
+
+        // update version
+        def configFile = new File(project.projectDir, "config.gradle")
+        String configFileText = configFile.getText()
+        configFileText = configFileText.replace("androidVersionMajor = $currentVersionMajor", "androidVersionMajor = $project.androidVersionMajor")
+        configFileText = configFileText.replace("androidVersionMinor = $currentVersionMinor", "androidVersionMinor = $project.androidVersionMinor")
+        configFileText = configFileText.replace("androidVersionPatch = $currentVersionPatch", "androidVersionPatch = $project.androidVersionPatch")
+        configFile.write(configFileText)
+
+        incrementModuleVersion(project.name, newVersion)
+    }
+}
+
+def computeVersionName() {
+    return String.format('%s.%s.%s',
+            project.androidVersionMajor,
+            project.androidVersionMinor,
+            project.androidVersionPatch)
+}
+
+def computeVersionCode() {
+    def branch = getProjectCurrentBranch()
+    def branchWeight
+    switch (branch) {
+        case 'master':
+            branchWeight = 10
+            break
+        case 'stage':
+            branchWeight = 5
+            break
+        default:
+            branchWeight = 0
+            break
+    }
+    return (project.androidVersionMajor * 1000000) + (project.androidVersionMinor * 10000) + (project.androidVersionPatch * 100) + branchWeight
+}

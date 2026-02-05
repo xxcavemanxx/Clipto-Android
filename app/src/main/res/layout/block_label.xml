@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titleView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:drawablePadding="16dp"
+    android:fontFamily="sans-serif"
+    android:gravity="center_vertical"
+    android:maxLines="10"
+    android:minLines="1"
+    android:padding="16dp"
+    android:textAlignment="gravity"
+    android:textColor="?android:textColorPrimary"
+    android:textSize="16sp"
+    android:textStyle="normal"
+    tools:text="@string/settings.pin_starred.title" />

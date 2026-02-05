@@ -1,0 +1,110 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = javaSourceCompatibility
+targetCompatibility = javaTargetCompatibility
+
+dependencies {
+    api libpacks.java_kotlin
+    testImplementation libpacks.java_unit_testing
+}
+
+publishing {
+    publications {
+        jar(MavenPublication) {
+            from components.java
+            groupId project.jarLibraryGroup
+            version computeVersionName()
+            artifactId project.name
+        }
+    }
+
+    repositories {
+        maven {
+            def isRelease = !computeVersionName().endsWith('-SNAPSHOT')
+
+            url isRelease ? project.mavenReleasesRepo : project.mavenSnapshotsRepo
+            credentials {
+                username isRelease ? project.mavenReleasesUsername : project.mavenSnapshotsUsername
+                password isRelease ? project.mavenReleasesPassword : project.mavenSnapshotsPassword
+            }
+        }
+    }
+}
+
+task unitTests(type: Test, group: 'test') {
+    useJUnit()
+    include('**/*UnitTest*')
+    testLogging.showStandardStreams = false
+    testLogging {
+        events 'started', 'passed'
+    }
+    unitTests.outputs.upToDateWhen { false }
+}
+
+task integrationTests(type: Test, group: 'test') {
+    useJUnit()
+    include('**/*IntegrationTest*')
+    testLogging.showStandardStreams = false
+    testLogging {
+        events 'started', 'passed'
+    }
+    integrationTests.outputs.upToDateWhen { false }
+}
+
+task allTests(type: Test, group: 'test') {
+    useJUnit()
+    testLogging.showStandardStreams = false
+    testLogging {
+        events 'started', 'passed'
+    }
+    allTests.outputs.upToDateWhen { false }
+}
+
+task incrementJarModuleVersion doLast {
+    def currentVersion = computeVersionName()
+    def currentVersionMajor = project.jarVersionMajor
+    def currentVersionMinor = project.jarVersionMinor
+    def currentVersionPatch = project.jarVersionPatch
+    def updateStrategy = getProjectVersionUpdateStrategy()
+
+    switch (updateStrategy) {
+        case 'major':
+            project.jarVersionMajor += 1
+            project.jarVersionMinor = 0
+            project.jarVersionPatch = 0
+            break
+        case 'minor':
+            project.jarVersionMinor += 1
+            project.jarVersionPatch = 0
+            break
+        case 'patch':
+            project.jarVersionPatch += 1
+            break
+    }
+    def newVersion = computeVersionName()
+
+    if (newVersion != currentVersion) {
+        def configFile = new File(project.projectDir, "config.gradle")
+        String configFileText = configFile.getText()
+        configFileText = configFileText.replace("jarVersionMajor = $currentVersionMajor", "jarVersionMajor = $project.jarVersionMajor")
+        configFileText = configFileText.replace("jarVersionMinor = $currentVersionMinor", "jarVersionMinor = $project.jarVersionMinor")
+        configFileText = configFileText.replace("jarVersionPatch = $currentVersionPatch", "jarVersionPatch = $project.jarVersionPatch")
+        configFile.write(configFileText)
+
+        incrementModuleVersion(project.name, newVersion.replace('-SNAPSHOT', ''))
+    }
+}
+
+def computeVersionName() {
+    def version = String.format('%s.%s.%s',
+            project.jarVersionMajor,
+            project.jarVersionMinor,
+            project.jarVersionPatch)
+    def branch = getProjectCurrentBranch()
+    if(branch != 'master') {
+        version += '-SNAPSHOT'
+    }
+    return version
+}

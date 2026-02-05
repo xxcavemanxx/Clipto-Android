@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">새 줄</string>
+    <string name="common_separator_space">مسافة</string>
+    <string name="common_separator_comma">Коска</string>
+    <string name="confirm_exit_edit_mode_title">Exit edit mode?</string>
+    <string name="confirm_exit_edit_mode_description">कोई भी न सहेजा गया परिवर्तन छोड़ दिया जाएगा।</string>
+    <string name="confirm_delete_note_title">Film</string>
+    <string name="confirm_delete_note_description">Selected note will be deleted.</string>
+    <string name="link_preview_label">पूर्वावलोकन लोड करें…</string>
+    <string name="link_preview_not_found">कोई पूर्वावलोकन</string>
+    <string name="link_preview_hide">पूर्वावलोकन छिपाएँ</string>
+    <string name="link_preview_show">पूर्वावलोकन दिखाएँ</string>
+    <string name="toast_downloaded">%s डाउनलोड हो रहा है</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">बाहर निकलने के लिए फिर से पीछे का बटन दबाएँ</string>
+    <string name="essentials.errors.unknown">अज्ञात त्रुटि। फिर से कोशिश करें</string>
+    <string name="error_data_empty">No data was found.</string>
+    <string name="error.unexpected">एक अनपेक्षित त्रुटि हो गई है</string>
+    <string name="error.unexpected.send">त्रुटि सबमिट करने के लिए \'बग\' बटन पर क्लिक करें</string>
+    <!-- COMMON -->
+    <string name="menu.rate">रेट</string>
+    <string name="menu.edit">संपादित करें</string>
+    <string name="menu.clear">साफ करें</string>
+    <string name="menu.clear_all">सब कुछ मिटाएं</string>
+    <string name="menu.share">शेयर करें</string>
+    <string name="menu.fav">तारांकित करें</string>
+    <string name="menu.delete">डिलीट करें</string>
+    <string name="menu.empty">खाली</string>
+    <string name="menu.cancel">रद्द करें</string>
+    <string name="menu.settings">सेटिंग</string>
+    <string name="menu.display_options">प्रदर्शित विकल्प</string>
+    <string name="menu.faq">आम सवाल</string>
+    <string name="menu.new">नया</string>
+    <string name="menu.search">खोज</string>
+    <string name="menu.print">प्रिंट</string>
+    <string name="menu.restore">पुनर्स्थापित</string>
+    <string name="menu.merge">मर्ज करें</string>
+    <string name="menu.copy_link">सार्वजनिक लिंक कॉपी करें</string>
+    <string name="menu.share_link">सार्वजनिक लिंक साझा करें</string>
+    <string name="menu.save_as">के रूप रक्षित करें…</string>
+    <string name="menu.rename">नाम बदलें</string>
+    <string name="menu.paste">पेस्ट करें</string>
+    <string name="menu.copy">प्रतिलिपि</string>
+    <string name="menu.cut">काटें</string>
+    <string name="menu.fullscreen.enter">फुल स्क्रीन करें</string>
+    <string name="menu.fullscreen.exit">फुलस्क्रीन से बाहर निकलें</string>
+    <string name="menu_close">Close</string>
+    <string name="button.update">Update</string>
+    <string name="button.install">Install</string>
+    <string name="button.uninstall">Uninstall</string>
+    <string name="button.done">हो गया</string>
+    <string name="button.undo">अनडू</string>
+    <string name="button.apply">लागू करें</string>
+    <string name="button.change">परिवर्तन</string>
+    <string name="button.save">सेव करें</string>
+    <string name="button.create">बनाएं</string>
+    <string name="button.send">भेजें</string>
+    <string name="button.preview">पूर्वावलोकन</string>
+    <string name="button.confirm">पुष्टि करें</string>
+    <string name="button.sync">अभी सिंक्रनाइज़ करें</string>
+    <string name="button.yes">हाँ</string>
+    <string name="button.no">नहीं</string>
+    <string name="button.back">वापस</string>
+    <string name="button.continue">जारी रखें</string>
+    <string name="button.finish">समाप्त</string>
+    <string name="button.got_it">समझ गया!</string>
+    <string name="button.get_started">शुरू हो जाएँ</string>
+    <string name="button.example">उदाहरण:</string>
+    <string name="button_try_again">Try again</string>
+    <string name="button_insert">Insert</string>
+    <string name="button_refresh">Refresh</string>
+    <string name="notification.title.empty">क्लिपबोर्ड खाली है</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">वापस जाएँ</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Abbreviation</string>
+    <string name="common.label.description">विवरण</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">नया टैग</string>
+    <string name="tag.new.name">टैग नाम</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Move to folder</string>
+    <!-- MAIN -->
+    <string name="main.search">अपने नोट्स खोजें</string>
+    <string name="main.filter.all">सभी</string>
+    <string name="main.filter.no_tags">अनटैग्ड</string>
+    <string name="main.filter.filtered">फिल्टर्ड</string>
+    <string name="main.delete_selected.title">चयनित नोट हटाएं ?</string>
+    <string name="main.delete_selected.description">सभी चयनित नोट हटा दिए जाएंगे।</string>
+    <string name="main.delete_merged.title">मर्ज किए गए नोट हटाएं?</string>
+    <string name="main.delete_merged.description">हटाए गए नोट स्थायी रूप से हटा दिए जाएंगे।</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">नोट्स नहीं मिले।</string>
+    <string name="main.list.empty.caption">हर एक श्रेणी की अपनी व्यक्तिगत छँटाई और अन्य संभावित सेटिंग्स होती हैं। आप किसी भी समय सूची (%s) से या बाएँ नेविगेशन ड्रॉवर (%s) से सेटिंग बदल सकते हैं।</string>
+    <string name="main.list.empty.caption.three_dot">तीन डॉट मेन्यू</string>
+    <string name="main.list.empty.caption.long_tap">श्रेणी को लंबे समय तक दबाएं रखें</string>
+    <string name="main.list.empty.description.all">सामान्य श्रेणी। फ़िल्टर किए बिना सभी नोट्स प्रदर्शित करता है।</string>
+    <string name="main.list.empty.description.no_tags">यहां उन नोटों को प्रदर्शित किया है जिनहैं कोई टैग नहीं दिया गया है।</string>
+    <string name="main.list.empty.description.tags">यहां उन नोटों और फाइलों को दिखाया गया है जिसका टैग अपने चुना है</string>
+    <string name="main.list.empty.description.filtered">आपके फिल्टर से मिलता हुआ कोई रिजल्ट नहीं मिला</string>
+    <string name="main.list.empty.description.starred">यहां उन नोटों को दिखाया गया है जिन्हें आपने स्टार मार्क किया है</string>
+    <string name="main.list.empty.description.deleted">Displays notes and files that were deleted but can still be restored back. Deleted records remain with assigned tags and other attributes, but are not available in the corresponding categories.</string>
+    <string name="main.list.empty.description.clipboard">Displays notes that the app automatically created from the clipboard. By default, the clipboard isn\'t monitored, but this can be activated via the settings.</string>
+    <string name="main.list.empty.description.snippets">Displays notes that are used in other notes. Any changes to the snippet are automatically reflected in all notes where it is used.</string>
+    <string name="main.filter.snippets">Snippets</string>
+    <string name="main.filter.filters">Filters</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Files</string>
+    <string name="main.filter.notes">टिप्पणियाँ</string>
+    <string name="main.filter.tags">टैग</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Remember last action</string>
+    <string name="main_action_settings_remember_description">When activated, the app will remember the last action and use it the next time you click the Floating Button. At the same time, a window with a list of all actions can be opened with a long tap on the Floating Button.</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">Create notes</string>
+    <string name="main_action_notes_new_title">New Note</string>
+    <string name="main_action_notes_new_description">Save important text information and access it instantly at any time on any device</string>
+    <string name="main_action_notes_barcode_title">Scan Barcode</string>
+    <string name="main_action_notes_barcode_description">Scan links or text and save it as a note (most standard barcode formats are supported)</string>
+    <string name="main_action_notes_clipboard_title">Copy from Clipboard</string>
+    <string name="main_action_notes_clipboard_description">Take the current text from the clipboard and save it as a note</string>
+    <string name="main_action_notes_import_title">Import from File</string>
+    <string name="main_action_notes_import_description">Create a note with text from a file (max. file size %s kB)</string>
+    <string name="main_action_notes_import_error">File size must be no larger than %s kilobytes</string>
+    <string name="main_action_files">Add files</string>
+    <string name="main_action_files_file_title">Choose File</string>
+    <string name="main_action_files_file_description">Add any file (photo, video, pdf, etc.) of max. %s MB</string>
+    <string name="main_action_files_photo_title">Take Photo</string>
+    <string name="main_action_files_photo_description">Take a photo and save it to a note</string>
+    <string name="main_action_files_record_title">वीडियो रिकॉर्ड करना</string>
+    <string name="main_action_files_record_description">Record a video and save it to a note (max. video size %s MB)</string>
+    <string name="main_action_organize">Organize data</string>
+    <string name="main_action_organize_tag_title">New tag</string>
+    <string name="main_action_organize_tag_description">Create a tag to organize your notes and files so they are easier to find</string>
+    <string name="main_action_organize_filter_title">New filter</string>
+    <string name="main_action_organize_filter_description">Create a filter to find the information you want faster by using ready-made search templates</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Reduce repetitive typing</string>
+    <string name="main_action_snippets_snippet_title">New snippet</string>
+    <string name="main_action_snippets_snippet_description">Create reusable text template to avoid repetitive typing and mistakes</string>
+    <string name="main_action_snippets_set_title">New snippet kit</string>
+    <string name="main_action_snippets_set_description">Create a kit of snippets to find common ones faster</string>
+    <string name="main.actions.save_and_start_new_note">बचाये और एक नया बनाये</string>
+    <string name="main.actions.add_dynamic_value">Add dynamic value</string>
+    <string name="main.actions.add_attachment">Add an attachment</string>
+    <string name="main.actions.sync_note">नोट सिंक करें</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">बायें स्वाइप</string>
+    <string name="main.swipe_actions.caption.right">दाहिने स्वाइप</string>
+    <string name="main.swipe_actions.fav">तारांकित करें</string>
+    <string name="main.swipe_actions.delete">विलोपित करें</string>
+    <string name="main.swipe_actions.copy">प्रतिलिपि</string>
+    <string name="main.swipe_actions.none">अप्रभावी</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">उन्नत खोज</string>
+    <string name="filter.hint.text">टेक्स्ट में शामिल है</string>
+    <string name="filter.label.no_tags">अनटैग्ड</string>
+    <string name="filter.label.fav">तारांकित</string>
+    <string name="filter.label.platform">प्लेटफार्म</string>
+    <string name="filter.label.snippets">Snippets</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">क्लिपबोर्ड से नोट्स</string>
+    <string name="filter.clipboard.empty.title">क्लिपबोर्ड से नोट साफ करें?</string>
+    <string name="filter.clipboard.empty.description">क्लिपबोर्ड (तारांकित और टैग को छोड़कर) से सभी नोट स्थायी रूप से हटा दिए जाएंगे।</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">रीसायकल बिन</string>
+    <string name="filter.deleted.limit">सीमा</string>
+    <string name="filter.deleted.empty.title">रीसायकल बिन खाली करें</string>
+    <string name="filter.deleted.empty.description">रीसायकल बिन के सभी नोट स्थायी रूप से हटा दिए जाएंगे।</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">सीमा</string>
+    <string name="filter.limit.description">जब नोटों की संख्या इस श्रेणी की सीमा से अधिक हो जाती है, तो सीमा से अधिक पुराने नोट स्वचालित रूप से श्रेणी से हटा दिए जाते हैं।</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Filter name</string>
+    <string name="filter_error_name_required">Unique name is required to save this filter</string>
+    <string name="filter_delete_title">Delete filter \'%s\'?</string>
+    <string name="filter_delete_description">Filter will be permanently deleted.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">इस टैग को सहेजने के लिए अद्वितीय नाम आवश्यक है</string>
+    <string name="filter.tag.rule.title">ऑटो-असाइन नियम</string>
+    <string name="filter.tag.rule.description">यदि सक्रिय है, तो टैग स्वचालित रूप से नए नोटों को सौंपा जाएगा यदि उनमें कोई अल्पविराम से अलग किए गए पाठ हैं।</string>
+    <string name="filter.tag.rule.hint">कोमा-अलग किया हुआ पाठ</string>
+    <string name="filter.tag.delete.title">टैग \'%s\' हटाएं?</string>
+    <string name="filter.tag.delete.description">टैग स्थायी रूप से हटा दिया जाएगा।</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">जोड़ें</string>
+    <string name="clip.hint.title">बिना शीर्षक नोट</string>
+    <string name="clip.hint.tags">टैग जोड़ने के लिए टैप करें</string>
+    <string name="clip.hint.text">टेक्स्ट जोड़ने के लिए टैप करें</string>
+    <string name="clip.snackbar.text.required">टेक्स्ट आवश्यक है</string>
+    <string name="clip.snackbar.text.copied">टेक्स्ट कॉपी किया गया है</string>
+    <string name="clip.attr.updated">उपयोग तिथि</string>
+    <string name="clip.attr.edited">पर संपादित किया गया</string>
+    <string name="clip.attr.created">बनाने की तिथि</string>
+    <string name="clip.attr.deleted">पर हटा दिया गया</string>
+    <string name="clip.attr.usageCount">उपयोग काउंट</string>
+    <string name="clip.attr.charsCount">कैरेक्टर</string>
+    <string name="clip.attr.size">साइज़</string>
+    <string name="clip_exit_without_save_title">Cancel the editing of the note?</string>
+    <string name="clip_exit_without_save_description">Any changes made will be lost.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">के रूप रक्षित करें</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">General</string>
+    <string name="clip_details_tab_tags">Tags</string>
+    <string name="clip_details_tab_folder">Location</string>
+    <string name="clip_details_tab_attachments">Attachments</string>
+    <string name="clip_details_tab_dynamic">Dynamic values</string>
+    <string name="clip_details_tab_snippets">Snippets</string>
+    <string name="clip_details_tab_snippet_kits">Snippet Kits</string>
+    <string name="clip_details_tab_dynamic_values">Values</string>
+    <string name="clip_details_tab_dynamic_fields">Fields</string>
+    <string name="clip_details_tab_attributes">Attributes</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">नोट में टेक्स्ट डालें</string>
+    <string name="clip.info.label.note.insert.remember">मेरी पसंद को याद रखें और फिर से न पूछें (पैनल को लंबे टैप से एक्सेस किया जा सकता है)।</string>
+    <string name="clip.info.label.note.create">नोट बनाएं</string>
+    <string name="clip.info.label.position">स्थान</string>
+    <string name="clip.info.label.beginning">शुरू में</string>
+    <string name="clip.info.label.end">अतं मै</string>
+    <string name="clip.info.label.tags.edit">जोड़ संपादित करें</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">प्लेन टेक्स्ट</string>
+    <string name="clip.text.type.link">लिंक युक्त टेक्स्ट</string>
+    <string name="clip.text.type.line_clickable">कॉपी की लाइनों वाला टेक्स्ट</string>
+    <string name="clip.text.type.word_clickable">कॉपी किए टोकनों वाला टेक्स्ट</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Attachment</string>
+    <string name="clip.add.attachment.tooltip">Attachment can be any file (photo, video, pdf, etc.) of max. %s MB.</string>
+    <string name="clip.add.dynamic.title">Dynamic value</string>
+    <string name="clip.add.dynamic.tooltip">Dynamic value is a way to create notes with always up-to-date data. In the view mode, the inserted placeholder is replaced with the actual data.</string>
+    <string name="clip.add.dynamic.value.date_time">Date/Time</string>
+    <string name="clip.add.dynamic.value.platform">Platform</string>
+    <string name="clip.add.dynamic.value.ip">IP एड्रेस</string>
+    <string name="clip.add.dynamic.value.date">दिनांक</string>
+    <string name="clip.add.dynamic.value.time">समय</string>
+    <string name="clip.add.dynamic.value.month">महीना</string>
+    <string name="clip.add.dynamic.value.timezone">समय क्षेत्र</string>
+    <string name="clip.add.dynamic.value.month_number">Month Number</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Month Number (with leading zero)</string>
+    <string name="clip.add.dynamic.value.year">वर्ष</string>
+    <string name="clip.add.dynamic.value.year_short">Year (short)</string>
+    <string name="clip.add.dynamic.value.hour24">Hour (24-hour clock)</string>
+    <string name="clip.add.dynamic.value.hour12">Hour (12-hour clock)</string>
+    <string name="clip.add.dynamic.value.minutes">मिनट</string>
+    <string name="clip.add.dynamic.value.seconds">सेकंड</string>
+    <string name="clip.add.dynamic.value.am_pm">पूर्वाह्न्/अपराह्न्</string>
+    <string name="clip.add.dynamic.value.day_of_week">सप्ताह का दिन</string>
+    <string name="clip.add.dynamic.value.day_of_month">महीने का दिन</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Day of month (with leading zero)</string>
+    <string name="clip.add.dynamic.value.random_digit">Random Digit (0–9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Random Latin Character (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Snippet</string>
+    <string name="clip.add.snippet.new.hint">Input text to find or create</string>
+    <string name="clip.add.snippet.tooltip">Snippet is any note whose text you can reuse in any other note, but edit in one. Created snippets may be accessed from the left navigation drawer.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">टेक्स्ट प्रकार</string>
+    <string name="text.config.size">टेक्स्ट साइज</string>
+    <string name="text.config.font">टेक्स्ट फॉन्ट</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">इस तरह छाँटें:</string>
+    <string name="list.config.lines">दिखने वाली टेक्स्ट लाइनें</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">सूची शैली</string>
+    <string name="list.style.description">नोट्स सूची शैली</string>
+    <string name="list.style.default">पूर्व निर्धारित</string>
+    <string name="list.style.comfortable">आरामदायक</string>
+    <string name="list.style.compact">सघन</string>
+    <string name="list.style.preview">पूर्वावलोकन</string>
+    <string name="list.style.grid">जाली</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Skill Runes</string>
+    <string name="runes.hint.description"><![CDATA[    This is a form of enhancement to the functionality of the application.
+    \n\n
+    Each rune extends or modifies the basic functionality and allows you to customize the application to achieve the most optimal productivity with it.
+    \n\n
+    Some runes are more useful, others less so, but this approach makes the app almost limitless in possibilities.
+    \n\n
+    Check out the existing runes, activate the ones you want and send ideas for new ones to make the app a little more productive:)
+    ]]></string>
+    <string name="runes_hotkeys_title">Hotkey Observer</string>
+    <string name="runes_hotkeys_description"><![CDATA[    With this rune you can configure hotkeys to control the application and the actions within it.
+    \n
+    \n
+    Some hotkeys are set by default. You can either clear them or reassign.
+    \n
+    \n
+    ```
+    \n
+    Depending on the action, the hotkey will be monitored either within the application or globally outside of it.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Astral Sync</string>
+    <string name="runes.instant_sync.description"><![CDATA[    The rune opens an opportunity:
+    \n
+    - automatically save all data in the cloud;
+    \n
+    - instantly access it on any other device;
+    \n
+    - save not only text notes, but also files of any format;
+    \n\n
+    By default, the application works without synchronization and saves all data on the device.
+    \n
+    ```
+    \n
+    Once you activate this rune, all previously created and new data will be automatically synced to the cloud storage as soon as the internet connection is available.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Iron Shield</string>
+    <string name="runes.pincode.description"><![CDATA[    The rune allows you to protect access to the application with a password.
+    \n\n
+    When activated, access will be blocked after **%s minutes** of inactivity.
+    \n\n
+    **Important:** if you forget your password, you will need to clear the application data. In this case, all unsynced changes will be lost.
+    ]]></string>
+    <string name="runes.theme.title">Chameleon Skin</string>
+    <string name="runes.theme.description"><![CDATA[    By default, the application uses a color scheme that automatically changes between light and dark depending on the system settings.
+    \n\n
+    You can activate any other theme that will look the same regardless of the system settings.
+    ]]></string>
+    <string name="runes.clipboard.title">Clipboard</string>
+    <string name="runes.clipboard.description"><![CDATA[    The rune allows the app to monitor the clipboard and automatically create notes with text from it.
+    \n\n
+    Once activated, the app will display a permanent notification in the status bar to be able to keep track of the buffer.
+    \n\n
+    ```
+    \n
+    If the notification is not displayed, the application is not running and the buffer will not be tracked until you run the application again.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Keyboard Companion</string>
+    <string name="runes.texpander.description"><![CDATA[    The rune gives you the ability to use the application to fill in input fields with existing notes in almost **any application**.
+    \n\n
+    Once activated, when you place focus in an input field, the app will display a floating panel with actions that allow you to control the content of the input field.
+    \n\n
+    #### Behavior features:
+    \n
+    - the panel can be resized;
+    \n
+    - the panel can be dragged anywhere on the screen;
+    \n
+    - the panel can be automatically modified depending on the possibility of using certain actions;
+    \n
+    - the panel can be automatically hidden if the field loses focus;
+    \n
+    - the panel can be manually hidden (using the top right action in the toolbar) until forced to be called again;
+    \n
+    - if the panel is not displayed, it can be explicitly called from the Notification Panel or Quick Settings (if the Tile is placed in the panel);
+    \n\n
+    #### Technical limitations:
+    \n
+    - the panel uses accessibility service and requires its activation in the system settings;
+    \n
+    - the panel uses a floating window to display on top of other applications and requires the corresponding permission in the system settings;
+    \n
+    - in some applications the automatic behavior of the panel is not possible, so it can be used with restrictions and explicit invocation;
+    \n\n
+    #### Notice:
+    \n
+    If the rune stops working after a while please read [this article](%s) how to keep the app running on your device. Or contact me by email, maybe you found some issue:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Enable</string>
+    <string name="runes.texpander.required.accessibility">Tap here, then go to Downloaded (Installed) services and activate Keyboard Companion service.</string>
+    <string name="runes.texpander.required.floating">Tap here, then go to Other permissions and activate Display pop-up window permission.</string>
+    <string name="runes.texpander.action.copy">Copy to Clipboard</string>
+    <string name="runes.texpander.action.show">Tap here to show the floating panel.</string>
+    <string name="runes.texpander.action.insert">Insert</string>
+    <string name="runes.texpander.action.replace">Replace</string>
+    <string name="runes.texpander.hint.hide">Hide until called from the Notification Panel or Quick Settings.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">The Oculus</string>
+    <string name="runes.link_preview.description"><![CDATA[    When this rune is activated, for saved **http links** the application will try to load their preview in note view mode.
+    \n\n
+    In doing so:
+    \n
+    - the preview image can be opened in a separate window and zoomed in;
+    \n
+    - If the link is a video, it can be played with the application;
+    ]]></string>
+    <string name="runes.auto_save.title">Point of No Return</string>
+    <string name="runes.auto_save.description"><![CDATA[    By default, when you create or edit a note, you must manually click the save button to confirm your changes.
+    \n
+    \n
+    With this rune, the application will automatically save any changes you make while editing text.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Revive</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    With this rune, on startup, the application will restore the last active filter from the previous session.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Swipe Power</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    With this rune, in the list of notes, you can set up actions with them, applied to swipe gestures.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Shifted Focus</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    By default, when you create a note, the focus is set in the text input field.
+    \n\n
+    You can use this rune to change this behavior and set the focus to any other field.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Blowing Copy</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    When the rune is activated, any action of copying text inside Clipto (except contextual actions in input fields) will hide the application.
+    \n
+    \n
+    This rune allows you to minimize the number of steps when pasting copied text outside the application.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Tentative Steps</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Using this rune, you can set selected actions to be activated by double-clicking instead of single-clicking.
+    \n
+    \n
+    This behavior can be useful to prevent accidental clicks.
+    ]]></string>
+    <string name="runes.loyalty.title">Inspiring Support</string>
+    <string name="runes.loyalty.description"><![CDATA[    Without your support and feedback, the product will not evolve in the right direction for users.
+    \n\n
+    >**If you have a minute of time**, don\'t forget to rate us on Google Play.
+    \n
+    \n
+    >**If you have more time, and the translation doesn\'t look right** - join our localization project.
+    \n
+    \n
+    >**If you find bugs, want more runes or just want to write us** - our email and github page is always at your service.
+    ]]></string>
+    <string name="runes.backup_restore.title">Time Machine</string>
+    <string name="runes.backup_restore.description"><![CDATA[    In addition to cloud synchronization, you can manually save backups of your data and restore them later.
+    \n\n
+    Unlike cloud synchronization, this approach allows:
+    \n
+    - take a snapshot of all data at the current moment of time;
+    \n
+    - manage the entire backup and recovery process by yourself;
+    \n
+    - restore the entire data based on the previously saved data snapshot;
+    \n\n
+    ```
+    \n
+    Restoring from a file is done in a soft mode. That is, the existing data is not deleted, but only supplemented with new data.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">सेटिंग</string>
+    <string name="settings.campaign.rate.title">आपकी राय का महत्व है</string>
+    <string name="settings.campaign.rate.message">इसमें एक मिनट से भी कम लगेगा मगर इससे हमें बेहतर बनने में मदद मिलती है।</string>
+    <string name="settings.campaign.rate.button">Google Play पर हमें रेटिंग दें</string>
+    <string name="settings.campaign.rate.question">क्लिप्टो के साथ आपका अनुभव कैसा रहा?</string>
+    <string name="settings.campaign.rate.feedback.title">प्रतिपुष्टि</string>
+    <string name="settings.campaign.rate.feedback.message">क्या आप हमें बता सकते हैं कि हम क्लिप्टो को कैसे बेहतर बना सकते हैं? आपकी राय बहुत महत्वपूर्ण है।</string>
+    <string name="settings.campaign.rate.feedback.toast">क्या आप Google Play पर एक अच्छी समीक्षा छोड़ सकते हैं? आपके समर्थन के लिए धन्यवाद!</string>
+    <string name="settings.campaign.share.title">अपने दोस्तों के साथ क्लिप्टो साझा करके एक बोनस प्राप्त करें!</string>
+    <string name="settings.campaign.share.more">और जानो</string>
+    <string name="settings.campaign.share.action">शेयर ऐप लिंक</string>
+    <string name="settings.group.clipboard">क्लिपबोर्ड</string>
+    <string name="settings.group.behavior">व्यवहार</string>
+    <string name="settings.group.appearance">दिखावट</string>
+    <string name="settings.group.backup">बैकअप और रीस्टोर</string>
+    <string name="settings.group.security">Privacy &amp; Security</string>
+    <string name="settings.group.runes">Runes</string>
+    <string name="settings.link_preview.title">Preview Links</string>
+    <string name="settings.auto_save.title">Save notes automatically</string>
+    <string name="settings.auto_save.description">The app will automatically save changes while creating or editing notes.</string>
+    <string name="settings.focus_on_title.title">Focus on title when creating a note</string>
+    <string name="settings.focus_on_title.description">When creating a note, the focus will be set to the title field</string>
+    <string name="settings.track_clipboard.title">क्लिपबोर्ड से नोट्स</string>
+    <string name="settings.track_clipboard.description">जब ऐप रन कर रहा होगा तो यह क्लिपबोर्ड बदलावों से नोट्स बनाएगा। स्टेटस पट्टी में एक स्थायी नोटिफिकेशन रखा जाएगा।</string>
+    <string name="settings.track_clipboard.q.message">Android Q में शुरू करके, क्लिपबोर्ड से नोट्स बनाने के लिए हमारे नए दृष्टिकोण का उपयोग करें।</string>
+    <string name="settings.track_clipboard.q.description">एंड्रॉइड क्यू में शुरू, केवल ऐप जिसमें वर्तमान में फोकस है क्लिपबोर्ड डेटा तक पहुंच सकता है।</string>
+    <string name="settings.track_clipboard.q.solution.title">इस प्रतिबंध को बायपास करने के लिए, निम्नलिखित में से किसी एक समाधान का उपयोग करें:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">\'कॉपी\' के बजाय \'क्लिप्टो…\' कार्रवाई</string>
+    <string name="settings.track_clipboard.q.solution.1">जब आपने कॉपी करने के लिए पाठ का चयन किया है, तो सक्रिय एप्लिकेशन के संदर्भ मेनू में उपलब्ध होने पर \'कॉपी\' के बजाय \'क्लिप्टो…\' कार्रवाई का उपयोग करें।</string>
+    <string name="settings.track_clipboard.q.solution.2.title">अधिसूचना क्षेत्र में \'पेस्ट\' के साथ संयोजन में मानक \'कॉपी\' कार्रवाई</string>
+    <string name="settings.track_clipboard.q.solution.2">यदि \'क्लिपआउट…\' कार्रवाई उपलब्ध नहीं है या आप अभी भी मानक \'कॉपी\' कार्रवाई का उपयोग करना चाहते हैं, तो वर्तमान क्लिपबोर्ड डेटा से एक नोट लेने के लिए अधिसूचना में \'पेस्ट\' बटन पर क्लिक करना न भूलें।</string>
+    <string name="settings.track_clipboard.q.solution.3.title">मानक \'कॉपी\' कार्रवाई जैसा कि एंड्रॉइड क्यू से पहले था</string>
+    <string name="settings.track_clipboard.q.solution.3">इस समाधान के लिए कंप्यूटर के माध्यम से ऐप के साथ उन्नत कॉन्फ़िगरेशन की आवश्यकता होती है। क्लिपटो को फिर से काम करने के लिए कृपया अपने कंप्यूटर पर निम्न ADB कमांड चलाएं:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">सफल रन के बाद आपको ऐप के कस्टम नोटिफिकेशन में अतिरिक्त कार्रवाई को देखना चाहिए जो आपको क्लिपबोर्ड की मॉनिटरिंग को चालू / बंद करने की सुविधा देता है। साथ ही यह चेतावनी सेटिंग्स से चली जाएगी।</string>
+    <string name="settings.track_clipboard.q.emulate.title">कॉपी एक्शन का अनुकरण करें</string>
+    <string name="settings.track_clipboard.q.emulate.description">कस्टम \'क्लिप्टो…\' और \'पेस्ट\' क्रियाएं स्वचालित रूप से चयनित या कॉपी किए गए पाठ से नोट्स बनाएंगी और यदि इसकी सामग्री अलग है तो इसे क्लिपबोर्ड में डाल दें।</string>
+    <string name="settings.universal_clipboard.title">सर्वव्यापी क्लिपबोर्ड</string>
+    <string name="settings.universal_clipboard.description">क्लिपबोर्ड पर कॉपी किए गए किसी भी पाठ को आपके सभी उपकरणों के बीच सिंक्रनाइज़ किया जाएगा। यह स्वचालित रूप से क्लिपबोर्ड में डाला जाएगा जहां यह सेटिंग सक्रिय है।</string>
+    <string name="settings.notification_style.title">अधिसूचना शैली</string>
+    <string name="settings.notification_style.description">स्थिति बार में स्थायी अधिसूचना के लिए उपयोग करने की अधिसूचना शैली।</string>
+    <string name="settings.notification_sound.title">Silent notifications</string>
+    <string name="settings.notification_sound.description">Silences notifications, regardless of the sounds or vibrations set on the notification or notification channel.</string>
+    <string name="settings.hide_on_click.title">कॉपी करने पर छिपाना</string>
+    <string name="settings.hide_on_click.description">नोट कॉपी करने के बाद ऐप को छिपा दिया जाएगा।</string>
+    <string name="settings.restore_filter.title">अंतिम फिल्टर याद रखना</string>
+    <string name="settings.restore_filter.description">ऐप को पिछले सत्र वाले फिल्टर के साथ खोला जाएगा।</string>
+    <string name="settings.pin_starred.title">तारांकित नोट्स पिन करें</string>
+    <string name="settings.pin_starred.description">Starred notes will be displayed first in the list, regardless of the selected filter.</string>
+    <string name="settings.theme.title">थीम</string>
+    <string name="settings.theme.description">कस्टम रंग योजनाएँ चुनें।</string>
+    <string name="settings.backup.title">फाइल में बैकअप</string>
+    <string name="settings.backup.description">अपने नोट्स को फाइल में एक्सपोर्ट करें।</string>
+    <string name="settings.restore.title">फाइल से रीस्टोर</string>
+    <string name="settings.restore.description">फ़ाइल से नोट्स पुनर्स्थापित करें (समर्थित प्रारूप: %s)।</string>
+    <string name="settings.startup.title">शुरुआत में ही चालू</string>
+    <string name="settings.startup.description">जैसे ही सिस्टम बूट करना समाप्त करता है, ऐप को स्वयं शुरू होने देता है।</string>
+    <string name="settings.language.title">भाषा </string>
+    <string name="settings.swipe_actions.title">स्वाइप एक्शन</string>
+    <string name="settings.swipe_actions.description">मुख्य सूची में नोटों पर शीघ्रता से कार्य करने के लिए स्वाइप क्रियाओं को कॉन्फ़िगर करें।</string>
+    <string name="settings.double_click.title">क्रिया पर डबल-क्लिक करें</string>
+    <string name="settings.double_click.description">केवल डबल-क्लिक का उपयोग करके पूरी की जाने वाली क्रियाओं को कॉन्फ़िगर करें।</string>
+    <string name="settings.double_click.action.exit">बैक बटन ऐप से बाहर निकलता है</string>
+    <string name="settings.double_click.action.delete">नोट हटाएँ</string>
+    <string name="settings.double_click.action.edit">नोट संपादित करें</string>
+    <string name="settings.double_click.toast">पूरा करने के लिए डबल क्लिक करें</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Do not display changed notes</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Notes, for which any of the attributes is assigned (tag, favorites flag, title, snippet), will not be shown in the category \'Notes from Clipboard\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">क्लिपबोर्ड प्रतिबन्धों की चेतावनी ना दिखाएं</string>
+    <string name="settings.clipboard.ignore_q_warning.description">If the app is configured and works correctly with the clipboard on your device, enable this toggle to remove functional restrictions from notifications.</string>
+    <string name="settings.security.passcode.title">Passcode Lock</string>
+    <string name="settings.security.passcode.description">When you set up a passcode, the app will be locked after %s minutes of inactivity.\n\nNote: if you forget the passcode, you\'ll need to clear the application data. In this case, all unsynced changes will be lost.</string>
+    <string name="settings.security.fingerprint.title">Unlock with Fingerprint</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Skip</string>
+    <string name="auth.set_passcode.label.set_passcode">Set a passcode to access the app quickly and securely</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Re-enter your passcode</string>
+    <string name="auth.set_fingerprint.title">Set Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Do you want to use the fingerprint sensor to unlock the app?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Use fingerprint</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Skip for now</string>
+    <string name="auth.fingerprint.touch_sensor">Confirm fingerprint to continue</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Enter your existing passcode</string>
+    <string name="change_passcode.set_new">Create your new passcode</string>
+    <string name="change_passcode.reenter">Re-enter your passcode</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - सपोर्ट</string>
+    <string name="about.label.email.support.message">अपना मैसेज यहाँ लिखें</string>
+    <string name="about.label.rate">Google Play पर हमें रेटिंग दें</string>
+    <string name="about.label.issue">मामले की रिपोर्ट करें</string>
+    <string name="about.label.translate">अनुवाद में हमारी मदद करें</string>
+    <string name="about.label.changelog">Changelog</string>
+    <string name="about.label.campaign.rate">हमें बेहतर बनने में मदद करें!</string>
+    <string name="about.label.campaign.share">शेयर ऐप लिंक</string>
+    <string name="about.label.campaign.share.description">आपके लिंक का उपयोग करके %s लोग ऐप से जुड़ गए हैं।</string>
+    <string name="about.label.other">दूसरे हमारे बारे में क्या कहते हैं</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">अपनी सभी डिवाइसों में डेटा को सिंक किए रखने के लिए अभी साइन इन करें।</string>
+    <string name="account.title.required_authorization">अधिकृत होना जरूरी है</string>
+    <string name="account.description.required_authorization">इस क्रिया को संसाधित करने के लिए आपको अधिकृत होना चाहिए</string>
+    <string name="account.title.authorized">अधिकृत</string>
+    <string name="account.button.sign_in">साइन इन</string>
+    <string name="account.button.sign_out">साइन आउट</string>
+    <string name="account.dialog.sign_out.title">साइन आउट हो रहे</string>
+    <string name="account.dialog.sign_out.message">क्या आप वाकई ऐप से साइन आउट करना चाहते हैं? सभी अनअंक्रनाइज़्ड डेटा खो जाएंगे।</string>
+    <string name="account.plan.personal">व्यक्तिगत लाइसेंस</string>
+    <string name="account.plan.subscription">सदस्यता योजना (सिंक %s नोट)</string>
+    <string name="account.plan.contributor">सदस्यता योजना (सिंक %s नोट)</string>
+    <string name="account.plan.yearly">वार्षिक योजना (सिंक %s नोट)</string>
+    <string name="account.plan.monthly">मासिक योजना (सिंक %s नोट)</string>
+    <string name="account.plan.free">मूल योजना (सिंक %s नोट)</string>
+    <string name="account.toolbar.title">खाता</string>
+    <string name="account.sync.title">स्वचालित रूप से नोट्स को सिंक करें</string>
+    <string name="account_rebuild_index_title">Rebuild data index</string>
+    <string name="account_rebuild_index_description">If you see different data (tags, files, notes, etc.) on different devices, it is recommended to perform this procedure. You will need to re-login when the procedure is complete.</string>
+    <string name="account_delete_title">Delete Account</string>
+    <string name="account_delete_confirm_title">Do you want to delete your account?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATTENTION! If you press DELETE below, your account and personal data will be deleted
+    permanently and irreversible, so please make sure the account contains no valuable data/information.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Are you sure?</string>
+    <string name="account_delete_confirm_again_description">Once you confirm, all of your account data will be permanently deleted.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">मुफ्त़</string>
+    <string name="account.sync.plan.title">%s नोट सिंक करें</string>
+    <string name="account.sync.plan.toolbar">प्लान का चयन करें</string>
+    <string name="account.sync.plan.button.active">सक्रिय योजना</string>
+    <string name="account.sync.plan.button.select">प्लान का चयन करें</string>
+    <string name="account.sync.plan.button.change">योजना बदलें</string>
+    <string name="account.sync.plan.button.upgrade">Upgrade</string>
+    <string name="account.sync.plan.caption">मुफ्त में शुरू करें, फिर केवल आपके द्वारा सिंक किए गए डेटा के लिए भुगतान करें।</string>
+    <string name="account.sync.plan.hint">(%s) नोटों की संख्या आप डिवाइसों में सिंक कर सकते हैं</string>
+    <string name="account.sync.plan.benefit.offline">ऑफ़लाइन नोटों की असीमित संख्या।</string>
+    <string name="account.sync.plan.benefit.sync">अपने सभी उपकरणों पर %s के नोट सिंक करें।</string>
+    <string name="account.sync.plan.warning.limit_reached.title">पहुंची सीमा के कारण सिंक बंद है</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">आपके रीसायकल बिन सहित आपके सभी नोटों की कुल संख्या %s है, जो %s की अनुमत सीमा से अधिक है।</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">इस योजना का चयन करने के लिए अपने नोटों की संख्या कम करें।</string>
+    <string name="account.sync.plan.warning.limit_reached.description">आप अपनी योजना की सीमा तक पहुँच चुके हैं। चिंता न करें, ऐप अभी भी पूरी तरह कार्यात्मक ऑफ़लाइन है और इसमें कोई प्रतिबंध नहीं है। हालाँकि आप अपने खाते को अपग्रेड करने या सक्रिय योजना की सीमा तक नोटों की संख्या कम करने तक आपके डिवाइस पर क्लाउड सिंक अक्षम है।</string>
+    <string name="account.sync.plan.contributor">यदि आपने एप्लिकेशन का अनुवाद करने में मदद की है या नियमित आधार पर उत्पाद का समर्थन करते हैं, तो कृपया अपना खाता अपग्रेड करने के लिए हमसे संपर्क करें।</string>
+    <string name="sync.free_limit_concept">नि: शुल्क सीमा तय नहीं है और विभिन्न कारकों के आधार पर इसे ऊपर या नीचे बदला जा सकता है।</string>
+    <string name="sync.off.title">नोट उपकरणों के बीच समन्‍वयित नहीं है</string>
+    <string name="sync.off.multiple.title">नोट उपकरणों के बीच समन्‍वयित नहीं है</string>
+    <string name="sync.off.caption">यह निम्नलिखित कारणों में से एक के लिए संभव है:</string>
+    <string name="sync.off.reason.universal_clipboard">अनुप्रयोग द्वारा इस नोट को बनाते समय यूनिवर्सल क्लिपबोर्ड सक्रिय नहीं किया गया था।</string>
+    <string name="sync.off.reason.manual_off">आपने मैन्युअल रूप से सिंक्रनाइज़ेशन बंद कर दिया है।</string>
+    <string name="sync.warning.title">कार्यात्मकता क्लाउड सिंक का उपयोग करती है</string>
+    <string name="sync.warning.description">क्लाउड सिंक पूरी तरह से मुक्त नहीं है और इसे आपके डिवाइस पर तब तक अक्षम किया जा सकता है जब तक आप अपने खाते को अपग्रेड नहीं करते हैं या सक्रिय योजना की सीमा तक नोटों की संख्या कम नहीं करते हैं।</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">तेज कार्य</string>
+    <string name="fast_actions.compose_email">ईमेल लिखें</string>
+    <string name="fast_actions.send_message">एक नया संदेश भेजें</string>
+    <string name="fast_actions.compose_sms">SMS लिखें</string>
+    <string name="fast_actions.twitter_post">ट्वीट लिखें</string>
+    <string name="fast_actions.web_search">वेब खोज</string>
+    <string name="fast_actions.google_translate">Google अनुवाद</string>
+    <string name="fast_actions.google_maps_search">Google Maps Search</string>
+    <string name="fast_actions.wiki_search">Wikipedia खोज</string>
+    <string name="fast_actions.youtube_search">Youtube खोज</string>
+    <string name="fast_actions.duckduckgo_search">DuckDuckGo Search</string>
+    <string name="fast_actions.stackoverflow_search">Stack Overflow Search</string>
+    <string name="fast_actions.reddit_search">Reddit Search</string>
+    <string name="fast_actions.play_url">Playback a link</string>
+    <string name="fast_actions.send_as_file">फाइल के रूप में भेजें</string>
+    <string name="fast_actions.send_as_txt_file">Txt के रूप में भेजें</string>
+    <string name="fast_actions.send_as_pdf_file">Pdf के रूप में भेजें</string>
+    <string name="fast_actions.send_as_md_file">मार्कडाउन के रूप में भेजें</string>
+    <string name="fast_actions.export_to_file">फाइल में एक्सपोर्ट करें</string>
+    <string name="fast_actions.export_to_file.success">%s के रूप में एक्सपोर्ट किया</string>
+    <string name="fast_actions.calendar_event">एक कैलेंडर ईवेंट जोड़ें</string>
+    <string name="fast_actions.copy">अपने क्लिपबोर्ड में कॉपी करें</string>
+    <string name="fast_actions.copy_clear">Clear from the clipboard</string>
+    <string name="fast_actions.tts">Text to Speech</string>
+    <string name="fast_actions.tts.max_length">Text cannot exceed %s characters</string>
+    <string name="fast_actions.share">के साथ शेयर</string>
+    <string name="fast_actions.send_as_qrcode">QR कोड के रूप में भेजें</string>
+    <string name="fast_actions.dial_number">एक फ़ोन नंबर दर्ज करें</string>
+    <string name="fast_actions.insert_contact">एक संपर्क डालें</string>
+    <string name="fast_actions.insert_contact_email">संपर्क ईमेल सहेजें</string>
+    <string name="fast_actions.insert_contact_phone">संपर्क फोन सहेजें</string>
+    <string name="fast_actions.open_url">वेब पृष्ठ खोलें</string>
+    <string name="fast_actions.short_link">Shorten the link</string>
+    <string name="fast_actions.more">और दिखाएं</string>
+    <string name="fast_actions.error">अनपेक्षित त्रुटि: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">डिफॉल्ट</string>
+    <string name="theme.sepia">सीपिया</string>
+    <string name="theme.dark">डार्क</string>
+    <string name="theme.dark_blue">डार्क ब्लू</string>
+    <string name="theme.dark_green">Dark Green</string>
+    <string name="theme.dark_blurple">गहरा नीला</string>
+    <string name="theme.black">अमोलेड ब्लैक</string>
+    <string name="theme.green">हरा</string>
+    <string name="theme.white">सफेद</string>
+    <string name="theme.pink">गुलाबी</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">उपयोग की तारीख</string>
+    <string name="sort_order.modify_date">तिथी बदलना</string>
+    <string name="sort_order.create_date">तारीख बनाना</string>
+    <string name="sort_order.delete_date">दिनांक हटाएं</string>
+    <string name="sort_order.usage_count">उपयोग काउंट</string>
+    <string name="sort_order.title">शीर्षक</string>
+    <string name="sort_order.text">टेक्स्ट</string>
+    <string name="sort_order.tags">टैग</string>
+    <string name="sort_order.size">आकार</string>
+    <string name="sort_order.name">Name</string>
+    <string name="sort_order.notes_count">Notes count</string>
+    <string name="sort_order.color">Color</string>
+    <string name="sort_order.manual">Manual</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">सफल</string>
+    <string name="backup.fail.title">विफल</string>
+    <string name="backup.fail.message">अनपेक्षित त्रुटि: %s</string>
+    <string name="restore.success.title">सफल</string>
+    <string name="restore.fail.title">विफल</string>
+    <string name="restore.fail.message">अनपेक्षित त्रुटि: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Are you sure you want to close this window?</string>
+    <string name="clip.multiple.exit_without_save.description">Any changes made will be lost.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">कॉमन टैग्स</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">विभाजक </string>
+    <string name="clip.multiple.merge.separator.line">नई पंक्ति</string>
+    <string name="clip.multiple.merge.separator.space">अंतराल</string>
+    <string name="clip.multiple.merge.separator.other">अन्य</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">नियंत्रण</string>
+    <string name="notification.style.history">क्लिपबोर्ड इतिहास</string>
+    <string name="notification.style.actions">क्लिपबोर्ड क्रियाएँ</string>
+    <string name="notification.track_clipboard.pause">क्लिपबोर्ड की निगरानी को रोका गया है</string>
+    <string name="notification.track_clipboard.resume">क्लिपबोर्ड की निगरानी को रोका गया है</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Attachments</string>
+    <string name="attachments.type.photo">फोटो लें</string>
+    <string name="attachments.type.record">Record Video</string>
+    <string name="attachments.type.file">फ़ाइल चुनें</string>
+    <string name="attachments.attr.created">बनाया गया</string>
+    <string name="attachments.attr.name">नाम</string>
+    <string name="attachments.attr.type">प्रकार:</string>
+    <string name="attachments.attr.path">पाथ</string>
+    <string name="attachments.attr.size">आकार</string>
+    <string name="attachments.state.downloaded">डाउनलोड किए गए</string>
+    <string name="attachments.state.uploaded">अपलोड किए गए</string>
+    <string name="attachments.state.downloading">डाउनलोड कर रहा है…</string>
+    <string name="attachments.state.uploading">अपलोड हो रहा है…</string>
+    <string name="attachments.label.insert">नोट में जोड़ें</string>
+    <string name="attachments.label.download_url">सार्वजनिक url फ़ाइल अपलोड होने के बाद उपलब्ध होगा।</string>
+    <string name="contribute.annual.offer">Google Play सदस्यता केंद्र से किसी भी समय रद्द करें।</string>
+    <string name="contribute.monthly.period">महीना</string>
+    <string name="contribute.annual.period">वर्ष</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">बाहर निकलें</string>
+    <string name="desktop.tray.show">दिखाएँ</string>
+    <string name="desktop.tray.show_in_taskbar">टास्कबार में दिखाएँ</string>
+    <string name="desktop.update.action.download">डाउनलोड करें</string>
+    <string name="desktop.update.action.later">बाद में</string>
+    <string name="desktop.update.title">नयी संस्करण उपलब्ध है!</string>
+    <string name="desktop.shortcuts.title">शॉर्टकट कुंजियाँ</string>
+    <string name="desktop.shortcuts.dialog.define">शॉर्टकट परिभाषित करें</string>
+    <string name="desktop.shortcuts.showHideApp">ऐप दिखाएं / छिपाएं</string>
+    <string name="desktop.shortcuts.modeFullscreen">पूर्णस्क्रीन चालू करें</string>
+    <string name="desktop.shortcuts.modeComfortable">आरामदायक मोड टॉगल करें</string>
+    <string name="desktop.shortcuts.modeCompact">कॉम्पैक्ट मोड टॉगल करें</string>
+    <string name="desktop.shortcuts.tagNext">अगला टैग</string>
+    <string name="desktop.shortcuts.tagPrev">पिछला टैग</string>
+    <string name="desktop.shortcuts.noteNext">अगला नोट</string>
+    <string name="desktop.shortcuts.notePrev">पिछला नोट</string>
+    <string name="desktop.shortcuts.noteNew">नया नोट</string>
+    <string name="desktop.shortcuts.noteSave">नोट्स सेव करें</string>
+    <string name="desktop.shortcuts.noteDelete">नोट हटाएँ</string>
+    <string name="desktop.shortcuts.noteCopy">नोट कॉपी करें</string>
+    <string name="desktop.shortcuts.notePrint">नोट संपादित करें</string>
+    <string name="desktop.shortcuts.noteFind">नोट्स में खोजें</string>
+    <string name="desktop.shortcuts.noteOpen">टिप्पणियाँ खोलें</string>
+    <string name="desktop.shortcuts.noteEdit">टिप्पणी बदलें</string>
+    <string name="desktop.shortcuts.contextModeSelect">नोट का चयन करें</string>
+    <string name="desktop.shortcuts.contextModeCancel">सभी नोट अचयनित करें</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">सभी नोट्स का चयन करें</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Save from Clipboard</string>
+    <string name="desktop.attachments.browse">संलग्न करने या ब्राउज़ करने के लिए फ़ाइलें छोड़ें।</string>
+    <string name="desktop.main.content.under.development">विकास के अधीन है…</string>
+    <string name="desktop.main.menu.download">डाउनलोड करें</string>
+    <string name="desktop.main.menu.download.for">%s के लिए डाउनलोड करें</string>
+    <string name="desktop.main.menu.download.android.apk">यूनिवर्सल एपीके का निर्माण करें</string>
+    <string name="desktop.main.menu.resources">संसाधन</string>
+    <string name="desktop.main.menu.open">अपने ब्राउज़र में क्लिपटो खोलें</string>
+    <string name="desktop.main.features.title.1">किसी भी डिवाइस पर आसानी से और जल्दी से लिखें।</string>
+    <string name="desktop.main.features.title.2">ऑल-इन-वन नोटपैड और amp; क्लिपबोर्ड प्रबंधक गति और उत्पादकता पर ध्यान केंद्रित करता है जो आपके डेस्कटॉप और फोन दोनों पर काम करता है।</string>
+    <string name="desktop.main.features.title.3">Your personal writing companion.</string>
+    <string name="desktop.main.features.title.4">A comprehensive solution for convenient and efficient work with notes, snippets, clipboard, files, and other information that requires quick access via any device.</string>
+    <string name="desktop.main.features.title.5">What makes Clipto special?</string>
+    <string name="desktop.get_started.language">अपनी भाषा चुनें</string>
+    <string name="desktop.get_started.theme">पसंदीदा विषय चुनें</string>
+    <string name="desktop.auth.instruction">प्राधिकरण के निर्देश</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">बारकोड स्कैन करें</string>
+    <string name="barcode.prompt.point_at_a_barcode">अपने कैमरे को एक बारकोड पर इंगित करें</string>
+    <string name="barcode.prompt.hold_camera_steady">एक पल के लिए भी कैमरा रखें</string>
+    <string name="barcode.prompt.move_camera_closer">खोज के करीब ले जाएं</string>
+    <string name="barcode.prompt.searching">खोज रहे हैं..</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">फ़ॉन्ट अनुरोध कारण कोड के साथ विफल हुआ: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">सार्वजनिक लिंक</string>
+    <string name="public.note.link.time.label">एक निर्दिष्ट समय पर</string>
+    <string name="public.note.link.time.or">या</string>
+    <string name="public.note.link.time.type.seconds">सेकंड</string>
+    <string name="public.note.link.time.type.minutes">मिनट</string>
+    <string name="public.note.link.time.type.hours">घंटे</string>
+    <string name="public.note.link.time.type.days">दिनों</string>
+    <string name="public.note.link.access_time">पहूंच समय</string>
+    <string name="public.note.link.access_time.description">यदि सेट किया गया है, तो लिंक केवल निर्माण या उसके बाद के अपडेट के बाद निर्दिष्ट समय के बाद ही उपलब्ध होगा।</string>
+    <string name="public.note.link.access_time.label">में उपलब्ध होगा:</string>
+    <string name="public.note.link.access_password">पासवर्ड से प्रवेश करें</string>
+    <string name="public.note.link.access_password.hint">मास्टर पासवर्ड संकेत (वैकल्पिक)</string>
+    <string name="public.note.link.access_password.placeholder">पासवर्ड</string>
+    <string name="public.note.link.access_password.description">यदि सेट किया गया है, तो लिंक केवल पासवर्ड की पुष्टि के बाद उपलब्ध होगा।</string>
+    <string name="public.note.link.time_to_expire">समाप्त होने का समय</string>
+    <string name="public.note.link.time_to_expire.description">यदि सेट किया गया है, तो लिंक निर्माण या बाद के अपडेट के बाद निर्दिष्ट अवधि के लिए मान्य होगा।</string>
+    <string name="public.note.link.time_to_expire.label">में समाप्त होने वाला है</string>
+    <string name="public.note.link.one_time_opening">एक बार का उद्घाटन</string>
+    <string name="public.note.link.one_time_opening.description">यदि सेट किया गया है, तो लिंक केवल उस समय से एक खुलने के लिए उपलब्ध होगा जो इसे बनाया गया था या बाद में अपडेट किया गया था।</string>
+    <string name="public.note.link.action.remove">लिंक हटाये</string>
+    <string name="public.note.link.action.remove.confirm.title">लिंक निकालें?</string>
+    <string name="public.note.link.action.remove.confirm.description">लिंक अब उपलब्ध नहीं होगा।</string>
+    <string name="public.note.link.action.create">एक लिंक बनाएं</string>
+    <string name="public.note.link.state.unavailable">अनुपलब्ध</string>
+    <string name="public.note.link.state.postponed">में उपलब्ध होगा:</string>
+    <string name="public.note.link.state.expires_in">%s में समाप्त हो रहा है</string>
+    <string name="public.note.link.state.expired">समाप्त</string>
+    <string name="public.note.link.state.locked">बंद</string>
+    <string name="public.note.link.state.locked.wrong_password">गलत पासवर्ड</string>
+    <string name="about.policy">गोपनीयता नीति</string>
+    <string name="about.toc">सेवा या सेवा</string>
+    <string name="about_pricing">Pricing</string>
+    <string name="site.integrations.title">Integrations</string>
+    <string name="site.integrations.zapier.title">Zapier Integration</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Connect Clipto with Zapier and run your workflows at blazing speed.
+\n
+## Your clipboard as a workflow trigger
+\n
+The fastest way to save important information is to select and copy it.
+\n
+To start using this functionality with Zapier, just follow these steps:
+\n
+1. Configure in Zapier the trigger **Text Copied to the Clipboard**.
+\n
+2. Install Clipto on your device (mobile, desktop) and **sign in** with the same account
+\n
+3. Open Clipto and activate the settings **Notes from Clipboard** and **Universal Clipboard**
+\n
+4. That is all. Now you can use the standard combination **Ctrl+C** (or Copy in the context menu) to activate a workflow with copied text.
+    ]]></string>
+    <string name="faq.title">F.A.Q.</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notes** help you keep important text information and access it instantly at any time on any device.
+    \n
+    \n
+    By default, all notes are divided into several categories for quick access to the right ones based on different attributes.
+    \n
+    ```
+    \n
+    All notes are downloaded to your device when you first sign in.
+    \n
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filters** help you find the information you want faster by using ready-made search templates.
+    \n
+    ```
+    \n
+    A search template can contain various combinations of tags, time intervals, texts, sorting and display rules, etc.
+    \n
+    \n
+    Therefore, saving any such combination as a filter makes it much easier to retrieve the data you are looking for when you access it again.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Each filter has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The filter settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** help to organise your notes and files to make them easier to find.
+    \n
+    ```
+    \n
+    You can add multiple tags to any note or file.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Each tag has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The tag settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    The search parameters can be saved as a filter for quick access again.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** help to avoid repetitive typing by using re-usable text templates.
+    \n
+    \n
+    A snippet can be any existing or new note. It can be either static or dynamic, contain fields for manual input and runtime values (dates, times, etc.).
+    \n
+    \n
+    Snippets are organized by kits. You can either create your own kit or install any from the public library.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - The kit can be shared with other users.
+    \n
+    - The kit can be published in the public library.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Abbreviation can be used:
+    \n
+    \n
+    - to quickly search for a note using a short phrase of %s characters max
+    \n
+    - to insert the text of the note into the input field when entering a shortcut with a leading symbol **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Description can be used to provide additional information about a note.
+    \n
+    \n
+    It supports markdown formatting of %s characters max.
+    ]]></string>
+    <string name="where_none_of">none of the selected</string>
+    <string name="where_any_of">any of the selected</string>
+    <string name="where_all_of">all selected</string>
+    <string name="where_after">After</string>
+    <string name="where_before">Before</string>
+    <string name="where_from">From</string>
+    <string name="where_to">To</string>
+    <string name="where_date_today">Today</string>
+    <string name="where_date_tomorrow">Tomorrow</string>
+    <string name="where_date_custom">Custom</string>
+    <string name="where_date_yesterday">Yesterday</string>
+    <string name="where_date_last_7_days">Last 7 days</string>
+    <string name="where_date_last_30_days">Last 30 days</string>
+    <string name="where_date_last_90_days">Last 90 days</string>
+    <string name="advanced_filter_block_text">Text contains</string>
+    <string name="advanced_filter_block_text_type">Text type</string>
+    <string name="advanced_filter_block_category">Located in</string>
+    <string name="advanced_filter_block_tags">Tags</string>
+    <string name="advanced_filter_block_created">Created date</string>
+    <string name="advanced_filter_block_updated">Updated date</string>
+    <string name="advanced_filter_block_only_public_links">Show only with public links</string>
+    <string name="advanced_filter_block_only_attachments">Show only with attachments</string>
+    <string name="advanced_filter_block_only_not_synced">Show only unsynced</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Country</string>
+    <string name="snippet_kit_attr_snippets">Snippets</string>
+    <string name="snippet_kit_attr_language">Language</string>
+    <string name="snippet_kit_attr_downloads">Downloads</string>
+    <string name="snippet_kit_attr_created">Created on</string>
+    <string name="snippet_kit_attr_updated">Updated on</string>
+    <string name="snippet_kit_attr_category">Category</string>
+    <string name="snippet_kit_public_link">Public Link</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    The snippet kit can be installed from a public link
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Remove the link?</string>
+    <string name="snippet_kit_public_link_remove_description">The snippet kit can no longer be installed from this link.</string>
+    <string name="snippet_kit_public_library">Public Library</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    The snippet kit can be installed from a public library.
+    \n
+    \n
+    ```
+    \n
+    The kit must contain at least %s snippets in order to be placed in the public library.
+    \n
+    ```
+    \n
+    \n
+    When you place a kit in the public library, you automatically get a benefit.
+    \n
+    \n
+    [Learn more…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Remove from the public library?</string>
+    <string name="snippet_kit_public_library_remove_description">The snippet kit can no longer be installed from the public library.</string>
+    <string name="snippet_kit_hint_name">Snippet kit name</string>
+    <string name="snippet_kit_label_show_in_public_library">Show in Public Library</string>
+    <string name="snippet_kit_error_name_required">Unique name is required to save this set</string>
+    <string name="snippet_kit_delete_title">Delete kit \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Snippet kit will be permanently deleted.</string>
+    <string name="snippet_kit_uninstall_title">Uninstall kit \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Snippet kit will be permanently deleted, including all associated snippets.</string>
+    <string name="snippet_kit_install_hint_title">What does it mean to install?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    The installed snippet kit will be available for use as if you had created it yourself.
+    \n
+    \n
+    That is, you can completely change any notes in it, add new ones, delete existing, manage the settings of the kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Any changes you make will only be available to you without the ability to change the original kit.
+    \n
+    \n
+    If the original kit has been updated, you can manually update the installed one.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Public Status</string>
+    <string name="public_status_private">Private</string>
+    <string name="public_status_blocked">Blocked</string>
+    <string name="public_status_review">In review</string>
+    <string name="public_status_review_details">It will take some time before the kit is published and available in the public library.</string>
+    <string name="public_status_published">Published</string>
+    <string name="public_status_rejected">Rejected</string>
+    <string name="public_status_not_found">Not found</string>
+    <string name="public_status_deleted">Deleted</string>
+    <string name="public_status_restricted">Restricted</string>
+    <string name="public_status_update_reason">Update reason</string>
+    <string name="dynamic_text_hint_title">Dynamic text</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    If a note contains dynamic fields, you will see this extra step whenever you perform any action on the note.
+    \n
+    \n
+    At this step you can define values in the input fields and complete the action with the changed text.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Text</string>
+    <string name="dynamic_text_view_mode_form">Form</string>
+    <string name="dynamic_value_date">Date/Time</string>
+    <string name="dynamic_value_date_description">Creates a placeholder that is replaced by the actual date</string>
+    <string name="dynamic_value_device">Device Info</string>
+    <string name="dynamic_value_device_description">Creates a placeholder that is replaced with information about the device</string>
+    <string name="dynamic_value_random">Random</string>
+    <string name="dynamic_value_random_description">Creates a placeholder that is replaced by a random value from a customizable list</string>
+    <string name="dynamic_value_clipboard">Clipboard</string>
+    <string name="dynamic_value_clipboard_description">Creates a placeholder that is replaced by the content of the clipboard</string>
+    <string name="dynamic_value_snippet">Snippet</string>
+    <string name="dynamic_value_snippet_description">Creates a placeholder that is replaced by the content of the selected note</string>
+    <string name="dynamic_value_attr_device_type">Information type</string>
+    <string name="dynamic_field_date">Date field</string>
+    <string name="dynamic_field_date_description">Creates a date input field</string>
+    <string name="dynamic_field_text">Text field</string>
+    <string name="dynamic_field_text_description">Creates a text input field</string>
+    <string name="dynamic_field_number">Number field</string>
+    <string name="dynamic_field_number_description">Creates a number input field</string>
+    <string name="dynamic_field_select">Selection field</string>
+    <string name="dynamic_field_select_description">Creates an input to select one or more items</string>
+    <string name="dynamic_field_barcode_scanning">Barcode scanning field</string>
+    <string name="dynamic_field_barcode_scanning_description">Creates a field that allows you to scan a barcode and use its text as the field value</string>
+    <string name="dynamic_field_text_toggle">Text toggle</string>
+    <string name="dynamic_field_text_toggle_description">Creates a toggle switch that can enable or disable a block of text</string>
+    <string name="dynamic_field_reference">Reference field</string>
+    <string name="dynamic_field_reference_description">Creates a field that refers to another field and uses its value</string>
+    <string name="dynamic_field_unknown">Unknown field</string>
+    <string name="dynamic_field_unknown_description">The field cannot be rendered. Perhaps it is incorrect or was created in a newer version of the application</string>
+    <string name="dynamic_field_date_format_date_time">Date/Time (system)</string>
+    <string name="dynamic_field_date_format_date">Date (system)</string>
+    <string name="dynamic_field_date_format_time">Time (system)</string>
+    <string name="dynamic_field_date_format_day_of_week">Day of week</string>
+    <string name="dynamic_field_date_format_day_of_month">Day of month (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Day of month (01–31)</string>
+    <string name="dynamic_field_date_format_year">Year</string>
+    <string name="dynamic_field_date_format_year_short">Year (short)</string>
+    <string name="dynamic_field_date_format_month">Month</string>
+    <string name="dynamic_field_date_format_month_number">Month (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Month (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hour (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hour (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hour (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hour (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minute (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minute (01–60)</string>
+    <string name="dynamic_field_date_format_second">Second (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Second (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Time Zone</string>
+    <string name="dynamic_field_value_formatter_new_line">New line</string>
+    <string name="dynamic_field_value_formatter_semicolon">Semicolon</string>
+    <string name="dynamic_field_value_formatter_comma">Comma</string>
+    <string name="dynamic_field_value_formatter_space">Space</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Ordered list</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Unordered list</string>
+    <string name="dynamic_field_attr_common_label">Label</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Suffix</string>
+    <string name="dynamic_field_attr_common_value">Value</string>
+    <string name="dynamic_field_attr_common_required">Required</string>
+    <string name="dynamic_field_attr_common_placeholder">Placeholder</string>
+    <string name="dynamic_field_attr_common_default_value">Default value</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formatter of selected values</string>
+    <string name="dynamic_field_attr_select_multiple">Multiple selection</string>
+    <string name="dynamic_field_attr_select_user_input">User input</string>
+    <string name="dynamic_field_attr_text_multi_line">Multi-line text</string>
+    <string name="dynamic_field_attr_text_max_length">Max length</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Clipboard is the default value</string>
+    <string name="dynamic_field_attr_select_options">Options</string>
+    <string name="dynamic_field_attr_number_min">Min value</string>
+    <string name="dynamic_field_attr_number_max">Max value</string>
+    <string name="dynamic_field_attr_date_format">Format</string>
+    <string name="dynamic_field_attr_date_example">Example: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Multiple scanning</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Formatter of scanned values</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Referenced field label</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Field has its own value</string>
+    <string name="select_option_ordering">Sort options</string>
+    <string name="select_option_ordering_label_asc">Label (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Label (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Value (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Value (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Delete this dynamic field from the text?</string>
+    <string name="dynamic_field_confirm_delete_description">The placeholder of the field will be deleted from the original text.</string>
+    <string name="dynamic_value_placeholder_copied_title">The dynamic value placeholder has been copied to the clipboard</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">File not found. Try uploading it again.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">Updated</string>
+    <string name="file_attr_location">Location</string>
+    <string name="file_confirm_update_file">Update file?</string>
+    <string name="file_confirm_update_file_description">The file will be updated in the cloud storage.</string>
+    <string name="file_error_name_required">Name is required to save this file</string>
+    <string name="file_action_new_file">File</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Files</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">Note</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">Attachment</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Attachments</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">Search your files</string>
+    <string name="file_type_any">All</string>
+    <string name="file_type_audio">Audios</string>
+    <string name="file_type_video">Videos</string>
+    <string name="file_type_image">Images</string>
+    <string name="file_type_archive">Archives</string>
+    <string name="file_type_document">Documents</string>
+    <string name="file_type_recycled">Recycle Bin</string>
+    <string name="folder_select">Select</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">Edit</string>
+    <string name="clip_action_new_edit_description">The note can be edited before it is saved or used for any action.</string>
+    <string name="clip_action_new_insert">Insert into</string>
+    <string name="clip_action_new_insert_description">The text of a note can be inserted into any existing one. Select the target note and specify the insertion options.</string>
+    <string name="clip_action_new_action">Actions</string>
+    <string name="clip_action_new_action_description">The text of a note can be used to perform an action.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">%s नोट एक्सपोर्ट किया</item>
+        <item quantity="other">%s नोट्स एक्सपोर्ट किए</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">%s नोट इंपोर्ट किया</item>
+        <item quantity="other">%s नोट्स इंपोर्ट किए</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">%s नोट डिलीट हुआ</item>
+        <item quantity="other">%s नोट्स डिलीट हुए</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s नोट</item>
+        <item quantity="other">%s नोट्स</item>
+    </plurals>
+</resources>

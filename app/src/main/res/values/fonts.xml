@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="font_arabic" translatable="false"><![CDATA[
+    ء ي و ه ن م ل ك ق ف غ ع ظ ط ض ص ش س ز ر ذ د خ ح ج ث ت ب أ ؟! ، ء آ أ إ الأ الإ
+    ]]></string>
+
+    <string name="font_bengali" translatable="false"><![CDATA[
+    অ আ ই ঈ উ ঊ ঋ ঌ এ ঐ ও ঔ ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত থ দ ধ ন প ফ ব ভ ম য র ল ব শ ষ স হ ড় ঢ় য় ৎ ₹
+    ]]></string>
+
+    <string name="font_chinese_hong_kong" translatable="false"><![CDATA[
+        一二三四五六七八九十百千萬上中下左右大小春夏秋冬東南西北金木水火土天地日月星黑白紅橙黃綠藍靛紫食住衣行育樂忠孝仁愛信義和平子曰父母兄弟夫婦君臣馬牛羊雞犬豕喜怒哀懼惡目耳口手足見聞聲貝車雨赤青言語魚鳥羽電不乃之乎人以何俱倫儀先光入具初則匏協去友同名善器嚴執孟孫學宜容專少山師席常幼序從性恩恭情惰應成所才揚擇教敬數文斷方於族昔時智曾有朋本杼某梨機次欲此歲溫為燕玄玉琢畜當相知石祖禮稷稻穀窮竇竹粱紊絲綱習老者而能自至與苟菽處融親調識讓貴身近運過道遠遷鄰長非革音順飼養首香高麥黍齡思源谷歌 ?“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+
+    <string name="font_chinese_simplified" translatable="false"><![CDATA[
+    一二三四五六七八九十百千万上中下左右大小春夏秋冬东南西北金木水火土天地日月星黑白红橙黄绿蓝靛紫食住衣行育乐忠孝仁爱信义和平子曰父母兄弟夫妇君臣马牛羊鸡犬豕喜怒哀惧恶目耳口手足见闻声贝车雨赤青言语鱼鸟羽电不乃之乎人以何俱伦仪先光入具初则匏协去友同名善器严执孟孙学宜容专少山师席常幼序从性恩恭情惰应成所才扬择教敬数文断方于族昔时智曾有朋本杼某梨机次欲此岁温为燕玄玉琢畜当相知石祖礼稷稻谷穷窦竹粱紊丝纲习老者而能自至与苟菽处融亲调识让贵身近运过道远迁邻长非革音顺饲养首香高麦黍龄思源谷歌 ?“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_chinese_traditional" translatable="false"><![CDATA[
+    一二三四五六七八九十百千萬上中下左右大小春夏秋冬東南西北金木水火土天地日月星黑白紅橙黃綠藍靛紫食住衣行育樂忠孝仁愛信義和平子曰父母兄弟夫婦君臣馬牛羊雞犬豕喜怒哀懼惡目耳口手足見聞聲貝車雨赤青言語魚鳥羽電不乃之乎人以何俱倫儀先光入具初則匏協去友同名善器嚴執孟孫學宜容專少山師席常幼序從性恩恭情惰應成所才揚擇教敬數文斷方於族昔時智曾有朋本杼某梨機次欲此歲溫為燕玄玉
+    ]]></string>
+
+    <string name="font_cyrillic" translatable="false"><![CDATA[
+    АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_cyrillic_extended" translatable="false"><![CDATA[
+    АБВГҐДЂЕЁЄЖЗЅИІЇЙЈКЛЉМНЊОПРСТЋУЎФХЦЧЏШЩЪЫЬЭЮЯабвгґдђеёєжзѕиіїйјклљмнњопрстћуўфхцчџшщъыьэюя ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_devanagari" translatable="false"><![CDATA[
+    आ ई ऊ ऋ ॠ ऌ ॡ ऐ औ  अं अँ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ य र व ळ श ष स ह ₹
+    ]]></string>
+
+    <string name="font_greek" translatable="false"><![CDATA[
+    ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψω ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_greek_extended" translatable="false"><![CDATA[
+    ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψωάΆέΈέΉίϊΐΊόΌύΰϋΎΫάέήίόώΏ ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_gujarati" translatable="false"><![CDATA[
+    અ આ ઇ ઈ ઉ ઊ એ ઐ ઓ ઔ અં અ: ઍ ઑ ત્ર ઋ રૂ ક ખ ગ ઘ ચ છ જ ઝ ટ ઠ ડ ઢ ણ ત થ દ ધ ન પ ફ બ ભ મ ય ર લ વ સ શ ષ હ ળ ક્ષ જ્ઞ ₹
+    ]]></string>
+
+    <string name="font_gurmukhi" translatable="false"><![CDATA[
+    ਆ ਈ ਊ ਏ ਐ ਓ ਔ ਕ ਖ ਗ ਘ ਙ ਚ ਛ ਜ ਝ ਞ ਟ ਠ ਡ ਢ ਣ ਤ ਥ ਦ ਧ ਨ ਪ ਫ ਬ ਭ ਮ ਯ ਰ ਲ ਲ਼ ਵ ਸ਼ ਸ ਹ ੲ ੳ ੴ ₹
+    ]]></string>
+
+    <string name="font_hebrew" translatable="false"><![CDATA[
+    אבגדהוזחטיכךלמםנןסעפףצץקרשת ₪
+    ]]></string>
+
+    <string name="font_japanese" translatable="false"><![CDATA[
+    一 二 三 四 五 六 七 八 九 十 百 千 上 下 左 右 中 大 小 月 日 年 早 木 林 山 川 土 空 田 天 生 花 草 虫 犬 人 名 女 男 子 目 耳 口 手 足 見 音 力 気 円 入 出 立 休 先 夕 本 文 字 学 校 村 町 森 正 水 火 玉 王 石 竹 糸 貝 車 金 雨 赤 青 白 数 多 少 万 半 形 太 細 広 長 点 丸 交 光 角 計 直 線 矢 弱 強 高 同 親 母 父 姉 兄 弟 妹 自 友 体 毛 頭 顔 首 心 時 曜 朝 昼 夜 分 週 春 夏 秋 冬 今 新 古 間 方 北 南 東 西 遠 近 前 後 内 外 場 地 国 園 谷 野 原 里 市 京 風 雪 雲 池 海 岩 星 室 戸 家 寺 通 門 道 話 言 答 声 聞 語 読 書 記 紙 画 絵 図 工 教 晴 思 考 知 才 理 算 作 元 食 肉 馬 牛 魚 鳥 羽 鳴 麦 米 茶 色 黄 黒 来 行 帰 歩 走 止 活 店 買 売 午 汽 弓 回 会 組 船 明 社 切 電 毎 合 当 台 楽 公 引 科 歌 刀 番 用 何 ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_kannada" translatable="false"><![CDATA[
+    ಅ ಆ ಇ ಈ ಉ ಊ ಋ ೠ ಎ ಏ ಐ ಒ ಓ ಔ ಅಂ ಅಃ ಕ ಖ ಗ ಘ ಙ ಚ ಛ ಜ ಝ ಞ ಟ ಠ ಡ ಢ ಣ ತ ಥ ದ ಧ ನ ಪ ಫ ಬ ಭ ಮ ಯ ರ ಲ ವ ಶ ಷ ಸ ಹ ಳ ಕ್ಷ ಜ್ಞ  § ₹
+    ]]></string>
+
+    <string name="font_khmer" translatable="false"><![CDATA[
+    ក ខ គ ឃ ង ច ឆ ជ ឈ ញ ដ ឋ ឌ ឍ ណ ត ថ ទ ធ ន ប ផ ព ភ ម យ រ ល វ ស ហ ឡ អ ?!(%)#@/&<-+=>$:;,.*
+    ]]></string>
+
+    <string name="font_korean" translatable="false"><![CDATA[
+    가 개 갸 거 게 겨 고 괴 괘 교 구 귀 궤 규 그 긔 기 나 내 냐 너 네 녀 노 뇌 놰 뇨 누 뉘 눼 뉴 느 늬 니 다 대 댜 더 데 뎌 도 되 돼 됴 두 뒤 뒈 류 드 듸 디 라 래 랴 러 레 려 로 뢰 뢔 료 루 뤼 뤠 류 르 릐 리 마 매 먀 머 메 며 모 뫼 뫠 묘 무 뮈 뭬 뮤 므 믜 미 바 배 뱌 버 베 벼 보 뵈 봬 뵤 부 뷔 붸 뷰 브 븨 비 사 새 샤 서 세 셔 소 쇠 쇄 쇼 수 쉬 쉐 슈 브 븨 비 아 애 야 어 에 여 오 외 왜 요 우 위 웨 유 으 의 이 자 재 쟈 저 제 져 조 죄 좨 죠 주 쥐 줴 쥬 즈 즤 지 차 채 챠 처 체 쳐 초 최 쵀 쵸 추 취 췌 츄 츠 츼 치 카 캐 캬 커 케 켜 코 쾨 쾌 쿄 쿠 퀴 퀘 큐 크 킈 키 타 태 탸 터 테 텨 토 퇴 퇘 툐 투 튀 퉤 튜 트 틔 티 파 패 퍄 퍼 페 펴 포 푀 퐤 표 푸 퓌 풰 퓨 프 픠 피 하 해 햐 허 헤 혀 호 회 홰 효 후 휘 훼 휴 흐 희 히 ?“!”(%)[#]{@}/&\<-+÷×=>®©:;,.*
+    ]]></string>
+
+    <string name="font_latin" translatable="false"><![CDATA[
+    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_latin_extended" translatable="false"><![CDATA[
+    ABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽabcčćdđefghijklmnopqrsštuvwxyzž ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+    <string name="font_malayalam" translatable="false"><![CDATA[
+    അ ആ ഇ ഈ ഉ ഊ ഋ എ ഏ ഐ ഒ ഓ ഔ അം അഃ ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ത ഥ ദ ധ ന പ ഫ ബ ഭ മ യ ര ല വ ശ ഷ സ ഹ ള ഴ റ ഽ  ₹
+    ]]></string>
+
+    <string name="font_myanmar" translatable="false"><![CDATA[
+    က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ရ လ ဝ သ ဟ ဠ အ ဣ ဤ ဥ ဦ ဧ ဩ ဪ ဿ ၌ ၍ ၎ ၏ ‘?’“!”(%)[#]{@}/&\<-+×=>$:;,.*
+    ]]></string>
+
+    <string name="font_oriya" translatable="false"><![CDATA[
+    ଅ ଆ ଇ ଈ ଉ ଊ ଋ ୠ ଌ ୡ ଏ ଐ ଓ ଔ କ ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ ଢ ଣ ତ ଥ ଦ ଧ ନ ପ ଫ ବ ଵ ଭ ମ ଯ ର ଳ ୱ ଶ ଷ ସ ହ ୟ ଲ ₹
+    ]]></string>
+
+    <string name="font_sinhala" translatable="false"><![CDATA[
+    අ ආ ඇ ඈ ඉ ඊ උ ඌ ඍ ඎ එ ඒ ඓ ඔ ඕ ඖ අං අඃ ක ඛ ග ඝ ඞ ඟ ච ඡ ජ ඣ ඥ ඤ ට ඨ ඩ ඪ ණ ඬ ත ථ ද ධ න ඳ ප ඵ බ භ ම ඹ ය ර ල ව ශ ෂ ස හ ළ ෆ ෴
+    ]]></string>
+
+    <string name="font_tamil" translatable="false"><![CDATA[
+    க் ங் ச் ஞ் ட் ண் த் ந் ப் ம் ய் ர் ல் வ் ழ் ள் ற் ன் ஶ் ஜ் ஷ் ஸ் ஹ் க்ஷ் அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ௳ ௴ ௵ ௶ ௷ ௸ ௹ ௺ ள வ
+    ]]></string>
+
+    <string name="font_telugu" translatable="false"><![CDATA[
+    అ ఆ ఇ ఈ ఉ ఊ ఋ ఎ ఏ ఐ ఒ ఓ ఔ అం అః క ఖ గ ఘ జ్ఞ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ల వ ళ శ ష స హ ఱ ₹
+    ]]></string>
+
+    <string name="font_thai" translatable="false"><![CDATA[
+    ก ข ค ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ ม ย ร ล ว ศ ษ ส ห ฬ อ ฮ ะ า เ ใ ไ โ ฤ ฤๅ ๆ ฯ ฯลฯ ๏ ๚ ๛ ฿
+    ]]></string>
+
+    <string name="font_tibetan" translatable="false"><![CDATA[
+    ཀ ཁ ག ང ཅ ཆ ཇ ཉ ཏ ཐ ད ན པ ཕ བ མ ཙ ཚ ཛ ཝ ཞ ཟ འ ཡ ར ལ ཤ ས ཧ ཨ
+    ]]></string>
+
+    <string name="font_vietnamese" translatable="false"><![CDATA[
+    AĂÂBCDĐEÊGHIKLMNOÔƠPQRSTUƯVXYaăâbcdđeêghiklmnoôơpqrstuưvxy ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
+    ]]></string>
+
+</resources>

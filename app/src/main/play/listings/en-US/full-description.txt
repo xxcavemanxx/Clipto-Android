@@ -1,0 +1,103 @@
+Clipto is a new way to organize your daily work with important or temporary notes, snippets, clipboard history and files when you need to do it quickly, conveniently and reliably.
+
+
+SYNC WITH MAC, WINDOWS, LINUX AND BROWSER
+Try Clipto on the web and download the desktop apps from our site https://clipto.pro.
+Clipto keeps everything in sync.
+
+
+WORK OFFLINE
+Each action works completely offline. If you want your notes to be synced across all your devices, just sign in with the same account. If not, just do not sign in and use manual import/export capabilities. It is fully up to you.
+
+
+TAKE NOTES FROM CLIPBOARD
+Clipto can be used as a clipboard manager even on Android 10!
+
+
+ACTIVATE UNIVERSAL CLIPBOARD
+With Universal Clipboard, you can copy notes on one device, then paste the content on another.
+
+
+SCAN BARCODES
+Clipto lets use your Camera to capture notes and save it into the app.
+On-device Barcode Scanning reads most standard formats (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR Code).
+
+
+ADD FILES
+In Clipto you can store any files (not only images or photos)
+
+
+PERSONALIZE
+Once installed Clipto allows you to customize any smallest behavior according to your needs:
+• Theme (White, Sepia, Green, Dark, Dark Blue, Dark Blurple, AMOLED Black)
+• List style (Grid, Comfortable List, Condensed List, Preview List)
+• Sort By fields (create date, usage date, usage count, title, text, tags, size, characters)
+• Text Size (for both list and note screen)
+• Text Font (for both list and note screen)
+• Swipe actions in the main list
+
+
+SHARE
+Create a public link on a note and make it accessible on the Web without registration.
+Public links can have any combination of the following attributes:
+• User defined password
+• One-time access
+• Delayed access
+• Expire time
+
+
+BOOST YOUR PRODUCTIVITY
+Clipto is designed for simplicity and provides all possible methods for taking notes:
+✔ Notification actions - access the most recent notes and one-tap actions with them;
+✔ Contextual actions - access extended features over the selected text in any active application;
+✔ Notes from clipboard - save notes from the clipboard and use it later as a clipboard history;
+✔ Clipboard actions - extract parts of notes from the clipboard and use it with one-tap actions;
+✔ Share actions - capture notes from any shared text or file;
+✔ In-app editor - create notes in Plain text, Markdown, HTML;
+✔ One-tap actions
+    • Text to Speech
+    • Compose an Email
+    • Compose an SMS
+    • Compose a Tweet
+    • Add a calendar event
+    • Insert a contact
+    • Web Search
+    • Wikipedia Search
+    • YouTube Search
+    • Google Translate
+    • Share with…
+    • Copy to the clipboard
+    • Send as QR Code
+    • Send as Txt
+    • Send as Pdf
+    • Send as Markdown
+    • Open a web page
+    • Save contact email
+    • Save contact phone
+    • Dial a phone number
+
+
+IMPORT FROM OTHER NOTES APPS AND CLIPBOARD MANAGERS
+You asked for ability to import your notes from some popular applications. So we did it and now officially support the following backup's formats:
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+• Clipboard Manager
+• Google Keep (takeout zip)
+
+
+GET INVOLVED IN THE DEVELOPMENT PROCESS
+Any new feature that we add to the app is the result of user's feedback. You use the app and you guide its development with our labor help:)
+Just create your request on Github - https://github.com/clipto-pro/Android
+
+
+TRANSLATE THE APP INTO YOUR LANGUAGE
+Thanks to all our contributors who help us to stay free and concentrate on new features!
+If Clipto is not translated (or partially, or wrongly) on your language please help us here - https://crowdin.com/project/clipto
+
+
+BECOME PART OF OUR COMMUNITY
+Join us on Reddit - https://www.reddit.com/r/cliptopro
+Join us on Discord - https://discord.gg/c72ZgGe
+
+Thanks!

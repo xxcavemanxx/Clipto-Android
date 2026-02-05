@@ -1,0 +1,104 @@
+Clipto è un nuovo modo di organizzare il tuo lavoro quotidiano con note importanti o temporanee in modo rapido, conveniente ed affidabile.
+
+
+SINCRONIZZA CON MAC, WINDOWS, LINUX E BROWSER
+Prova Clipto sul web e scarica le app desktop dal nostro sito https://clipto.pro.
+Clipto mantiene tutto sincronizzato.
+
+
+LAVORA OFFLINE
+Ogni azione funziona totalmente offline. Se vuoi che le tue note siano sincronizzate in tutti i tuoi dispositivi, accedi con lo stesso profilo. Sennò, non registrarti e usa le capacità manuali di import/export. Tutto dipende da te.
+
+
+PRENDI LE NOTE DAGLI APPUNTI
+Clipto si può usare come gestore di appunti anche su Android 10!
+
+
+ATTIVA GLI APPUNTI UNIVERSALI
+Con Appunti Universali, puoi copiare le note su un dispositivo ed incollarle su un altro.
+
+
+SCANSIONA CODICI A BARRE
+Clipto usa la tua Fotocamera per catturare le note e salvarle nell'app.
+La scansione integrata dei Codici a Barre legge quasi tutti i formati standard (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR Code).
+
+
+AGGIUNGI FILE
+In Clipto puoi memorizzare ogni file (non solo immagini o foto)
+
+
+PERSONALIZZA
+Una volta installato, con Clipto puoi personalizzare ogni piccolo comportamento in base ai tuoi bisogni:
+• Tema (Bianco, Seppia, Verde, Scuro, Blu Scuro, Violaceo Scuro, Nero AMOLED)
+• Stile elenco (Griglia, Anteprima Elenco, Lista Comoda e Condensata)
+• Ordina Per campi (data di creazione, data d'uso, conto utilizzi, titolo, testo, tag, dimensione, caratteri)
+• Dimensione Testo (per elenchi e schermate di note)
+• Font Testo (per elenchi e schermate di note)
+• Scorri le azioni nell'elenco principale
+
+
+CONDIVIDI
+Crea un link pubblico su una nota e rendilo accessibile sul sito senza registrazione.
+I link pubblici possono avere ogni combinazione di questi attributi:
+• Password data dall'utente
+• Accesso singolo
+• Accesso ritardato
+• Orario di scadenza
+
+
+INCENTIVA LA TUA PRODUTTIVITÀ
+Clitpo è progettato per la semplicità e fornisce tutti metodi possibili per prendere note:
+✔ Azioni di notifica - accedi alle note più recenti e le azioni con un tocco con esse;
+✔ Azioni contestuali - accedi alle funzioni estese sul testo selezionato in ogni app attiva;
+✔ Note dagli appunti - salva le note dagli appunti ed usale dopo come cronologia appunti;
+✔ Azioni appunti - estrai parti delle note dagli appunti ed usale con azioni ad un tocco;
+✔ Condividi azioni - cattura note da ogni testo o file condiviso;
+✔ Editor in-app - crea le note in testo Semplice, Markdwon, HTML;
+✔ Azioni ad un tocco
+    • Sintesi Vocale
+    • Componi un'Email
+    • Componi un SMS
+    • Componi un Tweet
+    • Aggiungi un evento del calendario
+    • Inserisci contatto
+    • Ricerca Web
+    • Ricerca Wikipedia
+    • Ricerca YouTube
+    • Google Translate
+    • Condividi con…
+    • Copia negli appunti
+    • Invia come Codice QR
+    • Invia come Txt
+    • Invia come Pdf
+    • Invia come Markdown
+    • Apri una pagina web
+    • Salva contatto email
+    • Salva contatto telefonico
+    • Chiama un numero telefonico
+
+
+IMPORTA DA ALTRE APP DI NOTE E GESTORI DI APPUNTI
+Avete richiesto l'abilità di importare le tue note da alcune app popolari. Quindi ora supportiamo ufficialmente questi formati di backup:
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+• Gestore di Appunti
+• Google Keep (estrazione zip)
+
+
+PARTECIPA AL PROCESSO DI SVILUPPO
+Ogni nuova funzione che aggiungiamo all'app è il risultato del feedback degli utenti. Usi l'app e ne guidi lo sviluppo con il nostro aiuto lavorativo:)
+Crea solo la tua richiesta su GitHub - https://github.com/clipto-pro/Android
+
+
+TRADUCI L'APP NELLA TUA LINGUA
+Grazie ai nostri collaboratori che ci aiutano a rimanere gratis e concentrarci sulle nuove funzioni!
+Se Clipto non è tradotta (in parte, o male) nella tua lingua, per favore aiutaci qui - https://crowdin.com/project/clipto
+
+
+UNISCITI ALLA NOSTRA COMMUNITY
+Unisciti a noi su Reddit - https://www.reddit.com/r/clitpopro
+Seguici su Twitter - https://twitter.com/ClitpoPro
+Mettici Mi Piace e Condividici su Facebook - https://www.facebook.com/cliptopro
+
+Grazie!

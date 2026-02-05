@@ -1,0 +1,104 @@
+O Clipto é uma nova maneira de organização diária com notas importantes ou temporárias, quando precisar, de forma rápida, conveniente e confiável.
+
+
+SINCRONIZE COM MAC, WINDOWS, LINUX E NAVEGADOR
+Experimente o Clipto na web e baixe os apps para desktop do nosso site https://clipto.pro.
+O Clipto deixa tudo sincronizado.
+
+
+TRABALHE OFFLINE
+Cada ação funciona de forma offline. Se você deseja suas notas sincronizadas entre todos os dispositivos, faça login na mesma conta. Se preferir, não logue e use recursos de importação/exportação manual. Você decide.
+
+
+TOME NOTAS
+O Clipto pode ser usado para gerenciar a área de transferência até no Android 10!
+
+
+USE AS ANOTAÇÕES UNIVERSAIS
+Com as Anotações Universais, você pode copiar em um dispositivo e colar em outro.
+
+
+ESCANEIE CÓDIGOS DE BARRA
+O Clipto permite usar sua Câmera para capturar notas e salvá-las no app.
+O scan de Códigos de Barras lê a maioria dos formatos padrão (Codabar, Cód 39, 93, 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR Code).
+
+
+ADICIONE ARQUIVOS
+No Clipto você pode armazenar qualquer arquivo (não apenas imagens/fotos)
+
+
+PERSONALIZE
+Quando instalado, o Clipto permite customizar todo comportamento de acordo com sua necessidade:
+• Tema (Branco, Sépia, Verde, Escuro, Azul Escuro, Burple Escuro, Preto AMOLED)
+• Estilo de lista (Grade, Confortável, Densa ou Pré-visualização)
+• Organizar Por (data de criação, data/número de uso, título, texto, marcadores, tamanho, caracteres)
+• Tamanho do Texto (para ambas telas de lista e nota)
+• Fonte do Texto (para ambas telas de lista e nota)
+• Ações de deslize na lista principal
+
+
+COMPARTILHE
+Crie um link público numa nota e torne acessível na Web sem cadastro.
+Links públicos podem ter qualquer combinação dos atributos:
+• Senha definida por você
+• Acesso único
+• Acesso tardio
+• Data de validade
+
+
+MELHORE SUA PRODUTIVIDADE
+O Clipto foi feito para simplicidade e dá todos os meios de anotações:
+✔ Ações de notificação - acesse notas mais recentes e com um toque;
+✔ Ações contextuais - acesse recursos amplos sobre a seleção em qualquer app aberto;
+✔ Notas da área de transferência - salve as notas da área de transferência e use-as depois como histórico dela;
+✔ Ações rápidas - extraia partes das notas da área de transferência e use-as com apenas um toque;
+✔ Compartilhe ações - faça notas de qualquer texto/arquivo compartilhado;
+✔ Editor do app - crie notas em Texto sem Formatação/Markdown/HTML;
+✔ Ações de um toque
+    • Texto para Fala
+    • Escrever um E-mail
+    • Escrever um SMS
+    • Tuitar
+    • Adicionar evento de calendário
+    • Inserir contato
+    • Pesquisa na Web
+    • Pesquisar na Wikipédia
+    • Pesquisar no YouTube
+    • Google Tradutor
+    • Compartilhar com…
+    • Copiar para área de transferência
+    • Enviar como Código QR
+    • Enviar como Txt
+    • Enviar como Pdf
+    • Enviar como Markdown
+    • Abrir página web
+    • Salvar e-mail de Contato
+    • Salvar contato de telefone
+    • Discar número de telefone
+
+
+IMPORTE DE OUTROS APPS DE NOTAS E GERENCIADORES DE ÁREA DE TRANSFERÊNCIA
+Solicitaram a capacidade de importar anotações de outros apps populares. Foi o que fizemos e agora suportamos os seguintes formatos de backup:
+• JSON do Clipper+
+• JSON do Simplenote
+• Clip Stack
+• Clipboard Manager
+• Google Keep (takeout zip)
+
+
+ENVOLVA-SE NO DESENVOLVIMENTO
+Novos recursos que adicionamos ao aplicativo são vindos do seu feedback. Você usa o app e orienta o desenvolvimento com nosso apoio :)
+Basta criar sua solicitação no Github: https://github.com/clipto-pro/Android
+
+
+TRADUZA PARA O SEU IDIOMA
+Obrigado a todos que ajudaram a mantê-lo gratuito e nos focar em novos recursos!
+Se o Clipto não estiver traduzido (parcialmente ou incorretamente) no seu idioma, ajude-nos aqui: https://crowdin.com/project/clipto
+
+
+FAÇA PARTE DA COMUNIDADE
+Junte-se a nós no Reddit: https://www.reddit.com/r/cliptopro
+Siga-nos no Twitter: https://twitter.com/CliptoPro
+Curta e Compartilhe-nos no Facebook: https://www.facebook.com/cliptopro
+
+Obrigado!

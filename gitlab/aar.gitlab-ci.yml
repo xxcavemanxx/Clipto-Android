@@ -1,0 +1,77 @@
+image: alvrme/alpine-android:android-29
+
+before_script:
+  # gradle cache
+  - chmod +x ./gradlew
+  - export GRADLE_USER_HOME=/cache/.gradle
+
+  # ssh access to git repository
+  - apk update && apk add git openssh-client
+  - eval $(ssh-agent -s)
+  - echo "$GIT_SSH_KEY" | ssh-add -
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+  # git user config
+  - git config user.name "Gitlab CI Agent"
+  - git config user.email "ci@gitlab.com"
+  - git remote set-url origin $GIT_SSH_URL
+  - git checkout -f $CI_COMMIT_REF_NAME
+  - git pull origin $CI_COMMIT_REF_NAME
+
+stages:
+  - tests
+  - incrementVersion
+  - snapshot
+  - release
+
+unitTests:
+  stage: tests
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  script:
+    - ./gradlew -g /cache/.gradle unitTests testDebugUnitTest --stacktrace
+
+integrationTests:
+  stage: tests
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  script:
+    - ./gradlew -g /cache/.gradle integrationTests --stacktrace
+
+incrementVersion:
+  stage: incrementVersion
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  only:
+    - stage
+  script:
+    - ./gradlew -g /cache/.gradle incrementAarModuleVersion --stacktrace
+
+snapshot:
+  stage: snapshot
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  only:
+    - stage
+  script:
+    - ./gradlew -g /cache/.gradle assembleRelease publishAarPublicationToMavenRepository --stacktrace
+
+release:
+  stage: release
+  cache:
+    paths:
+      - $GRADLE_USER_HOME/caches/
+      - $GRADLE_USER_HOME/wrapper/
+  only:
+    - master
+  script:
+    - ./gradlew -g /cache/.gradle assembleRelease publishAarPublicationToMavenRepository --stacktrace

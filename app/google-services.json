@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "909984326025",
+    "firebase_url": "https://wb-clipto.firebaseio.com",
+    "project_id": "wb-clipto",
+    "storage_bucket": "wb-clipto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909984326025:android:e872108a4c72f281",
+        "android_client_info": {
+          "package_name": "com.wb.clipboard.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909984326025-cprhdhhfucpq8c84jrntpd89maq5lk59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wb.clipboard.debug",
+            "certificate_hash": "1b7d98f43c471ce07f4d6357489f7784993712ca"
+          }
+        },
+        {
+          "client_id": "909984326025-149502ltoo4qtupc4q0qe72h2jt9tk2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQVM4P1xcIJtrWkOTmAoMVcTlf4rc_Z_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909984326025-149502ltoo4qtupc4q0qe72h2jt9tk2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909984326025:android:431452b8b3400c15",
+        "android_client_info": {
+          "package_name": "com.wb.clipboard.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909984326025-33ijuoudcs5nrdt66o8dcv0nkt7balnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wb.clipboard.pro",
+            "certificate_hash": "a389236961675178ba4aa34a33e4c45f789026cf"
+          }
+        },
+        {
+          "client_id": "909984326025-7r1qk5o9dekbhqjq2h02cffrpjd1t7nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wb.clipboard.pro",
+            "certificate_hash": "b3031791c160dd6956ff50c6c96824d93fbdb94f"
+          }
+        },
+        {
+          "client_id": "909984326025-149502ltoo4qtupc4q0qe72h2jt9tk2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQVM4P1xcIJtrWkOTmAoMVcTlf4rc_Z_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909984326025-149502ltoo4qtupc4q0qe72h2jt9tk2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

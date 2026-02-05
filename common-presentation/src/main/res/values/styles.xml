@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyCommonStyles">
+        <attr name="actionIconColorHighlight" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MyThemeAttributes">
+        <attr name="colorContext" format="color" />
+    </declare-styleable>
+
+    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:navigationBarColor">?colorContext</item>
+    </style>
+
+</resources>

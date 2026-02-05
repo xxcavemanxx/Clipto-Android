@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="?attr/colorAccent" android:state_enabled="true" android:state_selected="true" />
+    <item android:color="?attr/colorPrimaryInverse" android:state_enabled="true" />
+    <item android:color="?attr/colorPrimaryInverse" />
+
+</selector>

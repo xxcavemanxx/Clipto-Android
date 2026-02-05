@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <View
+        android:id="@+id/vAction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground" />
+
+    <ImageView
+        android:id="@+id/ivDrag"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:layout_marginStart="-2dp"
+        android:padding="?actionIconPadding"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/action_drag"
+        app:tint="?android:textColorSecondary"
+        tools:ignore="ContentDescription" />
+
+    <TextViewNotTouchable
+        android:id="@+id/tvText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:textAlignment="gravity"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivDelete"
+        app:layout_constraintStart_toEndOf="@id/ivDrag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="16dp"
+        app:layout_goneMarginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="?actionIconSize"
+        android:layout_height="?actionIconSize"
+        android:layout_marginEnd="4dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="?actionIconPadding"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/action_delete"
+        app:tint="?android:textColorSecondary"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayoutExt>

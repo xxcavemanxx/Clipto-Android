@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iconView"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/bg_rounded"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/public_link_access_time"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/iconView"
+            app:layout_constraintTop_toBottomOf="@id/iconView"
+            tools:text="@string/public.note.link.access_time" />
+
+        <TextView
+            android:id="@+id/descriptionView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/titleView"
+            tools:text="@string/public.note.link.access_time.description" />
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="4dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/descriptionView"
+            tools:text="@string/public.note.link.access_time.label" />
+
+        <EditText
+            android:id="@+id/timeValueView"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_border_rounded_sm"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/timeValueTypeView"
+            app:layout_constraintStart_toStartOf="@id/timeLabel"
+            app:layout_constraintTop_toBottomOf="@id/timeLabel" />
+
+        <TextView
+            android:id="@+id/timeValueTypeView"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_border_rounded_selectable_sm"
+            android:drawableEnd="@drawable/ic_drop_down_md"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toBottomOf="@id/timeValueView"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintStart_toEndOf="@id/timeValueView"
+            app:layout_constraintTop_toTopOf="@id/timeValueView"
+            tools:text="hours" />
+
+        <TextView
+            android:id="@+id/timeOr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/public.note.link.time.or"
+            android:textAllCaps="true"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/timeValueView" />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="4dp"
+            android:text="@string/public.note.link.time.label"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/timeOr" />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_border_rounded_selectable_sm"
+            android:drawableStart="@drawable/ic_date_picker"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/common_mask_date"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toBottomOf="@id/dateMinutesView"
+            app:layout_constraintEnd_toStartOf="@id/dateHoursView"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toTopOf="@id/dateMinutesView" />
+
+        <TextView
+            android:id="@+id/dateHoursView"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_border_rounded_selectable_sm"
+            android:drawableEnd="@drawable/ic_drop_down_md"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toBottomOf="@id/dateMinutesView"
+            app:layout_constraintEnd_toStartOf="@id/dateMinutesView"
+            app:layout_constraintTop_toTopOf="@id/dateMinutesView"
+            tools:text="23" />
+
+        <TextView
+            android:id="@+id/dateMinutesView"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_border_rounded_selectable_sm"
+            android:drawableEnd="@drawable/ic_drop_down_md"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/dateLabel"
+            tools:text="59" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelAction"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/menu.cancel"
+            android:textAllCaps="false"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/applyAction"
+            app:layout_constraintStart_toStartOf="@id/titleView"
+            app:layout_constraintTop_toBottomOf="@id/dateView"
+            app:strokeColor="?android:textColorPrimary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/applyAction"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/button.apply"
+            android:textAllCaps="false"
+            android:textColor="?textColorOnSurface"
+            app:backgroundTint="?colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/cancelAction"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintStart_toEndOf="@id/cancelAction"
+            app:layout_constraintTop_toTopOf="@id/cancelAction" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

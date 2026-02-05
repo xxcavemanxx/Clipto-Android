@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottomSheetRoundedTopSpace">0dp</dimen>
+    <dimen name="bottomSheetSettingsTopSpace">8dp</dimen>
+    <dimen name="bottomSheetSettingsEndSpace">8dp</dimen>
+    <dimen name="actionIconPadding">12dp</dimen>
+    <dimen name="actionIconSize">48dp</dimen>
+</resources>

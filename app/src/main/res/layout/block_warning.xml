@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/bg_warning"
+    android:drawablePadding="8dp"
+    android:focusable="true"
+    android:fontFamily="sans-serif"
+    android:padding="8dp"
+    android:text="@string/settings.track_clipboard.q.message"
+    android:textColor="#fff"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:drawableEndCompat="@drawable/bg_warning_more" />

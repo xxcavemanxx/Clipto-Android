@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Xuống dòng</string>
+    <string name="common_separator_space">Khoảng trắng</string>
+    <string name="common_separator_comma">Dấu phẩy</string>
+    <string name="confirm_exit_edit_mode_title">Exit edit mode?</string>
+    <string name="confirm_exit_edit_mode_description">All unsaved changes will be lost.</string>
+    <string name="confirm_delete_note_title">Delete note?</string>
+    <string name="confirm_delete_note_description">Selected note will be deleted.</string>
+    <string name="link_preview_label">Đang tải bản xem trước…</string>
+    <string name="link_preview_not_found">No preview</string>
+    <string name="link_preview_hide">Ẩn xem trước</string>
+    <string name="link_preview_show">Hiện xem trước</string>
+    <string name="toast_downloaded">Downloaded %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Nhấn \"Trở về\" lần nữa để thoát</string>
+    <string name="essentials.errors.unknown">Lỗi không xác định. Vui lòng thử lại</string>
+    <string name="error_data_empty">Không dữ liệu nào được tìm thấy.</string>
+    <string name="error.unexpected">Một lỗi bất ngờ đã xảy ra</string>
+    <string name="error.unexpected.send">Nhấn nút \'Lỗi\' để báo cáo lỗi</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Đánh giá</string>
+    <string name="menu.edit">Chỉnh sửa</string>
+    <string name="menu.clear">Xóa bộ lọc</string>
+    <string name="menu.clear_all">Xóa tất cả</string>
+    <string name="menu.share">Chia sẻ</string>
+    <string name="menu.fav">Đã gắn sao</string>
+    <string name="menu.delete">Xóa</string>
+    <string name="menu.empty">Dọn dẹp</string>
+    <string name="menu.cancel">Hủy</string>
+    <string name="menu.settings">Cài đặt</string>
+    <string name="menu.display_options">Tùy chọn hiển thị</string>
+    <string name="menu.faq">Các câu hỏi thường gặp.</string>
+    <string name="menu.new">Tạo mới</string>
+    <string name="menu.search">Tìm kiếm</string>
+    <string name="menu.print">In</string>
+    <string name="menu.restore">Khôi phục</string>
+    <string name="menu.merge">Ghép</string>
+    <string name="menu.copy_link">Sao chép liên kết</string>
+    <string name="menu.share_link">Chia sẻ liên kết</string>
+    <string name="menu.save_as">Lưu thành…</string>
+    <string name="menu.rename">Đổi tên</string>
+    <string name="menu.paste">Dán</string>
+    <string name="menu.copy">Sao chép</string>
+    <string name="menu.cut">Cắt</string>
+    <string name="menu.fullscreen.enter">Vào chế độ toàn màn hình</string>
+    <string name="menu.fullscreen.exit">Thoát chế độ toàn màn hình</string>
+    <string name="menu_close">Close</string>
+    <string name="button.update">Cập nhật</string>
+    <string name="button.install">Tải xuống</string>
+    <string name="button.uninstall">Gỡ cài đặt</string>
+    <string name="button.done">Xong</string>
+    <string name="button.undo">Hoàn tác</string>
+    <string name="button.apply">Áp dụng</string>
+    <string name="button.change">Thay đổi</string>
+    <string name="button.save">Lưu</string>
+    <string name="button.create">Tạo</string>
+    <string name="button.send">Gửi</string>
+    <string name="button.preview">Xem trước</string>
+    <string name="button.confirm">Xác nhận</string>
+    <string name="button.sync">Đồng bộ ngay</string>
+    <string name="button.yes">Có</string>
+    <string name="button.no">Không</string>
+    <string name="button.back">Trở lại</string>
+    <string name="button.continue">Tiếp tục</string>
+    <string name="button.finish">Hoàn tất</string>
+    <string name="button.got_it">Hiểu rồi!</string>
+    <string name="button.get_started">Bắt đầu</string>
+    <string name="button.example">Ví dụ</string>
+    <string name="button_try_again">Thử lại</string>
+    <string name="button_insert">Chèn</string>
+    <string name="button_refresh">Làm mới</string>
+    <string name="notification.title.empty">Bộ nhớ đệm đang trống</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Trở lại</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Viết tắt</string>
+    <string name="common.label.description">Mô tả</string>
+    <string name="common.action.confirm">Confirm the chosen action</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Thẻ mới</string>
+    <string name="tag.new.name">Tên thẻ</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Move to folder</string>
+    <!-- MAIN -->
+    <string name="main.search">Tìm kiếm ghi chú</string>
+    <string name="main.filter.all">Tất cả</string>
+    <string name="main.filter.no_tags">Chưa có thẻ</string>
+    <string name="main.filter.filtered">Được lọc</string>
+    <string name="main.delete_selected.title">Xóa (các) ghi chú đã chọn?</string>
+    <string name="main.delete_selected.description">Tất cả những ghi chú được chọn sẽ bị xoá.</string>
+    <string name="main.delete_merged.title">Xóa những ghi chú được gộp?</string>
+    <string name="main.delete_merged.description">Những ghi chú được gộp sẽ bị xoá vĩnh viễn.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Không tìm thấy ghi chú.</string>
+    <string name="main.list.empty.caption">Chú ý: mỗi danh mục có hệ thống sắp xếp riêng biệt và tất cả những cài đặt có thể. Bạn có thể thay đổi những  cài đặt này bất cứ lúc nào từ danh sách (%s) hoặc từ bảng định hướng bên trái (%s).</string>
+    <string name="main.list.empty.caption.three_dot">bảng chọn ba chấm</string>
+    <string name="main.list.empty.caption.long_tap">nhấn giữ tại danh mục</string>
+    <string name="main.list.empty.description.all">Danh mục tổng quát. Hiển thị tất cả ghi chú.</string>
+    <string name="main.list.empty.description.no_tags">Hiển thị những ghi chú không được gắn thẻ.</string>
+    <string name="main.list.empty.description.tags">Hiển thị những ghi chú và tập tin được đánh dấu với thẻ được chọn.</string>
+    <string name="main.list.empty.description.filtered">Không có ghi chú nào phù hợp với các bộ lọc được chọn.</string>
+    <string name="main.list.empty.description.starred">Hiển thị những  ghi chú được đánh dấu sao.</string>
+    <string name="main.list.empty.description.deleted">Hiển thị những ghi chú và tập tin đã bị xoá nhưng vẫn có thể được khôi phục. Những bản ghi bị xoá vẫn có các thẻ được gắn và các yếu tố khác, nhưng không hiển thị trong danh mục tương ứng.</string>
+    <string name="main.list.empty.description.clipboard">Hiển thị những ghi chú được tạo tự động bởi ứng dụng này từ bộ nhớ đệm. Theo mặc định, bộ nhớ đệm không bị theo dõi và có thể kích hoạt điều này trong phần cài đặt.</string>
+    <string name="main.list.empty.description.snippets">Hiển thị những ghi chú được sử dụng trong những ghi chú khác. Tất cả thay đổi đối với đoạn trích này được cập nhật tự động trong các ghi chú sử dụng nó.</string>
+    <string name="main.filter.snippets">Đoạn trích</string>
+    <string name="main.filter.filters">Bộ lọc</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">Tệp đính kèm</string>
+    <string name="main.filter.notes">Ghi chú</string>
+    <string name="main.filter.tags">Thẻ</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Remember last action</string>
+    <string name="main_action_settings_remember_description">When activated, the app will remember the last action and use it the next time you click the Floating Button. At the same time, a window with a list of all actions can be opened with a long tap on the Floating Button.</string>
+    <string name="main_action_folders_move_note_title">Existing Note</string>
+    <string name="main_action_folders_move_note_description">Move an existing note to the current folder</string>
+    <string name="main_action_folders_move_file_title">Existing File</string>
+    <string name="main_action_folders_move_file_description">Move an existing file to the current folder</string>
+    <string name="main_action_notes">Tạo ghi chú</string>
+    <string name="main_action_notes_new_title">Ghi chú mới</string>
+    <string name="main_action_notes_new_description">Tạo những ghi chú quan trọng và truy cập nó trên bất cứ thiết bị nào, vào bất cứ lúc nào</string>
+    <string name="main_action_notes_barcode_title">Quét mã vạch</string>
+    <string name="main_action_notes_barcode_description">Quết đường dẫn và kí tự rồi lưu nó vào trong ghi chú (đa số các mã vạch thường được hỗ trợ)</string>
+    <string name="main_action_notes_clipboard_title">Chép vào khay nhớ tạm</string>
+    <string name="main_action_notes_clipboard_description">Lấy dòng kí tự hiện tại trong khay nhớ tạm và lưu nó vào trong ghi chú</string>
+    <string name="main_action_notes_import_title">Nhập từ file</string>
+    <string name="main_action_notes_import_description">Tạo một ghi chú chú với chữ từ một tập tin (tập tin nặng tối đa %s kB)</string>
+    <string name="main_action_notes_import_error">Dung lượng tập tin không được quá %s kilobytes</string>
+    <string name="main_action_files">Thêm tập tin</string>
+    <string name="main_action_files_file_title">Chọn tập tin</string>
+    <string name="main_action_files_file_description">Thêm tập tin (hình ảnh, video, pdf, vv) tối đa %s MB</string>
+    <string name="main_action_files_photo_title">Chụp ảnh</string>
+    <string name="main_action_files_photo_description">Chụp một bức ảnh và lưu nó thành một ghi chú</string>
+    <string name="main_action_files_record_title">Quay Video</string>
+    <string name="main_action_files_record_description">Quay một video và lưu nó thành một ghi chú (video nặng tối đa %s MB)</string>
+    <string name="main_action_organize">Sắp xếp dữ liệu</string>
+    <string name="main_action_organize_tag_title">Thẻ mới</string>
+    <string name="main_action_organize_tag_description">Tạo một thẻ mới để sắp xếp những ghi chú và tập tin của bạn được tìm thấy dễ dàng hơn</string>
+    <string name="main_action_organize_filter_title">Bộ lọc mới</string>
+    <string name="main_action_organize_filter_description">Tạo một bộ lọc để tìm thông tin mà bạn muốn một cách nhanh chóng bằng cách sử dụng những bản mẫu làm sẵn</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">Giảm việc nhập lặp đi lặp lại</string>
+    <string name="main_action_snippets_snippet_title">Đoạn trích mới</string>
+    <string name="main_action_snippets_snippet_description">Tạo bản mẫu từ có thể sử dụng lại để tránh nhập lặp lại và những lỗi sai</string>
+    <string name="main_action_snippets_set_title">Bộ đoạn trích mới</string>
+    <string name="main_action_snippets_set_description">Tạo bộ đoạn trích mới để tìm đoạn trích chung nhanh nhất</string>
+    <string name="main.actions.save_and_start_new_note">Lưu và bắt đầu ghi chú mới</string>
+    <string name="main.actions.add_dynamic_value">Thêm giá trị biến thiên</string>
+    <string name="main.actions.add_attachment">Thêm tập tin đính kèm</string>
+    <string name="main.actions.sync_note">Đồng bộ ghi chú</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Vuốt sang trái</string>
+    <string name="main.swipe_actions.caption.right">Vuốt sang phải</string>
+    <string name="main.swipe_actions.fav">Đánh dấu sao</string>
+    <string name="main.swipe_actions.delete">Xóa</string>
+    <string name="main.swipe_actions.copy">Sao chép</string>
+    <string name="main.swipe_actions.none">Vô hiệu hóa</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Tìm kiếm Nâng cao</string>
+    <string name="filter.hint.text">Văn bản chứa</string>
+    <string name="filter.label.no_tags">Chưa có thẻ</string>
+    <string name="filter.label.fav">Được đánh dấu sao</string>
+    <string name="filter.label.platform">Nền tảng</string>
+    <string name="filter.label.snippets">Đoạn trích</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Ghi chú từ bộ nhớ đệm</string>
+    <string name="filter.clipboard.empty.title">Dọn dẹp những ghi chú từ bộ nhớ đệm?</string>
+    <string name="filter.clipboard.empty.description">Tất cả ghi chú từ bộ nhớ đệm (trừ những cái được đánh dấu sao và gắn thẻ) sẽ bị xoá vĩnh viễn.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Thùng rác</string>
+    <string name="filter.deleted.limit">Giới hạn</string>
+    <string name="filter.deleted.empty.title">Dọn dẹp thùng rác?</string>
+    <string name="filter.deleted.empty.description">Tất cả những ghi chú trong thùng rác sẽ bị xoá vĩnh viễn.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Giới hạn</string>
+    <string name="filter.limit.description">Khi số lượng ghi chú vượt quá giới hạn của danh mục, những ghi chú cũ vượt quá giới hạn sẽ bị xoá tự động khỏi danh mục.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Tên bộ lọc</string>
+    <string name="filter_error_name_required">Thẻ này cần có tên riêng biệt để được lưu</string>
+    <string name="filter_delete_title">Xóa thẻ \'%s\'?</string>
+    <string name="filter_delete_description">Thẻ sẽ bị xóa vĩnh viễn.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">Thẻ này cần có tên riêng biệt để được lưu</string>
+    <string name="filter.tag.rule.title">Tự động gắn</string>
+    <string name="filter.tag.rule.description">Nếu được chọn, thẻ sẽ được gắn tự động cho những ghi chú mới nếu có một trong những cụm từ được ngăn cách bởi dấu phẩy.</string>
+    <string name="filter.tag.rule.hint">Văn bản được ngăn cách bởi dấu phẩy</string>
+    <string name="filter.tag.delete.title">Xóa thẻ \'%s\'?</string>
+    <string name="filter.tag.delete.description">Thẻ sẽ bị xóa vĩnh viễn.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Thêm</string>
+    <string name="clip.hint.title">Ghi chú không tiêu đề</string>
+    <string name="clip.hint.tags">Nhấn ở đây để thêm thẻ</string>
+    <string name="clip.hint.text">Nhấn để thêm văn bản</string>
+    <string name="clip.snackbar.text.required">Phải có văn bản để lưu ghi chú này</string>
+    <string name="clip.snackbar.text.copied">Đã sao chép văn bản</string>
+    <string name="clip.attr.updated">Thời điểm sử dụng</string>
+    <string name="clip.attr.edited">Chỉnh sửa vào ngày</string>
+    <string name="clip.attr.created">Thời điểm tạo</string>
+    <string name="clip.attr.deleted">Xoá vào ngày</string>
+    <string name="clip.attr.usageCount">Số lần sử dụng</string>
+    <string name="clip.attr.charsCount">Số kí tự</string>
+    <string name="clip.attr.size">Kích cỡ</string>
+    <string name="clip_exit_without_save_title">Huỷ chỉnh sửa ghi chú?</string>
+    <string name="clip_exit_without_save_description">Tất cả thay đổi được tạo sẽ bị mất.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Lưu thành</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Tổng quan</string>
+    <string name="clip_details_tab_tags">Thẻ</string>
+    <string name="clip_details_tab_folder">Location</string>
+    <string name="clip_details_tab_attachments">Tệp đính kèm</string>
+    <string name="clip_details_tab_dynamic">Giá trị biến thiên</string>
+    <string name="clip_details_tab_snippets">Đoạn trích</string>
+    <string name="clip_details_tab_snippet_kits">Bộ đoạn trích</string>
+    <string name="clip_details_tab_dynamic_values">Giá trị</string>
+    <string name="clip_details_tab_dynamic_fields">Lĩnh vực</string>
+    <string name="clip_details_tab_attributes">Thuộc tính</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Thêm chữ vào ghi chú</string>
+    <string name="clip.info.label.note.insert.remember">Ghi nhớ lựa chọn của tôi và không hỏi lại (có thể gọi bảng chọn này bằng cách nhấn &amp; giữ).</string>
+    <string name="clip.info.label.note.create">Tạo ghi chú</string>
+    <string name="clip.info.label.position">Vị trí</string>
+    <string name="clip.info.label.beginning">Đầu</string>
+    <string name="clip.info.label.end">Cuối</string>
+    <string name="clip.info.label.tags.edit">Sửa thẻ</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Văn bản thuần</string>
+    <string name="clip.text.type.link">Đường dẫn</string>
+    <string name="clip.text.type.line_clickable">Văn bản kèm bộ nhớ đệm</string>
+    <string name="clip.text.type.word_clickable">Văn bản kèm token</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Tập đính kèm</string>
+    <string name="clip.add.attachment.tooltip">Tập đính kèm có thể là bất cứ tập tin nào (ảnh, video, pdf, v.v.) không lớn hơn %s megabytes.</string>
+    <string name="clip.add.dynamic.title">Giá trị biến thiên</string>
+    <string name="clip.add.dynamic.tooltip">Giá trị biến thiên là cách tạo ghi chú với dữ liệu được cập nhật. Trong chế độ xem, kí hiệu số hạng sẽ được thay thế bởi giá trị thực.</string>
+    <string name="clip.add.dynamic.value.date_time">Ngày/Thời gian</string>
+    <string name="clip.add.dynamic.value.platform">Nền tảng</string>
+    <string name="clip.add.dynamic.value.ip">Địa chỉ IP</string>
+    <string name="clip.add.dynamic.value.date">Ngày</string>
+    <string name="clip.add.dynamic.value.time">Thời gian</string>
+    <string name="clip.add.dynamic.value.month">Tháng</string>
+    <string name="clip.add.dynamic.value.timezone">Múi giờ</string>
+    <string name="clip.add.dynamic.value.month_number">Tháng (dạng số)</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Tháng (dạng số với chữ số 0 đứng đầu)</string>
+    <string name="clip.add.dynamic.value.year">Năm</string>
+    <string name="clip.add.dynamic.value.year_short">Năm (thu gọn)</string>
+    <string name="clip.add.dynamic.value.hour24">Giờ (đồng hồ 24 giờ)</string>
+    <string name="clip.add.dynamic.value.hour12">Giờ (đồng hồ 12 giờ)</string>
+    <string name="clip.add.dynamic.value.minutes">Phút</string>
+    <string name="clip.add.dynamic.value.seconds">Giây</string>
+    <string name="clip.add.dynamic.value.am_pm">Sáng/Chiều</string>
+    <string name="clip.add.dynamic.value.day_of_week">Thứ trong tuần</string>
+    <string name="clip.add.dynamic.value.day_of_month">Ngày trong tháng</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Ngày trong tháng (với chữ số 0 đứng đầu)</string>
+    <string name="clip.add.dynamic.value.random_digit">Chữ số ngẫu nhiên (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Chữ cái Latin ngẫu nhiên (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Đoạn trích</string>
+    <string name="clip.add.snippet.new.hint">Nhập văn bản để tìm hoặc tạo ghi chú</string>
+    <string name="clip.add.snippet.tooltip">Đoạn trích là ghi chú mà văn bản của nó được sử dụng cho nhiều ghi chú khác nhưng được chỉnh sửa ở một ghi chú duy nhất. Những đoạn trích được tạo có thể được truy cập từ bảng định hướng bên trái.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Kiểu chữ</string>
+    <string name="text.config.size">Cỡ chữ</string>
+    <string name="text.config.font">Font chữ</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Sắp xếp theo</string>
+    <string name="list.config.lines">Số dòng chữ được hiển thị</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Kiểu danh sách</string>
+    <string name="list.style.description">Kiểu danh sách ghi chú</string>
+    <string name="list.style.default">Mặc định</string>
+    <string name="list.style.comfortable">Thoải mái</string>
+    <string name="list.style.compact">Thu gọn</string>
+    <string name="list.style.preview">Xem trước</string>
+    <string name="list.style.grid">Lưới</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Kỹ năng Rune</string>
+    <string name="runes.hint.description"><![CDATA[Đây là một hình thức nâng cao chức năng của ứng dụng.
+    \n\n
+    Mỗi rune mở rộng hoặc sửa đổi chức năng cơ bản và cho phép bạn tùy chỉnh ứng dụng để đạt được năng suất tối ưu nhất với nó.
+    \n\n
+    Một số rune hữu ích hơn, một số thì ít hưu ích hơn, nhưng cách tiếp cận này khiến ứng dụng gần như vô hạn về khả năng.
+    \n\n
+    Kiểm tra các rune hiện có, kích hoạt những rune bạn muốn và gửi ý tưởng cho những rune mới để làm cho ứng dụng hiệu quả hơn một chút:)
+    
+    ]]></string>
+    <string name="runes_hotkeys_title">Người quản lí Hotkey</string>
+    <string name="runes_hotkeys_description"><![CDATA[Với rune này, bạn có thể cài đặt các phím nóng để điều khiển ứng dụng và các hành động bên trong nó.
+    \n
+    \n
+    Một số phím nóng được đặt bởi mặc định. Bạn có thể xoá chúng hoặc phân công lại chúng
+    \n
+    \n
+    ```
+    \n
+    Tuỳ vào hành động, phím nóng sẽ được quan sát bên trong lẫn bên ngoài ứng dụng.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Thiên văn đồng bộ hoá</string>
+    <string name="runes.instant_sync.description"><![CDATA[Chữ Rune mở ra một cơ hội:
+    \n
+    - tự động lưu toàn bộ dữ liệu lên đám mây;
+    \n
+    -truy cập nó ngay lập tức ở bất kì thiết bị nào;
+    \n
+    - không chỉ lưu mỗi ghi chú kí tự, mà còn có tập tin với mọi định dạng;
+    \n\n
+    Theo mặc định, ứng dụng hoạt động mà không cần đồng bộ hóa và lưu tất cả dữ liệu trên thiết bị.
+    \n
+    ```
+    \n
+    Sau khi bạn kích hoạt rune này, tất cả dữ liệu mới và dữ liệu mới đã tạo trước đó sẽ được tự động đồng bộ hóa vào bộ nhớ đám mây ngay khi có kết nối internet.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Khiên Sắt</string>
+    <string name="runes.pincode.description"><![CDATA[    The rune allows you to protect access to the application with a password.
+    \n\n
+    When activated, access will be blocked after **%s minutes** of inactivity.
+    \n\n
+    **Important:** if you forget your password, you will need to clear the application data. In this case, all unsynced changes will be lost.
+    ]]></string>
+    <string name="runes.theme.title">Chameleon Skin</string>
+    <string name="runes.theme.description"><![CDATA[    By default, the application uses a color scheme that automatically changes between light and dark depending on the system settings.
+    \n\n
+    You can activate any other theme that will look the same regardless of the system settings.
+    ]]></string>
+    <string name="runes.clipboard.title">Bộ nhớ đệm</string>
+    <string name="runes.clipboard.description"><![CDATA[    The rune allows the app to monitor the clipboard and automatically create notes with text from it.
+    \n\n
+    Once activated, the app will display a permanent notification in the status bar to be able to keep track of the buffer.
+    \n\n
+    ```
+    \n
+    If the notification is not displayed, the application is not running and the buffer will not be tracked until you run the application again.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Keyboard Companion</string>
+    <string name="runes.texpander.description"><![CDATA[    The rune gives you the ability to use the application to fill in input fields with existing notes in almost **any application**.
+    \n\n
+    Once activated, when you place focus in an input field, the app will display a floating panel with actions that allow you to control the content of the input field.
+    \n\n
+    #### Behavior features:
+    \n
+    - the panel can be resized;
+    \n
+    - the panel can be dragged anywhere on the screen;
+    \n
+    - the panel can be automatically modified depending on the possibility of using certain actions;
+    \n
+    - the panel can be automatically hidden if the field loses focus;
+    \n
+    - the panel can be manually hidden (using the top right action in the toolbar) until forced to be called again;
+    \n
+    - if the panel is not displayed, it can be explicitly called from the Notification Panel or Quick Settings (if the Tile is placed in the panel);
+    \n\n
+    #### Technical limitations:
+    \n
+    - the panel uses accessibility service and requires its activation in the system settings;
+    \n
+    - the panel uses a floating window to display on top of other applications and requires the corresponding permission in the system settings;
+    \n
+    - in some applications the automatic behavior of the panel is not possible, so it can be used with restrictions and explicit invocation;
+    \n\n
+    #### Notice:
+    \n
+    If the rune stops working after a while please read [this article](%s) how to keep the app running on your device. Or contact me by email, maybe you found some issue:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Kích hoạt</string>
+    <string name="runes.texpander.required.accessibility">Bấm vào đây, sau đó đến phần dịch vụ tải về (cài đặt) và kích hoạt dịch vụ Bàn Phím Đồng Hành.</string>
+    <string name="runes.texpander.required.floating">Tap here, then go to Other permissions and activate Display pop-up window permission.</string>
+    <string name="runes.texpander.action.copy">Copy to Clipboard</string>
+    <string name="runes.texpander.action.show">Tap here to show the floating panel.</string>
+    <string name="runes.texpander.action.insert">Insert</string>
+    <string name="runes.texpander.action.replace">Replace</string>
+    <string name="runes.texpander.hint.hide">Hide until called from the Notification Panel or Quick Settings.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">The Oculus</string>
+    <string name="runes.link_preview.description"><![CDATA[    When this rune is activated, for saved **http links** the application will try to load their preview in note view mode.
+    \n\n
+    In doing so:
+    \n
+    - the preview image can be opened in a separate window and zoomed in;
+    \n
+    - If the link is a video, it can be played with the application;
+    ]]></string>
+    <string name="runes.auto_save.title">Point of No Return</string>
+    <string name="runes.auto_save.description"><![CDATA[    By default, when you create or edit a note, you must manually click the save button to confirm your changes.
+    \n
+    \n
+    With this rune, the application will automatically save any changes you make while editing text.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Revive</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    With this rune, on startup, the application will restore the last active filter from the previous session.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Swipe Power</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    With this rune, in the list of notes, you can set up actions with them, applied to swipe gestures.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Shifted Focus</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    By default, when you create a note, the focus is set in the text input field.
+    \n\n
+    You can use this rune to change this behavior and set the focus to any other field.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Blowing Copy</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    When the rune is activated, any action of copying text inside Clipto (except contextual actions in input fields) will hide the application.
+    \n
+    \n
+    This rune allows you to minimize the number of steps when pasting copied text outside the application.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Tentative Steps</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Using this rune, you can set selected actions to be activated by double-clicking instead of single-clicking.
+    \n
+    \n
+    This behavior can be useful to prevent accidental clicks.
+    ]]></string>
+    <string name="runes.loyalty.title">Inspiring Support</string>
+    <string name="runes.loyalty.description"><![CDATA[    Without your support and feedback, the product will not evolve in the right direction for users.
+    \n\n
+    >**If you have a minute of time**, don\'t forget to rate us on Google Play.
+    \n
+    \n
+    >**If you have more time, and the translation doesn\'t look right** - join our localization project.
+    \n
+    \n
+    >**If you find bugs, want more runes or just want to write us** - our email and github page is always at your service.
+    ]]></string>
+    <string name="runes.backup_restore.title">Time Machine</string>
+    <string name="runes.backup_restore.description"><![CDATA[    In addition to cloud synchronization, you can manually save backups of your data and restore them later.
+    \n\n
+    Unlike cloud synchronization, this approach allows:
+    \n
+    - take a snapshot of all data at the current moment of time;
+    \n
+    - manage the entire backup and recovery process by yourself;
+    \n
+    - restore the entire data based on the previously saved data snapshot;
+    \n\n
+    ```
+    \n
+    Restoring from a file is done in a soft mode. That is, the existing data is not deleted, but only supplemented with new data.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Cài đặt</string>
+    <string name="settings.campaign.rate.title">Ý kiến của bạn quan trọng với chúng tôi</string>
+    <string name="settings.campaign.rate.message">Chỉ mất vài giây nhưng bạn có thể giúp chúng tôi phục vụ bạn tốt hơn.</string>
+    <string name="settings.campaign.rate.button">Đánh giá ứng dụng trên Google Play</string>
+    <string name="settings.campaign.rate.question">Đánh giá trải nghiệm của bạn với Clipto?</string>
+    <string name="settings.campaign.rate.feedback.title">Phản hồi</string>
+    <string name="settings.campaign.rate.feedback.message">Đóng góp cho Clipto? Chúng tôi rất đề cao ý kiến của bạn.</string>
+    <string name="settings.campaign.rate.feedback.toast">Hãy để một lời đánh giá chi tiết trên Google Play. Cảm ơn sự ủng hộ của bạn!</string>
+    <string name="settings.campaign.share.title">Nhận thưởng bằng việc chia sẻ Clipto với bạn bè!</string>
+    <string name="settings.campaign.share.more">Tìm hiểu thêm</string>
+    <string name="settings.campaign.share.action">Chia sẻ Liên kết</string>
+    <string name="settings.group.clipboard">Bộ nhớ đệm</string>
+    <string name="settings.group.behavior">Chế độ</string>
+    <string name="settings.group.appearance">Giao diện</string>
+    <string name="settings.group.backup">Sao lưu và phục hồi</string>
+    <string name="settings.group.security">Riêng tư &amp; Bảo mật</string>
+    <string name="settings.group.runes">Runes</string>
+    <string name="settings.link_preview.title">Preview Links</string>
+    <string name="settings.auto_save.title">Lưu ghi chú tự động</string>
+    <string name="settings.auto_save.description">Ứng dụng sẽ tự động lưu thay đổi khi tạo hoặc chỉnh sửa ghi chú.</string>
+    <string name="settings.focus_on_title.title">Con trỏ tại tiêu đề khi tạo ghi chú</string>
+    <string name="settings.focus_on_title.description">Khi tạo một ghi chú, con trỏ sẽ được đặt tại tiêu đề</string>
+    <string name="settings.track_clipboard.title">Ghi chú từ bộ nhớ đệm</string>
+    <string name="settings.track_clipboard.description">Ứng dụng sẽ tạo ghi chú mỗi khi bộ nhớ đệm thay đổi. Thanh trạng thái sẽ xuất hiện thông báo.</string>
+    <string name="settings.track_clipboard.q.message">Sử dụng giao thức ghi chú mới với Android Q.</string>
+    <string name="settings.track_clipboard.q.description">Từ phiên bản Android Q, app chỉ có thể truy cập dữ liệu bộ nhớ đệm khi đang được mở.</string>
+    <string name="settings.track_clipboard.q.solution.title">Để khắc phục điều này, sử dụng một trong các cách sau đây:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">Nhấn \'Clipto…\' thay cho nút \'Copy\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Khi chọn đoạn văn bản, sử dụng tùy chọn \'Clipto…\' thay cho tùy chọn \'Sao chép\' nếu tùy chọn có sẵn.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Nhấn nút \'Sao chép\' và sau đó chọn \'Dán\' trên thanh thông báo</string>
+    <string name="settings.track_clipboard.q.solution.2">Nếu tùy chọn \'Clipto…\' không có sẵn, hoặc nếu bạn vẫn muốn sử dụng tùy chọn \'Sao chép\' truyền thống, đừng quên nhấn nút \'Dán\' ở thông báo để tạo ghi chú từ bộ nhớ đệm hiện tại.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Nhấn \'Copy\' theo cách cũ (như Android 9 trở về trước)</string>
+    <string name="settings.track_clipboard.q.solution.3">Để sử dụng cách này, bạn cần kết nối điện thoại với máy tính ở chế độ gỡ lỗi USB (ADB) và chạy các lệnh dưới đây:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Sau khi thành công, trên dòng thông báo của ứng dụng sẽ xuất hiện một nút mới có chức năng bật/tắt kiểm soát bộ nhớ đệm. Thêm vào đó, dòng cảnh báo này cũng sẽ biến mất trong phần cài đặt của ứng dụng.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Mô phỏng tính năng Sao chép</string>
+    <string name="settings.track_clipboard.q.emulate.description">Nhấn nút \'Clipto…\' và \'Dán\' sẽ tự động tạo ghi chú từ đoạn chữ được chọn hoặc nội dung từ bộ nhớ đệm, sau đó cập nhật lại nội dung của bộ nhớ đệm.</string>
+    <string name="settings.universal_clipboard.title">Chia sẻ bộ nhớ đệm</string>
+    <string name="settings.universal_clipboard.description">Tất cả văn bản được sao chép vào Bộ nhớ đệm sẽ được đồng bộ giữa tất cả thiết bị. Nó cũng sẽ được chèn tự động vào Bộ nhớ đệm khi phần cài đặt được kích hoạt.</string>
+    <string name="settings.notification_style.title">Kiểu thanh thông báo</string>
+    <string name="settings.notification_style.description">Cài đặt kiểu thanh thông báo.</string>
+    <string name="settings.notification_sound.title">Silent notifications</string>
+    <string name="settings.notification_sound.description">Silences notifications, regardless of the sounds or vibrations set on the notification or notification channel.</string>
+    <string name="settings.hide_on_click.title">Ẩn ứng dụng sau khi sao chép</string>
+    <string name="settings.hide_on_click.description">Ứng dụng sẽ được ẩn khi một ghi chú được sao chép.</string>
+    <string name="settings.restore_filter.title">Ghi nhớ bộ lọc cuối</string>
+    <string name="settings.restore_filter.description">Ứng dụng sẽ khởi động với bộ lọc được sử dụng lần cuối.</string>
+    <string name="settings.pin_starred.title">Ghim các ghi chú được đánh dấu sao</string>
+    <string name="settings.pin_starred.description">Starred notes will be displayed first in the list, regardless of the selected filter.</string>
+    <string name="settings.theme.title">Chủ đề</string>
+    <string name="settings.theme.description">Tùy chọn màu sắc giao diện.</string>
+    <string name="settings.backup.title">Sao lưu dưới dạng tập tin</string>
+    <string name="settings.backup.description">Xuất các ghi chú dưới dạng tập tin.</string>
+    <string name="settings.restore.title">Phục hồi từ tập tin</string>
+    <string name="settings.restore.description">Khôi phục các ghi chú từ tập tin (loại tập tin hỗ trợ: %s).</string>
+    <string name="settings.startup.title">Chạy khi khởi động</string>
+    <string name="settings.startup.description">Cho phép ứng dụng tự khởi động ngay khi thiết bị được bật.</string>
+    <string name="settings.language.title">Ngôn ngữ</string>
+    <string name="settings.swipe_actions.title">Cử chỉ vuốt</string>
+    <string name="settings.swipe_actions.description">Cài đặt cử chỉ vuốt để thao tác nhanh trên danh sách ghi chú.</string>
+    <string name="settings.double_click.title">Tùy chọn nhấn đúp</string>
+    <string name="settings.double_click.description">Lựa chọn hành động chỉ được thực hiện khi nhấn đúp.</string>
+    <string name="settings.double_click.action.exit">Bấm nút \'Trở về\' để thoát ứng dụng</string>
+    <string name="settings.double_click.action.delete">Xóa ghi chú</string>
+    <string name="settings.double_click.action.edit">Sửa ghi chú</string>
+    <string name="settings.double_click.toast">Nhấn đúp để hoàn thành</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Không hiển thị những ghi chú được chỉnh sửa</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Những ghi chú có các yếu tố đặc biệt (thẻ, dấu sao, tiêu đề, đoạn trích) sẽ không được hiển thị trong danh mục \"Ghi chú từ Bộ nhớ đệm\".</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Do not display a warning about clipboard restrictions</string>
+    <string name="settings.clipboard.ignore_q_warning.description">If the app is configured and works correctly with the clipboard on your device, enable this toggle to remove functional restrictions from notifications.</string>
+    <string name="settings.security.passcode.title">Khóa bằng Mật mã</string>
+    <string name="settings.security.passcode.description">Khi bạn đặt mật mã, ứng dụng sẽ bị khoá sau %s phút không hoạt động. \n\nGhi chú: nếu bạn quên mật mã, bạn sẽ cần gỡ và cài đặt lại ứng dụng. Những thay đổi chưa được đồng bộ sẽ bị mất.</string>
+    <string name="settings.security.fingerprint.title">Mở khoá bằng Vân tay</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Bỏ qua</string>
+    <string name="auth.set_passcode.label.set_passcode">Đặt mật mã để truy cập ứng dụng một cách nhanh chóng và bảo mật</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Nhập lại mật mã</string>
+    <string name="auth.set_fingerprint.title">Đặt Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Bạn có muốn sử dụng cảm biến vân tay để mở khoá ứng dụng?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Sử dụng vân tay</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Bỏ qua bây giờ</string>
+    <string name="auth.fingerprint.touch_sensor">Xác nhận dấu vân tay để tiếp tục</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Nhập mã khóa hiện tại của bạn</string>
+    <string name="change_passcode.set_new">Tạo mật mã mới của bạn</string>
+    <string name="change_passcode.reenter">Nhập lại mật mã của bạn</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s - Hỗ trợ</string>
+    <string name="about.label.email.support.message">NỘI DUNG TIN NHẮN CỦA BẠN</string>
+    <string name="about.label.rate">Đánh giá ứng dụng trên Google Play</string>
+    <string name="about.label.issue">Báo cáo sự cố</string>
+    <string name="about.label.translate">Hỗ trợ chúng tôi biên dịch</string>
+    <string name="about.label.changelog">Nhật ký thay đổi</string>
+    <string name="about.label.campaign.rate">Đóng góp ý kiến cho chúng tôi!</string>
+    <string name="about.label.campaign.share">Chia sẻ liên kết ứng dụng</string>
+    <string name="about.label.campaign.share.description">%s người đã tham gia theo đường dẫn của bạn. Cảm ơn bạn!</string>
+    <string name="about.label.other">Người khác nói gì về chúng tôi</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Đăng nhập để đồng bộ dữ liệu lên các thiết bị khác.</string>
+    <string name="account.title.required_authorization">Yêu cầu quyền truy cập</string>
+    <string name="account.description.required_authorization">Bạn cần được cấp quyền để thực hiện điều này</string>
+    <string name="account.title.authorized">Đã cấp quyền truy cập</string>
+    <string name="account.button.sign_in">Đăng nhập</string>
+    <string name="account.button.sign_out">Đăng xuất</string>
+    <string name="account.dialog.sign_out.title">Đang tiến hành đăng xuất</string>
+    <string name="account.dialog.sign_out.message">Bạn có chắc chắn muốn đăng xuất ứng dụng? Các dữ liệu chưa được đồng bộ sẽ mất.</string>
+    <string name="account.plan.personal">Giấy phép cá nhân</string>
+    <string name="account.plan.subscription">Gói thuê bao đăng kí (đồng bộ %s ghi chú)</string>
+    <string name="account.plan.contributor">Gói thuê bao cộng tác viên (đồng bộ %s ghi chú)</string>
+    <string name="account.plan.yearly">Thuê bao hàng năm (đồng bộ %s ghi chú)</string>
+    <string name="account.plan.monthly">Thuê bao hàng tháng (đồng bộ %s ghi chú)</string>
+    <string name="account.plan.free">Thuê bao miễn phí (đồng bộ %s ghi chú)</string>
+    <string name="account.toolbar.title">Tài khoản</string>
+    <string name="account.sync.title">Đồng bộ ghi chú tự động</string>
+    <string name="account_rebuild_index_title">Rebuild data index</string>
+    <string name="account_rebuild_index_description">If you see different data (tags, files, notes, etc.) on different devices, it is recommended to perform this procedure. You will need to re-login when the procedure is complete.</string>
+    <string name="account_delete_title">Delete Account</string>
+    <string name="account_delete_confirm_title">Do you want to delete your account?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATTENTION! If you press DELETE below, your account and personal data will be deleted
+    permanently and irreversible, so please make sure the account contains no valuable data/information.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Are you sure?</string>
+    <string name="account_delete_confirm_again_description">Once you confirm, all of your account data will be permanently deleted.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Miễn phí</string>
+    <string name="account.sync.plan.title">Đồng bộ %s ghi chú</string>
+    <string name="account.sync.plan.toolbar">Chọn gói thuê bao</string>
+    <string name="account.sync.plan.button.active">Gói thuê bao hiện có</string>
+    <string name="account.sync.plan.button.select">Chọn gói thuê bao</string>
+    <string name="account.sync.plan.button.change">Thay đổi gói thuê bao</string>
+    <string name="account.sync.plan.button.upgrade">Upgrade</string>
+    <string name="account.sync.plan.caption">Bắt đầu miễn phí, sau đó chỉ trả cho dữ liệu bạn đồng bộ.</string>
+    <string name="account.sync.plan.hint">Số ghi chú bạn có thể đồng bộ hoá giữa những thiết bị (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Số ghi chú ngoại tuyến không giới hạn.</string>
+    <string name="account.sync.plan.benefit.sync">Đồng bộ %s ghi chú giữa những thiết bị.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">Tính năng đồng bộ bị tắt vì đã đạt đến giới hạn</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">Số lượng tổng cộng của tất cả những ghi chú của bạn, kể cả trong Thùng rác, là %s, và nó đã vượt giới hạn %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Giảm số lượng ghi chú của bạn để chọn gói thuê bao này.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Bạn đã đạt giới hạn của gói thuê bao. Đừng lo, ứng dụng vẫn có đầy đủ chức năng khi ngoại tuyến và không có giới hạn nào. Tuy nhiên, đồng bộ hoá đám mây sẽ bị tắt trên thiết bi của bạn đến khi bạn nâng cấp gói thuê bao hoặc giảm số lượng ghi chú cho đến giới hạn của gói thuê bao hiện có.</string>
+    <string name="account.sync.plan.contributor">Nếu bạn đã giúp dịch ứng dụng hoặc hỗ trợ ứng dụng thường xuyên, hãy liên hệ với chúng tôi để nâng cấp tài khoản của bạn.</string>
+    <string name="sync.free_limit_concept">Giới hạn miễn phí không cố định và có thể được thay đổi lên hoặc xuống phụ thuộc vào nhiều yếu tố.</string>
+    <string name="sync.off.title">Ghi chú này không được đồng bộ giữa những thiết bị</string>
+    <string name="sync.off.multiple.title">Những ghi chú này không được đồng bộ giữa những thiết bị</string>
+    <string name="sync.off.caption">Điều này có thể do:</string>
+    <string name="sync.off.reason.universal_clipboard">Bộ nhớ đệm chung đã không được kích hoạt khi ghi chú này được tạo.</string>
+    <string name="sync.off.reason.manual_off">Bạn đã tắt đồng bộ hoá một cách thủ công.</string>
+    <string name="sync.warning.title">Chức năng này sử dụng đồng bộ hoá đám mây</string>
+    <string name="sync.warning.description">Đồng bộ hoá đám mây không miễn phí hoàn toàn và có thể bị tắt trên thiết bị của bạn cho đến khi bạn nâng cấp tài khoản hoặc giảm số lượng ghi chú đến giới hạn gói thuê bao.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Tác vụ nhanh</string>
+    <string name="fast_actions.compose_email">Soạn E-mail</string>
+    <string name="fast_actions.send_message">Gửi tin nhắn mới</string>
+    <string name="fast_actions.compose_sms">Soạn tin nhắn SMS</string>
+    <string name="fast_actions.twitter_post">Chia sẻ lên Twitter</string>
+    <string name="fast_actions.web_search">Tìm kiếm trên web</string>
+    <string name="fast_actions.google_translate">Google Dịch</string>
+    <string name="fast_actions.google_maps_search">Tìm kiếm trên Google Maps</string>
+    <string name="fast_actions.wiki_search">Tìm kiếm Wikipedia</string>
+    <string name="fast_actions.youtube_search">Tìm kiếm YouTube</string>
+    <string name="fast_actions.duckduckgo_search">Tìm kiếm trên DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">Tìm kiếm trên Stack Overflow</string>
+    <string name="fast_actions.reddit_search">Tìm kiếm trên Reddit</string>
+    <string name="fast_actions.play_url">Mở liên kết</string>
+    <string name="fast_actions.send_as_file">Gửi dưới dạng tập tin</string>
+    <string name="fast_actions.send_as_txt_file">Gửi dưới dạng TXT</string>
+    <string name="fast_actions.send_as_pdf_file">Gửi dưới dạng PDF</string>
+    <string name="fast_actions.send_as_md_file">Gửi dưới dạng Markdown</string>
+    <string name="fast_actions.export_to_file">Xuất ra tập tin</string>
+    <string name="fast_actions.export_to_file.success">Xuất dưới dạng %s</string>
+    <string name="fast_actions.calendar_event">Thêm sự kiện lịch</string>
+    <string name="fast_actions.copy">Sao chép vào bộ nhớ đệm</string>
+    <string name="fast_actions.copy_clear">Clear from the clipboard</string>
+    <string name="fast_actions.tts">Từ văn bản đến giọng nói</string>
+    <string name="fast_actions.tts.max_length">Văn bản không nên dài hơn %s kí tự</string>
+    <string name="fast_actions.share">Chia sẻ với…</string>
+    <string name="fast_actions.send_as_qrcode">Gửi dưới dạng mã QR</string>
+    <string name="fast_actions.dial_number">Gọi số điện thoại</string>
+    <string name="fast_actions.insert_contact">Chèn một liên lạc</string>
+    <string name="fast_actions.insert_contact_email">Lưu email vào danh bạ</string>
+    <string name="fast_actions.insert_contact_phone">Lưu số điện thoại vào danh bạ</string>
+    <string name="fast_actions.open_url">Mở trang web</string>
+    <string name="fast_actions.short_link">Rút gọn liên kết</string>
+    <string name="fast_actions.more">Hiển thị thêm</string>
+    <string name="fast_actions.error">Lỗi không xác định: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Mặc định</string>
+    <string name="theme.sepia">Nâu đỏ</string>
+    <string name="theme.dark">Tối</string>
+    <string name="theme.dark_blue">Xanh đậm</string>
+    <string name="theme.dark_green">Dark Green</string>
+    <string name="theme.dark_blurple">Xanh Tím Đậm</string>
+    <string name="theme.black">Đen</string>
+    <string name="theme.green">Xanh lá</string>
+    <string name="theme.white">Trắng</string>
+    <string name="theme.pink">Hồng</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Ngày sử dụng</string>
+    <string name="sort_order.modify_date">Ngày chỉnh sửa</string>
+    <string name="sort_order.create_date">Ngày tạo</string>
+    <string name="sort_order.delete_date">Ngày xóa</string>
+    <string name="sort_order.usage_count">Số lần sử dụng</string>
+    <string name="sort_order.title">Tiêu đề</string>
+    <string name="sort_order.text">Văn bản</string>
+    <string name="sort_order.tags">Thẻ</string>
+    <string name="sort_order.size">Kích cỡ</string>
+    <string name="sort_order.name">Name</string>
+    <string name="sort_order.notes_count">Notes count</string>
+    <string name="sort_order.color">Color</string>
+    <string name="sort_order.manual">Manual</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Thành công</string>
+    <string name="backup.fail.title">Thất bại</string>
+    <string name="backup.fail.message">Lỗi không xác định: %s</string>
+    <string name="restore.success.title">Thành công</string>
+    <string name="restore.fail.title">Thất bại</string>
+    <string name="restore.fail.message">Lỗi không xác định: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Bạn có chắc muốn đóng cửa sổ này chứ?</string>
+    <string name="clip.multiple.exit_without_save.description">Tất cả thay đổi được tạo sẽ bị mất.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Thẻ thường dùng</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Dấu ngăn cách</string>
+    <string name="clip.multiple.merge.separator.line">Xuống dòng</string>
+    <string name="clip.multiple.merge.separator.space">Khoảng trắng</string>
+    <string name="clip.multiple.merge.separator.other">Khác</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Nút điều khiển</string>
+    <string name="notification.style.history">Lịch sử Bộ nhớ đệm</string>
+    <string name="notification.style.actions">Hoạt động Bộ nhớ đệm</string>
+    <string name="notification.track_clipboard.pause">Đã tạm dừng theo dõi bộ nhớ đệm</string>
+    <string name="notification.track_clipboard.resume">Đã bật theo dõi bộ nhớ đệm</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Tập đính kèm</string>
+    <string name="attachments.type.photo">Chụp ảnh</string>
+    <string name="attachments.type.record">Quay Video</string>
+    <string name="attachments.type.file">Chọn tập tin</string>
+    <string name="attachments.attr.created">Đã khởi tạo</string>
+    <string name="attachments.attr.name">Tên</string>
+    <string name="attachments.attr.type">Loại</string>
+    <string name="attachments.attr.path">Đường dẫn</string>
+    <string name="attachments.attr.size">Kích cỡ</string>
+    <string name="attachments.state.downloaded">Đã tải về</string>
+    <string name="attachments.state.uploaded">Đã tải lên</string>
+    <string name="attachments.state.downloading">Đang tải về…</string>
+    <string name="attachments.state.uploading">Đang tải lên…</string>
+    <string name="attachments.label.insert">Thêm vào Ghi chú</string>
+    <string name="attachments.label.download_url">Liên kết công khai sẽ được tạo sau khi tập tin được tải lên.</string>
+    <string name="contribute.annual.offer">Hủy bất cứ lúc nào tại Trung tâm Đăng kí của Google Play.</string>
+    <string name="contribute.monthly.period">tháng</string>
+    <string name="contribute.annual.period">năm</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Thoát</string>
+    <string name="desktop.tray.show">Hiện</string>
+    <string name="desktop.tray.show_in_taskbar">Hiển thị trong thanh tác vụ</string>
+    <string name="desktop.update.action.download">Tải về</string>
+    <string name="desktop.update.action.later">Để sau</string>
+    <string name="desktop.update.title">Đã có phiên bản mới</string>
+    <string name="desktop.shortcuts.title">Các phím tắt</string>
+    <string name="desktop.shortcuts.dialog.define">Chỉ định phím tắt</string>
+    <string name="desktop.shortcuts.showHideApp">Hiện/Ẩn ứng dụng</string>
+    <string name="desktop.shortcuts.modeFullscreen">Bật/Tắt chế độ toàn màn hình</string>
+    <string name="desktop.shortcuts.modeComfortable">Bật/Tắt Chế độ Thoải mái</string>
+    <string name="desktop.shortcuts.modeCompact">Bật/Tắt Chế độ Rút gọn</string>
+    <string name="desktop.shortcuts.tagNext">Thẻ tiếp theo</string>
+    <string name="desktop.shortcuts.tagPrev">Thẻ trước đó</string>
+    <string name="desktop.shortcuts.noteNext">Ghi chú tiếp theo</string>
+    <string name="desktop.shortcuts.notePrev">Ghi chú trước đó</string>
+    <string name="desktop.shortcuts.noteNew">Ghi chú mới</string>
+    <string name="desktop.shortcuts.noteSave">Lưu ghi chú</string>
+    <string name="desktop.shortcuts.noteDelete">Xóa ghi chú</string>
+    <string name="desktop.shortcuts.noteCopy">Sao chép ghi chú</string>
+    <string name="desktop.shortcuts.notePrint">In ghi chú</string>
+    <string name="desktop.shortcuts.noteFind">Tìm kiếm ghi chú</string>
+    <string name="desktop.shortcuts.noteOpen">Mở ghi chú</string>
+    <string name="desktop.shortcuts.noteEdit">Sửa ghi chú</string>
+    <string name="desktop.shortcuts.contextModeSelect">Chọn ghi chú</string>
+    <string name="desktop.shortcuts.contextModeCancel">Bỏ chọn tất cả ghi chú</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Chọn tất cả ghi chú</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Lưu từ Bộ nhớ đệm</string>
+    <string name="desktop.attachments.browse">Kéo &amp; thả hoặc duyệt thư mục để đính kèm tập tin.</string>
+    <string name="desktop.main.content.under.development">Nội dung đang được cập nhật…</string>
+    <string name="desktop.main.menu.download">Tải về</string>
+    <string name="desktop.main.menu.download.for">Tải về cho %s</string>
+    <string name="desktop.main.menu.download.android.apk">Tải bộ APK chung</string>
+    <string name="desktop.main.menu.resources">Nguồn lực</string>
+    <string name="desktop.main.menu.open">Mở Clipto trên trình duyệt</string>
+    <string name="desktop.main.features.title.1">Viết dễ dàng và đơn giản trên mọi thiết bị.</string>
+    <string name="desktop.main.features.title.2">Ứng dụng Notepad &amp; và Quản lí Bộ nhớ đệm với tốc độ và hiệu quả cao và hoạt động trên cả máy tính và điện thoại của bạn.</string>
+    <string name="desktop.main.features.title.3">Your personal writing companion.</string>
+    <string name="desktop.main.features.title.4">A comprehensive solution for convenient and efficient work with notes, snippets, clipboard, files, and other information that requires quick access via any device.</string>
+    <string name="desktop.main.features.title.5">What makes Clipto special?</string>
+    <string name="desktop.get_started.language">Chọn ngôn ngữ</string>
+    <string name="desktop.get_started.theme">Chọn chủ đề</string>
+    <string name="desktop.auth.instruction">Hướng dẫn xác thực</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Quét mã vạch</string>
+    <string name="barcode.prompt.point_at_a_barcode">Hướng camera về phía mã vạch</string>
+    <string name="barcode.prompt.hold_camera_steady">Giữ chắc camera một vài giây</string>
+    <string name="barcode.prompt.move_camera_closer">Di chuyển lại gần để tìm kiếm</string>
+    <string name="barcode.prompt.searching">Đang tìm kiếm…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">Yêu cầu font chữ thất bại, lý do: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Liên kết công khai</string>
+    <string name="public.note.link.time.label">Tại ngày giờ xác định</string>
+    <string name="public.note.link.time.or">hoặc</string>
+    <string name="public.note.link.time.type.seconds">giây</string>
+    <string name="public.note.link.time.type.minutes">phút</string>
+    <string name="public.note.link.time.type.hours">giờ</string>
+    <string name="public.note.link.time.type.days">ngày</string>
+    <string name="public.note.link.access_time">Thời gian truy cập</string>
+    <string name="public.note.link.access_time.description">Nếu được đặt, liên kết này sẽ chỉ có thể được truy cập sau một khoảng thời gian nhất định sau khi được tạo hoặc cập nhật.</string>
+    <string name="public.note.link.access_time.label">Sẽ truy cập được trong</string>
+    <string name="public.note.link.access_password">Mật khẩu truy cập</string>
+    <string name="public.note.link.access_password.hint">Gợi ý mật khẩu (tùy chọn)</string>
+    <string name="public.note.link.access_password.placeholder">Mật khẩu</string>
+    <string name="public.note.link.access_password.description">Nếu được đặt, liên kết này sẽ chỉ có thể được truy cập sau khi nhập đúng mật khẩu.</string>
+    <string name="public.note.link.time_to_expire">Thời hạn truy cập</string>
+    <string name="public.note.link.time_to_expire.description">Nếu được đặt, liên kết này sẽ có thể được truy cập trong một khoảng thời gian nhất định sau khi được tạo hoặc cập nhật.</string>
+    <string name="public.note.link.time_to_expire.label">Hết hạn trong</string>
+    <string name="public.note.link.one_time_opening">Truy cập một lần</string>
+    <string name="public.note.link.one_time_opening.description">Nếu được đặt, liên kết này sẽ chỉ có thể được truy cập một lần sau khi được tạo hoặc cập nhật.</string>
+    <string name="public.note.link.action.remove">Gỡ bỏ liên kết</string>
+    <string name="public.note.link.action.remove.confirm.title">Gỡ bỏ liên kết?</string>
+    <string name="public.note.link.action.remove.confirm.description">Liên kết này sẽ không khả dụng.</string>
+    <string name="public.note.link.action.create">Tạo liên kết</string>
+    <string name="public.note.link.state.unavailable">Không khả dụng</string>
+    <string name="public.note.link.state.postponed">Sẽ khả dụng sau:</string>
+    <string name="public.note.link.state.expires_in">Hết hạn trong %s</string>
+    <string name="public.note.link.state.expired">Đã hết hạn</string>
+    <string name="public.note.link.state.locked">Đã bị khóa</string>
+    <string name="public.note.link.state.locked.wrong_password">Sai mật khẩu.</string>
+    <string name="about.policy">Chính Sách Bảo Mật</string>
+    <string name="about.toc">Điều khoản Dịch vụ</string>
+    <string name="about_pricing">Pricing</string>
+    <string name="site.integrations.title">Tích hợp</string>
+    <string name="site.integrations.zapier.title">Tích hợp Zapier</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Liên kết Clipto với Zapier và nâng cao tiến độ làm việc của bạn
+\n
+##Bộ nhớ đệm của bạn như một thiết bị kích hoạt tiến độ
+\n
+Cách nhanh nhất để lưu thông tin quan trọng là chọn và sao chép chúng
+\n
+Để sử dụng tính năng này với Zapier, chỉ cần làm theo các bước sau:
+\n
+1. Tạo phím kích hoạt **Văn bản Được sao chép vào Bộ nhớ đệm** trong Zapier.
+\n
+2. Cài đặt Clipto lên thiết bị của bạn (điện thoại, máy tính) và **đăng nhập** với cùng 1 tài khoản
+\n
+3. Mở Clipto và kích hoạt cài đặt **Ghi chú từ Bộ nhớ đệm** và **Bộ nhớ đệm chung**
+\n
+4. Thế là xong. Bây giờ bạn có thể dùng tổ hợp phím tiêu chuẩn **Ctrl+C** (hoặc Sao chép trong bản chọn ứng dụng bất kì) để kích hoạt tiến độ với các văn bản được sao chép.    ]]></string>
+    <string name="faq.title">Những câu hỏi thường gặp</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notes** help you keep important text information and access it instantly at any time on any device.
+    \n
+    \n
+    By default, all notes are divided into several categories for quick access to the right ones based on different attributes.
+    \n
+    ```
+    \n
+    All notes are downloaded to your device when you first sign in.
+    \n
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filters** help you find the information you want faster by using ready-made search templates.
+    \n
+    ```
+    \n
+    A search template can contain various combinations of tags, time intervals, texts, sorting and display rules, etc.
+    \n
+    \n
+    Therefore, saving any such combination as a filter makes it much easier to retrieve the data you are looking for when you access it again.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Each filter has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The filter settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Tags** help to organise your notes and files to make them easier to find.
+    \n
+    ```
+    \n
+    You can add multiple tags to any note or file.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Each tag has its own settings for displaying data in the list.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    - The tag settings are synced across all your devices.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    The search parameters can be saved as a filter for quick access again.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** help to avoid repetitive typing by using re-usable text templates.
+    \n
+    \n
+    A snippet can be any existing or new note. It can be either static or dynamic, contain fields for manual input and runtime values (dates, times, etc.).
+    \n
+    \n
+    Snippets are organized by kits. You can either create your own kit or install any from the public library.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - The kit can be shared with other users.
+    \n
+    - The kit can be published in the public library.
+    \n
+    - If the description is set, it will be displayed instead of this hint.
+    \n
+    ```
+    \n
+    The color palette changes hue if you click on the selected color again.
+    \n
+    \n
+    The sorting rule reverses its direction if you click on it again.
+    \n
+    \n
+    The description supports markdown formatting.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Files** help you keep any data and access it instantly at any time on any device.
+    \n
+    \n
+    **Unlike notes**, files are not downloaded to your device when you first sign in.
+    \n
+    \n
+    **Instead**, only file metadata is downloaded to the device for quick searching and editing.
+    \n
+    ```
+    \n
+    Any changes are synced as soon as the Internet is available.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Folders** help to organise your notes and files to make them easier to find.
+    \n
+    \n
+    **In addition to tags**, folders allow you to organize data in a hierarchical way.
+    \n
+    \n
+    **Unlike tags**, a file or note can only be linked to one folder.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    Abbreviation can be used:
+    \n
+    \n
+    - to quickly search for a note using a short phrase of %s characters max
+    \n
+    - to insert the text of the note into the input field when entering a shortcut with a leading symbol **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    Description can be used to provide additional information about a note.
+    \n
+    \n
+    It supports markdown formatting of %s characters max.
+    ]]></string>
+    <string name="where_none_of">none of the selected</string>
+    <string name="where_any_of">any of the selected</string>
+    <string name="where_all_of">all selected</string>
+    <string name="where_after">After</string>
+    <string name="where_before">Before</string>
+    <string name="where_from">From</string>
+    <string name="where_to">To</string>
+    <string name="where_date_today">Today</string>
+    <string name="where_date_tomorrow">Tomorrow</string>
+    <string name="where_date_custom">Custom</string>
+    <string name="where_date_yesterday">Yesterday</string>
+    <string name="where_date_last_7_days">Last 7 days</string>
+    <string name="where_date_last_30_days">Last 30 days</string>
+    <string name="where_date_last_90_days">Last 90 days</string>
+    <string name="advanced_filter_block_text">Text contains</string>
+    <string name="advanced_filter_block_text_type">Text type</string>
+    <string name="advanced_filter_block_category">Located in</string>
+    <string name="advanced_filter_block_tags">Tags</string>
+    <string name="advanced_filter_block_created">Created date</string>
+    <string name="advanced_filter_block_updated">Updated date</string>
+    <string name="advanced_filter_block_only_public_links">Show only with public links</string>
+    <string name="advanced_filter_block_only_attachments">Show only with attachments</string>
+    <string name="advanced_filter_block_only_not_synced">Show only unsynced</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">Country</string>
+    <string name="snippet_kit_attr_snippets">Snippets</string>
+    <string name="snippet_kit_attr_language">Language</string>
+    <string name="snippet_kit_attr_downloads">Downloads</string>
+    <string name="snippet_kit_attr_created">Created on</string>
+    <string name="snippet_kit_attr_updated">Updated on</string>
+    <string name="snippet_kit_attr_category">Category</string>
+    <string name="snippet_kit_public_link">Public Link</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    The snippet kit can be installed from a public link
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Remove the link?</string>
+    <string name="snippet_kit_public_link_remove_description">The snippet kit can no longer be installed from this link.</string>
+    <string name="snippet_kit_public_library">Public Library</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    The snippet kit can be installed from a public library.
+    \n
+    \n
+    ```
+    \n
+    The kit must contain at least %s snippets in order to be placed in the public library.
+    \n
+    ```
+    \n
+    \n
+    When you place a kit in the public library, you automatically get a benefit.
+    \n
+    \n
+    [Learn more…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Remove from the public library?</string>
+    <string name="snippet_kit_public_library_remove_description">The snippet kit can no longer be installed from the public library.</string>
+    <string name="snippet_kit_hint_name">Snippet kit name</string>
+    <string name="snippet_kit_label_show_in_public_library">Show in Public Library</string>
+    <string name="snippet_kit_error_name_required">Unique name is required to save this set</string>
+    <string name="snippet_kit_delete_title">Delete kit \'%s\'?</string>
+    <string name="snippet_kit_delete_description">Snippet kit will be permanently deleted.</string>
+    <string name="snippet_kit_uninstall_title">Uninstall kit \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">Snippet kit will be permanently deleted, including all associated snippets.</string>
+    <string name="snippet_kit_install_hint_title">What does it mean to install?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    The installed snippet kit will be available for use as if you had created it yourself.
+    \n
+    \n
+    That is, you can completely change any notes in it, add new ones, delete existing, manage the settings of the kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Any changes you make will only be available to you without the ability to change the original kit.
+    \n
+    \n
+    If the original kit has been updated, you can manually update the installed one.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Public Status</string>
+    <string name="public_status_private">Private</string>
+    <string name="public_status_blocked">Blocked</string>
+    <string name="public_status_review">In review</string>
+    <string name="public_status_review_details">It will take some time before the kit is published and available in the public library.</string>
+    <string name="public_status_published">Published</string>
+    <string name="public_status_rejected">Rejected</string>
+    <string name="public_status_not_found">Not found</string>
+    <string name="public_status_deleted">Deleted</string>
+    <string name="public_status_restricted">Restricted</string>
+    <string name="public_status_update_reason">Update reason</string>
+    <string name="dynamic_text_hint_title">Dynamic text</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    If a note contains dynamic fields, you will see this extra step whenever you perform any action on the note.
+    \n
+    \n
+    At this step you can define values in the input fields and complete the action with the changed text.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Text</string>
+    <string name="dynamic_text_view_mode_form">Form</string>
+    <string name="dynamic_value_date">Date/Time</string>
+    <string name="dynamic_value_date_description">Creates a placeholder that is replaced by the actual date</string>
+    <string name="dynamic_value_device">Device Info</string>
+    <string name="dynamic_value_device_description">Creates a placeholder that is replaced with information about the device</string>
+    <string name="dynamic_value_random">Random</string>
+    <string name="dynamic_value_random_description">Creates a placeholder that is replaced by a random value from a customizable list</string>
+    <string name="dynamic_value_clipboard">Clipboard</string>
+    <string name="dynamic_value_clipboard_description">Creates a placeholder that is replaced by the content of the clipboard</string>
+    <string name="dynamic_value_snippet">Snippet</string>
+    <string name="dynamic_value_snippet_description">Creates a placeholder that is replaced by the content of the selected note</string>
+    <string name="dynamic_value_attr_device_type">Information type</string>
+    <string name="dynamic_field_date">Date field</string>
+    <string name="dynamic_field_date_description">Creates a date input field</string>
+    <string name="dynamic_field_text">Text field</string>
+    <string name="dynamic_field_text_description">Creates a text input field</string>
+    <string name="dynamic_field_number">Number field</string>
+    <string name="dynamic_field_number_description">Creates a number input field</string>
+    <string name="dynamic_field_select">Selection field</string>
+    <string name="dynamic_field_select_description">Creates an input to select one or more items</string>
+    <string name="dynamic_field_barcode_scanning">Barcode scanning field</string>
+    <string name="dynamic_field_barcode_scanning_description">Creates a field that allows you to scan a barcode and use its text as the field value</string>
+    <string name="dynamic_field_text_toggle">Text toggle</string>
+    <string name="dynamic_field_text_toggle_description">Creates a toggle switch that can enable or disable a block of text</string>
+    <string name="dynamic_field_reference">Reference field</string>
+    <string name="dynamic_field_reference_description">Creates a field that refers to another field and uses its value</string>
+    <string name="dynamic_field_unknown">Unknown field</string>
+    <string name="dynamic_field_unknown_description">The field cannot be rendered. Perhaps it is incorrect or was created in a newer version of the application</string>
+    <string name="dynamic_field_date_format_date_time">Date/Time (system)</string>
+    <string name="dynamic_field_date_format_date">Date (system)</string>
+    <string name="dynamic_field_date_format_time">Time (system)</string>
+    <string name="dynamic_field_date_format_day_of_week">Day of week</string>
+    <string name="dynamic_field_date_format_day_of_month">Day of month (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Day of month (01–31)</string>
+    <string name="dynamic_field_date_format_year">Year</string>
+    <string name="dynamic_field_date_format_year_short">Year (short)</string>
+    <string name="dynamic_field_date_format_month">Month</string>
+    <string name="dynamic_field_date_format_month_number">Month (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Month (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hour (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hour (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hour (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hour (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minute (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minute (01–60)</string>
+    <string name="dynamic_field_date_format_second">Second (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Second (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">AM/PM</string>
+    <string name="dynamic_field_date_format_time_zone">Time Zone</string>
+    <string name="dynamic_field_value_formatter_new_line">New line</string>
+    <string name="dynamic_field_value_formatter_semicolon">Semicolon</string>
+    <string name="dynamic_field_value_formatter_comma">Comma</string>
+    <string name="dynamic_field_value_formatter_space">Space</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Ordered list</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Unordered list</string>
+    <string name="dynamic_field_attr_common_label">Label</string>
+    <string name="dynamic_field_attr_common_prefix">Prefix</string>
+    <string name="dynamic_field_attr_common_suffix">Suffix</string>
+    <string name="dynamic_field_attr_common_value">Value</string>
+    <string name="dynamic_field_attr_common_required">Required</string>
+    <string name="dynamic_field_attr_common_placeholder">Placeholder</string>
+    <string name="dynamic_field_attr_common_default_value">Default value</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formatter of selected values</string>
+    <string name="dynamic_field_attr_select_multiple">Multiple selection</string>
+    <string name="dynamic_field_attr_select_user_input">User input</string>
+    <string name="dynamic_field_attr_text_multi_line">Multi-line text</string>
+    <string name="dynamic_field_attr_text_max_length">Max length</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Clipboard is the default value</string>
+    <string name="dynamic_field_attr_select_options">Options</string>
+    <string name="dynamic_field_attr_number_min">Min value</string>
+    <string name="dynamic_field_attr_number_max">Max value</string>
+    <string name="dynamic_field_attr_date_format">Format</string>
+    <string name="dynamic_field_attr_date_example">Example: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Multiple scanning</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Formatter of scanned values</string>
+    <string name="dynamic_field_attr_toggle_text">Text</string>
+    <string name="dynamic_field_attr_ref_value">Referenced field label</string>
+    <string name="dynamic_field_attr_ref_intrinsic">Field has its own value</string>
+    <string name="select_option_ordering">Sort options</string>
+    <string name="select_option_ordering_label_asc">Label (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Label (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Value (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Value (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Delete this dynamic field from the text?</string>
+    <string name="dynamic_field_confirm_delete_description">The placeholder of the field will be deleted from the original text.</string>
+    <string name="dynamic_value_placeholder_copied_title">The dynamic value placeholder has been copied to the clipboard</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    If a note is open in edit mode, the placeholder is automatically inserted in the text of the note at the place of focus
+    or replaces the selected text fragment.
+    \n
+    \n
+    Otherwise, it is copied to the clipboard.
+    \n
+    \n
+    **The copied placeholder:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Download from the cloud</string>
+    <string name="file_action_update_in_cloud">Update in the cloud</string>
+    <string name="file_error_canceled">Canceled by the user</string>
+    <string name="file_error_not_found">File not found. Try uploading it again.</string>
+    <string name="file_attr_last_modified">Last modified</string>
+    <string name="file_attr_updated">Updated</string>
+    <string name="file_attr_location">Location</string>
+    <string name="file_confirm_update_file">Update file?</string>
+    <string name="file_confirm_update_file_description">The file will be updated in the cloud storage.</string>
+    <string name="file_error_name_required">Name is required to save this file</string>
+    <string name="file_action_new_file">File</string>
+    <string name="file_action_new_file_description">File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_files">Files</string>
+    <string name="file_action_new_files_description">Files will be uploaded to the cloud storage. The uploaded files will be available in the Files category and can be attached to any note.</string>
+    <string name="file_action_new_note">Note</string>
+    <string name="file_action_new_note_description">File will be uploaded to the cloud storage and attached to the newly created note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_notes_description">Files will be uploaded to the cloud storage and attached to the newly created note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_action_new_attachment">Attachment</string>
+    <string name="file_action_new_attachment_description">File will be uploaded to the cloud storage and attached to an existing note. The uploaded file will also be available in the Files category.</string>
+    <string name="file_action_new_attachments">Attachments</string>
+    <string name="file_action_new_attachments_description">Files will be uploaded to the cloud storage and attached to an existing note. The uploaded files will also be available in the Files category.</string>
+    <string name="file_search_hint">Search your files</string>
+    <string name="file_type_any">All</string>
+    <string name="file_type_audio">Audios</string>
+    <string name="file_type_video">Videos</string>
+    <string name="file_type_image">Images</string>
+    <string name="file_type_archive">Archives</string>
+    <string name="file_type_document">Documents</string>
+    <string name="file_type_recycled">Recycle Bin</string>
+    <string name="folder_select">Select</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">Root folder</string>
+    <string name="folder_search">Search this folder</string>
+    <string name="folder_error_name_required">Unique name is required to save the folder here</string>
+    <string name="folder_error_empty">This folder is empty</string>
+    <string name="folder_delete_deep">Delete the folder, including all associated files and notes.</string>
+    <string name="folder_delete_weak">Delete only the folder. All associated files and notes will remain available in the root folder.</string>
+    <string name="clip_action_new_edit">Edit</string>
+    <string name="clip_action_new_edit_description">The note can be edited before it is saved or used for any action.</string>
+    <string name="clip_action_new_insert">Insert into</string>
+    <string name="clip_action_new_insert_description">The text of a note can be inserted into any existing one. Select the target note and specify the insertion options.</string>
+    <string name="clip_action_new_action">Actions</string>
+    <string name="clip_action_new_action_description">The text of a note can be used to perform an action.</string>
+    <plurals name="backup.success.message">
+        <item quantity="other">Đã xuất %s ghi chú</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="other">Đã nhập %s ghi chú</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="other">Đã xóa %s ghi chú</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="other">%s ghi chú</item>
+    </plurals>
+</resources>

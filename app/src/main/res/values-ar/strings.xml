@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">سطر جديد</string>
+    <string name="common_separator_space">مسافة</string>
+    <string name="common_separator_comma">فاصلة</string>
+    <string name="confirm_exit_edit_mode_title">هل تريد الخروج من وضع التحرير؟</string>
+    <string name="confirm_exit_edit_mode_description">ستفقد جميع التغييرات غير المحفوظة.</string>
+    <string name="confirm_delete_note_title">حذف الملاحظة؟</string>
+    <string name="confirm_delete_note_description">سيتم حذف الملاحظة المحددة.</string>
+    <string name="link_preview_label">تحميل المعاينة…</string>
+    <string name="link_preview_not_found">لا توجد معاينة</string>
+    <string name="link_preview_hide">إخفاء المعاينة</string>
+    <string name="link_preview_show">عرض المعاينة</string>
+    <string name="toast_downloaded">تم تنزيل %s</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">اضغط على زر \"الرجوع\" مرة أخرى للخروج</string>
+    <string name="essentials.errors.unknown">خطأ غير معروف، الرجاء المحاولة مرة أخرى</string>
+    <string name="error_data_empty">لم يتم العثور علي بيانات.</string>
+    <string name="error.unexpected">حدث خطأ غير متوقع</string>
+    <string name="error.unexpected.send">انقر على زر \"خلل\" لإرسال الخطأ</string>
+    <!-- COMMON -->
+    <string name="menu.rate">تقييم</string>
+    <string name="menu.edit">تعديل</string>
+    <string name="menu.clear">مسح</string>
+    <string name="menu.clear_all">مسح الكل</string>
+    <string name="menu.share">مشاركة</string>
+    <string name="menu.fav">المفضلة</string>
+    <string name="menu.delete">حذف</string>
+    <string name="menu.empty">افرغ</string>
+    <string name="menu.cancel">إلغاء</string>
+    <string name="menu.settings">الإعدادات</string>
+    <string name="menu.display_options">خيارات العرض</string>
+    <string name="menu.faq">الأسئله الشائعة.</string>
+    <string name="menu.new">جديد</string>
+    <string name="menu.search">بحث</string>
+    <string name="menu.print">طباعة</string>
+    <string name="menu.restore">استعادة</string>
+    <string name="menu.merge">دمج</string>
+    <string name="menu.copy_link">نسخ الرابط العام</string>
+    <string name="menu.share_link">مشاركة رابط عام</string>
+    <string name="menu.save_as">احفظ ك…</string>
+    <string name="menu.rename">إعادة التسمية</string>
+    <string name="menu.paste">لصق</string>
+    <string name="menu.copy">نسخ</string>
+    <string name="menu.cut">قص</string>
+    <string name="menu.fullscreen.enter">تكبير الشاشة</string>
+    <string name="menu.fullscreen.exit">الخروج من وضع تكبير الشاشة</string>
+    <string name="menu_close">اغلاق</string>
+    <string name="button.update">تحديث</string>
+    <string name="button.install">تثبيت</string>
+    <string name="button.uninstall">إلغاء التثبيت</string>
+    <string name="button.done">تم</string>
+    <string name="button.undo">تراجع</string>
+    <string name="button.apply">تطبيق التغييرات</string>
+    <string name="button.change">تغيير</string>
+    <string name="button.save">حفظ</string>
+    <string name="button.create">إنشاء</string>
+    <string name="button.send">إرسال</string>
+    <string name="button.preview">معاينة</string>
+    <string name="button.confirm">تأكيد</string>
+    <string name="button.sync">مزامنة الآن</string>
+    <string name="button.yes">موافق</string>
+    <string name="button.no">غير موافق</string>
+    <string name="button.back">رجوع</string>
+    <string name="button.continue">استمرار</string>
+    <string name="button.finish">إنهاء</string>
+    <string name="button.got_it">حسنا!</string>
+    <string name="button.get_started">ابدأ الآن</string>
+    <string name="button.example">مثال</string>
+    <string name="button_try_again">حاول مرة اخرى</string>
+    <string name="button_insert">ادرج</string>
+    <string name="button_refresh">تحديث</string>
+    <string name="notification.title.empty">الحافظة فارغة</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">الرجوع للخلف</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">الاختصار</string>
+    <string name="common.label.description">الوصف</string>
+    <string name="common.action.confirm">قم بتأكيد الإجراء المختار</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">وسم جديد</string>
+    <string name="tag.new.name">اسم التبويب</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">انقل إلى مجلد</string>
+    <!-- MAIN -->
+    <string name="main.search">البحث في الملاحظات الخاصة بك</string>
+    <string name="main.filter.all">الكل</string>
+    <string name="main.filter.no_tags">غير معلمة</string>
+    <string name="main.filter.filtered">مصفاة</string>
+    <string name="main.delete_selected.title">حذف الملاحظات المحددة؟</string>
+    <string name="main.delete_selected.description">سيتم حذف كافة الملاحظات المحددة.</string>
+    <string name="main.delete_merged.title">حذف الملاحظات المدمجة؟</string>
+    <string name="main.delete_merged.description">سيتم حذف الملاحظات المدمجة بشكل دائم.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">لم يتم العثور على أي ملاحظات.</string>
+    <string name="main.list.empty.caption">ملاحظة: كل فئة لها فرز فردي خاص بها والإعدادات الأخرى الممكنة. يمكنك تغيير الإعدادات في أي وقت من القائمة (٪ s) أو من قائمة التنقل بالجهة اليسرى (٪ s).</string>
+    <string name="main.list.empty.caption.three_dot">قائمة الثلاث نقاط</string>
+    <string name="main.list.empty.caption.long_tap">اضغط مطولًا على الفئة</string>
+    <string name="main.list.empty.description.all">الفئة العامة. يعرض كل الملاحظات بدون تصفية.</string>
+    <string name="main.list.empty.description.no_tags">يعرض الملاحظات التي لم يتم تعيين علامة لها.</string>
+    <string name="main.list.empty.description.tags">يعرض الملاحظات والملفات المميزة بالعلامة المحددة.</string>
+    <string name="main.list.empty.description.filtered">تمت تصفية الملاحظات وفقًا للظروف التي لم يتم العثور على أي شيء لها.</string>
+    <string name="main.list.empty.description.starred">يعرض الملاحظات التي تم تمييزها بعلامة النجمة.</string>
+    <string name="main.list.empty.description.deleted">يعرض الملاحظات والملفات التي تم حذفها ولكن لا يزال من الممكن استعادتها مرة أخرى. تظل السجلات المحذوفة مع العلامات المعينة والسمات الأخرى ، ولكنها غير متوفرة في الفئات المقابلة.</string>
+    <string name="main.list.empty.description.clipboard">يعرض الملاحظات التي تم إنشاؤها تلقائيًا بواسطة التطبيق من الحافظة. بشكل افتراضي ، لا يتم تعقب الحافظة ويمكن إجراء التنشيط في الإعدادات.</string>
+    <string name="main.list.empty.description.snippets">يعرض الملاحظات التي تم استخدامها في الملاحظات الأخرى. تنعكس أي تغييرات يتم إجراؤها على النص تلقائيًا في جميع الملاحظات حيث يتم استخدامه.</string>
+    <string name="main.filter.snippets">المقتطفات</string>
+    <string name="main.filter.filters">التصفيات</string>
+    <string name="main.filter.folders">Folders</string>
+    <string name="main.filter.files">الملفات</string>
+    <string name="main.filter.notes">ملاحظات</string>
+    <string name="main.filter.tags">التصنيفات</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">تذكر آخر إجراء</string>
+    <string name="main_action_settings_remember_description">عند التنشيط ، سيتذكر التطبيق الإجراء الأخير ويستخدمه في المرة التالية التي تنقر فيها على الزر العائم. في الوقت نفسه ، يمكن فتح نافذة بها قائمة بجميع الإجراءات بنقرة طويلة على الزر العائم.</string>
+    <string name="main_action_folders_move_note_title">ملاحظة موجودة</string>
+    <string name="main_action_folders_move_note_description">انقل ملاحظة موجودة إلى المجلد الحالي</string>
+    <string name="main_action_folders_move_file_title">ملف موجود</string>
+    <string name="main_action_folders_move_file_description">انقل ملفًا موجودًا إلى المجلد الحالي</string>
+    <string name="main_action_notes">إنشاء الملاحظات</string>
+    <string name="main_action_notes_new_title">ملاحظة جديدة</string>
+    <string name="main_action_notes_new_description">احفظ المعلومات النصية المهمة وقم بالوصول إليها فورًا في أي وقت على أي جهاز</string>
+    <string name="main_action_notes_barcode_title">مسح الرمز الشريطى (الباركود)</string>
+    <string name="main_action_notes_barcode_description">امسح الروابط أو النص واحفظه كملاحظة (معظم تنسيقات الباركود القياسية مدعومة)</string>
+    <string name="main_action_notes_clipboard_title">خذ من الحافظة</string>
+    <string name="main_action_notes_clipboard_description">خذ النص الحالي من الحافظة واحفظه كملاحظة</string>
+    <string name="main_action_notes_import_title">استيراد من ملف</string>
+    <string name="main_action_notes_import_description">إنشاء ملاحظة بنص من ملف (حجم الملف ليس أكبر من %s كيلو بايت)</string>
+    <string name="main_action_notes_import_error">يجب ألا يزيد حجم الملف عن %s كيلوبايت</string>
+    <string name="main_action_files">إضافة الملفات</string>
+    <string name="main_action_files_file_title">اختيار ملف</string>
+    <string name="main_action_files_file_description">أضف أي ملف (صورة ، فيديو ، pdf ، إلخ) لا يزيد حجمه عن %s ميغا بايت</string>
+    <string name="main_action_files_photo_title">التقاط الصورة</string>
+    <string name="main_action_files_photo_description">التقط صورة واحفظها في ملاحظة</string>
+    <string name="main_action_files_record_title">تسجيل فيديو</string>
+    <string name="main_action_files_record_description">تسجيل مقطع فيديو وحفظه في ملاحظة (حجم الفيديو ليس أكبر من %s ميغا بايت)</string>
+    <string name="main_action_organize">تنظيم البيانات</string>
+    <string name="main_action_organize_tag_title">وسم جديد</string>
+    <string name="main_action_organize_tag_description">أنشئ وسم لتنظيم ملاحظاتك وملفاتك حتى يسهل العثور عليها</string>
+    <string name="main_action_organize_filter_title">عامل تصفية جديد</string>
+    <string name="main_action_organize_filter_description">قم بإنشاء عامل تصفية للعثور على المعلومات التي تريدها بشكل أسرع باستخدام قوالب البحث الجاهزة</string>
+    <string name="main_action_organize_folder_title">New folder</string>
+    <string name="main_action_organize_folder_description">Create a folder to structure your notes and files in a familiar hierarchical way</string>
+    <string name="main_action_snippets">تقليل الكتابة المتكررة</string>
+    <string name="main_action_snippets_snippet_title">مقتطف جديد</string>
+    <string name="main_action_snippets_snippet_description">قم بإنشاء قالب نصي قابل لإعادة الاستخدام لتجنب الكتابة المتكررة والأخطاء</string>
+    <string name="main_action_snippets_set_title">مجموعة مقتطفات جديدة</string>
+    <string name="main_action_snippets_set_description">قم بإنشاء مجموعة من المقتطفات للعثور على المقتطفات الشائعة بشكل أسرع</string>
+    <string name="main.actions.save_and_start_new_note">احفظ وابدأ ملاحظة جديدة</string>
+    <string name="main.actions.add_dynamic_value">أضافة القيمة تلقائياً</string>
+    <string name="main.actions.add_attachment">أضف مرفقاً</string>
+    <string name="main.actions.sync_note">مزامنة الملاحظات</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">سحب لليسار</string>
+    <string name="main.swipe_actions.caption.right">اسحب لليمين</string>
+    <string name="main.swipe_actions.fav">تعيين كمميزة بنجمة</string>
+    <string name="main.swipe_actions.delete">حذف</string>
+    <string name="main.swipe_actions.copy">نسخ</string>
+    <string name="main.swipe_actions.none">لا شَيْء</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">بحث متقدم</string>
+    <string name="filter.hint.text">حاوية نص</string>
+    <string name="filter.label.no_tags">غير معلمة</string>
+    <string name="filter.label.fav">المفضلة</string>
+    <string name="filter.label.platform">المنصة</string>
+    <string name="filter.label.snippets">المقتطفات</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">ملاحظات من الحافظة</string>
+    <string name="filter.clipboard.empty.title">مسح الملاحظات من الحافظة؟</string>
+    <string name="filter.clipboard.empty.description">سيتم حذف جميع الملاحظات من الحافظة (باستثناء المميزة بنجمة والموسومة) نهائيًا.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">سلة المهملات</string>
+    <string name="filter.deleted.limit">حد</string>
+    <string name="filter.deleted.empty.title">إفراغ سلة المحذوفات؟</string>
+    <string name="filter.deleted.empty.description">سيتم حذف كافة الملاحظات في سلة المحذوفات بشكل دائم.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">حد</string>
+    <string name="filter.limit.description">عند تجاوز عدد الملاحظات حد معين في هذه الفئة ،فسوف يتم حذف الملاحظات القديمة التي تتجاوز الحد تلقائيًا من هذه الفئة.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">اسم التصفية</string>
+    <string name="filter_error_name_required">مطلوب اسم غير مكرر لحفظ هذه التصفية</string>
+    <string name="filter_delete_title">هل تريد حذف التصفية \'%s\'؟</string>
+    <string name="filter_delete_description">سيتم حذف التصفية بشكل دائم.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">مطلوب اسم غير مكرر لحفظ هذه العلامة</string>
+    <string name="filter.tag.rule.title">قاعدة التعيين التلقائي</string>
+    <string name="filter.tag.rule.description">إذا تم تنشيطها، سيتم تعيين التصنيف تلقائيًا إلى الملاحظات الجديدة إذا كانت تحتوي على أي من النصوص المفصولة بفواصل.</string>
+    <string name="filter.tag.rule.hint">النصوص المفصولة بفواصل</string>
+    <string name="filter.tag.delete.title">هل تريد حذف التصنيف \'%s\'؟</string>
+    <string name="filter.tag.delete.description">سيتم حذف التصنيف بشكل دائم.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">إضافة</string>
+    <string name="clip.hint.title">ملاحظة بدون عنوان</string>
+    <string name="clip.hint.tags">انقر لإضافة علامة</string>
+    <string name="clip.hint.text">انقر لإضافة نص</string>
+    <string name="clip.snackbar.text.required">النص إلزامي</string>
+    <string name="clip.snackbar.text.copied">تم نسخ النص</string>
+    <string name="clip.attr.updated">تاريخ الإستخدام</string>
+    <string name="clip.attr.edited">تم التحرير في</string>
+    <string name="clip.attr.created">تاريخ الإنشاء</string>
+    <string name="clip.attr.deleted">حذفت في</string>
+    <string name="clip.attr.usageCount">عدد مرات الاستخدام</string>
+    <string name="clip.attr.charsCount">عدد الحروف</string>
+    <string name="clip.attr.size">الحجم</string>
+    <string name="clip_exit_without_save_title">إلغاء تحرير الملاحظة؟</string>
+    <string name="clip_exit_without_save_description">سيتم فقدان أي تغييرات تم إجراؤها.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">حفظ كـ</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">عامّ</string>
+    <string name="clip_details_tab_tags">التصنيفات</string>
+    <string name="clip_details_tab_folder">المكان</string>
+    <string name="clip_details_tab_attachments">المرفقات</string>
+    <string name="clip_details_tab_dynamic">قيمة متغيرة</string>
+    <string name="clip_details_tab_snippets">المقتطفات</string>
+    <string name="clip_details_tab_snippet_kits">مجموعة المقتطفات</string>
+    <string name="clip_details_tab_dynamic_values">قيم</string>
+    <string name="clip_details_tab_dynamic_fields">الحقول</string>
+    <string name="clip_details_tab_attributes">السمات</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">أدخل النص الى ملاحظة</string>
+    <string name="clip.info.label.note.insert.remember">تذكر اختياراتي و لا تسألني مرة أخرى (يمكن الوصول الى هذه اللوحة عبر نقرة طويلة).</string>
+    <string name="clip.info.label.note.create">أنشىء ملاحظة</string>
+    <string name="clip.info.label.position">الموضع</string>
+    <string name="clip.info.label.beginning">في البداية</string>
+    <string name="clip.info.label.end">في النهاية</string>
+    <string name="clip.info.label.tags.edit">تعديل التصنيفات</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">نص عادي</string>
+    <string name="clip.text.type.link">نص مع روابط</string>
+    <string name="clip.text.type.line_clickable">نص مع سطور منسوخة</string>
+    <string name="clip.text.type.word_clickable">نص مع رموز منسوخة</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">المرفقات</string>
+    <string name="clip.add.attachment.tooltip">يمكن أن يكون المرفق أي ملف (صورة ، فيديو ، pdf ، إلخ) ولا يزيد حجمه عن%s ميغا بايت.</string>
+    <string name="clip.add.dynamic.title">قيمة تلقائياً</string>
+    <string name="clip.add.dynamic.tooltip">القيمة التلقائية هي طريقة لإنشاء ملاحظات ببيانات محدثة دائمًا. في وضع العرض ، يتم استبدال العنصر النائب المدرج بالبيانات الفعلية.</string>
+    <string name="clip.add.dynamic.value.date_time">تاريخ/وقت</string>
+    <string name="clip.add.dynamic.value.platform">منصة</string>
+    <string name="clip.add.dynamic.value.ip">عنوان الـ Ip</string>
+    <string name="clip.add.dynamic.value.date">تاريخ</string>
+    <string name="clip.add.dynamic.value.time">وقت</string>
+    <string name="clip.add.dynamic.value.month">شهر</string>
+    <string name="clip.add.dynamic.value.timezone">المنطقة الزمنية</string>
+    <string name="clip.add.dynamic.value.month_number">رقم الشهر</string>
+    <string name="clip.add.dynamic.value.month_number_zero">رقم الشهر (بصفر بادئ)</string>
+    <string name="clip.add.dynamic.value.year">سنة</string>
+    <string name="clip.add.dynamic.value.year_short">سنة (قصير)</string>
+    <string name="clip.add.dynamic.value.hour24">نظام 24 ساعة</string>
+    <string name="clip.add.dynamic.value.hour12">نظام 12 ساعة</string>
+    <string name="clip.add.dynamic.value.minutes">دقائق</string>
+    <string name="clip.add.dynamic.value.seconds">ثواني</string>
+    <string name="clip.add.dynamic.value.am_pm">صباحاً/مساءاً</string>
+    <string name="clip.add.dynamic.value.day_of_week">يوم في الأسبوع</string>
+    <string name="clip.add.dynamic.value.day_of_month">يوم في الشهر</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">يوم من الشهر (بصفر بادئ)</string>
+    <string name="clip.add.dynamic.value.random_digit">أرقام عشوائية (0-9)</string>
+    <string name="clip.add.dynamic.value.random_latin">أحرف لاتينية عشوائية (a-z ، A-Z)</string>
+    <string name="clip.add.snippet.title">مقتطف</string>
+    <string name="clip.add.snippet.new.hint">أدخل النص للبحث أو الإنشاء</string>
+    <string name="clip.add.snippet.tooltip">المقتطف هو أي ملاحظة يمكنك إعادة استخدام نصها في أي ملاحظة أخرى ، ولكن يمكنك التعديل في واحدة. يمكن الوصول إلى المقتطفات التي تم إنشاؤها من شريط التنقل الأيمن.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">نوع النص</string>
+    <string name="text.config.size">حجم النص</string>
+    <string name="text.config.font">نوع الخط</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">تصنيف حسب</string>
+    <string name="list.config.lines">أسطر النص المرئية</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">نمط القائمة</string>
+    <string name="list.style.description">نمط قائمة المذكرات</string>
+    <string name="list.style.default">الإفتراضي</string>
+    <string name="list.style.comfortable">مريحة</string>
+    <string name="list.style.compact">مدمج</string>
+    <string name="list.style.preview">معاينة</string>
+    <string name="list.style.grid">شبكي</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">رونيات المهارة</string>
+    <string name="runes.hint.description"><![CDATA[    هذا شكل من أشكال تحسين وظائف التطبيق.
+    \n\n
+    يقوم كل رون بتوسيع أو تعديل الوظائف الأساسية ويسمح لك بتخصيص التطبيق لتحقيق الإنتاجية المثلى معه.
+    \n\n
+    بعض الأحرف الرونية أكثر فائدة ، والبعض الآخر أقل فائدة ، لكن هذا النهج يجعل التطبيق لا حدود له تقريبًا من حيث الاحتمالات.
+    \n\n
+     تحقق من الأحرف الرونية الحالية ، وقم بتنشيط تلك التي تريدها وأرسل أفكارًا لأخرى جديدة لجعل التطبيق أكثر إنتاجية قليلاً:)
+    ]]></string>
+    <string name="runes_hotkeys_title">مراقب مفتاح التشغيل السريع</string>
+    <string name="runes_hotkeys_description"><![CDATA[    باستخدام هذا الرون ، يمكنك تكوين مفاتيح الاختصار للتحكم في التطبيق والإجراءات داخله.
+    \n
+    \n
+    يتم تعيين بعض مفاتيح التشغيل السريع بشكل افتراضي. يمكنك إما مسحها أو إعادة تعيينها.
+    \n
+    \n
+    ```
+    \n
+    اعتمادًا على الإجراء ، ستتم مراقبة مفتاح التشغيل السريع إما داخل التطبيق أو خارجه عالميًا.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">كوكبي المزامنة</string>
+    <string name="runes.instant_sync.description"><![CDATA[    يفتح الرون فرصة:
+\n
+    - حفظ جميع البيانات في السحابة تلقائيًا؛
+    \n
+    - الوصول إليه فورًا من أي جهاز آخر؛
+    \n
+    - حفظ ليس فقط الملاحظات النصية ، ولكن أيضًا الملفات بأي تنسيق؛
+    \n\n
+    افتراضيًا ، يعمل التطبيق بدون مزامنة ويحفظ جميع البيانات الموجودة على الجهاز.
+    \n
+    ```
+    \n
+    بمجرد تنشيط هذا الرون ، ستتم مزامنة جميع البيانات التي تم إنشاؤها مسبقًا والبيانات الجديدة تلقائيًا مع التخزين السحابي بمجرد توفر اتصال الإنترنت.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">درع الحديد</string>
+    <string name="runes.pincode.description"><![CDATA[    يسمح لك الرون بحماية الوصول إلى التطبيق بكلمة مرور.
+    \n\n
+    عند التنشيط ، سيتم حظر الوصول بعد **%s دقيقة/دقائق ** من عدم النشاط.
+    \n\n
+    ** هام: ** إذا نسيت كلمة مرورك ، فستحتاج إلى إلغاء تثبيت التطبيق وإعادة تثبيته. في هذه الحالة ، ستفقد جميع التغييرات التي لم تتم مزامنتها.
+    ]]></string>
+    <string name="runes.theme.title">جلد الحرباء</string>
+    <string name="runes.theme.description"><![CDATA[    بشكل افتراضي، يستخدم التطبيق نظام ألوان يتغير تلقائيًا بين الفاتح والداكن وفقًا لإعدادات النظام.
+    \n\n
+    يمكنك تنشيط أي سمة أخرى ستبدو متشابهة بغض النظر عن إعدادات النظام.
+    ]]></string>
+    <string name="runes.clipboard.title">الحافظة</string>
+    <string name="runes.clipboard.description"><![CDATA[    يسمح الرون للتطبيق بمراقبة الحافظة وإنشاء ملاحظات تلقائيًا بنص منها.
+    \n\n
+    بمجرد التنشيط، سيعرض التطبيق إشعارًا دائمًا في شريط الحالة لتتمكن من تتبع المخزن المؤقت.
+    \n\n
+    ```
+    \n
+    إذا لم يتم عرض الإشعار ، فهذا يعني أن التطبيق لا يعمل ولن يتم تعقب المخزن المؤقت حتى تقوم بتشغيل التطبيق مرة أخرى.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">رفيق لوحة المفاتيح</string>
+    <string name="runes.texpander.description"><![CDATA[    يمنحك الرون القدرة على استخدام التطبيق لملء حقول الإدخال بالملاحظات الموجودة في ** أي تطبيق ** تقريبًا.
+    \n\n
+    بمجرد التنشيط ، عندما تضع التركيز في حقل الإدخال ، سيعرض التطبيق لوحة عائمة بإجراءات تسمح لك بالتحكم في محتوى حقل الإدخال.
+    \n\n
+    #### ميزات السلوك:
+    \n
+    - يمكن تغيير حجم اللوحة؛
+    \n
+    - يمكن سحب اللوحة في أي مكان على الشاشة؛
+    \n
+    - يمكن تعديل اللوحة تلقائيًا اعتمادًا على إمكانية استخدام إجراءات معينة؛
+    \n
+    - يمكن إخفاء اللوحة تلقائيًا إذا فقد الحقل التركيز؛
+    \n
+    - يمكن إخفاء اللوحة يدويًا (باستخدام الإجراء الأيمن العلوي في شريط الأدوات) حتى يتم إجبارها على الاتصال مرة أخرى؛
+    \n
+    - إذا لم يتم عرض اللوحة ، فيمكن استدعاؤها صراحةً من لوحة الإشعارات أو الإعدادات السريعة (إذا تم وضع التجانب في اللوحة)؛
+    \n\n
+    #### القيود الفنية:
+    \n
+    - تستخدم اللوحة خدمة إمكانية الوصول وتتطلب تفعيلها في إعدادات النظام؛
+    \n
+    - تستخدم اللوحة نافذة عائمة للعرض فوق التطبيقات الأخرى وتتطلب الإذن المقابل في إعدادات النظام؛
+    \n
+    - في بعض التطبيقات ، لا يكون السلوك التلقائي للوحة ممكنًا ، لذلك يمكن استخدامه مع قيود واستدعاء صريح؛
+    \n\n
+    #### تنويه:
+    \n
+    إذا توقف الرون عن العمل بعد فترة ، يرجى قراءة [هذه المقالة] (%s) حول كيفية استمرار تشغيل التطبيق على جهازك. أو اتصل بي عبر البريد الإلكتروني ، فربما وجدت بعض المشكلات:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">تفعيل</string>
+    <string name="runes.texpander.required.accessibility">انقر هنا ، ثم انتقل إلى الخدمات التي تم تنزيلها (المثبتة) وقم بتنشيط خدمة لوحة المفاتيح.</string>
+    <string name="runes.texpander.required.floating">انقر هنا ، ثم انتقل إلى أذونات أخرى وقم بتنشيط إذن عرض النافذة المنبثقة.</string>
+    <string name="runes.texpander.action.copy">نسخ إلى الحافظة</string>
+    <string name="runes.texpander.action.show">انقر هنا لإظهار القائمة.</string>
+    <string name="runes.texpander.action.insert">إدخال</string>
+    <string name="runes.texpander.action.replace">استبدال</string>
+    <string name="runes.texpander.hint.hide">إخفاء حتى يتم الاتصال به من لوحة الإشعارات أو الإعدادات السريعة.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">العين</string>
+    <string name="runes.link_preview.description"><![CDATA[    عند تنشيط هذا الرون ، من أجل **روابط http ** المحفوظة، سيحاول التطبيق تحميل المعاينة في وضع عرض الملاحظات.
+    \n\n
+    للقيام بذلك:
+    \n
+    - يمكن فتح صورة المعاينة في نافذة منفصلة وتكبيرها؛
+    \n
+     - إذا كان الرابط عبارة عن مقطع فيديو، فيمكن تشغيله باستخدام التطبيق؛
+    ]]></string>
+    <string name="runes.auto_save.title">نقطة اللا عودة</string>
+    <string name="runes.auto_save.description"><![CDATA[    بشكل افتراضي، عند إنشاء ملاحظة أو تحريرها، يجب أن تنقر يدويًا على زر الحفظ لتأكيد التغييرات.
+    \n
+    \n
+    باستخدام هذا الرون، سيحفظ التطبيق تلقائيًا أي تغييرات تجريها أثناء تحرير النص.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">إعادة إحياء</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    مع هذا الرون، عند بدء التشغيل، سيقوم التطبيق باستعادة آخر مرشح نشط من الجلسة السابقة.
+    ]]></string>
+    <string name="runes.swipe_actions.title">التمرير</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    باستخدام هذا الرون، في قائمة الملاحظات، يمكنك إعداد إجراءات معهم، مطبقة على إيماءات التمرير.
+    ]]></string>
+    <string name="runes.focus_on_title.title">التركيز المتغير</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    بشكل افتراضي، عند إنشاء ملاحظة، يتم تعيين التركيز في حقل إدخال النص.
+    \n\n
+    يمكنك استخدام هذا الرون لتغيير هذا السلوك وتعيين التركيز على أي مجال آخر.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">قطع النسخ</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    عند تنشيط الرون، فإن أي إجراء لنسخ النص داخل Clipto (باستثناء الإجراءات السياقية في حقول الإدخال) سيخفي التطبيق.
+    \n
+    \n
+    يسمح لك هذا الرون بتقليل عدد الخطوات عند لصق النص المنسوخ خارج التطبيق.
+    ]]></string>
+    <string name="runes.double_click_actions.title">خطوات مبدئية</string>
+    <string name="runes.double_click_actions.description"><![CDATA[     باستخدام هذا الرون لبعض الإجراءات، يمكنك ضبطها للتنشيط عن طريق النقر المزدوج بدلاً من النقر الفردي.
+    \n
+    \n
+    يمكن أن يكون هذا السلوك مفيدًا لمنع النقرات غير المقصودة.
+    ]]></string>
+    <string name="runes.loyalty.title">دعم مُلهِم</string>
+    <string name="runes.loyalty.description"><![CDATA[    بدون دعمك وتعليقاتك ، لن يتطور المنتج في الاتجاه الصحيح للمستخدمين.
+    \n\n
+    > ** إذا كان لديك دقيقة من الوقت ** ، فلا تنس تقييمنا على Google Play.
+    \n
+    \n
+     > ** إذا كان لديك المزيد من الوقت ، ولم تبدو الترجمة صحيحة ** - انضم إلى مشروع الترجمة الخاص بنا.
+    \n
+    \n
+    > ** إذا وجدت أخطاءً أو تريد المزيد من الأحرف الرونية أو ترغب فقط في الكتابة إلينا ** - بريدنا الإلكتروني وصفحة جيثب دائمًا في خدمتك.
+    ]]></string>
+    <string name="runes.backup_restore.title">آلة الزمن</string>
+    <string name="runes.backup_restore.description"><![CDATA[    بالإضافة إلى المزامنة السحابية ، يمكنك حفظ النسخ الاحتياطية لبياناتك يدويًا واستعادتها لاحقًا.
+    \n\n
+    بخلاف المزامنة السحابية ، يسمح هذا الأسلوب بما يلي:
+    \n
+    - أخذ لقطة لجميع البيانات في الوقت الحالي؛
+    \n
+    - إدارة عملية النسخ الاحتياطي والاسترداد بالكامل بنفسك؛
+    \n
+    - استعادة البيانات بالكامل بناءً على لقطة البيانات المحفوظة مسبقًا؛
+    \n\n
+    ```
+    \n
+    تتم الاستعادة من ملف في الوضع الناعم. بمعنى ، لا يتم حذف البيانات الموجودة ، ولكن يتم استكمالها فقط ببيانات جديدة.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">الإعدادات</string>
+    <string name="settings.campaign.rate.title">رأيك يهمنا</string>
+    <string name="settings.campaign.rate.message">مساعدتك لتحسين تطبيقنا لن يأخذ من وقتك اكثر من دقيقة.</string>
+    <string name="settings.campaign.rate.button">قم بتقييمنا على Google Play</string>
+    <string name="settings.campaign.rate.question">كيف كانت تجربتك مع Clipto؟</string>
+    <string name="settings.campaign.rate.feedback.title">ردود الفعل</string>
+    <string name="settings.campaign.rate.feedback.message">هل يمكنكم اخبارنا كيف يمكن أن نحسن من Clipto؟ رأيكم يهمنا.</string>
+    <string name="settings.campaign.rate.feedback.toast">هل بامكانكم ترك مراجعة جميلة على متجر جوجل؟ شكرا لدعمكم!</string>
+    <string name="settings.campaign.share.title">احضر صديق وتلقي جائزة!</string>
+    <string name="settings.campaign.share.more">لمعرفة المزيد</string>
+    <string name="settings.campaign.share.action">مشاركة الرابط</string>
+    <string name="settings.group.clipboard">الحافظة</string>
+    <string name="settings.group.behavior">السلوك</string>
+    <string name="settings.group.appearance">إعدادات المظهر</string>
+    <string name="settings.group.backup">النسخ الإحتياطي والإستعادة</string>
+    <string name="settings.group.security">الخصوصية والأمان</string>
+    <string name="settings.group.runes">الرونات</string>
+    <string name="settings.link_preview.title">معاينة الروابط</string>
+    <string name="settings.auto_save.title">مزامنة الملاحظات تلقائيًا</string>
+    <string name="settings.auto_save.description">التطبيق سيحفظ التغييرات تلقائيًا أثناء إنشاء الملاحظات أو تحريرها.</string>
+    <string name="settings.focus_on_title.title">التركيز على العنوان عند إنشاء ملاحظة</string>
+    <string name="settings.focus_on_title.description">عند إنشاء ملاحظة ، سيتم تعيين التركيز على حقل العنوان</string>
+    <string name="settings.track_clipboard.title">ملاحظات من الحافظة</string>
+    <string name="settings.track_clipboard.description">سيقوم التطبيق بإنشاء ملاحظات تبعا لتغييرات الحافظة أثناء تشغيله. سيتم إظهار إشعار دائم في شريط الإشعارات.</string>
+    <string name="settings.track_clipboard.q.message">بدءا من اندرويد 10 لكي تاخذ مذكرات من ذاكرة النصوص استخدم اسلوبنا الجديد.</string>
+    <string name="settings.track_clipboard.q.description">يبدأ في اندرويد 10 ما لم يكن التطبيق هو التطبيق الذي يحتوي على تركيز حاليًا ، لا يمكنه الوصول إلى بيانات حافظة ذاكرة النصوص.</string>
+    <string name="settings.track_clipboard.q.solution.title">لتجاوز هذا التقييد ، استخدم أحد الحلول التالية:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">الإجراء \'…Clipto\' بدلا من النسخ</string>
+    <string name="settings.track_clipboard.q.solution.1">عندما تحدد نصًا تريد نسخه ، استخدم الإجراء \"قص الي\" بدلاً من \"نسخ\" إذا كان متاحًا في قائمة السياق للتطبيق النشط.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">عملية \"النسخ\" بالاقتران مع \"اللصق\" في منطقة الإعلام</string>
+    <string name="settings.track_clipboard.q.solution.2">إذا لم يكن الإجراء \"قص الي\" متاحًا أو كنت لا تزال ترغب في استخدام الإجراء \"نسخ\" القياسي ، فلا تنس النقر فوق الزر \"لصق\" في الإشعار لتدوين ملاحظة من بيانات الحافظة الحالية.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">عملية \"النسخ\" كما كانت قبل أندرويد Q</string>
+    <string name="settings.track_clipboard.q.solution.3">هذه الطريقة تتطلب تهيئة متقدمة بواسطة الحاسوب. ليعمل Clipto مرة أخرى, رجائا قم بادخال أوامر ADB التالية على حاسوبك:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">بعد التنفيذ الناجح يجب أن ترى الإجراء الإضافي في الإعلامات المخصصة للتطبيق والتي تتيح لك تشغيل أو إيقاف تشغيل مراقبة الحافظة. أيضا سوف يذهب هذا التحذير من الإعدادات.</string>
+    <string name="settings.track_clipboard.q.emulate.title">محاكاة عملية النسخ</string>
+    <string name="settings.track_clipboard.q.emulate.description">ستقوم العمليات \"Cliipto…\" و \"اللصق\" المخصصة على إنشاء ملاحظات تلقائيًا من النص المحدد أو المنسوخ ووضعها في الحافظة إذا كان محتواها مختلفًا.</string>
+    <string name="settings.universal_clipboard.title">الحافظة العامة</string>
+    <string name="settings.universal_clipboard.description">ستتم مزامنة أي نص تم نسخه إلى الحافظة بين جميع أجهزتك. سيتم أيضًا إدراجه تلقائيًا في الحافظة حيث يتم تنشيط هذا الإعداد.</string>
+    <string name="settings.notification_style.title">نمط الإخطار</string>
+    <string name="settings.notification_style.description">نمط الإخطار الذي يجب استخدامه لإخطار دائم في شريط الحالة.</string>
+    <string name="settings.notification_sound.title">كتم الاشعارات</string>
+    <string name="settings.notification_sound.description">يكتم الإخطارات ، بغض النظر عن الأصوات أو الاهتزازات المحددة على قناة الإخطار أو الإعلام.</string>
+    <string name="settings.hide_on_click.title">اخفِ التطبيق عند النسخ</string>
+    <string name="settings.hide_on_click.description">سيتم إخفاء التطبيق بعد نسخ ملاحظة.</string>
+    <string name="settings.restore_filter.title">تذكر اخر فلتر</string>
+    <string name="settings.restore_filter.description">سيتم فتح التطبيق مع فلتر من آخر استخدام.</string>
+    <string name="settings.pin_starred.title">ثبّت الملاحظات المفضلة</string>
+    <string name="settings.pin_starred.description">سيتم عرض الملاحظات المميزة بنجمة أولاً في القائمة ، بغض النظر عن الفلتر المحدد.</string>
+    <string name="settings.theme.title">السمة</string>
+    <string name="settings.theme.description">اختار لون مخصص.</string>
+    <string name="settings.backup.title">النسخ احتياطي إلى ملف</string>
+    <string name="settings.backup.description">تصدير الملاحظات إلى الملف.</string>
+    <string name="settings.restore.title">استعادة من ملف</string>
+    <string name="settings.restore.description">إعادة ملاحظات من ملف (الملفات المدعومة: %s).</string>
+    <string name="settings.startup.title">تشغيل عند البدء</string>
+    <string name="settings.startup.description">إسمح للتطبيق بالبدء من تلقاء نفسه بمجرد انتهاء النظام من الإقلاع.</string>
+    <string name="settings.language.title">اللّغة</string>
+    <string name="settings.swipe_actions.title">اجراءات السحب</string>
+    <string name="settings.swipe_actions.description">قم بتكوين إجراءات التمرير السريع للعمل بسرعة على الملاحظات في القائمة الرئيسية.</string>
+    <string name="settings.double_click.title">ضبط النقر المزدوج</string>
+    <string name="settings.double_click.description">قم بتكوين الإجراءات المطلوب إكمالها فقط بنقرة مزدوجة.</string>
+    <string name="settings.double_click.action.exit">زر العودة للخروج من التطبيق</string>
+    <string name="settings.double_click.action.delete">حذف الملاحظة</string>
+    <string name="settings.double_click.action.edit">تعديل الملاحظة</string>
+    <string name="settings.double_click.toast">انقر مرة أخرى لإكمال</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">لا تعرض الملاحظات التي تم تغييرها</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">لن يتم عرض الملاحظات ، التي تم تعيين أي من السمات لها (علامة ، علامة المفضلة ، العنوان ، المقتطف) في فئة \"ملاحظات من الحافظة\".</string>
+    <string name="settings.clipboard.ignore_q_warning.title">لا تعرض تحذيرًا بشأن قيود الحافظة</string>
+    <string name="settings.clipboard.ignore_q_warning.description">إذا تم تكوين التطبيق ويعمل بشكل صحيح مع الحافظة على جهازك ، فقم بتمكين هذا التبديل لإزالة القيود الوظيفية من الإشعارات.</string>
+    <string name="settings.security.passcode.title">قفل رمز المرور</string>
+    <string name="settings.security.passcode.description">عند إنشاء رمز المرور ، سيتم قفل التطبيق بعد %s دقيقة من عدم النشاط. \n\n ملاحظة: إذا نسيت رمز المرور ، فستحتاج إلى حذف التطبيق وإعادة تثبيته. وستفقد جميع التغييرات غير المتزامنة.</string>
+    <string name="settings.security.fingerprint.title">فتح بواسطة البصمة</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">تخطي</string>
+    <string name="auth.set_passcode.label.set_passcode">قم بتعيين رمز المرور للوصول إلى التطبيق بسرعة وأمان</string>
+    <string name="auth.set_passcode.label.reenter_passcode">أعد إدخال رمز المرور</string>
+    <string name="auth.set_fingerprint.title">ضبط معرف البصمة</string>
+    <string name="auth.set_fingerprint.subtitle">هل تريد استخدام مستشعر البصمة لفتح التطبيق؟</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">استخدم البصمة</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">تخطي الأن</string>
+    <string name="auth.fingerprint.touch_sensor">قم بتأكيد البصمة للمتابعة</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">أدخل رمز المرور الحالي الخاص بك</string>
+    <string name="change_passcode.set_new">قم بإنشاء رمز المرور الجديد الخاص بك</string>
+    <string name="change_passcode.reenter">أعد إدخال رمز المرور الخاص بك</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">الدعم %s</string>
+    <string name="about.label.email.support.message">اكتب رسالتك هنا</string>
+    <string name="about.label.rate">قم بتقييمنا على Google Play</string>
+    <string name="about.label.issue">الإبلاغ عن مشكلة</string>
+    <string name="about.label.translate">ساعدونا بالتعريب</string>
+    <string name="about.label.changelog">التغييرات</string>
+    <string name="about.label.campaign.rate">ساعدنا لكي نصبح أفضل!</string>
+    <string name="about.label.campaign.share">مشاركة رابط التطبيق</string>
+    <string name="about.label.campaign.share.description">%s اشخاص انضموا للتطبيق من خلال الرابط الخاص بك، شكرا لك!</string>
+    <string name="about.label.other">ما يقوله الآخرون عنا</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">قم بتسجيل الدخول لمزامنة بياناتك على جميع اجهزتك.</string>
+    <string name="account.title.required_authorization">التصريح مطلوب</string>
+    <string name="account.description.required_authorization">يجب أن يكون مصرحًا لك لمعالجة هذا الإجراء</string>
+    <string name="account.title.authorized">التصريح</string>
+    <string name="account.button.sign_in">تسجيل الدخول</string>
+    <string name="account.button.sign_out">تسجيل الخروج</string>
+    <string name="account.dialog.sign_out.title">جارِ تسجيل الخروج</string>
+    <string name="account.dialog.sign_out.message">سيتم فقد جميع البيانات غير المتزامنة.</string>
+    <string name="account.plan.personal">رخصة شخصية</string>
+    <string name="account.plan.subscription">خطة الاشتراك (مزامنة %s ملاحظات)</string>
+    <string name="account.plan.contributor">خطة المساهم (مزامنة %s ملاحظات)</string>
+    <string name="account.plan.yearly">الخطة السنوية (مزامنة %s ملاحظات)</string>
+    <string name="account.plan.monthly">الخطة الشهرية (مزامنة %s ملاحظات)</string>
+    <string name="account.plan.free">الخطة الأساسية (مزامنة %s ملاحظات)</string>
+    <string name="account.toolbar.title">حساب</string>
+    <string name="account.sync.title">مزامنة الملاحظات تلقائيًا</string>
+    <string name="account_rebuild_index_title">إعادة بناء فهرس البيانات</string>
+    <string name="account_rebuild_index_description">إذا رأيت بيانات مختلفة (علامات ، ملفات ، ملاحظات ، إلخ) على أجهزة مختلفة ، يوصى بتنفيذ هذا الإجراء. سوف تحتاج إلى إعادة تسجيل الدخول عند اكتمال الإجراء.</string>
+    <string name="account_delete_title">حذف الحساب</string>
+    <string name="account_delete_confirm_title">هل تريد حذف حسابك؟</string>
+    <string name="account_delete_confirm_description"><![CDATA[    تنبيه! إذا قررت حذف هذا الحساب ، فسيتم حذف حسابك وبياناتك الشخصية
+    بشكل دائم ولا رجوع فيه. يرجى التأكد من عدم وجود أي معلومات قيمة هناك.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">هل أنت متأكد؟</string>
+    <string name="account_delete_confirm_again_description">بمجرد التأكيد ، سيتم حذف جميع بيانات حسابك نهائيًا.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">مجاني</string>
+    <string name="account.sync.plan.title">مزامنة %s ملاحظات</string>
+    <string name="account.sync.plan.toolbar">اختيار الخطة</string>
+    <string name="account.sync.plan.button.active">الخطة النشطة</string>
+    <string name="account.sync.plan.button.select">اختر الخطة</string>
+    <string name="account.sync.plan.button.change">تغيير الخطة</string>
+    <string name="account.sync.plan.button.upgrade">ترقية</string>
+    <string name="account.sync.plan.caption">ابدأ مجانًا، ثم ادفع فقط مقابل البيانات التي تقوم بمزامنتها.</string>
+    <string name="account.sync.plan.hint">عدد الملاحظات التي يمكنك مزامنتها عبر الأجهزة (%s)</string>
+    <string name="account.sync.plan.benefit.offline">عدد غير محدود من الملاحظات دون اتصال.</string>
+    <string name="account.sync.plan.benefit.sync">مزامنة %s ملاحظات عبر كافة الأجهزة.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">المزامنة متوقفة بسبب بلوغ الحد الأقصى</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">العدد الإجمالي لجميع ملاحظاتك ، بما في ذلك \"سلة المحذوفات\" ، هو٪ s ، وهو ما يتجاوز الحد المسموح به وهو ٪ s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">قلل عدد ملاحظاتك لاختيار هذه الخطة.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">لقد وصلت إلى الحد الأقصى لخطتك. لا تقلق ، لا يزال التطبيق يعمل بكامل وظائفه في وضع عدم الاتصال وليس له أي قيود. ومع ذلك ، يتم تعطيل المزامنة عبر الانترنت على جهازك حتى تقوم بترقية حسابك أو تقليل عدد الملاحظات إلى حد الخطة النشطة.</string>
+    <string name="account.sync.plan.contributor">إذا كنت قد ساعدت في ترجمة التطبيق أو دعم المنتج بشكل منتظم، يرجى الاتصال بنا لترقية حسابك.</string>
+    <string name="sync.free_limit_concept">لم يتم إصلاح الحد المجاني ويمكن تغييره إما لأعلى أو لأسفل حسب عوامل مختلفة.</string>
+    <string name="sync.off.title">الملاحظة غير متزامنة بين الأجهزة</string>
+    <string name="sync.off.multiple.title">الملاحظات غير متزامنة بين الأجهزة</string>
+    <string name="sync.off.caption">هذا ممكن لأحد الأسباب التالية:</string>
+    <string name="sync.off.reason.universal_clipboard">لم يتم تنشيط الحافظة العامة عندما أنشأ التطبيق هذه الملاحظة.</string>
+    <string name="sync.off.reason.manual_off">لقد قمت بإيقاف تشغيل المزامنة يدويًا.</string>
+    <string name="sync.warning.title">هذه الوظيفة تستخدم المزامنة السحابية</string>
+    <string name="sync.warning.description">المزامنة السحابية ليست مجانية تمامًا ويمكن تعطيلها على جهازك حتى تقوم بترقية حسابك أو تقليل عدد الملاحظات إلى حد الخطة النشطة.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">الإجراءات السريعة</string>
+    <string name="fast_actions.compose_email">إنشاء بريد إلكتروني</string>
+    <string name="fast_actions.send_message">إرسال رسالة جديدة</string>
+    <string name="fast_actions.compose_sms">إنشاء رسالة</string>
+    <string name="fast_actions.twitter_post">إنشاء Tweet</string>
+    <string name="fast_actions.web_search">البحث في الويب</string>
+    <string name="fast_actions.google_translate">ترجمة جوجل</string>
+    <string name="fast_actions.google_maps_search">بحث خرائط جوجل</string>
+    <string name="fast_actions.wiki_search">البحث في ويكيبيديا</string>
+    <string name="fast_actions.youtube_search">البحث في اليوتيوب</string>
+    <string name="fast_actions.duckduckgo_search">البحث في DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">البحث في Stack Overflow</string>
+    <string name="fast_actions.reddit_search">بحث في Reddit</string>
+    <string name="fast_actions.play_url">تشغيل رابط</string>
+    <string name="fast_actions.send_as_file">أرسل كملف</string>
+    <string name="fast_actions.send_as_txt_file">أرسل بصيغة Txt</string>
+    <string name="fast_actions.send_as_pdf_file">أرسل بصيغة Pdf</string>
+    <string name="fast_actions.send_as_md_file">أرسل بصيغة Markdown</string>
+    <string name="fast_actions.export_to_file">تصدير إلى ملف</string>
+    <string name="fast_actions.export_to_file.success">التصدير كَ %s</string>
+    <string name="fast_actions.calendar_event">إضافة حدث تقويم</string>
+    <string name="fast_actions.copy">إنسخ إلى الحافظة</string>
+    <string name="fast_actions.copy_clear">مسح من الحافظة</string>
+    <string name="fast_actions.tts">النص إلى الكلام</string>
+    <string name="fast_actions.tts.max_length">يجب ألا يزيد النص عن ٪ s حرفًا</string>
+    <string name="fast_actions.share">شارك بواسطة…</string>
+    <string name="fast_actions.send_as_qrcode">أرسل بصيغة رمز QR</string>
+    <string name="fast_actions.dial_number">اطلب رقم هاتف</string>
+    <string name="fast_actions.insert_contact">أدخل جهة اتصال</string>
+    <string name="fast_actions.insert_contact_email">حفظ البيد الإلكتروني لجهة الإتصال</string>
+    <string name="fast_actions.insert_contact_phone">حفظ رقم جهة الإتصال</string>
+    <string name="fast_actions.open_url">إفتح صفحة الويب</string>
+    <string name="fast_actions.short_link">اختصار الرابط</string>
+    <string name="fast_actions.more">أظهر المزيد</string>
+    <string name="fast_actions.error">خطأ غير متوقع: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">الإفتراضي</string>
+    <string name="theme.sepia">بني داكن</string>
+    <string name="theme.dark">داكن</string>
+    <string name="theme.dark_blue">ازرق غامق</string>
+    <string name="theme.dark_green">أخضر غامق</string>
+    <string name="theme.dark_blurple">أرجواني داكن</string>
+    <string name="theme.black">AMOLED أسود</string>
+    <string name="theme.green">أخضر</string>
+    <string name="theme.white">أبيض</string>
+    <string name="theme.pink">وردي</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">تاريخ الاستخدام</string>
+    <string name="sort_order.modify_date">تاريخ التعديل</string>
+    <string name="sort_order.create_date">تاريخ الإنشاء</string>
+    <string name="sort_order.delete_date">تاريخ الحذف</string>
+    <string name="sort_order.usage_count">عدد مرات الاستخدام</string>
+    <string name="sort_order.title">العنوان</string>
+    <string name="sort_order.text">النص</string>
+    <string name="sort_order.tags">العلامات</string>
+    <string name="sort_order.size">الحجم</string>
+    <string name="sort_order.name">الاسم</string>
+    <string name="sort_order.notes_count">عدد الملاحظات</string>
+    <string name="sort_order.color">اللون</string>
+    <string name="sort_order.manual">يدوي</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">تم بنجاح</string>
+    <string name="backup.fail.title">فشل</string>
+    <string name="backup.fail.message">خطأ غير متوقع: %s</string>
+    <string name="restore.success.title">تم بنجاح</string>
+    <string name="restore.fail.title">فشل</string>
+    <string name="restore.fail.message">خطأ غير متوقع: %s</string>
+    <string name="clip.multiple.exit_without_save.title">هل أنت متأكد أنك تريد إغلاق هذه النافذة؟</string>
+    <string name="clip.multiple.exit_without_save.description">سيتم فقدان أي تغييرات تم إجراؤها.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">العلامات الشائعة</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">الفاصل</string>
+    <string name="clip.multiple.merge.separator.line">سطر جديد</string>
+    <string name="clip.multiple.merge.separator.space">مسافة</string>
+    <string name="clip.multiple.merge.separator.other">أخرى</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">التحكم</string>
+    <string name="notification.style.history">سجل الحافظة</string>
+    <string name="notification.style.actions">إجراءات الحافظة</string>
+    <string name="notification.track_clipboard.pause">تتبع الحافظة متوقف مؤقتًا</string>
+    <string name="notification.track_clipboard.resume">يتم استئناف تتبع الحافظة</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">المرفقات</string>
+    <string name="attachments.type.photo">إلتقاط صورة</string>
+    <string name="attachments.type.record">تسجيل فيديو</string>
+    <string name="attachments.type.file">إختيار ملف</string>
+    <string name="attachments.attr.created">أُنشأت</string>
+    <string name="attachments.attr.name">الإسم</string>
+    <string name="attachments.attr.type">النوع</string>
+    <string name="attachments.attr.path">المسار</string>
+    <string name="attachments.attr.size">الحجم</string>
+    <string name="attachments.state.downloaded">تم التنزيل</string>
+    <string name="attachments.state.uploaded">تم الرفع</string>
+    <string name="attachments.state.downloading">جاري تحميل…</string>
+    <string name="attachments.state.uploading">جاري رفع…</string>
+    <string name="attachments.label.insert">أضف إلى ملاحظة</string>
+    <string name="attachments.label.download_url">الرابط العام سيكون متاحًا بعد رفع الملف.</string>
+    <string name="contribute.annual.offer">يمكنك الإلغاء في أي وقت من مركز اشتراك Google Play.</string>
+    <string name="contribute.monthly.period">شهر</string>
+    <string name="contribute.annual.period">سنة</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">خروج</string>
+    <string name="desktop.tray.show">عرض</string>
+    <string name="desktop.tray.show_in_taskbar">إظهار في شريط المهام</string>
+    <string name="desktop.update.action.download">تحميل</string>
+    <string name="desktop.update.action.later">لاحقا</string>
+    <string name="desktop.update.title">النسخة الجديدة متاحة</string>
+    <string name="desktop.shortcuts.title">مفاتيح الاختصار</string>
+    <string name="desktop.shortcuts.dialog.define">تحديد الاختصار</string>
+    <string name="desktop.shortcuts.showHideApp">إظهار / إخفاء التطبيق</string>
+    <string name="desktop.shortcuts.modeFullscreen">التبديل إلى وضع ملء الشاشة</string>
+    <string name="desktop.shortcuts.modeComfortable">تبديل الي الوضع المريح</string>
+    <string name="desktop.shortcuts.modeCompact">التبديل إلى الوضع العمودي</string>
+    <string name="desktop.shortcuts.tagNext">العلامة التالية</string>
+    <string name="desktop.shortcuts.tagPrev">العلامة السابقة</string>
+    <string name="desktop.shortcuts.noteNext">الملاحظة التالية</string>
+    <string name="desktop.shortcuts.notePrev">الملاحظة السابقة</string>
+    <string name="desktop.shortcuts.noteNew">ملاحظة جديدة</string>
+    <string name="desktop.shortcuts.noteSave">حفظ الملاحظة</string>
+    <string name="desktop.shortcuts.noteDelete">حذف الملاحظة</string>
+    <string name="desktop.shortcuts.noteCopy">نسخة ملاحظة</string>
+    <string name="desktop.shortcuts.notePrint">طباعة ملاحظة</string>
+    <string name="desktop.shortcuts.noteFind">البحث عن ملاحظات</string>
+    <string name="desktop.shortcuts.noteOpen">فتح ملاحظة</string>
+    <string name="desktop.shortcuts.noteEdit">تعديل ملاحظة</string>
+    <string name="desktop.shortcuts.contextModeSelect">تحديد ملاحظة</string>
+    <string name="desktop.shortcuts.contextModeCancel">إلغاء تحديد كل الملاحظات</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">تحديد كل الملاحظات</string>
+    <string name="desktop.shortcuts.saveFromClipboard">حفظ من الحافظة</string>
+    <string name="desktop.attachments.browse">أسقط الملفات لإرفاقها أو تصفح لها.</string>
+    <string name="desktop.main.content.under.development">المحتوى قيد التطوير…</string>
+    <string name="desktop.main.menu.download">تحميل</string>
+    <string name="desktop.main.menu.download.for">تحميل النسخة الخاصة بـ %s</string>
+    <string name="desktop.main.menu.download.android.apk">احصل على التطبيق</string>
+    <string name="desktop.main.menu.resources">المصادر</string>
+    <string name="desktop.main.menu.open">فتح Clipto في المتصفح</string>
+    <string name="desktop.main.features.title.1">اكتب بسهولة وبسرعة على أي جهاز.</string>
+    <string name="desktop.main.features.title.2">مفكرة الكل في واحد amp&amp;؛ ومدير الحافظة مع التركيز على السرعة والإنتاجية التي تعمل على كل من الكمبيوتر والهاتف.</string>
+    <string name="desktop.main.features.title.3">رفيقك الشخصي في الكتابة.</string>
+    <string name="desktop.main.features.title.4">حل شامل للعمل المريح والفعال مع الملاحظات والمقتطفات والحافظة والملفات وأي معلومات أخرى مهمة للوصول السريع على أي جهاز.</string>
+    <string name="desktop.main.features.title.5">ما الذي يجعل Clipto مميزًا؟</string>
+    <string name="desktop.get_started.language">إختر لغتك</string>
+    <string name="desktop.get_started.theme">إختر المظهر المفضل</string>
+    <string name="desktop.auth.instruction">تعليمات الدخول</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">مسح الرمز الشريطي</string>
+    <string name="barcode.prompt.point_at_a_barcode">قم بتوجيه الكاميرا إلى الرمز الشريطي</string>
+    <string name="barcode.prompt.hold_camera_steady">حافظ على ثبات الكاميرا للحظة</string>
+    <string name="barcode.prompt.move_camera_closer">إقترب أكثر للبحث</string>
+    <string name="barcode.prompt.searching">جاري البحث…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">فشل طلب خط الحروف و رمز السبب: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">الرابط العام</string>
+    <string name="public.note.link.time.label">في وقت محدد</string>
+    <string name="public.note.link.time.or">أو</string>
+    <string name="public.note.link.time.type.seconds">ثواني</string>
+    <string name="public.note.link.time.type.minutes">دقائق</string>
+    <string name="public.note.link.time.type.hours">ساعات</string>
+    <string name="public.note.link.time.type.days">أيام</string>
+    <string name="public.note.link.access_time">وقت الدخول</string>
+    <string name="public.note.link.access_time.description">في حالة التعيين ، لن يتوفر الارتباط إلا بعد فترة زمنية محددة منذ إنشائه أو التحديث لاحقا.</string>
+    <string name="public.note.link.access_time.label">سيكون متاحًا في</string>
+    <string name="public.note.link.access_password">كلمة المرور</string>
+    <string name="public.note.link.access_password.hint">تلميح كلمة المرور (اختياري)</string>
+    <string name="public.note.link.access_password.placeholder">كلمة المرور</string>
+    <string name="public.note.link.access_password.description">في حالة الضبط ، لن يكون الرابط متاحًا إلا بعد تأكيد كلمة المرور.</string>
+    <string name="public.note.link.time_to_expire">زمن انتهاء الصلاحية</string>
+    <string name="public.note.link.time_to_expire.description">في حالة التعيين ، سيكون الارتباط صالحًا لفترة زمنية محددة بعد الإنشاء أو التحديث لاحقا.</string>
+    <string name="public.note.link.time_to_expire.label">ينتهي في</string>
+    <string name="public.note.link.one_time_opening">الفتح لمرة واحدة</string>
+    <string name="public.note.link.one_time_opening.description">إذا تم تعيينه، فسيكون الرابط متاحًا للفتح لمرة واحدة فقط من وقت إنشائه أو تحديثه لاحقًا.</string>
+    <string name="public.note.link.action.remove">إزالة الرابط</string>
+    <string name="public.note.link.action.remove.confirm.title">هل تريد إزالة الرابط؟</string>
+    <string name="public.note.link.action.remove.confirm.description">لن يكون الرابط متاحًا بعد الآن.</string>
+    <string name="public.note.link.action.create">إنشاء رابط</string>
+    <string name="public.note.link.state.unavailable">غير متاح</string>
+    <string name="public.note.link.state.postponed">ستكون متاحة في:</string>
+    <string name="public.note.link.state.expires_in">تنتهي صلاحيته في %s</string>
+    <string name="public.note.link.state.expired">منتهي الصلاحية</string>
+    <string name="public.note.link.state.locked">مؤمّن</string>
+    <string name="public.note.link.state.locked.wrong_password">كلمة المرور غير صحيحة.</string>
+    <string name="about.policy">سياسة الخصوصية</string>
+    <string name="about.toc">شروط الخدمة</string>
+    <string name="about_pricing">التسعيرة</string>
+    <string name="site.integrations.title">تكاملات</string>
+    <string name="site.integrations.zapier.title">تكامل Zapier</string>
+    <string name="site.integrations.zapier.description"><![CDATA[قم بتوصيل Clipto مع Zapier وقم بتشغيل مهام سير العمل الخاصة بك بسرعة فائقة.
+\n
+## الحافظة الخاصة بك كمحفز لسير العمل
+\n
+أسرع طريقة لحفظ المعلومات المهمة هي تحديدها ونسخها.
+\n
+لبدء استخدام هذه الوظيفة مع Zapier ، ما عليك سوى اتباع الخطوات التالية:
+\n
+1. تكوين المشغل في Zapier ** تم نسخ النص إلى الحافظة **.
+\n
+2. قم بتثبيت Clipto على جهازك (الهاتف المحمول ، سطح المكتب) و ** قم بتسجيل الدخول ** بنفس الحساب
+\n
+3. افتح Clipto وقم بتنشيط الإعدادات ** ملاحظات من الحافظة ** و ** الحافظة العالمية **
+\n
+4. هذا كل شيء. يمكنك الآن استخدام المجموعة القياسية ** Ctrl + C ** (أو نسخ في قائمة السياق) لتنشيط سير عمل بنص منسوخ.
+    ]]></string>
+    <string name="faq.title">الأسئلة الشائعة.</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[     **الملاحظات** تساعدك في الاحتفاظ بالمعلومات النصية المهمة والوصول إليها فورًا في أي وقت على أي جهاز.
+    \n
+    \n
+    بشكل افتراضي، يتم تقسيم جميع الملاحظات إلى عدة فئات للوصول السريع إلى الملاحظات الصحيحة بناءً على سمات مختلفة.
+    \n
+    ```
+    \n
+    يتم تنزيل جميع الملاحظات على جهازك عند تسجيل الدخول لأول مرة.
+    \n
+    \n
+    تتم مزامنة أي تغييرات بمجرد توفر الإنترنت.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **التصفيات** تساعدك في العثور على المعلومات التي تريدها بشكل أسرع باستخدام قوالب البحث الجاهزة.
+    \n
+    ```
+    \n
+    يمكن أن يحتوي قالب البحث على مجموعات مختلفة من العلامات والفترات الزمنية والنصوص وقواعد الفرز والعرض ، إلخ.
+    \n
+    \n
+    لذلك، فإن حفظ أي مجموعة مثل عامل التصفية يسهل استرداد البيانات التي تبحث عنها عند الوصول إليها مرة أخرى.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - لكل تصفية إعداداتها الخاصة لعرض البيانات في القائمة.
+    \n
+    - إذا تم تعيين الوصف ، فسيتم عرضه بدلاً من هذا التلميح.
+    \n
+    - تتم مزامنة إعدادات التصفية عبر جميع أجهزتك.
+    \n
+    ```
+    \n
+    تتغير لوحة الألوان إذا قمت بالنقر فوق اللون المحدد مرة أخرى.
+    \n
+    \n
+    تقوم قاعدة الفرز بعكس اتجاهها إذا قمت بالنقر فوقها مرة أخرى.
+    \n
+    \n
+    الوصف يدعم تنسيق Markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **العلامات** تساعد في تنظيم ملاحظاتك وملفاتك لتسهيل العثور عليها.
+    \n
+    ```
+    \n
+    يمكنك إضافة علامات متعددة إلى أي ملاحظة أو ملف.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - كل علامة لها إعداداتها الخاصة لعرض البيانات في القائمة.
+    \n
+    - إذا تم تعيين الوصف ، فسيتم عرضه بدلاً من هذا التلميح.
+    \n
+    - تتم مزامنة إعدادات العلامة عبر جميع أجهزتك.
+    \n
+    ```
+    \n
+    تتغير لوحة الألوان إذا قمت بالنقر فوق اللون المحدد مرة أخرى.
+    \n
+    \n
+    تقوم قاعدة الفرز بعكس اتجاهها إذا قمت بالنقر فوقها مرة أخرى.
+    \n
+    \n
+    الوصف يدعم تنسيق Markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    يمكن حفظ معلمات البحث كعامل تصفية للوصول السريع مرة أخرى.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    تساعد ** المقتطفات ** على تجنب الكتابة المتكررة باستخدام قوالب نصية قابلة لإعادة الاستخدام.
+    \n
+    \n
+    يمكن أن يكون المقتطف أي ملاحظة موجودة أو جديدة. يمكن أن يكون ثابتًا أو ديناميكيًا ، ويحتوي على حقول للإدخال اليدوي وقيم وقت التشغيل (التواريخ والأوقات وما إلى ذلك).
+    \n
+    \n
+    يتم تنظيم المقتطفات بواسطة مجموعات. يمكنك إما إنشاء مجموعة أدوات خاصة بك أو تثبيت أي منها من المكتبة العامة.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - يمكن مشاركة المجموعة مع مستخدمين آخرين.
+    \n
+    - يمكن نشر المجموعة في المكتبة العامة.
+    \n
+    - إذا تم تعيين الوصف ، فسيتم عرضه بدلاً من هذا التلميح.
+    \n
+    ```
+    \n
+    تتغير لوحة الألوان إذا قمت بالنقر فوق اللون المحدد مرة أخرى.
+    \n
+    \n
+    تقوم قاعدة الفرز بعكس اتجاهها إذا قمت بالنقر فوقها مرة أخرى.
+    \n
+    \n
+    الوصف يدعم تنسيق Markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    ** الملفات ** تساعدك في الاحتفاظ بأي بيانات والوصول إليها فورًا في أي وقت على أي جهاز.
+    \n
+    \n
+    ** على عكس الملاحظات ** ، لا يتم تنزيل الملفات على جهازك عند تسجيل الدخول لأول مرة.
+    \n
+    \n
+    ** بدلاً من ذلك ** ، يتم تنزيل البيانات الوصفية للملف فقط على الجهاز للبحث والتحرير بسرعة.
+    \n
+    ```
+    \n
+    تتم مزامنة أي تغييرات بمجرد توفر الإنترنت.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    ** المجلدات ** تساعد في تنظيم ملاحظاتك وملفاتك لتسهيل العثور عليها.
+    \n
+    \n
+    ** بالإضافة إلى العلامات ** ، تسمح لك المجلدات بتنظيم البيانات بطريقة هرمية.
+    \n
+    \n
+    ** بخلاف العلامات ** ، يمكن ربط ملف أو ملاحظة بمجلد واحد فقط.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    يمكن استخدام الاختصار:
+    \n
+    \n
+    - للبحث بسرعة عن ملاحظة باستخدام عبارة قصيرة بحد أقصى %s
+    \n
+    - لإدخال نص الملاحظة في حقل الإدخال عند إدخال اختصار برمز بادئ **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    يمكن استخدام الوصف لتوفير معلومات إضافية حول ملاحظة.
+    \n
+    \n
+    يدعم تنسيق علامة التخفيض لـ %s من الأحرف كحد أقصى.
+    ]]></string>
+    <string name="where_none_of">أي من المحدد</string>
+    <string name="where_any_of">أي من المحدد</string>
+    <string name="where_all_of">كل المحدد</string>
+    <string name="where_after">بعد</string>
+    <string name="where_before">قبل</string>
+    <string name="where_from">من</string>
+    <string name="where_to">إلى</string>
+    <string name="where_date_today">اليوم</string>
+    <string name="where_date_tomorrow">غدًا</string>
+    <string name="where_date_custom">مُخصّص</string>
+    <string name="where_date_yesterday">الأمس</string>
+    <string name="where_date_last_7_days">آخر 7 أيام</string>
+    <string name="where_date_last_30_days">آخر 30 يوم</string>
+    <string name="where_date_last_90_days">آخر 90 يوم</string>
+    <string name="advanced_filter_block_text">يحتوي النص على</string>
+    <string name="advanced_filter_block_text_type">نوع النص</string>
+    <string name="advanced_filter_block_category">موجودة في</string>
+    <string name="advanced_filter_block_tags">العلامات</string>
+    <string name="advanced_filter_block_created">تاريخ الإنشاء</string>
+    <string name="advanced_filter_block_updated">تاريخ التحديث</string>
+    <string name="advanced_filter_block_only_public_links">عرض مع الروابط العامة فقط</string>
+    <string name="advanced_filter_block_only_attachments">عرض مع المرفقات فقط</string>
+    <string name="advanced_filter_block_only_not_synced">عرض غير المتزامن فقط</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">الدولة</string>
+    <string name="snippet_kit_attr_snippets">المقتطفات</string>
+    <string name="snippet_kit_attr_language">اللّغة</string>
+    <string name="snippet_kit_attr_downloads">التنزيلات</string>
+    <string name="snippet_kit_attr_created">أُنشئت بتاريخ</string>
+    <string name="snippet_kit_attr_updated">حُدثت بتاريخ</string>
+    <string name="snippet_kit_attr_category">الفئة</string>
+    <string name="snippet_kit_public_link">رابط عام</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    يمكن تثبيت مجموعة المقتطفات من رابط عام
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">إزالة الرابط؟</string>
+    <string name="snippet_kit_public_link_remove_description">لم يعد من الممكن تثبيت مجموعة المقتطفات من هذا الرابط.</string>
+    <string name="snippet_kit_public_library">المكتبة العامة</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    يمكن تثبيت مجموعة المقتطفات من مكتبة عامة.
+    \n
+    \n
+    ```
+    \n
+    يجب أن تحتوي المجموعة على %s مقتطفات على الأقل حتى يتم وضعها في المكتبة العامة.
+    \n
+    ```
+    \n
+    \n
+    عندما تضع مجموعة أدوات في المكتبة العامة ، تحصل تلقائيًا على فائدة.
+    \n
+    \n
+    [تعلم المزيد…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">إزالة من المكتبة العامة؟</string>
+    <string name="snippet_kit_public_library_remove_description">لم يعد من الممكن تثبيت مجموعة المقتطفات من المكتبة العامة.</string>
+    <string name="snippet_kit_hint_name">اسم المقتطفات</string>
+    <string name="snippet_kit_label_show_in_public_library">عرض في المكتبة العامة</string>
+    <string name="snippet_kit_error_name_required">مطلوب اسم غير مكرر لحفظ هذه المجموعة</string>
+    <string name="snippet_kit_delete_title">هل تريد حذف المجموعة \'%s\'؟</string>
+    <string name="snippet_kit_delete_description">سيتم حذف مجموعة المقتطفات نهائيًا.</string>
+    <string name="snippet_kit_uninstall_title">إزالة مجموعة \'%s\'؟</string>
+    <string name="snippet_kit_uninstall_description">سيتم حذف مجموعة المقتطفات نهائيًا ، بما في ذلك جميع المقتطفات المرتبطة.</string>
+    <string name="snippet_kit_install_hint_title">ماذا يعني التثبيت؟</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[ستتوفر مجموعة المقتطفات المثبتة للاستخدام كما لو كنت قد قمت بإنشائها بنفسك.
+    \n
+    \n
+    وهذا يعني أنه يمكنك تغيير أي ملاحظات فيه تمامًا ، وإضافة ملاحظات جديدة ، وحذف القائمة ، وإدارة إعدادات المجموعة ، وما إلى ذلك.
+    \n
+    \n
+    ```
+    \n
+    ستكون أي تغييرات تجريها متاحة لك فقط دون القدرة على تغيير المجموعة الأصلية.
+    \n
+    \n
+    إذا تم تحديث المجموعة الأصلية ، فيمكنك تحديث المجموعة المثبتة يدويًا.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">الحالة العامة</string>
+    <string name="public_status_private">خاصة</string>
+    <string name="public_status_blocked">محظور</string>
+    <string name="public_status_review">في المراجعة</string>
+    <string name="public_status_review_details">سوف يستغرق الأمر بعض الوقت قبل نشر المجموعة وإتاحتها في المكتبة العامة.</string>
+    <string name="public_status_published">تم نشرها</string>
+    <string name="public_status_rejected">تم رفضها</string>
+    <string name="public_status_not_found">لم يتم العثور عليها</string>
+    <string name="public_status_deleted">تم حذفها</string>
+    <string name="public_status_restricted">مقيَّدة</string>
+    <string name="public_status_update_reason">سبب التحديث</string>
+    <string name="dynamic_text_hint_title">نص ديناميكي</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    إذا كانت الملاحظة تحتوي على حقول ديناميكية ، فسترى هذه الخطوة الإضافية كلما قمت بتنفيذ أي إجراء على الملاحظة.
+    \n
+    \n
+    في هذه الخطوة ، يمكنك تحديد القيم في حقول الإدخال وإكمال الإجراء بالنص الذي تم تغييره.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">النص</string>
+    <string name="dynamic_text_view_mode_form">الاستمارة</string>
+    <string name="dynamic_value_date">التاريخ/الوقت</string>
+    <string name="dynamic_value_date_description">ينشئ عنصرًا نائبًا يتم استبداله بالتاريخ الفعلي</string>
+    <string name="dynamic_value_device">معلومات الجهاز</string>
+    <string name="dynamic_value_device_description">ينشئ عنصرًا نائبًا يتم استبداله بمعلومات حول الجهاز</string>
+    <string name="dynamic_value_random">عشوائي</string>
+    <string name="dynamic_value_random_description">ينشئ عنصرًا نائبًا يتم استبداله بقيمة عشوائية من قائمة قابلة للتخصيص</string>
+    <string name="dynamic_value_clipboard">الحافظة</string>
+    <string name="dynamic_value_clipboard_description">ينشئ عنصرًا نائبًا يتم استبداله بمحتوى الحافظة</string>
+    <string name="dynamic_value_snippet">مقتطف</string>
+    <string name="dynamic_value_snippet_description">ينشئ عنصرًا نائبًا يتم استبداله بمحتوى الملاحظة المحددة</string>
+    <string name="dynamic_value_attr_device_type">نوع المعلومات</string>
+    <string name="dynamic_field_date">حقل التاريخ</string>
+    <string name="dynamic_field_date_description">يقوم بإنشاء حقل إدخال تاريخ</string>
+    <string name="dynamic_field_text">حقل النص</string>
+    <string name="dynamic_field_text_description">يقوم بإنشاء حقل إدخال نص</string>
+    <string name="dynamic_field_number">حقل الرقم</string>
+    <string name="dynamic_field_number_description">يقوم بإنشاء حقل إدخال رقم</string>
+    <string name="dynamic_field_select">حقل التحديد</string>
+    <string name="dynamic_field_select_description">لإنشاء إدخال لتحديد عنصر واحد أو أكثر</string>
+    <string name="dynamic_field_barcode_scanning">مجال مسح الباركود</string>
+    <string name="dynamic_field_barcode_scanning_description">ينشئ حقلاً يتيح لك مسح رمز باركود ضوئيًا واستخدام نصه كقيمة للحقل</string>
+    <string name="dynamic_field_text_toggle">تبديل النص</string>
+    <string name="dynamic_field_text_toggle_description">ينشئ مفتاح تبديل يمكنه تمكين أو تعطيل مجموعة نصية</string>
+    <string name="dynamic_field_reference">المجال المرجعي</string>
+    <string name="dynamic_field_reference_description">ينشئ حقلاً يشير إلى حقل آخر ويستخدم قيمته</string>
+    <string name="dynamic_field_unknown">حقل غير معروف</string>
+    <string name="dynamic_field_unknown_description">لا يمكن تقديم الحقل. ربما يكون غير صحيح أو تم إنشاؤه في إصدار أحدث من التطبيق</string>
+    <string name="dynamic_field_date_format_date_time">التاريخ/الوقت (النظام)</string>
+    <string name="dynamic_field_date_format_date">التاريخ (النظام)</string>
+    <string name="dynamic_field_date_format_time">الوقت (النظام)</string>
+    <string name="dynamic_field_date_format_day_of_week">اليوم من الأسبوع</string>
+    <string name="dynamic_field_date_format_day_of_month">اليوم من الشهر (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">اليوم من الشهر (01–31)</string>
+    <string name="dynamic_field_date_format_year">السنة</string>
+    <string name="dynamic_field_date_format_year_short">السنة (اختصار)</string>
+    <string name="dynamic_field_date_format_month">الشهر</string>
+    <string name="dynamic_field_date_format_month_number">الشهر (1-12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">الشهر (01-12)</string>
+    <string name="dynamic_field_date_format_hour_12">الساعة (0-12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">الساعة (00-12)</string>
+    <string name="dynamic_field_date_format_hour_24">الساعة (0-24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">الساعة (00-24)</string>
+    <string name="dynamic_field_date_format_minute">الدقيقة (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">الدقيقة (01–60)</string>
+    <string name="dynamic_field_date_format_second">الثانية (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">الثانية (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">صباحًا/مساءً</string>
+    <string name="dynamic_field_date_format_time_zone">المنطقة الزمنية</string>
+    <string name="dynamic_field_value_formatter_new_line">سطر جديد</string>
+    <string name="dynamic_field_value_formatter_semicolon">فاصلة منقوطة</string>
+    <string name="dynamic_field_value_formatter_comma">فاصلة</string>
+    <string name="dynamic_field_value_formatter_space">مسافة</string>
+    <string name="dynamic_field_value_formatter_ordered_list">القائمة المرتبة</string>
+    <string name="dynamic_field_value_formatter_unordered_list">القائمة غير المرتبة</string>
+    <string name="dynamic_field_attr_common_label">التسمية</string>
+    <string name="dynamic_field_attr_common_prefix">البادئة</string>
+    <string name="dynamic_field_attr_common_suffix">اللاحقة</string>
+    <string name="dynamic_field_attr_common_value">القيمة</string>
+    <string name="dynamic_field_attr_common_required">المطلوب</string>
+    <string name="dynamic_field_attr_common_placeholder">العنصر النائب</string>
+    <string name="dynamic_field_attr_common_default_value">القيمة الافتراضية</string>
+    <string name="dynamic_field_attr_common_values_formatter">منسق القيم المختارة</string>
+    <string name="dynamic_field_attr_select_multiple">تحديد متعدد</string>
+    <string name="dynamic_field_attr_select_user_input">مدخلات المستخدم</string>
+    <string name="dynamic_field_attr_text_multi_line">نص متعدد الأسطر</string>
+    <string name="dynamic_field_attr_text_max_length">الحد الاقصى للطول</string>
+    <string name="dynamic_field_attr_text_use_clipboard">الحافظة هي القيمة الافتراضية</string>
+    <string name="dynamic_field_attr_select_options">الخيارات</string>
+    <string name="dynamic_field_attr_number_min">قيمة الحد الأدنى</string>
+    <string name="dynamic_field_attr_number_max">قيمة الحد الأقصى</string>
+    <string name="dynamic_field_attr_date_format">التنسيق</string>
+    <string name="dynamic_field_attr_date_example">مثال: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">مسح متعدد</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">منسق القيم الممسوحة ضوئيًا</string>
+    <string name="dynamic_field_attr_toggle_text">النص</string>
+    <string name="dynamic_field_attr_ref_value">تسمية الحقل المشار إليه</string>
+    <string name="dynamic_field_attr_ref_intrinsic">المجال له قيمته الخاصة</string>
+    <string name="select_option_ordering">خيارات الفرز</string>
+    <string name="select_option_ordering_label_asc">التسمية (أ-ي)</string>
+    <string name="select_option_ordering_label_desc">التسمية (ي-أ)</string>
+    <string name="select_option_ordering_value_asc">القيمة (أ-ي)</string>
+    <string name="select_option_ordering_value_desc">القيمة (ي-أ)</string>
+    <string name="dynamic_field_confirm_delete_title">حذف هذا الحقل الديناميكي من النص؟</string>
+    <string name="dynamic_field_confirm_delete_description">سيتم حذف العنصر النائب للحقل من النص الأصلي.</string>
+    <string name="dynamic_value_placeholder_copied_title">تم نسخ العنصر النائب للقيمة الديناميكية إلى الحافظة</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    إذا كانت الملاحظة مفتوحة في وضع التحرير ، فسيتم إدراج العنصر النائب تلقائيًا في نص الملاحظة في مكان التركيز
+    أو يستبدل جزء النص المحدد.
+    \n
+    \n
+    خلاف ذلك ، يتم نسخه إلى الحافظة.
+    \n
+    \n
+    **العنصر النائب المنسوخ:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">التحميل من السحابة</string>
+    <string name="file_action_update_in_cloud">التحديث في السحابة</string>
+    <string name="file_error_canceled">ألغيت العملية بواسطة المستخدم</string>
+    <string name="file_error_not_found">لم يتم العثور على الملف. حاول رفعه مرة أخرى.</string>
+    <string name="file_attr_last_modified">آخر تعديل</string>
+    <string name="file_attr_updated">محدثة</string>
+    <string name="file_attr_location">المكان</string>
+    <string name="file_confirm_update_file">تحديث الملف؟</string>
+    <string name="file_confirm_update_file_description">سيتم تحديث الملف في التخزين السحابي.</string>
+    <string name="file_error_name_required">الاسم مطلوب لحفظ هذا الملف</string>
+    <string name="file_action_new_file">الملف</string>
+    <string name="file_action_new_file_description">سيتم تحميل الملف إلى التخزين السحابي. سيكون الملف الذي تم تحميله متاحًا في فئة الملفات ويمكن إرفاقه بأي ملاحظة.</string>
+    <string name="file_action_new_files">الملفات</string>
+    <string name="file_action_new_files_description">سيتم رفع الملفات إلى التخزين السحابي. ستكون الملفات التي تم رفعها متاحة في فئة الملفات ويمكن إرفاقها بأي ملاحظة.</string>
+    <string name="file_action_new_note">الملاحظة</string>
+    <string name="file_action_new_note_description">سيتم تحميل الملف إلى التخزين السحابي وإرفاقه بالملاحظة التي تم إنشاؤها حديثًا. سيكون الملف الذي تم تحميله متاحًا أيضًا في فئة الملفات.</string>
+    <string name="file_action_new_notes_description">سيتم رفع الملفات إلى التخزين السحابي وإرفاقها بالملاحظة التي تم إنشاؤها حديثًا. ستكون الملفات التي تم رفعها متاحة أيضًا في فئة الملفات.</string>
+    <string name="file_action_new_attachment">المرفقات</string>
+    <string name="file_action_new_attachment_description">سيتم تحميل الملف إلى التخزين السحابي وإرفاقه بملاحظة موجودة. سيكون الملف الذي تم تحميله متاحًا أيضًا في فئة الملفات.</string>
+    <string name="file_action_new_attachments">المرفقات</string>
+    <string name="file_action_new_attachments_description">سيتم رفع الملفات إلى التخزين السحابي وإرفاقها بملاحظة موجودة. ستكون الملفات التي تم رفعها متاحة أيضًا في فئة الملفات.</string>
+    <string name="file_search_hint">ابحث في ملفاتك</string>
+    <string name="file_type_any">الكل</string>
+    <string name="file_type_audio">الصوتيات</string>
+    <string name="file_type_video">مقاطع الفيديو</string>
+    <string name="file_type_image">الصور</string>
+    <string name="file_type_archive">المؤرشفات</string>
+    <string name="file_type_document">المستندات</string>
+    <string name="file_type_recycled">سلة المهملات</string>
+    <string name="folder_select">حدّد</string>
+    <string name="folder_name">Folder name</string>
+    <string name="folder_root">مجلد الجذر</string>
+    <string name="folder_search">ابحث في المجلد</string>
+    <string name="folder_error_name_required">مطلوب اسم فريد لحفظ المجلد هنا</string>
+    <string name="folder_error_empty">هذا المجلد فارغ</string>
+    <string name="folder_delete_deep">احذف المجلد ، بما في ذلك جميع الملفات والملاحظات المرتبطة به.</string>
+    <string name="folder_delete_weak">احذف المجلد فقط. ستبقى جميع الملفات والملاحظات المرتبطة متوفرة في المجلد الجذر.</string>
+    <string name="clip_action_new_edit">التعديل</string>
+    <string name="clip_action_new_edit_description">يمكن تحرير الملاحظة قبل حفظها أو استخدامها لأي إجراء.</string>
+    <string name="clip_action_new_insert">ادخل في</string>
+    <string name="clip_action_new_insert_description">يمكن إدراج نص الملاحظة في أي واحدة موجودة. حدد الملاحظة المستهدفة وحدد خيارات الإدراج.</string>
+    <string name="clip_action_new_action">الإجراءات</string>
+    <string name="clip_action_new_action_description">يمكن استخدام نص الملاحظة لأداء عمل ما.</string>
+    <plurals name="backup.success.message">
+        <item quantity="zero">تم تصدير %s ملاحظة</item>
+        <item quantity="one">تم تصدير %s ملاحظة</item>
+        <item quantity="two">تم تصدير %s ملاحظات</item>
+        <item quantity="few">تم تصدير %s ملاحظات</item>
+        <item quantity="many">تم تصدير %s ملاحظات</item>
+        <item quantity="other">تم تصدير %s ملاحظات</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="zero">تم استيراد %s ملاحظة</item>
+        <item quantity="one">تم استيراد %s ملاحظة</item>
+        <item quantity="two">تم استيراد %s ملاحظات</item>
+        <item quantity="few">تم استيراد %s ملاحظات</item>
+        <item quantity="many">تم استيراد %s ملاحظات</item>
+        <item quantity="other">تم استيراد %s ملاحظات</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="zero">تم حذف %s ملاحظة</item>
+        <item quantity="one">تم حذف %s ملاحظة</item>
+        <item quantity="two">تم حذف %s ملاحظات</item>
+        <item quantity="few">تم حذف %s ملاحظات</item>
+        <item quantity="many">تم حذف %s ملاحظات</item>
+        <item quantity="other">تم حذف %s ملاحظات</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="zero">ملاحظة %s</item>
+        <item quantity="one">ملاحظة %s</item>
+        <item quantity="two">ملاحظات %s</item>
+        <item quantity="few">ملاحظات %s</item>
+        <item quantity="many">ملاحظات %s</item>
+        <item quantity="other">ملاحظات %s</item>
+    </plurals>
+</resources>

@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation,MissingDefaultResource,MissingTranslation">
+    <string name="common_separator_new_line">Nova Linha</string>
+    <string name="common_separator_space">Espaço</string>
+    <string name="common_separator_comma">Vírgula</string>
+    <string name="confirm_exit_edit_mode_title">Sair do modo de edição?</string>
+    <string name="confirm_exit_edit_mode_description">Todas as alterações não salvas serão perdidas.</string>
+    <string name="confirm_delete_note_title">Excluir nota?</string>
+    <string name="confirm_delete_note_description">A nota selecionada será excluída.</string>
+    <string name="link_preview_label">Carregar Prévia…</string>
+    <string name="link_preview_not_found">Sem prévia</string>
+    <string name="link_preview_hide">Ocultar Prévia</string>
+    <string name="link_preview_show">Exibir Prévia</string>
+    <string name="toast_downloaded">%s baixado</string>
+    <!-- ESSENTIALS -->
+    <string name="error_confirm_exit">Clique no botão \'Voltar\' novamente para sair</string>
+    <string name="essentials.errors.unknown">Erro desconhecido. Por favor, tente novamente</string>
+    <string name="error_data_empty">Nenhum dado foi encontrado.</string>
+    <string name="error.unexpected">Ocorreu um erro inesperado</string>
+    <string name="error.unexpected.send">Clique no botão \'Bug\' para enviar um erro</string>
+    <!-- COMMON -->
+    <string name="menu.rate">Avaliar</string>
+    <string name="menu.edit">Editar</string>
+    <string name="menu.clear">Limpar</string>
+    <string name="menu.clear_all">Limpar tudo</string>
+    <string name="menu.share">Compartilhar</string>
+    <string name="menu.fav">Favoritas</string>
+    <string name="menu.delete">Excluir</string>
+    <string name="menu.empty">Esvaziar</string>
+    <string name="menu.cancel">Cancelar</string>
+    <string name="menu.settings">Configurações</string>
+    <string name="menu.display_options">Opções de exibição</string>
+    <string name="menu.faq">Perguntas Frequentes</string>
+    <string name="menu.new">Nova</string>
+    <string name="menu.search">Pesquisar</string>
+    <string name="menu.print">Imprimir</string>
+    <string name="menu.restore">Restaurar</string>
+    <string name="menu.merge">Mesclar</string>
+    <string name="menu.copy_link">Copiar link público</string>
+    <string name="menu.share_link">Compartilhar link público</string>
+    <string name="menu.save_as">Salvar como…</string>
+    <string name="menu.rename">Renomear</string>
+    <string name="menu.paste">Colar</string>
+    <string name="menu.copy">Copiar</string>
+    <string name="menu.cut">Recortar</string>
+    <string name="menu.fullscreen.enter">Entrar em Tela Cheia</string>
+    <string name="menu.fullscreen.exit">Sair de Tela Cheia</string>
+    <string name="menu_close">Fechar</string>
+    <string name="button.update">Atualizar</string>
+    <string name="button.install">Instalar</string>
+    <string name="button.uninstall">Desinstalar</string>
+    <string name="button.done">Concluído</string>
+    <string name="button.undo">Desfazer</string>
+    <string name="button.apply">Aplicar</string>
+    <string name="button.change">Alterar</string>
+    <string name="button.save">Salvar</string>
+    <string name="button.create">Criar</string>
+    <string name="button.send">Enviar</string>
+    <string name="button.preview">Pré-visualizar</string>
+    <string name="button.confirm">Confirmar</string>
+    <string name="button.sync">Sincronizar agora</string>
+    <string name="button.yes">Sim</string>
+    <string name="button.no">Não</string>
+    <string name="button.back">Voltar</string>
+    <string name="button.continue">Continuar</string>
+    <string name="button.finish">Concluir</string>
+    <string name="button.got_it">Entendido!</string>
+    <string name="button.get_started">Iniciar</string>
+    <string name="button.example">Exemplo</string>
+    <string name="button_try_again">Tentar novamente</string>
+    <string name="button_insert">Inserir</string>
+    <string name="button_refresh">Atualizar</string>
+    <string name="notification.title.empty">A área de transferência está vazia</string>
+    <!-- ACCESSIBILITY / SCREEN READERS -->
+    <string name="content.description.back">Voltar</string>
+    <!-- COMMON -->
+    <string name="common.label.abbreviation">Abreviação</string>
+    <string name="common.label.description">Descrição</string>
+    <string name="common.action.confirm">Confirme a ação escolhida</string>
+    <!-- TAGS -->
+    <string name="tag.new.action">Novo marcador</string>
+    <string name="tag.new.name">Nome do marcador</string>
+    <!-- CONTEXT ACTIONS -->
+    <string name="context_action_move_to_folder">Mover para pasta</string>
+    <!-- MAIN -->
+    <string name="main.search">Pesquisar suas notas</string>
+    <string name="main.filter.all">Todas</string>
+    <string name="main.filter.no_tags">Sem Marcadores</string>
+    <string name="main.filter.filtered">Filtrado</string>
+    <string name="main.delete_selected.title">Excluir a(s) nota(s) selecionada(s)?</string>
+    <string name="main.delete_selected.description">Todas as notas selecionadas serão excluídas.</string>
+    <string name="main.delete_merged.title">Excluir as notas mescladas?</string>
+    <string name="main.delete_merged.description">Notas mescladas serão excluídas permanentemente.</string>
+    <!-- MAIN -> LIST -->
+    <string name="main.list.empty">Notas não encontradas.</string>
+    <string name="main.list.empty.caption">Nota: cada categoria tem sua própria classificação individual e outras configurações possíveis. Você pode alterar as configurações a qualquer momento pela lista (%s) ou pela gaveta de navegação esquerda (%s).</string>
+    <string name="main.list.empty.caption.three_dot">menu de três pontos</string>
+    <string name="main.list.empty.caption.long_tap">toque longo na categoria</string>
+    <string name="main.list.empty.description.all">Categoria geral. Exibe todas as notas sem filtragem.</string>
+    <string name="main.list.empty.description.no_tags">Exibe notas que não possuem um marcador atribuído.</string>
+    <string name="main.list.empty.description.tags">Exibe notas e arquivos marcados com o marcador selecionado.</string>
+    <string name="main.list.empty.description.filtered">As notas foram filtradas de acordo com as condições para as quais nada foi encontrado.</string>
+    <string name="main.list.empty.description.starred">Exibe notas marcadas com sinalização como Favoritas.</string>
+    <string name="main.list.empty.description.deleted">Exibe notas e arquivos que foram excluídos, mas ainda podem ser restaurados. Os registros excluídos permanecem com marcadores atribuídos e outros atributos, mas não estão disponíveis nas categorias correspondentes.</string>
+    <string name="main.list.empty.description.clipboard">Exibe notas que foram criadas automaticamente pelo aplicativo a partir da área de transferência. Por padrão, a área de transferência não é monitorada e a ativação pode ser feita nas configurações.</string>
+    <string name="main.list.empty.description.snippets">Exibe notas que são usadas em outras notas. Quaisquer alterações no snippet são refletidas automaticamente em todas as notas onde ele é usado.</string>
+    <string name="main.filter.snippets">Snippets</string>
+    <string name="main.filter.filters">Filtros</string>
+    <string name="main.filter.folders">Pastas</string>
+    <string name="main.filter.files">Arquivos</string>
+    <string name="main.filter.notes">Notas</string>
+    <string name="main.filter.tags">Marcadores</string>
+    <!-- MAIN -> ACTIONS -->
+    <string name="main_action_settings_remember_title">Lembrar a última ação</string>
+    <string name="main_action_settings_remember_description">Quando ativado, o aplicativo se lembrará da última ação e a utilizará na próxima vez que você clicar no Botão Flutuante. Ao mesmo tempo, uma janela com uma lista de todas as ações pode ser aberta com um toque longo no Botão Flutuante.</string>
+    <string name="main_action_folders_move_note_title">Nota Existente</string>
+    <string name="main_action_folders_move_note_description">Mova uma nota existente para a pasta atual</string>
+    <string name="main_action_folders_move_file_title">Arquivo Existente</string>
+    <string name="main_action_folders_move_file_description">Mova um arquivo existente para a pasta atual</string>
+    <string name="main_action_notes">Criar notas</string>
+    <string name="main_action_notes_new_title">Nova Nota</string>
+    <string name="main_action_notes_new_description">Salve informações de texto importantes e acesse-as instantaneamente a qualquer momento em qualquer dispositivo</string>
+    <string name="main_action_notes_barcode_title">Ler Código de Barras</string>
+    <string name="main_action_notes_barcode_description">Digitalize links ou texto e salve-o como uma nota (a maioria dos formatos de códigos de barras padrão são suportados)</string>
+    <string name="main_action_notes_clipboard_title">Pegar da Área de Transferência</string>
+    <string name="main_action_notes_clipboard_description">Pegue o texto atual da área de transferência e salve-o como uma nota</string>
+    <string name="main_action_notes_import_title">Importar do Arquivo</string>
+    <string name="main_action_notes_import_description">Crie uma nota com o texto de um arquivo (tamanho do arquivo não maior que %s kilobytes)</string>
+    <string name="main_action_notes_import_error">O tamanho do arquivo não deve ser maior que %s kilobytes</string>
+    <string name="main_action_files">Adicionar arquivos</string>
+    <string name="main_action_files_file_title">Escolher Arquivo</string>
+    <string name="main_action_files_file_description">Adicione qualquer arquivo (foto, vídeo, pdf, etc.) não sendo maior que %s megabytes</string>
+    <string name="main_action_files_photo_title">Tirar Foto</string>
+    <string name="main_action_files_photo_description">Tire uma foto e salve-a como uma nota</string>
+    <string name="main_action_files_record_title">Gravar Vídeo</string>
+    <string name="main_action_files_record_description">Grave um vídeo e salve-o em uma nota (tamanho do vídeo não maior que %s megabytes)</string>
+    <string name="main_action_organize">Organizar dados</string>
+    <string name="main_action_organize_tag_title">Novo marcador</string>
+    <string name="main_action_organize_tag_description">Crie um marcador para organizar suas notas e arquivos para que sejam mais fáceis de encontrar</string>
+    <string name="main_action_organize_filter_title">Novo filtro</string>
+    <string name="main_action_organize_filter_description">Crie um filtro para encontrar as informações que deseja mais rapidamente usando modelos de pesquisa prontos</string>
+    <string name="main_action_organize_folder_title">Nova pasta</string>
+    <string name="main_action_organize_folder_description">Crie uma pasta para estruturar suas notas e arquivos de uma forma hierárquica familiar</string>
+    <string name="main_action_snippets">Reduza a digitação repetitiva</string>
+    <string name="main_action_snippets_snippet_title">Novo snippet</string>
+    <string name="main_action_snippets_snippet_description">Crie um modelo de texto reutilizável para evitar digitação repetitiva e erros</string>
+    <string name="main_action_snippets_set_title">Novo kit de snippet</string>
+    <string name="main_action_snippets_set_description">Crie um kit de snippets para encontrar os mais comuns com mais rapidez</string>
+    <string name="main.actions.save_and_start_new_note">Salvar e iniciar uma nova nota</string>
+    <string name="main.actions.add_dynamic_value">Adicionar valor dinâmico</string>
+    <string name="main.actions.add_attachment">Adicionar um anexo</string>
+    <string name="main.actions.sync_note">Sincronizar uma nota</string>
+    <!-- MAIN -> SWIPE ACTIONS -->
+    <string name="main.swipe_actions.caption.left">Deslizar para a Esquerda</string>
+    <string name="main.swipe_actions.caption.right">Deslizar para a Direita</string>
+    <string name="main.swipe_actions.fav">Marcar como Favorita</string>
+    <string name="main.swipe_actions.delete">Excluir</string>
+    <string name="main.swipe_actions.copy">Copiar</string>
+    <string name="main.swipe_actions.none">Nenhum</string>
+    <!-- FILTER -->
+    <string name="filter.toolbar.title">Pesquisa Avançada</string>
+    <string name="filter.hint.text">Texto Contém</string>
+    <string name="filter.label.no_tags">Sem Marcadores</string>
+    <string name="filter.label.fav">Favoritas</string>
+    <string name="filter.label.platform">Plataforma</string>
+    <string name="filter.label.snippets">Snippets</string>
+    <!-- FILTER -> Clipboard -->
+    <string name="filter.label.tracked">Notas da Área de Transferência</string>
+    <string name="filter.clipboard.empty.title">Limpar notas da área de transferência?</string>
+    <string name="filter.clipboard.empty.description">Todas as notas da área de transferência (exceto favoritas e marcadas) serão excluídas permanentemente.</string>
+    <!-- FILTER -> Deleted -->
+    <string name="filter.deleted.title">Lixeira</string>
+    <string name="filter.deleted.limit">Limite</string>
+    <string name="filter.deleted.empty.title">Esvaziar a Lixeira?</string>
+    <string name="filter.deleted.empty.description">Todas as notas na Lixeira serão excluídas permanentemente.</string>
+    <!-- FILTER -> Limit -->
+    <string name="filter.limit.title">Limite</string>
+    <string name="filter.limit.description">Quando o número de notas exceder o limite desta categoria, notas antigas que excederem o limite são automaticamente excluídas da categoria.</string>
+    <!-- FILTER -> Named -->
+    <string name="filter_hint_name">Nome do filtro</string>
+    <string name="filter_error_name_required">É necessário um nome único para salvar este filtro</string>
+    <string name="filter_delete_title">Excluir o filtro \'%s\'?</string>
+    <string name="filter_delete_description">O filtro será excluído permanentemente.</string>
+    <!-- FILTER -> Tag -->
+    <string name="filter.tag.name.required">É necessário um nome único para salvar este marcador</string>
+    <string name="filter.tag.rule.title">Regra de classificação automática</string>
+    <string name="filter.tag.rule.description">Se ativo, o marcador será automaticamente atribuído a novas notas se elas contiverem qualquer texto separado por vírgulas.</string>
+    <string name="filter.tag.rule.hint">Texto separado por vírgula</string>
+    <string name="filter.tag.delete.title">Excluir o marcador \'%s\'?</string>
+    <string name="filter.tag.delete.description">O marcador será excluído permanentemente.</string>
+    <!-- CLIP -->
+    <string name="clip.button.tag.create">Adicionar</string>
+    <string name="clip.hint.title">Nota Sem Título</string>
+    <string name="clip.hint.tags">Toque aqui para adicionar um marcador</string>
+    <string name="clip.hint.text">Toque aqui para adicionar texto</string>
+    <string name="clip.snackbar.text.required">Um texto é necessário para salvar esta nota</string>
+    <string name="clip.snackbar.text.copied">Texto copiado para a Área de Transferência</string>
+    <string name="clip.attr.updated">Usada em</string>
+    <string name="clip.attr.edited">Editado em</string>
+    <string name="clip.attr.created">Criada em</string>
+    <string name="clip.attr.deleted">Excluído em</string>
+    <string name="clip.attr.usageCount">Contagem de Uso</string>
+    <string name="clip.attr.charsCount">Caracteres</string>
+    <string name="clip.attr.size">Tamanho</string>
+    <string name="clip_exit_without_save_title">Cancelar a edição da nota?</string>
+    <string name="clip_exit_without_save_description">Quaisquer alterações feitas serão perdidas.</string>
+    <!-- CLIP DETAILS -->
+    <string name="clip.details.label.export">Salvar como</string>
+    <!-- CLIP PARAMS -->
+    <string name="clip_details_tab_general">Geral</string>
+    <string name="clip_details_tab_tags">Marcadores</string>
+    <string name="clip_details_tab_folder">Localização</string>
+    <string name="clip_details_tab_attachments">Anexos</string>
+    <string name="clip_details_tab_dynamic">Valores dinâmicos</string>
+    <string name="clip_details_tab_snippets">Snippets</string>
+    <string name="clip_details_tab_snippet_kits">Kits de Snippet</string>
+    <string name="clip_details_tab_dynamic_values">Valores</string>
+    <string name="clip_details_tab_dynamic_fields">Campos</string>
+    <string name="clip_details_tab_attributes">Atributos</string>
+    <!-- CLIP INFO -->
+    <string name="clip.info.label.note.insert">Inserir texto em uma nota</string>
+    <string name="clip.info.label.note.insert.remember">Lembrar minhas escolhas e não perguntar novamente (o painel pode ser acessado com um toque longo).</string>
+    <string name="clip.info.label.note.create">Criar uma nota</string>
+    <string name="clip.info.label.position">Posição</string>
+    <string name="clip.info.label.beginning">No início</string>
+    <string name="clip.info.label.end">No final</string>
+    <string name="clip.info.label.tags.edit">Editar marcadores</string>
+    <!-- CLIP TEXT TYPE -->
+    <string name="clip.text.type.text_plain">Texto Simples</string>
+    <string name="clip.text.type.link">Texto com Links</string>
+    <string name="clip.text.type.line_clickable">Texto com Linhas Copiadas</string>
+    <string name="clip.text.type.word_clickable">Texto com Tokens Copiados</string>
+    <!-- CLIP -> ADD -->
+    <string name="clip.add.attachment.title">Anexo</string>
+    <string name="clip.add.attachment.tooltip">O anexo pode ser qualquer arquivo (foto, vídeo, pdf, etc.) não sendo maior que %s megabytes.</string>
+    <string name="clip.add.dynamic.title">Valor dinâmico</string>
+    <string name="clip.add.dynamic.tooltip">O valor dinâmico é uma forma de criar notas com dados sempre atualizados. No modo de visualização, o espaço reservado é substituído pelos dados reais.</string>
+    <string name="clip.add.dynamic.value.date_time">Data/Hora</string>
+    <string name="clip.add.dynamic.value.platform">Plataforma</string>
+    <string name="clip.add.dynamic.value.ip">Endereço IP</string>
+    <string name="clip.add.dynamic.value.date">Data</string>
+    <string name="clip.add.dynamic.value.time">Hora</string>
+    <string name="clip.add.dynamic.value.month">Mês</string>
+    <string name="clip.add.dynamic.value.timezone">Fuso Horário</string>
+    <string name="clip.add.dynamic.value.month_number">Número do Mês</string>
+    <string name="clip.add.dynamic.value.month_number_zero">Número do Mês (com zero à esquerda)</string>
+    <string name="clip.add.dynamic.value.year">Ano</string>
+    <string name="clip.add.dynamic.value.year_short">Ano (curto)</string>
+    <string name="clip.add.dynamic.value.hour24">Hora (relógio de 24h)</string>
+    <string name="clip.add.dynamic.value.hour12">Hora (relógio de 12h)</string>
+    <string name="clip.add.dynamic.value.minutes">Minutos</string>
+    <string name="clip.add.dynamic.value.seconds">Segundos</string>
+    <string name="clip.add.dynamic.value.am_pm">AM/PM</string>
+    <string name="clip.add.dynamic.value.day_of_week">Dia da semana</string>
+    <string name="clip.add.dynamic.value.day_of_month">Dia do mês</string>
+    <string name="clip.add.dynamic.value.day_of_month_zero">Dia do Mês (com zero à esquerda)</string>
+    <string name="clip.add.dynamic.value.random_digit">Dígito Aleatório (0–9)</string>
+    <string name="clip.add.dynamic.value.random_latin">Charactere Latino Aleatório (a-z, A-Z)</string>
+    <string name="clip.add.snippet.title">Snippet</string>
+    <string name="clip.add.snippet.new.hint">Insira o texto para encontrar ou criar</string>
+    <string name="clip.add.snippet.tooltip">Snippet é qualquer nota cujo texto você pode reutilizar em qualquer outra nota, salvo editar em uma. Os snippets criados podem ser acessados ​​pela navegação à esquerda.</string>
+    <!-- TOOLTIPS -->
+    <!--    <string name="tooltip.config.list">The display options determine how your data will be displayed. These settings are global for the installed application.</string>-->
+    <!--    <string name="tooltip.config.filter.any">Category settings define the rules for displaying items in this particular category. Changes to these settings are synchronized between all your devices.</string>-->
+    <!--    <string name="tooltip.config.filter.tag">Tag settings determine both the behavior of the tag itself and the parameters for displaying items within that tag. Changes to these settings are synchronized between all your devices.</string>-->
+    <!-- TEXT CONFIG -->
+    <string name="text.config.type">Tipo de Texto</string>
+    <string name="text.config.size">Tamanho do Texto</string>
+    <string name="text.config.font">Fonte do Texto</string>
+    <!-- LIST CONFIG -->
+    <string name="list.config.sort">Ordenar Por</string>
+    <string name="list.config.lines">Linhas de Texto Visíveis</string>
+    <!-- LIST STYLE -->
+    <string name="list.style.title">Estilo da Lista</string>
+    <string name="list.style.description">Estilo da Lista de Notas</string>
+    <string name="list.style.default">Padrão</string>
+    <string name="list.style.comfortable">Confortável</string>
+    <string name="list.style.compact">Compacta</string>
+    <string name="list.style.preview">Pré-visualizar</string>
+    <string name="list.style.grid">Grade</string>
+    <!-- RUNES -->
+    <string name="runes.toolbar.title">Runas de Habilidades</string>
+    <string name="runes.hint.description"><![CDATA[    Esta é uma forma de aprimoramento da funcionalidade do aplicativo.
+    \n\n
+    Cada runa estende ou modifica a funcionalidade básica e permite que você personalize o aplicativo para obter a produtividade mais ideal com ele.
+   \n\n
+    Algumas runas são mais úteis, outras nem tanto, mas essa abordagem torna o aplicativo quase ilimitado em possibilidades.
+    \n\n
+    Verifique as runas existentes, ative as que deseja e envie ideias para novas para tornar o aplicativo um pouco mais produtivo:)
+    ]]></string>
+    <string name="runes_hotkeys_title">Observador de Tecla de Atalho</string>
+    <string name="runes_hotkeys_description"><![CDATA[    Com esta runa, você pode configurar teclas de atalho para controlar o aplicativo e as ações dentro dele.
+    \n
+    \n
+    Algumas teclas de atalho são definidas por padrão. Você pode apagá-las ou reatribuí-las.
+    \n
+    \n
+    ```
+    \n
+    Dependendo da ação, a tecla de atalho será monitorada dentro do aplicativo ou globalmente fora dele.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.instant_sync.title">Sincronização Astral</string>
+    <string name="runes.instant_sync.description"><![CDATA[    A runa abre uma oportunidade:
+    \n
+    - salve automaticamente todos os dados na nuvem;
+    \n
+    - acesse-o instantaneamente em qualquer outro dispositivo;
+    \n
+    - salve não apenas notas de texto, mas também arquivos de qualquer formato;
+    \n\n
+    Por padrão, o aplicativo funciona sem sincronização e salva todos os dados no dispositivo.
+    \n
+    ```
+    \n
+    Depois de ativar esta runa, todos os dados criados anteriormente e novos serão automaticamente sincronizados com o armazenamento em nuvem assim que a conexão com a Internet estiver disponível.
+    \n
+    ```
+    ]]></string>
+    <string name="runes.pincode.title">Escudo de Ferro</string>
+    <string name="runes.pincode.description"><![CDATA[    A runa lhe permite proteger o acesso ao aplicativo com uma senha.
+    \n\n
+    Quando ativada, o acesso será bloqueado após **%s minutos** de inatividade.
+    \n\n
+    **Importante:** se você esquecer sua senha, será necessário desinstalar e reinstalar o aplicativo. Nesse caso, todas as alterações não sincronizadas serão perdidas.
+    ]]></string>
+    <string name="runes.theme.title">Pele de Camaleão</string>
+    <string name="runes.theme.description"><![CDATA[    Por padrão, o aplicativo usa um esquema de cores que muda automaticamente entre claro e escuro dependendo das configurações do sistema.
+    \n\n
+    Você pode ativar qualquer outro tema que terá a mesma aparência, independentemente das configurações do sistema.
+    ]]></string>
+    <string name="runes.clipboard.title">Área de Transferência</string>
+    <string name="runes.clipboard.description"><![CDATA[    A runa permite que o aplicativo monitore a área de transferência e crie notas automaticamente com o texto dela.
+    \n\n
+    Uma vez ativada, o aplicativo mostrará uma notificação permanente na barra de status para ser capaz de monitorar o buffer.
+    \n\n
+    ```
+    \n
+    Se a notificação não for exibida, o aplicativo não está sendo executado e o buffer não será monitorado até que você abra o aplicativo novamente.
+    \n
+    ```
+    ]]></string>
+    <!--    <string name="runes.universal_clipboard.title">Universal Clipboard</string>-->
+    <!--    <string name="runes.universal_clipboard.description">Description</string>-->
+    <string name="runes.texpander.title">Companhia de Teclado</string>
+    <string name="runes.texpander.description"><![CDATA[    A runa lhe oferece a capacidade de usar o aplicativo para preencher os campos de entrada com notas existentes em quase **qualquer aplicativo**.
+    \n\n
+    Uma vez ativada, ao colocar o foco em um campo de entrada, o aplicativo exibirá um painel flutuante com ações que permitem controlar o conteúdo do campo de entrada.
+    \n\n
+    #### Recursos de comportamento:
+    \n
+    - o painel pode ser redimensionado;
+    \n
+    - o painel pode ser arrastado para qualquer lugar da tela;
+    \n
+    - o painel pode ser modificado automaticamente dependendo da possibilidade de usar certas ações;
+    \n
+    - o painel pode ser ocultado automaticamente se o campo perder o foco;
+    \n
+    - o painel pode ser escondido manualmente (usando a ação superior direita da barra de ferramentas) até ser forçado para ser acionado novamente;
+    \n
+    - se o painel não for exibido, ele pode ser explicitamente acionado a partir do Painel de Notificação ou Configurações Rápidas (se o Bloco for colocado no painel);
+    \n\n
+    #### Limitações técnicas:
+    \n
+    - o painel utiliza serviço de acessibilidade e requer sua ativação nas configurações do sistema;
+    \n
+    - o painel usa uma janela flutuante para exibir em cima de outros aplicativos e requer a permissão correspondente nas configurações do sistema;
+    \n
+    - em algumas aplicações o comportamento automático do painel não é possível, podendo ser utilizado com restrições e invocação explícita;
+    \n\n
+    #### Aviso prévio:
+    \n
+    Se a runa parar de funcionar depois de um tempo, leia [este artigo](%s) sobre como manter o aplicativo em execução no seu dispositivo. Ou entre em contato comigo por e-mail, talvez você tenha encontrado algum problema:)
+    ]]></string>
+    <string name="runes.texpander.toggle_activate.label">Ativar</string>
+    <string name="runes.texpander.required.accessibility">Toque aqui, então vá para serviços Baixados (Instalados) e ative o serviço Companhia de Teclado.</string>
+    <string name="runes.texpander.required.floating">Toque aqui, então vá para Outras permissões e ative a permissão Exibir janela pop-up.</string>
+    <string name="runes.texpander.action.copy">Copiar para a Área de Transferência</string>
+    <string name="runes.texpander.action.show">Toque aqui para exibir o painel flutuante.</string>
+    <string name="runes.texpander.action.insert">Inserir</string>
+    <string name="runes.texpander.action.replace">Substituir</string>
+    <string name="runes.texpander.hint.hide">Ocultar até que seja chamado no Painel de Notificação ou Configurações Rápidas.</string>
+    <!--    <string name="runes.notification.title">Notification Companion</string>-->
+    <!--    <string name="runes.notification.description">Description</string>-->
+    <string name="runes.link_preview.title">O Oculus</string>
+    <string name="runes.link_preview.description"><![CDATA[    Quando esta runa estiver ativada, para **links http** salvos, o aplicativo tentará carregar suas prévias no modo de visualização de nota.
+    \n\n
+    Ao fazer isso:
+    \n
+    - a prévia da imagem pode ser aberta em uma janela separada e ampliada;
+    \n
+    - Se o link for um vídeo, ele pode ser reproduzido com o aplicativo;
+    ]]></string>
+    <string name="runes.auto_save.title">Ponto Sem Retorno</string>
+    <string name="runes.auto_save.description"><![CDATA[    Por padrão, ao criar ou editar uma nota, você deve clicar manualmente no botão salvar para confirmar suas alterações.
+    \n
+    \n
+    Com esta runa, o aplicativo salvará automaticamente todas as alterações feitas durante a edição de texto.
+    ]]></string>
+    <string name="runes.remember_last_filter.title">Reviver</string>
+    <string name="runes.remember_last_filter.description"><![CDATA[    Com esta runa, na inicialização, o aplicativo irá restaurar o último filtro ativo da sessão anterior.
+    ]]></string>
+    <string name="runes.swipe_actions.title">Poder de Deslize</string>
+    <string name="runes.swipe_actions.description"><![CDATA[    Com esta runa, na lista de notas, você pode configurar ações com elas, aplicadas a gestos de deslizar.
+    ]]></string>
+    <string name="runes.focus_on_title.title">Foco Deslocado</string>
+    <string name="runes.focus_on_title.description"><![CDATA[    Por padrão, quando você cria uma nota, o campo de entrada de texto fica em foco.
+    \n\n
+    Você pode usar esta runa para mudar este comportamento e colocar o foco em qualquer outro campo.
+    ]]></string>
+    <string name="runes.hide_on_copy.title">Sopro de Cópia</string>
+    <string name="runes.hide_on_copy.description"><![CDATA[    Quando a runa é ativada, qualquer ação de cópia de texto dentro do Clipto (exceto ações contextuais em campos de entrada) irá ocultar o aplicativo.
+    \n
+    \n
+    Esta runa permite que você minimize o número de etapas ao colar o texto copiado fora do aplicativo.
+    ]]></string>
+    <string name="runes.double_click_actions.title">Passos Tentadores</string>
+    <string name="runes.double_click_actions.description"><![CDATA[    Com esta runa para algumas ações, você pode defini-las para serem ativadas clicando duas vezes em vez de um clique único.
+    \n
+    \n
+    Este comportamento pode ser útil para prevenir cliques acidentais.
+    ]]></string>
+    <string name="runes.loyalty.title">Suporte Inspirador</string>
+    <string name="runes.loyalty.description"><![CDATA[    Sem o seu suporte e feedback, o produto não irá evoluir na direção certa para os usuários.
+    \n\n
+    >**Se você tiver um minuto**, não se esqueça de nos avaliar na Google Play.
+    \n
+    \n
+    >**Se você tem mais tempo e a tradução não parece correta** - junte-se ao nosso projeto de localização.
+    \n
+    \n
+    >**Se você encontrar bugs, quiser mais runas ou apenas quiser escrever para nós** - nosso e-mail e página do github estão sempre à sua disposição.
+    ]]></string>
+    <string name="runes.backup_restore.title">Máquina do Tempo</string>
+    <string name="runes.backup_restore.description"><![CDATA[    Além da sincronização na nuvem, você pode salvar manualmente backups de seus dados e restaurá-los depois.
+    \n\n
+    Ao contrário da sincronização em nuvem, esta abordagem permite:
+    \n
+    - fazer uma captura de todos os dados no momento atual;
+    \n
+    - gerenciar todo o processo de backup e recuperação por conta própria;
+    \n
+    - restaurar todos os dados com base na captura de dados salva anteriormente;
+    \n\n
+    ```
+    \n
+    A restauração de um arquivo é feita em modo simples. Ou seja, os dados existentes não são excluídos, mas apenas complementados com novos dados.
+    \n
+    ```
+    ]]></string>
+    <!-- SETTINGS -->
+    <string name="settings.toolbar.title">Configurações</string>
+    <string name="settings.campaign.rate.title">Sua opinião importa</string>
+    <string name="settings.campaign.rate.message">Demora menos de um minuto, mas tem um impacto duradouro em nossas melhorias futuras.</string>
+    <string name="settings.campaign.rate.button">Avalie-nos na Google Play</string>
+    <string name="settings.campaign.rate.question">Como foi sua experiência com o Clipto?</string>
+    <string name="settings.campaign.rate.feedback.title">Enviar opinião</string>
+    <string name="settings.campaign.rate.feedback.message">Você pode nos dizer como podemos melhorar o Clipto? Sua opinião é muito importante.</string>
+    <string name="settings.campaign.rate.feedback.toast">Você pode deixar uma boa avaliação no Google Play? Obrigado pelo seu apoio!</string>
+    <string name="settings.campaign.share.title">Ganhe um bônus compartilhando o Clipto com seus amigos!</string>
+    <string name="settings.campaign.share.more">Saiba mais</string>
+    <string name="settings.campaign.share.action">Compartilhe o Link</string>
+    <string name="settings.group.clipboard">Área de Transferência</string>
+    <string name="settings.group.behavior">Comportamento</string>
+    <string name="settings.group.appearance">Aparência</string>
+    <string name="settings.group.backup">Backup &amp; Restauração</string>
+    <string name="settings.group.security">Privacidade &amp; Segurança</string>
+    <string name="settings.group.runes">Runas</string>
+    <string name="settings.link_preview.title">Prévia de Links</string>
+    <string name="settings.auto_save.title">Salvar notas automaticamente</string>
+    <string name="settings.auto_save.description">O aplicativo salvará automaticamente as alterações ao criar ou editar notas.</string>
+    <string name="settings.focus_on_title.title">Focar no título ao criar uma nota</string>
+    <string name="settings.focus_on_title.description">Ao criar uma nota, o foco estará no campo de título</string>
+    <string name="settings.track_clipboard.title">Notas da Área de Transferência</string>
+    <string name="settings.track_clipboard.description">Enquanto o aplicativo estiver em execução, ele criará notas automaticamente a partir do texto copiado para a Área de Transferência. Uma notificação persistente será mostrada na barra de status para acesso rápido.</string>
+    <string name="settings.track_clipboard.q.message">A partir do Android Q, use nossa nova abordagem para criar notas na área de transferência.</string>
+    <string name="settings.track_clipboard.q.description">A partir do Android Q, apenas o aplicativo em foco pode acessar os dados da Área de Transferência.</string>
+    <string name="settings.track_clipboard.q.solution.title">Para contornar essa restrição, use uma das seguintes soluções:</string>
+    <string name="settings.track_clipboard.q.solution.1.title">Ação \'Clipto…\' em vez de \'Copiar\'</string>
+    <string name="settings.track_clipboard.q.solution.1">Após selecionar o texto a ser copiado, use a ação \'Clipto…\' em vez de \'Copiar\' se estiver disponível no menu de contexto do aplicativo ativo.</string>
+    <string name="settings.track_clipboard.q.solution.2.title">Ação \'Copiar\' padrão em combinação com \'Colar\' na área de notificação</string>
+    <string name="settings.track_clipboard.q.solution.2">Se a ação \'Clipto…\' não estiver disponível ou você ainda quiser usar a ação \'Copiar\' padrão, não se esqueça de clicar no botão \'Colar\' na notificação para criar uma nota de dados da área de transferência no momento.</string>
+    <string name="settings.track_clipboard.q.solution.3.title">Ação \'Copiar\' padrão como era antes do Android Q</string>
+    <string name="settings.track_clipboard.q.solution.3">Esta solução requer configuração avançada para ser feita com o aplicativo por meio de um computador. Para fazer o Clipto funcionar novamente, execute os seguintes comandos ADB no seu computador:</string>
+    <string name="settings.track_clipboard.q.solution.3.description">Após a execução bem-sucedida, você deve ver a ação adicional nas notificações personalizadas do aplicativo que permite você ativar/desativar o monitoramento da área de transferência. Além disso, este aviso desaparecerá das configurações.</string>
+    <string name="settings.track_clipboard.q.emulate.title">Emular Ação de Copiar</string>
+    <string name="settings.track_clipboard.q.emulate.description">As ações personalizadas \'Clipto…\' e \'Colar\' criarão automaticamente notas do texto selecionado ou copiado e as colocarão na Área de Transferência se seu conteúdo for diferente.</string>
+    <string name="settings.universal_clipboard.title">Área de Transferência Universal</string>
+    <string name="settings.universal_clipboard.description">Qualquer texto copiado para a Área de Transferência será sincronizado entre todos os seus dispositivos. Também será inserido automaticamente na Área de Transferência onde esta configuração estiver ativada.</string>
+    <string name="settings.notification_style.title">Estilo de Notificação</string>
+    <string name="settings.notification_style.description">Estilo de notificação usado na notificação permanente da barra de status.</string>
+    <string name="settings.notification_sound.title">Notificações silenciosas</string>
+    <string name="settings.notification_sound.description">Silencia notificações, independente dos sons ou vibrações definidos na notificação ou canal de notificação.</string>
+    <string name="settings.hide_on_click.title">Ocultar ao Copiar</string>
+    <string name="settings.hide_on_click.description">O aplicativo será ocultado após uma nota ser copiada.</string>
+    <string name="settings.restore_filter.title">Lembrar Último Filtro</string>
+    <string name="settings.restore_filter.description">O aplicativo será aberto com o filtro da última sessão.</string>
+    <string name="settings.pin_starred.title">Fixar Notas Favoritas</string>
+    <string name="settings.pin_starred.description">As notas favoritas serão exibidas primeiro na lista, independentemente do filtro selecionado.</string>
+    <string name="settings.theme.title">Tema</string>
+    <string name="settings.theme.description">Escolha os esquemas de cores personalizados.</string>
+    <string name="settings.backup.title">Salvar em Arquivo</string>
+    <string name="settings.backup.description">Exporte suas notas para um arquivo.</string>
+    <string name="settings.restore.title">Restaurar do Arquivo</string>
+    <string name="settings.restore.description">Restaura notas de um arquivo (formatos suportados: %s).</string>
+    <string name="settings.startup.title">Executar na Inicialização</string>
+    <string name="settings.startup.description">Permite que o aplicativo inicie assim que o sistema terminar de carregar.</string>
+    <string name="settings.language.title">Idioma</string>
+    <string name="settings.swipe_actions.title">Ações ao Deslizar</string>
+    <string name="settings.swipe_actions.description">Configure ações de deslize para agir rapidamente nas notas na lista principal.</string>
+    <string name="settings.double_click.title">Ações de Clique Duplo</string>
+    <string name="settings.double_click.description">Configure as ações a serem concluídas apenas com um clique duplo.</string>
+    <string name="settings.double_click.action.exit">O botão Voltar sai do aplicativo</string>
+    <string name="settings.double_click.action.delete">Excluir Nota</string>
+    <string name="settings.double_click.action.edit">Editar Nota</string>
+    <string name="settings.double_click.toast">Clique novamente para completar</string>
+    <string name="settings.clipboard.exclude_custom_attrs.title">Não exibir notas alteradas</string>
+    <string name="settings.clipboard.exclude_custom_attrs.description">Notas, para as quais qualquer um dos atributos é atribuído (marcador, sinalização de favoritos, título, snippet), não serão mostradas na categoria \'Notas da Área de Transferência\'.</string>
+    <string name="settings.clipboard.ignore_q_warning.title">Não exibir um alerta sobre restrições da área de transferência</string>
+    <string name="settings.clipboard.ignore_q_warning.description">Se o aplicativo estiver configurado e funcionar corretamente com a área de transferência do seu dispositivo, ative este alternador para remover as restrições funcionais das notificações.</string>
+    <string name="settings.security.passcode.title">Bloqueio com Senha</string>
+    <string name="settings.security.passcode.description">Quando você configura uma senha, o aplicativo será bloqueado após %s minutos de inatividade.\n\nNota: se você esquecer a senha, será necessário excluir e reinstalar o aplicativo. Todas as alterações não sincronizadas serão perdidas.</string>
+    <string name="settings.security.fingerprint.title">Desbloquear com Impressão Digital</string>
+    <!-- LOCK SCREEN -->
+    <string name="auth.set_passcode.button.skip">Pular</string>
+    <string name="auth.set_passcode.label.set_passcode">Defina uma senha para acessar o aplicativo de forma rápida e segura</string>
+    <string name="auth.set_passcode.label.reenter_passcode">Digite novamente sua senha</string>
+    <string name="auth.set_fingerprint.title">Use o Touch ID</string>
+    <string name="auth.set_fingerprint.subtitle">Deseja usar o sensor de impressão digital para desbloquear o aplicativo?</string>
+    <string name="auth.set_fingerprint.button.use_fingerprint">Usar impressão digital</string>
+    <string name="auth.set_fingerprint.button.skip_for_now">Pular por enquanto</string>
+    <string name="auth.fingerprint.touch_sensor">Confirme a impressão digital para continuar</string>
+    <!--Change pass code-->
+    <string name="change_passcode.enter_existing">Digite sua senha existente</string>
+    <string name="change_passcode.set_new">Crie sua nova senha</string>
+    <string name="change_passcode.reenter">Digite novamente sua senha</string>
+    <!-- ABOUT -->
+    <string name="about.label.email.support.subject">%s -Suporte</string>
+    <string name="about.label.email.support.message">ESCREVA SUA MENSAGEM AQUI</string>
+    <string name="about.label.rate">Avalie-nos na Google Play</string>
+    <string name="about.label.issue">Relatar um problema</string>
+    <string name="about.label.translate">Ajude-nos com a tradução</string>
+    <string name="about.label.changelog">Registro de mudanças</string>
+    <string name="about.label.campaign.rate">Ajude-nos a melhorar!</string>
+    <string name="about.label.campaign.share">Compartilhar Link do App</string>
+    <string name="about.label.campaign.share.description">%s pessoas se juntaram ao aplicativo usando seu link.</string>
+    <string name="about.label.other">O que outros dizem sobre nós</string>
+    <!-- ACCOUNT -->
+    <string name="account.title.not_authorized">Entre para armazenar suas notas na nuvem e mantê-las sincronizadas em todos os seus dispositivos.</string>
+    <string name="account.title.required_authorization">Autorização necessária</string>
+    <string name="account.description.required_authorization">Você deve estar autorizado para processar esta ação</string>
+    <string name="account.title.authorized">Autorizado</string>
+    <string name="account.button.sign_in">Iniciar sessão</string>
+    <string name="account.button.sign_out">Encerrar Sessão</string>
+    <string name="account.dialog.sign_out.title">Encerrando Sessão</string>
+    <string name="account.dialog.sign_out.message">Tem certeza que deseja sair do aplicativo? Todos os dados não sincronizados serão perdidos.</string>
+    <string name="account.plan.personal">Licença pessoal</string>
+    <string name="account.plan.subscription">Plano de assinatura (sincronizar %s notas)</string>
+    <string name="account.plan.contributor">Plano de contribuição (sincronizar %s notas)</string>
+    <string name="account.plan.yearly">Plano anual (sincronizar %s notas)</string>
+    <string name="account.plan.monthly">Plano mensal (sincronizar %s notas)</string>
+    <string name="account.plan.free">Plano básico (sincronizar %s notas)</string>
+    <string name="account.toolbar.title">Conta</string>
+    <string name="account.sync.title">Sincronizar notas automaticamente</string>
+    <string name="account_rebuild_index_title">Reconstruir índice de dados</string>
+    <string name="account_rebuild_index_description">Se você vir dados diferentes (marcadores, arquivos, notas, etc.) em dispositivos diferentes, é recomendável realizar este procedimento. Você precisará entrar novamente quando o procedimento for concluído.</string>
+    <string name="account_delete_title">Excluir Conta</string>
+    <string name="account_delete_confirm_title">Você quer excluir sua conta?</string>
+    <string name="account_delete_confirm_description"><![CDATA[    ATENÇÃO! Se você pressionar EXCLUIR abaixo, sua conta e dados pessoais serão excluídos
+    permanentemente e será irreversível. Por favor, certifique-se de que você não tem qualquer informação valiosa lá.
+    ]]></string>
+    <string name="account_delete_confirm_again_title">Tem certeza disso?</string>
+    <string name="account_delete_confirm_again_description">Após confirmar, todos os dados da sua conta serão excluídos permanentemente.</string>
+    <!-- SYNC PLANS -->
+    <string name="account.sync.plan.free">Gratuito</string>
+    <string name="account.sync.plan.title">Sincronizar %s notas</string>
+    <string name="account.sync.plan.toolbar">Selecionar plano</string>
+    <string name="account.sync.plan.button.active">Plano ativo</string>
+    <string name="account.sync.plan.button.select">Selecionar plano</string>
+    <string name="account.sync.plan.button.change">Alterar plano</string>
+    <string name="account.sync.plan.button.upgrade">Fazer Upgrade</string>
+    <string name="account.sync.plan.caption">Comece de graça, depois pague somente por dados que você sincronizar.</string>
+    <string name="account.sync.plan.hint">Número de notas que você pode sincronizar entre dispositivos (%s)</string>
+    <string name="account.sync.plan.benefit.offline">Número ilimitado de notas offline.</string>
+    <string name="account.sync.plan.benefit.sync">Sincronize %s notas entre todos os seus dispositivos.</string>
+    <string name="account.sync.plan.warning.limit_reached.title">A sincronização está desativada porque o limite foi atingido</string>
+    <string name="account.sync.plan.warning.limit_reached.sub_title">O número total das suas notas, incluindo sua Lixeira, é %s, que está acima do limite permitido de %s.</string>
+    <string name="account.sync.plan.warning.limit_reached.caption">Reduza o número de suas notas para selecionar este plano.</string>
+    <string name="account.sync.plan.warning.limit_reached.description">Você atingiu o limite do seu plano. Não se preocupe, o aplicativo ainda está totalmente funcional offline e não tem nenhuma restrição. No entanto, a sincronização em nuvem fica desabilitada em seu dispositivo até que você atualize sua conta ou reduza o número de notas até o limite do plano ativo.</string>
+    <string name="account.sync.plan.contributor">Se você ajudou a traduzir o aplicativo ou apoia o produto regularmente, por favor, entre em contato conosco para atualizar sua conta.</string>
+    <string name="sync.free_limit_concept">O limite gratuito não é fixo e pode ser alterado para cima ou para baixo, dependendo de vários fatores.</string>
+    <string name="sync.off.title">A nota não está sincronizada entre os dispositivos</string>
+    <string name="sync.off.multiple.title">As notas não estão sincronizadas entre os dispositivos</string>
+    <string name="sync.off.caption">É possível que isso ocorra devido aos seguintes motivos:</string>
+    <string name="sync.off.reason.universal_clipboard">A área de transferência Universal não estava ativada quando o aplicativo criou esta nota.</string>
+    <string name="sync.off.reason.manual_off">Você desligou a sincronização manualmente.</string>
+    <string name="sync.warning.title">A funcionalidade usa sincronização na nuvem</string>
+    <string name="sync.warning.description">A sincronização em nuvem não é completamente gratuita e pode ser desativada em seu dispositivo até que você faça o upgrade de sua conta ou reduza o número de notas para o limite do plano ativo.</string>
+    <!-- FAST ACTIONS -->
+    <string name="fast_actions.title">Ações Rápidas</string>
+    <string name="fast_actions.compose_email">Escrever um E-mail</string>
+    <string name="fast_actions.send_message">Enviar nova mensagem</string>
+    <string name="fast_actions.compose_sms">Escrever um SMS</string>
+    <string name="fast_actions.twitter_post">Escrever um Tweet</string>
+    <string name="fast_actions.web_search">Pesquisar na Web</string>
+    <string name="fast_actions.google_translate">Google Tradutor</string>
+    <string name="fast_actions.google_maps_search">Pesquisar no Google Maps</string>
+    <string name="fast_actions.wiki_search">Pesquisar na Wikipédia</string>
+    <string name="fast_actions.youtube_search">Pesquisar no YouTube</string>
+    <string name="fast_actions.duckduckgo_search">Pesquisar no DuckDuckGo</string>
+    <string name="fast_actions.stackoverflow_search">Pesquisar no Stack Overflow</string>
+    <string name="fast_actions.reddit_search">Pesquisar no Reddit</string>
+    <string name="fast_actions.play_url">Reproduzir um link</string>
+    <string name="fast_actions.send_as_file">Enviar como Arquivo</string>
+    <string name="fast_actions.send_as_txt_file">Enviar como Txt</string>
+    <string name="fast_actions.send_as_pdf_file">Enviar como Pdf</string>
+    <string name="fast_actions.send_as_md_file">Enviar como Markdown</string>
+    <string name="fast_actions.export_to_file">Exportar para Arquivo</string>
+    <string name="fast_actions.export_to_file.success">Exportado como %s</string>
+    <string name="fast_actions.calendar_event">Adicionar um evento de calendário</string>
+    <string name="fast_actions.copy">Copiar para a área de transferência</string>
+    <string name="fast_actions.copy_clear">Limpar da área de transferência</string>
+    <string name="fast_actions.tts">Texto para Fala</string>
+    <string name="fast_actions.tts.max_length">O texto não deve ter mais que %s caracteres</string>
+    <string name="fast_actions.share">Compartilhar com…</string>
+    <string name="fast_actions.send_as_qrcode">Enviar como código QR</string>
+    <string name="fast_actions.dial_number">Discar um número de telefone</string>
+    <string name="fast_actions.insert_contact">Inserir contato</string>
+    <string name="fast_actions.insert_contact_email">Salvar e-mail de Contato</string>
+    <string name="fast_actions.insert_contact_phone">Salvar telefone de Contato</string>
+    <string name="fast_actions.open_url">Abrir página web</string>
+    <string name="fast_actions.short_link">Encurtar o link</string>
+    <string name="fast_actions.more">Mostrar Mais</string>
+    <string name="fast_actions.error">Erro inesperado: %s</string>
+    <!-- THEMES -->
+    <string name="theme.default">Padrão</string>
+    <string name="theme.sepia">Sépia</string>
+    <string name="theme.dark">Escuro</string>
+    <string name="theme.dark_blue">Azul Escuro</string>
+    <string name="theme.dark_green">Verde Escuro</string>
+    <string name="theme.dark_blurple">Dark Blurple</string>
+    <string name="theme.black">Preto AMOLED</string>
+    <string name="theme.green">Verde</string>
+    <string name="theme.white">Branco</string>
+    <string name="theme.pink">Rosa</string>
+    <!-- SORT ORDERS -->
+    <string name="sort_order.usage_date">Data de uso</string>
+    <string name="sort_order.modify_date">Data de edição</string>
+    <string name="sort_order.create_date">Data de criação</string>
+    <string name="sort_order.delete_date">Data de exclusão</string>
+    <string name="sort_order.usage_count">Contagem de uso</string>
+    <string name="sort_order.title">Título</string>
+    <string name="sort_order.text">Texto</string>
+    <string name="sort_order.tags">Marcadores</string>
+    <string name="sort_order.size">Tamanho</string>
+    <string name="sort_order.name">Nome</string>
+    <string name="sort_order.notes_count">Contagem de notas</string>
+    <string name="sort_order.color">Cor</string>
+    <string name="sort_order.manual">Manual</string>
+    <!-- BACKUP AND RESTORE -->
+    <string name="backup.success.title">Sucesso</string>
+    <string name="backup.fail.title">Falha</string>
+    <string name="backup.fail.message">Erro inesperado: %s</string>
+    <string name="restore.success.title">Sucesso</string>
+    <string name="restore.fail.title">Falha</string>
+    <string name="restore.fail.message">Erro inesperado: %s</string>
+    <string name="clip.multiple.exit_without_save.title">Tem certeza de que deseja fechar esta janela?</string>
+    <string name="clip.multiple.exit_without_save.description">Qualquer alteração feita será perdida.</string>
+    <!-- CLIP MULTIPLE EDIT ATTRIBUTES -->
+    <string name="clip.multiple.edit.attributes.tags">Marcadores comuns</string>
+    <!-- CLIP MULTIPLE MERGE -->
+    <string name="clip.multiple.merge.separator">Separador</string>
+    <string name="clip.multiple.merge.separator.line">Nova Linha</string>
+    <string name="clip.multiple.merge.separator.space">Espaço</string>
+    <string name="clip.multiple.merge.separator.other">Outro</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification.style.controls">Controles</string>
+    <string name="notification.style.history">Histórico da Área de Transferência</string>
+    <string name="notification.style.actions">Ações da Área de Transferência</string>
+    <string name="notification.track_clipboard.pause">O monitoramento da área de transferência está pausado</string>
+    <string name="notification.track_clipboard.resume">O monitoramento da área de transferência foi retomado</string>
+    <!-- ATTACHMENTS -->
+    <string name="attachments.title">Anexos</string>
+    <string name="attachments.type.photo">Tirar Foto</string>
+    <string name="attachments.type.record">Gravar Vídeo</string>
+    <string name="attachments.type.file">Escolher Arquivo</string>
+    <string name="attachments.attr.created">Criado</string>
+    <string name="attachments.attr.name">Nome</string>
+    <string name="attachments.attr.type">Tipo</string>
+    <string name="attachments.attr.path">Caminho</string>
+    <string name="attachments.attr.size">Tamanho</string>
+    <string name="attachments.state.downloaded">Baixado</string>
+    <string name="attachments.state.uploaded">Enviado</string>
+    <string name="attachments.state.downloading">Baixando…</string>
+    <string name="attachments.state.uploading">Enviando…</string>
+    <string name="attachments.label.insert">Adicionar a uma Nota</string>
+    <string name="attachments.label.download_url">O url público estará disponível depois que o arquivo for enviado.</string>
+    <string name="contribute.annual.offer">Cancele a qualquer momento na Central de assinaturas do Google Play.</string>
+    <string name="contribute.monthly.period">mês</string>
+    <string name="contribute.annual.period">ano</string>
+    <!-- DESKTOP -->
+    <string name="desktop.tray.quit">Sair</string>
+    <string name="desktop.tray.show">Exibir</string>
+    <string name="desktop.tray.show_in_taskbar">Exibir na barra de tarefas</string>
+    <string name="desktop.update.action.download">Baixar</string>
+    <string name="desktop.update.action.later">Mais tarde</string>
+    <string name="desktop.update.title">Uma nova versão está disponível</string>
+    <string name="desktop.shortcuts.title">Teclas de Atalho</string>
+    <string name="desktop.shortcuts.dialog.define">Defina o Atalho</string>
+    <string name="desktop.shortcuts.showHideApp">Exibir/Esconder aplicativo</string>
+    <string name="desktop.shortcuts.modeFullscreen">Alternar Tela Cheia</string>
+    <string name="desktop.shortcuts.modeComfortable">Alternar Modo Confortável</string>
+    <string name="desktop.shortcuts.modeCompact">Alternar Modo Compacto</string>
+    <string name="desktop.shortcuts.tagNext">Próximo Marcador</string>
+    <string name="desktop.shortcuts.tagPrev">Marcador Anterior</string>
+    <string name="desktop.shortcuts.noteNext">Próxima Nota</string>
+    <string name="desktop.shortcuts.notePrev">Nota Anterior</string>
+    <string name="desktop.shortcuts.noteNew">Nova Nota</string>
+    <string name="desktop.shortcuts.noteSave">Salvar Nota</string>
+    <string name="desktop.shortcuts.noteDelete">Remover Nota</string>
+    <string name="desktop.shortcuts.noteCopy">Copiar Nota</string>
+    <string name="desktop.shortcuts.notePrint">Imprimir Nota</string>
+    <string name="desktop.shortcuts.noteFind">Pesquisar Notas</string>
+    <string name="desktop.shortcuts.noteOpen">Abrir Nota</string>
+    <string name="desktop.shortcuts.noteEdit">Editar Nota</string>
+    <string name="desktop.shortcuts.contextModeSelect">Selecionar Nota</string>
+    <string name="desktop.shortcuts.contextModeCancel">Desmarcar Todas as Notas</string>
+    <string name="desktop.shortcuts.contextModeSelectAll">Selecionar Todas as Notas</string>
+    <string name="desktop.shortcuts.saveFromClipboard">Salvar da Área de Transferência</string>
+    <string name="desktop.attachments.browse">Solte arquivos para anexar, ou clique para procurar.</string>
+    <string name="desktop.main.content.under.development">O conteúdo está em desenvolvimento…</string>
+    <string name="desktop.main.menu.download">Baixar</string>
+    <string name="desktop.main.menu.download.for">Baixar para %s</string>
+    <string name="desktop.main.menu.download.android.apk">Obter versão universal do APK</string>
+    <string name="desktop.main.menu.resources">Recursos</string>
+    <string name="desktop.main.menu.open">Abrir o Clipto no seu navegador</string>
+    <string name="desktop.main.features.title.1">Escreva de maneira fácil e rápida em qualquer dispositivo.</string>
+    <string name="desktop.main.features.title.2">Bloco de Notas &amp; tudo-em-um Gerenciador de Área de Transferência com foco na velocidade e produtividade que funciona tanto no desktop quanto no telefone.</string>
+    <string name="desktop.main.features.title.3">Sua companhia de escrita pessoal.</string>
+    <string name="desktop.main.features.title.4">Uma solução compreensível para um trabalho conveniente e eficiente com notas, snippets, área de transferência, arquivos e qualquer outra informação importante para acesso rápido em qualquer dispositivo.</string>
+    <string name="desktop.main.features.title.5">O que faz o Clipto tão especial?</string>
+    <string name="desktop.get_started.language">Escolha o seu idioma</string>
+    <string name="desktop.get_started.theme">Escolha o tema preferido</string>
+    <string name="desktop.auth.instruction">Instrução de Autorização</string>
+    <!-- BARCODE -->
+    <string name="barcode.title">Ler Código de Barras</string>
+    <string name="barcode.prompt.point_at_a_barcode">Aponte sua câmera para um código de barras</string>
+    <string name="barcode.prompt.hold_camera_steady">Mantenha a câmera parada por um momento</string>
+    <string name="barcode.prompt.move_camera_closer">Aproxime-se para procurar</string>
+    <string name="barcode.prompt.searching">Procurando…</string>
+    <!-- FONTS -->
+    <string name="font.request.failed">A solicitação de fonte falhou com o código de razão: %1$d</string>
+    <!-- NOTE PUBLIC LINKS -->
+    <string name="public.note.link.title">Link público</string>
+    <string name="public.note.link.time.label">Em um horário específico</string>
+    <string name="public.note.link.time.or">ou</string>
+    <string name="public.note.link.time.type.seconds">segundos</string>
+    <string name="public.note.link.time.type.minutes">minutos</string>
+    <string name="public.note.link.time.type.hours">horas</string>
+    <string name="public.note.link.time.type.days">dias</string>
+    <string name="public.note.link.access_time">Horário de acesso</string>
+    <string name="public.note.link.access_time.description">Se definido, o link só estará disponível após um determinado período de tempo desde sua criação ou atualização subsequente.</string>
+    <string name="public.note.link.access_time.label">Estará disponível em</string>
+    <string name="public.note.link.access_password">Senha de acesso</string>
+    <string name="public.note.link.access_password.hint">Dica de senha (opcional)</string>
+    <string name="public.note.link.access_password.placeholder">Senha</string>
+    <string name="public.note.link.access_password.description">Se configurado, o link só estará disponível após a confirmação da senha.</string>
+    <string name="public.note.link.time_to_expire">Horário de expirar</string>
+    <string name="public.note.link.time_to_expire.description">Se definido, o link será válido por um período de tempo especificado após sua criação ou atualização subsequente.</string>
+    <string name="public.note.link.time_to_expire.label">Expira em</string>
+    <string name="public.note.link.one_time_opening">Uso único</string>
+    <string name="public.note.link.one_time_opening.description">Se definido, o link estará disponível para um único uso desde que foi criado ou atualizado.</string>
+    <string name="public.note.link.action.remove">Remover o link</string>
+    <string name="public.note.link.action.remove.confirm.title">Remover o link?</string>
+    <string name="public.note.link.action.remove.confirm.description">O link não estará mais disponível.</string>
+    <string name="public.note.link.action.create">Criar um link</string>
+    <string name="public.note.link.state.unavailable">Indisponível</string>
+    <string name="public.note.link.state.postponed">Estará disponível em:</string>
+    <string name="public.note.link.state.expires_in">Expira em %s</string>
+    <string name="public.note.link.state.expired">Expirado</string>
+    <string name="public.note.link.state.locked">Bloqueado</string>
+    <string name="public.note.link.state.locked.wrong_password">Senha incorreta.</string>
+    <string name="about.policy">Política de Privacidade</string>
+    <string name="about.toc">Terms or Uso</string>
+    <string name="about_pricing">Preços</string>
+    <string name="site.integrations.title">Integrações</string>
+    <string name="site.integrations.zapier.title">Integração com o Zapier</string>
+    <string name="site.integrations.zapier.description"><![CDATA[Conecte o Clipto com o Zapier e execute seus fluxos de trabalho em alta velocidade.
+\n
+## Sua área de transferência como um gatilho de fluxo de trabalho
+\n
+A maneira mais rápida de salvar informações importantes é selecioná-las e copiá-las.
+\n
+Para começar a usar essa funcionalidade com o Zapier, basta seguir estas etapas:
+\n
+1. Configure no Zapier o gatilho **Texto Copiado para a Área de Transferência**.
+\n
+2. Instale o Clipto em seu dispositivo (celular, desktop) e **entre** com a mesma conta
+\n
+3. Abra o Clipto e ative as configurações **Notas da Área de Transferência** e **Área de Transferência Universal**
+\n
+4. Isso é tudo. Agora você pode usar a combinação padrão **Ctrl+C** (ou Copiar no menu de contexto) para ativar um fluxo de trabalho com o texto copiado.
+    ]]></string>
+    <string name="faq.title">Perguntas Frequentes</string>
+    <!-- HINTS -->
+    <string name="hint_notes"><![CDATA[    **Notas** ajudam você a manter informações de texto importantes e acessá-las instantaneamente a qualquer momento em qualquer dispositivo.
+    \n
+    \n
+    Por padrão, todas as notas são divididas em várias categorias para acesso rápido às notas corretas com base em atributos diferentes.
+    \n
+    ```
+    \n
+    Todas as notas são baixadas para o seu dispositivo quando você entra pela primeira vez.
+    \n
+    \n
+    Todas as alterações são sincronizadas assim que a Internet estiver disponível.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filters"><![CDATA[    **Filtros** ajudam você a encontrar as informações que deseja com mais rapidez, usando modelos de pesquisa prontos.
+    \n
+    ```
+    \n
+    Um modelo de pesquisa pode conter várias combinações de marcadores, intervalos de tempo, textos, regras de classificação e exibição, etc.
+    \n
+    \n
+    Portanto, salvar qualquer combinação como um filtro torna muito mais fácil recuperar os dados que você está procurando ao acessá-los novamente.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter"><![CDATA[    - Cada filtro tem suas próprias configurações para exibir dados na lista.
+    \n
+    - Se a descrição for definida, ela será exibida no lugar desta dica.
+    \n
+    - As configurações de filtro são sincronizadas em todos os seus dispositivos.
+    \n
+    ```
+    \n
+    A paleta de cores muda de matiz se você clicar na cor selecionada novamente.
+    \n
+    \n
+    A regra de classificação inverte sua direção se você clicar nela novamente.
+    \n
+    \n
+    A descrição suporta formatação markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tags"><![CDATA[    **Marcadores** ajudam a organizar suas notas e arquivos para torná-los mais fáceis de encontrar.
+    \n
+    ```
+    \n
+    Você pode adicionar marcadores múltiplos a qualquer nota ou arquivo.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_tag"><![CDATA[    - Cada marcador tem suas próprias configurações para exibir dados na lista.
+    \n
+    - Se a descrição for definida, ela será exibida no lugar desta dica.
+    \n
+    - As configurações de marcador são sincronizadas em todos os seus dispositivos.
+    \n
+    ```
+    \n
+    A paleta de cores muda de matiz se você clicar na cor selecionada novamente.
+    \n
+    \n
+    A regra de classificação inverte sua direção se você clicar nela novamente.
+    \n
+    \n
+    A descrição suporta formatação markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_filter_custom"><![CDATA[    Os parâmetros de pesquisa podem ser salvos como um filtro para acesso rápido novamente.
+    ]]></string>
+    <string name="hint_snippets"><![CDATA[    **Snippets** ajudam a evitar a digitação repetitiva usando modelos de texto reutilizáveis.
+    \n
+    \n
+    Um snippet pode ser qualquer nota existente ou nova. Pode ser estático ou dinâmico, contendo campos para entrada manual e valores de tempo de execução (datas, horas, etc.).
+    \n
+    \n
+    Os snippets são organizados por kits. Você pode criar seu próprio kit ou instalar qualquer um da biblioteca pública.
+    ]]></string>
+    <string name="hint_snippet"><![CDATA[    - O kit pode ser compartilhado com outros usuários.
+    \n
+    - O kit pode ser publicado na biblioteca pública.
+    \n
+    - Se a descrição for definida, ela será exibida no lugar desta dica.
+    \n
+    ```
+    \n
+    A paleta de cores muda de matiz se você clicar na cor selecionada novamente.
+    \n
+    \n
+    A regra de classificação inverte sua direção se você clicar nela novamente.
+    \n
+    \n
+    A descrição suporta formatação de markdown.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_files"><![CDATA[    **Arquivos** ajudam você a manter quaisquer dados e acessá-los instantaneamente a qualquer momento em qualquer dispositivo.
+    \n
+    \n
+    **Ao contrário de notas**, os arquivos não são baixados para o seu dispositivo quando você entra pela primeira vez.
+    \n
+    \n
+    **Em vez disso**, apenas os metadados do arquivo são baixados para o dispositivo para pesquisa e edição rápidas.
+    \n
+    ```
+    \n
+    Todas as alterações são sincronizadas assim que a Internet estiver disponível.
+    \n
+    ```
+    ]]></string>
+    <string name="hint_folders"><![CDATA[    **Pastas** ajudam a organizar suas notas e arquivos para torná-los mais fáceis de encontrar.
+    \n
+    \n
+    **Além de marcadores**, as pastas permitem organizar os dados de forma hierárquica.
+    \n
+    \n
+    **Ao contrário dos marcadores**, um arquivo ou nota só pode ser vinculado a uma pasta.
+    ]]></string>
+    <string name="hint_abbreviation"><![CDATA[    A abreviação pode ser usada:
+    \n
+    \n
+    - para pesquisar rapidamente por uma nota usando uma frase curta de no máximo %s caracteres
+    \n
+    - para inserir o texto da nota no campo de entrada ao inserir um atalho com um símbolo inicial **%s**
+    ]]></string>
+    <string name="hint_description"><![CDATA[    A descrição pode ser usada para fornecer informações adicionais sobre uma nota.
+    \n
+    \n
+    Ela suporta formatação de markdown de no máximo %s caracteres.
+    ]]></string>
+    <string name="where_none_of">nenhuma das selecionadas</string>
+    <string name="where_any_of">qualquer das selecionadas</string>
+    <string name="where_all_of">todas selecionadas</string>
+    <string name="where_after">Depois</string>
+    <string name="where_before">Antes</string>
+    <string name="where_from">De</string>
+    <string name="where_to">Para</string>
+    <string name="where_date_today">Hoje</string>
+    <string name="where_date_tomorrow">Amanhã</string>
+    <string name="where_date_custom">Personalizado</string>
+    <string name="where_date_yesterday">Ontem</string>
+    <string name="where_date_last_7_days">Últimos 7 dias</string>
+    <string name="where_date_last_30_days">Últimos 30 dias</string>
+    <string name="where_date_last_90_days">Últimos 90 dias</string>
+    <string name="advanced_filter_block_text">Texto contém</string>
+    <string name="advanced_filter_block_text_type">Tipo de texto</string>
+    <string name="advanced_filter_block_category">Localizado em</string>
+    <string name="advanced_filter_block_tags">Marcadores</string>
+    <string name="advanced_filter_block_created">Data de criação</string>
+    <string name="advanced_filter_block_updated">Data de atualização</string>
+    <string name="advanced_filter_block_only_public_links">Exibir apenas com links públicos</string>
+    <string name="advanced_filter_block_only_attachments">Exibir apenas com anexos</string>
+    <string name="advanced_filter_block_only_not_synced">Exibir apenas não sincronizadas</string>
+    <!-- Snippet Kits -->
+    <string name="snippet_kit_attr_country">País</string>
+    <string name="snippet_kit_attr_snippets">Snippets</string>
+    <string name="snippet_kit_attr_language">Idioma</string>
+    <string name="snippet_kit_attr_downloads">Downloads</string>
+    <string name="snippet_kit_attr_created">Criado em</string>
+    <string name="snippet_kit_attr_updated">Atualizado em</string>
+    <string name="snippet_kit_attr_category">Categoria</string>
+    <string name="snippet_kit_public_link">Link Público</string>
+    <string name="snippet_kit_public_link_description"><![CDATA[    O kit de snippet pode ser acessado para instalação por meio de um link público
+    ]]></string>
+    <string name="snippet_kit_public_link_remove_title">Remover o link?</string>
+    <string name="snippet_kit_public_link_remove_description">O kit de snippet não será acessado para instalação por meio do link.</string>
+    <string name="snippet_kit_public_library">Biblioteca Pública</string>
+    <string name="snippet_kit_public_library_description"><![CDATA[    O kit de snippet pode ser acessado para instalação em uma biblioteca pública.
+    \n
+    \n
+    ```
+    \n
+    O kit deve conter pelo menos %s snippets para ser colocado na biblioteca pública.
+    \n
+    ```
+    \n
+    \n
+    Quando você coloca um kit na biblioteca pública, automaticamente obtém um benefício.
+    \n
+    \n
+    [Saiba mais…](%s)
+    ]]></string>
+    <string name="snippet_kit_public_library_remove_title">Remover da biblioteca pública?</string>
+    <string name="snippet_kit_public_library_remove_description">O kit de snippet não será acessado para instalação na biblioteca pública.</string>
+    <string name="snippet_kit_hint_name">Nome do kit de snippet</string>
+    <string name="snippet_kit_label_show_in_public_library">Exibir na Biblioteca Pública</string>
+    <string name="snippet_kit_error_name_required">É necessário um nome único para salvar este conjunto</string>
+    <string name="snippet_kit_delete_title">Excluir o kit \'%s\'?</string>
+    <string name="snippet_kit_delete_description">O kit de snippet será excluído permanentemente.</string>
+    <string name="snippet_kit_uninstall_title">Desinstalar o kit \'%s\'?</string>
+    <string name="snippet_kit_uninstall_description">O kit de snippet será excluído permanentemente com todos os snippets associados.</string>
+    <string name="snippet_kit_install_hint_title">O que significa instalar?</string>
+    <string name="snippet_kit_install_hint_description"><![CDATA[    O kit de snippet instalado estará disponível para uso como se você o tivesse criado.
+    \n
+    \n
+    Ou seja, você pode alterar completamente quaisquer notas nele, adicionar novas, excluir existentes, gerenciar as configurações do kit, etc.
+    \n
+    \n
+    ```
+    \n
+    Todas as alterações que você fizer estarão disponíveis apenas para você, sem a capacidade de alterar o kit original.
+    \n
+    \n
+    Se o kit original foi atualizado, você pode atualizar manualmente o instalado.
+    \n
+    ```
+    ]]></string>
+    <string name="public_status">Status Público</string>
+    <string name="public_status_private">Privado</string>
+    <string name="public_status_blocked">Bloqueado</string>
+    <string name="public_status_review">Em análise</string>
+    <string name="public_status_review_details">Levará algum tempo até que o kit seja publicado e disponibilizado na biblioteca pública.</string>
+    <string name="public_status_published">Publicado</string>
+    <string name="public_status_rejected">Rejeitado</string>
+    <string name="public_status_not_found">Não encontrado</string>
+    <string name="public_status_deleted">Excluído</string>
+    <string name="public_status_restricted">Restrito</string>
+    <string name="public_status_update_reason">Motivo da atualização</string>
+    <string name="dynamic_text_hint_title">Texto dinâmico</string>
+    <string name="dynamic_text_hint_description"><![CDATA[    Se uma nota contiver campos dinâmicos, você verá esta etapa extra sempre que executar qualquer ação na nota.
+    \n
+    \n
+    Nesta etapa, você pode definir valores nos campos de entrada e concluir a ação com o texto alterado.
+    ]]></string>
+    <string name="dynamic_text_view_mode_text">Texto</string>
+    <string name="dynamic_text_view_mode_form">Formulário</string>
+    <string name="dynamic_value_date">Data/Hora</string>
+    <string name="dynamic_value_date_description">Cria um marcador de posição que é substituído pela data real</string>
+    <string name="dynamic_value_device">Informações do Dispositivo</string>
+    <string name="dynamic_value_device_description">Cria um marcador de posição que é substituído por informações sobre o dispositivo</string>
+    <string name="dynamic_value_random">Aleatório</string>
+    <string name="dynamic_value_random_description">Cria um marcador de posição que é substituído por um valor aleatório de uma lista personalizável</string>
+    <string name="dynamic_value_clipboard">Área de Transferência</string>
+    <string name="dynamic_value_clipboard_description">Cria um marcador de posição que é substituído pelo conteúdo da área de transferência</string>
+    <string name="dynamic_value_snippet">Snippet</string>
+    <string name="dynamic_value_snippet_description">Cria um marcador de posição que é substituído pelo conteúdo da nota selecionada</string>
+    <string name="dynamic_value_attr_device_type">Tipo de informação</string>
+    <string name="dynamic_field_date">Campo de data</string>
+    <string name="dynamic_field_date_description">Cria um campo de entrada de data</string>
+    <string name="dynamic_field_text">Campo de texto</string>
+    <string name="dynamic_field_text_description">Cria um campo de entrada de texto</string>
+    <string name="dynamic_field_number">Campo de número</string>
+    <string name="dynamic_field_number_description">Cria um campo de entrada de número</string>
+    <string name="dynamic_field_select">Campo de seleção</string>
+    <string name="dynamic_field_select_description">Cria uma entrada para selecionar um ou mais itens</string>
+    <string name="dynamic_field_barcode_scanning">Campo de leitura de código de barras</string>
+    <string name="dynamic_field_barcode_scanning_description">Cria um campo que permite ler um código de barras e usar seu texto como o valor do campo</string>
+    <string name="dynamic_field_text_toggle">Alternador de texto</string>
+    <string name="dynamic_field_text_toggle_description">Cria uma alternador que pode habilitar ou desabilitar um bloco de texto</string>
+    <string name="dynamic_field_reference">Campo de referência</string>
+    <string name="dynamic_field_reference_description">Cria um campo que se refere a outro campo e usa seu valor</string>
+    <string name="dynamic_field_unknown">Campo desconhecido</string>
+    <string name="dynamic_field_unknown_description">O campo não pode ser renderizado. Talvez esteja incorreto ou tenha sido criado em uma versão mais recente do aplicativo</string>
+    <string name="dynamic_field_date_format_date_time">Data/Hora (sistema)</string>
+    <string name="dynamic_field_date_format_date">Data (sistema)</string>
+    <string name="dynamic_field_date_format_time">Hora (sistema)</string>
+    <string name="dynamic_field_date_format_day_of_week">Dia da semana</string>
+    <string name="dynamic_field_date_format_day_of_month">Dia do mês (1–31)</string>
+    <string name="dynamic_field_date_format_day_of_month_zero">Dia do mês (01–31)</string>
+    <string name="dynamic_field_date_format_year">Ano</string>
+    <string name="dynamic_field_date_format_year_short">Ano (curto)</string>
+    <string name="dynamic_field_date_format_month">Mês</string>
+    <string name="dynamic_field_date_format_month_number">Mês (1–12)</string>
+    <string name="dynamic_field_date_format_month_number_zero">Mês (01–12)</string>
+    <string name="dynamic_field_date_format_hour_12">Hora (0–12)</string>
+    <string name="dynamic_field_date_format_hour_12_zero">Hora (00–12)</string>
+    <string name="dynamic_field_date_format_hour_24">Hora (0–24)</string>
+    <string name="dynamic_field_date_format_hour_24_zero">Hora (00–24)</string>
+    <string name="dynamic_field_date_format_minute">Minuto (1–60)</string>
+    <string name="dynamic_field_date_format_minute_zero">Minuto (01–60)</string>
+    <string name="dynamic_field_date_format_second">Segundo (1–60)</string>
+    <string name="dynamic_field_date_format_second_zero">Segundo (01–60)</string>
+    <string name="dynamic_field_date_format_am_pm">Manhã/Tarde-Noite</string>
+    <string name="dynamic_field_date_format_time_zone">Fuso Horário</string>
+    <string name="dynamic_field_value_formatter_new_line">Nova linha</string>
+    <string name="dynamic_field_value_formatter_semicolon">Ponto e vírgula</string>
+    <string name="dynamic_field_value_formatter_comma">Vírgula</string>
+    <string name="dynamic_field_value_formatter_space">Espaço</string>
+    <string name="dynamic_field_value_formatter_ordered_list">Lista ordenada</string>
+    <string name="dynamic_field_value_formatter_unordered_list">Lista não ordenada</string>
+    <string name="dynamic_field_attr_common_label">Rótulo</string>
+    <string name="dynamic_field_attr_common_prefix">Prefixo</string>
+    <string name="dynamic_field_attr_common_suffix">Sufixo</string>
+    <string name="dynamic_field_attr_common_value">Valor</string>
+    <string name="dynamic_field_attr_common_required">Obrigatório</string>
+    <string name="dynamic_field_attr_common_placeholder">Marcador de posição</string>
+    <string name="dynamic_field_attr_common_default_value">Valor padrão</string>
+    <string name="dynamic_field_attr_common_values_formatter">Formatador de valores selecionados</string>
+    <string name="dynamic_field_attr_select_multiple">Seleção múltipla</string>
+    <string name="dynamic_field_attr_select_user_input">Entrada do usuário</string>
+    <string name="dynamic_field_attr_text_multi_line">Texto em multilinha</string>
+    <string name="dynamic_field_attr_text_max_length">Comprimento máximo</string>
+    <string name="dynamic_field_attr_text_use_clipboard">Área de transferência é o valor padrão</string>
+    <string name="dynamic_field_attr_select_options">Opções</string>
+    <string name="dynamic_field_attr_number_min">Valor mínimo</string>
+    <string name="dynamic_field_attr_number_max">Valor máximo</string>
+    <string name="dynamic_field_attr_date_format">Formato</string>
+    <string name="dynamic_field_attr_date_example">Exemplo: %s</string>
+    <string name="dynamic_field_attr_barcode_scanning_multiple">Leitura múltipla</string>
+    <string name="dynamic_field_attr_barcode_values_formatter">Formatador de valores lidos</string>
+    <string name="dynamic_field_attr_toggle_text">Texto</string>
+    <string name="dynamic_field_attr_ref_value">Rótulo de campo referenciado</string>
+    <string name="dynamic_field_attr_ref_intrinsic">O campo tem seu próprio valor</string>
+    <string name="select_option_ordering">Opções de classificação</string>
+    <string name="select_option_ordering_label_asc">Rótulo (A-Z)</string>
+    <string name="select_option_ordering_label_desc">Rótulo (Z-A)</string>
+    <string name="select_option_ordering_value_asc">Valor (A-Z)</string>
+    <string name="select_option_ordering_value_desc">Valor (Z-A)</string>
+    <string name="dynamic_field_confirm_delete_title">Excluir este campo dinâmico do texto?</string>
+    <string name="dynamic_field_confirm_delete_description">O marcador de posição do campo será excluído do texto original.</string>
+    <string name="dynamic_value_placeholder_copied_title">O marcador de posição de valor dinâmico foi copiado para a área de transferência</string>
+    <string name="dynamic_value_placeholder_copied_description"><![CDATA[    Se uma nota for aberta no modo de edição, o marcador de posição é inserido automaticamente no texto da nota no lugar do foco
+    ou substitui o fragmento de texto selecionado.
+    \n
+    \n
+    Caso contrário, ele é copiado para a área de transferência.
+    \n
+    \n
+    **O marcador de posição copiado:**
+    \n
+    ```
+    \n
+    %s
+    \n
+    ```
+    ]]></string>
+    <string name="file_action_download_from_cloud">Baixar da nuvem</string>
+    <string name="file_action_update_in_cloud">Atualizar na nuvem</string>
+    <string name="file_error_canceled">Cancelado pelo usuário</string>
+    <string name="file_error_not_found">Arquivo não encontrado. Tente fazer o upload novamente.</string>
+    <string name="file_attr_last_modified">Última Modificação</string>
+    <string name="file_attr_updated">Atualizado</string>
+    <string name="file_attr_location">Localização</string>
+    <string name="file_confirm_update_file">Atualizar arquivo?</string>
+    <string name="file_confirm_update_file_description">O arquivo será atualizado no armazenamento em nuvem.</string>
+    <string name="file_error_name_required">Um nome é necessário para salvar este arquivo</string>
+    <string name="file_action_new_file">Arquivo</string>
+    <string name="file_action_new_file_description">O arquivo será enviado para o armazenamento em nuvem. O arquivo enviado estará disponível na categoria Arquivos e pode ser anexado a qualquer nota.</string>
+    <string name="file_action_new_files">Arquivos</string>
+    <string name="file_action_new_files_description">Os arquivos serão enviados para o armazenamento em nuvem. Os arquivos enviados estarão disponíveis na categoria Arquivos e podem ser anexados a qualquer nota.</string>
+    <string name="file_action_new_note">Nota</string>
+    <string name="file_action_new_note_description">O arquivo será enviado para o armazenamento em nuvem e anexado à nota recém-criada. O arquivo enviado também estará disponível na categoria Arquivos.</string>
+    <string name="file_action_new_notes_description">Os arquivos serão enviados para o armazenamento em nuvem e anexados à nota recém-criada. Os arquivos enviados também estarão disponíveis na categoria Arquivos.</string>
+    <string name="file_action_new_attachment">Anexo</string>
+    <string name="file_action_new_attachment_description">O arquivo será enviado para o armazenamento em nuvem e anexado a uma nota existente. O arquivo enviado também estará disponível na categoria Arquivos.</string>
+    <string name="file_action_new_attachments">Anexos</string>
+    <string name="file_action_new_attachments_description">Os arquivos serão enviados para o armazenamento em nuvem e anexados a uma nota existente. Os arquivos enviados também estarão disponíveis na categoria Arquivos.</string>
+    <string name="file_search_hint">Pesquise seus arquivos</string>
+    <string name="file_type_any">Tudo</string>
+    <string name="file_type_audio">Áudios</string>
+    <string name="file_type_video">Vídeos</string>
+    <string name="file_type_image">Imagens</string>
+    <string name="file_type_archive">Arquivos</string>
+    <string name="file_type_document">Documentos</string>
+    <string name="file_type_recycled">Lixeira</string>
+    <string name="folder_select">Selecionar</string>
+    <string name="folder_name">Nome da pasta</string>
+    <string name="folder_root">Pasta raiz</string>
+    <string name="folder_search">Pesquisar na pasta</string>
+    <string name="folder_error_name_required">É necessário um nome único para salvar a pasta aqui</string>
+    <string name="folder_error_empty">Esta pasta está vazia</string>
+    <string name="folder_delete_deep">Exclua a pasta, incluindo todos os arquivos e notas associados.</string>
+    <string name="folder_delete_weak">Exclua apenas a pasta. Todos os arquivos e notas associados permanecerão disponíveis na pasta raiz.</string>
+    <string name="clip_action_new_edit">Editar</string>
+    <string name="clip_action_new_edit_description">A nota pode ser editada antes de ser salva ou usada para qualquer ação.</string>
+    <string name="clip_action_new_insert">Inserir em</string>
+    <string name="clip_action_new_insert_description">O texto de uma nota pode ser inserido em qualquer um existente. Selecione a nota alvo e especifique as opções de inserção.</string>
+    <string name="clip_action_new_action">Ações</string>
+    <string name="clip_action_new_action_description">O texto de uma nota pode ser usado para realizar uma ação.</string>
+    <plurals name="backup.success.message">
+        <item quantity="one">%s nota exportada</item>
+        <item quantity="other">%s notas exportadas</item>
+    </plurals>
+    <plurals name="restore.success.message">
+        <item quantity="one">%s nota importada</item>
+        <item quantity="other">%s notas importadas</item>
+    </plurals>
+    <plurals name="clip.snackbar.text.deleted">
+        <item quantity="one">%s nota excluída</item>
+        <item quantity="other">%s notas excluídas</item>
+    </plurals>
+    <plurals name="main.toolbar.notes">
+        <item quantity="one">%s nota</item>
+        <item quantity="other">%s notas</item>
+    </plurals>
+</resources>

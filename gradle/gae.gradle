@@ -1,0 +1,118 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'kotlin'
+apply plugin: 'spring-boot'
+apply plugin: 'com.google.cloud.tools.appengine'
+
+sourceCompatibility = javaSourceCompatibility
+targetCompatibility = javaTargetCompatibility
+
+configurations {
+    implementation.exclude(module: 'slf4j-nop')
+}
+
+dependencies {
+    implementation libpacks.java_kotlin
+    implementation 'com.auth0:java-jwt:3.3.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation 'org.springframework.boot:spring-boot-legacy:1.0.2.RELEASE'
+    implementation("org.springframework:spring-tx")
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation "com.google.appengine:appengine-endpoints:$appengineVersion"
+    implementation "com.google.appengine:appengine-api-1.0-sdk:$appengineVersion"
+    implementation "com.google.appengine:appengine-endpoints-deps:$appengineVersion"
+    implementation 'com.googlecode.objectify:objectify:5.1.22'
+
+    testCompileOnly 'javax.servlet:javax.servlet-api:3.1.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "com.google.appengine:appengine-api-stubs:$appengineVersion"
+    testImplementation "com.google.appengine:appengine-testing:$appengineVersion"
+    testImplementation libpacks.java_unit_testing
+}
+
+sourceSets {
+    test {
+        output.resourcesDir = output.classesDir
+        java {
+            srcDirs = ["src/main/java", "src/test/java"]
+        }
+        resources {
+            srcDirs = ["src/main/resources", "src/main/webapp", "src/test/resources"]
+        }
+    }
+}
+
+appengine {
+    deploy {
+        stopPreviousVersion = true
+        promote = true
+    }
+}
+
+war {
+    def env = getAppEnv()
+    def applicationId = getAppId()
+    println 'WAR plugin will be processing with the following parameters:'
+    println '  - applicationId: ' + applicationId
+    println '  - env: ' + env
+    filter(org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+            'applicationId': applicationId,
+            'env'          : env])
+}
+
+task unitTests(type: Test, group: 'test') {
+    useJUnit()
+    include('**/*UnitTest*')
+    testLogging.showStandardStreams = false
+    testLogging {
+        events 'started', 'passed'
+    }
+    unitTests.outputs.upToDateWhen { false }
+}
+
+task integrationTests(type: Test, group: 'test') {
+    useJUnit()
+    include('**/*IntegrationTest*')
+    testLogging.showStandardStreams = false
+    testLogging {
+        events 'started', 'passed'
+    }
+    integrationTests.outputs.upToDateWhen { false }
+}
+
+task allTests(type: Test, group: 'test') {
+    useJUnit()
+    testLogging.showStandardStreams = false
+    testLogging {
+        events 'started', 'passed'
+    }
+    allTests.outputs.upToDateWhen { false }
+}
+
+task replaceProjectId(type: Copy) {
+    from 'src/main/webapp/WEB-INF/'
+    include '*.xml'
+    into 'build/exploded-backend/WEB-INF'
+
+    def env = getAppEnv()
+    def applicationId = getAppId()
+    println 'replaceProjectId plugin will be processing with the following parameters:'
+    println '  - applicationId: ' + applicationId
+    println '  - env: ' + env
+    filter(org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+            'applicationId': applicationId,
+            'env'          : env])
+
+    filteringCharset = 'UTF-8'
+}
+
+def getAppId() {
+    return "${project.gaeAppName}-${project.gaeAppEnv}".toString()
+}
+
+def getAppEnv() {
+    return "${project.gaeAppEnv}".toString()
+}
+
+

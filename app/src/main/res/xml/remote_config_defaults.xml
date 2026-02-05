@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>external_action_delay</key>
+        <value>700</value>
+    </entry>
+    <entry>
+        <key>clipboard_aware_interval</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>logcat_read_timeout</key>
+        <value>500</value>
+    </entry>
+    <entry>
+        <key>logcat_cancel_timeout</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>max_length_title</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>max_length_tag</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>max_length_description</key>
+        <value>1000</value>
+    </entry>
+    <entry>
+        <key>max_length_abbreviation</key>
+        <value>8</value>
+    </entry>
+    <entry>
+        <key>access_attachments</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>access_attachments_minimum_invited_count</key>
+        <value>5</value>
+    </entry>
+    <entry>
+        <key>access_scan_barcode</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>markdown_editor_activated</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>notification_use_application_style</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>can_report_unexpected_errors</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>can_report_unexpected_errors_directly</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_report_negative_feedback</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>firebase_analytics_collection_enabled</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>can_pause_clipboard_on_screen_lock</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_take_note_from_clipboard_on_resume</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_update_notification_on_resume</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_silently_vibrate_on_clipboard_changes</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_create_public_links</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>note_scrollbar_multiplier</key>
+        <value>4</value>
+    </entry>
+    <entry>
+        <key>api_read_timeout</key>
+        <value>30000</value>
+    </entry>
+    <entry>
+        <key>data_loading_timeout</key>
+        <value>30000</value>
+    </entry>
+    <entry>
+        <key>limit_clipboard_notes_default</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>limit_clipboard_notes_cleanup_count</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>limit_deleted_notes_default</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>text_length_for_async_rendering</key>
+        <value>3000</value>
+    </entry>
+    <entry>
+        <key>tag_rule_max_length</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>can_create_tag_auto_rules</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>tag_colors</key>
+        <value>[
+            ["#ef9a9a", "#F48FB1", "#CE93D8", "#B39DDB", "#9FA8DA", "#90CAF9", "#81D4FA", "#80DEEA", "#80CBC4", "#A5D6A7", "#C5E1A5", "#E6EE9C", "#FFF59D", "#FFE082", "#FFCC80", "#FFAB91", "#BCAAA4", "#EEEEEE", "#B0BEC5"],
+
+            ["#e57373", "#F06292", "#BA68C8", "#9575CD", "#7986CB", "#64B5F6", "#4FC3F7", "#4DD0E1", "#4DB6AC", "#81C784", "#AED581", "#DCE775", "#FFF176", "#FFD54F", "#FFB74D", "#FF8A65", "#A1887F", "#E0E0E0", "#90A4AE"],
+
+            ["#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B"],
+
+            ["#d32f2f", "#C2185B", "#7B1FA2", "#512DA8", "#303F9F", "#1976D2", "#0288D1", "#0097A7", "#00796B", "#388E3C", "#689F38", "#AFB42B", "#FBC02D", "#FFA000", "#F57C00", "#E64A19", "#5D4037", "#616161", "#455A64"],
+
+            ["#b71c1c", "#880E4F", "#4A148C", "#311B92", "#1A237E", "#0D47A1", "#01579B", "#006064", "#004D40", "#1B5E20", "#33691E", "#827717", "#F57F17", "#FF6F00", "#E65100", "#BF360C", "#3E2723", "#212121", "#263238"]
+            ]
+        </value>
+    </entry>
+    <entry>
+        <key>sync_plan_activated</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>sync_plan_notes_free_limit</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>sync_plan_notes_bonus_for_snippet</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>sync_plan_notes_recommended_limit</key>
+        <value>3000</value>
+    </entry>
+    <entry>
+        <key>sync_plan_contributor_program_enabled</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>sync_plans</key>
+        <value>[
+            ["sync_1_100", "sync_1_200", "sync_1_300", "sync_1_400", "sync_1_500", "sync_1_1000", "sync_1_2000", "sync_1_3000", "sync_1_5000", "sync_1_10000", "sync_1_20000"]
+            ]
+        </value>
+    </entry>
+    <entry>
+        <key>url_adb_instruction</key>
+        <value>https://clipto.pro/l/KanLCodapScXwxAy7</value>
+    </entry>
+    <entry>
+        <key>url_notification_paste_instruction</key>
+        <value>https://clipto.pro/l/Su4m4wVPmfQ5PXrb7</value>
+    </entry>
+    <entry>
+        <key>url_global_copy_instruction</key>
+        <value>https://clipto.pro/l/gNo4WKadjfmYL8JFA</value>
+    </entry>
+    <entry>
+        <key>url_unexpected_error_instruction</key>
+        <value>https://clipto.pro/l/qcAUHxuk8tHQ7osL6</value>
+    </entry>
+    <entry>
+        <key>url_translate</key>
+        <value>https://crowdin.com/project/clipto</value>
+    </entry>
+    <entry>
+        <key>url_facebook</key>
+        <value>https://www.facebook.com/cliptopro</value>
+    </entry>
+    <entry>
+        <key>url_discord</key>
+        <value>https://discord.gg/WgtwTs</value>
+    </entry>
+    <entry>
+        <key>url_reddit</key>
+        <value>https://www.reddit.com/r/cliptopro</value>
+    </entry>
+    <entry>
+        <key>url_github</key>
+        <value>https://github.com/clipto-pro/Android</value>
+    </entry>
+    <entry>
+        <key>url_faq</key>
+        <value>https://clipto.pro/l/VSKFmAMUGZV7Nyx16</value>
+    </entry>
+    <entry>
+        <key>email_support</key>
+        <value>clipto.pro@gmail.com</value>
+    </entry>
+    <entry>
+        <key>url_auth_instruction</key>
+        <value>https://clipto.pro/l/f91nrrark2saJahaA</value>
+    </entry>
+    <entry>
+        <key>firestore_batch_size</key>
+        <value>150</value>
+    </entry>
+    <entry>
+        <key>firestore_batch_delay</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>max_notes_for_context_actions</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>clip_edit_focus_on_text</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>clip_info_max_text_lines</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>main_list_display_counter</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_restore_last_clip_on_start</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>text_layout_delay</key>
+        <value>500</value>
+    </entry>
+    <entry>
+        <key>markdown_strikethrough_normalization_activated</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>markdown_bullet_list_normalization_activated</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>clipboard_hide_on_copy_delay</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>backup_supported_import_formats</key>
+        <value>Google Keep (Takeout ZIP), Clipper+ JSON, Simplenote JSON, Clip Stack, Clipboard Manager (devdnua)</value>
+    </entry>
+    <entry>
+        <key>auto_save_interval</key>
+        <value>1000</value>
+    </entry>
+    <entry>
+        <key>firebase_language_identification_threshold</key>
+        <value>0.5</value>
+    </entry>
+    <entry>
+        <key>query_only_latest_changed_notes_minimum_interval</key>
+        <value>3600000</value>
+    </entry>
+    <entry>
+        <key>query_only_latest_changed_notes_use_initial_query</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>query_only_latest_changed_notes_threshold</key>
+        <value>20</value>
+    </entry>
+    <entry>
+        <key>query_only_latest_changed_notes_reconnect_delay</key>
+        <value>20000</value>
+    </entry>
+    <entry>
+        <key>smart_action_shorten_link_enabled</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>smart_action_shorten_link_min_length</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>app_latest_version</key>
+        <value>4.2.0</value>
+    </entry>
+    <entry>
+        <key>app_latest_version_remind_interval_in_hours</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>app_latest_changes</key>
+        <value>- bugfix and performance improvements;
+- updated translations;</value>
+    </entry>
+    <entry>
+        <key>auto_lock_in_minutes</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>auto_lock_with_foreground</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>suggest_set_passcode_on_sign_in</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>can_report_issues</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>can_include_remote_config_in_email</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>can_delete_files</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>limit_clipboard_notes_range</key>
+        <value>[1, 10, 50, 100, 200, 300, 500, 1000, 2000, 3000, 5000, 10000, -1]</value>
+    </entry>
+    <entry>
+        <key>limit_deleted_notes_range</key>
+        <value>[1, 10, 50, 100, 150, 200, 250, 300, 500, 1000, 2000, 3000, 5000]</value>
+    </entry>
+    <entry>
+        <key>note_preview_mode_multiplier</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>url_invite_friend_reward</key>
+        <value>https://clipto.pro/l/yxtMqJGqQ37xTcrt6</value>
+    </entry>
+    <entry>
+        <key>url_changelog</key>
+        <value>https://github.com/clipto-pro/Android/releases</value>
+    </entry>
+    <entry>
+        <key>url_link_preview_example</key>
+        <value>https://play.google.com/store/apps/details?id=com.wb.clipboard.pro</value>
+    </entry>
+    <entry>
+        <key>attachment_upload_limit</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>deep_replace_level</key>
+        <value>5</value>
+    </entry>
+    <entry>
+        <key>can_remove_not_synced_notes_on_logout</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>runes_enabled</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>rune_configs</key>
+        <value>[
+            {
+                "id": "instant_sync",
+                "colorLight": "#00CAE0",
+                "colorDark": "#00E5FF"
+            },
+            {
+                "id": "pincode",
+                "colorLight": "#00E676",
+                "colorDark": "#00E676"
+            },
+            {
+                "id": "theme",
+                "colorLight": "#64DD17",
+                "colorDark": "#76FF03"
+            },
+            {
+                "id": "clipboard",
+                "colorLight": "#FF3D00",
+                "colorDark": "#FF3D00"
+            },
+            {
+                "id": "link_preview",
+                "colorLight": "#00B0FF",
+                "colorDark": "#00B0FF"
+            },
+            {
+                "id": "auto_save",
+                "colorLight": "#D500F9",
+                "colorDark": "#D500F9"
+            },
+            {
+                "id": "remember_last_filter",
+                "colorLight": "#536DFE",
+                "colorDark": "#536DFE"
+            },
+            {
+                "id": "swipe_actions",
+                "colorLight": "#FFAB00",
+                "colorDark": "#FFAB00"
+            },
+            {
+                "id": "focus_on_title",
+                "colorLight": "#844CFF",
+                "colorDark": "#844CFF"
+            },
+            {
+                "id": "hide_on_copy",
+                "colorLight": "#FDD835",
+                "colorDark": "#FFFF00"
+            },
+            {
+                "id": "double_click_actions",
+                "colorLight": "#FFC6FF00",
+                "colorDark": "#FFC6FF00"
+            },
+            {
+                "id": "loyalty",
+                "colorLight": "#FF1744",
+                "colorDark": "#FF5252"
+            },
+            {
+                "id": "backup_restore",
+                "colorLight": "#00BFA5",
+                "colorDark": "#00BFA5"
+            },
+            {
+                "id": "texpander",
+                "colorLight": "#FF9100",
+                "colorDark": "#FF9100"
+            }
+        ]</value>
+    </entry>
+    <entry>
+        <key>texpander_layout_delay</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>texpander_double_click_to_show_threshold</key>
+        <value>500</value>
+    </entry>
+    <entry>
+        <key>texpander_panel_destroy_on_inactivity_interval_in_seconds</key>
+        <value>120</value>
+    </entry>
+    <entry>
+        <key>texpander_ignore_internal_events</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>texpander_double_click_to_show</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>texpander_auto_hide</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>texpander_text_size</key>
+        <value>14</value>
+    </entry>
+    <entry>
+        <key>texpander_event_threshold</key>
+        <value>200</value>
+    </entry>
+    <entry>
+        <key>texpander_input_memory</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>texpander_last_event_state_check_delay</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>texpander_check_type_for_text_availability</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>texpander_check_type_for_text_availability_packages</key>
+        <value>com.evernote, com.google.android.gm</value>
+    </entry>
+    <entry>
+        <key>url_texpaner_advanced_config</key>
+        <value>https://dontkillmyapp.com?app=Clipto</value>
+    </entry>
+    <entry>
+        <key>internet_state_check_interval</key>
+        <value>5000</value>
+    </entry>
+    <entry>
+        <key>notification_intent_max_size</key>
+        <value>50000</value>
+    </entry>
+    <entry>
+        <key>notification_text_max_size</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>note_prevent_accident_clicks_distance</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>youtube_data_api_key</key>
+        <value>AIzaSyCQVM4P1xcIJtrWkOTmAoMVcTlf4rc_Z_Y</value>
+    </entry>
+    <entry>
+        <key>note_link_click_radius</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>note_support_fast_scroll</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>note_support_fast_pager</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>note_support_fast_pager_haptic_feedback</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>note_support_fast_pager_haptic_feedback_max_when_scroll</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>rune_swipe_power_delay</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>main_list_support_fast_scroll</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>note_max_size_in_kb</key>
+        <value>128</value>
+    </entry>
+    <entry>
+        <key>snippets_public_library_available</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>snippets_public_library_auth_required</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>snippets_kit_minimum_size</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>url_snippets_kit_bonus_program</key>
+        <value>https://clipto.pro/l/KuhSmmcjghzqbXvc9</value>
+    </entry>
+    <entry>
+        <key>note_abbreviation_leading_symbol</key>
+        <value>/</value>
+    </entry>
+    <entry>
+        <key>dynamic_value_rendering_delay</key>
+        <value>300</value>
+    </entry>
+    <entry>
+        <key>dynamic_value_refresh_delay</key>
+        <value>700</value>
+    </entry>
+    <entry>
+        <key>dynamic_value_label_max_length</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>dynamic_text_request_delay</key>
+        <value>150</value>
+    </entry>
+    <entry>
+        <key>note_fast_scroll_min_text_lines</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>can_request_rebuild_index</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>max_open_graph_size_in_kb</key>
+        <value>1024</value>
+    </entry>
+    <entry>
+        <key>app_guide_id</key>
+        <value>IfAxIlR6xPabsefa33G4nofTXoz120SCVw613ryDx2f0ynFK</value>
+    </entry>
+</defaultsMap>

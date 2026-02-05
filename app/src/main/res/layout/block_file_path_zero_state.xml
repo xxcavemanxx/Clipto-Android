@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <clipto.presentation.common.view.ShimmerView
+        android:layout_width="32dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_shimmer_view" />
+
+    <include layout="@layout/block_file_path_separator" />
+
+    <clipto.presentation.common.view.ShimmerView
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_shimmer_view" />
+
+</LinearLayout>

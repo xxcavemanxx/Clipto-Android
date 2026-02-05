@@ -1,0 +1,104 @@
+Clipto là một cách mới để sắp xếp công việc hàng ngày của bạn với các ghi chú quan trọng và tạm thời khi bạn cần làm việc đó một cách nhanh, gọn và hiệu quả.
+
+
+ĐỒNG BỘ HOÁ VỚI MAC, WINDOWS, LINUX VÀ TRÌNH DUYỆT
+Thử Clipto trên trình duyệt và tải ứng dụng cho máy tính từ trang web của chúng tôi https://clipto.pro.
+Clipto giữ mọi thứ được đồng bộ hoá.
+
+
+LÀM VIỆC NGOẠI TUYẾN
+Mỗi thao tác đều hoàn toàn ngoại tuyến. Nếu bạn muốn các ghi chú được đồng bộ hoá giữa các thiết bị, chỉ cần đăng nhập với cùng 1 tài khoản. Nếu không, chỉ cần không đăng nhập và dùng chức năng nhập/xuất thủ công. Điều đó hoàn toàn phụ thuộc vào bạn.
+
+
+LẤY GHI CHÚ TỪ BỘ NHỚ ĐỆM
+Clipto có thể được sử dụng như phần mềm quản lí bộ nhớ đệm kể cả trên Android 10!
+
+
+KÍCH HOẠT BỘ NHỚ ĐỆM CHUNG
+Với Bộ nhớ đệm chung, bạn có thể sao chép các ghi chú từ 1 thiết bị, sau đó dán nội dung đó ra 1 thiết bị khác.
+
+
+QUÉT MÃ VẠCH
+Clipto cho phép bạn sử dụng Máy ảnh để chụp các ghi chú và lưu vào ứng dụng.
+Thiết bị quét Mã vạch trên Clipto có thể đọc được hầu hết các định dạng cơ bản (Codabar, Code 39, Code 93, Code 128, EAN-8, EAN-13, ITF, UPC-A, UPC-E, Aztec, Data Matrix, PDF417, QR Code).
+
+
+THÊM TẬP TIN
+Bạn có thể lưu trữ mọi loại tập tin trên Clipto (không chỉ ảnh)
+
+
+CÁ NHÂN HOÁ
+Khi được cài đặt, Clipto cho phép bạn tuỳ chỉnh mọi thứ theo nhu cầu của bạn:
+• Chủ đề (Trắng, Nâu đỏ, Xanh lá cây, Tối, Xanh đậm, Xanh tím đậm, Đen AMOLED)
+Kiểu danh sách (Lưới, Danh sách Thoải mái, Danh sách Cô đọng, Danh sách Xem trước)
+• Sắp xếp theo mục (ngày tạo, ngày sử dụng, số lần sử dụng, tên, nội dung, thẻ, kích cỡ, số kí tự)
+• Cỡ chữ (cho danh sách và phần ghi chú)
+• Phông chữ (cho danh sách và phần ghi chú)
+• Các thao tác vuốt trong danh sách chính
+
+
+CHIA SẺ
+Tạo liên kết công khai cho ghi chú và khiến nó có thể truy cập trên trình duyệt mà không cần đăng kí.
+Liên kết công khai có thể có các yếu tố sau:
+• Mật khẩu người dùng tự tạo
+• Truy cập 1 lần
+• Thời gian trước khi truy cập
+• Thời gian hết hạn
+
+
+NÂNG CAO NĂNG SUẤT LÀM VIỆC CỦA BẠN
+Clipto được thiết kế một cách đơn giản và cung cấp tất cả phương pháp ghi chú có thể:
+✔ Thao tác với thông báo - truy cập vào các ghi chú gần đây nhất và thao tác một chạm với chúng;
+✔ Thao tác theo hoàn cảnh - truy cập vào các tính năng mở rộng đối với văn bản được chọn trong bất kì ứng dụng nào đang chạy;
+✔ Ghi chú từ bộ nhớ đệm - lưu các ghi chú từ bộ nhớ đệm và sử dụng nó về sau như lịch sử bộ nhớ đệm;
+✔ Thao tác với bộ nhớ đệm - trích phần ghi chú từ bộ nhớ đệm và thao tác một chạm với ghi chú đó;
+✔ Thao tác chia sẻ - tạo ghi chú từ mọi văn bản hoặc tập tin được chia sẻ;
+✔ Phần mềm soạn thảo trong ứng dụng - ghi chú bằng Văn bản thuần, Markdown, HTML;
+✔ Thao tác một chạm
+    • Từ văn bản đến giọng nói
+    • Soạn email
+    • Soạn tin nhắn SMS
+    • Tạo bài đăng trên Twitter
+    • Thêm sự kiện trong lịch
+    • Chèn một liên lạc
+    • Tìm kiếm trên web
+    • Tìm kiếm trên Wikipedia
+    • Tìm kiếm trên YouTube
+    • Google Dịch
+    • Chia sẻ với…
+    • Sao chép vào bộ nhớ đệm
+    • Gửi dưới dạng mã QR
+    • Gửi dưới dạng TXT
+    • Gửi dưới dạng PDF
+    • Gửi dưới dạng Markdown
+    • Mở một trang web
+    • Lưu email vào danh bạ
+    • Lưu số điện thoại vào danh bạ
+    • Gọi số điện thoại
+
+
+NHẬP TỪ CÁC ỨNG DỤNG GHI CHÚ VÀ QUẢN LÍ BỘ NHỚ ĐỆM KHÁC
+Bạn yêu cầu khả năng nhập các ghi chú của bạn từ một số ứng dụng phổ biến. Vì thế, chúng tôi đã chính thức hỗ trợ các định dạng sao lưu dưới đây:
+• Clipper+ JSON
+• Simplenote JSON
+• Clip Stack
+• Phần mềm quản lí Bộ nhớ đệm
+• Google Keep (bản zip lấy ngay)
+
+
+THAM GIA VÀO QUÁ TRÌNH PHÁT TRIỂN
+Bất kì tính năng mới mà chúng tôi thêm vào ứng dụng đều từ các phản hồi của người dùng. Bạn sử dụng ứng dụng và định hướng phát triển với sự hỗ trợ kĩ thuật từ chúng tôi:)
+Chỉ cần tạo yêu cầu trên Github - https://github.com/clipto-pro/Android
+
+
+DỊCH ỨNG DỤNG RA NGÔN NGỮ CỦA BẠN
+Cảm ơn tất cả cộng tác viên đã giúp đỡ chúng tôi giữ ứng dụng này miễn phí và tập trung vào các tính năng mới!
+Nếu Clipto chưa được dịch (hoặc được dịch một phần hoặc dịch sai) ở ngôn ngữ của bạn, vui lòng giúp chúng tôi - https://crowdin.com/project/clipto
+
+
+TRỞ THÀNH MỘT PHẦN CỦA CỘNG ĐỒNG CỦA CHÚNG TÔI
+Tham gia trên Reddit - https://www.reddit.com/r/cliptopro
+Theo dõi chúng tôi trên Twitter: http://twitter.com/CliptoPro
+Thích và Chia sẻ chúng tôi trên Facebook - https://www.facebook.com/cliptopro
+
+Xin cảm ơn!

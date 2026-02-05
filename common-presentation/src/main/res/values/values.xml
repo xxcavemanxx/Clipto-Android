@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="error_activity_not_found">No Activity found to handle Intent %s.</string>
+    <string name="error_internet_required">No internet connection</string>
+    <string name="error_confirm_exit">Click Back again to exit</string>
+
+    <string name="link_preview_label">Load Preview…</string>
+    <string name="link_preview_hide">Hide Preview</string>
+    <string name="link_preview_show">Show Preview</string>
+
+</resources>

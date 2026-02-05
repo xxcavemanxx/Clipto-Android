@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_clip_info_background"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:overScrollMode="never"
+        android:padding="16dp"
+        android:textAlignment="gravity"
+        android:textColor="?android:textColorPrimary"
+        android:textIsSelectable="true"
+        android:textSize="14sp"
+        tools:text="File will be uploaded to the cloud storage. The uploaded file will be available in the Files category and can be attached to any note." />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end|top"
+        android:alpha="0.6"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="2dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_cancel_progress"
+        app:tint="?android:textColorPrimary" />
+</FrameLayout>
