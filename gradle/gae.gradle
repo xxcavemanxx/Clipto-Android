@@ -7,6 +7,12 @@ apply plugin: 'com.google.cloud.tools.appengine'
 sourceCompatibility = javaSourceCompatibility
 targetCompatibility = javaTargetCompatibility
 
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = javaTargetCompatibility.toString()
+    }
+}
+
 configurations {
     implementation.exclude(module: 'slf4j-nop')
 }

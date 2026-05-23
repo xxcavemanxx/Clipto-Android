@@ -5,6 +5,12 @@ apply plugin: 'maven-publish'
 sourceCompatibility = javaSourceCompatibility
 targetCompatibility = javaTargetCompatibility
 
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = javaTargetCompatibility.toString()
+    }
+}
+
 dependencies {
     api libpacks.java_kotlin
     testImplementation libpacks.java_unit_testing

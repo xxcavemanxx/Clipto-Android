@@ -65,17 +65,26 @@ def incrementModuleVersion(moduleName, moduleVersion) {
     def branch = getProjectCurrentBranch()
     println "incrementModuleVersion: $moduleName -> $branch -> $moduleVersion"
     def tagName = "$moduleName/$moduleVersion"
-    def git = org.ajoberstar.grgit.Grgit.open(dir: project.rootDir.absolutePath)
-    git.commit(message: "[ci skip][gradle] increment module version: ${tagName}", all: true)
-    git.push(all: false, tags: false)
-    git.tag.add(name: tagName, force: true, message: "[ci skip][gradle] increment module version: ${tagName}")
-    git.push(refsOrSpecs: ["${tagName}"])
+    try {
+        def git = org.ajoberstar.grgit.Grgit.open(dir: project.rootDir.absolutePath)
+        git.commit(message: "[ci skip][gradle] increment module version: ${tagName}", all: true)
+        git.push(all: false, tags: false)
+        git.tag.add(name: tagName, force: true, message: "[ci skip][gradle] increment module version: ${tagName}")
+        git.push(refsOrSpecs: ["${tagName}"])
+    } catch (Exception e) {
+        println "Failed to increment Git module version: ${e.message}."
+    }
 }
 
 def getProjectCurrentBranch() {
-    def git = org.ajoberstar.grgit.Grgit.open(dir: project.rootDir.absolutePath)
-    def branch = git.branch.current().getName()
-    return branch
+    try {
+        def git = org.ajoberstar.grgit.Grgit.open(dir: project.rootDir.absolutePath)
+        def branch = git.branch.current().getName()
+        return branch
+    } catch (Exception e) {
+        println "Failed to open Git repository: ${e.message}. Defaulting branch to 'master'."
+        return 'master'
+    }
 }
 
 def getProjectVersionUpdateStrategy() {
@@ -85,41 +94,46 @@ def getProjectVersionUpdateStrategy() {
         println "take from cache"
         return value
     }
-    def git = org.ajoberstar.grgit.Grgit.open(dir: project.rootDir.absolutePath)
-    def lastCommit = git.head()
-    def commitMessage = lastCommit.shortMessage
-    def pattern = java.util.regex.Pattern.compile("Merge branch '(.*)'.*");
-    def matcher = pattern.matcher(commitMessage);
-    def matches = matcher.matches()
-    if (!matches) {
-        pattern = java.util.regex.Pattern.compile("^\\[(.*)\\].*");
-        matcher = pattern.matcher(commitMessage);
-        matches = matcher.matches()
-    }
-    if (matches) {
-        def mergedBranch = matcher.group(1).toLowerCase()
-        println "merge -> ${mergedBranch}"
-        if (mergedBranch.startsWith('stage')) {
-            value = ''
-        } else if (mergedBranch.startsWith('dev')) {
-            value = ''
-        } else if (mergedBranch.startsWith('snapshot')) {
-            value = ''
-        } else if (mergedBranch.startsWith('release')) {
-            value = 'major'
-        } else if (mergedBranch.startsWith('feature')) {
-            value = 'minor'
-        } else if (mergedBranch.startsWith('bugfix')) {
-            value = 'patch'
+    try {
+        def git = org.ajoberstar.grgit.Grgit.open(dir: project.rootDir.absolutePath)
+        def lastCommit = git.head()
+        def commitMessage = lastCommit.shortMessage
+        def pattern = java.util.regex.Pattern.compile("Merge branch '(.*)'.*");
+        def matcher = pattern.matcher(commitMessage);
+        def matches = matcher.matches()
+        if (!matches) {
+            pattern = java.util.regex.Pattern.compile("^\\[(.*)\\].*");
+            matcher = pattern.matcher(commitMessage);
+            matches = matcher.matches()
+        }
+        if (matches) {
+            def mergedBranch = matcher.group(1).toLowerCase()
+            println "merge -> ${mergedBranch}"
+            if (mergedBranch.startsWith('stage')) {
+                value = ''
+            } else if (mergedBranch.startsWith('dev')) {
+                value = ''
+            } else if (mergedBranch.startsWith('snapshot')) {
+                value = ''
+            } else if (mergedBranch.startsWith('release')) {
+                value = 'major'
+            } else if (mergedBranch.startsWith('feature')) {
+                value = 'minor'
+            } else if (mergedBranch.startsWith('bugfix')) {
+                value = 'patch'
+            } else {
+                value = 'patch'
+            }
         } else {
             value = 'patch'
         }
-    } else {
+    } catch (Exception e) {
+        println "Failed to determine update strategy via Git: ${e.message}. Defaulting to 'patch'."
         value = 'patch'
     }
 
     if (value == null) {
-        throw new Exception("Unknown merge commit type (message: '$commitMessage'). Please use default convention 'bugfix/feature/release'")
+        value = 'patch'
     }
 
     System.setProperty(key, value)
