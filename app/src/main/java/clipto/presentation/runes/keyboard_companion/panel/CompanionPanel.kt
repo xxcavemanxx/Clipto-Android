@@ -183,7 +183,7 @@ class CompanionPanel(
             modeUserHidden()
         }
 
-        searchView.setOnTouchListener { v, event ->
+        searchView.setOnTouchListener { _, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 modeUserSearchEnter()
             }

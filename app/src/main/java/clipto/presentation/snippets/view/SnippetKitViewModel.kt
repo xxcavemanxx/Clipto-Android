@@ -157,6 +157,7 @@ class SnippetKitViewModel @Inject constructor(
         fileUseCases.onView(fileRef, files, clip.title)
     }
 
+    @Suppress("UNUSED_PARAMETER")
     private fun onDynamicFieldClicked(formField: FormField, editable: Editable?) {
         dynamicFieldState.requestViewField(formField.field)
             .subscribeBy("onDynamicFieldClicked")

@@ -27,7 +27,7 @@ buildscript {
         classpath 'com.google.firebase:firebase-plugins:2.0.0'
         classpath "org.ajoberstar:grgit:${gitPluginVersion}"
         // classpath 'com.akaita.android:easylauncher:1.3.1'
-        classpath('net.sf.proguard:proguard-gradle:6.0.3') { force = true }
+        classpath('net.sf.proguard:proguard-gradle') { version { strictly '6.0.3' } }
     }
 }
 

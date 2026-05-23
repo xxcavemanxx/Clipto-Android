@@ -22,7 +22,7 @@ import io.reactivex.Single
 import javax.inject.Inject
 
 @ViewModelScoped
-class RunesRepository @Inject constructor(appConfig: IAppConfig) : IRunesRepository {
+class RunesRepository @Inject constructor() : IRunesRepository {
 
     @Inject
     lateinit var backupRestoreRuneProvider: BackupRestoreRuneProvider

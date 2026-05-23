@@ -41,6 +41,7 @@ androidExtensions {
 }
 
 android {
+    namespace 'com.wb.clipboard'
     compileSdkVersion project.androidCompileSdkVersion
     buildToolsVersion project.androidBuildToolsVersion
 
@@ -70,12 +71,7 @@ android {
         execution 'ANDROIDX_TEST_ORCHESTRATOR'
     }
 
-    dexOptions {
-        jumboMode true
-        preDexLibraries = true
-        maxProcessCount 2
-        javaMaxHeapSize "2g"
-    }
+
 
     dataBinding {
         enabled = true

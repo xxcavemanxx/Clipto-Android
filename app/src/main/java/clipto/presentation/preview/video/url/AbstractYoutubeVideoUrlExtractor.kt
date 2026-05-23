@@ -100,7 +100,7 @@ open class AbstractYoutubeVideoUrlExtractor(context: Context) : AbstractVideoUrl
                     } else if (args[a].startsWith("use_cipher_signature")) {
                         val args2 = args[a].split("=").toTypedArray()
                         if (args2.size == 2) {
-                            if (args2[1].toLowerCase(Locale.ROOT) == "true") {
+                            if (args2[1].lowercase() == "true") {
                                 encrypted = true
                             }
                         }
@@ -116,7 +116,7 @@ open class AbstractYoutubeVideoUrlExtractor(context: Context) : AbstractVideoUrl
                     } else if (args[a].startsWith("livestream")) {
                         val args2 = args[a].split("=").toTypedArray()
                         if (args2.size == 2) {
-                            if (args2[1].toLowerCase(Locale.ROOT) == "1") {
+                            if (args2[1].lowercase() == "1") {
                                 isLive = true
                             }
                         }
@@ -141,7 +141,6 @@ open class AbstractYoutubeVideoUrlExtractor(context: Context) : AbstractVideoUrl
         }
 
         if (urlData.playbackUrl != null && (encrypted || urlData.playbackUrl!!.contains("/s/")) && embedCode != null) {
-            encrypted = true
             val index: Int = urlData.playbackUrl!!.indexOf("/s/")
             var index2: Int = urlData.playbackUrl!!.indexOf('/', index + 10)
             if (index != -1) {

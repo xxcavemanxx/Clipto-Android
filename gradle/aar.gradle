@@ -30,6 +30,7 @@ androidExtensions {
 }
 
 android {
+    namespace 'clipto.common'
     compileSdkVersion project.androidCompileSdkVersion
     buildToolsVersion project.androidBuildToolsVersion
 
@@ -54,12 +55,7 @@ android {
         execution 'ANDROIDX_TEST_ORCHESTRATOR'
     }
 
-    dexOptions {
-        jumboMode true
-        preDexLibraries = true
-        maxProcessCount 2
-        javaMaxHeapSize "2g"
-    }
+
 
     dataBinding {
         enabled = true
