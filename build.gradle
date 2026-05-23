@@ -1,22 +1,20 @@
+
 apply from: './gradle/libraries.gradle'
 
 buildscript {
     ext {
-        hiltVersion = '2.38.1'
+        hiltVersion = '2.44'
         gitPluginVersion = '2.0.0'
-        kotlinPluginVersion = '1.5.30'
-        objectboxPluginVersion = '2.9.0'
-        androidToolsPluginVersion = '4.0.2'
+        kotlinPluginVersion = '1.7.20'
+        objectboxPluginVersion = '2.9.1'
+        androidToolsPluginVersion = '7.3.1'
         googleServicesPluginVersion = '4.3.10'
-        googlePlayPublisherPluginVersion = '2.6.2'
+        googlePlayPublisherPluginVersion = '3.8.6'
     }
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://plugins.gradle.org/m2/' }
-        maven { url 'https://google.bintray.com/exoplayer/' }
-        maven { url 'https://dl.bintray.com/android/android-tools' }
-        maven { url 'https://dl.bintray.com/firebase/gradle/' }
     }
     dependencies {
         classpath "com.github.triplet.gradle:play-publisher:${googlePlayPublisherPluginVersion}"
@@ -28,7 +26,7 @@ buildscript {
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
         classpath 'com.google.firebase:firebase-plugins:2.0.0'
         classpath "org.ajoberstar:grgit:${gitPluginVersion}"
-        classpath 'com.akaita.android:easylauncher:1.3.1'
+        // classpath 'com.akaita.android:easylauncher:1.3.1'
         classpath('net.sf.proguard:proguard-gradle:6.0.3') { force = true }
     }
 }
@@ -36,7 +34,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
         maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
     }
@@ -44,6 +42,19 @@ allprojects {
 
 subprojects {
     task allDeps(type: DependencyReportTask) {}
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+            force 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+            force 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+            force 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
+            force 'androidx.lifecycle:lifecycle-runtime:2.5.1'
+            force 'androidx.activity:activity:1.5.1'
+            force 'androidx.activity:activity-ktx:1.5.1'
+            force 'androidx.fragment:fragment:1.5.1'
+            force 'androidx.fragment:fragment-ktx:1.5.1'
+        }
+    }
 }
 
 task clean(type: Delete, group: 'build') {

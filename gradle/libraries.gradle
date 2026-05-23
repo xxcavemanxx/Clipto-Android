@@ -3,10 +3,10 @@ ext {
     javaTargetCompatibility = JavaVersion.VERSION_1_8
 
     rxJavaVersion = '2.2.21'
-    objectboxVersion = '2.9.0'
+    objectboxVersion = '2.9.1'
     archWorkVersion = '2.5.0'
     archNavigationVersion = '2.3.5'
-    lifecycleVersion = '2.3.1'
+    lifecycleVersion = '2.5.1'
     markwonVersion = '4.6.2'
     glideVersion = '4.12.0'
 

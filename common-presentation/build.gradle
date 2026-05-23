@@ -4,7 +4,7 @@ apply from: '../gradle/aar.gradle'
 
 dependencies {
     api 'com.github.simonebortolin:FlowLayoutManager:1.8.0'
-    api 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
+    api 'it.xabaras.android:recyclerview-swipedecorator:1.4'
     api 'com.github.grzegorzojdana:SpacingItemDecoration:1.1.0'
     api 'com.andkulikov:transitionseverywhere:2.1.0'
     api libpacks.java_utils

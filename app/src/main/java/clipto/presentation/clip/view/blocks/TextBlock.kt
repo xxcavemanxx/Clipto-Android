@@ -90,7 +90,7 @@ class TextBlock<F : Fragment>(
                 }
                 editText.isReadOnly = false
             }
-            ViewMode.VIEW -> {
+            ViewMode.VIEW, ViewMode.READONLY -> {
                 editText.isReadOnly = true
                 editText.clearFocus()
                 editText.consumeLastTouchEvent()

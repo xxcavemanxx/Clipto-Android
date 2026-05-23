@@ -102,6 +102,7 @@ class NumberPicker @JvmOverloads constructor(
 
                 tracker.addMovement(it.currentLocationX, it.currentLocationY)
             }
+            else -> Unit
         }
     }
 

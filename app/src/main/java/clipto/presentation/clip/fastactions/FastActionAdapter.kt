@@ -42,10 +42,10 @@ class FastActionAdapter(
             this.clipAction = clipAction
             val action = clipAction?.action
             action?.let {
-                itemView as TextView
-                itemView.setCompoundDrawablesRelativeWithIntrinsicBounds(0, action.getIconRoundedRes(), 0, 0)
-                itemView.contentDescription = context.getString(action.titleRes)
-                itemView.text = clipAction.label
+                val textView = itemView as TextView
+                textView.setCompoundDrawablesRelativeWithIntrinsicBounds(0, action.getIconRoundedRes(), 0, 0)
+                textView.contentDescription = context.getString(action.titleRes)
+                textView.text = clipAction.label
             }
         }
     }

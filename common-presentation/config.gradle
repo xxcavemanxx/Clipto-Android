@@ -1,8 +1,8 @@
 ext {
     androidLibraryGroup = 'com.wb.android'
 
-    androidBuildToolsVersion = '30.0.3'
-    androidCompileSdkVersion = 30
+    androidBuildToolsVersion = '33.0.0'
+    androidCompileSdkVersion = 33
     androidTargetSdkVersion = 30
     androidMinSdkVersion = 21
 

@@ -14,11 +14,14 @@ fun AccessibilityEvent?.isEditable(): Boolean = this?.source?.let { it.isEditabl
 fun AccessibilityEvent?.isSystemPackage(): Boolean = this?.packageName?.startsWith("com.android.") == true || this?.packageName?.startsWith("android.") == true
 fun AccessibilityEvent?.getTitle(): CharSequence? = this
         ?.let {
-            val wrapper = AccessibilityNodeInfoCompat.wrap(source)
+            val sourceNode = source ?: return@let null
+            val wrapper = AccessibilityNodeInfoCompat.wrap(sourceNode)
             val hint = wrapper.hintText ?: contentDescription
             if (!hint.isNullOrBlank()) {
                 hint
             } else {
-                it.className.substring(it.className.lastIndexOf('.') + 1)
+                it.className?.toString()?.let { className ->
+                    className.substring(className.lastIndexOf('.') + 1)
+                }
             }
         }

@@ -58,6 +58,7 @@ class ChangePassCodeViewModel @Inject constructor(
             PassCodeStatus.SET_NEW_PASS -> onSetNewCode(input)
             PassCodeStatus.ENTER_EXISTING_PASS -> onCurrentCode(input, view)
             PassCodeStatus.CONFIRM_NEW_PASS -> onConfirmNewCode(input, view)
+            else -> Unit
         }
     }
 

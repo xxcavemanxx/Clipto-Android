@@ -71,7 +71,7 @@ class AbbreviationBlock<O : AttributedObject, S : AttributedObjectScreenState<O>
                 }
                 hint.visible()
             }
-            ViewMode.VIEW -> {
+            ViewMode.VIEW, ViewMode.READONLY -> {
                 editText.clearFocus()
                 editText.isReadOnly = true
                 editText.consumeLastTouchEvent()

@@ -64,7 +64,7 @@ class TitleBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
                 }
 
             }
-            ViewMode.VIEW -> {
+            ViewMode.VIEW, ViewMode.READONLY -> {
                 editText.clearFocus()
                 editText.isReadOnly = true
                 editText.consumeLastTouchEvent()

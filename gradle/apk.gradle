@@ -4,12 +4,12 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'com.github.triplet.play'
 apply plugin: 'io.objectbox'
-apply plugin: 'com.akaita.android.easylauncher'
+// apply plugin: 'com.akaita.android.easylauncher'
 apply plugin: 'dagger.hilt.android.plugin'
 
 play {
     serviceAccountCredentials = file(project.serviceAccountCredentials)
-    serviceAccountEmail = project.googlePlayServiceAccountEmail
+    // serviceAccountEmail = project.googlePlayServiceAccountEmail
     track = project.googlePlayTrack ?: 'alpha'
     defaultToAppBundles = true
 }
@@ -103,7 +103,7 @@ android {
     buildTypes {
         debug {
             debuggable true
-            useProguard false
+            minifyEnabled false
             testCoverageEnabled false
             versionNameSuffix "-debug"
             applicationIdSuffix ".debug"
@@ -139,11 +139,11 @@ android {
     }
 }
 
-easylauncher {
-    buildTypes {
-        debug { filters = redRibbonFilter() }
-    }
-}
+// easylauncher {
+//     buildTypes {
+//         debug { filters = redRibbonFilter() }
+//     }
+// }
 
 tasks.whenTaskAdded { t ->
     if (t.name == 'assembleRelease') {
