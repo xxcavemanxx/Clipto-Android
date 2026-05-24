@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed.numberpicker
 
+import com.wb.clipboard.databinding.ViewNumberPickerBinding
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
@@ -23,7 +24,6 @@ import io.reactivex.schedulers.Schedulers
 import it.sephiroth.android.library.uigestures.*
 import it.sephiroth.android.library.xtooltip.ClosePolicy
 import it.sephiroth.android.library.xtooltip.Tooltip
-import kotlinx.android.synthetic.main.view_number_picker.view.*
 import java.util.concurrent.TimeUnit
 import kotlin.math.abs
 import kotlin.math.max
@@ -46,6 +46,7 @@ class NumberPicker @JvmOverloads constructor(
 
     var numberPickerChangeListener: OnNumberPickerChangeListener? = null
 
+    private lateinit var binding: ViewNumberPickerBinding
     lateinit var editText: EditText
     lateinit var upButton: ImageView
     lateinit var downButton: ImageView
@@ -143,7 +144,7 @@ class NumberPicker @JvmOverloads constructor(
         get() = data.maxValue
         set(value) {
             data.maxValue = value
-            tilInput?.suffixText = "/ $value"
+            binding.tilInput?.suffixText = "/ $value"
         }
 
     var stepSize: Int
@@ -204,11 +205,12 @@ class NumberPicker @JvmOverloads constructor(
 
     private fun inflateChildren() {
         inflate(context, R.layout.view_number_picker, this)
+        binding = ViewNumberPickerBinding.bind(this)
 
-        upButton = ivNext
-        downButton = ivPrev
+        upButton = binding.ivNext
+        downButton = binding.ivPrev
 
-        editText = etInput
+        editText = binding.etInput
         editText.isFocusableInTouchMode = true
         editText.isFocusable = true
         editText.isClickable = true

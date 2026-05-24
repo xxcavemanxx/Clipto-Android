@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockTwoInputBinding
 import android.text.InputFilter
 import android.view.View
 import androidx.core.widget.doAfterTextChanged
@@ -8,7 +9,6 @@ import clipto.extensions.getTextColorPrimary
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_two_input.view.*
 
 class TwoInputBlock<C>(
     private val firstText: String?,
@@ -30,15 +30,16 @@ class TwoInputBlock<C>(
     }
 
     override fun onInit(context: C, block: View) {
-        val tilFirst = block.tilFirst
-        val tilSecond = block.tilSecond
-        block.etFirst.doAfterTextChanged {
+        val binding = BlockTwoInputBinding.bind(block)
+        val tilFirst = binding.tilFirst
+        val tilSecond = binding.tilSecond
+        binding.etFirst.doAfterTextChanged {
             val ref = block.tag
             if (ref is TwoInputBlock<*>) {
                 tilFirst.error = ref.onFirstTextChanged.invoke(it)
             }
         }
-        block.etSecond.doAfterTextChanged {
+        binding.etSecond.doAfterTextChanged {
             val ref = block.tag
             if (ref is TwoInputBlock<*>) {
                 tilSecond.error = ref.onSecondTextChanged.invoke(it)
@@ -47,12 +48,13 @@ class TwoInputBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockTwoInputBinding.bind(block)
         block.tag = null
         val ctx = block.context
-        val etFirst = block.etFirst
-        val etSecond = block.etSecond
-        val tilFirst = block.tilFirst
-        val tilSecond = block.tilSecond
+        val etFirst = binding.etFirst
+        val etSecond = binding.etSecond
+        val tilFirst = binding.tilFirst
+        val tilSecond = binding.tilSecond
 
         if (!etFirst.filters.contentEquals(filters)) {
             etFirst.filters = filters

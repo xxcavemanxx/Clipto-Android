@@ -1,5 +1,6 @@
 package clipto.presentation.common.dialog.select.date
 
+import com.wb.clipboard.databinding.BlockDialogSelectDateRangeBinding
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import clipto.common.misc.FormatUtils
@@ -11,7 +12,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dialog_select_date_range.view.*
 import java.util.*
 
 class RangeBlock(
@@ -28,7 +28,8 @@ class RangeBlock(
     }
 
     override fun onInit(fragment: SelectDateDialogFragment, block: View) {
-        block.tilFrom.setStartIconOnClickListener {
+        val binding = BlockDialogSelectDateRangeBinding.bind(block)
+        binding.tilFrom.setStartIconOnClickListener {
             val ref = block.tag as RangeBlock
             val selection = ref.data.selection
             val calendar = Calendar.getInstance().withDate(selection.dateFrom?.time ?: System.currentTimeMillis()).withUtc()
@@ -47,7 +48,7 @@ class RangeBlock(
             picker.show(fragment.parentFragmentManager, "DatePicker")
         }
 
-        block.tilFrom.setEndIconOnClickListener {
+        binding.tilFrom.setEndIconOnClickListener {
             val ref = block.tag as RangeBlock
             val selection = ref.data.selection
             val calendar = Calendar.getInstance().withDate(selection.dateFrom?.time ?: System.currentTimeMillis())
@@ -67,7 +68,7 @@ class RangeBlock(
             picker.show(fragment.parentFragmentManager, "TimePicker")
         }
 
-        block.tilTo.setStartIconOnClickListener {
+        binding.tilTo.setStartIconOnClickListener {
             val ref = block.tag as RangeBlock
             val selection = ref.data.selection
             val calendar = Calendar.getInstance().withDate(selection.dateTo?.time ?: System.currentTimeMillis()).withUtc()
@@ -87,7 +88,7 @@ class RangeBlock(
             picker.show(fragment.parentFragmentManager, "DatePicker")
         }
 
-        block.tilTo.setEndIconOnClickListener {
+        binding.tilTo.setEndIconOnClickListener {
             val ref = block.tag as RangeBlock
             val selection = ref.data.selection
             val calendar = Calendar.getInstance().withDate(selection.dateTo?.time ?: System.currentTimeMillis())
@@ -109,9 +110,10 @@ class RangeBlock(
     }
 
     override fun onBind(fragment: SelectDateDialogFragment, block: View) {
+        val binding = BlockDialogSelectDateRangeBinding.bind(block)
         block.tag = this
-        block.tvFrom.setText(data.selection.dateFrom?.let { FormatUtils.formatDateTimeShort(it) })
-        block.tvTo.setText(data.selection.dateTo?.let { FormatUtils.formatDateTimeShort(it) })
+        binding.tvFrom.setText(data.selection.dateFrom?.let { FormatUtils.formatDateTimeShort(it) })
+        binding.tvTo.setText(data.selection.dateTo?.let { FormatUtils.formatDateTimeShort(it) })
     }
 
 }

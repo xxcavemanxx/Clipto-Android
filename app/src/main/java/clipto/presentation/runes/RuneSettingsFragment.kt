@@ -1,5 +1,6 @@
 package clipto.presentation.runes
 
+import com.wb.clipboard.databinding.FragmentRuneSettingsBinding
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
@@ -11,12 +12,14 @@ import clipto.presentation.runes.extensions.getBgColor
 import clipto.presentation.runes.extensions.getIconColor
 import clipto.presentation.runes.extensions.getTextColor
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_rune_settings.*
 
 @AndroidEntryPoint
 class RuneSettingsFragment : MvvmFragment<RuneSettingsViewModel>() {
 
-    override val layoutResId: Int by lazy { viewModel.getLayoutRes() }
+    
+    private var _binding: FragmentRuneSettingsBinding? = null
+    val binding get() = _binding!!
+override val layoutResId: Int by lazy { viewModel.getLayoutRes() }
     override val viewModel: RuneSettingsViewModel by viewModels()
     private var isExpanded: Boolean? = null
 
@@ -26,6 +29,7 @@ class RuneSettingsFragment : MvvmFragment<RuneSettingsViewModel>() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentRuneSettingsBinding.bind(view)
         isExpanded = savedInstanceState?.getBoolean("expanded")
         super.onViewCreated(view, savedInstanceState)
     }
@@ -33,27 +37,28 @@ class RuneSettingsFragment : MvvmFragment<RuneSettingsViewModel>() {
     override fun bind(viewModel: RuneSettingsViewModel) {
         val ctx = requireContext()
 
-        ivBack.setDebounceClickListener { getNavController().navigateUp() }
+        binding.ivBack.setDebounceClickListener { getNavController().navigateUp() }
 
         viewModel.runeProviderLive.observe(this) {
             val isActive = it.isActive()
 
-            nameText.text = it.getTitle()
-            nameText.setTextColor(it.getTextColor(ctx, isActive))
+            binding.nameText.text = it.getTitle()
+            binding.nameText.setTextColor(it.getTextColor(ctx, isActive))
 
-            iconView.imageTintList = ColorStateList.valueOf(it.getIconColor(ctx, isActive))
-            iconView.setImageResource(it.getIcon())
+            binding.iconView.imageTintList = ColorStateList.valueOf(it.getIconColor(ctx, isActive))
+            binding.iconView.setImageResource(it.getIcon())
 
-            bgView.imageTintList = ColorStateList.valueOf(it.getBgColor(ctx, isActive))
+            binding.bgView.imageTintList = ColorStateList.valueOf(it.getBgColor(ctx, isActive))
 
-            iconView.refreshDrawableState()
-            bgView.refreshDrawableState()
+            binding.iconView.refreshDrawableState()
+            binding.bgView.refreshDrawableState()
 
-            if (rvBlocks?.adapter == null) it.bind(this)
+            if (binding.rvBlocks?.adapter == null) it.bind(this)
         }
     }
 
     override fun onDestroyView() {
+        _binding = null
         viewModel.onSaveRune()
         super.onDestroyView()
     }

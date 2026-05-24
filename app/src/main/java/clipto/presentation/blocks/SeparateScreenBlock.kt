@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSeparateScreenBinding
 import android.text.style.TypefaceSpan
 import android.view.View
 import clipto.common.extensions.gone
@@ -12,7 +13,6 @@ import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueStringWithHeader
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_separate_screen.view.*
 
 class SeparateScreenBlock<C>(
     private val titleRes: Int = 0,
@@ -45,6 +45,7 @@ class SeparateScreenBlock<C>(
                 && withBadge == item.withBadge
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockSeparateScreenBinding.bind(block)
         val colorValue = block.context.getTextColorSecondary()
         val colorKey = if (enabled) block.context.getTextColorPrimary() else colorValue
         val titleRef = title ?: block.context.getString(titleRes)
@@ -52,7 +53,7 @@ class SeparateScreenBlock<C>(
         when {
             description != null -> {
                 KeyValueStringWithHeader(
-                    block.titleView,
+                    binding.titleView,
                     colorKey,
                     colorValue,
                     titleRes,
@@ -64,7 +65,7 @@ class SeparateScreenBlock<C>(
             }
             descriptionRes != 0 -> {
                 KeyValueStringWithHeader(
-                    block.titleView,
+                    binding.titleView,
                     colorKey,
                     colorValue,
                     titleRes,
@@ -75,30 +76,30 @@ class SeparateScreenBlock<C>(
             }
             else -> {
                 if (withBoldHeader) {
-                    block.titleView.text = SimpleSpanBuilder()
+                    binding.titleView.text = SimpleSpanBuilder()
                         .append(titleRef, TypefaceSpan("sans-serif-medium"))
                         .build()
                 } else {
-                    block.titleView.text = titleRef
+                    binding.titleView.text = titleRef
                 }
             }
         }
 
-        block.titleView.setCompoundDrawablesRelativeWithIntrinsicBounds(iconRes, 0, 0, 0)
+        binding.titleView.setCompoundDrawablesRelativeWithIntrinsicBounds(iconRes, 0, 0, 0)
         block.setOnClickListener(clickListener)
-        block.titleView.isEnabled = enabled
+        binding.titleView.isEnabled = enabled
         block.isClickable = enabled
         block.isEnabled = enabled
         if (value != null) {
-            block.valueView.isEnabled = enabled
-            block.valueView.text = value
-            block.valueView.visible()
+            binding.valueView.isEnabled = enabled
+            binding.valueView.text = value
+            binding.valueView.visible()
         } else {
-            block.valueView.gone()
+            binding.valueView.gone()
         }
 
-        block.iconView.setImageResource(withActionIcon)
-        block.badgeView.setVisibleOrGone(withBadge)
+        binding.iconView.setImageResource(withActionIcon)
+        binding.badgeView.setVisibleOrGone(withBadge)
         block.enableWithAlpha(enabled)
     }
 

@@ -1,5 +1,7 @@
 package clipto.presentation.common.dialog.select.value
+import android.view.View
 
+import com.wb.clipboard.databinding.DialogSelectBinding
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.fragment.app.FragmentActivity
@@ -19,12 +21,19 @@ import clipto.presentation.blocks.ux.SpaceBlock
 import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.dialog_select.*
 
 @AndroidEntryPoint
 class SelectValueDialogFragment : MvvmBottomSheetDialogFragment<SelectValueDialogViewModel>() {
 
-    override val layoutResId: Int = R.layout.dialog_select
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = DialogSelectBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: DialogSelectBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.dialog_select
     override val viewModel: SelectValueDialogViewModel by activityViewModels()
 
     private val data: SelectValueDialogRequest<*>? by lazy {
@@ -40,17 +49,17 @@ class SelectValueDialogFragment : MvvmBottomSheetDialogFragment<SelectValueDialo
         }
 
         val ctx = requireContext()
-        tvTitle.text = dataRef.title
-        flContent.setBottomSheetHeight(noBackground = true)
-        mbClearAll.setVisibleOrGone(dataRef.withClearAll)
+        binding.tvTitle.text = dataRef.title
+        binding.flContent.setBottomSheetHeight(noBackground = true)
+        binding.mbClearAll.setVisibleOrGone(dataRef.withClearAll)
         if (dataRef.withClearAllCustomTitleRes != 0) {
-            mbClearAll.setText(dataRef.withClearAllCustomTitleRes)
+            binding.mbClearAll.setText(dataRef.withClearAllCustomTitleRes)
         } else {
-            mbClearAll.setText(if (dataRef.single) R.string.menu_clear else R.string.menu_clear_all)
+            binding.mbClearAll.setText(if (dataRef.single) R.string.menu_clear else R.string.menu_clear_all)
         }
-        mbClearAll.setDebounceClickListener { viewModel.onClearValues(dataRef) }
+        binding.mbClearAll.setDebounceClickListener { viewModel.onClearValues(dataRef) }
 
-        rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         val blocksAdapter = BlockListAdapter(this)
 
         val blocksLive = viewModel.createBlocksLive(dataRef)
@@ -63,7 +72,7 @@ class SelectValueDialogFragment : MvvmBottomSheetDialogFragment<SelectValueDialo
             val bottomSpaceAdapter = BlockListAdapter(this)
             val height = AndroidUtils.getDisplaySize(ctx).y - Units.DP.toPx(212f)
 
-            rvBlocks.adapter = ConcatAdapter(inputsAdapter, actionsAdapter, blocksAdapter, bottomSpaceAdapter)
+            binding.rvBlocks.adapter = ConcatAdapter(inputsAdapter, actionsAdapter, blocksAdapter, bottomSpaceAdapter)
 
             inputsLive.observe(viewLifecycleOwner) {
                 inputsAdapter.submitList(it)
@@ -77,7 +86,7 @@ class SelectValueDialogFragment : MvvmBottomSheetDialogFragment<SelectValueDialo
                 viewModel.createInputsLive(dataRef, actionsLive, blocksLive, inputsLive)
             }
         } else {
-            rvBlocks.adapter = blocksAdapter
+            binding.rvBlocks.adapter = blocksAdapter
 
             dataRef.requestRefresh = {
                 viewModel.createBlocksLive(dataRef, blocksLive)
@@ -87,13 +96,14 @@ class SelectValueDialogFragment : MvvmBottomSheetDialogFragment<SelectValueDialo
         blocksLive.observe(viewLifecycleOwner) { blocks ->
             if (!dataRef.withClearAllAlternativeLogic) {
                 val color = if (blocks.any { it is OptionBlock<*> && it.option.checked }) ctx.getActionIconColorHighlight() else ctx.getTextColorSecondary()
-                mbClearAll?.setTextColor(color)
+                binding.mbClearAll?.setTextColor(color)
             }
             blocksAdapter.submitList(blocks)
         }
     }
 
     override fun onDestroyView() {
+        _binding = null
         data?.let { viewModel.onClosed(it) }
         super.onDestroyView()
     }

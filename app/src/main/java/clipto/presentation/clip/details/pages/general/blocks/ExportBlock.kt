@@ -1,5 +1,6 @@
 package clipto.presentation.clip.details.pages.general.blocks
 
+import com.wb.clipboard.databinding.BlockClipDetailsGeneralExportBinding
 import android.content.Context
 import android.view.View
 import clipto.common.extensions.setDebounceClickListener
@@ -12,7 +13,6 @@ import clipto.presentation.clip.details.pages.general.GeneralPageViewModel
 import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_clip_details_general_export.view.*
 
 class ExportBlock(
         private val viewModel: GeneralPageViewModel,
@@ -27,8 +27,9 @@ class ExportBlock(
                     item.type == type
 
     override fun onBind(fragment: GeneralPageFragment, block: View) {
-        val action1 = block.action1
-        val action2 = block.action2
+        val binding = BlockClipDetailsGeneralExportBinding.bind(block)
+        val action1 = binding.action1
+        val action2 = binding.action2
         val ctx = block.context
         when (type) {
             TextType.TEXT_PLAIN,

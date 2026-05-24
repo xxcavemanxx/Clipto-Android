@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSwitchWithHintBinding
 import android.view.View
 import android.widget.CompoundButton
 import clipto.common.extensions.disposeSilently
@@ -12,7 +13,6 @@ import clipto.store.internet.InternetState
 import clipto.store.user.UserState
 import com.wb.clipboard.R
 import io.reactivex.disposables.Disposable
-import kotlinx.android.synthetic.main.block_switch_with_hint.view.*
 
 class SwitchWithHintBlock<C>(
     private val onChecked: (checked: Boolean) -> Unit,
@@ -52,10 +52,11 @@ class SwitchWithHintBlock<C>(
                 uncheckConfirmDescription == item.uncheckConfirmDescription
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockSwitchWithHintBinding.bind(block)
         block.tag = this
 
-        val titleView = block.titleView
-        val valueView = block.valueView
+        val titleView = binding.titleView
+        val valueView = binding.valueView
         val ctx = block.context
 
         titleView.setText(titleRes)

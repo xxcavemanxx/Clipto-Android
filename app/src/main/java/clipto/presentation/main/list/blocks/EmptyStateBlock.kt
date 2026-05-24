@@ -1,5 +1,6 @@
 package clipto.presentation.main.list.blocks
 
+import com.wb.clipboard.databinding.BlockMainListEmptyBinding
 import android.content.res.ColorStateList
 import android.view.View
 import clipto.common.extensions.toNullIfEmpty
@@ -10,7 +11,6 @@ import clipto.domain.ListConfig
 import clipto.extensions.*
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_main_list_empty.view.*
 
 class EmptyStateBlock<C>(
     private val filter: Filter,
@@ -37,18 +37,19 @@ class EmptyStateBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockMainListEmptyBinding.bind(block)
         val listConfig = listConfigGetter.invoke()
         val font = Font.valueOf(listConfig.textFont) ?: Font.DEFAULT
         val ctx = block.context
 
         val color = filter.color
-        block.ivEmpty?.imageTintList =
+        binding.ivEmpty?.imageTintList =
             if (color != null) {
                 ColorStateList.valueOf(ThemeUtils.getColor(ctx, color))
             } else {
                 ColorStateList.valueOf(ctx.getTextColorPrimary())
             }
-        block.ivEmpty?.setImageResource(filter.getIconRes())
+        binding.ivEmpty?.setImageResource(filter.getIconRes())
 
         val title = filter.getTitle(ctx)
         val desc = filter.description.toNullIfEmpty()
@@ -59,19 +60,19 @@ class EmptyStateBlock<C>(
             ctx.getString(R.string.main_list_empty_caption_three_dot)
         )
 
-        block.tvTitle.apply {
+        binding.tvTitle.apply {
             textSize = listConfig.textSize + 4f
             typeface = font.typeface
             text = title
         }
 
-        block.tvDescription.apply {
+        binding.tvDescription.apply {
             textSize = listConfig.textSize.toFloat()
             typeface = font.typeface
             TextTypeExt.MARKDOWN.apply(this, description)
         }
 
-        block.tvCaption.apply {
+        binding.tvCaption.apply {
             textSize = maxOf(listConfig.textSize - 4f, 8f)
             typeface = font.typeface
             text = caption.takeIf { desc.isNullOrBlank() && !isFolder }

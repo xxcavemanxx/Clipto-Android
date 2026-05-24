@@ -1,5 +1,6 @@
 package clipto.presentation.blocks.domain
 
+import com.wb.clipboard.databinding.ItemColorBinding
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.drawable.LayerDrawable
@@ -12,7 +13,6 @@ import clipto.cache.AppColorCache
 import clipto.common.misc.ThemeUtils
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.item_color.view.*
 
 class ColorWheelBlock<C>(
     private val selectedColor: String?,
@@ -115,7 +115,8 @@ private class ColorWheelAdapter(
         LayoutInflater.from(parent.context).inflate(R.layout.item_color, parent, false)
     ) {
 
-        private val colorView = itemView.colorView
+        val binding = ItemColorBinding.bind(itemView)
+        private val colorView = binding.colorView
         var color: String? = null
         var colorPosition = 0
 

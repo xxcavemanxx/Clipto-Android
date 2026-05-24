@@ -1,5 +1,8 @@
 package clipto.presentation.main.list
+import android.os.Bundle
+import android.view.View
 
+import com.wb.clipboard.databinding.FragmentMainListBinding
 import android.content.res.ColorStateList
 import android.content.res.Configuration
 import android.os.Handler
@@ -35,14 +38,21 @@ import clipto.store.main.ScreenState
 import com.google.android.material.snackbar.Snackbar
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_main_list.*
 import kotlin.collections.set
 import kotlin.math.min
 
 @AndroidEntryPoint
 class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, ActivityBackPressConsumer {
 
-    override val layoutResId: Int = R.layout.fragment_main_list
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentMainListBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentMainListBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_main_list
     override val viewModel: MainListViewModel by viewModels()
     override fun bindOnFirstLayout(): Boolean = true
 
@@ -50,7 +60,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
     private val mainAdapter = MainListAdapter()
 
     override fun onConfigurationChanged(newConfig: Configuration) {
-        recyclerView?.let { mainAdapter.onScreenChanged(it) }
+        binding.recyclerView?.let { mainAdapter.onScreenChanged(it) }
         super.onConfigurationChanged(newConfig)
     }
 
@@ -61,13 +71,13 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
     }
 
     override fun onBackPressConsumed(): Boolean {
-        if (drawerLayout?.isDrawerVisible(GravityCompat.START) == true) {
-            drawerLayout?.closeDrawer(GravityCompat.START)
+        if (binding.drawerLayout?.isDrawerVisible(GravityCompat.START) == true) {
+            binding.drawerLayout?.closeDrawer(GravityCompat.START)
             return true
         }
         try {
-            if (searchView?.hasFocus() == true) {
-                searchView?.clearFocus()
+            if (binding.searchView?.hasFocus() == true) {
+                binding.searchView?.clearFocus()
                 return true
             }
         } catch (e: Exception) {
@@ -86,7 +96,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
     override fun onResume() {
         super.onResume()
         if (viewModel.appConfig.canUpdateNotificationOnResume()) {
-            drawerLayout?.doOnFirstLayout {
+            binding.drawerLayout?.doOnFirstLayout {
                 viewModel.clipboardState.refreshClipboard()
             }
         }
@@ -102,27 +112,27 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         val contextCloseListener = OnClickListener { viewModel.onClearSelection() }.debounce()
 
         // LEFT NAVIGATION
-        toolbar.setNavigationIcon(R.drawable.action_menu)
-        toolbar.setNavigationOnClickListener {
-            searchView.hideKeyboard()
-            drawerLayout.openDrawer(GravityCompat.START)
+        binding.toolbar.setNavigationIcon(R.drawable.action_menu)
+        binding.toolbar.setNavigationOnClickListener {
+            binding.searchView.hideKeyboard()
+            binding.drawerLayout.openDrawer(GravityCompat.START)
         }
 
         val menuFlags = MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW or MenuItem.SHOW_AS_ACTION_ALWAYS
 
         // COUNTER MENU
-        val counterMenu = toolbar.menu.add(1, 1, 1, "")
+        val counterMenu = binding.toolbar.menu.add(1, 1, 1, "")
         counterMenu.isVisible = viewModel.appConfig.mainListDisplayCounter()
         counterMenu.setShowAsAction(menuFlags)
         counterMenu.isEnabled = false
 
         // FILTER ACTION
-        val filterMenu = toolbar.menu.add(2, 1, 1, R.string.filter_toolbar_title)
+        val filterMenu = binding.toolbar.menu.add(2, 1, 1, R.string.filter_toolbar_title)
         filterMenu.setIcon(R.drawable.action_filter)
         filterMenu.setShowAsAction(menuFlags)
         filterMenu.isEnabled = false
         filterMenu.setOnMenuItemClickListener {
-            searchView.hideKeyboard()
+            binding.searchView.hideKeyboard()
             navigateTo(R.id.action_advanced_filter)
             true
         }
@@ -130,11 +140,11 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         // SEARCH ACTION
 
         var searchByText: String? = null
-        val recyclerViewRef = recyclerView
-        searchView.apply {
+        val recyclerViewRef = binding.recyclerView
+        binding.searchView.apply {
             val searchHandler = Handler(Looper.getMainLooper())
             val searchTask = Runnable {
-                val newSearchText = searchView?.text.toNullIfEmpty()
+                val newSearchText = binding.searchView?.text.toNullIfEmpty()
                 if (searchByText != newSearchText) {
                     searchByText = newSearchText
                     viewModel.onSearch(newSearchText)
@@ -162,7 +172,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
                 if (!hasFocus) {
                     v.hideKeyboard()
                 } else {
-                    val key = searchView?.text?.toNullIfEmpty().notNull()
+                    val key = binding.searchView?.text?.toNullIfEmpty().notNull()
                     mainAdapter.saveScrollState(key, recyclerViewRef)
                     v.showKeyboard { setSelection(key.length) }
                 }
@@ -170,11 +180,11 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         }
 
         // LEFT NAVIGATION
-        navigationView.layoutParams?.width = getDrawerWidth()
+        binding.navigationView.layoutParams?.width = getDrawerWidth()
 
         // MAIN LIST
         val touchHelper = MainListTouchHelperBuilder(viewModel, mainAdapter).build()
-        touchHelper.attachToRecyclerView(recyclerView)
+        touchHelper.attachToRecyclerView(binding.recyclerView)
 
         // LISTENERS
         viewModel.clipboardState.clip.getLiveData().observe(viewLifecycleOwner) {
@@ -200,7 +210,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
             if (hasPendingUpdates) return@observe
             mainAdapter.submitList(recyclerViewRef, data) { currentList ->
                 val last = viewModel.getLastFilter()
-                val scrollRestored = mainAdapter.restoreScrollState(last.textLike.notNull(), recyclerView)
+                val scrollRestored = mainAdapter.restoreScrollState(last.textLike.notNull(), binding.recyclerView)
                 when {
                     !scrollRestored && data.scrollToTop -> {
                         log("MainList :: scroll to top force :: {}", true)
@@ -220,11 +230,11 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         }
 
         // BOTTOM NAVIGATION
-        selectionAllAction.setOnClickListener {
+        binding.selectionAllAction.setOnClickListener {
             viewModel.onSelectAll { mainAdapter.requestLayout() }
         }
         val bottomBarUpdater = ToolbarState<Unit>()
-            .withContext(bottomBar.context)
+            .withContext(binding.bottomBar.context)
             .withMenuItem(
                 MenuState.StatefulMenuItem<Unit>()
                     .withShowAsActionAlways()
@@ -446,25 +456,25 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         viewModel.getMainListDataLive().observe(viewLifecycleOwner) { data ->
             if (data == null) return@observe
             if (data.rememberLastAction && data.lastAction != null) {
-                actionButton.setDebounceClickListener {
+                binding.actionButton.setDebounceClickListener {
                     activity?.let { act ->
                         viewModel.mainActionUseCases.onAction(data.lastAction, act)
                     }
                 }
-                actionButton.setOnLongClickListener {
+                binding.actionButton.setOnLongClickListener {
                     navigateTo(R.id.action_main_actions)
                     true
                 }
-                actionButton.setImageResource(data.lastAction.iconRes)
+                binding.actionButton.setImageResource(data.lastAction.iconRes)
             } else {
-                actionButton.setDebounceClickListener {
+                binding.actionButton.setDebounceClickListener {
                     navigateTo(R.id.action_main_actions)
                 }
-                actionButton.setOnLongClickListener {
+                binding.actionButton.setOnLongClickListener {
                     viewModel.onNewNote()
                     true
                 }
-                actionButton.setImageResource(R.drawable.ic_add_black)
+                binding.actionButton.setImageResource(R.drawable.ic_add_black)
             }
         }
 
@@ -472,30 +482,30 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
             showHideFab(false)
             when (it) {
                 ScreenState.STATE_MAIN -> {
-                    bottomBar.setNavigationIcon(R.drawable.ic_tune)
-                    bottomBar.setNavigationOnClickListener {
-                        searchView.hideKeyboard()
+                    binding.bottomBar.setNavigationIcon(R.drawable.ic_tune)
+                    binding.bottomBar.setNavigationOnClickListener {
+                        binding.searchView.hideKeyboard()
                         if (viewModel.getLastFilter().isFolder()) {
                             ConfigAttributedObjectFragment.show(ctx)
                         } else {
                             ClipListConfigFragment.show(ctx)
                         }
                     }
-                    bottomBar.setNavigationContentDescription(R.string.main_actions_more)
+                    binding.bottomBar.setNavigationContentDescription(R.string.main_actions_more)
                     showHideFab(true)
                 }
                 ScreenState.STATE_MAIN_CONTEXT,
                 ScreenState.STATE_MAIN_CONTEXT_DELETED,
                 ScreenState.STATE_MAIN_CONTEXT_READONLY -> {
-                    bottomBar.setNavigationIcon(R.drawable.ic_close)
-                    bottomBar.setNavigationOnClickListener(contextCloseListener)
-                    bottomBar.setNavigationContentDescription(R.string.desktop_shortcuts_contextModeCancel)
-                    bottomBar.performShow()
+                    binding.bottomBar.setNavigationIcon(R.drawable.ic_close)
+                    binding.bottomBar.setNavigationOnClickListener(contextCloseListener)
+                    binding.bottomBar.setNavigationContentDescription(R.string.desktop_shortcuts_contextModeCancel)
+                    binding.bottomBar.performShow()
                     showHideFab(false)
                 }
                 else -> Unit
             }
-            bottomBarUpdater.apply(Unit, bottomBar)
+            bottomBarUpdater.apply(Unit, binding.bottomBar)
         }
 
         val delay = viewModel.appConfig.externalActionDelay()
@@ -508,7 +518,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
                     is AppSearchNotesProvider.Action -> {
                         handleExternalAction()
                         viewModel.onClearSelection()
-                        searchView?.postDelayed({ searchView?.requestFocus() }, delay)
+                        binding.searchView?.postDelayed({ binding.searchView?.requestFocus() }, delay)
                     }
                     is AppEditNoteProvider.Action -> {
                         viewModel.noteUseCases.onEditNote(this, action.clip)
@@ -542,7 +552,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         viewModel.filtersLive.observe(viewLifecycleOwner) {
             val textLike = it.last.textLike
             if (textLike != searchByText) {
-                searchView?.setText(textLike, fromUser = false)
+                binding.searchView?.setText(textLike, fromUser = false)
             }
             val hintRes =
                 if (it.last.isFolder()) {
@@ -550,8 +560,8 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
                 } else {
                     R.string.main_search
                 }
-            searchView?.setHint(hintRes)
-            searchView?.setImeActionLabel(ctx.getString(hintRes), EditorInfo.IME_ACTION_SEARCH)
+            binding.searchView?.setHint(hintRes)
+            binding.searchView?.setImeActionLabel(ctx.getString(hintRes), EditorInfo.IME_ACTION_SEARCH)
             updateCounterMenu(counterMenu)
             updateFilterMenu(filterMenu)
             updateEmptyState()
@@ -561,20 +571,20 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
         viewModel.selectedClipsLive.observe(viewLifecycleOwner) {
             if (it.isEmpty()) {
                 newFav = null
-                selectionAllContainer?.setVisibleOrGone(false)
-                selectionCounter?.text = null
+                binding.selectionAllContainer?.setVisibleOrGone(false)
+                binding.selectionCounter?.text = null
                 viewModel.onNavigate(ScreenState.STATE_MAIN)
                 val color = ThemeUtils.getColorPrimary(ctx)
-                bottomBar?.backgroundTint = ColorStateList.valueOf(color)
-                bottomBar?.performShow()
+                binding.bottomBar?.backgroundTint = ColorStateList.valueOf(color)
+                binding.bottomBar?.performShow()
                 if (!selectedClipsLiveFirstRequest) {
                     viewModel.requestLayout()
                 }
                 selectedClipsLiveFirstRequest = false
             } else {
                 val color = ThemeUtils.getColor(ctx, R.attr.colorPrimaryLight)
-                bottomBar?.backgroundTint = ColorStateList.valueOf(color)
-                selectionCounter?.text =
+                binding.bottomBar?.backgroundTint = ColorStateList.valueOf(color)
+                binding.selectionCounter?.text =
                     if (mainState.hasContextActions()) {
                         "${it.size}"
                     } else {
@@ -594,9 +604,9 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
 
                 viewModel.onNavigate(state)
                 newFav = it.find { !it.fav } == null
-                selectionAllContainer?.setVisibleOrGone(true)
-                bottomBar?.let { bottomBarUpdater.apply(Unit, it) }
-                bottomBar?.performShow()
+                binding.selectionAllContainer?.setVisibleOrGone(true)
+                binding.bottomBar?.let { bottomBarUpdater.apply(Unit, it) }
+                binding.bottomBar?.performShow()
             }
         }
 
@@ -604,7 +614,7 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
             it?.let { deletedClips ->
                 val count = deletedClips.size
                 val text = resources.getQuantityString(R.plurals.clip_snackbar_text_deleted, count, count)
-                Snackbar.make(mainView, text, Snackbar.LENGTH_LONG).let { snackbar ->
+                Snackbar.make(binding.mainView, text, Snackbar.LENGTH_LONG).let { snackbar ->
                     snackbar.setAction(R.string.button_undo) {
                         viewModel.onUndoDelete(deletedClips.toList())
                     }
@@ -648,9 +658,9 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
 
     private fun showHideFab(show: Boolean) {
         if (show) {
-            actionButton.show()
+            binding.actionButton.show()
         } else {
-            actionButton.hide()
+            binding.actionButton.hide()
         }
     }
 
@@ -675,8 +685,13 @@ class MainListFragment : MvvmFragment<MainListViewModel>(), StatefulFragment, Ac
     }
 
     private fun closeNavigation() {
-        drawerLayout?.postDelayed({ drawerLayout?.closeDrawer(GravityCompat.START) }, 100)
-        bottomBar?.performShow()
+        binding.drawerLayout?.postDelayed({ binding.drawerLayout?.closeDrawer(GravityCompat.START) }, 100)
+        binding.bottomBar?.performShow()
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

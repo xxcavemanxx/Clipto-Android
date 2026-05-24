@@ -1,12 +1,12 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockCheckableOptionBinding
 import android.content.res.ColorStateList
 import android.view.View
 import clipto.common.extensions.*
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_checkable_option.view.*
 
 class CheckableOptionBlock<T, C>(
     val option: Option<T>,
@@ -38,6 +38,7 @@ class CheckableOptionBlock<T, C>(
     }
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockCheckableOptionBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is CheckableOptionBlock<*, *>) {
@@ -47,16 +48,17 @@ class CheckableOptionBlock<T, C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockCheckableOptionBinding.bind(block)
         block.tag = this
-        block.tvName.text = option.title
-        block.tvName.setBold(option.checked)
-        block.ivSelected.setVisibleOrGone(option.checked)
+        binding.tvName.text = option.title
+        binding.tvName.setBold(option.checked)
+        binding.ivSelected.setVisibleOrGone(option.checked)
         if (option.iconRes != null) {
-            block.ivIcon.imageTintList = ColorStateList.valueOf(option.iconColor ?: block.context.getTextColorSecondary())
-            block.ivIcon.setImageResource(option.iconRes)
-            block.ivIcon.visible()
+            binding.ivIcon.imageTintList = ColorStateList.valueOf(option.iconColor ?: block.context.getTextColorSecondary())
+            binding.ivIcon.setImageResource(option.iconRes)
+            binding.ivIcon.visible()
         } else {
-            block.ivIcon.gone()
+            binding.ivIcon.gone()
         }
     }
 

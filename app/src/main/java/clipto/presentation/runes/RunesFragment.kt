@@ -1,5 +1,6 @@
 package clipto.presentation.runes
 
+import com.wb.clipboard.databinding.FragmentRunesBinding
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -20,12 +21,18 @@ import clipto.presentation.common.recyclerview.FlowLayoutManagerExt
 import com.wb.clipboard.R
 import com.xiaofeng.flowlayoutmanager.Alignment
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_runes.*
-import kotlinx.android.synthetic.main.fragment_settings.recyclerView
 
 
 @AndroidEntryPoint
 class RunesFragment : MvvmFragment<RunesViewModel>(), StatefulFragment {
+
+    private var _binding: FragmentRunesBinding? = null
+    val binding get() = _binding!!
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentRunesBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     override val layoutResId: Int = R.layout.fragment_runes
     override val viewModel: RunesViewModel by viewModels()
@@ -54,35 +61,35 @@ class RunesFragment : MvvmFragment<RunesViewModel>(), StatefulFragment {
     override fun bind(viewModel: RunesViewModel) {
         val ctx = requireContext()
 
-        tvLanguage.setDebounceClickListener { viewModel.onChangeLanguage() }
-        ivMode.setDebounceClickListener { viewModel.onChangeMode() }
-        tvTitle.setDebounceClickListener { viewModel.onShowHint() }
-        ivBack.setDebounceClickListener { navigateUp() }
+        binding.tvLanguage.setDebounceClickListener { viewModel.onChangeLanguage() }
+        binding.ivMode.setDebounceClickListener { viewModel.onChangeMode() }
+        binding.tvTitle.setDebounceClickListener { viewModel.onShowHint() }
+        binding.ivBack.setDebounceClickListener { navigateUp() }
 
         viewModel.languageLive.observe(viewLifecycleOwner) {
-            tvLanguage?.text = it.toEmoji()
+            binding.tvLanguage?.text = it.toEmoji()
         }
 
         viewModel.runesLive.observe(viewLifecycleOwner) {
             if (viewModel.isFlatMode()) return@observe
-            ivMode?.setImageResource(R.drawable.settings_mode_grid)
-            var adapter = recyclerView?.adapter
+            binding.ivMode?.setImageResource(R.drawable.settings_mode_grid)
+            var adapter = binding.recyclerView?.adapter
             if (adapter !is RunesAdapter) {
                 adapter = RunesAdapter(ctx) { viewModel.onSelectRune(it) }
-                recyclerView?.layoutManager = FlowLayoutManagerExt().also { it.setAlignment(Alignment.CENTER) }
-                recyclerView?.adapter = adapter
+                binding.recyclerView?.layoutManager = FlowLayoutManagerExt().also { it.setAlignment(Alignment.CENTER) }
+                binding.recyclerView?.adapter = adapter
             }
             adapter.submitList(it)
         }
 
         viewModel.runesFlatLive.observe(viewLifecycleOwner) {
             if (!viewModel.isFlatMode()) return@observe
-            ivMode?.setImageResource(R.drawable.settings_mode_flat)
-            var adapter = recyclerView?.adapter
+            binding.ivMode?.setImageResource(R.drawable.settings_mode_flat)
+            var adapter = binding.recyclerView?.adapter
             if (adapter !is RunesFlatAdapter) {
                 adapter = RunesFlatAdapter(this)
-                recyclerView?.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-                recyclerView?.adapter = adapter
+                binding.recyclerView?.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                binding.recyclerView?.adapter = adapter
             }
             val adapterRef = adapter as RunesFlatAdapter
             adapterRef.submitList(it)
@@ -103,4 +110,9 @@ class RunesFragment : MvvmFragment<RunesViewModel>(), StatefulFragment {
         Analytics.screenRunes()
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

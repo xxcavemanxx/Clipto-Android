@@ -1,5 +1,6 @@
 package clipto.presentation.file.blocks
 
+import com.wb.clipboard.databinding.BlockSelectFileBinding
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -11,7 +12,6 @@ import clipto.presentation.file.FileScreenHelper
 import clipto.presentation.main.list.blocks.FileItemBlock
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_select_file.view.*
 
 class SelectFileBlock<C>(
     file: FileRef,
@@ -35,16 +35,17 @@ class SelectFileBlock<C>(
 
     override val layoutRes: Int = R.layout.block_select_file
 
-    override fun getTitleView(block: View): TextView = block.tvName
-    override fun getIconView(block: View): ImageView = block.ivIcon
-    override fun getIconTextView(block: View): TextView = block.tvIcon
-    override fun getAttrsView(block: View): TextView? = block.tvAttrs
-    override fun getProgressImageView(block: View): ImageView = block.ivProgress
-    override fun getProgressView(block: View): LinearProgressIndicator = block.lpProgress
+    override fun getTitleView(block: View): TextView = BlockSelectFileBinding.bind(block).tvName
+    override fun getIconView(block: View): ImageView = BlockSelectFileBinding.bind(block).ivIcon
+    override fun getIconTextView(block: View): TextView = BlockSelectFileBinding.bind(block).tvIcon
+    override fun getAttrsView(block: View): TextView? = BlockSelectFileBinding.bind(block).tvAttrs
+    override fun getProgressImageView(block: View): ImageView = BlockSelectFileBinding.bind(block).ivProgress
+    override fun getProgressView(block: View): LinearProgressIndicator = BlockSelectFileBinding.bind(block).lpProgress
 
     override fun doOnChecked(block: View, file: FileRef, checked: Boolean) {
+        val binding = BlockSelectFileBinding.bind(block)
         super.doOnChecked(block, file, checked)
-        block.ivSelected.setVisibleOrGone(checked)
+        binding.ivSelected.setVisibleOrGone(checked)
         getTitleView(block).setBold(checked)
     }
 

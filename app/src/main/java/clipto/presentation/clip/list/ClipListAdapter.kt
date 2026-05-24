@@ -23,14 +23,6 @@ import clipto.extensions.*
 import clipto.presentation.common.StyleHelper
 import clipto.store.main.MainState
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.item_clip.view.*
-import kotlinx.android.synthetic.main.item_clip.view.bgView
-import kotlinx.android.synthetic.main.item_clip.view.attachmentsView
-import kotlinx.android.synthetic.main.item_clip.view.middleTextView
-import kotlinx.android.synthetic.main.item_clip.view.publicLinkView
-import kotlinx.android.synthetic.main.item_clip.view.tagsView
-import kotlinx.android.synthetic.main.item_clip_comfortable.view.attr2
-import kotlinx.android.synthetic.main.item_clip_preview.view.*
 
 class ClipListAdapter(
     val context: Context,
@@ -224,15 +216,16 @@ class ClipListAdapter(
         var alpha = 1f
         var clip: Clip? = null
 
-        private val bgView: View = itemView.bgView
-        private val attr1Key: TextView? = itemView.attr1Key
-        private val attr1Value: TextView? = itemView.attr1Value
-        private val attr2: TextView? = itemView.attr2
-        private val tagsView: TextView? = itemView.tagsView
-        private val actionView: ImageView? = itemView.actionView
-        private val attachmentsView: TextView? = itemView.attachmentsView
-        private val publicLinkView: ImageView? = itemView.publicLinkView
-        private val middleTextView: TextView = itemView.middleTextView
+        private val bgView: View = itemView.findViewById(R.id.bgView)
+        private val attr1Key: TextView? = itemView.findViewById(R.id.attr1Key)
+        private val attr1Value: TextView? = itemView.findViewById(R.id.attr1Value)
+        private val attr2: TextView? = itemView.findViewById(R.id.attr2)
+        private val tagsView: TextView? = itemView.findViewById(R.id.tagsView)
+        private val actionView: ImageView? = itemView.findViewById(R.id.actionView)
+        private val attachmentsView: TextView? = itemView.findViewById(R.id.attachmentsView)
+        private val publicLinkView: ImageView? = itemView.findViewById(R.id.publicLinkView)
+        private val middleTextView: TextView = itemView.findViewById(R.id.middleTextView)
+        private val titleTextView: TextView? = itemView.findViewById(R.id.titleTextView)
 
         init {
             itemView.tag = this
@@ -385,7 +378,7 @@ class ClipListAdapter(
 
             // title
             if (hasTitle) {
-                itemView.titleTextView?.apply {
+                titleTextView?.apply {
                     setVisibleOrGone(!clip?.title.isNullOrBlank())
                     typeface = clip.getTextTypeface()
                     textSize = itemTextSize + 4f
@@ -481,7 +474,7 @@ class ClipListAdapter(
                 attachmentsView?.alpha = alpha
                 publicLinkView?.alpha = alpha
                 middleTextView.alpha = alpha
-                itemView.titleTextView?.alpha = alpha
+                titleTextView?.alpha = alpha
             }
         }
     }

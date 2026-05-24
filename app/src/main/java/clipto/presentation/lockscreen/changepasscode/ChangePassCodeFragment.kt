@@ -1,5 +1,7 @@
 package clipto.presentation.lockscreen.changepasscode
+import android.view.View
 
+import com.wb.clipboard.databinding.FragmentChangePasscodeBinding
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.fragment.app.viewModels
@@ -11,19 +13,26 @@ import com.transitionseverywhere.ChangeText
 import com.wb.clipboard.R
 import clipto.presentation.lockscreen.PassKeyboardView
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_change_passcode.*
 
 @AndroidEntryPoint
 class ChangePassCodeFragment : MvvmFragment<ChangePassCodeViewModel>(), FragmentBackButtonListener, StatefulFragment {
 
-    override val layoutResId: Int = R.layout.fragment_change_passcode
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentChangePasscodeBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentChangePasscodeBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_change_passcode
     override val viewModel: ChangePassCodeViewModel by viewModels()
 
     override fun bind(viewModel: ChangePassCodeViewModel) {
-        toolbar.setNavigationIcon(R.drawable.action_arrow_back)
-        toolbar.setNavigationOnClickListener { viewModel.onBackPressed(this) }
+        binding.toolbar.setNavigationIcon(R.drawable.action_arrow_back)
+        binding.toolbar.setNavigationOnClickListener { viewModel.onBackPressed(this) }
         viewModel.inputLengthLiveData.observe(this, {
-            it?.run { indicator.selectedCount = it }
+            it?.run { binding.indicator.selectedCount = it }
         })
         viewModel.statusLiveData.observe(this, {
             when (it) {
@@ -36,7 +45,7 @@ class ChangePassCodeFragment : MvvmFragment<ChangePassCodeViewModel>(), Fragment
         viewModel.wrongCodeLiveData.observe(this, {
             if (it == true) onWrongCode()
         })
-        passKeyboard.apply {
+        binding.passKeyboard.apply {
             buttonTouchIdVisible = false
             keyboardListener = object : PassKeyboardView.InputListener {
                 override fun onInput(code: String) {
@@ -58,31 +67,31 @@ class ChangePassCodeFragment : MvvmFragment<ChangePassCodeViewModel>(), Fragment
 
     private fun showEnterExistingPassCode() {
         animateTitle(R.string.change_passcode_enter_existing)
-        indicator.reset()
-        passKeyboard.reset()
+        binding.indicator.reset()
+        binding.passKeyboard.reset()
     }
 
     private fun showCreateNewPassCode() {
         animateTitle(R.string.change_passcode_set_new)
-        indicator.reset(true)
-        passKeyboard.reset()
+        binding.indicator.reset(true)
+        binding.passKeyboard.reset()
     }
 
     private fun showPassCodeConfirmation() {
         animateTitle(R.string.change_passcode_reenter)
-        indicator.reset(true)
-        passKeyboard.reset()
+        binding.indicator.reset(true)
+        binding.passKeyboard.reset()
     }
 
     private fun animateTitle(@StringRes titleRes: Int) {
-        TransitionManager.beginDelayedTransition(clParent, ChangeText().setChangeBehavior(
-                ChangeText.CHANGE_BEHAVIOR_OUT_IN).setDuration(500).addTarget(tvTitle))
-        tvTitle.setText(titleRes)
+        TransitionManager.beginDelayedTransition(binding.clParent, ChangeText().setChangeBehavior(
+                ChangeText.CHANGE_BEHAVIOR_OUT_IN).setDuration(500).addTarget(binding.tvTitle))
+        binding.tvTitle.setText(titleRes)
     }
 
     private fun onWrongCode() {
-        indicator.onWrongCode()
-        passKeyboard.reset()
+        binding.indicator.onWrongCode()
+        binding.passKeyboard.reset()
     }
 
     companion object {
@@ -94,5 +103,10 @@ class ChangePassCodeFragment : MvvmFragment<ChangePassCodeViewModel>(), Fragment
             putBoolean(ATTR_DISABLE_PASSCODE, disablePasscode)
         }
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

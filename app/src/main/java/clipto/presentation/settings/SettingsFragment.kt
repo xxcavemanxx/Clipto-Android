@@ -1,5 +1,8 @@
 package clipto.presentation.settings
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentSettingsBinding
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import clipto.AppUtils
@@ -33,12 +36,19 @@ import clipto.presentation.lockscreen.changepasscode.ChangePassCodeFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_settings.*
 
 @AndroidEntryPoint
 class SettingsFragment : MvvmFragment<SettingsViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_settings
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentSettingsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentSettingsBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_settings
     override val viewModel: SettingsViewModel by viewModels()
 
     override fun bind(viewModel: SettingsViewModel) {
@@ -67,13 +77,13 @@ class SettingsFragment : MvvmFragment<SettingsViewModel>() {
                                     })
                                 }
                 )
-                .apply(Unit, toolbar)
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
-        toolbar.setNavigationOnClickListener { getNavController().navigateUp() }
+                .apply(Unit, binding.toolbar)
+        binding.toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
+        binding.toolbar.setNavigationOnClickListener { getNavController().navigateUp() }
 
         val settingsAdapter = BlockListAdapter(this)
-        recyclerView.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.VERTICAL, false)
-        recyclerView.adapter = settingsAdapter
+        binding.recyclerView.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.VERTICAL, false)
+        binding.recyclerView.adapter = settingsAdapter
 
         viewModel.settingsLive.observe(viewLifecycleOwner) {
             settingsAdapter.submitList(map(it))
@@ -446,4 +456,9 @@ class SettingsFragment : MvvmFragment<SettingsViewModel>() {
         return list
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

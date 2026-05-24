@@ -1,5 +1,8 @@
 package clipto.presentation.snippets.details
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentSnippetKitDetailsBinding
 import android.content.res.ColorStateList
 import android.graphics.Color
 import androidx.core.graphics.ColorUtils
@@ -17,49 +20,56 @@ import clipto.extensions.getUserNameLabel
 import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_snippet_kit_details.*
 
 @AndroidEntryPoint
 class SnippetKitDetailsFragment : MvvmFragment<SnippetKitDetailsViewModel>(), StatefulFragment {
 
-    override val layoutResId: Int = R.layout.fragment_snippet_kit_details
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentSnippetKitDetailsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentSnippetKitDetailsBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_snippet_kit_details
 
     override val viewModel: SnippetKitDetailsViewModel by viewModels()
 
     override fun bind(viewModel: SnippetKitDetailsViewModel) {
         val ctx = requireContext()
 
-        ivBack.setDebounceClickListener { navigateUp() }
-        ivShare.setDebounceClickListener { viewModel.onShare() }
+        binding.ivBack.setDebounceClickListener { navigateUp() }
+        binding.ivShare.setDebounceClickListener { viewModel.onShare() }
 
         val adapter = BlockListAdapter(this)
-        rvBlocks.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-        rvBlocks.adapter = adapter
+        binding.rvBlocks.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        binding.rvBlocks.adapter = adapter
 
         viewModel.kitLive.observe(viewLifecycleOwner) { kit ->
             if (kit != null) {
-                tvName?.text = kit.name
-                tvNameSingleLine?.text = kit.name
-                tvAuthor?.text = kit.getUserNameLabel()
-                tvStatus?.setText(kit.publicStatus.getTitleRes())
+                binding.tvName?.text = kit.name
+                binding.tvNameSingleLine?.text = kit.name
+                binding.tvAuthor?.text = kit.getUserNameLabel()
+                binding.tvStatus?.setText(kit.publicStatus.getTitleRes())
 
                 val iconColor = kit.color?.let { Color.parseColor(it) } ?: ctx.getTextColorSecondary()
-                ivIcon.imageTintList = ColorStateList.valueOf(iconColor)
-                ivIcon.refreshDrawableState()
+                binding.ivIcon.imageTintList = ColorStateList.valueOf(iconColor)
+                binding.ivIcon.refreshDrawableState()
 
                 val bgColor = ColorUtils.setAlphaComponent(iconColor, 20)
-                ivIconBg.imageTintList = ColorStateList.valueOf(bgColor)
-                ivIconBg.refreshDrawableState()
+                binding.ivIconBg.imageTintList = ColorStateList.valueOf(bgColor)
+                binding.ivIconBg.refreshDrawableState()
 
                 if (kit === SnippetKit.NOT_FOUND) {
-                    ivShare?.setImageResource(R.drawable.ic_bug_report)
+                    binding.ivShare?.setImageResource(R.drawable.ic_bug_report)
                 } else {
-                    ivShare?.setImageResource(R.drawable.ic_share)
+                    binding.ivShare?.setImageResource(R.drawable.ic_share)
                 }
 
-                clLoading?.gone()
+                binding.clLoading?.gone()
             } else {
-                clLoading?.visible()
+                binding.clLoading?.visible()
             }
         }
 
@@ -68,4 +78,9 @@ class SnippetKitDetailsFragment : MvvmFragment<SnippetKitDetailsViewModel>(), St
         }
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

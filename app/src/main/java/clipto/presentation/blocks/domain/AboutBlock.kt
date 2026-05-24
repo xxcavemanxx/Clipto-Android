@@ -1,5 +1,8 @@
 package clipto.presentation.blocks.domain
 
+import com.wb.clipboard.databinding.ViewRatingbarBinding
+import com.wb.clipboard.databinding.ViewFeedbackBinding
+import com.wb.clipboard.databinding.BlockAboutBinding
 import android.content.Context
 import android.view.View
 import androidx.lifecycle.LifecycleOwner
@@ -15,9 +18,6 @@ import clipto.store.user.UserState
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.wb.clipboard.BuildConfig
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_about.view.*
-import kotlinx.android.synthetic.main.view_feedback.view.*
-import kotlinx.android.synthetic.main.view_ratingbar.view.*
 
 class AboutBlock<C>(
     private val withTitle: Boolean = true,
@@ -30,12 +30,14 @@ class AboutBlock<C>(
         item is AboutBlock && withTitle == item.withTitle
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockAboutBinding.bind(block)
         val ctx = block.context
-        block.textCampaignTextView.setVisibleOrGone(withTitle)
-        block.rateButton.setOnClickListener {
+        binding.textCampaignTextView.setVisibleOrGone(withTitle)
+        binding.rateButton.setOnClickListener {
             if (!userState.appConfig.canReportNegativeFeedback()) {
                 val ratingBarView = View.inflate(ctx, R.layout.view_ratingbar, null)
-                val ratingBar = ratingBarView.ratingBar
+                val ratingBarViewBinding = ViewRatingbarBinding.bind(ratingBarView)
+                val ratingBar = ratingBarViewBinding.ratingBar
                 val dialog = MaterialAlertDialogBuilder(ctx)
                     .setTitle(R.string.settings_campaign_rate_question)
                     .setView(ratingBarView)
@@ -57,61 +59,62 @@ class AboutBlock<C>(
                 ctx.safeIntent(GooglePlayUtils.rate(ctx))
             }
         }
-        block.translateButton.setOnClickListener {
+        binding.translateButton.setOnClickListener {
             Analytics.onTranslate()
             IntentUtils.open(ctx, userState.appConfig.getTranslateUrl())
         }
-        block.issueButton.setOnClickListener {
+        binding.issueButton.setOnClickListener {
             Analytics.onIssue()
             IntentUtils.open(ctx, userState.appConfig.getGithubUrl())
         }
-        block.shareButton.setOnClickListener {
+        binding.shareButton.setOnClickListener {
             userState.requestShareApp()
         }
-        block.emailButton.setOnClickListener {
+        binding.emailButton.setOnClickListener {
             Analytics.onEmail()
             AppUtils.sendRequest()
         }
-        block.versionTextView.text = ctx.resources.getString(
+        binding.versionTextView.text = ctx.resources.getString(
             R.string.about_label_version,
             ctx.getString(R.string.app_name),
             BuildConfig.VERSION_NAME,
             BuildConfig.VERSION_CODE
         )
 
-        block.redditButton.setOnClickListener {
+        binding.redditButton.setOnClickListener {
             Analytics.onReddit()
             IntentUtils.open(ctx, userState.appConfig.getRedditUrl())
         }
-        block.discordButton.setOnClickListener {
+        binding.discordButton.setOnClickListener {
             Analytics.onDiscord()
             IntentUtils.open(ctx, userState.appConfig.getDiscordUrl())
         }
-        block.changelogButton.setOnClickListener {
+        binding.changelogButton.setOnClickListener {
             Analytics.onChangelog()
             IntentUtils.open(ctx, userState.appConfig.getChangelogUrl())
         }
-        block.privacyPolicy.setOnClickListener {
+        binding.privacyPolicy.setOnClickListener {
             Analytics.onPrivacyPolicy()
             IntentUtils.open(ctx, BuildConfig.privacyPolicyUrl)
         }
-        block.termsOfService.setOnClickListener {
+        binding.termsOfService.setOnClickListener {
             Analytics.onTermsOfService()
             IntentUtils.open(ctx, BuildConfig.tosUrl)
         }
         if (ctx is LifecycleOwner) {
             userState.user.getLiveData().observe(ctx) {
-                block.shareStatistics?.setVisibleOrGone(it.isAuthorized())
+                binding.shareStatistics?.setVisibleOrGone(it.isAuthorized())
             }
             userState.invitations.getLiveData().observe(ctx) {
-                block.shareStatistics?.text = ctx.getString(R.string.about_label_campaign_share_description, it)
+                binding.shareStatistics?.text = ctx.getString(R.string.about_label_campaign_share_description, it)
             }
         }
     }
 
     private fun onFeedback(rating: Float, ctx: Context) {
         val feedbackView = View.inflate(ctx, R.layout.view_feedback, null)
-        val feedbackText = feedbackView.feedbackText
+        val feedbackViewBinding = ViewFeedbackBinding.bind(feedbackView)
+        val feedbackText = feedbackViewBinding.feedbackText
         MaterialAlertDialogBuilder(ctx)
             .setTitle(R.string.settings_campaign_rate_feedback_title)
             .setView(feedbackView)

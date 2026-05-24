@@ -1,5 +1,7 @@
 package clipto.presentation.clip.view
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentAttributedObjectBinding
 import android.content.res.ColorStateList
 import android.view.View
 import android.widget.EditTextExt
@@ -22,12 +24,12 @@ import clipto.presentation.usecases.data.ShowNoteDetailsRequest
 import clipto.store.clip.ClipScreenState
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_attributed_object.*
 
 @AndroidEntryPoint
 class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewModel>(), StatefulFragment {
 
-    override val viewModel: ClipViewModel by viewModels()
+
+override val viewModel: ClipViewModel by viewModels()
     override fun getFitViewId(): Int = R.id.etClipText
 
     override fun onFragmentBackPressed(): Boolean {
@@ -60,7 +62,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
 
     override fun createViewState(): ViewState<ClipScreenState> =
         ViewState(
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv1, "action_close") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv1, "action_close") {
                 override fun canApply(state: ClipScreenState): Boolean = !viewModel.isMergeMode() && (state.isViewMode() || (state.isEditMode() && state.value.isNew()))
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.action_arrow_back, R.string.content_description_back) {
@@ -68,7 +70,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv1, "action_cancel_edit") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv1, "action_cancel_edit") {
                 override fun canApply(state: ClipScreenState): Boolean = !viewModel.isMergeMode() && (state.isEditMode() && !state.value.isNew())
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.action_cancel, R.string.menu_cancel) {
@@ -76,7 +78,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv1, "action_cancel_merge") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv1, "action_cancel_merge") {
                 override fun canApply(state: ClipScreenState): Boolean = viewModel.isMergeMode()
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.action_arrow_back, R.string.content_description_back) {
@@ -93,7 +95,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
 //                        }
 //                    }
 //                },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv3, "action_note_sync") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv3, "action_note_sync") {
                 override fun canApply(state: ClipScreenState): Boolean = state.isViewMode() && viewModel.isNotSynced()
                 override fun doApply(state: ClipScreenState) {
                     layerView.imageTintList = ColorStateList.valueOf(layerView.context.getColorNegative())
@@ -102,7 +104,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv3, "action_new_note") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv3, "action_new_note") {
                 override fun canApply(state: ClipScreenState): Boolean = state.isEditMode() && !viewModel.isMergeMode()
                 override fun doApply(state: ClipScreenState) {
                     layerView.imageTintList = ColorStateList.valueOf(layerView.context.getTextColorPrimary())
@@ -131,7 +133,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
 //                        }
 //                    }
 //                },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv5, "action_restore") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv5, "action_restore") {
                 override fun canApply(state: ClipScreenState): Boolean = state.isViewMode() && state.value.isDeleted()
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.ic_restore, R.string.menu_restore) {
@@ -139,7 +141,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv5, "action_save") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv5, "action_save") {
                 override fun canApply(state: ClipScreenState): Boolean = !viewModel.isMergeMode() && state.isEditMode() && !viewModel.getSettings().autoSave
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.action_save, R.string.button_save) {
@@ -147,7 +149,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv5, "action_merge") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv5, "action_merge") {
                 override fun canApply(state: ClipScreenState): Boolean = viewModel.isMergeMode()
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.ic_merge, R.string.menu_merge) {
@@ -155,7 +157,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, RuneIconView>(autoSaveIconView, "action_auto_save") {
+            object : ViewState.Layer<ClipScreenState, RuneIconView>(binding.autoSaveIconView, "action_auto_save") {
                 override fun canApply(state: ClipScreenState): Boolean = !viewModel.isMergeMode() && state.isEditMode() && viewModel.getSettings().autoSave
                 override fun canBind(state: ClipScreenState): Boolean = true
                 override fun doApply(state: ClipScreenState) {
@@ -164,7 +166,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     layerView.setOnLongClickListener(onContentDescriptionListener)
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv5, "action_edit") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv5, "action_edit") {
                 override fun canApply(state: ClipScreenState): Boolean = !state.isEditMode() && state.isEditable()
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.action_edit, R.string.menu_edit) {
@@ -172,7 +174,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv8, "action_copy") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv8, "action_copy") {
                 override fun canApply(state: ClipScreenState): Boolean = state.isViewMode()
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.ic_copy, R.string.menu_copy) {
@@ -180,7 +182,7 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
                     }
                 }
             },
-            object : ViewState.Layer<ClipScreenState, ImageView>(iv9, "action_clip_details") {
+            object : ViewState.Layer<ClipScreenState, ImageView>(binding.iv9, "action_clip_details") {
                 override fun canApply(state: ClipScreenState): Boolean = true
                 override fun doApply(state: ClipScreenState) {
                     bindAction(layerView, R.drawable.ic_more_vert, R.string.fast_actions_more) {
@@ -221,4 +223,9 @@ class ClipFragment : AttributedObjectFragment<Clip, ClipScreenState, ClipViewMod
             }
         )
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

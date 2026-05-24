@@ -1,10 +1,10 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockThreeButtonsToggleBinding
 import android.view.View
 import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_three_buttons_toggle.view.*
 
 class ThreeButtonsToggleBlock<C>(
     private val firstButtonTextRes: Int,
@@ -27,16 +27,18 @@ class ThreeButtonsToggleBlock<C>(
     }
 
     override fun onInit(context: C, block: View) {
-        block.btn1.setOnClickListener(onFirstButtonClick)
-        block.btn2.setOnClickListener(onSecondButtonClick)
-        block.btn3.setOnClickListener(onThirdButtonClick)
+        val binding = BlockThreeButtonsToggleBinding.bind(block)
+        binding.btn1.setOnClickListener(onFirstButtonClick)
+        binding.btn2.setOnClickListener(onSecondButtonClick)
+        binding.btn3.setOnClickListener(onThirdButtonClick)
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockThreeButtonsToggleBinding.bind(block)
         block as MaterialButtonToggleGroup
-        block.btn1.setText(firstButtonTextRes)
-        block.btn2.setText(secondButtonTextRes)
-        block.btn3.setText(thirdButtonTextRes)
+        binding.btn1.setText(firstButtonTextRes)
+        binding.btn2.setText(secondButtonTextRes)
+        binding.btn3.setText(thirdButtonTextRes)
         when (selectedButtonIndex) {
             0 -> block.check(R.id.btn1)
             1 -> block.check(R.id.btn2)

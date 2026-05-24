@@ -1,5 +1,8 @@
 package clipto.presentation.clip.tags
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentBlocksBinding
 import androidx.fragment.app.viewModels
 import clipto.analytics.Analytics
 import clipto.common.extensions.inBrackets
@@ -7,12 +10,12 @@ import clipto.common.presentation.state.MenuState
 import clipto.presentation.common.fragment.blocks.BlocksFragment
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_blocks.*
 
 @AndroidEntryPoint
 class CommonTagsFragment : BlocksFragment<CommonTagsViewModel>() {
 
-    override val viewModel: CommonTagsViewModel by viewModels()
+
+override val viewModel: CommonTagsViewModel by viewModels()
     override fun getBackConfirmTitle(): Int = R.string.clip_multiple_exit_without_save_title
     override fun getBackConfirmMessage(): Int = R.string.clip_multiple_exit_without_save_description
     override fun getTitle(): String {
@@ -34,8 +37,9 @@ class CommonTagsFragment : BlocksFragment<CommonTagsViewModel>() {
                 .withShowAsActionAlways()
                 .withTitle(R.string.button_save)
                 .withListener { _, _ -> viewModel.oAssignTags() })
-            .apply(Unit, toolbar.menu)
+            .apply(Unit, binding.toolbar.menu)
 
         Analytics.screenEditClipAttributes()
     }
+
 }

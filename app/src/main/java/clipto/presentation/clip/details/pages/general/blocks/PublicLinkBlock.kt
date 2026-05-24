@@ -1,5 +1,6 @@
 package clipto.presentation.clip.details.pages.general.blocks
 
+import com.wb.clipboard.databinding.BlockClipDetailsGeneralPublicLinkBinding
 import android.view.View
 import clipto.common.extensions.setVisibleOrGone
 import clipto.common.extensions.withSafeChildFragmentManager
@@ -8,7 +9,6 @@ import clipto.domain.PublicLink
 import clipto.presentation.clip.details.pages.general.*
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_clip_details_general_public_link.view.*
 
 class PublicLinkBlock(
         private val viewModel: GeneralPageViewModel,
@@ -22,64 +22,65 @@ class PublicLinkBlock(
                     item.publicLink == publicLink
 
     override fun onBind(fragment: GeneralPageFragment, block: View) {
+        val binding = BlockClipDetailsGeneralPublicLinkBinding.bind(block)
         // common
         val hasLink = !publicLink.link.isNullOrBlank()
 
         // access time
-        block.accessTimeChip?.isSelected = publicLink.isPostponed()
+        binding.accessTimeChip?.isSelected = publicLink.isPostponed()
 
         // access password
-        block.accessPasswordChip?.isSelected = publicLink.isLocked()
+        binding.accessPasswordChip?.isSelected = publicLink.isLocked()
 
         // time to expire
-        block.timeToExpireChip?.isSelected = publicLink.canBeExpired()
+        binding.timeToExpireChip?.isSelected = publicLink.canBeExpired()
 
         // one time
-        block.oneTimeChip?.isSelected = publicLink.isOneTime()
+        binding.oneTimeChip?.isSelected = publicLink.isOneTime()
 
         // link
-        block.linkButton?.setVisibleOrGone(hasLink)
+        binding.linkButton?.setVisibleOrGone(hasLink)
 
-        block.linkButton.text = publicLink.link
-        block.copyLinkAction?.setVisibleOrGone(hasLink)
+        binding.linkButton.text = publicLink.link
+        binding.copyLinkAction?.setVisibleOrGone(hasLink)
 
         // create link
-        block.createButton?.setVisibleOrGone(!hasLink)
+        binding.createButton?.setVisibleOrGone(!hasLink)
 
         // remove link
-        block.removeButton?.setVisibleOrGone(hasLink)
+        binding.removeButton?.setVisibleOrGone(hasLink)
 
-        block.accessTimeChip?.setOnClickListener {
+        binding.accessTimeChip?.setOnClickListener {
             fragment.withSafeChildFragmentManager()?.let { fm ->
                 PublicLinkEditAccessTimeDialogFragment().show(fm, "PublicLinkEditAccessTimeDialogFragment")
             }
         }
-        block.accessPasswordChip.setOnClickListener {
+        binding.accessPasswordChip.setOnClickListener {
             fragment.withSafeChildFragmentManager()?.let { fm ->
                 PublicLinkEditPasswordDialogFragment().show(fm, "PublicLinkEditPasswordDialogFragment")
             }
         }
-        block.timeToExpireChip.setOnClickListener {
+        binding.timeToExpireChip.setOnClickListener {
             fragment.withSafeChildFragmentManager()?.let { fm ->
                 PublicLinkEditTimeToExpireDialogFragment().show(fm, "PublicLinkEditTimeToExpireDialogFragment")
             }
         }
-        block.oneTimeChip.setOnClickListener {
+        binding.oneTimeChip.setOnClickListener {
             fragment.withSafeChildFragmentManager()?.let { fm ->
                 PublicLinkEditOneTimeDialogFragment().show(fm, "PublicLinkEditOneTimeDialogFragment")
             }
         }
-        block.linkButton.setOnClickListener {
+        binding.linkButton.setOnClickListener {
             publicLink.link?.let { IntentUtils.open(viewModel.app, it) }
         }
-        block.copyLinkAction.setOnClickListener {
+        binding.copyLinkAction.setOnClickListener {
             viewModel.onCopyLink(publicLink)
         }
-        block.createButton.setOnClickListener {
+        binding.createButton.setOnClickListener {
             viewModel.onCreateLink(publicLink)
         }
-        block.createButton.isSelected = true
-        block.removeButton.setOnClickListener { viewModel.onRemoveLink() }
+        binding.createButton.isSelected = true
+        binding.removeButton.setOnClickListener { viewModel.onRemoveLink() }
     }
 
 }

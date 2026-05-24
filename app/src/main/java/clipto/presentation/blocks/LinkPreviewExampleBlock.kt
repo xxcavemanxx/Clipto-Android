@@ -1,10 +1,10 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockLinkPreviewExampleBinding
 import android.view.View
 import clipto.extensions.TextTypeExt
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_link_preview_example.view.*
 
 class LinkPreviewExampleBlock<C>(
     private val link: String,
@@ -21,7 +21,8 @@ class LinkPreviewExampleBlock<C>(
                 && link == item.link
 
     override fun onBind(context: C, block: View) {
-        TextTypeExt.LINK.apply(block.linkPreviewView, link)
+        val binding = BlockLinkPreviewExampleBinding.bind(block)
+        TextTypeExt.LINK.apply(binding.linkPreviewView, link)
     }
 
 }

@@ -1,12 +1,12 @@
 package clipto.presentation.blocks.bottomsheet
 
+import com.wb.clipboard.databinding.BlockObjectNameEditBinding
 import android.text.InputFilter
 import android.view.View
 import clipto.common.extensions.setDebounceClickListener
 import clipto.common.extensions.showKeyboard
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_object_name_edit.view.*
 
 class ObjectNameEditBlock<C>(
     private val maxLength: Int,
@@ -29,21 +29,23 @@ class ObjectNameEditBlock<C>(
                 item.hint == hint
 
     override fun onInit(context: C, block: View) {
-        block.ivAction.setDebounceClickListener {
-            val text = block.etName.text.toString()
+        val binding = BlockObjectNameEditBinding.bind(block)
+        binding.ivAction.setDebounceClickListener {
+            val text = binding.etName.text.toString()
             getRef(block)?.onRename?.invoke(text)
         }
-        block.ivCancel.setDebounceClickListener {
+        binding.ivCancel.setDebounceClickListener {
             getRef(block)?.onCancelEdit?.invoke()
         }
-        block.etName.filters = arrayOf(InputFilter.LengthFilter(maxLength))
+        binding.etName.filters = arrayOf(InputFilter.LengthFilter(maxLength))
     }
 
     override fun onBind(context: C, block: View) {
-        block.etName.setText(text)
-        block.etName.hint = hint
-        block.etName.setSelection(text?.length ?: 0)
-        block.etName.showKeyboard()
+        val binding = BlockObjectNameEditBinding.bind(block)
+        binding.etName.setText(text)
+        binding.etName.hint = hint
+        binding.etName.setSelection(text?.length ?: 0)
+        binding.etName.showKeyboard()
         block.tag = this
     }
 

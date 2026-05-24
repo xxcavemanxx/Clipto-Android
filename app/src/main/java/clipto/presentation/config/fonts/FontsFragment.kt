@@ -1,5 +1,8 @@
 package clipto.presentation.config.fonts
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentFontsBinding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -15,17 +18,24 @@ import clipto.domain.Font
 import clipto.domain.FontLanguage
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_fonts.*
 import java.util.*
 
 @AndroidEntryPoint
 class FontsFragment : MvvmBottomSheetDialogFragment<FontsViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_fonts
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentFontsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentFontsBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_fonts
     override val viewModel: FontsViewModel by viewModels()
 
     override fun bind(viewModel: FontsViewModel) {
-        contentView.setBottomSheetHeight(noBackground = true)
+        binding.contentView.setBottomSheetHeight(noBackground = true)
 
         val context = requireContext()
 
@@ -41,7 +51,7 @@ class FontsFragment : MvvmBottomSheetDialogFragment<FontsViewModel>() {
                     indexOfNextLanguage = 0
                 }
                 it.languages.getOrNull(indexOfNextLanguage)?.let {
-                    exampleEditTextView?.setText(it.exampleRes)
+                    binding.exampleEditTextView?.setText(it.exampleRes)
                     language = it
                 }
             }
@@ -51,8 +61,8 @@ class FontsFragment : MvvmBottomSheetDialogFragment<FontsViewModel>() {
         viewModel.settingsLive.observe(viewLifecycleOwner) {
             val next = Font.valueOf(it)
             val prev = prevFont
-            exampleTextView?.hint = viewModel.string(next.titleRes)
-            exampleEditTextView?.let { textView ->
+            binding.exampleTextView?.hint = viewModel.string(next.titleRes)
+            binding.exampleEditTextView?.let { textView ->
                 val lang = language
                 if (prev == null ||
                     lang == null ||
@@ -95,7 +105,7 @@ class FontsFragment : MvvmBottomSheetDialogFragment<FontsViewModel>() {
             }
 
             override fun clearView(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder) {
-                super.clearView(recyclerView, viewHolder)
+                super.clearView(binding.recyclerView, viewHolder)
                 if (viewHolder is FontsAdapter.ViewHolder) {
                     viewHolder.onItemClear()
                 }
@@ -105,16 +115,16 @@ class FontsFragment : MvvmBottomSheetDialogFragment<FontsViewModel>() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) = Unit
         })
 
-        recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        recyclerView.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        recyclerView.adapter = adapter
-        touchHelper.attachToRecyclerView(recyclerView)
+        binding.recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.recyclerView.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        binding.recyclerView.adapter = adapter
+        touchHelper.attachToRecyclerView(binding.recyclerView)
 
         Analytics.screenFonts()
     }
 
     override fun onStop() {
-        exampleTextView?.hideKeyboard()
+        binding.exampleTextView?.hideKeyboard()
         super.onStop()
     }
 
@@ -126,4 +136,9 @@ class FontsFragment : MvvmBottomSheetDialogFragment<FontsViewModel>() {
         }
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

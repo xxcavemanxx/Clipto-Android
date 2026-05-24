@@ -1,5 +1,6 @@
 package clipto.presentation.clip.view.blocks
 
+import com.wb.clipboard.databinding.BlockClipDetailsAttachmentsBinding
 import android.content.res.ColorStateList
 import android.view.View
 import android.widget.FrameLayout
@@ -18,7 +19,6 @@ import clipto.presentation.common.view.DoubleClickListenerWrapper
 import clipto.store.clip.ClipScreenState
 import com.google.android.material.chip.Chip
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_clip_details_attachments.view.*
 
 class AttachmentsBlock(
     private val backgroundColor: Int? = null,
@@ -42,7 +42,8 @@ class AttachmentsBlock(
                 && !screenState.value.isNew()
 
     override fun onInit(context: Fragment, block: View) {
-        block.cgFiles.setOnClickListener(
+        val binding = BlockClipDetailsAttachmentsBinding.bind(block)
+        binding.cgFiles.setOnClickListener(
             DoubleClickListenerWrapper(
                 block.context,
                 {
@@ -60,6 +61,7 @@ class AttachmentsBlock(
     }
 
     override fun onBind(context: Fragment, block: View) {
+        val binding = BlockClipDetailsAttachmentsBinding.bind(block)
         block.tag = this
 
         onGetFiles {
@@ -72,8 +74,9 @@ class AttachmentsBlock(
     }
 
     private fun initAttachments(block: View, attachments: List<FileRef>) {
+        val binding = BlockClipDetailsAttachmentsBinding.bind(block)
         val editable = screenState.isEditMode()
-        val filesGroup = block.cgFiles
+        val filesGroup = binding.cgFiles
         val context = block.context
         attachments.forEachIndexed { index, attachment ->
             val chip =
@@ -95,9 +98,10 @@ class AttachmentsBlock(
     }
 
     private fun updateAttachment(block: View, attachment: FileRef) {
-        val filesGroup = block.cgFiles
+        val binding = BlockClipDetailsAttachmentsBinding.bind(block)
+        val filesGroup = binding.cgFiles
         val context = block.context
-        val same = filesGroup.children.find { (it.tag as? FileRef) == attachment } as Chip?
+        val same = filesGroup.children.find { view -> (view.tag as? FileRef) == attachment } as? Chip
         log("UPDATE ATTACHMENT :: {} - same={}", attachment.getUid(), same)
         if (same != null) {
             StyleHelper.bind(same, attachment)
@@ -112,7 +116,8 @@ class AttachmentsBlock(
     }
 
     private fun updateAttachment(block: View, chip: Chip, editable: Boolean) {
-        val filesGroup = block.cgFiles
+        val binding = BlockClipDetailsAttachmentsBinding.bind(block)
+        val filesGroup = binding.cgFiles
 
         chip.isCloseIconVisible = editable
 

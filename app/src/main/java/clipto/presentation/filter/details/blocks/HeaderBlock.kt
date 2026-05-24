@@ -1,5 +1,6 @@
 package clipto.presentation.filter.details.blocks
 
+import com.wb.clipboard.databinding.BlockFilterDetailsHeaderBinding
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -16,7 +17,6 @@ import clipto.presentation.common.StyleHelper
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.filter.details.FilterDetailsViewModel
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_filter_details_header.view.*
 
 class HeaderBlock(
     val viewModel: FilterDetailsViewModel,
@@ -42,44 +42,46 @@ class HeaderBlock(
                 item.hideHint == hideHint
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.tvName.setDebounceClickListener { viewModel.onShowHint() }
+        val binding = BlockFilterDetailsHeaderBinding.bind(block)
+        binding.tvName.setDebounceClickListener { viewModel.onShowHint() }
     }
 
     override fun onBind(fragment: Fragment, block: View) {
+        val binding = BlockFilterDetailsHeaderBinding.bind(block)
         val ctx = block.context
 
         val iconRes = filter.getIconRes()
         if (iconRes != 0) {
             val color = filter.getTagChipColor(ctx) ?: ThemeUtils.getColor(ctx, android.R.attr.textColorSecondary)
-            block.ivIcon.imageTintList = ColorStateList.valueOf(color)
-            block.ivIcon.setImageResource(iconRes)
-            block.ivIcon.visible()
+            binding.ivIcon.imageTintList = ColorStateList.valueOf(color)
+            binding.ivIcon.setImageResource(iconRes)
+            binding.ivIcon.visible()
         } else {
-            block.ivIcon.invisible()
+            binding.ivIcon.invisible()
         }
 
-        block.tvName.text = StyleHelper.getFilterLabel(ctx, filter)
+        binding.tvName.text = StyleHelper.getFilterLabel(ctx, filter)
 
         if (actionIcon != null) {
-            block.ivAction.tag = this
-            block.ivAction.setImageResource(actionIcon)
-            block.ivAction.setDebounceClickListener {
+            binding.ivAction.tag = this
+            binding.ivAction.setImageResource(actionIcon)
+            binding.ivAction.setDebounceClickListener {
                 val ref = it.tag
                 if (ref is HeaderBlock) {
                     ref.actionListener.invoke(ref.filter, fragment)
                 }
             }
-            block.ivAction.visible()
+            binding.ivAction.visible()
         } else {
-            block.ivAction.gone()
+            binding.ivAction.gone()
         }
 
         if (hideHint) {
-            block.tvName.isClickable = true
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
+            binding.tvName.isClickable = true
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
         } else {
-            block.tvName.isClickable = false
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
+            binding.tvName.isClickable = false
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
         }
     }
 

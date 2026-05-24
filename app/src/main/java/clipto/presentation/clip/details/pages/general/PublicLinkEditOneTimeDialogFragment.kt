@@ -1,30 +1,45 @@
 package clipto.presentation.clip.details.pages.general
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentClipPublicLinkEditOneTimeBinding
 import clipto.common.extensions.animateScale
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_clip_public_link_edit_one_time.*
 
 @AndroidEntryPoint
 class PublicLinkEditOneTimeDialogFragment : PublicLinkEditDialogFragment() {
 
-    override val layoutResId: Int = R.layout.fragment_clip_public_link_edit_one_time
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentClipPublicLinkEditOneTimeBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentClipPublicLinkEditOneTimeBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_clip_public_link_edit_one_time
 
     override fun bind(viewModel: GeneralPageViewModel) {
         // one time
-        oneTimeToggle.isChecked = viewModel.getPublicLink().isOneTime() == true
+        binding.oneTimeToggle.isChecked = viewModel.getPublicLink().isOneTime() == true
 
         // cancel action
-        cancelAction.setOnClickListener { dismissAllowingStateLoss() }
+        binding.cancelAction.setOnClickListener { dismissAllowingStateLoss() }
 
         // apply action
-        applyAction.setOnClickListener {
-            viewModel.onPublicLinkOneTimeChanged(oneTimeToggle.isChecked) {
+        binding.applyAction.setOnClickListener {
+            viewModel.onPublicLinkOneTimeChanged(binding.oneTimeToggle.isChecked) {
                 dismissAllowingStateLoss()
             }
         }
 
-        iconView.animateScale(true)
+        binding.iconView.animateScale(true)
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

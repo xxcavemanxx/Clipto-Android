@@ -1,11 +1,11 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSelectDateSingleBinding
 import android.view.View
 import clipto.presentation.common.dialog.DialogState
 import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.textfield.TextInputLayout
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_select_date_single.view.*
 
 class ScanBarcodeBlock<C>(
     private val dialogState: DialogState,
@@ -31,6 +31,7 @@ class ScanBarcodeBlock<C>(
     }
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockSelectDateSingleBinding.bind(block)
         block as TextInputLayout
 
         block.setStartIconOnClickListener {
@@ -50,10 +51,11 @@ class ScanBarcodeBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockSelectDateSingleBinding.bind(block)
         block.tag = null
         block as TextInputLayout
         block.isEndIconVisible = canRemove
-        block.tvEditText.setText(value)
+        binding.tvEditText.setText(value)
         block.hint = title
         block.tag = this
         if (startScanning) {

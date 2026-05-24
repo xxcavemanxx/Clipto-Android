@@ -1,5 +1,6 @@
 package clipto.presentation.runes
 
+import com.wb.clipboard.databinding.ItemRuneFlatBinding
 import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,7 +13,6 @@ import clipto.presentation.runes.extensions.getBgColor
 import clipto.presentation.runes.extensions.getIconColor
 import clipto.presentation.runes.extensions.getTextColor
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.item_rune_flat.view.*
 
 class RunesFlatAdapter(
         val fragment: RunesFragment
@@ -27,17 +27,18 @@ class RunesFlatAdapter(
     inner class ViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_rune_flat, parent, false)) {
 
+        val binding = ItemRuneFlatBinding.bind(itemView)
         var runeItem: RuneFlatItem? = null
 
         init {
             itemView.tag = this
-            itemView.vExpandCollapse.setOnClickListener {
+            binding.vExpandCollapse.setOnClickListener {
                 runeItem?.rune?.let { rune ->
                     rune.setExpanded(!rune.isExpanded())
                     bindTo(runeItem)
                 }
             }
-            itemView.ivHint.setOnClickListener { runeItem?.rune?.let { viewModel.onShowHint(it) } }
+            binding.ivHint.setOnClickListener { runeItem?.rune?.let { viewModel.onShowHint(it) } }
         }
 
         fun bindTo(runeItem: RuneFlatItem?) {
@@ -51,24 +52,24 @@ class RunesFlatAdapter(
                 val bgColor = rune.getBgColor(context, isActive)
 
                 // name
-                itemView.nameView.setTextColor(textColor)
-                itemView.nameView.text = rune.getTitle()
+                binding.nameView.setTextColor(textColor)
+                binding.nameView.text = rune.getTitle()
 
                 // icon
-                itemView.iconView.setImageResource(rune.getIcon())
-                itemView.iconView.imageTintList = ColorStateList.valueOf(iconColor)
+                binding.iconView.setImageResource(rune.getIcon())
+                binding.iconView.imageTintList = ColorStateList.valueOf(iconColor)
 
                 // background
-                itemView.bgView.imageTintList = ColorStateList.valueOf(bgColor)
+                binding.bgView.imageTintList = ColorStateList.valueOf(bgColor)
 
                 // warning
-                itemView.warningView.setVisibleOrGone(runeItem.hasWarning)
+                binding.warningView.setVisibleOrGone(runeItem.hasWarning)
 
                 // expand state
-                itemView.ivExpand.setImageResource(if (isExpanded) R.drawable.texpander_collapse else R.drawable.texpander_expand)
+                binding.ivExpand.setImageResource(if (isExpanded) R.drawable.texpander_collapse else R.drawable.texpander_expand)
 
                 // settings
-                itemView.rvRuneSettings.let { rv ->
+                binding.rvRuneSettings.let { rv ->
                     rv.setVisibleOrGone(isExpanded)
                     if (!isExpanded) {
                         rv.adapter = null

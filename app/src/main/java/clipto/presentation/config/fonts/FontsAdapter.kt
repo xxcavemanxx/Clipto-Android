@@ -1,5 +1,6 @@
 package clipto.presentation.config.fonts
 
+import com.wb.clipboard.databinding.ItemFontBinding
 import android.content.Context
 import android.graphics.Typeface
 import android.view.LayoutInflater
@@ -11,7 +12,6 @@ import clipto.common.presentation.text.SimpleSpanBuilder
 import clipto.domain.Font
 import com.wb.clipboard.R
 import clipto.presentation.common.widget.ColorfulTagSpan
-import kotlinx.android.synthetic.main.item_font.view.*
 
 class FontsAdapter(
     val context: Context,
@@ -33,6 +33,7 @@ class FontsAdapter(
     inner class ViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_font, parent, false)) {
 
+        val binding = ItemFontBinding.bind(itemView)
         var font: Font? = null
 
         init {
@@ -40,21 +41,21 @@ class FontsAdapter(
                 font?.let { clickHandler.invoke(it) }
                 notifyDataSetChanged()
             }
-            itemView.check.setOnCheckedChangeListener { _, isChecked ->
+            binding.check.setOnCheckedChangeListener { _, isChecked ->
                 font?.visible = isChecked
             }
         }
 
         fun bind(font: Font) {
             this.font = font
-            itemView.textView.setText(font.titleRes)
+            binding.textView.setText(font.titleRes)
             if (font.id == viewModel.getTextFont()) {
-                itemView.textView.typeface = Typeface.defaultFromStyle(Typeface.BOLD)
+                binding.textView.typeface = Typeface.defaultFromStyle(Typeface.BOLD)
             } else {
-                itemView.textView.typeface = null
+                binding.textView.typeface = null
             }
-            itemView.check.isChecked = font.visible
-            itemView.tagsView.text = AppTextCache.getOrPut(font.uid, AppTextCache.TYPE_FONT) {
+            binding.check.isChecked = font.visible
+            binding.tagsView.text = AppTextCache.getOrPut(font.uid, AppTextCache.TYPE_FONT) {
                 SimpleSpanBuilder()
                         .also { span ->
                             font.languages.sortedBy { it.ordinal }.forEachIndexed { index, l ->

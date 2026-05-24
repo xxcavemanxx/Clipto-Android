@@ -1,5 +1,6 @@
 package clipto.presentation.main.list.blocks
 
+import com.wb.clipboard.databinding.BlockMainListFileDefaultBinding
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -10,7 +11,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.file.FileScreenHelper
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_main_list_file_default.view.*
 
 class FileItemDefaultBlock<V>(
     file: FileRef,
@@ -46,17 +46,18 @@ class FileItemDefaultBlock<V>(
                 && item.folderId == folderId
     }
 
-    override fun getTitleView(block: View): TextView = block.tvName
-    override fun getIconView(block: View): ImageView = block.ivIcon
-    override fun getIconTextView(block: View): TextView = block.tvIcon
-    override fun getAttrsView(block: View): TextView? = block.tvAttrs
-    override fun getProgressImageView(block: View): ImageView = block.ivProgress
-    override fun getProgressView(block: View): LinearProgressIndicator = block.lpProgress
-    override fun getBgView(block: View): View? = block.bgView
+    override fun getTitleView(block: View): TextView = BlockMainListFileDefaultBinding.bind(block).tvName
+    override fun getIconView(block: View): ImageView = BlockMainListFileDefaultBinding.bind(block).ivIcon
+    override fun getIconTextView(block: View): TextView = BlockMainListFileDefaultBinding.bind(block).tvIcon
+    override fun getAttrsView(block: View): TextView? = BlockMainListFileDefaultBinding.bind(block).tvAttrs
+    override fun getProgressImageView(block: View): ImageView = BlockMainListFileDefaultBinding.bind(block).ivProgress
+    override fun getProgressView(block: View): LinearProgressIndicator = BlockMainListFileDefaultBinding.bind(block).lpProgress
+    override fun getBgView(block: View): View? = BlockMainListFileDefaultBinding.bind(block).bgView
 
     override fun onBind(context: V, block: View) {
+        val binding = BlockMainListFileDefaultBinding.bind(block)
         super.onBind(context, block)
-        block.tvPath?.apply {
+        binding.tvPath?.apply {
             setVisibleOrGone(flatMode)
             if (flatMode) {
                 relativePathGetter?.invoke(folderId, file) { path ->

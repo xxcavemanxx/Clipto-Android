@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'com.github.triplet.play'
 apply plugin: 'io.objectbox'
@@ -35,11 +34,6 @@ dependencies {
     androidTestImplementation libpacks.android_instrumentation_testing
 }
 
-androidExtensions {
-    experimental = true
-    defaultCacheImplementation = "SPARSE_ARRAY" // also HASH_MAP, NONE
-}
-
 android {
     namespace 'com.wb.clipboard'
     compileSdkVersion project.androidCompileSdkVersion
@@ -71,7 +65,9 @@ android {
         execution 'ANDROIDX_TEST_ORCHESTRATOR'
     }
 
-
+    buildFeatures {
+        viewBinding = true
+    }
 
     dataBinding {
         enabled = true

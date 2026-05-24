@@ -1,12 +1,12 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockLabelBinding
 import android.view.View
 import clipto.extensions.getTextColorPrimary
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueStringWithHeader
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_label.view.*
 
 class LabelBlock<C>(
     private val titleRes: Int,
@@ -28,13 +28,14 @@ class LabelBlock<C>(
                 && description == item.description
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockLabelBinding.bind(block)
         val colorKey = block.context.getTextColorPrimary()
         val colorValue = block.context.getTextColorSecondary()
 
         when {
             description != null -> {
                 KeyValueStringWithHeader(
-                    block.titleView,
+                    binding.titleView,
                     colorKey,
                     colorValue,
                     titleRes,
@@ -44,7 +45,7 @@ class LabelBlock<C>(
             }
             descriptionRes != 0 -> {
                 KeyValueStringWithHeader(
-                    block.titleView,
+                    binding.titleView,
                     colorKey,
                     colorValue,
                     titleRes,
@@ -52,11 +53,11 @@ class LabelBlock<C>(
                 )
             }
             else -> {
-                block.titleView.setText(titleRes)
+                binding.titleView.setText(titleRes)
             }
         }
 
-        block.titleView.setCompoundDrawablesRelativeWithIntrinsicBounds(iconRes, 0, 0, 0)
+        binding.titleView.setCompoundDrawablesRelativeWithIntrinsicBounds(iconRes, 0, 0, 0)
         block.setOnClickListener(clickListener)
     }
 

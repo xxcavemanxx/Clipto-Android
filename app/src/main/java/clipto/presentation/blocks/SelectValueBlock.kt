@@ -1,12 +1,12 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSelectValueBinding
 import android.content.res.ColorStateList
 import android.view.View
 import clipto.common.extensions.*
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_select_value.view.*
 
 class SelectValueBlock<T, C>(
     private val model: T,
@@ -34,6 +34,7 @@ class SelectValueBlock<T, C>(
     }
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockSelectValueBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is SelectValueBlock<*, *>) {
@@ -43,15 +44,16 @@ class SelectValueBlock<T, C>(
     }
 
     override fun onBind(context: C, block: View) {
-        block.tvName.text = title
-        block.tvName.setBold(checked)
-        block.ivSelected.setVisibleOrGone(checked)
+        val binding = BlockSelectValueBinding.bind(block)
+        binding.tvName.text = title
+        binding.tvName.setBold(checked)
+        binding.ivSelected.setVisibleOrGone(checked)
         if (iconRes != null) {
-            block.ivIcon.imageTintList = ColorStateList.valueOf(iconColor ?: block.context.getTextColorSecondary())
-            block.ivIcon.setImageResource(iconRes)
-            block.ivIcon.visible()
+            binding.ivIcon.imageTintList = ColorStateList.valueOf(iconColor ?: block.context.getTextColorSecondary())
+            binding.ivIcon.setImageResource(iconRes)
+            binding.ivIcon.visible()
         } else {
-            block.ivIcon.gone()
+            binding.ivIcon.gone()
         }
         block.tag = this
     }

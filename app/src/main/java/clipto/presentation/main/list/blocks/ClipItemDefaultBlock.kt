@@ -1,5 +1,6 @@
 package clipto.presentation.main.list.blocks
 
+import com.wb.clipboard.databinding.BlockMainListClipDefaultBinding
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -9,7 +10,6 @@ import clipto.domain.SortBy
 import clipto.extensions.updateIcon
 import clipto.presentation.common.StyleHelper
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_main_list_clip_default.view.*
 
 class ClipItemDefaultBlock<V>(
     clip: Clip,
@@ -34,16 +34,17 @@ class ClipItemDefaultBlock<V>(
 ) {
 
     override val layoutRes: Int = R.layout.block_main_list_clip_default
-    override fun getAttachmentsView(block: View): TextView? = block.attachmentsView
-    override fun getPublicLinkView(block: View): ImageView? = block.publicLinkView
-    override fun getTextView(block: View): TextView? = block.middleTextView
-    override fun getCopyAction(block: View): ImageView? = block.actionView
-    override fun getTagsView(block: View): TextView? = block.tagsView
-    override fun getBgView(block: View): View? = block.bgView
+    override fun getAttachmentsView(block: View): TextView? = BlockMainListClipDefaultBinding.bind(block).attachmentsView
+    override fun getPublicLinkView(block: View): ImageView? = BlockMainListClipDefaultBinding.bind(block).publicLinkView
+    override fun getTextView(block: View): TextView? = BlockMainListClipDefaultBinding.bind(block).middleTextView
+    override fun getCopyAction(block: View): ImageView? = BlockMainListClipDefaultBinding.bind(block).actionView
+    override fun getTagsView(block: View): TextView? = BlockMainListClipDefaultBinding.bind(block).tagsView
+    override fun getBgView(block: View): View? = BlockMainListClipDefaultBinding.bind(block).bgView
 
     override fun doBind(block: View, listConfig: ListConfig) {
-        val attr1Key = block.attr1Key
-        val attr1Value = block.attr1Value
+        val binding = BlockMainListClipDefaultBinding.bind(block)
+        val attr1Key = binding.attr1Key
+        val attr1Value = binding.attr1Value
         when (listConfig.sortBy) {
             SortBy.USAGE_DATE_ASC,
             SortBy.USAGE_DATE_DESC -> {
@@ -91,8 +92,8 @@ class ClipItemDefaultBlock<V>(
 
     override fun updateAlpha(block: View, alpha: Float) {
         super.updateAlpha(block, alpha)
-        block.attr1Value.alpha = alpha
-        block.attr1Key.alpha = alpha
+        BlockMainListClipDefaultBinding.bind(block).attr1Value.alpha = alpha
+        BlockMainListClipDefaultBinding.bind(block).attr1Key.alpha = alpha
     }
 
 }

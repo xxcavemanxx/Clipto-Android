@@ -1,5 +1,6 @@
 package clipto.presentation.common.dialog.select.date
 
+import com.wb.clipboard.databinding.BlockDialogSelectDateBinding
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import clipto.common.extensions.setBold
@@ -7,7 +8,6 @@ import clipto.common.extensions.setDebounceClickListener
 import clipto.common.extensions.setVisibleOrGone
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dialog_select_date.view.*
 
 class OptionBlock(
     private val viewModel: SelectDateDialogViewModel,
@@ -31,6 +31,7 @@ class OptionBlock(
     }
 
     override fun onInit(fragment: SelectDateDialogFragment, block: View) {
+        val binding = BlockDialogSelectDateBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is OptionBlock) {
@@ -40,10 +41,11 @@ class OptionBlock(
     }
 
     override fun onBind(fragment: SelectDateDialogFragment, block: View) {
+        val binding = BlockDialogSelectDateBinding.bind(block)
         block.tag = this
-        block.tvName.text = option.title
-        block.tvName.setBold(option.checked)
-        block.ivSelected.setVisibleOrGone(option.checked)
+        binding.tvName.text = option.title
+        binding.tvName.setBold(option.checked)
+        binding.ivSelected.setVisibleOrGone(option.checked)
     }
 
     private fun onClicked() {

@@ -1,5 +1,6 @@
 package clipto.presentation.lockscreen
 
+import com.wb.clipboard.databinding.ViewPasscodeBinding
 import android.content.Context
 import android.os.Bundle
 import android.os.Parcelable
@@ -12,7 +13,6 @@ import com.wb.clipboard.BuildConfig
 import com.wb.clipboard.R
 import clipto.common.extensions.hapticKey
 import clipto.common.extensions.setVisibleOrGone
-import kotlinx.android.synthetic.main.view_passcode.view.*
 
 class PassKeyboardView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
@@ -21,8 +21,11 @@ class PassKeyboardView @JvmOverloads constructor(
     private var input: String = ""
     private val maxLength = BuildConfig.pinCodeLength
 
+    private lateinit var binding: ViewPasscodeBinding
+
     init {
         inflate(context, R.layout.view_passcode, this)
+        binding = ViewPasscodeBinding.bind(this)
         setDeleteButtonAppearance()
     }
 
@@ -35,7 +38,7 @@ class PassKeyboardView @JvmOverloads constructor(
     var buttonTouchIdVisible: Boolean = false
         set(value) {
             field = value
-            btnTouchId.setVisibleOrGone(value)
+            binding.btnTouchId.setVisibleOrGone(value)
             setDeleteButtonAppearance()
         }
 
@@ -45,17 +48,17 @@ class PassKeyboardView @JvmOverloads constructor(
 
     private val numberClickListener = OnClickListener { v ->
         when (v) {
-            btn0 -> addNumber(0)
-            btn1 -> addNumber(1)
-            btn2 -> addNumber(2)
-            btn3 -> addNumber(3)
-            btn4 -> addNumber(4)
-            btn5 -> addNumber(5)
-            btn6 -> addNumber(6)
-            btn7 -> addNumber(7)
-            btn8 -> addNumber(8)
-            btn9 -> addNumber(9)
-            btnDelete -> deleteLast()
+            binding.btn0 -> addNumber(0)
+            binding.btn1 -> addNumber(1)
+            binding.btn2 -> addNumber(2)
+            binding.btn3 -> addNumber(3)
+            binding.btn4 -> addNumber(4)
+            binding.btn5 -> addNumber(5)
+            binding.btn6 -> addNumber(6)
+            binding.btn7 -> addNumber(7)
+            binding.btn8 -> addNumber(8)
+            binding.btn9 -> addNumber(9)
+            binding.btnDelete -> deleteLast()
         }
         updateInputListener()
         setDeleteButtonAppearance()
@@ -69,22 +72,22 @@ class PassKeyboardView @JvmOverloads constructor(
 
     private val actionClickListener = OnClickListener { v ->
         when (v) {
-            btnTouchId -> keyboardListener?.onTouchIdClick()
+            binding.btnTouchId -> keyboardListener?.onTouchIdClick()
         }
     }
 
     private fun setClickListeners() {
-        arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDelete)
+        arrayOf(binding.btn0, binding.btn1, binding.btn2, binding.btn3, binding.btn4, binding.btn5, binding.btn6, binding.btn7, binding.btn8, binding.btn9, binding.btn0, binding.btnDelete)
                 .forEach { it.setOnClickListener(numberClickListener) }
 
-        arrayOf(btnTouchId)
+        arrayOf(binding.btnTouchId)
                 .forEach { it.setOnClickListener(actionClickListener) }
     }
 
     private fun setDeleteButtonAppearance() {
         val showDelete = !buttonTouchIdVisible
-        TransitionManager.beginDelayedTransition(clParent, Fade().setDuration(250).addTarget(btnDelete))
-        btnDelete.setVisibleOrGone(showDelete && input.isNotEmpty())
+        TransitionManager.beginDelayedTransition(binding.clParent, Fade().setDuration(250).addTarget(binding.btnDelete))
+        binding.btnDelete.setVisibleOrGone(showDelete && input.isNotEmpty())
     }
 
     private fun addNumber(char: Int) {

@@ -1,12 +1,12 @@
 package clipto.dynamic.presentation.field.blocks
 
+import com.wb.clipboard.databinding.BlockDynamicFieldHeaderEditBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.setDebounceClickListener
 import clipto.dynamic.presentation.field.DynamicFieldViewModel
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dynamic_field_header_edit.view.*
 
 class HeaderEditBlock(
         val titleRes: Int,
@@ -21,12 +21,14 @@ class HeaderEditBlock(
     }
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.ivDelete.setDebounceClickListener { viewModel.onDelete() }
-        block.ivCopy.setDebounceClickListener { viewModel.onCopy() }
+        val binding = BlockDynamicFieldHeaderEditBinding.bind(block)
+        binding.ivDelete.setDebounceClickListener { viewModel.onDelete() }
+        binding.ivCopy.setDebounceClickListener { viewModel.onCopy() }
     }
 
     override fun onBind(fragment: Fragment, block: View) {
-        block.tvName.setText(titleRes)
+        val binding = BlockDynamicFieldHeaderEditBinding.bind(block)
+        binding.tvName.setText(titleRes)
     }
 
 }

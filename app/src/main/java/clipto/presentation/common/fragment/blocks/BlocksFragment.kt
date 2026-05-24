@@ -1,5 +1,8 @@
 package clipto.presentation.common.fragment.blocks
 
+import android.view.View
+import android.os.Bundle
+import com.wb.clipboard.databinding.FragmentBlocksBinding
 import androidx.annotation.CallSuper
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -9,10 +12,17 @@ import clipto.common.presentation.mvvm.base.FragmentBackButtonListener
 import clipto.presentation.common.dialog.confirm.ConfirmDialogData
 import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.fragment_blocks.*
 
 abstract class BlocksFragment<VM : BlocksViewModel> : MvvmFragment<VM>(),
     FragmentBackButtonListener {
+
+    private var _binding: FragmentBlocksBinding? = null
+    val binding get() = _binding!!
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentBlocksBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     override val layoutResId: Int = R.layout.fragment_blocks
 
@@ -41,15 +51,15 @@ abstract class BlocksFragment<VM : BlocksViewModel> : MvvmFragment<VM>(),
 
     @CallSuper
     override fun bind(viewModel: VM) {
-        toolbar.title = getTitle()
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
-        toolbar.setNavigationOnClickListener {
+        binding.toolbar.title = getTitle()
+        binding.toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
+        binding.toolbar.setNavigationOnClickListener {
             activity?.currentFocus.hideKeyboard()
             onFragmentBackPressed()
         }
-        rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         val blocksAdapter = BlockListAdapter<Fragment>(this)
-        rvBlocks.adapter = blocksAdapter
+        binding.rvBlocks.adapter = blocksAdapter
 
 
         viewModel.dismissLive.observe(viewLifecycleOwner) {
@@ -59,11 +69,16 @@ abstract class BlocksFragment<VM : BlocksViewModel> : MvvmFragment<VM>(),
         viewModel.getBlocksLive().observe(viewLifecycleOwner) { data ->
             blocksAdapter.submitList(data.blocks) {
                 if (data.scrollToTop) {
-                    rvBlocks.scrollToPosition(0)
+                    binding.rvBlocks.scrollToPosition(0)
                 }
             }
         }
     }
 
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

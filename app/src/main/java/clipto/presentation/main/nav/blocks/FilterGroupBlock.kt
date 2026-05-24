@@ -1,5 +1,6 @@
 package clipto.presentation.main.nav.blocks
 
+import com.wb.clipboard.databinding.BlockFilterGroupBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.setDebounceClickListener
@@ -11,7 +12,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.main.nav.MainNavFragment
 import clipto.presentation.main.nav.MainNavViewModel
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_filter_group.view.*
 
 class FilterGroupBlock(
     val viewModel: MainNavViewModel,
@@ -44,6 +44,7 @@ class FilterGroupBlock(
     }
 
     override fun onInit(context: MainNavFragment, block: View) {
+        val binding = BlockFilterGroupBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is FilterGroupBlock) {
@@ -51,13 +52,13 @@ class FilterGroupBlock(
             }
         }
         block.setOnLongClickListener(this)
-        block.actionView.setDebounceClickListener {
+        binding.actionView.setDebounceClickListener {
             val ref = block.tag
             if (ref is FilterGroupBlock) {
                 ref.onActionClick.invoke(context)
             }
         }
-        block.ivMore.setDebounceClickListener {
+        binding.ivMore.setDebounceClickListener {
             val ref = block.tag
             if (ref is FilterGroupBlock) {
                 viewModel.onOpenFilter(ref.filter)
@@ -66,13 +67,14 @@ class FilterGroupBlock(
     }
 
     override fun onBind(context: MainNavFragment, block: View) {
+        val binding = BlockFilterGroupBinding.bind(block)
         val name = filter.getTitle(block.context)
         if (notesCount > 0) {
-            block.nameView.text = StyleHelper.getFilterLabel(block.context, name, notesCount.toLong(), limit)
+            binding.nameView.text = StyleHelper.getFilterLabel(block.context, name, notesCount.toLong(), limit)
         } else {
-            block.nameView.text = name
+            binding.nameView.text = name
         }
-        block.iconView.setImageResource(getIconRes())
+        binding.iconView.setImageResource(getIconRes())
         block.tag = this
     }
 

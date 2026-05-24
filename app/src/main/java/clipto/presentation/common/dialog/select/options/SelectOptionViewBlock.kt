@@ -1,5 +1,6 @@
 package clipto.presentation.common.dialog.select.options
 
+import com.wb.clipboard.databinding.BlockDialogSelectOptionViewBinding
 import android.annotation.SuppressLint
 import android.text.style.ForegroundColorSpan
 import android.text.style.RelativeSizeSpan
@@ -14,7 +15,6 @@ import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.recyclerview.BlockItemViewHolder
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dialog_select_option_view.view.*
 
 @SuppressLint("ClickableViewAccessibility")
 class SelectOptionViewBlock(
@@ -44,19 +44,20 @@ class SelectOptionViewBlock(
 
     override fun onInit(context: SelectOptionsDialogFragment, holder: BlockItemViewHolder<SelectOptionsDialogFragment, *>) {
         val block = holder.itemView
-        block.ivDrag.setOnTouchListener { v, event ->
+        val binding = BlockDialogSelectOptionViewBinding.bind(block)
+        binding.ivDrag.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 context.touchHelper.startDrag(holder)
             }
             false
         }
-        block.vAction.setDebounceClickListener {
+        binding.vAction.setDebounceClickListener {
             val ref = block.tag
             if (ref is SelectOptionViewBlock) {
                 viewModel.onEditOption(ref.data, ref.option, ref.live)
             }
         }
-        block.ivDelete.setDebounceClickListener {
+        binding.ivDelete.setDebounceClickListener {
             val ref = block.tag
             if (ref is SelectOptionViewBlock) {
                 viewModel.onDeleteOption(ref.data, ref.option, ref.live)
@@ -65,15 +66,16 @@ class SelectOptionViewBlock(
     }
 
     override fun onBind(context: SelectOptionsDialogFragment, block: View) {
+        val binding = BlockDialogSelectOptionViewBinding.bind(block)
         val ctx = block.context
         val colorValue = block.context.getTextColorSecondary()
         val colorKey = if (enabled) block.context.getTextColorPrimary() else colorValue
         block.tag = null
         block.isClickable = enabled
-        block.vAction.isClickable = enabled
-        block.ivDelete.setVisibleOrGone(enabled)
-        block.ivDrag.setVisibleOrGone(enabled)
-        block.tvText.text =
+        binding.vAction.isClickable = enabled
+        binding.ivDelete.setVisibleOrGone(enabled)
+        binding.ivDrag.setVisibleOrGone(enabled)
+        binding.tvText.text =
                 when {
                     title != null && value != null -> {
                         SimpleSpanBuilder()

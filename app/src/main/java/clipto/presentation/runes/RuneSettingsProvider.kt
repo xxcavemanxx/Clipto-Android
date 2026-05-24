@@ -1,5 +1,6 @@
 package clipto.presentation.runes
 
+import com.wb.clipboard.databinding.FragmentRuneSettingsBinding
 import android.app.Application
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -15,7 +16,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.store.app.AppState
 import clipto.store.main.MainState
 import clipto.store.user.UserState
-import kotlinx.android.synthetic.main.fragment_rune_settings.*
 import javax.inject.Inject
 
 abstract class RuneSettingsProvider(
@@ -86,8 +86,8 @@ abstract class RuneSettingsProvider(
     open fun bind(fragment: RuneSettingsFragment) {
         val ctx = fragment.requireContext()
         val settingsAdapter = BlockListAdapter<Fragment>(fragment)
-        fragment.rvBlocks.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.VERTICAL, false)
-        fragment.rvBlocks.adapter = settingsAdapter
+        fragment.binding.rvBlocks.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.VERTICAL, false)
+        fragment.binding.rvBlocks.adapter = settingsAdapter
         appState.settings.getLiveData().observe(fragment) {
             val items = createSettings(fragment).toMutableList()
             items.addAll(

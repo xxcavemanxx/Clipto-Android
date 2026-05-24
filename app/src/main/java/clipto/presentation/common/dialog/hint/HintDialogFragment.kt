@@ -1,5 +1,6 @@
 package clipto.presentation.common.dialog.hint
 
+import com.wb.clipboard.databinding.DialogHintBinding
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
@@ -13,37 +14,40 @@ import clipto.common.presentation.mvvm.base.BaseDialogFragment
 import clipto.extensions.TextTypeExt
 import clipto.extensions.getTextColorPrimary
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.dialog_hint.*
 
 class HintDialogFragment : BaseDialogFragment() {
 
-    override var withNoTitle: Boolean = true
+    
+    private var _binding: DialogHintBinding? = null
+    private val binding get() = _binding!!
+override var withNoTitle: Boolean = true
     override val layoutResId: Int = R.layout.dialog_hint
-    override var withSizeLimits: SizeLimits? = SizeLimits(widthMultiplier = 0.85f, onSizeChanged = { scrollView?.requestLayout() })
+    override var withSizeLimits: SizeLimits? = SizeLimits(widthMultiplier = 0.85f, onSizeChanged = { binding.scrollView?.requestLayout() })
 
     private val dialogData by lazy { arguments?.getSerializable(ATTR_DATA) as HintDialogData? }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = DialogHintBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
         val data = dialogData
         if (data == null) {
             dismissAllowingStateLoss()
             return
         }
-        titleView.text = data.title
+        binding.titleView.text = data.title
         if (data.withDefaultIconColor) {
-            iconView.imageTintList = ColorStateList.valueOf(requireContext().getTextColorPrimary())
+            binding.iconView.imageTintList = ColorStateList.valueOf(requireContext().getTextColorPrimary())
         }
-        iconView.setImageResource(data.iconRes)
+        binding.iconView.setImageResource(data.iconRes)
         if (data.descriptionIsMarkdown) {
-            TextTypeExt.MARKDOWN.apply(descriptionView, data.description, skipDynamicFieldsRendering = true)
+            TextTypeExt.MARKDOWN.apply(binding.descriptionView, data.description, skipDynamicFieldsRendering = true)
         } else {
-            descriptionView.text = data.description.trimSpaces()
+            binding.descriptionView.text = data.description.trimSpaces()
         }
-        descriptionView.setDebounceClickListener { AppContext.get().onCopy(data.description) }
-        okAction.setOnClickListener { dismissAllowingStateLoss() }
-        okAction.setText(data.actionRes)
-        iconView.animateScale(true)
+        binding.descriptionView.setDebounceClickListener { AppContext.get().onCopy(data.description) }
+        binding.okAction.setOnClickListener { dismissAllowingStateLoss() }
+        binding.okAction.setText(data.actionRes)
+        binding.iconView.animateScale(true)
     }
 
     companion object {
@@ -67,4 +71,9 @@ class HintDialogFragment : BaseDialogFragment() {
 
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

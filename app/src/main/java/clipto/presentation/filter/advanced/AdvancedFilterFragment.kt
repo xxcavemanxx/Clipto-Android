@@ -1,5 +1,8 @@
 package clipto.presentation.filter.advanced
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentFilterAdvancedBinding
 import android.text.style.ForegroundColorSpan
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,12 +16,19 @@ import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_filter_advanced.*
 
 @AndroidEntryPoint
 class AdvancedFilterFragment : MvvmFragment<AdvancedFilterViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_filter_advanced
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentFilterAdvancedBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentFilterAdvancedBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_filter_advanced
     override val viewModel: AdvancedFilterViewModel by viewModels()
 
     private val titleRes by lazy { arguments?.getInt(ATTR_TITLE, R.string.filter_toolbar_title) ?: R.string.filter_toolbar_title }
@@ -28,8 +38,8 @@ class AdvancedFilterFragment : MvvmFragment<AdvancedFilterViewModel>() {
         val title = ctx.getString(titleRes)
 
         // NAVIGATION
-        ivBack.setDebounceClickListener { navigateUp() }
-        ivClear.setDebounceClickListener {
+        binding.ivBack.setDebounceClickListener { navigateUp() }
+        binding.ivClear.setDebounceClickListener {
             viewModel.onClearFilter()
             navigateUp()
         }
@@ -38,7 +48,7 @@ class AdvancedFilterFragment : MvvmFragment<AdvancedFilterViewModel>() {
         viewModel.counterLive.observe(viewLifecycleOwner) {
             val counter = it.getFilteredNotesCount().toString().inBrackets()
             val color = if (it.hasActiveFilter()) ctx.getActionIconColorHighlight() else ctx.getTextColorSecondary()
-            tvTitle?.text = SimpleSpanBuilder()
+            binding.tvTitle?.text = SimpleSpanBuilder()
                 .append(title)
                 .append(" ")
                 .append(counter, ForegroundColorSpan(color))
@@ -47,16 +57,16 @@ class AdvancedFilterFragment : MvvmFragment<AdvancedFilterViewModel>() {
 
         // BLOCKS
         val blocksAdapter = BlockListAdapter(this)
-        rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        rvBlocks.adapter = blocksAdapter
+        binding.rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.rvBlocks.adapter = blocksAdapter
         viewModel.blocksLive.observe(viewLifecycleOwner) {
             blocksAdapter.submitList(it)
         }
 
         // SAVE AS
-        fabSaveAs.setDebounceClickListener { viewModel.onSaveAs() }
+        binding.fabSaveAs.setDebounceClickListener { viewModel.onSaveAs() }
         viewModel.saveAsLive.observe(viewLifecycleOwner) {
-            fabSaveAs?.animateScale(it)
+            binding.fabSaveAs?.animateScale(it)
         }
     }
 
@@ -64,4 +74,9 @@ class AdvancedFilterFragment : MvvmFragment<AdvancedFilterViewModel>() {
         const val ATTR_TITLE = "attr_title"
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

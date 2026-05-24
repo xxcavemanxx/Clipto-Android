@@ -1,5 +1,8 @@
 package clipto.presentation.plan
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentSelectPlanBinding
 import android.animation.LayoutTransition
 import androidx.fragment.app.activityViewModels
 import clipto.analytics.Analytics
@@ -11,31 +14,38 @@ import clipto.common.presentation.text.SimpleSpanBuilder
 import com.wb.clipboard.BuildConfig
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_select_plan.*
 
 @AndroidEntryPoint
 class SelectPlanFragment : MvvmFragment<SelectPlanViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_select_plan
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentSelectPlanBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentSelectPlanBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_select_plan
     override val viewModel: SelectPlanViewModel by activityViewModels()
 
     override fun bind(viewModel: SelectPlanViewModel) {
-        withDefaults(toolbar, R.string.account_sync_plan_toolbar)
+        withDefaults(binding.toolbar, R.string.account_sync_plan_toolbar)
 
         // policy
-        privacyPolicy.setOnClickListener {
+        binding.privacyPolicy.setOnClickListener {
             Analytics.onPrivacyPolicy()
             IntentUtils.open(requireContext(), BuildConfig.privacyPolicyUrl)
         }
 
         // terms
-        termsOfService.setOnClickListener {
+        binding.termsOfService.setOnClickListener {
             Analytics.onTermsOfService()
             IntentUtils.open(requireContext(), BuildConfig.tosUrl)
         }
 
         // plans
-        planView?.layoutTransition?.enableTransitionType(LayoutTransition.CHANGING)
+        binding.planView?.layoutTransition?.enableTransitionType(LayoutTransition.CHANGING)
 
         viewModel.availablePlansLiveData.observe(viewLifecycleOwner) { plans ->
             // warning
@@ -43,31 +53,31 @@ class SelectPlanFragment : MvvmFragment<SelectPlanViewModel>() {
             if (showWarning) {
                 val current = viewModel.getSyncedNotesCount()
                 val allowed = viewModel.getSyncLimit()
-                warningSubTitle?.text = viewModel.string(R.string.account_sync_plan_warning_limit_reached_sub_title, current, allowed)
+                binding.warningSubTitle?.text = viewModel.string(R.string.account_sync_plan_warning_limit_reached_sub_title, current, allowed)
             }
-            warningTitle?.setVisibleOrGone(showWarning)
-            warningSubTitle?.setVisibleOrGone(showWarning)
-            warningDescription?.setVisibleOrGone(showWarning)
+            binding.warningTitle?.setVisibleOrGone(showWarning)
+            binding.warningSubTitle?.setVisibleOrGone(showWarning)
+            binding.warningDescription?.setVisibleOrGone(showWarning)
 
             // contributor info
-            contributorLabel?.setVisibleOrGone(viewModel.isContributorProgramEnabled())
+            binding.contributorLabel?.setVisibleOrGone(viewModel.isContributorProgramEnabled())
 
             // plans
             if (plans.size > 1) {
-                planChooserSeekBar?.valueTo = (plans.size - 1).toFloat()
+                binding.planChooserSeekBar?.valueTo = (plans.size - 1).toFloat()
             }
-            planChooserSeekBar?.addOnChangeListener { _, value, _ ->
+            binding.planChooserSeekBar?.addOnChangeListener { _, value, _ ->
                 viewModel.onChangeLimit(value.toInt(), plans)
             }
 
             viewModel.selectedPlanLiveData.removeObservers(viewLifecycleOwner)
             viewModel.selectedPlanLiveData.observe(viewLifecycleOwner) { plan ->
                 // progress
-                planChooserTitleView?.text = viewModel.string(R.string.account_sync_plan_hint, plan.totalLimit)
-                runCatching { plans.indexOf(plan).takeIf { it >= 0 }?.let { planChooserSeekBar?.value = it.toFloat() } }
+                binding.planChooserTitleView?.text = viewModel.string(R.string.account_sync_plan_hint, plan.totalLimit)
+                runCatching { plans.indexOf(plan).takeIf { it >= 0 }?.let { binding.planChooserSeekBar?.value = it.toFloat() } }
 
                 // benefits
-                planTitleView?.text = SimpleSpanBuilder()
+                binding.planTitleView?.text = SimpleSpanBuilder()
                     .append(viewModel.string(R.string.account_sync_plan_benefit_offline))
                     .append("\n")
                     .append(viewModel.string(R.string.account_sync_plan_benefit_sync, plan.limitTitle))
@@ -75,7 +85,7 @@ class SelectPlanFragment : MvvmFragment<SelectPlanViewModel>() {
 
                 // price
                 if (plan.skuDetails == null) {
-                    planPriceView?.text = plan.debugTitle
+                    binding.planPriceView?.text = plan.debugTitle
                         ?: viewModel.string(R.string.account_sync_plan_free)
                 } else {
                     val sku = plan.skuDetails
@@ -83,33 +93,33 @@ class SelectPlanFragment : MvvmFragment<SelectPlanViewModel>() {
                         "P1M" -> viewModel.string(R.string.contribute_monthly_period)
                         else -> viewModel.string(R.string.contribute_annual_period)
                     }
-                    planPriceView?.text = viewModel.string(R.string.account_sync_plan_price, sku.price, period)
+                    binding.planPriceView?.text = viewModel.string(R.string.account_sync_plan_price, sku.price, period)
                 }
 
                 // warning
                 when {
                     plan.skuDetails == null -> {
-                        cancelPlanCaption?.setVisibleOrGone(false)
+                        binding.cancelPlanCaption?.setVisibleOrGone(false)
                     }
                     plan.canBeSelected -> {
-                        cancelPlanCaption?.setVisibleOrGone(true)
+                        binding.cancelPlanCaption?.setVisibleOrGone(true)
                     }
                     else -> {
-                        cancelPlanCaption?.setVisibleOrGone(false)
+                        binding.cancelPlanCaption?.setVisibleOrGone(false)
                     }
                 }
-                warningCaption?.text = plan.warning
+                binding.warningCaption?.text = plan.warning
 
                 // action
                 if (plan.isActive) {
-                    selectPlanButton?.setText(R.string.account_sync_plan_button_active)
-                    selectPlanButton?.isEnabled = false
-                    selectPlanButton?.alpha = 0.5f
+                    binding.selectPlanButton?.setText(R.string.account_sync_plan_button_active)
+                    binding.selectPlanButton?.isEnabled = false
+                    binding.selectPlanButton?.alpha = 0.5f
                 } else {
-                    selectPlanButton?.setText(R.string.account_sync_plan_button_select)
-                    selectPlanButton?.isEnabled = plan.canBeSelected
-                    selectPlanButton?.alpha = if (plan.canBeSelected) 1f else 0.5f
-                    selectPlanButton?.setDebounceClickListener {
+                    binding.selectPlanButton?.setText(R.string.account_sync_plan_button_select)
+                    binding.selectPlanButton?.isEnabled = plan.canBeSelected
+                    binding.selectPlanButton?.alpha = if (plan.canBeSelected) 1f else 0.5f
+                    binding.selectPlanButton?.setDebounceClickListener {
                         activity?.let { act ->
                             viewModel.onSelectPlan(act, plan, plans)
                         }
@@ -122,4 +132,9 @@ class SelectPlanFragment : MvvmFragment<SelectPlanViewModel>() {
         Analytics.screenSelectPlan()
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

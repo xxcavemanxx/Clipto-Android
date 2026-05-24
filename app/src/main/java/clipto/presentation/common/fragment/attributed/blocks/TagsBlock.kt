@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed.blocks
 
+import com.wb.clipboard.databinding.BlockAttributedObjectTagsBinding
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
@@ -15,7 +16,6 @@ import clipto.presentation.common.view.DoubleClickListenerWrapper
 import clipto.store.filter.FilterDetailsState
 import com.google.android.material.chip.Chip
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attributed_object_tags.view.*
 
 class TagsBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
     private val screenState: S,
@@ -65,8 +65,9 @@ class TagsBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
     }
 
     override fun onInit(fragment: Fragment, block: View) {
-        val tagsGroup = block.cgTags
-        block.vMode.setOnClickListener(
+        val binding = BlockAttributedObjectTagsBinding.bind(block)
+        val tagsGroup = binding.cgTags
+        binding.vMode.setOnClickListener(
             DoubleClickListenerWrapper(block.context,
                 { getScreenState(block).acceptDoubleClick() },
                 {
@@ -83,16 +84,17 @@ class TagsBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
 
         block.doOnFirstLayout {
             val width = block.width
-            block.vMode.takeIf { width > 0 && it.minimumWidth != width }?.minimumWidth = width
+            binding.vMode.takeIf { width > 0 && it.minimumWidth != width }?.minimumWidth = width
         }
     }
 
     override fun onBind(fragment: Fragment, block: View) {
-        val tagsGroup = block.cgTags
+        val binding = BlockAttributedObjectTagsBinding.bind(block)
+        val tagsGroup = binding.cgTags
         tagsGroup.tag = this
         block.tag = this
         val editMode = screenState.isEditMode()
-        block.vMode.setVisibleOrGone(!editMode)
+        binding.vMode.setVisibleOrGone(!editMode)
         screenState.value.getTags(noExcluded = true).let { tags ->
             val unusedCount = tagsGroup.childCount - tags.size - 1
             if (unusedCount > 0) tagsGroup.removeViewsInLayout(0, unusedCount)

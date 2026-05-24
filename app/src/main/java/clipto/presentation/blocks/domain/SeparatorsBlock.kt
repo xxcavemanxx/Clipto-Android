@@ -1,5 +1,6 @@
 package clipto.presentation.blocks.domain
 
+import com.wb.clipboard.databinding.BlockSeparatorsBinding
 import android.view.View
 import androidx.core.view.children
 import androidx.core.widget.doAfterTextChanged
@@ -9,7 +10,6 @@ import clipto.domain.ClientSession
 import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.chip.Chip
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_separators.view.*
 
 class SeparatorsBlock<C>(
     val textSeparator: String,
@@ -22,6 +22,7 @@ class SeparatorsBlock<C>(
         item is SeparatorsBlock && textSeparator == item.textSeparator
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockSeparatorsBinding.bind(block)
         val ctx = block.context
 
         val separators = mutableListOf<Separator>()
@@ -49,31 +50,32 @@ class SeparatorsBlock<C>(
             chip.text = separator.title
             chip.tag = separator
             chip.setOnClickListener {
-                block.etCustom.hideKeyboard()
+                binding.etCustom.hideKeyboard()
                 getRef(block)?.onChanged?.invoke(separator.value)
-                block.etCustom.clearFocus()
+                binding.etCustom.clearFocus()
                 updateState(chip, true)
             }
             updateState(chip, separator.value == textSeparator)
-            block.separatorView.addView(chip)
+            binding.separatorView.addView(chip)
         }
-        block.etCustom.doAfterTextChanged {
-            if (it === block.etCustom.text) {
+        binding.etCustom.doAfterTextChanged {
+            if (it === binding.etCustom.text) {
                 getRef(block)?.onChanged?.invoke(it?.toString().notNull())
             }
         }
-        block.etCustom.setOnFocusChangeListener { _, hasFocus ->
+        binding.etCustom.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
-                getRef(block)?.onChanged?.invoke(block.etCustom.text?.toString().notNull())
-                block.separatorView.clearCheck()
+                getRef(block)?.onChanged?.invoke(binding.etCustom.text?.toString().notNull())
+                binding.separatorView.clearCheck()
             }
         }
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockSeparatorsBinding.bind(block)
         if (block.tag != null) return
         var standard = false
-        block.separatorView
+        binding.separatorView
             .children
             .filter { it is Chip }
             .map { it as Chip }
@@ -84,7 +86,7 @@ class SeparatorsBlock<C>(
                 updateState(chip, isChecked)
             }
         if (!standard) {
-            block.etCustom.setText(textSeparator)
+            binding.etCustom.setText(textSeparator)
         }
         block.tag = this
     }

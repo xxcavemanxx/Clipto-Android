@@ -1,5 +1,6 @@
 package clipto.presentation.common.view
 
+import com.wb.clipboard.databinding.ViewRuneIconBinding
 import android.content.Context
 import android.content.res.ColorStateList
 import android.util.AttributeSet
@@ -12,36 +13,38 @@ import clipto.extensions.log
 import clipto.presentation.runes.extensions.getBgColor
 import clipto.presentation.runes.extensions.getIconColor
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.view_rune_icon.view.*
 
 class RuneIconView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
+    private lateinit var binding: ViewRuneIconBinding
+
     init {
         inflate(context, R.layout.view_rune_icon, this)
+        binding = ViewRuneIconBinding.bind(this)
     }
 
     fun withRune(rune: IRune, active: Boolean): RuneIconView {
         log("setRune :: {} -> {}", rune.getId(), active)
-        iconView.imageTintList = ColorStateList.valueOf(rune.getIconColor(context, active))
-        iconView.setImageResource(rune.getIcon())
-        iconView.refreshDrawableState()
+        binding.iconView.imageTintList = ColorStateList.valueOf(rune.getIconColor(context, active))
+        binding.iconView.setImageResource(rune.getIcon())
+        binding.iconView.refreshDrawableState()
 
-        bgView.imageTintList = ColorStateList.valueOf(rune.getBgColor(context, active))
-        bgView.refreshDrawableState()
+        binding.bgView.imageTintList = ColorStateList.valueOf(rune.getBgColor(context, active))
+        binding.bgView.refreshDrawableState()
         return this
     }
 
     fun withRoundedCorners(): RuneIconView {
-        bgView.setImageResource(R.drawable.bg_rune_item)
+        binding.bgView.setImageResource(R.drawable.bg_rune_item)
         val margin = Units.DP.toPx(10f).toInt()
-        iconView.updateMargin(margin, margin, margin, margin)
+        binding.iconView.updateMargin(margin, margin, margin, margin)
         return this
     }
 
     fun withHighlightIndicator(): RuneIconView {
-        highlightView.visible()
+        binding.highlightView.visible()
         return this
     }
 

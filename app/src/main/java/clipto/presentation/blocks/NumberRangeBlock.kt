@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockNumberRangeBinding
 import android.view.View
 import androidx.core.widget.doAfterTextChanged
 import clipto.common.extensions.setTextWithSelection
@@ -8,7 +9,6 @@ import clipto.extensions.getTextColorSecondary
 import clipto.extensions.log
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_number_range.view.*
 
 class NumberRangeBlock<C>(
     private val minValue: Int? = null,
@@ -27,67 +27,70 @@ class NumberRangeBlock<C>(
     }
 
     override fun onInit(context: C, block: View) {
-        block.etMin.doAfterTextChanged { doOnRangeChanged(block, block.etMin) }
-        block.etMax.doAfterTextChanged { doOnRangeChanged(block, block.etMax) }
+        val binding = BlockNumberRangeBinding.bind(block)
+        binding.etMin.doAfterTextChanged { doOnRangeChanged(block, binding.etMin) }
+        binding.etMax.doAfterTextChanged { doOnRangeChanged(block, binding.etMax) }
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockNumberRangeBinding.bind(block)
         block.tag = null
         val ctx = block.context
 
-        block.tilMin.isEnabled = enabled
-        block.tilMax.isEnabled = enabled
-        block.etMin.isEnabled = enabled
-        block.etMax.isEnabled = enabled
+        binding.tilMin.isEnabled = enabled
+        binding.tilMax.isEnabled = enabled
+        binding.etMin.isEnabled = enabled
+        binding.etMax.isEnabled = enabled
         val textColor =
             if (enabled) {
                 ctx.getTextColorPrimary()
             } else {
                 ctx.getTextColorSecondary()
             }
-        block.etMin.setTextColor(textColor)
-        block.etMax.setTextColor(textColor)
+        binding.etMin.setTextColor(textColor)
+        binding.etMax.setTextColor(textColor)
 
         val minValueText = minValue?.toString()
-        if (minValueText != block.etMin.text?.toString()) {
-            block.etMin.setTextWithSelection(minValueText)
+        if (minValueText != binding.etMin.text?.toString()) {
+            binding.etMin.setTextWithSelection(minValueText)
         }
 
         val maxValueText = maxValue?.toString()
-        if (maxValueText != block.etMax.text?.toString()) {
-            block.etMax.setTextWithSelection(maxValueText)
+        if (maxValueText != binding.etMax.text?.toString()) {
+            binding.etMax.setTextWithSelection(maxValueText)
         }
 
         block.tag = this
     }
 
     private fun doOnRangeChanged(block: View, field: View) {
+        val binding = BlockNumberRangeBinding.bind(block)
         val ref = block.tag
         if (ref is NumberRangeBlock<*>) {
-            val min = block.etMin.text?.toString()?.toIntOrNull()
-            val max = block.etMax.text?.toString()?.toIntOrNull()
+            val min = binding.etMin.text?.toString()?.toIntOrNull()
+            val max = binding.etMax.text?.toString()?.toIntOrNull()
             if (min != null && max != null && min >= max) {
                 log("doOnRangeChanged :: reversed :: {} - {}", min, max)
-                if (block.etMin === field) {
-                    block.tilMax.error = null
+                if (binding.etMin === field) {
+                    binding.tilMax.error = null
                     if (min == max) {
-                        block.tilMin.error = "$min = $max"
+                        binding.tilMin.error = "$min = $max"
                     } else {
-                        block.tilMin.error = "$min > $max"
+                        binding.tilMin.error = "$min > $max"
                     }
                 } else {
-                    block.tilMin.error = null
+                    binding.tilMin.error = null
                     if (min == max) {
-                        block.tilMax.error = "$max = $min"
+                        binding.tilMax.error = "$max = $min"
                     } else {
-                        block.tilMax.error = "$max < $min"
+                        binding.tilMax.error = "$max < $min"
                     }
                 }
             } else {
                 log("doOnRangeChanged :: {} - {}", min, max)
                 ref.onRangeChanged(min, max)
-                block.tilMin.error = null
-                block.tilMax.error = null
+                binding.tilMin.error = null
+                binding.tilMax.error = null
             }
         }
     }

@@ -1,11 +1,11 @@
 package clipto.presentation.blocks.domain
 
+import com.wb.clipboard.databinding.BlockAccountInfoBinding
 import android.view.View
 import clipto.common.extensions.load
 import clipto.common.extensions.setVisibleOrGone
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_account_info.view.*
 
 class AccountInfoBlock<C>(
     private val photoUrl: String?,
@@ -25,13 +25,14 @@ class AccountInfoBlock<C>(
                 && showUpgradeButton == item.showUpgradeButton
 
     override fun onBind(context: C, block: View) {
-        photoUrl?.let { block.icon?.load(it) }
-        block.titleTextView.text = title
-        block.descriptionTextView.text = description
-        block.accountPanel.setOnClickListener(onUpgradePlan)
-        block.upgradeButton.setOnClickListener(onUpgradePlan)
-        block.upgradeButton.setVisibleOrGone(showUpgradeButton)
-        block.iconView.setVisibleOrGone(!showUpgradeButton)
+        val binding = BlockAccountInfoBinding.bind(block)
+        photoUrl?.let { binding.icon?.load(it) }
+        binding.titleTextView.text = title
+        binding.descriptionTextView.text = description
+        binding.accountPanel.setOnClickListener(onUpgradePlan)
+        binding.upgradeButton.setOnClickListener(onUpgradePlan)
+        binding.upgradeButton.setVisibleOrGone(showUpgradeButton)
+        binding.iconView.setVisibleOrGone(!showUpgradeButton)
     }
 
 }

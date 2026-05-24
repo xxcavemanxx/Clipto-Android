@@ -1,5 +1,6 @@
 package clipto.presentation.notification
 
+import com.wb.clipboard.databinding.FragmentNewVersionAvailableBannerBinding
 import android.content.Context
 import android.os.Bundle
 import android.view.View
@@ -13,27 +14,30 @@ import clipto.common.presentation.mvvm.base.BaseFragment
 import clipto.common.presentation.text.SimpleSpanBuilder
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_new_version_available_banner.*
 
 @AndroidEntryPoint
 class NewVersionBannerFragment : BaseFragment() {
 
-    override val layoutResId: Int = R.layout.fragment_new_version_available_banner
+    
+    private var _binding: FragmentNewVersionAvailableBannerBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_new_version_available_banner
     val viewModel: NewVersionBannerViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentNewVersionAvailableBannerBinding.bind(view)
         Analytics.onNewVersionAvailable()
         val ctx = requireContext()
         val latestVersion = viewModel.latestVersion
-        titleView?.text = SimpleSpanBuilder()
+        binding.titleView?.text = SimpleSpanBuilder()
                 .append(ctx.getText(R.string.desktop_update_title))
                 .append(" (")
                 .append(latestVersion)
                 .append(")")
                 .build()
         val contentHeight = ThemeUtils.getDimensionPixelSize(ctx, R.attr.actionBarSize)
-        contentView?.translationY = -contentHeight
-        contentView?.setOnClickListener { viewModel.onClicked() }
+        binding.contentView?.translationY = -contentHeight
+        binding.contentView?.setOnClickListener { viewModel.onClicked() }
         viewModel.dismissLive.observe(viewLifecycleOwner) { hide() }
         show()
     }
@@ -41,13 +45,13 @@ class NewVersionBannerFragment : BaseFragment() {
     internal fun hide() {
         context?.let { ctx ->
             val contentHeight = ThemeUtils.getDimensionPixelSize(ctx, R.attr.actionBarSize)
-            AnimationUtils.translationY(contentView, 0f, -contentHeight, null)?.start()
+            AnimationUtils.translationY(binding.contentView, 0f, -contentHeight, null)?.start()
         }
     }
 
     internal fun show() {
         context?.let { ctx ->
-            contentView?.let {
+            binding.contentView?.let {
                 val contentHeight = ThemeUtils.getDimensionPixelSize(ctx, R.attr.actionBarSize)
                 AnimationUtils.translationY(it, -contentHeight, 0f, null)?.start()
             }
@@ -81,4 +85,9 @@ class NewVersionBannerFragment : BaseFragment() {
 
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

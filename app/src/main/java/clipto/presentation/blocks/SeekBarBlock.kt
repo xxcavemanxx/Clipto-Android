@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSeekbarBinding
 import android.view.View
 import clipto.extensions.getTextColorPrimary
 import clipto.extensions.getTextColorSecondary
@@ -7,7 +8,6 @@ import clipto.presentation.common.StyleHelper
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueStringWithHeader
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_seekbar.view.*
 
 class SeekBarBlock<C>(
     private val titleRes: Int,
@@ -32,10 +32,11 @@ class SeekBarBlock<C>(
                 && descriptionRes == item.descriptionRes
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockSeekbarBinding.bind(block)
         var colorKey = block.context.getTextColorPrimary()
         val colorValue = block.context.getTextColorSecondary()
-        val titleView = block.titleView
-        val valueView = block.valueView
+        val titleView = binding.titleView
+        val valueView = binding.valueView
         if (!enabled) {
             colorKey = colorValue
         }
@@ -48,7 +49,7 @@ class SeekBarBlock<C>(
             descriptionRes,
             boldHeader
         )
-        val seekBar = block.seekBar
+        val seekBar = binding.seekBar
         seekBar.valueTo = maxValue.toFloat()
         seekBar.value = progress.toFloat()
         if (enabled) {

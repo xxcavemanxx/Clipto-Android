@@ -1,9 +1,9 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockHeaderBinding
 import android.view.View
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_header.view.*
 
 class HeaderBlock<C>(
     private val titleRes: Int
@@ -15,7 +15,8 @@ class HeaderBlock<C>(
         item is HeaderBlock && titleRes == item.titleRes
 
     override fun onBind(context: C, block: View) {
-        block.titleView?.setText(titleRes)
+        val binding = BlockHeaderBinding.bind(block)
+        binding.titleView?.setText(titleRes)
     }
 
 }

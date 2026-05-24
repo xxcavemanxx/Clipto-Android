@@ -1,5 +1,8 @@
 package clipto.presentation.main.nav
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentMainNavBinding
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -9,13 +12,20 @@ import clipto.presentation.common.recyclerview.BlockListAdapter
 import clipto.presentation.main.nav.blocks.FilterBlock
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_main_nav.*
 import java.util.*
 
 @AndroidEntryPoint
 class MainNavFragment : MvvmFragment<MainNavViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_main_nav
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentMainNavBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentMainNavBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_main_nav
     override val viewModel: MainNavViewModel by viewModels()
 
     val manualSortHelper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(ItemTouchHelper.UP or ItemTouchHelper.DOWN, 0) {
@@ -29,7 +39,7 @@ class MainNavFragment : MvvmFragment<MainNavViewModel>() {
         ): Boolean {
             val draggedPosition = dragged.adapterPosition
             val targetPosition = target.adapterPosition
-            val adapter = recyclerView.adapter as BlockListAdapter<*>
+            val adapter = binding.recyclerView.adapter as BlockListAdapter<*>
             val currentBlocks = viewModel.currentBlocks
             val draggedItem = currentBlocks.getOrNull(draggedPosition)
             val targetItem = currentBlocks.getOrNull(targetPosition)
@@ -59,7 +69,7 @@ class MainNavFragment : MvvmFragment<MainNavViewModel>() {
         }
 
         override fun clearView(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder) {
-            super.clearView(recyclerView, viewHolder)
+            super.clearView(binding.recyclerView, viewHolder)
             val position = viewHolder.adapterPosition
             val item = viewModel.currentBlocks.getOrNull(position)?.takeIf { it is FilterBlock }?.let { it as FilterBlock }
             if (item == null || !item.isActive) {
@@ -78,9 +88,9 @@ class MainNavFragment : MvvmFragment<MainNavViewModel>() {
         val ctx = requireContext()
 
         val filterAdapter = BlockListAdapter(this)
-        recyclerView.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.VERTICAL, false)
-        manualSortHelper.attachToRecyclerView(recyclerView)
-        recyclerView.adapter = filterAdapter
+        binding.recyclerView.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.VERTICAL, false)
+        manualSortHelper.attachToRecyclerView(binding.recyclerView)
+        binding.recyclerView.adapter = filterAdapter
 
         viewModel.getFiltersLive().observe(viewLifecycleOwner) {
             filterAdapter.submitList(it)
@@ -103,4 +113,9 @@ class MainNavFragment : MvvmFragment<MainNavViewModel>() {
 
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

@@ -1,5 +1,6 @@
 package clipto.presentation.main.list.blocks
 
+import com.wb.clipboard.databinding.BlockMainListClipCompactBinding
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -7,7 +8,6 @@ import clipto.domain.Clip
 import clipto.domain.ListConfig
 import clipto.extensions.updateIcon
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_main_list_clip_compact.view.*
 
 class ClipItemCompactBlock<V>(
     clip: Clip,
@@ -32,12 +32,13 @@ class ClipItemCompactBlock<V>(
 ) {
 
     override val layoutRes: Int = R.layout.block_main_list_clip_compact
-    override fun getTextView(block: View): TextView? = block.middleTextView
-    override fun getCopyAction(block: View): ImageView? = block.actionView
-    override fun getTagsView(block: View): TextView? = block.tagsView
-    override fun getBgView(block: View): View? = block.bgView
+    override fun getTextView(block: View): TextView? = BlockMainListClipCompactBinding.bind(block).middleTextView
+    override fun getCopyAction(block: View): ImageView? = BlockMainListClipCompactBinding.bind(block).actionView
+    override fun getTagsView(block: View): TextView? = BlockMainListClipCompactBinding.bind(block).tagsView
+    override fun getBgView(block: View): View? = BlockMainListClipCompactBinding.bind(block).bgView
 
     override fun doBind(block: View, listConfig: ListConfig) {
+        val binding = BlockMainListClipCompactBinding.bind(block)
         getTextView(block)?.apply { clip.updateIcon(this) }
     }
 

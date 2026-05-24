@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'maven-publish'
 apply plugin: 'io.objectbox'
@@ -22,11 +21,6 @@ dependencies {
 
     androidTestApi libpacks.android_instrumentation_testing
     testApi libpacks.android_unit_testing
-}
-
-androidExtensions {
-    experimental = true
-    defaultCacheImplementation = "SPARSE_ARRAY" // also HASH_MAP, NONE
 }
 
 android {
@@ -55,7 +49,9 @@ android {
         execution 'ANDROIDX_TEST_ORCHESTRATOR'
     }
 
-
+    buildFeatures {
+        viewBinding = true
+    }
 
     dataBinding {
         enabled = true

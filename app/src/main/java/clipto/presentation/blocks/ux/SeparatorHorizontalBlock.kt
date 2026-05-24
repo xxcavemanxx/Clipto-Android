@@ -1,11 +1,11 @@
 package clipto.presentation.blocks.ux
 
+import com.wb.clipboard.databinding.BlockSeparatorHorizontalBinding
 import android.view.View
 import clipto.common.extensions.doToPx
 import clipto.common.extensions.updateMargin
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_separator_horizontal.view.*
 
 class SeparatorHorizontalBlock<C>(
     private val marginTop: Int = 16,
@@ -23,7 +23,8 @@ class SeparatorHorizontalBlock<C>(
                 && marginEnd == item.marginEnd
 
     override fun onBind(context: C, block: View) {
-        block.separator.updateMargin(
+        val binding = BlockSeparatorHorizontalBinding.bind(block)
+        binding.separator.updateMargin(
             top = marginTop.doToPx(),
             bottom = marginBottom.doToPx(),
             left = marginStart.doToPx(),

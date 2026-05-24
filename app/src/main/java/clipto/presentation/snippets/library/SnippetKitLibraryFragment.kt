@@ -1,5 +1,8 @@
 package clipto.presentation.snippets.library
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentSnippetKitLibraryBinding
 import androidx.core.view.updatePadding
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,50 +17,62 @@ import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.wb.clipboard.R
 import com.xiaofeng.flowlayoutmanager.Alignment
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_snippet_kit_library.*
 
 @AndroidEntryPoint
 class SnippetKitLibraryFragment : MvvmFragment<SnippetKitLibraryViewModel>(), StatefulFragment {
 
-    override val layoutResId: Int = R.layout.fragment_snippet_kit_library
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentSnippetKitLibraryBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentSnippetKitLibraryBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_snippet_kit_library
 
     override val viewModel: SnippetKitLibraryViewModel by viewModels()
 
     override fun bind(viewModel: SnippetKitLibraryViewModel) {
         val ctx = requireContext()
 
-        ivBack.setDebounceClickListener { navigateUp() }
+        binding.ivBack.setDebounceClickListener { navigateUp() }
 
-        srlBlocks.setOnRefreshListener { viewModel.onRefresh() }
+        binding.srlBlocks.setOnRefreshListener { viewModel.onRefresh() }
 
         val categoriesAdapter = BlockListAdapter(this)
-        rvCategories.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.HORIZONTAL, false)
-        rvCategories.adapter = categoriesAdapter
+        binding.rvCategories.layoutManager = LinearLayoutManager(ctx, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvCategories.adapter = categoriesAdapter
         viewModel.categoriesBlocksLive.observe(viewLifecycleOwner) {
             categoriesAdapter.submitList(it)
-            rvCategories?.visible()
+            binding.rvCategories?.visible()
             if (it == null || it.isNotEmpty()) {
-                rvBlocks?.updatePadding(top = Units.DP.toPx(64f).toInt())
+                binding.rvBlocks?.updatePadding(top = Units.DP.toPx(64f).toInt())
             } else {
-                rvBlocks?.updatePadding(top = Units.DP.toPx(12f).toInt())
+                binding.rvBlocks?.updatePadding(top = Units.DP.toPx(12f).toInt())
             }
         }
 
         val snippetsAdapter = BlockListAdapter(this)
-        rvBlocks.layoutManager = FlowLayoutManagerExt().also {
+        binding.rvBlocks.layoutManager = FlowLayoutManagerExt().also {
             it.setAlignment(Alignment.CENTER)
         }
-        rvBlocks.adapter = snippetsAdapter
+        binding.rvBlocks.adapter = snippetsAdapter
         viewModel.blocksLive.observe(viewLifecycleOwner) {
             if (it.firstOrNull() is ZeroStateVerticalBlock) {
-                rvBlocks?.scrollToPosition(0)
+                binding.rvBlocks?.scrollToPosition(0)
             }
             snippetsAdapter.submitList(it)
         }
 
         viewModel.refreshLive.observe(viewLifecycleOwner) {
-            srlBlocks.isRefreshing = it
+            binding.srlBlocks.isRefreshing = it
         }
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

@@ -1,5 +1,6 @@
 package clipto.presentation.snippets.library.blocks
 
+import com.wb.clipboard.databinding.BlockSnippetKitItemBinding
 import android.graphics.Color
 import android.view.View
 import clipto.common.extensions.gone
@@ -13,7 +14,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.snippets.library.SnippetKitLibraryFragment
 import clipto.presentation.snippets.library.SnippetKitLibraryViewModel
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_snippet_kit_item.view.*
 
 class SnippetKitBlock(
         val kit: SnippetKit,
@@ -37,7 +37,8 @@ class SnippetKitBlock(
     }
 
     override fun onInit(fragment: SnippetKitLibraryFragment, block: View) {
-        block.mcvCard.setDebounceClickListener {
+        val binding = BlockSnippetKitItemBinding.bind(block)
+        binding.mcvCard.setDebounceClickListener {
             val ref = block.tag
             if (ref is SnippetKitBlock) {
                 viewModel.onOpenSnippetKit(ref.kit)
@@ -46,29 +47,30 @@ class SnippetKitBlock(
     }
 
     override fun onBind(fragment: SnippetKitLibraryFragment, block: View) {
+        val binding = BlockSnippetKitItemBinding.bind(block)
         block.tag = this
 
         val ctx = block.context
 
         val bgColor = color?.let { Color.parseColor(it) } ?: ctx.getTextColorSecondary()
-        block.ivBackground.setBackgroundColor(bgColor)
-        block.ivBackground.refreshDrawableState()
+        binding.ivBackground.setBackgroundColor(bgColor)
+        binding.ivBackground.refreshDrawableState()
 
-        block.tvName.text = name
+        binding.tvName.text = name
 
-        block.tvAuthor.text = kit.getUserNameLabel()
+        binding.tvAuthor.text = kit.getUserNameLabel()
 
-        block.tvSnippetsValue.text = snippetsCount.toString()
+        binding.tvSnippetsValue.text = snippetsCount.toString()
 
-        block.tvDownloadsValue.text = installs.toString()
+        binding.tvDownloadsValue.text = installs.toString()
 
         if (viewModel.isMy(kit)) {
-            block.tvStatus.setText(kit.publicStatus.getTitleRes())
-            block.tvName.maxLines = 1
-            block.tvStatus.visible()
+            binding.tvStatus.setText(kit.publicStatus.getTitleRes())
+            binding.tvName.maxLines = 1
+            binding.tvStatus.visible()
         } else {
-            block.tvName.maxLines = 2
-            block.tvStatus.gone()
+            binding.tvName.maxLines = 2
+            binding.tvStatus.gone()
         }
     }
 }

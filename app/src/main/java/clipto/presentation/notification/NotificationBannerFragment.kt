@@ -1,5 +1,6 @@
 package clipto.presentation.notification
 
+import com.wb.clipboard.databinding.FragmentNotificationBannerBinding
 import android.content.Context
 import android.os.Bundle
 import android.view.View
@@ -13,29 +14,32 @@ import clipto.common.misc.IntentUtils
 import clipto.common.misc.ThemeUtils
 import clipto.common.presentation.mvvm.base.BaseFragment
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.fragment_notification_banner.*
 
 class NotificationBannerFragment : BaseFragment() {
 
-    override val layoutResId: Int = R.layout.fragment_notification_banner
+    
+    private var _binding: FragmentNotificationBannerBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_notification_banner
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentNotificationBannerBinding.bind(view)
         val ctx = requireContext()
         arguments?.let {
             val code = it.getString(ATTR_CODE)
             val title = it.getString(ATTR_TITLE)
             val message = it.getString(ATTR_MESSAGE)
-            titleView?.text = title
-            descriptionView?.text = message
+            binding.titleView?.text = title
+            binding.descriptionView?.text = message
             val state = AppContext.get().appConfig
             val contentHeight = ThemeUtils.getDimensionPixelSize(ctx, R.attr.actionBarSize)
-            contentView?.translationY = -contentHeight
-            contentView?.setOnClickListener {
+            binding.contentView?.translationY = -contentHeight
+            binding.contentView?.setOnClickListener {
                 IntentUtils.open(ctx, state.getUnexpectedErrorInstructionUrl())
                 Analytics.onBugInstructionRead()
                 hide()
             }
-            actionView?.setOnClickListener {
+            binding.actionView?.setOnClickListener {
                 if (state.canReportUnexpectedErrorDirectly()) {
                     AppUtils.sendRequest(code, null, error)
                     Analytics.onBugReport()
@@ -54,13 +58,13 @@ class NotificationBannerFragment : BaseFragment() {
     internal fun hide() {
         context?.let { ctx ->
             val contentHeight = ThemeUtils.getDimensionPixelSize(ctx, R.attr.actionBarSize)
-            AnimationUtils.translationY(contentView, 0f, -contentHeight, null)?.start()
+            AnimationUtils.translationY(binding.contentView, 0f, -contentHeight, null)?.start()
         }
     }
 
     internal fun show() {
         context?.let { ctx ->
-            contentView?.let {
+            binding.contentView?.let {
                 val contentHeight = ThemeUtils.getDimensionPixelSize(ctx, R.attr.actionBarSize)
                 AnimationUtils.translationY(it, -contentHeight, 0f, null)?.start()
             }
@@ -112,4 +116,9 @@ class NotificationBannerFragment : BaseFragment() {
 
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSwitchBinding
 import android.view.View
 import android.widget.CompoundButton
 import clipto.common.extensions.setDebounceClickListener
@@ -8,7 +9,6 @@ import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueStringWithHeader
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_switch.view.*
 
 class SwitchBlock<C>(
     private val titleRes: Int = 0,
@@ -40,10 +40,11 @@ class SwitchBlock<C>(
                 && maxLines == item.maxLines
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockSwitchBinding.bind(block)
         var colorKey = block.context.getTextColorPrimary()
         val colorValue = block.context.getTextColorSecondary()
-        val titleView = block.titleView
-        val valueView = block.valueView
+        val titleView = binding.titleView
+        val valueView = binding.valueView
         if (!enabled) {
             colorKey = colorValue
         }

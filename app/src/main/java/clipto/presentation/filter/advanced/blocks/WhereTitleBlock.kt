@@ -1,5 +1,6 @@
 package clipto.presentation.filter.advanced.blocks
 
+import com.wb.clipboard.databinding.BlockAdvancedFilterWhereTitleBinding
 import android.view.Gravity
 import android.view.View
 import android.widget.ArrayAdapter
@@ -14,7 +15,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.filter.advanced.AdvancedFilterFragment
 import clipto.presentation.filter.advanced.AdvancedFilterViewModel
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_advanced_filter_where_title.view.*
 
 class WhereTitleBlock(
         private val viewModel: AdvancedFilterViewModel,
@@ -38,6 +38,7 @@ class WhereTitleBlock(
                     item.whereOptions.contentEquals(whereOptions)
 
     override fun onInit(fragment: AdvancedFilterFragment, block: View) {
+        val binding = BlockAdvancedFilterWhereTitleBinding.bind(block)
         val ctx = block.context
 
         var options = emptyArray<Filter.WhereType>()
@@ -54,7 +55,7 @@ class WhereTitleBlock(
             }
             popup.dismiss()
         }
-        block.tvWhereBlockTitle.setDebounceClickListener {
+        binding.tvWhereBlockTitle.setDebounceClickListener {
             val ref = block.tag
             if (ref is WhereTitleBlock) {
                 val newOptions = ref.whereOptions
@@ -77,12 +78,14 @@ class WhereTitleBlock(
     }
 
     override fun onBind(fragment: AdvancedFilterFragment, block: View) {
+        val binding = BlockAdvancedFilterWhereTitleBinding.bind(block)
         block.tag = this
         bind(whereType, block)
     }
 
     private fun bind(whereType: Filter.WhereType, block: View) {
-        val titleView = block.tvWhereBlockTitle
+        val binding = BlockAdvancedFilterWhereTitleBinding.bind(block)
+        val titleView = binding.tvWhereBlockTitle
         val title = viewModel.string(titleRes)
         titleView.text = SimpleSpanBuilder()
                 .append(title)

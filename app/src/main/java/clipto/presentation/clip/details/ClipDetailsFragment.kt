@@ -1,5 +1,8 @@
 package clipto.presentation.clip.details
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentClipDetailsBinding
 import androidx.fragment.app.viewModels
 import clipto.analytics.Analytics
 import clipto.common.extensions.setBottomSheetHeight
@@ -16,20 +19,27 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.tabs.TabLayout
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_clip_details.*
 
 @AndroidEntryPoint
 class ClipDetailsFragment : MvvmBottomSheetDialogFragment<ClipDetailsViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_clip_details
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentClipDetailsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentClipDetailsBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_clip_details
     override val viewModel: ClipDetailsViewModel by viewModels()
 
     override fun bind(viewModel: ClipDetailsViewModel) {
-        contentLayout.setBottomSheetHeight(noBackground = true) { bottomSheet, _, parentView ->
+        binding.contentLayout.setBottomSheetHeight(noBackground = true) { bottomSheet, _, parentView ->
             val selectedTab = viewModel.state.selectedTab.requireValue()
 
             ViewPagerState()
-                .withTabLayout(tabLayout)
+                .withTabLayout(binding.tabLayout)
                 .withPages(
                     childFragmentManager,
                     PageFragment.page(this, ClipDetailsTab.GENERAL, parentView) { GeneralPageFragment() },
@@ -37,12 +47,12 @@ class ClipDetailsFragment : MvvmBottomSheetDialogFragment<ClipDetailsViewModel>(
                     PageFragment.page(this, ClipDetailsTab.ATTACHMENTS, parentView) { AttachmentsPageFragment() },
                     PageFragment.page(this, ClipDetailsTab.DYNAMIC_VALUES, parentView) { DynamicValuesPageFragment() }
                 )
-                .apply(viewPager)
+                .apply(binding.viewPager)
 
             val viewMode = ViewMode.valueOf(selectedTab)
-            tabLayout.getTabAt(viewMode.position)
+            binding.tabLayout.getTabAt(viewMode.position)
                 ?.takeIf { !it.isSelected }
-                ?.let { tabLayout.selectTab(it) }
+                ?.let { binding.tabLayout.selectTab(it) }
 
             viewModel.state.dismiss.getLiveData().observe(viewLifecycleOwner) {
                 it?.let { viewModel.dismiss() }
@@ -53,20 +63,20 @@ class ClipDetailsFragment : MvvmBottomSheetDialogFragment<ClipDetailsViewModel>(
             }
 
             viewModel.state.attributesCount.getLiveData().observe(viewLifecycleOwner) { count ->
-                tabLayout.getTabAt(ViewMode.ATTRIBUTES.position)?.let { tab ->
+                binding.tabLayout.getTabAt(ViewMode.ATTRIBUTES.position)?.let { tab ->
                     updateTab(tab, count)
                 }
             }
 
             viewModel.state.files.getLiveData().observe(viewLifecycleOwner) {
                 val count = it.size
-                tabLayout.getTabAt(ViewMode.ATTACHMENTS.position)?.let { tab ->
+                binding.tabLayout.getTabAt(ViewMode.ATTACHMENTS.position)?.let { tab ->
                     updateTab(tab, count)
                 }
             }
 
             viewModel.getDynamicFieldsCountLive().observe(viewLifecycleOwner) { count ->
-                tabLayout.getTabAt(ViewMode.DYNAMIC_VALUES.position)?.let { tab ->
+                binding.tabLayout.getTabAt(ViewMode.DYNAMIC_VALUES.position)?.let { tab ->
                     updateTab(tab, count)
                 }
             }
@@ -86,6 +96,7 @@ class ClipDetailsFragment : MvvmBottomSheetDialogFragment<ClipDetailsViewModel>(
     }
 
     override fun onDestroyView() {
+        _binding = null
         super.onDestroyView()
         viewModel.onClose()
     }

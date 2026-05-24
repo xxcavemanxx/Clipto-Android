@@ -1,5 +1,6 @@
 package clipto.presentation.blocks.domain
 
+import com.wb.clipboard.databinding.ItemRuneSettingsThemeBinding
 import android.content.res.ColorStateList
 import android.view.View
 import clipto.common.extensions.setVisibleOrGone
@@ -7,7 +8,6 @@ import clipto.common.misc.Units
 import clipto.domain.Theme
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.item_rune_settings_theme.view.*
 
 class ThemeBlock<C>(
     private val theme: Theme,
@@ -41,34 +41,36 @@ class ThemeBlock<C>(
                 item.dense == dense
 
     override fun onInit(context: C, block: View) {
-        block.contentView.setOnClickListener(this)
-        block.radioButton.setOnClickListener(this)
+        val binding = ItemRuneSettingsThemeBinding.bind(block)
+        binding.contentView.setOnClickListener(this)
+        binding.radioButton.setOnClickListener(this)
     }
 
     override fun onBind(context: C, block: View) {
-        block.contentView.tag = this
-        block.radioButton.tag = this
+        val binding = ItemRuneSettingsThemeBinding.bind(block)
+        binding.contentView.tag = this
+        binding.radioButton.tag = this
 
         block.layoutParams?.width = if (dense) widthDense else widthDefault
 
         // content
-        block.contentView.setCardBackgroundColor(colorPrimaryInverse)
+        binding.contentView.setCardBackgroundColor(colorPrimaryInverse)
 
         // title
         val ctx = block.context
-        block.titleView.text = ctx.getString(theme.titleRes)
+        binding.titleView.text = ctx.getString(theme.titleRes)
 
         // radio
-        block.radioButton.isChecked = selected
-        block.radioButton.buttonTintList = ColorStateList.valueOf(colorAccent)
+        binding.radioButton.isChecked = selected
+        binding.radioButton.buttonTintList = ColorStateList.valueOf(colorAccent)
 
         // lines
-        block.line2.setVisibleOrGone(!dense)
+        binding.line2.setVisibleOrGone(!dense)
 
-        block.line1.imageTintList = ColorStateList.valueOf(colorListItemSelected)
-        block.line2.imageTintList = ColorStateList.valueOf(colorListItemSelected)
-        block.line1.refreshDrawableState()
-        block.line2.refreshDrawableState()
+        binding.line1.imageTintList = ColorStateList.valueOf(colorListItemSelected)
+        binding.line2.imageTintList = ColorStateList.valueOf(colorListItemSelected)
+        binding.line1.refreshDrawableState()
+        binding.line2.refreshDrawableState()
     }
 
     companion object {

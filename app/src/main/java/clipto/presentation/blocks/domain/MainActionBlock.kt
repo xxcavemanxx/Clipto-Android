@@ -1,5 +1,6 @@
 package clipto.presentation.blocks.domain
 
+import com.wb.clipboard.databinding.BlockMainActionBinding
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.core.graphics.ColorUtils
@@ -9,7 +10,6 @@ import clipto.extensions.getBackgroundHighlightColor
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_main_action.view.*
 
 class MainActionBlock<C>(
     private val iconRes: Int,
@@ -31,6 +31,7 @@ class MainActionBlock<C>(
                 title == item.title
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockMainActionBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is MainActionBlock<*>) {
@@ -40,12 +41,13 @@ class MainActionBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockMainActionBinding.bind(block)
         block.tag = this
         val ctx = block.context
-        block.tvTitle.text = title ?: ctx.getString(titleRes)
-        block.ivIcon.setImageResource(iconRes)
-        block.tvDescription.text = description
-        block.tvDescription.setVisibleOrGone(description != null)
+        binding.tvTitle.text = title ?: ctx.getString(titleRes)
+        binding.ivIcon.setImageResource(iconRes)
+        binding.tvDescription.text = description
+        binding.tvDescription.setVisibleOrGone(description != null)
         val icColor: Int
         val bgColor: Int
         if (iconColor != null) {
@@ -55,8 +57,8 @@ class MainActionBlock<C>(
             icColor = ctx.getTextColorSecondary()
             bgColor = ctx.getBackgroundHighlightColor()
         }
-        block.ivIcon.imageTintList = ColorStateList.valueOf(icColor)
-        block.bgView.imageTintList = ColorStateList.valueOf(bgColor)
+        binding.ivIcon.imageTintList = ColorStateList.valueOf(icColor)
+        binding.bgView.imageTintList = ColorStateList.valueOf(bgColor)
     }
 
 }

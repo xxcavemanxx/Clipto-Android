@@ -1,5 +1,6 @@
 package clipto.presentation.runes.keyboard_companion
 
+import com.wb.clipboard.databinding.ChipFilterTexpanderBinding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +16,6 @@ import clipto.presentation.common.StyleHelper
 import clipto.presentation.runes.keyboard_companion.data.FilterData
 import com.google.android.material.chip.Chip
 import com.wb.clipboard.*
-import kotlinx.android.synthetic.main.chip_filter_texpander.view.*
 
 class FilterListAdapter(
         private val onFilterClicked: (filter: Filter) -> Unit
@@ -44,16 +44,17 @@ class FilterListAdapter(
     inner class FilterViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.chip_filter_texpander, parent, false)) {
 
+        val binding = ChipFilterTexpanderBinding.bind(itemView)
         var filterData: FilterData? = null
 
         init {
-            itemView.chipView.tag = this
-            itemView.chipView.setOnClickListener(this@FilterListAdapter)
+            binding.chipView.tag = this
+            binding.chipView.setOnClickListener(this@FilterListAdapter)
         }
 
         fun bind(filterData: FilterData) {
             this.filterData = filterData
-            val filterItem = itemView.chipView as Chip
+            val filterItem = binding.chipView as Chip
             val context = filterItem.context
             val filter = filterData.filter
             val color = filter.getTagChipColor(context)

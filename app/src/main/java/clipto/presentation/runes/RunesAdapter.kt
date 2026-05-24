@@ -1,5 +1,6 @@
 package clipto.presentation.runes
 
+import com.wb.clipboard.databinding.ItemRuneBinding
 import android.content.Context
 import android.content.res.ColorStateList
 import android.view.LayoutInflater
@@ -15,7 +16,6 @@ import clipto.presentation.runes.extensions.getBgColor
 import clipto.presentation.runes.extensions.getIconColor
 import clipto.presentation.runes.extensions.getTextColor
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.item_rune.view.*
 
 class RunesAdapter(
     val context: Context,
@@ -41,11 +41,12 @@ class RunesAdapter(
         LayoutInflater.from(parent.context).inflate(R.layout.item_rune, parent, false)
     ) {
 
+        val binding = ItemRuneBinding.bind(itemView)
         var runeItem: RuneItem? = null
 
         init {
-            itemView.contentView.tag = this
-            itemView.contentView.setOnClickListener(this@RunesAdapter.debounce())
+            binding.contentView.tag = this
+            binding.contentView.setOnClickListener(this@RunesAdapter.debounce())
         }
 
         fun bindTo(runeItem: RuneItem?) {
@@ -57,18 +58,18 @@ class RunesAdapter(
                 val bgColor = it.getBgColor(context, isActive)
 
                 // name
-                itemView.nameView.setTextColor(textColor)
-                itemView.nameView.text = it.getTitle()
+                binding.nameView.setTextColor(textColor)
+                binding.nameView.text = it.getTitle()
 
                 // icon
-                itemView.iconView.setImageResource(it.getIcon())
-                itemView.iconView.imageTintList = ColorStateList.valueOf(iconColor)
+                binding.iconView.setImageResource(it.getIcon())
+                binding.iconView.imageTintList = ColorStateList.valueOf(iconColor)
 
                 // background
-                itemView.bgView.imageTintList = ColorStateList.valueOf(bgColor)
+                binding.bgView.imageTintList = ColorStateList.valueOf(bgColor)
 
                 // warning
-                itemView.warningView.setVisibleOrGone(runeItem.hasWarning)
+                binding.warningView.setVisibleOrGone(runeItem.hasWarning)
             }
         }
     }

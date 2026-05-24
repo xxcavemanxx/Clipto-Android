@@ -1,5 +1,6 @@
 package clipto.presentation.preview.image
 
+import com.wb.clipboard.databinding.ActivityPreviewImageBinding
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -16,21 +17,23 @@ import clipto.extensions.onCreateWithLocale
 import clipto.utils.GlideUtils
 import com.davemorrissey.labs.subscaleview.ImageSource
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.activity_preview_image.*
 
 class ImagePreviewActivity : BaseActivity() {
 
-    override val layoutResId: Int = R.layout.activity_preview_image
+    
+    private lateinit var binding: ActivityPreviewImageBinding
+override val layoutResId: Int = R.layout.activity_preview_image
 
     override fun onCreate(savedInstanceState: Bundle?) {
         onCreateWithLocale()
         super.onCreate(savedInstanceState)
+        binding = ActivityPreviewImageBinding.bind(window.decorView.findViewById(android.R.id.content))
         showSystemUI()
         val urlRef = imageUrl
         if (urlRef != null) {
-            toolbar.setNavigationIcon(R.drawable.ic_link_preview_zoom_out)
-            toolbar.setNavigationOnClickListener { finish() }
-            toolbar.title = imageTitle
+            binding.toolbar.setNavigationIcon(R.drawable.ic_link_preview_zoom_out)
+            binding.toolbar.setNavigationOnClickListener { finish() }
+            binding.toolbar.title = imageTitle
             GlideUtils.loadBitmap(this, urlRef)
                 .let {
                     val thumbRef = imageThumbUrl
@@ -44,24 +47,24 @@ class ImagePreviewActivity : BaseActivity() {
                 }
                 .into(
                     BitmapViewTarget(
-                        imageView,
+                        binding.imageView,
                         onReady = {
-                            cpiIndicator.gone()
-                            imageView.setImage(ImageSource.bitmap(it))
+                            binding.cpiIndicator.gone()
+                            binding.imageView.setImage(ImageSource.bitmap(it))
                         })
                 )
-            imageView.setOnClickListener {
-                val isVisible = toolbar.isVisible
+            binding.imageView.setOnClickListener {
+                val isVisible = binding.toolbar.isVisible
                 if (isVisible) {
                     hideSystemUI()
                 } else {
                     showSystemUI()
                 }
-                vStatusBar.setVisibleOrGone(!isVisible)
-                toolbar.setVisibleOrGone(!isVisible)
+                binding.vStatusBar.setVisibleOrGone(!isVisible)
+                binding.toolbar.setVisibleOrGone(!isVisible)
             }
-            imageView.maxScale = 30f
-            imageView.minScale = 0.1f
+            binding.imageView.maxScale = 30f
+            binding.imageView.minScale = 0.1f
         } else {
             finish()
         }

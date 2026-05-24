@@ -1,5 +1,6 @@
 package clipto.presentation.clip.fastactions
 
+import com.wb.clipboard.databinding.ItemFastActionSettingsBinding
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
@@ -12,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import clipto.domain.FastAction
 import clipto.common.misc.ThemeUtils
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.item_fast_action_settings.view.*
 
 @SuppressLint("ClickableViewAccessibility")
 class FastActionSettingsAdapter(
@@ -42,24 +42,25 @@ class FastActionSettingsAdapter(
         LayoutInflater.from(parent.context).inflate(R.layout.item_fast_action_settings, parent, false)
     ) {
 
+        val binding = ItemFastActionSettingsBinding.bind(itemView)
         var action: FastAction? = null
 
         init {
             itemView.setOnClickListener {
                 if (editMode) {
-                    itemView.checkbox.isChecked = !itemView.checkbox.isChecked
+                    binding.checkbox.isChecked = !binding.checkbox.isChecked
                 } else {
                     action?.let { clickHandler.invoke(it) }
                 }
             }
-            itemView.handle.setOnTouchListener { v, event ->
+            binding.handle.setOnTouchListener { v, event ->
                 if (event.action == MotionEvent.ACTION_DOWN) {
                     touchHelper?.startDrag(this)
                 }
                 false
             }
-            itemView.handle.setImageResource(R.drawable.action_drag)
-            itemView.checkbox.setOnCheckedChangeListener { _, isChecked ->
+            binding.handle.setImageResource(R.drawable.action_drag)
+            binding.checkbox.setOnCheckedChangeListener { _, isChecked ->
                 action?.visible = isChecked
             }
         }
@@ -67,9 +68,9 @@ class FastActionSettingsAdapter(
         fun bindTo(action: FastAction?) {
             this.action = action
             action?.let {
-                val textView = itemView.textView
+                val textView = binding.textView
                 textView.setCompoundDrawablesRelativeWithIntrinsicBounds(action.getIconRes(), 0, 0, 0)
-                itemView.checkbox.isChecked = it.visible
+                binding.checkbox.isChecked = it.visible
                 textView.setText(action.titleRes)
             }
         }

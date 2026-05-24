@@ -1,14 +1,29 @@
 package clipto.presentation.main.actions
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentMainActionsBinding
 import androidx.fragment.app.viewModels
 import clipto.common.extensions.setDebounceClickListener
 import clipto.presentation.common.fragment.blocks.BlocksBottomSheetFragment
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_main_actions.*
 
 @AndroidEntryPoint
 class MainActionsFragment : BlocksBottomSheetFragment<MainActionsViewModel>() {
+
+    
+    
+    override val binding: FragmentMainActionsBinding get() {
+        val b = _binding
+        if (b is FragmentMainActionsBinding) return b
+        return FragmentMainActionsBinding.bind(requireView())
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentMainActionsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     override val layoutResId: Int = R.layout.fragment_main_actions
 
@@ -16,9 +31,14 @@ class MainActionsFragment : BlocksBottomSheetFragment<MainActionsViewModel>() {
 
     override fun bind(viewModel: MainActionsViewModel) {
         super.bind(viewModel)
-        ivMore.setDebounceClickListener {
+        binding.ivMore.setDebounceClickListener {
             viewModel.onSettings()
         }
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

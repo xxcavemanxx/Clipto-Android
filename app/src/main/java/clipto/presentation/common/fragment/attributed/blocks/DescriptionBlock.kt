@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed.blocks
 
+import com.wb.clipboard.databinding.BlockAttributedObjectDescriptionBinding
 import android.annotation.SuppressLint
 import android.text.InputFilter
 import android.view.View
@@ -16,7 +17,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.view.DoubleClickListenerWrapper
 import clipto.store.main.MainState
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attributed_object_description.view.*
 
 @SuppressLint("ClickableViewAccessibility")
 class DescriptionBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
@@ -36,7 +36,8 @@ class DescriptionBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>
                 && screenState.value.description == item.screenState.value.description
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.ivHintDescription.setDebounceClickListener {
+        val binding = BlockAttributedObjectDescriptionBinding.bind(block)
+        binding.ivHintDescription.setDebounceClickListener {
             fragment.storeActiveFieldState()
             dialogState.showHint(
                 HintDialogData(
@@ -49,8 +50,9 @@ class DescriptionBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>
     }
 
     override fun onBind(fragment: Fragment, block: View) {
-        val editText = block.etClipDescription
-        val hint = block.ivHintDescription
+        val binding = BlockAttributedObjectDescriptionBinding.bind(block)
+        val editText = binding.etClipDescription
+        val hint = binding.ivHintDescription
         block.tag = this
 
         editText.withConfig(mainState.getListConfig().textFont, mainState.getListConfig().textSize - 2)
@@ -85,22 +87,23 @@ class DescriptionBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>
     }
 
     private fun initListeners(block: View) {
-        val editText = block.etClipDescription
+        val binding = BlockAttributedObjectDescriptionBinding.bind(block)
+        val editText = binding.etClipDescription
         val appConfig = dialogState.appConfig
         val context = editText.context
         editText.filters = arrayOf(InputFilter.LengthFilter(appConfig.maxLengthDescription()))
         editText.setOnClickListener(DoubleClickListenerWrapper(
             context,
-            { getScreenState(block).acceptDoubleClick() },
+            { getScreenState(block)?.acceptDoubleClick() == true },
             {
                 getScreenState(block)
                     ?.whenCanBeEdited(editText)
                     ?.let { getDescriptionBlock(block)?.onEdit?.invoke() }
             }
         ))
-        editText.doAfterTextChanged {
-            if (getScreenState(block).isEditMode() && it === editText.text) {
-                getDescriptionBlock(block)?.onChanged?.invoke(it)
+        editText.doAfterTextChanged { editable ->
+            if (getScreenState(block)?.isEditMode() == true && editable === editText.text) {
+                getDescriptionBlock(block)?.onChanged?.invoke(editable)
             }
         }
     }

@@ -1,12 +1,12 @@
 package clipto.dynamic.presentation.field.blocks
 
+import com.wb.clipboard.databinding.BlockDynamicFieldHeaderViewBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.setDebounceClickListener
 import clipto.dynamic.presentation.field.DynamicFieldViewModel
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dynamic_field_header_view.view.*
 
 class HeaderViewBlock(
         val titleRes: Int,
@@ -21,11 +21,13 @@ class HeaderViewBlock(
     }
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.ivCopy.setDebounceClickListener { viewModel.onCopy() }
+        val binding = BlockDynamicFieldHeaderViewBinding.bind(block)
+        binding.ivCopy.setDebounceClickListener { viewModel.onCopy() }
     }
 
     override fun onBind(fragment: Fragment, block: View) {
-        block.tvName.setText(titleRes)
+        val binding = BlockDynamicFieldHeaderViewBinding.bind(block)
+        binding.tvName.setText(titleRes)
     }
 
 }

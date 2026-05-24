@@ -1,5 +1,8 @@
 package clipto.presentation.common.fragment.attributed.config
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentConfigAttributedObjectBinding
 import android.content.Context
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,18 +17,25 @@ import clipto.presentation.config.TextFontItem
 import clipto.presentation.config.fonts.FontsFragment
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_config_attributed_object.*
 
 @AndroidEntryPoint
 class ConfigAttributedObjectFragment : MvvmBottomSheetDialogFragment<ConfigAttributedObjectViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_config_attributed_object
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentConfigAttributedObjectBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentConfigAttributedObjectBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_config_attributed_object
     override val viewModel: ConfigAttributedObjectViewModel by viewModels()
 
     override fun bind(viewModel: ConfigAttributedObjectViewModel) {
         val activity = requireActivity()
 
-        contentView.setBottomSheetHeight(noBackground = true)
+        binding.contentView.setBottomSheetHeight(noBackground = true)
 
         val fontAdapter = TextFontAdapter(activity) {
             if (it.font == Font.MORE) {
@@ -35,8 +45,8 @@ class ConfigAttributedObjectFragment : MvvmBottomSheetDialogFragment<ConfigAttri
             }
 
         }
-        textFontRecyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-        textFontRecyclerView.adapter = fontAdapter
+        binding.textFontRecyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+        binding.textFontRecyclerView.adapter = fontAdapter
         viewModel.fontsUpdated.observe(viewLifecycleOwner) {
             val fonts = viewModel.getVisibleFonts()
             val newConfig = viewModel.getListConfig()
@@ -44,21 +54,21 @@ class ConfigAttributedObjectFragment : MvvmBottomSheetDialogFragment<ConfigAttri
             val indexOfActiveFont = fonts.indexOfFirst { it.id == newConfig.textFont }
             fontAdapter.submitList(fontItems)
             if (indexOfActiveFont != -1) {
-                textFontRecyclerView?.smoothScrollToPosition(indexOfActiveFont)
+                binding.textFontRecyclerView?.smoothScrollToPosition(indexOfActiveFont)
             }
         }
 
-        textSizeSeekBar.valueTo = (ClientSession.TEXT_SIZE_MAX - ClientSession.TEXT_SIZE_MIN).toFloat()
-        textSizeSeekBar.value = (viewModel.getListConfig().textSize - ClientSession.TEXT_SIZE_MIN).toFloat()
-        textSizeSeekBar.addOnChangeListener { _, value, _ ->
+        binding.textSizeSeekBar.valueTo = (ClientSession.TEXT_SIZE_MAX - ClientSession.TEXT_SIZE_MIN).toFloat()
+        binding.textSizeSeekBar.value = (viewModel.getListConfig().textSize - ClientSession.TEXT_SIZE_MIN).toFloat()
+        binding.textSizeSeekBar.addOnChangeListener { _, value, _ ->
             val newTextSize = value.toInt() + ClientSession.TEXT_SIZE_MIN
             viewModel.onApplyConfig { it.copy(textSize = newTextSize) }
         }
 
-        textSizeDescription?.text = viewModel.getListConfig().textSize.toString()
+        binding.textSizeDescription?.text = viewModel.getListConfig().textSize.toString()
 
         viewModel.listConfig.observe(viewLifecycleOwner) {
-            textSizeDescription?.text = it.textSize.toString()
+            binding.textSizeDescription?.text = it.textSize.toString()
         }
 
         Analytics.screenConfigClip()
@@ -72,5 +82,10 @@ class ConfigAttributedObjectFragment : MvvmBottomSheetDialogFragment<ConfigAttri
                 ConfigAttributedObjectFragment().show(fm, TAG)
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockPopupBinding
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.core.widget.TextViewCompat
@@ -7,7 +8,6 @@ import clipto.extensions.getTextColorPrimary
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_popup.view.*
 
 class PopupBlock<C>(
     private val value: String,
@@ -24,13 +24,14 @@ class PopupBlock<C>(
         item is PopupBlock && enabled == item.enabled
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockPopupBinding.bind(block)
         val color =
             if (enabled) {
                 block.context.getTextColorPrimary()
             } else {
                 block.context.getTextColorSecondary()
             }
-        val titleView = block.titleView
+        val titleView = binding.titleView
         TextViewCompat.setCompoundDrawableTintList(titleView, ColorStateList.valueOf(color))
         titleView.isEnabled = enabled
         titleView.setTextColor(color)

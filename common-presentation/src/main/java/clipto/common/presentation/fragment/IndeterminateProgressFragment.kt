@@ -1,18 +1,21 @@
 package clipto.common.presentation.fragment
 
+import clipto.common.databinding.FragmentIndeterminateProgressBinding
 import android.app.Dialog
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.FragmentManager
 import clipto.common.R
 import clipto.common.presentation.mvvm.base.BaseDialogFragment
-import kotlinx.android.synthetic.main.fragment_indeterminate_progress.*
 
 class IndeterminateProgressFragment : BaseDialogFragment() {
 
-    override var withNoTitle: Boolean = true
+    
+    private var _binding: FragmentIndeterminateProgressBinding? = null
+    private val binding get() = _binding!!
+override var withNoTitle: Boolean = true
     override val layoutResId: Int = R.layout.fragment_indeterminate_progress
-    override var withSizeLimits: SizeLimits? = SizeLimits(widthMultiplier = 1f, onSizeChanged = { contentView?.requestLayout() })
+    override var withSizeLimits: SizeLimits? = SizeLimits(widthMultiplier = 1f, onSizeChanged = { binding.contentView?.requestLayout() })
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return super.onCreateDialog(savedInstanceState).apply {
@@ -21,6 +24,7 @@ class IndeterminateProgressFragment : BaseDialogFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentIndeterminateProgressBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
         val timeout = requireArguments().getLong(ATTR_TIMEOUT)
         view.postDelayed({ dialog?.dismiss() }, timeout)
@@ -68,5 +72,10 @@ class IndeterminateProgressFragment : BaseDialogFragment() {
                 it.dismissAllowingStateLoss()
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

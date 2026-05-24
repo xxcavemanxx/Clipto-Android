@@ -1,5 +1,6 @@
 package clipto.presentation.runes.theme
 
+import com.wb.clipboard.databinding.FragmentRuneSettingsBinding
 import android.graphics.Color
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
@@ -18,7 +19,6 @@ import clipto.store.clipboard.ClipboardState
 import com.wb.clipboard.R
 import com.xiaofeng.flowlayoutmanager.Alignment
 import dagger.hilt.android.scopes.ViewModelScoped
-import kotlinx.android.synthetic.main.fragment_rune_settings.*
 import javax.inject.Inject
 
 @ViewModelScoped
@@ -36,7 +36,7 @@ class ThemeRuneProvider @Inject constructor(
     override fun isActive(): Boolean = appState.getTheme() != Theme.DEFAULT
 
     override fun bind(fragment: RuneSettingsFragment) {
-        bind(fragment, fragment.rvBlocks, false)
+        bind(fragment, fragment.binding.rvBlocks, false)
     }
 
     override fun bind(recyclerView: RecyclerView, fragment: RunesFragment) {

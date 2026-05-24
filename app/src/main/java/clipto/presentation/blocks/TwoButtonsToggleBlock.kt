@@ -1,10 +1,10 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockTwoButtonsToggleBinding
 import android.view.View
 import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_two_buttons_toggle.view.*
 
 class TwoButtonsToggleBlock<C>(
     private val firstButtonTextRes: Int,
@@ -24,14 +24,16 @@ class TwoButtonsToggleBlock<C>(
     }
 
     override fun onInit(context: C, block: View) {
-        block.btn1.setOnClickListener(onFirstButtonClick)
-        block.btn2.setOnClickListener(onSecondButtonClick)
+        val binding = BlockTwoButtonsToggleBinding.bind(block)
+        binding.btn1.setOnClickListener(onFirstButtonClick)
+        binding.btn2.setOnClickListener(onSecondButtonClick)
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockTwoButtonsToggleBinding.bind(block)
         block as MaterialButtonToggleGroup
-        block.btn1.setText(firstButtonTextRes)
-        block.btn2.setText(secondButtonTextRes)
+        binding.btn1.setText(firstButtonTextRes)
+        binding.btn2.setText(secondButtonTextRes)
         when (selectedButtonIndex) {
             0 -> block.check(R.id.btn1)
             1 -> block.check(R.id.btn2)

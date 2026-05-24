@@ -1,5 +1,8 @@
 package clipto.presentation.clip.fastactions
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentClipFastActionsBinding
 import androidx.annotation.AttrRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -13,22 +16,29 @@ import clipto.common.presentation.mvvm.lifecycle.SingleLiveData
 import clipto.domain.FastAction
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_clip_fast_actions.*
 import java.util.*
 
 @AndroidEntryPoint
 class FastActionsFragment : MvvmBottomSheetDialogFragment<FastActionsViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_clip_fast_actions
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentClipFastActionsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentClipFastActionsBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_clip_fast_actions
     override val viewModel: FastActionsViewModel by activityViewModels()
 
     override fun bind(viewModel: FastActionsViewModel) {
         val ctx = viewModel.app
         val titleRes = viewModel.titleRes
         val editMode = viewModel.editMode
-        contentView.setBottomSheetHeight(noBackground = true)
+        binding.contentView.setBottomSheetHeight(noBackground = true)
 
-        tvTitle.setText(titleRes)
+        binding.tvTitle.setText(titleRes)
 
         val actions = ArrayList(FastAction.getMoreActions())
         val adapter = FastActionSettingsAdapter(ctx, actions, editMode) { action ->
@@ -62,7 +72,7 @@ class FastActionsFragment : MvvmBottomSheetDialogFragment<FastActionsViewModel>(
             }
 
             override fun clearView(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder) {
-                super.clearView(recyclerView, viewHolder)
+                super.clearView(binding.recyclerView, viewHolder)
                 if (viewHolder is FastActionSettingsAdapter.ViewHolder) {
                     viewHolder.onItemClear()
                 }
@@ -72,12 +82,13 @@ class FastActionsFragment : MvvmBottomSheetDialogFragment<FastActionsViewModel>(
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) = Unit
         })
 
-        adapter.bind(recyclerView, touchHelper)
+        adapter.bind(binding.recyclerView, touchHelper)
 
         Analytics.screenFastActions()
     }
 
     override fun onDestroyView() {
+        _binding = null
         viewModel.onSave()
         super.onDestroyView()
     }

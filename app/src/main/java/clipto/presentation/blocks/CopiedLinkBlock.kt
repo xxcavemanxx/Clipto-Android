@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockCopiedLinkBinding
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import clipto.AppContext
@@ -9,7 +10,6 @@ import clipto.common.misc.IntentUtils
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.store.internet.InternetState
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_copied_link.view.*
 
 class CopiedLinkBlock<C>(
     private val link: String,
@@ -32,13 +32,14 @@ class CopiedLinkBlock<C>(
                 && canBeCopied == item.canBeCopied
 
     override fun onInit(context: C, block: View) {
-        block.copyLinkAction.setDebounceClickListener {
+        val binding = BlockCopiedLinkBinding.bind(block)
+        binding.copyLinkAction.setDebounceClickListener {
             val ref = block.tag
             if (ref is CopiedLinkBlock<*>) {
                 ref.onCopy()
             }
         }
-        block.linkButton.setDebounceClickListener {
+        binding.linkButton.setDebounceClickListener {
             val ref = block.tag
             if (ref is CopiedLinkBlock<*>) {
                 ref.onOpen()
@@ -47,14 +48,15 @@ class CopiedLinkBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockCopiedLinkBinding.bind(block)
         block.tag = this
-        block.linkButton.text = label
-        block.linkButton.isClickable = canBeOpened
-        block.copyLinkAction.setVisibleOrGone(canBeCopied)
-        val params = block.linkButton.layoutParams
+        binding.linkButton.text = label
+        binding.linkButton.isClickable = canBeOpened
+        binding.copyLinkAction.setVisibleOrGone(canBeCopied)
+        val params = binding.linkButton.layoutParams
         if (params is ConstraintLayout.LayoutParams) {
             params.horizontalBias = if (centered) 0.5f else 0.0f
-            block.linkButton.layoutParams = params
+            binding.linkButton.layoutParams = params
         }
     }
 

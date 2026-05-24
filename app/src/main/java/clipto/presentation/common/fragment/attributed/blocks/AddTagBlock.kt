@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed.blocks
 
+import com.wb.clipboard.databinding.BlockAttributedObjectAddTagBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.setVisibleOrGone
@@ -12,7 +13,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.widget.AutoCompleteItem
 import clipto.store.StoreObject
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attributed_object_add_tag.view.*
 
 class AddTagBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
     private val viewModel: AttributedObjectViewModel<O, S>,
@@ -27,8 +27,9 @@ class AddTagBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
         item is AddTagBlock<*, *> && item.screenState.focusMode != FocusMode.TAGS
 
     override fun onInit(fragment: Fragment, block: View) {
-        val tagsEditTextActionButton = block.tagsEditTextActionButton
-        val tagsEditText = block.tagsEditText
+        val binding = BlockAttributedObjectAddTagBinding.bind(block)
+        val tagsEditTextActionButton = binding.tagsEditTextActionButton
+        val tagsEditText = binding.tagsEditText
         val appConfig = viewModel.appConfig
         val context = block.context
         val onAddTag: (name: CharSequence?) -> Unit = { name ->
@@ -69,7 +70,8 @@ class AddTagBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
     }
 
     override fun onBind(fragment: Fragment, block: View) {
-        val tagsEditText = block.tagsEditText
+        val binding = BlockAttributedObjectAddTagBinding.bind(block)
+        val tagsEditText = binding.tagsEditText
         block.tag = this
 
         log("onBind :: {}", screenState.focusMode)

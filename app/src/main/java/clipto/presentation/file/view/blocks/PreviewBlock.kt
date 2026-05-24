@@ -1,5 +1,6 @@
 package clipto.presentation.file.view.blocks
 
+import com.wb.clipboard.databinding.BlockFileDetailsPreviewBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.animateScale
@@ -14,7 +15,6 @@ import clipto.presentation.preview.link.LinkPreview
 import clipto.store.files.FileScreenState
 import clipto.utils.GlideUtils
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_file_details_preview.view.*
 import java.util.*
 
 class PreviewBlock<F : Fragment>(
@@ -37,19 +37,21 @@ class PreviewBlock<F : Fragment>(
                 && item.updateDate == updateDate
 
     override fun onInit(context: F, block: View) {
-        block.tvFilePreview.minHeight = minHeightProvider.invoke(context)
-        block.ivIcon.setDebounceClickListener {
+        val binding = BlockFileDetailsPreviewBinding.bind(block)
+        binding.tvFilePreview.minHeight = minHeightProvider.invoke(context)
+        binding.ivIcon.setDebounceClickListener {
             val ref = block.tag
             if (ref is PreviewBlock<*>) {
                 fileScreenHelper.onPreview(ref.file, ref.preview)
             }
         }
         showHideClickableLayer {
-            block.ivPreview?.animateScale(it)
+            binding.ivPreview?.animateScale(it)
         }
     }
 
     override fun onBind(context: F, block: View) {
+        val binding = BlockFileDetailsPreviewBinding.bind(block)
         log("onBind :: preview :: {}", preview)
 
         block.tag = this
@@ -58,7 +60,7 @@ class PreviewBlock<F : Fragment>(
         val previewHeight = size
 
         // IMAGE
-        val iconView = block.ivIcon
+        val iconView = binding.ivIcon
         iconView.minimumWidth = previewWidth
         iconView.minimumHeight = previewHeight / 3
         GlideUtils.preview(
@@ -73,7 +75,7 @@ class PreviewBlock<F : Fragment>(
         }
 
         // ACTION
-        val previewView = block.ivPreview
+        val previewView = binding.ivPreview
         if (previewType != null) {
             previewView.setImageResource(previewType.imageRes)
         } else {

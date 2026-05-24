@@ -1,10 +1,10 @@
 package clipto.presentation.clip.details.pages.dynamic
 
+import com.wb.clipboard.databinding.BlockClipDetailsDynamicValueBinding
 import android.view.View
 import clipto.dynamic.DynamicValueType
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_clip_details_dynamic_value.view.*
 
 class DynamicValueBlock(
         private val type: DynamicValueType,
@@ -20,31 +20,37 @@ class DynamicValueBlock(
                     item.value == value
 
     override fun onClick(v: View?) {
-        val ref = v?.tag
+        if (v == null) return
+        val binding = BlockClipDetailsDynamicValueBinding.bind(v)
+        val ref = v.tag
         if (ref is DynamicValueBlock) {
             ref.clickHandler.invoke(ref.type, null)
         }
     }
 
     override fun onLongClick(v: View?): Boolean {
-        val ref = v?.tag
+        if (v == null) return false
+        val binding = BlockClipDetailsDynamicValueBinding.bind(v)
+        val ref = v.tag
         if (ref is DynamicValueBlock) {
-            val snapshotValue = v.etValue?.text?.toString()
+            val snapshotValue = binding.etValue?.text?.toString()
             ref.clickHandler.invoke(ref.type, snapshotValue)
         }
         return true
     }
 
     override fun onInit(fragment: DynamicValuesPageFragment, block: View) {
+        val binding = BlockClipDetailsDynamicValueBinding.bind(block)
         block.setOnLongClickListener(this)
         block.setOnClickListener(this)
     }
 
     override fun onBind(fragment: DynamicValuesPageFragment, block: View) {
+        val binding = BlockClipDetailsDynamicValueBinding.bind(block)
         block.tag = this
-        block.etValue.text = value
-        block.tvTitle.setText(type.titleRes)
-        block.tvPlaceholder.text = type.getPlaceholderValue()
+        binding.etValue.text = value
+        binding.tvTitle.setText(type.titleRes)
+        binding.tvPlaceholder.text = type.getPlaceholderValue()
     }
 
 }

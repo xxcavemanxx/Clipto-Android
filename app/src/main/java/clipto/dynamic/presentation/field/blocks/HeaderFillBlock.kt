@@ -1,5 +1,6 @@
 package clipto.dynamic.presentation.field.blocks
 
+import com.wb.clipboard.databinding.BlockDynamicFieldHeaderFillBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.setDebounceClickListener
@@ -7,7 +8,6 @@ import clipto.extensions.getActionIconColorHighlight
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dynamic_field_header_fill.view.*
 
 class HeaderFillBlock(
         val titleRes: Int,
@@ -28,7 +28,8 @@ class HeaderFillBlock(
     }
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.mbClearAll.setDebounceClickListener {
+        val binding = BlockDynamicFieldHeaderFillBinding.bind(block)
+        binding.mbClearAll.setDebounceClickListener {
             val ref = block.tag
             if (ref is HeaderFillBlock) {
                 ref.onAction.invoke()
@@ -37,17 +38,18 @@ class HeaderFillBlock(
     }
 
     override fun onBind(fragment: Fragment, block: View) {
+        val binding = BlockDynamicFieldHeaderFillBinding.bind(block)
         block.tag = this
         if (title != null) {
-            block.tvTitle.text = title
+            binding.tvTitle.text = title
         } else {
-            block.tvTitle.setText(titleRes)
+            binding.tvTitle.setText(titleRes)
         }
-        block.mbClearAll.setText(actionTitleRes)
+        binding.mbClearAll.setText(actionTitleRes)
         if (actionActive) {
-            block.mbClearAll.setTextColor(block.context.getActionIconColorHighlight())
+            binding.mbClearAll.setTextColor(block.context.getActionIconColorHighlight())
         } else {
-            block.mbClearAll.setTextColor(block.context.getTextColorSecondary())
+            binding.mbClearAll.setTextColor(block.context.getTextColorSecondary())
         }
     }
 

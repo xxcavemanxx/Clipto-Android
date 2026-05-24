@@ -1,12 +1,12 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockDialogBinding
 import android.view.View
 import clipto.extensions.getTextColorPrimary
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueStringWithHeader
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dialog.view.*
 
 class DialogBlock<C>(
     private val titleRes: Int,
@@ -28,10 +28,11 @@ class DialogBlock<C>(
                 && value == item.value
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockDialogBinding.bind(block)
         var colorKey = block.context.getTextColorPrimary()
         val colorValue = block.context.getTextColorSecondary()
-        val titleView = block.titleView
-        val valueView = block.valueView
+        val titleView = binding.titleView
+        val valueView = binding.valueView
         if (!enabled) {
             colorKey = colorValue
         }

@@ -1,5 +1,6 @@
 package clipto.presentation.main.list.blocks
 
+import com.wb.clipboard.databinding.BlockMainListClipFolderBinding
 import android.content.res.ColorStateList
 import android.view.View
 import android.widget.ImageView
@@ -16,7 +17,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.preview.link.LinkPreview
 import clipto.utils.GlideUtils
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_main_list_clip_folder.view.*
 
 class ClipItemFolderBlock<V>(
     clip: Clip,
@@ -47,10 +47,10 @@ class ClipItemFolderBlock<V>(
 ) {
 
     override val layoutRes: Int = R.layout.block_main_list_clip_folder
-    override fun getTextView(block: View): TextView? = block.tvName
-    override fun getPublicLinkView(block: View): ImageView? = block.publicLinkView
-    override fun getAttachmentsView(block: View): TextView? = block.attachmentsView
-    override fun getBgView(block: View): View? = if (checkable) block.ivSelected else block.bgView
+    override fun getTextView(block: View): TextView? = BlockMainListClipFolderBinding.bind(block).tvName
+    override fun getPublicLinkView(block: View): ImageView? = BlockMainListClipFolderBinding.bind(block).publicLinkView
+    override fun getAttachmentsView(block: View): TextView? = BlockMainListClipFolderBinding.bind(block).attachmentsView
+    override fun getBgView(block: View): View? = if (checkable) BlockMainListClipFolderBinding.bind(block).ivSelected else BlockMainListClipFolderBinding.bind(block).bgView
 
     override fun areItemsTheSame(item: BlockItem<V>): Boolean {
         return super.areItemsTheSame(item)
@@ -67,8 +67,9 @@ class ClipItemFolderBlock<V>(
 
     @CallSuper
     override fun onInit(context: V, block: View) {
+        val binding = BlockMainListClipFolderBinding.bind(block)
         super.onInit(context, block)
-        block.ivIcon.setDebounceClickListener {
+        binding.ivIcon.setDebounceClickListener {
             val previewUrl = it.tag?.toString()
             getRef(block)?.let { ref ->
                 ref as ClipItemFolderBlock
@@ -80,16 +81,17 @@ class ClipItemFolderBlock<V>(
     }
 
     override fun doBind(block: View, listConfig: ListConfig) {
+        val binding = BlockMainListClipFolderBinding.bind(block)
         val ctx = block.context
-        val tvName = block.tvName
+        val tvName = binding.tvName
 
-        block.tvAttrs.apply {
+        binding.tvAttrs.apply {
             text = getSortByCaption(block, listConfig)
             clip.updateIcon(this)
         }
 
         val iconRes = clip.textType.toExt().iconRes
-        val icon = block.ivIcon
+        val icon = binding.ivIcon
 
         val url = clip.toLinkifiedSpannable().findFirstWebUrl()
         if (url != null) {
@@ -124,7 +126,7 @@ class ClipItemFolderBlock<V>(
             tvName.setTextColor(ctx.getTextColorPrimary())
         }
 
-        block.tvPath?.apply {
+        binding.tvPath?.apply {
             setVisibleOrGone(flatMode)
             if (flatMode) {
                 relativePathGetter?.invoke(folderId, clip) { path ->
@@ -136,8 +138,8 @@ class ClipItemFolderBlock<V>(
 
     override fun updateAlpha(block: View, alpha: Float) {
         super.updateAlpha(block, alpha)
-        block.ivIcon.alpha = alpha
-        block.tvIcon.alpha = alpha
+        BlockMainListClipFolderBinding.bind(block).ivIcon.alpha = alpha
+        BlockMainListClipFolderBinding.bind(block).tvIcon?.alpha = alpha
     }
 
 }

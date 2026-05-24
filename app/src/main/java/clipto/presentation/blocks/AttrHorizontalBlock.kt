@@ -1,10 +1,10 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockAttrHorizontalBinding
 import android.view.View
 import clipto.common.extensions.setDebounceClickListener
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attr_horizontal.view.*
 
 class AttrHorizontalBlock<C>(
     private val id: String? = null,
@@ -28,6 +28,7 @@ class AttrHorizontalBlock<C>(
                 id == item.id
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockAttrHorizontalBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is AttrHorizontalBlock<*>) {
@@ -37,12 +38,13 @@ class AttrHorizontalBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockAttrHorizontalBinding.bind(block)
         block.tag = this
-        block.tvTitle.text = title
-        block.etValue.text = value
+        binding.tvTitle.text = title
+        binding.etValue.text = value
         block.isClickable = onClicked != null
         valueProvider?.invoke(valueKey) { newValue ->
-            block.etValue.text = newValue
+            binding.etValue.text = newValue
         }
     }
 

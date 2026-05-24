@@ -1,5 +1,7 @@
 package clipto.presentation.contextactions
+import android.view.View
 
+import com.wb.clipboard.databinding.FragmentContextActionsBinding
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
@@ -11,13 +13,20 @@ import clipto.common.misc.AndroidUtils
 import clipto.common.presentation.mvvm.MvvmBottomSheetDialogFragment
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_context_actions.*
 import java.util.*
 
 @AndroidEntryPoint
 class ContextActionsFragment : MvvmBottomSheetDialogFragment<ContextActionsViewModel>() {
 
-    override val viewModel: ContextActionsViewModel by activityViewModels()
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentContextActionsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentContextActionsBinding? = null
+    private val binding get() = _binding!!
+override val viewModel: ContextActionsViewModel by activityViewModels()
     override val layoutResId: Int = R.layout.fragment_context_actions
 
     val isForced:Boolean by lazy { arguments?.getBoolean(ATTR_FORCED, false) ?: false }
@@ -26,7 +35,7 @@ class ContextActionsFragment : MvvmBottomSheetDialogFragment<ContextActionsViewM
         val id = arguments?.get(ATTR_ID)?.toString()
         val action = viewModel.actions.remove(id)
         if (action != null) {
-            contentView.setBottomSheetHeight(0.001f) { _, _, _ ->
+            binding.contentView.setBottomSheetHeight(0.001f) { _, _, _ ->
                 action.invoke(this)
             }
         } else {
@@ -34,7 +43,7 @@ class ContextActionsFragment : MvvmBottomSheetDialogFragment<ContextActionsViewM
         }
     }
 
-    fun getTextViewRef(): TextView? = textView
+    fun getTextViewRef(): TextView? = binding.textView
 
     fun onClose() {
         runCatching { dismissAllowingStateLoss() }
@@ -64,5 +73,10 @@ class ContextActionsFragment : MvvmBottomSheetDialogFragment<ContextActionsViewM
                 }
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

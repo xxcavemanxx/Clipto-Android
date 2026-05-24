@@ -1,5 +1,6 @@
 package clipto.presentation.clip.details.pages.general.blocks
 
+import com.wb.clipboard.databinding.BlockClipDetailsGeneralToolbarBinding
 import android.view.View
 import clipto.common.presentation.state.MenuState
 import clipto.domain.Clip
@@ -11,7 +12,6 @@ import clipto.presentation.common.StyleHelper
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueString
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_clip_details_general_toolbar.view.*
 import java.util.*
 
 class ToolbarBlock(
@@ -33,6 +33,7 @@ class ToolbarBlock(
                     item.createDate == createDate
 
     override fun onBind(fragment: GeneralPageFragment, block: View) {
+        val binding = BlockClipDetailsGeneralToolbarBinding.bind(block)
         val ctx = block.context
         MenuState<Clip>()
                 .withContext(ctx)
@@ -71,10 +72,10 @@ class ToolbarBlock(
                                 .withIcon(R.drawable.action_share)
                                 .withListener { _, _ -> viewModel.onShare() }
                 )
-                .apply(clip, block.actionMenu.menu)
+                .apply(clip, binding.actionMenu.menu)
 
         KeyValueString(
-                block.textView,
+                binding.textView,
                 "\n",
                 ctx.getTextColorPrimary(),
                 ctx.getTextColorSecondary()).apply {

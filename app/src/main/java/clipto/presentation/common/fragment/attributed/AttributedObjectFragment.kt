@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed
 
+import com.wb.clipboard.databinding.FragmentAttributedObjectBinding
 import android.animation.AnimatorSet
 import android.content.res.ColorStateList
 import android.content.res.Configuration
@@ -46,14 +47,23 @@ import clipto.presentation.file.view.blocks.PreviewBlock
 import clipto.presentation.main.list.blocks.ClipItemFolderBlock
 import com.google.android.material.button.MaterialButton
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.fragment_attributed_object.*
 import me.zhanghai.android.fastscroll.FastScroller
 import me.zhanghai.android.fastscroll.FastScrollerBuilder
 import me.zhanghai.android.fastscroll.PopupTextProvider
 import me.zhanghai.android.fastscroll.Predicate
 
+import android.os.Bundle
+
 abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObjectScreenState<O>, VM : AttributedObjectViewModel<O, S>> : MvvmFragment<VM>(), ActivityBackPressConsumer,
     FragmentBackButtonListener {
+
+    protected var _binding: FragmentAttributedObjectBinding? = null
+    protected val binding get() = _binding!!
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentAttributedObjectBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     override val layoutResId: Int = R.layout.fragment_attributed_object
 
@@ -120,26 +130,26 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         super.onStop()
     }
 
-    fun getTitleView(): EditTextExt? = rvBlocks?.getTitleView()
-    fun getAbbreviationView(): EditTextExt? = rvBlocks?.getAbbreviationView()
-    fun getDescriptionView(): EditTextExt? = rvBlocks?.getDescriptionView()
-    fun getTagsView(): AutoCompleteTextView? = rvBlocks?.getTagsView()
-    fun getDescriptionBlock(): View? = rvBlocks?.getDescriptionBlock()
-    fun getFitView(): View? = rvBlocks?.getFitView()
-    fun getBlocksView(): AttributedObjectRecyclerView = rvBlocks
+    fun getTitleView(): EditTextExt? = binding.rvBlocks?.getTitleView()
+    fun getAbbreviationView(): EditTextExt? = binding.rvBlocks?.getAbbreviationView()
+    fun getDescriptionView(): EditTextExt? = binding.rvBlocks?.getDescriptionView()
+    fun getTagsView(): AutoCompleteTextView? = binding.rvBlocks?.getTagsView()
+    fun getDescriptionBlock(): View? = binding.rvBlocks?.getDescriptionBlock()
+    fun getFitView(): View? = binding.rvBlocks?.getFitView()
+    fun getBlocksView(): AttributedObjectRecyclerView = binding.rvBlocks
 
-    fun getPreviewView(): MaterialButton = mbPreview
-    fun getUndoView(): MaterialButton = mbUndo
-    fun getRedoView(): MaterialButton = mbRedo
+    fun getPreviewView(): MaterialButton = binding.mbPreview
+    fun getUndoView(): MaterialButton = binding.mbUndo
+    fun getRedoView(): MaterialButton = binding.mbRedo
 
-    fun getMinHeight(): Int = rvBlocks?.getMinHeight() ?: 0
+    fun getMinHeight(): Int = binding.rvBlocks?.getMinHeight() ?: 0
 
     protected fun showActions() {
         if (hideActionsState && !viewModel.isPreviewMode()) {
             viewModel.onHideActions(false)
             hideActionsState = false
-            val clTopBarRef = clTopBar
-            val clBottomBarRef = clBottomBar
+            val clTopBarRef = binding.clTopBar
+            val clBottomBarRef = binding.clBottomBar
             if (clTopBarRef != null && clBottomBarRef != null) {
                 clTopBarRef.animation?.cancel()
                 clBottomBarRef.animation?.cancel()
@@ -154,8 +164,8 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         if (!hideActionsState && !viewModel.isEditMode()) {
             viewModel.onHideActions(true)
             hideActionsState = true
-            val clTopBarRef = clTopBar
-            val clBottomBarRef = clBottomBar
+            val clTopBarRef = binding.clTopBar
+            val clBottomBarRef = binding.clBottomBar
             if (clTopBarRef != null && clBottomBarRef != null) {
                 clTopBarRef.animation?.cancel()
                 clBottomBarRef.animation?.cancel()
@@ -179,7 +189,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
     }
 
     private fun initBlocks() {
-        val rvBlocksRef = rvBlocks ?: return
+        val rvBlocksRef = binding.rvBlocks ?: return
         rvBlocksRef.fitViewId = getFitViewId()
         rvBlocksRef.viewModel = viewModel
         rvBlocksRef.layoutManager = AttributedObjectLayoutManager(rvBlocksRef.context, viewModel::getScreenState)
@@ -220,29 +230,29 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         var hapticFeedback = hapticFeedbackSupported
         var prevIndex = 0
 
-        pagePicker.addProgressChangedListener(
+        binding.pagePicker.addProgressChangedListener(
             progressChanged = { _, progress, fromUser ->
                 val nextIndex = progress - 1
                 if (fromUser) {
                     if (prevIndex != nextIndex) {
                         viewModel.onNavigate(nextIndex)
                         if (hapticFeedback) {
-                            pagePicker.hapticKeyRelease()
+                            binding.pagePicker.hapticKeyRelease()
                         }
                         prevIndex = nextIndex
-                    } else if (!pagePicker.isFromTracker()) {
+                    } else if (!binding.pagePicker.isFromTracker()) {
                         val maxIndex = viewModel.getNavigatorMaxValue() - 1
                         if (nextIndex == 0) {
-                            pagePicker.setProgress(maxIndex + 1, true)
+                            binding.pagePicker.setProgress(maxIndex + 1, true)
                         } else if (nextIndex == maxIndex) {
-                            pagePicker.setProgress(1, true)
+                            binding.pagePicker.setProgress(1, true)
                         }
                     }
                 }
             },
             startTrackingTouch = {
-                hapticFeedback = hapticFeedbackSupported && pagePicker.maxValue <= hapticFeedbackMaxWhenScroll
-                pagePicker.hapticKey()
+                hapticFeedback = hapticFeedbackSupported && binding.pagePicker.maxValue <= hapticFeedbackMaxWhenScroll
+                binding.pagePicker.hapticKey()
             },
             stopTrackingTouch = {
                 hapticFeedback = hapticFeedbackSupported
@@ -250,7 +260,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         )
 
         viewModel.navigatorProgress.observe(viewLifecycleOwner) { progress ->
-            pagePicker?.progress = progress
+            binding.pagePicker?.progress = progress
             prevIndex = progress - 1
         }
     }
@@ -259,11 +269,11 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         val max = viewModel.getNavigatorMaxValue()
         val min = 1
         if (min >= max) {
-            pagePicker?.gone()
+            binding.pagePicker?.gone()
         } else {
-            pagePicker?.maxValue = max
-            pagePicker?.minValue = min
-            pagePicker?.editText?.filters = arrayOf(
+            binding.pagePicker?.maxValue = max
+            binding.pagePicker?.minValue = min
+            binding.pagePicker?.editText?.filters = arrayOf(
                 InputFilterMinMax(min, max),
                 InputFilter.LengthFilter(max.toString().length)
             )
@@ -278,13 +288,13 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         val viewState = createViewState()
         viewState
             .addLayer(
-                object : ViewState.Layer<S, NumberPicker>(pagePicker, "action_note_pager") {
+                object : ViewState.Layer<S, NumberPicker>(binding.pagePicker, "action_note_pager") {
                     override fun canApply(state: S): Boolean = viewModel.hasNavigator()
                     override fun doApply(state: S) = rebuildNavigator()
                 }
             )
             .addLayer(
-                object : ViewState.Layer<S, ImageView>(iv6, "action_config") {
+                object : ViewState.Layer<S, ImageView>(binding.iv6, "action_config") {
                     override fun canApply(state: S): Boolean = hasConfig(state)
                     override fun doApply(state: S) {
                         bindAction(layerView, R.drawable.ic_tune, R.string.menu_display_options) {
@@ -295,7 +305,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
                 }
             )
             .addLayer(
-                object : ViewState.Layer<S, TextView>(tvTitle, "title") {
+                object : ViewState.Layer<S, TextView>(binding.tvTitle, "title") {
                     override fun canApply(state: S): Boolean = !state.title.isNullOrBlank()
                     override fun doApply(state: S) {
                         layerView.text = state.title
@@ -303,7 +313,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
                 }
             )
             .addLayer(
-                object : ViewState.Layer<S, ImageView>(ivIcon, "title_icon") {
+                object : ViewState.Layer<S, ImageView>(binding.ivIcon, "title_icon") {
                     override fun canApply(state: S): Boolean = state.iconRes != null
                     override fun doApply(state: S) {
                         state.iconRes?.let { iconRes ->
@@ -323,11 +333,11 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         }
 
         viewModel.autoSaveState.getLiveData().observe(viewLifecycleOwner) {
-            autoSaveIconView?.withRune(it.first, it.second)
+            binding.autoSaveIconView?.withRune(it.first, it.second)
         }
 
         viewModel.contentChangedLive.observe(viewLifecycleOwner) {
-            iv5?.imageTintList = if (it) textColorAccent else textColorPrimary
+            binding.iv5?.imageTintList = if (it) textColorAccent else textColorPrimary
         }
 
         viewModel.nextFocusLive.observe(viewLifecycleOwner) {
@@ -345,7 +355,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
                 viewModel.onCreateBlocks(state) { blocks ->
                     adapter.submitList(blocks) {
                         if (state.focusMode == FocusMode.NONE) {
-                            rvBlocks?.scrollToPosition(0)
+                            binding.rvBlocks?.scrollToPosition(0)
                         }
                     }
                 }
@@ -358,7 +368,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
                     state.isPreviewMode() -> hideActions()
                     else -> showActions()
                 }
-                rvBlocks?.alpha = if (state.value.isDeleted()) 0.6f else 1f
+                binding.rvBlocks?.alpha = if (state.value.isDeleted()) 0.6f else 1f
             }
         }
 
@@ -491,7 +501,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
                     }
                 }
                 SeparatorsBlock::class.java -> {
-                    val view = item.getContentView() ?: rvBlocks?.findViewById(R.id.clSeparators)
+                    val view = item.getContentView() ?: binding.rvBlocks?.findViewById(R.id.clSeparators)
                     if (view != null) {
                         mView.getDecoratedBoundsWithMargins(view, mTempRect)
                         mTempRect.height()
@@ -580,7 +590,7 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
 
     fun storeActiveFieldState(): FocusMode? {
         try {
-            val focusedField = rvBlocks.findFocus()
+            val focusedField = binding.rvBlocks.findFocus()
             activeField = if (focusedField is EditText) focusedField else null
             activeFieldSelectionStart = activeField?.selectionStart ?: 0
             activeFieldSelectionEnd = activeField?.selectionEnd ?: 0
@@ -617,4 +627,9 @@ abstract class AttributedObjectFragment<O : AttributedObject, S : AttributedObje
         }
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

@@ -1,5 +1,8 @@
 package clipto.presentation.lockscreen.pinlock
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentPinLockBinding
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
@@ -9,13 +12,20 @@ import clipto.common.presentation.mvvm.base.FragmentBackButtonListener
 import clipto.presentation.lockscreen.PassKeyboardView
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_pin_lock.*
 import java.util.concurrent.Executor
 
 @AndroidEntryPoint
 class PinLockFragment : MvvmFragment<PinLockViewModel>(), FragmentBackButtonListener {
 
-    override val layoutResId: Int = R.layout.fragment_pin_lock
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentPinLockBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentPinLockBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_pin_lock
     override val viewModel: PinLockViewModel by viewModels()
 
     private val executor: Executor by lazy {
@@ -39,7 +49,7 @@ class PinLockFragment : MvvmFragment<PinLockViewModel>(), FragmentBackButtonList
 
     override fun bind(viewModel: PinLockViewModel) {
         viewModel.onBind(this)
-        passKeyboard.keyboardListener = object : PassKeyboardView.InputListener {
+        binding.passKeyboard.keyboardListener = object : PassKeyboardView.InputListener {
             override fun onInput(code: String) {
                 viewModel.onInput(code, this@PinLockFragment)
             }
@@ -52,20 +62,20 @@ class PinLockFragment : MvvmFragment<PinLockViewModel>(), FragmentBackButtonList
                 viewModel.onTouchIdClicked(this@PinLockFragment)
             }
         }
-        ivLogo?.animateScale(true)
+        binding.ivLogo?.animateScale(true)
     }
 
     fun setTouchIdBtnVisibility(visible: Boolean) {
-        passKeyboard?.buttonTouchIdVisible = visible
+        binding.passKeyboard?.buttonTouchIdVisible = visible
     }
 
     fun showInputLength(length: Int) {
-        indicator?.selectedCount = length
+        binding.indicator?.selectedCount = length
     }
 
     fun onWrongCode() {
-        passKeyboard?.reset()
-        indicator?.onWrongCode()
+        binding.passKeyboard?.reset()
+        binding.indicator?.onWrongCode()
     }
 
     fun showTouchIdScreen() {
@@ -74,5 +84,10 @@ class PinLockFragment : MvvmFragment<PinLockViewModel>(), FragmentBackButtonList
 
     fun onPinOk() {
         activity?.finish()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

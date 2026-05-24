@@ -1,5 +1,7 @@
 package clipto.presentation.common.dialog.select.options
+import android.view.View
 
+import com.wb.clipboard.databinding.DialogSelectOptionsBinding
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.fragment.app.FragmentActivity
@@ -14,12 +16,19 @@ import clipto.common.presentation.mvvm.MvvmBottomSheetDialogFragment
 import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.dialog_select_options.*
 
 @AndroidEntryPoint
 class SelectOptionsDialogFragment : MvvmBottomSheetDialogFragment<SelectOptionsDialogViewModel>() {
 
-    override val layoutResId: Int = R.layout.dialog_select_options
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = DialogSelectOptionsBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: DialogSelectOptionsBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.dialog_select_options
     override val viewModel: SelectOptionsDialogViewModel by activityViewModels()
 
     private val data: SelectOptionsDialogRequest? by lazy {
@@ -35,31 +44,31 @@ class SelectOptionsDialogFragment : MvvmBottomSheetDialogFragment<SelectOptionsD
             dismissAllowingStateLoss()
             return
         }
-        tvTitle.text = dataRef.title
-        flContent.setBottomSheetHeight(noBackground = true)
-        rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.tvTitle.text = dataRef.title
+        binding.flContent.setBottomSheetHeight(noBackground = true)
+        binding.rvBlocks.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         val blocksAdapter = BlockListAdapter(this)
         touchHelper = blocksAdapter.createTouchHelper(
             dataToSwap = { dataRef.options },
             canMove = { dataRef.enabled }
         )
-        rvBlocks.adapter = blocksAdapter
-        touchHelper.attachToRecyclerView(rvBlocks)
+        binding.rvBlocks.adapter = blocksAdapter
+        touchHelper.attachToRecyclerView(binding.rvBlocks)
 
         val blocksLive = viewModel.getBlocksLive(dataRef)
         blocksLive.observe(viewLifecycleOwner) {
-            ivAdd.setDebounceClickListener { viewModel.onAddOption(dataRef, blocksLive) }
-            ivAdd.setVisibleOrGone(dataRef.enabled)
+            binding.ivAdd.setDebounceClickListener { viewModel.onAddOption(dataRef, blocksLive) }
+            binding.ivAdd.setVisibleOrGone(dataRef.enabled)
 
-            ivSort.setVisibleOrGone(dataRef.enabled)
-            ivSort.setDebounceClickListener { viewModel.onSort(dataRef, blocksLive) }
+            binding.ivSort.setVisibleOrGone(dataRef.enabled)
+            binding.ivSort.setDebounceClickListener { viewModel.onSort(dataRef, blocksLive) }
 
             blocksAdapter.submitList(it) {
                 val indexOfEditBlock = it.indexOfFirst { it is SelectOptionEditBlock }
                 if (indexOfEditBlock != -1) {
-                    rvBlocks.scrollToPosition(indexOfEditBlock)
+                    binding.rvBlocks.scrollToPosition(indexOfEditBlock)
                 } else {
-                    rvBlocks.scrollToPosition(0)
+                    binding.rvBlocks.scrollToPosition(0)
                 }
             }
         }
@@ -67,6 +76,7 @@ class SelectOptionsDialogFragment : MvvmBottomSheetDialogFragment<SelectOptionsD
     }
 
     override fun onDestroyView() {
+        _binding = null
         data?.let { viewModel.onClosed(it) }
         super.onDestroyView()
     }

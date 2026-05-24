@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockTextInputLayoutBinding
 import android.text.InputFilter
 import android.text.InputType
 import android.view.View
@@ -11,7 +12,6 @@ import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.google.android.material.textfield.TextInputLayout
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_text_input_layout.view.*
 
 class TextInputLayoutBlock<C>(
     private val text: CharSequence?,
@@ -57,7 +57,8 @@ class TextInputLayoutBlock<C>(
                 helperText == item.helperText
 
     override fun onInit(context: C, block: View) {
-        block.textInputEditText.doAfterTextChanged { text ->
+        val binding = BlockTextInputLayoutBinding.bind(block)
+        binding.textInputEditText.doAfterTextChanged { text ->
             val ref = block.tag
             if (ref is TextInputLayoutBlock<*>) {
                 val error = ref.onTextChanged(text)
@@ -72,11 +73,12 @@ class TextInputLayoutBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockTextInputLayoutBinding.bind(block)
         val text = changedTextProvider.invoke()
         block.tag = null
         val ctx = block.context
         block as TextInputLayout
-        val editText = block.textInputEditText
+        val editText = binding.textInputEditText
         if (!editText.filters.contentEquals(filters)) {
             editText.filters = filters
         }

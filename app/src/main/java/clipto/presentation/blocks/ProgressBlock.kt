@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockProgressBinding
 import android.content.Context
 import android.view.View
 import clipto.common.extensions.gone
@@ -10,7 +11,6 @@ import clipto.extensions.getColorPositive
 import clipto.extensions.getTextColorPrimary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_progress.view.*
 
 class ProgressBlock<C>(
     private val context: Context,
@@ -46,6 +46,7 @@ class ProgressBlock<C>(
                 item.textColor == textColor
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockProgressBinding.bind(block)
         block.setOnClickListener {
             getBlockRef(block)?.blockClickListener?.invoke(context)
         }
@@ -53,10 +54,10 @@ class ProgressBlock<C>(
             getBlockRef(block)?.blockLongClickListener?.invoke()
             true
         }
-        block.ivAction.setOnClickListener {
+        binding.ivAction.setOnClickListener {
             getBlockRef(block)?.actionListener?.invoke(context)
         }
-        block.ivAction.setOnLongClickListener {
+        binding.ivAction.setOnLongClickListener {
             getBlockRef(block)?.let {
                 block.context.showToast(it.actionTitle)
             }
@@ -65,17 +66,18 @@ class ProgressBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockProgressBinding.bind(block)
         block.tag = this
-        block.tvProgressTitle.let {
+        binding.tvProgressTitle.let {
             it.setTextColor(textColor)
             it.text = label
         }
-        block.lpProgress.let {
+        binding.lpProgress.let {
             it.setIndicatorColor(indicatorColor)
             it.trackColor = trackColor
             it.progress = progress
         }
-        block.ivAction.let {
+        binding.ivAction.let {
             if (actionIcon != 0) {
                 it.setImageResource(actionIcon)
                 it.contentDescription = block.context.getString(actionTitle)

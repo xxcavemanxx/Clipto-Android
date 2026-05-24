@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockSelectDateSingleBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.misc.FormatUtils
@@ -12,7 +13,6 @@ import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.textfield.TextInputLayout
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_select_date_single.view.*
 import java.util.*
 
 class SingleDateBlock<F : Fragment>(
@@ -33,6 +33,7 @@ class SingleDateBlock<F : Fragment>(
     }
 
     override fun onInit(context: F, block: View) {
+        val binding = BlockSelectDateSingleBinding.bind(block)
         block as TextInputLayout
 
         block.setStartIconOnClickListener {
@@ -76,11 +77,12 @@ class SingleDateBlock<F : Fragment>(
     }
 
     override fun onBind(context: F, block: View) {
+        val binding = BlockSelectDateSingleBinding.bind(block)
         block.tag = this
         block as TextInputLayout
         val pattern = format ?: FormatUtils.getDateTimeShortPattern()
         val value = FormatUtils.formatDate(currentDate.invoke(), pattern)
-        block.tvEditText.setText(value)
+        binding.tvEditText.setText(value)
         block.hint = title ?: pattern
     }
 

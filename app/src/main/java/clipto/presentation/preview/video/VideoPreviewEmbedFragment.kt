@@ -1,5 +1,6 @@
 package clipto.presentation.preview.video
 
+import com.wb.clipboard.databinding.FragmentPreviewVideoEmbedBinding
 import android.content.Context
 import android.content.res.Configuration
 import android.graphics.Color
@@ -21,13 +22,15 @@ import clipto.common.presentation.mvvm.base.showSystemUI
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_preview_video_embed.*
 import kotlin.math.max
 
 @AndroidEntryPoint
 class VideoPreviewEmbedFragment : BaseBottomSheetDialogFragment() {
 
-    val viewModel: VideoPreviewEmbedViewModel by activityViewModels()
+    
+    private var _binding: FragmentPreviewVideoEmbedBinding? = null
+    private val binding get() = _binding!!
+val viewModel: VideoPreviewEmbedViewModel by activityViewModels()
 
     override val layoutResId: Int = R.layout.fragment_preview_video_embed
 
@@ -40,15 +43,16 @@ class VideoPreviewEmbedFragment : BaseBottomSheetDialogFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentPreviewVideoEmbedBinding.bind(view)
         if (activity == null) {
             dismissAllowingStateLoss()
             return
         }
         val url = arguments?.getString(ATTR_URL)
         if (url != null) {
-            contentView.setBottomSheetHeight(0.4f) { sheet, initialHeight, _ ->
+            binding.contentView.setBottomSheetHeight(0.4f) { sheet, initialHeight, _ ->
                 // SIZE
-                webView.layoutParams?.height = initialHeight
+                binding.webView.layoutParams?.height = initialHeight
 
                 // SWIPE
                 sheet.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
@@ -59,15 +63,15 @@ class VideoPreviewEmbedFragment : BaseBottomSheetDialogFragment() {
                     override fun onStateChanged(bottomSheet: View, newState: Int) {
                         viewModel.dataLiveData.postValue(VideoPreviewEmbedViewModel.Data(bottomSheetState = newState))
                         if (newState == BottomSheetBehavior.STATE_EXPANDED) {
-                            webView?.layoutParams?.height = ViewGroup.LayoutParams.MATCH_PARENT
+                            binding.webView?.layoutParams?.height = ViewGroup.LayoutParams.MATCH_PARENT
                             viewModel.onEnterFullscreen()
-                            webView?.requestLayout()
+                            binding.webView?.requestLayout()
                             L.log(this@VideoPreviewEmbedFragment, "Player: height=full")
                         } else if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
                             L.log(this@VideoPreviewEmbedFragment, "Player: height={}", initialHeight)
-                            webView?.layoutParams?.height = initialHeight
+                            binding.webView?.layoutParams?.height = initialHeight
                             viewModel.onExitFullscreen()
-                            webView?.requestLayout()
+                            binding.webView?.requestLayout()
                         }
                     }
                 })
@@ -87,10 +91,10 @@ class VideoPreviewEmbedFragment : BaseBottomSheetDialogFragment() {
                     val level = 0.8f
                     if ((slideOffset != null && slideOffset >= level) || it.bottomSheetState == BottomSheetBehavior.STATE_EXPANDED) {
                         activity?.hideSystemUI()
-                        webView?.hideSystemUI()
+                        binding.webView?.hideSystemUI()
                     } else {
                         activity?.showSystemUI()
-                        webView?.showSystemUI()
+                        binding.webView?.showSystemUI()
                     }
                     if (slideOffset != null) {
                         val alphaLevel = if (slideOffset >= level) 1f else level
@@ -106,21 +110,21 @@ class VideoPreviewEmbedFragment : BaseBottomSheetDialogFragment() {
             }
 
             // WEB VIEW
-            webView.webChromeClient = object : WebChromeClient() {
+            binding.webView.webChromeClient = object : WebChromeClient() {
                 override fun onProgressChanged(view: WebView?, newProgress: Int) {
-                    progressView?.progress = newProgress
-                    progressView?.visibility = if (newProgress in 1..99) View.VISIBLE else View.GONE
+                    binding.progressView?.progress = newProgress
+                    binding.progressView?.visibility = if (newProgress in 1..99) View.VISIBLE else View.GONE
                 }
             }
-            webView.settings.cacheMode = WebSettings.LOAD_NO_CACHE
-            webView.settings.domStorageEnabled = true
-            webView.settings.allowContentAccess = true
-            webView.settings.javaScriptEnabled = true
-            webView.settings.databaseEnabled = true
-            webView.settings.allowFileAccess = true
-            webView.settings.allowFileAccessFromFileURLs = true
-            webView.settings.allowUniversalAccessFromFileURLs = true
-            webView.loadDataWithBaseURL(
+            binding.webView.settings.cacheMode = WebSettings.LOAD_NO_CACHE
+            binding.webView.settings.domStorageEnabled = true
+            binding.webView.settings.allowContentAccess = true
+            binding.webView.settings.javaScriptEnabled = true
+            binding.webView.settings.databaseEnabled = true
+            binding.webView.settings.allowFileAccess = true
+            binding.webView.settings.allowFileAccessFromFileURLs = true
+            binding.webView.settings.allowUniversalAccessFromFileURLs = true
+            binding.webView.loadDataWithBaseURL(
                 url,
                 """
                         <html>
@@ -163,4 +167,9 @@ class VideoPreviewEmbedFragment : BaseBottomSheetDialogFragment() {
         }
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

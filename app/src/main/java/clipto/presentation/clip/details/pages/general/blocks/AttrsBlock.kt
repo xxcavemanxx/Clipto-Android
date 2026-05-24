@@ -1,5 +1,6 @@
 package clipto.presentation.clip.details.pages.general.blocks
 
+import com.wb.clipboard.databinding.BlockClipDetailsGeneralAttrsBinding
 import android.view.View
 import clipto.domain.Clip
 import clipto.extensions.getTextColorPrimary
@@ -9,7 +10,6 @@ import clipto.presentation.common.StyleHelper
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.text.KeyValueString
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_clip_details_general_attrs.view.*
 import java.util.*
 
 class AttrsBlock(
@@ -32,11 +32,12 @@ class AttrsBlock(
                     item.deleteDate == deleteDate
 
     override fun onBind(fragment: GeneralPageFragment, block: View) {
+        val binding = BlockClipDetailsGeneralAttrsBinding.bind(block)
         val ctx = block.context
 
         if (deleted) {
             KeyValueString(
-                    block.updateDateTextView,
+                    binding.updateDateTextView,
                     "\n",
                     ctx.getTextColorPrimary(),
                     ctx.getTextColorSecondary()).apply {
@@ -45,7 +46,7 @@ class AttrsBlock(
             }
         } else {
             KeyValueString(
-                    block.updateDateTextView,
+                    binding.updateDateTextView,
                     "\n",
                     ctx.getTextColorPrimary(),
                     ctx.getTextColorSecondary()).apply {
@@ -55,7 +56,7 @@ class AttrsBlock(
         }
 
         KeyValueString(
-                block.usageCountTextView,
+                binding.usageCountTextView,
                 "\n",
                 ctx.getTextColorPrimary(),
                 ctx.getTextColorSecondary()).apply {
@@ -64,7 +65,7 @@ class AttrsBlock(
         }
 
         KeyValueString(
-                block.charsCountTextView,
+                binding.charsCountTextView,
                 "\n",
                 ctx.getTextColorPrimary(),
                 ctx.getTextColorSecondary()).apply {

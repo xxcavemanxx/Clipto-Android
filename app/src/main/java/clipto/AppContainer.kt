@@ -1,5 +1,6 @@
 package clipto
 
+import com.wb.clipboard.databinding.ActivityNavigationBinding
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
@@ -28,13 +29,14 @@ import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
 import io.github.g00fy2.quickie.QRResult
 import io.github.g00fy2.quickie.ScanCustomCode
-import kotlinx.android.synthetic.main.activity_navigation.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class AppContainer : MvvmNavigationActivity<AppContainerViewModel>() {
 
-    @Inject
+    
+    private lateinit var binding: ActivityNavigationBinding
+@Inject
     lateinit var auth: IAuth
 
     private var initialized = false
@@ -43,11 +45,12 @@ class AppContainer : MvvmNavigationActivity<AppContainerViewModel>() {
 
     override val layoutResId: Int = R.layout.activity_navigation
     override val viewModel: AppContainerViewModel by viewModels()
-    override fun getNavHostFragment(): NavHostFragment = navHostFragment as NavHostFragment
+    override fun getNavHostFragment(): NavHostFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         onCreateWithTheme()
         super.onCreate(savedInstanceState)
+        binding = ActivityNavigationBinding.bind(window.decorView.findViewById(android.R.id.content))
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
@@ -76,7 +79,7 @@ class AppContainer : MvvmNavigationActivity<AppContainerViewModel>() {
         if (canNavigateUp) {
             onSupportNavigateUp()
         } else {
-            val fragment = navHostFragment?.childFragmentManager?.primaryNavigationFragment
+            val fragment = (supportFragmentManager.findFragmentById(R.id.navHostFragment) as? NavHostFragment)?.childFragmentManager?.primaryNavigationFragment
             if (fragment is ActivityBackPressConsumer && fragment.onBackPressConsumed()) {
                 // do nothing
             } else if (viewModel.settings.doubleClickToExit && onBackPressDeclined()) {

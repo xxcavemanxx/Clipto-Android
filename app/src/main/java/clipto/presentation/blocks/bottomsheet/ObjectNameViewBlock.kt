@@ -1,5 +1,6 @@
 package clipto.presentation.blocks.bottomsheet
 
+import com.wb.clipboard.databinding.BlockObjectNameViewBinding
 import android.content.res.ColorStateList
 import android.view.View
 import clipto.common.extensions.setDebounceClickListener
@@ -7,7 +8,6 @@ import clipto.common.misc.ThemeUtils
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_object_name_view.view.*
 
 class ObjectNameViewBlock<C>(
     private val uid: String?,
@@ -34,26 +34,28 @@ class ObjectNameViewBlock<C>(
                 item.hideHint == hideHint
 
     override fun onInit(context: C, block: View) {
-        block.ivEdit.setDebounceClickListener { getRef(block)?.onEdit?.invoke() }
-        block.ivDelete.setDebounceClickListener { getRef(block)?.onDelete?.invoke() }
-        block.tvName.setDebounceClickListener { getRef(block)?.onShowHint?.invoke() }
+        val binding = BlockObjectNameViewBinding.bind(block)
+        binding.ivEdit.setDebounceClickListener { getRef(block)?.onEdit?.invoke() }
+        binding.ivDelete.setDebounceClickListener { getRef(block)?.onDelete?.invoke() }
+        binding.tvName.setDebounceClickListener { getRef(block)?.onShowHint?.invoke() }
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockObjectNameViewBinding.bind(block)
         val ctx = block.context
 
         val colorInt = color?.let { ThemeUtils.getColor(ctx, it) } ?: ctx.getTextColorSecondary()
-        block.ivIcon.imageTintList = ColorStateList.valueOf(colorInt)
-        block.ivIcon.setImageResource(iconRes)
+        binding.ivIcon.imageTintList = ColorStateList.valueOf(colorInt)
+        binding.ivIcon.setImageResource(iconRes)
 
-        block.tvName.text = name
+        binding.tvName.text = name
 
         if (hideHint) {
-            block.tvName.isClickable = true
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
+            binding.tvName.isClickable = true
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
         } else {
-            block.tvName.isClickable = false
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
+            binding.tvName.isClickable = false
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
         }
 
         block.tag = this

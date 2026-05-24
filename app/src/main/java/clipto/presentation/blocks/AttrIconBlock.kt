@@ -1,12 +1,12 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockAttrIconBinding
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.annotation.DrawableRes
 import clipto.common.extensions.setDebounceClickListener
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attr_icon.view.*
 
 class AttrIconBlock<C>(
     private val id: String? = null,
@@ -29,6 +29,7 @@ class AttrIconBlock<C>(
                 iconColor == item.iconColor
 
     override fun onInit(context: C, block: View) {
+        val binding = BlockAttrIconBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is AttrIconBlock<*>) {
@@ -38,11 +39,12 @@ class AttrIconBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockAttrIconBinding.bind(block)
         block.tag = this
-        block.tvTitle.text = title
-        block.ivIcon.setImageResource(iconRes)
+        binding.tvTitle.text = title
+        binding.ivIcon.setImageResource(iconRes)
         if (iconColor != null) {
-            block.ivIcon.imageTintList = ColorStateList.valueOf(iconColor)
+            binding.ivIcon.imageTintList = ColorStateList.valueOf(iconColor)
         }
         block.isClickable = onClicked != null
     }

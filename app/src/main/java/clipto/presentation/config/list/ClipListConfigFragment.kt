@@ -1,5 +1,8 @@
 package clipto.presentation.config.list
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentConfigClipListBinding
 import android.content.Context
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,18 +17,25 @@ import clipto.presentation.config.TextFontItem
 import clipto.presentation.config.fonts.FontsFragment
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_config_clip_list.*
 
 @AndroidEntryPoint
 class ClipListConfigFragment : MvvmBottomSheetDialogFragment<ClipListConfigViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_config_clip_list
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentConfigClipListBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentConfigClipListBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_config_clip_list
     override val viewModel: ClipListConfigViewModel by viewModels()
 
     override fun bind(viewModel: ClipListConfigViewModel) {
         val activity = requireActivity()
 
-        contentView.setBottomSheetHeight(noBackground = true)
+        binding.contentView.setBottomSheetHeight(noBackground = true)
 
         val config = viewModel.getListConfig()
 
@@ -37,8 +47,8 @@ class ClipListConfigFragment : MvvmBottomSheetDialogFragment<ClipListConfigViewM
                 viewModel.onApplyConfig { cfg -> cfg.copy(textFont = it.font.id) }
             }
         }
-        textFontRecyclerView?.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-        textFontRecyclerView?.adapter = fontAdapter
+        binding.textFontRecyclerView?.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+        binding.textFontRecyclerView?.adapter = fontAdapter
 
         viewModel.fontsUpdated.observe(viewLifecycleOwner) {
             val fonts = viewModel.getVisibleFonts()
@@ -47,33 +57,33 @@ class ClipListConfigFragment : MvvmBottomSheetDialogFragment<ClipListConfigViewM
             val indexOfActiveFont = fonts.indexOfFirst { it.id == newConfig.textFont }
             fontAdapter.submitList(fontItems)
             if (indexOfActiveFont != -1) {
-                textFontRecyclerView?.smoothScrollToPosition(indexOfActiveFont)
+                binding.textFontRecyclerView?.smoothScrollToPosition(indexOfActiveFont)
             }
         }
 
         // text size
 
-        textSizeSeekBar.valueTo = (ClientSession.TEXT_SIZE_MAX - ClientSession.TEXT_SIZE_MIN).toFloat()
-        textSizeSeekBar.value = (config.textSize - ClientSession.TEXT_SIZE_MIN).toFloat()
-        textSizeSeekBar.addOnChangeListener { _, value, _ ->
+        binding.textSizeSeekBar.valueTo = (ClientSession.TEXT_SIZE_MAX - ClientSession.TEXT_SIZE_MIN).toFloat()
+        binding.textSizeSeekBar.value = (config.textSize - ClientSession.TEXT_SIZE_MIN).toFloat()
+        binding.textSizeSeekBar.addOnChangeListener { _, value, _ ->
             val newTextSize = value.toInt() + ClientSession.TEXT_SIZE_MIN
             viewModel.onApplyConfig { cfg -> cfg.copy(textSize = newTextSize) }
         }
 
         // text lines
-        textLinesSeekBar.valueTo = (ClientSession.TEXT_LINES_MAX - ClientSession.TEXT_LINES_MIN).toFloat()
-        textLinesSeekBar.value = (config.textLines - ClientSession.TEXT_LINES_MIN).toFloat()
-        textLinesSeekBar.addOnChangeListener { _, value, _ ->
+        binding.textLinesSeekBar.valueTo = (ClientSession.TEXT_LINES_MAX - ClientSession.TEXT_LINES_MIN).toFloat()
+        binding.textLinesSeekBar.value = (config.textLines - ClientSession.TEXT_LINES_MIN).toFloat()
+        binding.textLinesSeekBar.addOnChangeListener { _, value, _ ->
             val newTextLines = value.toInt() + ClientSession.TEXT_LINES_MIN
             viewModel.onApplyConfig { cfg -> cfg.copy(textLines = newTextLines) }
         }
 
-        textSizeDescription?.text = config.textSize.toString()
-        textLinesDescription?.text = config.textLines.toString()
+        binding.textSizeDescription?.text = config.textSize.toString()
+        binding.textLinesDescription?.text = config.textLines.toString()
 
         viewModel.listConfig.observe(viewLifecycleOwner) {
-            textSizeDescription?.text = it.textSize.toString()
-            textLinesDescription?.text = it.textLines.toString()
+            binding.textSizeDescription?.text = it.textSize.toString()
+            binding.textLinesDescription?.text = it.textLines.toString()
         }
 
         Analytics.screenConfigClipList()
@@ -87,5 +97,10 @@ class ClipListConfigFragment : MvvmBottomSheetDialogFragment<ClipListConfigViewM
                 ClipListConfigFragment().show(fm, TAG)
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

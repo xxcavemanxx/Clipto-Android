@@ -1,5 +1,6 @@
 package clipto.presentation.common.dialog.select.options
 
+import com.wb.clipboard.databinding.BlockDialogSelectOptionEditBinding
 import android.annotation.SuppressLint
 import android.view.MotionEvent
 import android.view.View
@@ -9,7 +10,6 @@ import clipto.common.extensions.*
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.recyclerview.BlockItemViewHolder
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dialog_select_option_edit.view.*
 
 @SuppressLint("ClickableViewAccessibility")
 class SelectOptionEditBlock(
@@ -28,20 +28,21 @@ class SelectOptionEditBlock(
 
     override fun onInit(context: SelectOptionsDialogFragment, holder: BlockItemViewHolder<SelectOptionsDialogFragment, *>) {
         val block = holder.itemView
-        block.ivDrag.setOnTouchListener { v, event ->
+        val binding = BlockDialogSelectOptionEditBinding.bind(block)
+        binding.ivDrag.setOnTouchListener { v, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 context.touchHelper.startDrag(holder)
             }
             false
         }
-        block.ivSave.setDebounceClickListener {
+        binding.ivSave.setDebounceClickListener {
             val ref = block.tag
             if (ref is SelectOptionEditBlock) {
                 viewModel.onSaveOption(ref.data, ref.option, ref.live)
             }
         }
 
-        block.etValue.doAfterTextChanged {
+        binding.etValue.doAfterTextChanged {
             val ref = block.tag
             if (ref is SelectOptionEditBlock) {
                 ref.option.value = it?.toString()?.toNullIfEmpty(trim = false)
@@ -49,22 +50,22 @@ class SelectOptionEditBlock(
         }
 
         if (data.withTitle) {
-            val guideline = block.guideline
-            block.etValue.setOnFocusChangeListener { _, hasFocus ->
+            val guideline = binding.guideline
+            binding.etValue.setOnFocusChangeListener { _, hasFocus ->
                 if (hasFocus) {
                     guideline.setGuidelinePercent(0.75f)
                 } else {
                     guideline.setGuidelinePercent(0.5f)
                 }
             }
-            block.etLabel.setOnFocusChangeListener { _, hasFocus ->
+            binding.etLabel.setOnFocusChangeListener { _, hasFocus ->
                 if (hasFocus) {
                     guideline.setGuidelinePercent(0.25f)
                 } else {
                     guideline.setGuidelinePercent(0.5f)
                 }
             }
-            block.etLabel.doAfterTextChanged {
+            binding.etLabel.doAfterTextChanged {
                 val ref = block.tag
                 if (ref is SelectOptionEditBlock) {
                     ref.option.title = it?.toString()?.toNullIfEmpty(trim = true)
@@ -74,16 +75,17 @@ class SelectOptionEditBlock(
     }
 
     override fun onBind(context: SelectOptionsDialogFragment, block: View) {
+        val binding = BlockDialogSelectOptionEditBinding.bind(block)
         block.tag = null
         if (data.withTitle) {
-            block.etLabel.setText(option.title)
+            binding.etLabel.setText(option.title)
         }
-        block.etValue.setTextWithSelection(option.value)
-        block.etValue.showKeyboard {
+        binding.etValue.setTextWithSelection(option.value)
+        binding.etValue.showKeyboard {
             if (data.withTitle) {
-                block.guideline?.setGuidelinePercent(0.75f)
+                binding.guideline?.setGuidelinePercent(0.75f)
             }
-            block.etValue?.touch()
+            binding.etValue?.touch()
         }
         block.tag = this
     }

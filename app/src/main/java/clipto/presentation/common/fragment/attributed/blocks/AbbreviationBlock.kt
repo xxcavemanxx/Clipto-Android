@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed.blocks
 
+import com.wb.clipboard.databinding.BlockAttributedObjectAbbreviationBinding
 import android.annotation.SuppressLint
 import android.text.InputFilter
 import android.view.KeyEvent
@@ -16,7 +17,6 @@ import clipto.presentation.common.dialog.hint.HintDialogData
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.view.DoubleClickListenerWrapper
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attributed_object_abbreviation.view.*
 
 @SuppressLint("ClickableViewAccessibility")
 class AbbreviationBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
@@ -36,8 +36,9 @@ class AbbreviationBlock<O : AttributedObject, S : AttributedObjectScreenState<O>
                 && abbreviation == item.abbreviation
 
     override fun onInit(fragment: Fragment, block: View) {
+        val binding = BlockAttributedObjectAbbreviationBinding.bind(block)
         val appConfig = dialogState.appConfig
-        block.ivHintAbbreviation.setDebounceClickListener {
+        binding.ivHintAbbreviation.setDebounceClickListener {
             fragment.storeActiveFieldState()
             dialogState.showHint(
                 HintDialogData(
@@ -55,8 +56,9 @@ class AbbreviationBlock<O : AttributedObject, S : AttributedObjectScreenState<O>
     }
 
     override fun onBind(fragment: Fragment, block: View) {
-        val editText = block.etClipAbbreviation
-        val hint = block.ivHintAbbreviation
+        val binding = BlockAttributedObjectAbbreviationBinding.bind(block)
+        val editText = binding.etClipAbbreviation
+        val hint = binding.ivHintAbbreviation
         block.tag = this
 
         when (screenState.viewMode) {
@@ -89,13 +91,14 @@ class AbbreviationBlock<O : AttributedObject, S : AttributedObjectScreenState<O>
     }
 
     private fun initListeners(block: View) {
-        val editText = block.etClipAbbreviation
+        val binding = BlockAttributedObjectAbbreviationBinding.bind(block)
+        val editText = binding.etClipAbbreviation
         val context = editText.context
         val appConfig = dialogState.appConfig
         editText.filters = arrayOf(InputFilter.LengthFilter(appConfig.maxLengthAbbreviation()))
         editText.setOnClickListener(DoubleClickListenerWrapper(
             context,
-            { getScreenState(block).acceptDoubleClick() },
+            { getScreenState(block)?.acceptDoubleClick() == true },
             {
                 getScreenState(block)
                     ?.whenCanBeEdited(editText)
@@ -110,9 +113,9 @@ class AbbreviationBlock<O : AttributedObject, S : AttributedObjectScreenState<O>
                 false
             }
         }
-        editText.doAfterTextChanged {
-            if (getScreenState(block).isEditMode() && it === editText.text) {
-                getAbbreviationBlock(block)?.onChanged?.invoke(it)
+        editText.doAfterTextChanged { editable ->
+            if (getScreenState(block)?.isEditMode() == true && editable === editText.text) {
+                getAbbreviationBlock(block)?.onChanged?.invoke(editable)
             }
         }
     }

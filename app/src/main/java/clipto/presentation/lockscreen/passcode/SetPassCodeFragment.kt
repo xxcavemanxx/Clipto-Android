@@ -1,5 +1,8 @@
 package clipto.presentation.lockscreen.passcode
+import android.view.View
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentSetPasscodeBinding
 import android.view.Gravity
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.annotation.StringRes
@@ -15,24 +18,31 @@ import clipto.presentation.lockscreen.PassKeyboardView
 import com.transitionseverywhere.ChangeText
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_set_passcode.*
 
 @AndroidEntryPoint
 class SetPassCodeFragment : MvvmFragment<SetPassCodeViewModel>(), FragmentBackButtonListener {
 
-    override val layoutResId: Int = R.layout.fragment_set_passcode
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentSetPasscodeBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentSetPasscodeBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_set_passcode
     override val viewModel: SetPassCodeViewModel by viewModels()
 
     override fun bind(viewModel: SetPassCodeViewModel) {
-        withDefaults(toolbar, onBackPressed = { viewModel.onBackPressed(this) })
-        contentView.postDelayed({
-            tvTitle?.animateVisibility(true)
-            indicator?.animateVisibility(true)
-            passKeyboard?.animateVisibility(true)
+        withDefaults(binding.toolbar, onBackPressed = { viewModel.onBackPressed(this) })
+        binding.contentView.postDelayed({
+            binding.tvTitle?.animateVisibility(true)
+            binding.indicator?.animateVisibility(true)
+            binding.passKeyboard?.animateVisibility(true)
 
         }, viewModel.appConfig.getUiTimeout())
-        btnSkip.setDebounceClickListener { navigateUp() }
-        passKeyboard.keyboardListener = object : PassKeyboardView.InputListener {
+        binding.btnSkip.setDebounceClickListener { navigateUp() }
+        binding.passKeyboard.keyboardListener = object : PassKeyboardView.InputListener {
             override fun onInput(code: String) {
                 viewModel.onInput(code, this@SetPassCodeFragment)
             }
@@ -47,40 +57,45 @@ class SetPassCodeFragment : MvvmFragment<SetPassCodeViewModel>(), FragmentBackBu
     fun showSetPassCode() {
         animateBtnSkip(true)
         animateTitle(R.string.auth_set_passcode_label_set_passcode)
-        indicator.reset()
+        binding.indicator.reset()
     }
 
     fun showPassCodeConfirmation() {
         animateBtnSkip(false)
         animateTitle(R.string.auth_set_passcode_label_reenter_passcode)
-        indicator.reset(true)
-        passKeyboard.reset()
+        binding.indicator.reset(true)
+        binding.passKeyboard.reset()
     }
 
     fun showInputLength(length: Int) {
-        indicator.selectedCount = length
+        binding.indicator.selectedCount = length
     }
 
     fun onWrongPassConfirmation() {
-        indicator.onWrongCode()
-        passKeyboard.reset()
+        binding.indicator.onWrongCode()
+        binding.passKeyboard.reset()
     }
 
     private fun animateBtnSkip(show: Boolean) {
         TransitionManager.beginDelayedTransition(
-            toolbar, Slide(Gravity.END).setDuration(500)
-                .setInterpolator(AccelerateDecelerateInterpolator()).addTarget(btnSkip)
+            binding.toolbar, Slide(Gravity.END).setDuration(500)
+                .setInterpolator(AccelerateDecelerateInterpolator()).addTarget(binding.btnSkip)
         )
-        btnSkip.setVisibleOrGone(show)
+        binding.btnSkip.setVisibleOrGone(show)
     }
 
     private fun animateTitle(@StringRes titleRes: Int) {
         TransitionManager.beginDelayedTransition(
-            contentView, ChangeText().setChangeBehavior(
+            binding.contentView, ChangeText().setChangeBehavior(
                 ChangeText.CHANGE_BEHAVIOR_OUT_IN
-            ).setDuration(500).addTarget(tvTitle)
+            ).setDuration(500).addTarget(binding.tvTitle)
         )
-        tvTitle.setText(titleRes)
+        binding.tvTitle.setText(titleRes)
     }
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

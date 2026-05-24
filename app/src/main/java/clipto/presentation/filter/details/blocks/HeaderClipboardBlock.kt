@@ -1,5 +1,6 @@
 package clipto.presentation.filter.details.blocks
 
+import com.wb.clipboard.databinding.BlockFilterDetailsHeaderClipboardBinding
 import android.view.View
 import androidx.fragment.app.Fragment
 import clipto.common.extensions.setDebounceClickListener
@@ -11,7 +12,6 @@ import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.filter.details.FilterDetailsViewModel
 import clipto.presentation.runes.RuneSettingsViewModel
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_filter_details_header_clipboard.view.*
 
 class HeaderClipboardBlock(
     val viewModel: FilterDetailsViewModel,
@@ -35,28 +35,30 @@ class HeaderClipboardBlock(
                 item.hideHint == hideHint
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.ivIcon.setDebounceClickListener {
+        val binding = BlockFilterDetailsHeaderClipboardBinding.bind(block)
+        binding.ivIcon.setDebounceClickListener {
             val ref = block.tag
             if (ref is HeaderClipboardBlock) {
                 viewModel.appState.requestNavigateTo(R.id.action_rune_settings, RuneSettingsViewModel.withArgs(ref.rune.getId()))
                 viewModel.dismiss()
             }
         }
-        block.ivAction.setImageResource(R.drawable.ic_clear_all)
-        block.ivAction.setDebounceClickListener { viewModel.onClearClipboard() }
-        block.tvName.setDebounceClickListener { viewModel.onShowHint() }
+        binding.ivAction.setImageResource(R.drawable.ic_clear_all)
+        binding.ivAction.setDebounceClickListener { viewModel.onClearClipboard() }
+        binding.tvName.setDebounceClickListener { viewModel.onShowHint() }
     }
 
     override fun onBind(fragment: Fragment, block: View) {
+        val binding = BlockFilterDetailsHeaderClipboardBinding.bind(block)
         block.tag = this
-        block.ivIcon.withRoundedCorners().withHighlightIndicator().withRune(rune, rune.isActive())
-        block.tvName.text = StyleHelper.getFilterLabel(block.context, filter)
+        binding.ivIcon.withRoundedCorners().withHighlightIndicator().withRune(rune, rune.isActive())
+        binding.tvName.text = StyleHelper.getFilterLabel(block.context, filter)
         if (hideHint) {
-            block.tvName.isClickable = true
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
+            binding.tvName.isClickable = true
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
         } else {
-            block.tvName.isClickable = false
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
+            binding.tvName.isClickable = false
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
         }
     }
 

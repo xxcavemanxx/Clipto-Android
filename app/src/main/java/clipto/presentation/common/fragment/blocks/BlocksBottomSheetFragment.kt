@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.blocks
 
+import com.wb.clipboard.databinding.FragmentBlocksBottomSheetBinding
 import android.app.Dialog
 import android.os.Bundle
 import android.view.KeyEvent
@@ -17,9 +18,26 @@ import clipto.presentation.common.dialog.confirm.ConfirmDialogData
 import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.fragment_blocks_bottom_sheet.*
 
 abstract class BlocksBottomSheetFragment<VM : BlocksViewModel> : MvvmBottomSheetDialogFragment<VM>() {
+
+    protected var _binding: Any? = null
+    protected open val binding: androidx.viewbinding.ViewBinding get() {
+        val b = _binding
+        if (b is androidx.viewbinding.ViewBinding) return b
+        val newBinding = FragmentBlocksBottomSheetBinding.bind(requireView())
+        _binding = newBinding
+        return newBinding
+    }
+
+    protected val rvBlocks: androidx.recyclerview.widget.RecyclerViewExt get() = requireView().findViewById(R.id.rvBlocks)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        if (layoutResId == R.layout.fragment_blocks_bottom_sheet) {
+            _binding = FragmentBlocksBottomSheetBinding.bind(view)
+        }
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     override val layoutResId: Int = R.layout.fragment_blocks_bottom_sheet
 
@@ -32,7 +50,7 @@ abstract class BlocksBottomSheetFragment<VM : BlocksViewModel> : MvvmBottomSheet
     protected open fun canBeSwiped(): Boolean = true
     protected open fun getPeekHeight(): Float = 0.75f
     protected open fun getTitle(): String? = null
-    protected open fun getContentView(): View = flContent
+    protected open fun getContentView(): View = requireView().findViewById(R.id.flContent)
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return BottomSheetDialogExt()
@@ -91,7 +109,7 @@ abstract class BlocksBottomSheetFragment<VM : BlocksViewModel> : MvvmBottomSheet
 
         viewModel.showHideKeyboard.observe(viewLifecycleOwner) {
             if (!it) {
-                rvBlocks?.hideKeyboard()
+                rvBlocks.hideKeyboard()
             }
         }
 
@@ -109,6 +127,7 @@ abstract class BlocksBottomSheetFragment<VM : BlocksViewModel> : MvvmBottomSheet
     }
 
     override fun onDestroyView() {
+        _binding = null
         viewModel.onClosed()
         super.onDestroyView()
     }

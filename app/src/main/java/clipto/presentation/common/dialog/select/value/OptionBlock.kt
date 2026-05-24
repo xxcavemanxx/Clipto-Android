@@ -1,5 +1,6 @@
 package clipto.presentation.common.dialog.select.value
 
+import com.wb.clipboard.databinding.BlockDialogSelectValueBinding
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.lifecycle.MutableLiveData
@@ -8,7 +9,6 @@ import clipto.extensions.TextTypeExt
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_dialog_select_value.view.*
 
 class OptionBlock<T>(
     private val viewModel: SelectValueDialogViewModel,
@@ -36,6 +36,7 @@ class OptionBlock<T>(
     }
 
     override fun onInit(fragment: SelectValueDialogFragment, block: View) {
+        val binding = BlockDialogSelectValueBinding.bind(block)
         block.setDebounceClickListener {
             val ref = block.tag
             if (ref is OptionBlock<*>) {
@@ -45,20 +46,21 @@ class OptionBlock<T>(
     }
 
     override fun onBind(fragment: SelectValueDialogFragment, block: View) {
+        val binding = BlockDialogSelectValueBinding.bind(block)
         block.tag = this
         var text = option.title
         if (highlight != null && text != null) {
             text = TextTypeExt.TEXT_PLAIN.highlight(block.context, text, highlight)
         }
-        block.tvName.text = text
-        block.tvName.setBold(option.checked)
-        block.ivSelected.setVisibleOrGone(option.checked)
+        binding.tvName.text = text
+        binding.tvName.setBold(option.checked)
+        binding.ivSelected.setVisibleOrGone(option.checked)
         if (option.iconRes != null) {
-            block.ivIcon.imageTintList = ColorStateList.valueOf(option.iconColor ?: block.context.getTextColorSecondary())
-            block.ivIcon.setImageResource(option.iconRes)
-            block.ivIcon.visible()
+            binding.ivIcon.imageTintList = ColorStateList.valueOf(option.iconColor ?: block.context.getTextColorSecondary())
+            binding.ivIcon.setImageResource(option.iconRes)
+            binding.ivIcon.visible()
         } else {
-            block.ivIcon.gone()
+            binding.ivIcon.gone()
         }
     }
 

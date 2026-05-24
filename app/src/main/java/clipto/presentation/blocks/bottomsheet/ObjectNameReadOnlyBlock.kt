@@ -1,5 +1,6 @@
 package clipto.presentation.blocks.bottomsheet
 
+import com.wb.clipboard.databinding.BlockObjectNameReadonlyBinding
 import android.content.res.ColorStateList
 import android.view.View
 import androidx.annotation.CallSuper
@@ -9,7 +10,6 @@ import clipto.extensions.getTextColorPrimary
 import clipto.extensions.getTextColorSecondary
 import clipto.presentation.common.recyclerview.BlockItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_object_name_readonly.view.*
 
 class ObjectNameReadOnlyBlock<C>(
     private val uid: String?,
@@ -40,33 +40,35 @@ class ObjectNameReadOnlyBlock<C>(
 
     @CallSuper
     override fun onInit(context: C, block: View) {
-        block.tvName.setDebounceClickListener { getRef(block)?.onShowHint?.invoke() }
-        block.ivAction.setDebounceClickListener { getRef(block)?.onActionClick?.invoke() }
+        val binding = BlockObjectNameReadonlyBinding.bind(block)
+        binding.tvName.setDebounceClickListener { getRef(block)?.onShowHint?.invoke() }
+        binding.ivAction.setDebounceClickListener { getRef(block)?.onActionClick?.invoke() }
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockObjectNameReadonlyBinding.bind(block)
         val ctx = block.context
 
         val colorInt = color?.let { ThemeUtils.getColor(ctx, it) } ?: ctx.getTextColorSecondary()
-        block.ivIcon.imageTintList = ColorStateList.valueOf(colorInt)
-        block.ivIcon.setImageResource(iconRes)
+        binding.ivIcon.imageTintList = ColorStateList.valueOf(colorInt)
+        binding.ivIcon.setImageResource(iconRes)
 
-        block.tvName.text = name
+        binding.tvName.text = name
 
         if (hideHint && onShowHint != null) {
-            block.tvName.isClickable = true
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
+            binding.tvName.isClickable = true
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_floating_hint, 0)
         } else {
-            block.tvName.isClickable = false
-            block.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
+            binding.tvName.isClickable = false
+            binding.tvName.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0)
         }
 
         if (actionIconRes != null) {
             val iconColor = actionIconColor ?: ctx.getTextColorSecondary()
-            block.ivAction.imageTintList = ColorStateList.valueOf(iconColor)
-            block.ivAction.setImageResource(actionIconRes)
+            binding.ivAction.imageTintList = ColorStateList.valueOf(iconColor)
+            binding.ivAction.setImageResource(actionIconRes)
         } else {
-            block.ivAction.setImageDrawable(null)
+            binding.ivAction.setImageDrawable(null)
         }
 
         block.tag = this

@@ -1,5 +1,7 @@
 package clipto.presentation.file.view
+import android.os.Bundle
 
+import com.wb.clipboard.databinding.FragmentAttributedObjectBinding
 import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.viewModels
@@ -13,18 +15,18 @@ import clipto.presentation.common.view.RuneIconView
 import clipto.store.files.FileScreenState
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_attributed_object.*
 
 @AndroidEntryPoint
 class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileViewModel>() {
 
-    override val viewModel: FileViewModel by viewModels()
+
+override val viewModel: FileViewModel by viewModels()
     override fun getFitViewId(): Int = R.id.tvFilePreview
     override fun hasConfig(state: FileScreenState): Boolean = !state.isReadOnly()
 
     override fun createViewState(): ViewState<FileScreenState> =
         ViewState(
-            object : ViewState.Layer<FileScreenState, ImageView>(iv1, "action_close") {
+            object : ViewState.Layer<FileScreenState, ImageView>(binding.iv1, "action_close") {
                 override fun canApply(state: FileScreenState): Boolean = state.isViewMode()
                 override fun doApply(state: FileScreenState) {
                     bindAction(layerView, R.drawable.action_arrow_back, R.string.content_description_back) {
@@ -32,7 +34,7 @@ class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileView
                     }
                 }
             },
-            object : ViewState.Layer<FileScreenState, ImageView>(iv1, "action_cancel_edit") {
+            object : ViewState.Layer<FileScreenState, ImageView>(binding.iv1, "action_cancel_edit") {
                 override fun canApply(state: FileScreenState): Boolean = state.isEditMode()
                 override fun doApply(state: FileScreenState) {
                     bindAction(layerView, R.drawable.action_cancel, R.string.menu_cancel) {
@@ -40,7 +42,7 @@ class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileView
                     }
                 }
             },
-            object : ViewState.Layer<FileScreenState, ImageView>(iv5, "action_edit") {
+            object : ViewState.Layer<FileScreenState, ImageView>(binding.iv5, "action_edit") {
                 override fun canApply(state: FileScreenState): Boolean = !state.isEditMode() && state.isEditable()
                 override fun doApply(state: FileScreenState) {
                     bindAction(layerView, R.drawable.action_edit, R.string.menu_edit) {
@@ -48,7 +50,7 @@ class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileView
                     }
                 }
             },
-            object : ViewState.Layer<FileScreenState, ImageView>(iv5, "action_save") {
+            object : ViewState.Layer<FileScreenState, ImageView>(binding.iv5, "action_save") {
                 override fun canApply(state: FileScreenState): Boolean = state.isEditMode() && !viewModel.getSettings().autoSave
                 override fun doApply(state: FileScreenState) {
                     bindAction(layerView, R.drawable.action_save, R.string.button_save) {
@@ -56,7 +58,7 @@ class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileView
                     }
                 }
             },
-            object : ViewState.Layer<FileScreenState, RuneIconView>(autoSaveIconView, "action_auto_save") {
+            object : ViewState.Layer<FileScreenState, RuneIconView>(binding.autoSaveIconView, "action_auto_save") {
                 override fun canApply(state: FileScreenState): Boolean = state.isEditMode() && viewModel.getSettings().autoSave
                 override fun canBind(state: FileScreenState): Boolean = true
                 override fun doApply(state: FileScreenState) {
@@ -65,7 +67,7 @@ class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileView
                     layerView.setOnLongClickListener(onContentDescriptionListener)
                 }
             },
-            object : ViewState.Layer<FileScreenState, ImageView>(iv9, "action_share") {
+            object : ViewState.Layer<FileScreenState, ImageView>(binding.iv9, "action_share") {
                 override fun canApply(state: FileScreenState): Boolean = !state.isReadOnly()
                 override fun doApply(state: FileScreenState) {
                     bindAction(layerView, R.drawable.ic_share, R.string.menu_share_link) {
@@ -75,4 +77,9 @@ class FileFragment : AttributedObjectFragment<FileRef, FileScreenState, FileView
             }
         )
 
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

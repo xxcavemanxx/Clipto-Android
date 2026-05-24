@@ -1,5 +1,6 @@
 package clipto.dynamic.presentation.text
 
+import com.wb.clipboard.databinding.FragmentDynamicTextBinding
 import android.app.Dialog
 import android.graphics.Rect
 import android.os.Bundle
@@ -20,12 +21,19 @@ import clipto.presentation.common.recyclerview.BlockListAdapter
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.wb.clipboard.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_dynamic_text.*
 
 @AndroidEntryPoint
 class DynamicTextFragment : MvvmBottomSheetDialogFragment<DynamicTextViewModel>() {
 
-    override val layoutResId: Int = R.layout.fragment_dynamic_text
+    
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentDynamicTextBinding.bind(view)
+        super.onViewCreated(view, savedInstanceState)
+    }
+private var _binding: FragmentDynamicTextBinding? = null
+    private val binding get() = _binding!!
+override val layoutResId: Int = R.layout.fragment_dynamic_text
     override val viewModel: DynamicTextViewModel by viewModels()
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -34,10 +42,10 @@ class DynamicTextFragment : MvvmBottomSheetDialogFragment<DynamicTextViewModel>(
 
     override fun bind(viewModel: DynamicTextViewModel) {
         val ctx = requireContext()
-        flContent.setBottomSheetHeight(hideable = false, noBackground = true)
-        mbApply.setDebounceClickListener { viewModel.onApply() }
-        tvTitle.setDebounceClickListener { viewModel.onShowHint() }
-        rvBlocks.layoutManager = object : LinearLayoutManager(context, VERTICAL, false) {
+        binding.flContent.setBottomSheetHeight(hideable = false, noBackground = true)
+        binding.mbApply.setDebounceClickListener { viewModel.onApply() }
+        binding.tvTitle.setDebounceClickListener { viewModel.onShowHint() }
+        binding.rvBlocks.layoutManager = object : LinearLayoutManager(context, VERTICAL, false) {
             override fun requestChildRectangleOnScreen(
                 parent: RecyclerView,
                 child: View,
@@ -49,16 +57,16 @@ class DynamicTextFragment : MvvmBottomSheetDialogFragment<DynamicTextViewModel>(
             }
         }
         val blocksAdapter = BlockListAdapter<Fragment>(this)
-        rvBlocks.adapter = blocksAdapter
+        binding.rvBlocks.adapter = blocksAdapter
 
         viewModel.configLive.observe(viewLifecycleOwner) {
-            mbApply.setText(it.request.config.actionType.getActionLabelRes())
+            binding.mbApply.setText(it.request.config.actionType.getActionLabelRes())
             val title = it.request.config.title.toNullIfEmpty()
             val textColor = if (title != null) ctx.getTextColorPrimary() else ctx.getTextColorSecondary()
-            tvTitle?.text = title ?: ctx.getString(R.string.clip_hint_title)
-            tvTitle?.setTextColor(textColor)
+            binding.tvTitle?.text = title ?: ctx.getString(R.string.clip_hint_title)
+            binding.tvTitle?.setTextColor(textColor)
             if (it.viewMode == ViewMode.TEXT) {
-                flContent?.hideKeyboard()
+                binding.flContent?.hideKeyboard()
             }
         }
 
@@ -68,6 +76,7 @@ class DynamicTextFragment : MvvmBottomSheetDialogFragment<DynamicTextViewModel>(
     }
 
     override fun onDestroyView() {
+        _binding = null
         viewModel.onClosed()
         super.onDestroyView()
     }

@@ -1,5 +1,6 @@
 package clipto.presentation.common.fragment.attributed.blocks
 
+import com.wb.clipboard.databinding.BlockAttributedObjectTitleBinding
 import android.annotation.SuppressLint
 import android.text.InputFilter
 import android.view.KeyEvent
@@ -13,7 +14,6 @@ import clipto.domain.*
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.view.DoubleClickListenerWrapper
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_attributed_object_title.view.*
 
 @SuppressLint("ClickableViewAccessibility")
 class TitleBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
@@ -40,16 +40,18 @@ class TitleBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
                 !isNew
 
     override fun onInit(fragment: Fragment, block: View) {
-        block.ivShowMore.setDebounceClickListener {
+        val binding = BlockAttributedObjectTitleBinding.bind(block)
+        binding.ivShowMore.setDebounceClickListener {
             getTitleBlock(block)?.let { ref -> ref.onShowAttrs(!ref.showAdditionalAttributes) }
         }
         initListeners(block)
     }
 
     override fun onBind(fragment: Fragment, block: View) {
+        val binding = BlockAttributedObjectTitleBinding.bind(block)
         block.tag = this
 
-        val editText = block.etClipTitle
+        val editText = binding.etClipTitle
         editText.setHint(hintRes)
 
         when (screenState.viewMode) {
@@ -79,22 +81,23 @@ class TitleBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
         }
 
         if (showAdditionalAttributes) {
-            block.ivShowMore.setImageResource(R.drawable.ic_expand_less)
-            block.highlightView.gone()
+            binding.ivShowMore.setImageResource(R.drawable.ic_expand_less)
+            binding.highlightView.gone()
         } else {
-            block.ivShowMore.setImageResource(R.drawable.ic_expand_more)
-            block.highlightView.setVisibleOrGone(hasExtraAttrs)
+            binding.ivShowMore.setImageResource(R.drawable.ic_expand_more)
+            binding.highlightView.setVisibleOrGone(hasExtraAttrs)
         }
     }
 
     private fun initListeners(block: View) {
-        val editText = block.etClipTitle
+        val binding = BlockAttributedObjectTitleBinding.bind(block)
+        val editText = binding.etClipTitle
         val context = editText.context
         val appConfig = AppContext.get().appConfig
         editText.filters = arrayOf(InputFilter.LengthFilter(appConfig.maxLengthTitle()))
         editText.setOnClickListener(DoubleClickListenerWrapper(
             context,
-            { getScreenState(block).acceptDoubleClick() },
+            { getScreenState(block)?.acceptDoubleClick() == true },
             {
                 getScreenState(block)
                     ?.whenCanBeEdited(editText)
@@ -109,9 +112,9 @@ class TitleBlock<O : AttributedObject, S : AttributedObjectScreenState<O>>(
                 false
             }
         }
-        editText.doAfterTextChanged {
-            if (getScreenState(block).isEditMode() && it === editText.text) {
-                getTitleBlock(block)?.onChanged?.invoke(it)
+        editText.doAfterTextChanged { editable ->
+            if (getScreenState(block)?.isEditMode() == true && editable === editText.text) {
+                getTitleBlock(block)?.onChanged?.invoke(editable)
             }
         }
     }

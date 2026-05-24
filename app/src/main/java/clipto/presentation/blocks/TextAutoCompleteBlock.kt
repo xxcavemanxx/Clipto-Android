@@ -1,5 +1,6 @@
 package clipto.presentation.blocks
 
+import com.wb.clipboard.databinding.BlockTextAutoCompleteBinding
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import androidx.annotation.DrawableRes
@@ -8,7 +9,6 @@ import clipto.common.extensions.animateScale
 import clipto.presentation.common.recyclerview.BlockItem
 import clipto.presentation.common.widget.AutoCompleteItem
 import com.wb.clipboard.R
-import kotlinx.android.synthetic.main.block_text_auto_complete.view.*
 
 class TextAutoCompleteBlock<C>(
     @StringRes private val hintRes: Int,
@@ -33,9 +33,10 @@ class TextAutoCompleteBlock<C>(
     }
 
     override fun onBind(context: C, block: View) {
+        val binding = BlockTextAutoCompleteBinding.bind(block)
         val context = block.context
-        val autoComplete = block.tvAutoComplete
-        val buttonField = block.mbAutoComplete
+        val autoComplete = binding.tvAutoComplete
+        val buttonField = binding.mbAutoComplete
 
         autoComplete.setHint(hintRes)
         autoComplete.setImeActionLabel(context.getString(actionTitleRes), EditorInfo.IME_ACTION_DONE)
