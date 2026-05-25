@@ -144,14 +144,7 @@ abstract class ClipItemBlock<V>(
         }
 
         // PUBLIC LINK
-        getPublicLinkView(block)?.apply {
-            if (clip.hasPublicLink()) {
-                isEnabled = clip.publicLink?.unavailable == false
-                visible()
-            } else {
-                gone()
-            }
-        }
+        getPublicLinkView(block)?.gone()
 
         // TEXT
         getTextView(block)?.apply {

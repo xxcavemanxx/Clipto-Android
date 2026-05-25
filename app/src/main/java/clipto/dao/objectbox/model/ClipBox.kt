@@ -92,10 +92,6 @@ class ClipBox : Clip() {
     override var size: Long = 0
 
     @Index
-    @Convert(converter = PublicLinkConverter::class, dbType = String::class)
-    override var publicLink: PublicLink? = null
-
-    @Index
     override var characters: Int = 0
 
     @Index

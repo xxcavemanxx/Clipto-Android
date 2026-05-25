@@ -5,7 +5,6 @@ import androidx.annotation.StringRes
 import clipto.action.*
 import clipto.api.IApi
 import clipto.config.IAppConfig
-import clipto.dao.firebase.FirebaseDaoHelper
 import clipto.dao.objectbox.FilterBoxDao
 import clipto.dao.objectbox.SettingsBoxDao
 import clipto.domain.Clip
@@ -46,7 +45,6 @@ class AppContext @Inject constructor(
     val filterRepository: Lazy<IFilterRepository>,
     val dynamicValuesRepository: Lazy<IDynamicValuesRepository>,
     private val api: Lazy<IApi>,
-    private val firebaseDaoHelper: FirebaseDaoHelper,
     private val clipboardStateManager: Lazy<IClipboardStateManager>,
     private val checkUserSessionAction: CheckUserSessionAction,
     private val saveClipAction: SaveClipAction,
@@ -70,7 +68,7 @@ class AppContext @Inject constructor(
 
     fun withInternet(success: () -> Unit, failed: () -> Unit = {}) = internetState.withInternet(success, failed)
     fun onUniversalCopy(clip: Clip) = clipboardStateManager.get().onUniversalCopy(clip)
-    fun getAuthUserCollection() = firebaseDaoHelper.getAuthUserCollection()
+    fun getAuthUserCollection(): clipto.dao.firebase.model.UserCollection? = null
     fun onCheckSession() = checkUserSessionAction.execute()
 
     fun showToast(message: CharSequence) = appState.showToast(message)

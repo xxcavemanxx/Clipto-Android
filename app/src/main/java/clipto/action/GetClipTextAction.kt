@@ -4,7 +4,6 @@ import clipto.domain.Clip
 import clipto.dynamic.DynamicField
 import clipto.dynamic.DynamicValueConfig
 import clipto.dynamic.IDynamicValuesRepository
-import clipto.repository.IFileRepository
 import dagger.Lazy
 import io.reactivex.Completable
 import io.reactivex.Single
@@ -13,7 +12,6 @@ import javax.inject.Singleton
 
 @Singleton
 class GetClipTextAction @Inject constructor(
-    private val fileRepository: Lazy<IFileRepository>,
     private val dynamicValuesRepository: Lazy<IDynamicValuesRepository>
 ) : CompletableAction<GetClipTextAction.Context>() {
 
@@ -50,35 +48,7 @@ class GetClipTextAction @Inject constructor(
                 Single.just(clip)
             }
         }
-        .flatMap { clip -> fileRepository.get().getFiles(clip.fileIds).map { files -> clip to files } }
-        .flatMap { data ->
-            val clip = data.first
-            val files = data.second
-            fileRepository.get().getPublicLinks(files)
-                .onErrorReturn { emptyList() }
-                .map { urls ->
-                    if (urls.isEmpty()) {
-                        Pair(clip.text, clip.title)
-                    } else {
-                        val sb = StringBuilder()
-                        sb.append(clip.text)
-                        sb.append('\n')
-                        sb.append('\n')
-                        files.forEachIndexed { index, file ->
-                            val url = urls.getOrNull(index)
-                            sb.append('[')
-                            sb.append(file.title)
-                            sb.append(']')
-                            sb.append('\n')
-                            sb.append(url)
-                            sb.append('\n')
-                            sb.append('\n')
-                        }
-                        Pair(sb.trim().toString(), clip.title)
-                    }
-                }
-        }
-        .map { it.first!! }
+        .map { it.text!! }
         .observeOn(appState.getViewScheduler())
         .doOnSuccess { context.callback.invoke(it) }
         .doOnError { appState.showToast(it.message.toString()) }

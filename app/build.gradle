@@ -18,8 +18,12 @@ dependencies {
     // Auth
     implementation 'androidx.biometric:biometric-ktx:1.2.0-alpha03'
     implementation 'com.facebook.android:facebook-login:9.1.0'
-    implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
-    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+
+    // Google Play & Drive dependencies
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev20230212-2.0.0'
+    implementation 'com.google.api-client:google-api-client-android:2.2.0'
+    implementation 'com.google.http-client:google-http-client-gson:1.43.0'
 
     // Billing
     implementation 'com.android.billingclient:billing:4.0.0'
@@ -28,16 +32,6 @@ dependencies {
     // ML Kit
     implementation 'io.github.g00fy2.quickie:quickie-bundled:1.2.4'
     implementation 'com.google.mlkit:language-id:17.0.1'
-
-    // Firebase
-    implementation 'com.google.firebase:firebase-auth:21.0.1'
-    implementation 'com.google.firebase:firebase-dynamic-links:21.0.0'
-    implementation 'com.google.firebase:firebase-functions:20.0.1'
-    implementation 'com.google.firebase:firebase-storage:20.0.0'
-    implementation 'com.google.firebase:firebase-config:21.0.1'
-    implementation 'com.google.firebase:firebase-crashlytics:18.2.5'
-    implementation 'com.google.firebase:firebase-analytics:20.0.0'
-    implementation 'com.google.firebase:firebase-firestore:24.0.0'
 
     // Common
     implementation 'com.github.sephiroth74:android-target-tooltip:v2.0.4'
@@ -59,6 +53,11 @@ android {
     buildFeatures {
         viewBinding true
     }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/DEPENDENCIES'
+        }
+    }
     buildTypes.all { buildType ->
         buildConfigField 'String', 'kitLink',            '"https://clipto.pro/#/kit"'
         buildConfigField 'String', 'referralLink',       '"https://clipto.pro/#"'
@@ -78,5 +77,3 @@ android {
     }
 }
 
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.google.firebase.crashlytics'

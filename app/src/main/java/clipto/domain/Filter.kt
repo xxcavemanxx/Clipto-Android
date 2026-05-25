@@ -52,7 +52,6 @@ abstract class Filter {
     open var snippets: Boolean = false
 
     open var showOnlyWithAttachments = false
-    open var showOnlyWithPublicLink = false
     open var showOnlyNotSynced = false
 
     open var createDateFrom: Date? = null
@@ -159,7 +158,6 @@ abstract class Filter {
 
         locatedInWhereType = from.locatedInWhereType
 
-        showOnlyWithPublicLink = from.showOnlyWithPublicLink
         showOnlyWithAttachments = from.showOnlyWithAttachments
         showOnlyNotSynced = from.showOnlyNotSynced
 
@@ -195,7 +193,6 @@ abstract class Filter {
         snippets = from.snippets
         activeFilterId = from.filterId
         tagIdsWhereType = from.tagIdsWhereType
-        showOnlyWithPublicLink = from.showOnlyWithPublicLink
         showOnlyWithAttachments = from.showOnlyWithAttachments
         locatedInWhereType = from.locatedInWhereType
         showOnlyNotSynced = from.showOnlyNotSynced
@@ -218,7 +215,6 @@ abstract class Filter {
     private fun doesNotHaveAdvancedFiltering(checkAll: Boolean = false, noTags: Boolean = false, noSnippets: Boolean = false): Boolean {
         return textLike.isNullOrEmpty()
                 && !showOnlyWithAttachments
-                && !showOnlyWithPublicLink
                 && !showOnlyNotSynced
                 && textTypeIn.isEmpty()
                 && createDatePeriod == null
@@ -397,7 +393,6 @@ abstract class Filter {
                 && first.tagIdsWhereType == second.tagIdsWhereType
                 && first.snippetSetIds == second.snippetSetIds
                 && first.snippetSetIdsWhereType == second.snippetSetIdsWhereType
-                && first.showOnlyWithPublicLink == second.showOnlyWithPublicLink
                 && first.showOnlyWithAttachments == second.showOnlyWithAttachments
                 && first.showOnlyNotSynced == second.showOnlyNotSynced
                 && first.textTypeIn == second.textTypeIn
@@ -510,7 +505,6 @@ abstract class Filter {
         val pinSnippets: Boolean = false,
         var textLike: String? = null,
         val sortBy: SortBy = SortBy.CREATE_DATE_DESC,
-        val showOnlyWithPublicLink: Boolean = false,
         val showOnlyWithAttachments: Boolean = false,
         val showOnlyNotSynced: Boolean = false,
         val textTypeIn: List<TextType> = emptyList(),
@@ -549,7 +543,6 @@ abstract class Filter {
             recycled = from.recycled,
             snippets = from.snippets,
             sortBy = from.sortBy,
-            showOnlyWithPublicLink = from.showOnlyWithPublicLink,
             showOnlyWithAttachments = from.showOnlyWithAttachments,
             showOnlyNotSynced = from.showOnlyNotSynced,
             textTypeIn = from.textTypeIn,

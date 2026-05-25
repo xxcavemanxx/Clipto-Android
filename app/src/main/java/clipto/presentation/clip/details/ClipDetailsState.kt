@@ -40,10 +40,7 @@ class ClipDetailsState @Inject constructor(appConfig: IAppConfig) : StoreState(a
         onChanged = { _, v -> clipDetails.updateValue { it?.copy(fileIds = v!!) } }
     )
 
-    val publicLink = StoreObject<PublicLink>(
-        id = "public_link",
-        onChanged = { _, v -> clipDetails.updateValue { it?.copy(publicLink = v) } }
-    )
+
 
     val fav = StoreObject(
         id = "fav",
@@ -62,7 +59,6 @@ class ClipDetailsState @Inject constructor(appConfig: IAppConfig) : StoreState(a
         onChanged = { _, v ->
             val newDetails = v ?: return@StoreObject
             val clip = newDetails.clip
-            clip.publicLink = newDetails.publicLink
             clip.snippetSetsIds = newDetails.snippetKitIds
             clip.folderId = newDetails.folderId
             clip.fileIds = newDetails.fileIds
@@ -81,7 +77,6 @@ class ClipDetailsState @Inject constructor(appConfig: IAppConfig) : StoreState(a
 
             snippetKits.setValue(clip.getKits().mapNotNull { it.uid })
             tags.setValue(clip.getTags().mapNotNull { it.uid })
-            publicLink.setValue(clip.publicLink)
             textType.setValue(clip.textType)
             folderId.setValue(clip.folderId)
             files.setValue(clip.fileIds)
@@ -89,7 +84,6 @@ class ClipDetailsState @Inject constructor(appConfig: IAppConfig) : StoreState(a
 
             clipDetails.setValue(
                 ClipDetails(
-                    publicLink = clip.publicLink,
                     snippetKitIds = clip.snippetSetsIds,
                     folderId = clip.folderId,
                     fileIds = clip.fileIds,

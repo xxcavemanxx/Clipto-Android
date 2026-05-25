@@ -79,7 +79,6 @@ class FilterBox : Filter() {
     override var textTypeIn: List<TextType> = emptyList()
 
     override var showOnlyNotSynced: Boolean = false
-    override var showOnlyWithPublicLink: Boolean = false
     override var showOnlyWithAttachments: Boolean = false
 
     @Convert(converter = TimePeriodConverter::class, dbType = Int::class)
@@ -137,7 +136,7 @@ class FilterBox : Filter() {
     }
 
     override fun toString(): String {
-        return "FilterBox(localId=$localId, objectType=$objectType, uid=$uid, name=$name, createDate=$createDate, updateDate=$updateDate, syncDate=$syncDate, hideHint=$hideHint, type=$type, limit=$limit, color=$color, notesCount=$notesCount, sortBy=$sortBy, listStyle=$listStyle, description=$description, autoRuleByTextIn=$autoRuleByTextIn, autoRulesEnabled=$autoRulesEnabled, pinStarredEnabled=$pinStarredEnabled, excludeWithCustomAttributes=$excludeWithCustomAttributes, tagIdsWhereType=$tagIdsWhereType, snippetSetIds=$snippetSetIds, snippetSetIdsWhereType=$snippetSetIdsWhereType, textLike=$textLike, starred=$starred, untagged=$untagged, clipboard=$clipboard, recycled=$recycled, snippets=$snippets, locatedInWhereType=$locatedInWhereType, textTypeIn=$textTypeIn, showOnlyNotSynced=$showOnlyNotSynced, showOnlyWithPublicLink=$showOnlyWithPublicLink, showOnlyWithAttachments=$showOnlyWithAttachments, createDatePeriod=$createDatePeriod, createDateFrom=$createDateFrom, createDateTo=$createDateTo, updateDatePeriod=$updateDatePeriod, updateDateFrom=$updateDateFrom, updateDateTo=$updateDateTo, activeFilterId=$activeFilterId, snippetKit=$snippetKit, folderId=$folderId, fileTypes=$fileTypes, fileIds=$fileIds, fileIdsWhereType=$fileIdsWhereType)"
+        return "FilterBox(localId=$localId, objectType=$objectType, uid=$uid, name=$name, createDate=$createDate, updateDate=$updateDate, syncDate=$syncDate, hideHint=$hideHint, type=$type, limit=$limit, color=$color, notesCount=$notesCount, sortBy=$sortBy, listStyle=$listStyle, description=$description, autoRuleByTextIn=$autoRuleByTextIn, autoRulesEnabled=$autoRulesEnabled, pinStarredEnabled=$pinStarredEnabled, excludeWithCustomAttributes=$excludeWithCustomAttributes, tagIdsWhereType=$tagIdsWhereType, snippetSetIds=$snippetSetIds, snippetSetIdsWhereType=$snippetSetIdsWhereType, textLike=$textLike, starred=$starred, untagged=$untagged, clipboard=$clipboard, recycled=$recycled, snippets=$snippets, locatedInWhereType=$locatedInWhereType, textTypeIn=$textTypeIn, showOnlyNotSynced=$showOnlyNotSynced, showOnlyWithAttachments=$showOnlyWithAttachments, createDatePeriod=$createDatePeriod, createDateFrom=$createDateFrom, createDateTo=$createDateTo, updateDatePeriod=$updateDatePeriod, updateDateFrom=$updateDateFrom, updateDateTo=$updateDateTo, activeFilterId=$activeFilterId, snippetKit=$snippetKit, folderId=$folderId, fileTypes=$fileTypes, fileIds=$fileIds, fileIdsWhereType=$fileIdsWhereType)"
     }
 
 }

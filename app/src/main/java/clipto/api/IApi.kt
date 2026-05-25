@@ -21,12 +21,6 @@ interface IApi {
 
     fun getUrlShortLink(url: String): Maybe<String>
 
-    fun createNotePublicLink(clip: Clip): Maybe<Clip>
-
-    fun removeNotePublicLink(clip: Clip): Maybe<Clip>
-
-    fun getFilePublicLink(fileRef: FileRef): Maybe<String>
-
     fun getSnippetKitCategories(): Maybe<List<SnippetKitCategory>>
 
     fun getSnippetKits(category: SnippetKitCategory?): Maybe<List<SnippetKit>>

@@ -173,7 +173,7 @@ class MainState @Inject constructor(
     fun hasAnyThatRequiresConfirm(objects: Collection<AttributedObject> = getSelectedObjects()): Boolean {
         val clips = objects.mapNotNull { it as? Clip }
         if (clips.size != objects.size) return true
-        return clips.find { it.filesCount > 0 || it.fav || it.snippet || it.publicLink != null || it.isDeleted() } != null
+        return clips.find { it.filesCount > 0 || it.fav || it.snippet || it.isDeleted() } != null
     }
 
     fun hasOnlyNotSyncedNotes(): Boolean {

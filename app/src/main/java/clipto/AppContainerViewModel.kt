@@ -8,13 +8,11 @@ import clipto.analytics.Analytics
 import clipto.common.logging.L
 import clipto.common.presentation.mvvm.RxViewModel
 import clipto.config.IAppConfig
-import clipto.dao.firebase.FirebaseDaoHelper
 import clipto.domain.User
 import clipto.dynamic.presentation.field.DynamicFieldState
 import clipto.dynamic.presentation.text.DynamicTextState
 import clipto.presentation.common.dialog.DialogState
 import clipto.presentation.common.dialog.confirm.ConfirmDialogData
-import clipto.presentation.snippets.details.SnippetKitDetailsViewModel
 import clipto.repository.ISettingsRepository
 import clipto.repository.IUserRepository
 import clipto.store.app.AppState
@@ -25,7 +23,6 @@ import clipto.store.internet.InternetState
 import clipto.store.lock.LockState
 import clipto.store.main.MainState
 import clipto.store.user.UserState
-import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
 import com.wb.clipboard.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
@@ -45,7 +42,6 @@ class AppContainerViewModel @Inject constructor(
     val internetState: InternetState,
     val dynamicTextState: DynamicTextState,
     val dynamicFieldState: DynamicFieldState,
-    val firebaseDaoHelper: FirebaseDaoHelper,
     private val userRepository: IUserRepository,
     private val settingsRepository: ISettingsRepository,
     private val shareAppLinkAction: ShareAppLinkAction,
@@ -102,27 +98,7 @@ class AppContainerViewModel @Inject constructor(
 
     fun onOpenIntent(intent: Intent) {
         if (appState.lastIntent.setValue(intent)) {
-            if (!intentActionFactory.handle(app, intent)) {
-                runCatching {
-                    FirebaseDynamicLinks.getInstance().getDynamicLink(intent)
-                        .addOnFailureListener { L.log(this, "error_get_dynamic_link", it) }
-                        .addOnSuccessListener { linkData ->
-                            linkData?.link?.let { link ->
-                                AppUtils.fromReferralUri(link) { referralId ->
-                                    referralId?.let {
-                                        settings.referralId = referralId
-                                        settingsRepository.update(settings)
-                                            .subscribeBy("updateSettings")
-                                    }
-                                }
-                                AppUtils.fromSnippetKitUri(link) { id ->
-                                    val args = SnippetKitDetailsViewModel.buildArgs(id)
-                                    appState.requestNavigateTo(R.id.action_snippet_kit_details, args)
-                                }
-                            }
-                        }
-                }
-            }
+            intentActionFactory.handle(app, intent)
             AppUtils.getAuthTokenFromUrl(intent.dataString)?.let {
                 userState.requestSignIn(UserState.SignInRequest.newWebAuthTokenRequest(it))
             }

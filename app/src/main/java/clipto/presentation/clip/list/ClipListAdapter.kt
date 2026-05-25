@@ -369,12 +369,7 @@ class ClipListAdapter(
             }
 
             // public link
-            if (clip?.hasPublicLink() == true) {
-                publicLinkView?.isEnabled = clip.publicLink?.unavailable == false
-                publicLinkView?.setVisibleOrGone(true)
-            } else {
-                publicLinkView?.setVisibleOrGone(false)
-            }
+            publicLinkView?.setVisibleOrGone(false)
 
             // title
             if (hasTitle) {

@@ -147,7 +147,7 @@ class AppConfig(val app: Application) : IAppConfig {
     override fun maxLengthAbbreviation(): Int = cfg.getLong("max_length_abbreviation").toInt()
 
     // Note
-    override fun canCreatePublicLinks(): Boolean = cfg.getBoolean("can_create_public_links")
+    override fun canCreatePublicLinks(): Boolean = false
     override fun noteScrollBarMultiplier(): Int = cfg.getLong("note_scrollbar_multiplier").toInt()
     override fun textLengthForAsyncRendering(): Int = cfg.getLong("text_length_for_async_rendering").toInt()
     override fun clipInfoMaxTextLines(): Int = cfg.getLong("clip_info_max_text_lines").toInt()

@@ -10,7 +10,6 @@ import clipto.common.presentation.mvvm.model.DataLoadingState
 import clipto.config.IAppConfig
 import clipto.domain.Clip
 import clipto.domain.FastAction
-import clipto.domain.PublicLink
 import clipto.domain.TextType
 import clipto.extensions.TextTypeExt
 import clipto.presentation.blocks.*
@@ -54,7 +53,6 @@ class GeneralPageViewModel @Inject constructor(
     val fastActionsUpdateLive = appState.requestFastActionsUpdate.getLiveData()
 
     fun getSettings() = appState.getSettings()
-    fun getPublicLink() = state.publicLink.getValue() ?: PublicLink()
     fun isEditMode(): Boolean = clipState.screenState.getValue()?.isEditMode() == true
     fun getVisibleClipActions(spannable: Spannable) = appState.getVisibleClipActions(spannable)
 
@@ -71,7 +69,6 @@ class GeneralPageViewModel @Inject constructor(
         blocks.add(SeparatorVerticalBlock())
         withTextTypes(textType, blocks)
         withExport(clip, blocks)
-        withPublicLink(clip, blocks)
 
         return blocks
     }
@@ -171,26 +168,7 @@ class GeneralPageViewModel @Inject constructor(
         blocks.add(ChipsRowBlock(items, scrollToPosition = indexOfChecked, nestedScrollingEnabled = false))
     }
 
-    private fun withPublicLink(clip: Clip, blocks: MutableList<BlockItem<GeneralPageFragment>>) {
-        if (clip.isSynced() && appConfig.canCreatePublicLinks() && !isEditMode()) {
-            blocks.add(SpaceBlock(20))
-            val publicLink = clip.publicLink ?: PublicLink()
-            var enabled = true
-            var iconRes = 0
-            if (publicLink.link != null) {
-                iconRes = R.drawable.public_link
-                enabled = !publicLink.unavailable
-            }
-            blocks.add(
-                TitleBlock(
-                    titleRes = R.string.public_note_link_title,
-                    rightIconRes = iconRes,
-                    isEnabled = enabled
-                )
-            )
-            blocks.add(PublicLinkBlock(this, publicLink))
-        }
-    }
+
 
     fun onTextTypeChanged(type: TextType) {
         state.textType.setValue(type)
@@ -241,102 +219,6 @@ class GeneralPageViewModel @Inject constructor(
         state.fastAction.setValue(action, force = true)
     }
 
-    fun onCopyLink(link: PublicLink) {
-        link.link?.let { AppContext.get().onCopy(it) }
-    }
 
-    fun onCreateLink(publicLink: PublicLink, callback: () -> Unit = {}) {
-        val clip = state.openedClip.requireValue()
-        internetState.withInternet({
-            clip.publicLink = publicLink
-            clipRepository.createLink(clip)
-                .observeOn(getViewScheduler())
-                .subscribeBy(
-                    onSuccess = {
-                        state.publicLink.setValue(it.publicLink)
-                        callback.invoke()
-                    },
-                    onError = {
-                        appState.setLoadingState(DataLoadingState.Error(code = "create_public_link", throwable = it))
-                        appState.showToast(it.localizedMessage ?: it.message ?: string(R.string.essentials_errors_unknown))
-                        callback.invoke()
-                    },
-                    loadingStateProvider = appState
-                )
-        })
-    }
-
-    fun onRemoveLink() {
-        val clip = state.openedClip.requireValue()
-        internetState.withInternet({
-            dialogState.showConfirm(ConfirmDialogData(
-                iconRes = R.drawable.ic_attention,
-                title = string(R.string.public_note_link_action_remove_confirm_title),
-                description = string(R.string.public_note_link_action_remove_confirm_description),
-                confirmActionTextRes = R.string.button_confirm,
-                onConfirmed = {
-                    clipRepository.removeLink(clip)
-                        .subscribeBy(
-                            onSuccess = { state.publicLink.setValue(it.publicLink) },
-                            onError = {
-                                appState.setLoadingState(DataLoadingState.Error(code = "remove_public_link", throwable = it))
-                                appState.showToast(it.localizedMessage ?: it.message ?: string(R.string.essentials_errors_unknown))
-                            },
-                            loadingStateProvider = appState
-                        )
-                }
-            ))
-        })
-    }
-
-    fun onPublicLinkOneTimeChanged(oneTimeOpening: Boolean, callback: () -> Unit) {
-        val publicLink = getPublicLink()
-        val newPublicLink = publicLink.copy(oneTimeOpening = oneTimeOpening)
-        updateLink(newPublicLink, callback)
-    }
-
-    fun onPublicLinPasswordChanged(password: String?, passwordClue: String?, callback: () -> Unit) {
-        val publicLink = getPublicLink()
-        val passwordHash =
-            if (!password.isNullOrBlank()) {
-                runCatching { StringUtils.digest(password, "SHA-256", "UTF-8") }.getOrNull()
-            } else {
-                null
-            }
-        val locked = !passwordHash.isNullOrBlank()
-        val newPublicLink = publicLink.copy(
-            passwordClue = passwordClue,
-            password = passwordHash,
-            locked = locked
-        )
-        updateLink(newPublicLink, callback)
-    }
-
-    fun onPublicLinkTimeToExpireChanged(timeInMillis: Long?, timeAsDate: Date?, callback: () -> Unit) {
-        val publicLink = getPublicLink()
-        val newPublicLink = publicLink.copy(
-            expiresInMillis = timeInMillis,
-            expiresAtDate = timeAsDate
-        )
-        updateLink(newPublicLink, callback)
-    }
-
-    fun onPublicLinkAccessTimeChanged(timeInMillis: Long?, timeAsDate: Date?, callback: () -> Unit) {
-        val publicLink = getPublicLink()
-        val newPublicLink = publicLink.copy(
-            postponeInMillis = timeInMillis,
-            postponeAtDate = timeAsDate
-        )
-        updateLink(newPublicLink, callback)
-    }
-
-    private fun updateLink(publicLink: PublicLink, callback: () -> Unit) {
-        if (publicLink.link.isNullOrBlank()) {
-            state.publicLink.setValue(publicLink)
-            callback.invoke()
-        } else {
-            onCreateLink(publicLink, callback)
-        }
-    }
 
 }

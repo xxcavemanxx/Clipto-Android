@@ -7,7 +7,6 @@ import clipto.domain.Clip
 import clipto.dynamic.DynamicField
 import clipto.dynamic.DynamicValueConfig
 import clipto.dynamic.IDynamicValuesRepository
-import clipto.repository.IFileRepository
 import clipto.store.main.MainState
 import clipto.utils.DomainUtils
 import dagger.Lazy
@@ -20,7 +19,6 @@ import javax.inject.Singleton
 class ShareClipsAction @Inject constructor(
     private val app: Application,
     private val mainState: MainState,
-    private val fileRepository: Lazy<IFileRepository>,
     private val dynamicValuesRepository: Lazy<IDynamicValuesRepository>
 ) : CompletableAction<ShareClipsAction.Context>() {
 
@@ -72,36 +70,7 @@ class ShareClipsAction @Inject constructor(
                 Single.just(clip)
             }
         }
-        // fetch files
-        .flatMap { clip -> fileRepository.get().getFiles(clip.fileIds).map { clip to it } }
-        .flatMap { data ->
-            val clip = data.first
-            val files = data.second
-            fileRepository.get()
-                .getPublicLinks(files)
-                .onErrorReturn { emptyList() }
-                .map { urls ->
-                    if (urls.isEmpty()) {
-                        Pair(clip.text, clip.title)
-                    } else {
-                        val sb = StringBuilder()
-                        sb.append(clip.text)
-                        sb.append('\n')
-                        sb.append('\n')
-                        files.forEachIndexed { index, meta ->
-                            val url = urls.getOrNull(index)
-                            sb.append('[')
-                            sb.append(meta.title)
-                            sb.append(']')
-                            sb.append('\n')
-                            sb.append(url)
-                            sb.append('\n')
-                            sb.append('\n')
-                        }
-                        Pair(sb.trim().toString(), clip.title)
-                    }
-                }
-        }
+        .map { clip -> Pair(clip.text, clip.title) }
         .doOnSuccess { IntentUtils.share(app, it.first, it.second) }
         .doOnSubscribe { if (context.clearSelection) mainState.clearSelection() }
         .ignoreElement()

@@ -172,6 +172,7 @@ class CliptoProcessor @Inject constructor() : BackupProcessor() {
         objectType = clip.objectType,
         snippetId = clip.snippetId,
         snippetSetsIds = clip.snippetSetsIds,
+        snippet = clip.snippet,
         abbreviation = clip.abbreviation,
         description = clip.description,
         firestoreId = clip.firestoreId
@@ -207,7 +208,6 @@ class CliptoProcessor @Inject constructor() : BackupProcessor() {
         textTypeIn = from.textTypeIn,
         locatedInWhereType = from.locatedInWhereType,
         showOnlyWithAttachments = from.showOnlyWithAttachments,
-        showOnlyWithPublicLink = from.showOnlyWithPublicLink,
         showOnlyNotSynced = from.showOnlyNotSynced,
         createDateFrom = from.createDateFrom,
         createDateTo = from.createDateTo,
@@ -246,6 +246,7 @@ class CliptoProcessor @Inject constructor() : BackupProcessor() {
         @SerializedName("objectType") val objectType: ObjectType? = null,
         @SerializedName("snippetId") val snippetId: String? = null,
         @SerializedName("snippetSetsIds") val snippetSetsIds: List<String>? = null,
+        @SerializedName("snippet") val snippet: Boolean? = null,
         @SerializedName("abbreviation") val abbreviation: String? = null,
         @SerializedName("description") val description: String? = null,
         @SerializedName("uid") val firestoreId: String? = null
@@ -267,6 +268,7 @@ class CliptoProcessor @Inject constructor() : BackupProcessor() {
             it.objectType = objectType ?: ObjectType.INTERNAL
             it.snippetId = snippetId
             it.snippetSetsIds = snippetSetsIds ?: emptyList()
+            it.snippet = snippet ?: (!snippetId.isNullOrBlank() || !snippetSetsIds.isNullOrEmpty())
             it.abbreviation = abbreviation
             it.description = description
             it.firestoreId = firestoreId
@@ -304,7 +306,6 @@ class CliptoProcessor @Inject constructor() : BackupProcessor() {
         @SerializedName("textTypeIn") val textTypeIn: List<TextType>? = null,
         @SerializedName("locatedInWhereType") val locatedInWhereType: Filter.WhereType? = null,
         @SerializedName("showOnlyWithAttachments") val showOnlyWithAttachments: Boolean = false,
-        @SerializedName("showOnlyWithPublicLink") val showOnlyWithPublicLink: Boolean = false,
         @SerializedName("showOnlyNotSynced") val showOnlyNotSynced: Boolean = false,
         @SerializedName("createDateFrom") val createDateFrom: Date? = null,
         @SerializedName("createDateTo") val createDateTo: Date? = null,
@@ -344,7 +345,6 @@ class CliptoProcessor @Inject constructor() : BackupProcessor() {
             it.textTypeIn = textTypeIn ?: emptyList()
             it.locatedInWhereType = locatedInWhereType ?: Filter.WhereType.ANY_OF
             it.showOnlyWithAttachments = showOnlyWithAttachments
-            it.showOnlyWithPublicLink = showOnlyWithPublicLink
             it.showOnlyNotSynced = showOnlyNotSynced
             it.createDateFrom = createDateFrom
             it.createDateTo = createDateTo

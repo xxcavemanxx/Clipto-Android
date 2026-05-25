@@ -18,8 +18,6 @@ interface IFileRepository {
     fun save(fileRef: FileRef): Single<FileRef>
     fun getFiles(fileIds: List<String>): Single<List<FileRef>>
     fun getDownloadUrl(fileRef: FileRef): Single<String>
-    fun getPublicLink(fileRef: FileRef): Single<String>
-    fun getPublicLinks(fileRefs: List<FileRef>): Single<List<String>>
     fun download(fileRef: FileRef, uri: Uri): Single<FileRef>
     fun upload(uri: Uri, fileType: FileType): Single<FileRef>
     fun upload(fileRef: FileRef): Single<FileRef>

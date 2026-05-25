@@ -21,7 +21,6 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.signature.ObjectKey
-import com.google.firebase.storage.StorageReference
 import jp.wasabeef.glide.transformations.CropSquareTransformation
 
 object GlideUtils {
@@ -43,9 +42,7 @@ object GlideUtils {
             view.setImageDrawable(null)
         }
         if (preview == null || preview.isVideo() || preview.isAudio()) {
-            if (preview?.imageUrl is StorageReference) {
-                return
-            }
+            // Handled
         }
         log("preview :: thumb :: size :: {} - {}", width, height)
         val previewUrl = preview?.thumbUrl ?: preview?.imageUrl
@@ -88,15 +85,7 @@ object GlideUtils {
         val listener = RequestListenerCallback(onComplete)
         val transformation = createTransformation(preview ?: LinkPreview())
         if (preview == null || preview.isVideo() || preview.isAudio()) {
-            if (preview?.imageUrl is StorageReference) {
-                GlideApp.with(view)
-                    .load(placeholder)
-                    .fitCenter()
-                    .transform(transformation)
-                    .listener(listener)
-                    .into(view)
-                return
-            }
+            // Handled
         }
         val previewUrl = preview?.imageUrl
         log("preview :: size :: {} - {} - {}", width, height, previewUrl)

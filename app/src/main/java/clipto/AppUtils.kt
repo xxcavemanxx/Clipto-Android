@@ -7,7 +7,6 @@ import clipto.common.extensions.toStackTrace
 import clipto.common.misc.AesUtils
 import clipto.common.misc.FormatUtils
 import clipto.common.misc.IntentUtils
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.wb.clipboard.BuildConfig
 import com.wb.clipboard.R
 
@@ -140,18 +139,6 @@ object AppUtils {
     }
 
     private fun getRemoteConfig(): String {
-        if (AppContext.get().appConfig.canIncludeRemoteConfigInEmail()) {
-            val sb = StringBuilder()
-            FirebaseRemoteConfig.getInstance().all
-                    .filter { it.key.startsWith("can_") && !it.key.contains("donate") && !it.key.contains("negative") }
-                    .forEach {
-                        sb.append(it.key)
-                        sb.append(": ")
-                        sb.append(it.value.asBoolean())
-                        sb.appendLine()
-                    }
-            return sb.toString()
-        }
         return ""
     }
 

@@ -258,7 +258,7 @@ class FileViewModel @Inject constructor(
 
     fun onShare() {
         getFile()?.let { file ->
-            fileRepository.getPublicLink(file)
+            fileRepository.getDownloadUrl(file)
                 .doOnSubscribe { appState.setLoadingState() }
                 .doFinally { appState.setLoadedState() }
                 .subscribeBy("onShare") {

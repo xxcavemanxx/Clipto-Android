@@ -110,9 +110,6 @@ class AdvancedFilterViewModel @Inject constructor(
                     withAttachments(filter, blocks)
 
                     withSpaceMd(blocks)
-                    withPublicLink(filter, blocks)
-
-                    withSpaceMd(blocks)
                     withNotSynced(filter, blocks)
                 }
             }
@@ -470,17 +467,7 @@ class AdvancedFilterViewModel @Inject constructor(
         ))
     }
 
-    private fun withPublicLink(filter: Filter, blocks: MutableList<BlockItem<AdvancedFilterFragment>>) {
-        blocks.add(SwitchBlock(
-            titleRes = R.string.advanced_filter_block_only_public_links,
-            checked = filter.showOnlyWithPublicLink,
-            textSize = 14,
-            clickListener = { _, isChecked ->
-                filter.showOnlyWithPublicLink = isChecked
-                onApplyFilter(filter)
-            }
-        ))
-    }
+
 
     private fun withNotSynced(filter: Filter, blocks: MutableList<BlockItem<AdvancedFilterFragment>>) {
         blocks.add(SwitchBlock(

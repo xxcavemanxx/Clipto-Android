@@ -325,7 +325,7 @@ class ClipBoxDao @Inject constructor(
 
         // ===== SPECIFIC =====
 
-        if (!filter.cleanupRequest && !filter.recycled && !filter.showOnlyWithAttachments && !filter.showOnlyNotSynced && !filter.showOnlyWithPublicLink) {
+        if (!filter.cleanupRequest && !filter.recycled && !filter.showOnlyWithAttachments && !filter.showOnlyNotSynced) {
             query.isNull(ClipBox_.deleteDate)
         }
 
@@ -514,15 +514,6 @@ class ClipBoxDao @Inject constructor(
                 }
                 multipleConditions = true
             }
-
-        // ===== SHOW PUBLIC LINKS =====
-        if (filter.showOnlyWithPublicLink) {
-            if (multipleConditions) {
-                query.and()
-            }
-            query.notNull(ClipBox_.publicLink)
-            multipleConditions = true
-        }
 
         // ===== SHOW ONLY NOT SYNCED =====
         if (filter.showOnlyNotSynced) {
@@ -713,7 +704,6 @@ class ClipBoxDao @Inject constructor(
         clip.objectType = clip.objectType.getValue()
         clip.firestoreId = clip.firestoreId.ifNotEmpty()
         clip.updateDate = clip.updateDate ?: clip.createDate
-        clip.publicLink = clip.publicLink?.takeIf { clip.hasPublicLink() }
         clip.dynamic = DynamicField.isDynamic(clip.text)
         clip.snippet = clip.isSnippet()
         clip.changeTimestamp = timestamp
@@ -753,7 +743,7 @@ class ClipBoxDao @Inject constructor(
 
     fun createOrUpdate(clip: Clip, copied: Boolean): ClipBox {
         val transactionDate = Date()
-        if (clip.snippet && clip.snippetId.isNullOrBlank()) {
+        if (clip.snippetId.isNullOrBlank()) {
             clip.snippetId = clip.firestoreId ?: IdUtils.autoId()
         }
         val newClip = clip.toBox(new = true)

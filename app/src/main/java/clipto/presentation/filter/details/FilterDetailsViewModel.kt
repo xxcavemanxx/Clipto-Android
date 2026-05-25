@@ -357,8 +357,6 @@ class FilterDetailsViewModel @Inject constructor(
                 withColors(filter, blocks)
                 withListStyle(filter, blocks)
                 withSortBy(filter, blocks)
-                withSnippetKitPublicLink(filter, blocks)
-                withSnippetKitPublicLibrary(filter, blocks)
             }
             filter.isStarred() -> {
                 withHeader(filter, blocks)

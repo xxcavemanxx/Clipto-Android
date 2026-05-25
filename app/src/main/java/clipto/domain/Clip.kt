@@ -26,9 +26,6 @@ open class Clip : AttributedObject() {
     open var filesCount = 0
     open var size: Long = 0
 
-    // public link
-    open var publicLink: PublicLink? = null
-
     // others
     open var isActive: Boolean = false
     open var isChanged: Boolean = false
@@ -43,11 +40,11 @@ open class Clip : AttributedObject() {
     fun isClipboard(): Boolean = tracked
     fun hasFiles(): Boolean = fileIds.isNotEmpty()
     fun isInternal(): Boolean = objectType == ObjectType.INTERNAL
-    fun isSynced(): Boolean = !firestoreId.isNullOrBlank()
-    fun hasPublicLink(): Boolean = !publicLink?.link.isNullOrBlank()
-    fun isSnippet(): Boolean = !snippetId.isNullOrBlank() || snippetSetsIds.isNotEmpty()
+    fun isSynced(): Boolean = !firestoreId.isNullOrBlank() || !snippetId.isNullOrBlank()
+    fun isSnippet(): Boolean = snippet || snippetSetsIds.isNotEmpty()
     fun canApplyAutoTags(): Boolean = objectType != ObjectType.EXTERNAL_SNIPPET
     fun canDefineTextType(): Boolean = objectType != ObjectType.EXTERNAL_SNIPPET && textType == TextType.TEXT_PLAIN
+
 
     fun clearTempState() {
         excludedTagIds = emptySet()
@@ -97,8 +94,6 @@ open class Clip : AttributedObject() {
         filesCount = from.filesCount
         size = from.size
 
-        publicLink = from.publicLink
-
         sourceClips = from.sourceClips
         snippet = from.snippet
         dynamic = from.dynamic
@@ -135,7 +130,7 @@ open class Clip : AttributedObject() {
                     && first.snippetSetsIds == second.snippetSetsIds
                     && first.folderId == second.folderId
                     && first.fileIds == second.fileIds
-                    && first.publicLink == second.publicLink
                     && first.color == second.color
     }
+
 }

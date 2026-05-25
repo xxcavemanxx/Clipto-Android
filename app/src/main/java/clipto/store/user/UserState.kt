@@ -109,7 +109,7 @@ class UserState @Inject constructor(
     fun canSyncNote(clip: Clip): Boolean = canSyncNotes() && (!clip.tracked || appState.getSettings().universalClipboard || clip.forceSync)
     fun getAllNotesCount(): Long = appState.getFilterByAll().notesCount + appState.getFilterByDeleted().notesCount
     fun getSyncLimit(): Int = user.requireValue().syncLimit + getSyncFreeLimit() + getSyncBonusForPublicKits()
-    fun isNotSynced(clip: Clip?): Boolean = isAuthorized() && !clip.isNew() && clip?.firestoreId == null
+    fun isNotSynced(clip: Clip?): Boolean = isAuthorized() && !clip.isNew() && clip?.firestoreId == null && clip?.snippetId == null
     fun canSyncNewNotes(): Boolean = user.requireValue().canSyncNewNotes()
     fun canSyncNotes(): Boolean = isSyncEnabled() && canSyncNewNotes()
     fun getSyncedNotesCount(): Int = clipBoxDao.getSyncedClipsCount()

@@ -15,7 +15,6 @@ import clipto.common.presentation.fragment.IndeterminateProgressFragment
 import clipto.common.presentation.mvvm.ActivityBackPressConsumer
 import clipto.common.presentation.mvvm.MvvmNavigationActivity
 import clipto.common.presentation.mvvm.model.DataLoadingState
-import clipto.dao.firebase.FirebaseException
 import clipto.domain.User
 import clipto.extensions.onCreateWithTheme
 import clipto.presentation.auth.IAuth
@@ -130,15 +129,6 @@ class AppContainer : MvvmNavigationActivity<AppContainerViewModel>() {
                             )
                             Analytics.onError("error_${it.code}", error)
                         }
-                    } else if (it is FirebaseException) {
-                        NotificationBannerFragment.show(
-                            this,
-                            code = it.code,
-                            title = viewModel.string(R.string.error_unexpected),
-                            message = viewModel.string(R.string.error_unexpected_send),
-                            error = it.throwable
-                        )
-                        Analytics.onError("error_${it.code}", it.throwable)
                     }
                 }
             }
@@ -249,13 +239,11 @@ class AppContainer : MvvmNavigationActivity<AppContainerViewModel>() {
             val appState = viewModel.appState
             val invoke: () -> Unit = {
                 userState.signOutInProgress.setValue(true)
-                viewModel.firebaseDaoHelper.waitForPendingWrites {
-                    auth.signOut(this) { _, th ->
-                        if (th != null) {
-                            appState.setLoadingState(DataLoadingState.Error(code = "sign_out", throwable = th))
-                        } else {
-                            viewModel.onSignOut(userState.user.requireValue())
-                        }
+                auth.signOut(this) { _, th ->
+                    if (th != null) {
+                        appState.setLoadingState(DataLoadingState.Error(code = "sign_out", throwable = th))
+                    } else {
+                        viewModel.onSignOut(userState.user.requireValue())
                     }
                 }
             }

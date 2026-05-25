@@ -15,7 +15,6 @@ import clipto.presentation.preview.video.url.UrlExtractor
 import clipto.store.app.AppState
 import clipto.store.internet.InternetState
 import clipto.store.main.MainState
-import com.google.firebase.storage.StorageReference
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -52,21 +51,6 @@ class AppLinkPreviewManager @Inject constructor(
                     } else if (url != null && (URLUtil.isFileUrl(url) || URLUtil.isContentUrl(url))) {
                         L.log(this, "preview: local url = {}", url)
                         VideoPreviewActivity.play(app, url)
-                    } else if (imageUrl is StorageReference) {
-                        L.log(this, "preview: ref={} -> mediaType={}", imageUrl, linkPreview.mediatype)
-                        internetState.withInternet({
-                            appState.setLoadingState()
-                            imageUrl.downloadUrl
-                                .addOnSuccessListener { VideoPreviewActivity.play(app, it.toString(), title) }
-                                .addOnFailureListener {
-                                    appState.setLoadingState(
-                                        DataLoadingState.Error(
-                                            code = it.message, message = it.localizedMessage, throwable = it
-                                        )
-                                    )
-                                }
-                                .addOnCompleteListener { appState.setLoadedState() }
-                        })
                     } else if (url != null) {
                         internetState.withInternet({
                             appState.setLoadingState()

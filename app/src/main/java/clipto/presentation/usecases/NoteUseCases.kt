@@ -46,6 +46,7 @@ class NoteUseCases @Inject constructor(
     fun onNewSnippet() {
         val clip = clipState.getDefaultNewClip()
         clip.snippetId = IdUtils.autoId()
+        clip.snippet = true
         clipState.setNewState(clip)
         appState.requestNavigateTo(R.id.action_clip)
     }

@@ -12,7 +12,6 @@ import clipto.common.extensions.*
 import clipto.common.misc.FormatUtils
 import clipto.common.presentation.mvvm.RxViewModel
 import clipto.config.IAppConfig
-import clipto.dao.firebase.FirebaseDaoHelper
 import clipto.dao.firebase.mapper.FileMapper
 import clipto.dao.objectbox.FileBoxDao
 import clipto.domain.*
@@ -64,8 +63,7 @@ class FileScreenHelper @Inject constructor(
     private val dialogState: DialogState,
     private val folderState: FolderState,
     private val fileUseCases: FileUseCases,
-    private val fileRepository: IFileRepository,
-    private val firebaseDaoHelper: FirebaseDaoHelper
+    private val fileRepository: IFileRepository
 ) : RxViewModel(app) {
 
     private val filesLive: MediatorLiveData<PagedList<Any>> by lazy { MediatorLiveData() }
@@ -121,8 +119,7 @@ class FileScreenHelper @Inject constructor(
         withPreviewClickable: Boolean = true
     ): LinkPreview? {
         if (fileRef.isFolder) return null
-        val collection = firebaseDaoHelper.getAuthUserCollection()
-        val previewUrl = fileRef.getPreviewUrl(app, collection)
+        val previewUrl = fileRef.getPreviewUrl(app, null)
         if (previewUrl != null) {
             val preview = LinkPreview(
                 withSquarePreview = withSquarePreview,
@@ -134,7 +131,7 @@ class FileScreenHelper @Inject constructor(
                 imageUrl = previewUrl
             )
             if (preview.isImage()) {
-                preview.thumbUrl = fileRef.getThumbUrl(app, collection)?.takeIf { it != previewUrl }
+                preview.thumbUrl = fileRef.getThumbUrl(app, null)?.takeIf { it != previewUrl }
             }
             if (fileRef.isReadOnly()) {
                 preview.playbackUrl = previewUrl.toString()

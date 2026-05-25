@@ -6,15 +6,12 @@ import clipto.analytics.Analytics
 import clipto.api.IApi
 import clipto.common.extensions.toNullIfEmpty
 import clipto.dao.TxHelper
-import clipto.dao.firebase.ClipFirebaseDao
-import clipto.dao.firebase.FirebaseDaoHelper
-import clipto.dao.firebase.mapper.ClipMapper
-import clipto.dao.firebase.mapper.DateMapper
-import clipto.dao.firebase.mapper.PublicNoteLinkMapper
+import clipto.dao.drive.DriveServiceHelper
 import clipto.dao.objectbox.ClipBoxDao
 import clipto.dao.objectbox.FileBoxDao
 import clipto.dao.objectbox.FilterBoxDao
 import clipto.dao.objectbox.model.ClipBox
+import clipto.dao.objectbox.model.FilterBox
 import clipto.dao.objectbox.model.toBox
 import clipto.domain.Clip
 import clipto.domain.FileRef
@@ -30,8 +27,7 @@ import clipto.store.clipboard.toClipData
 import clipto.store.main.MainState
 import clipto.store.user.UserState
 import clipto.utils.DomainUtils
-import com.google.firebase.firestore.DocumentChange
-import com.google.firebase.firestore.FieldValue
+import com.google.gson.Gson
 import dagger.Lazy
 import io.reactivex.Completable
 import io.reactivex.Single
@@ -46,33 +42,25 @@ class ClipRepository @Inject constructor(
     private val txHelper: TxHelper,
     private val userState: UserState,
     private val mainState: MainState,
-    private val clipMapper: ClipMapper,
     private val clipBoxDao: ClipBoxDao,
     private val fileBoxDao: FileBoxDao,
     private val filterBoxDao: FilterBoxDao,
     private val clipboardState: ClipboardState,
-    private val clipFirebaseDao: ClipFirebaseDao,
     private val clipDetailsState: ClipDetailsState,
-    private val firebaseDaoHelper: FirebaseDaoHelper,
+    private val driveHelper: DriveServiceHelper,
+    private val gson: Gson,
     private val cleanupFiltersAction: Lazy<CleanupFiltersAction>
 ) : IClipRepository {
 
-    override fun terminate(): Completable = Completable.fromCallable { clipFirebaseDao.stopSync() }
+    companion object {
+        private const val METADATA_FILE = "metadata.json"
+    }
 
-    override fun init(): Completable = terminate()
-        .andThen(Completable.fromPublisher<Boolean> { publisher ->
-            log("FIREBASE LISTENER :: init clips")
-            clipFirebaseDao.startSync(
-                activeInitialCallback = { changes, _ -> initialClips(changes) },
-                activeSnapshotCallback = { changes, _ -> snapshotClips(changes) },
-                deletedInitialCallback = { changes, _ -> deletedClips(changes) },
-                deletedSnapshotCallback = { changes, _ -> deletedClips(changes) },
-                firstCallback = {
-                    publisher.onNext(true)
-                    publisher.onComplete()
-                }
-            )
-        })
+    override fun terminate(): Completable = Completable.complete()
+
+    override fun init(): Completable = Completable.fromCallable {
+        syncAll()
+    }
 
     override fun getRelativePath(folderId: String?, clip: Clip): Single<String> = Single
         .fromCallable {
@@ -129,62 +117,136 @@ class ClipRepository @Inject constructor(
                     }
                 }
                 clipBoxDao.saveAll(favClips, modified = true)
-
-                firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                    firebaseDaoHelper.splitBatches(favClips.filter { it.isSynced() }) { batchClips ->
-                        val batch = collection.createBatch()
-                        batchClips.forEach { favClip ->
-                            val changes = mutableMapOf(
-                                FirebaseDaoHelper.ATTR_CLIP_FAV to favClip.fav,
-                                FirebaseDaoHelper.ATTR_CLIP_MODIFY_DATE to DateMapper.toTimestamp(favClip.modifyDate)
-                            )
-                            clipFirebaseDao.saveInBatch(favClip.toBox(), batch, collection, changes)
-                        }
-                        batch.commit()
-                    }
-                }
-
             }
 
+            syncAll()
             favClips
         }
 
     override fun syncAll(newClips: List<Clip>, callback: (clips: List<Clip>) -> Unit) {
-        if (userState.canSyncNewNotes()) {
-            firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                updateCanSyncState()
-                userState.onBackground {
-                    Analytics.onSyncEnabled()
-                    val notSyncedClips = newClips.takeIf { it.isNotEmpty() }?.map { ClipBox().apply(it) } ?: clipBoxDao.getNotSyncedClips()
-                    if (notSyncedClips.isNotEmpty()) {
-                        firebaseDaoHelper.splitBatches(notSyncedClips) { clips ->
-                            if (userState.canSyncNewNotes()) {
-                                runCatching {
-                                    log("not synced notes: {}", clips.size)
-                                    txHelper.inTx("Update synced clips") {
-                                        val savedClips = mutableListOf<ClipBox>()
-                                        val batch = collection.createBatch()
-                                        clips.forEach { clip ->
-                                            if (clipFirebaseDao.saveInBatch(clip, batch, collection)) {
-                                                savedClips.add(clip)
-                                            }
-                                        }
-                                        if (savedClips.isNotEmpty()) {
-                                            clipBoxDao.saveAll(savedClips)
-                                        }
-                                        batch.commit()
+        if (userState.isSyncEnabled() && userState.isAuthorized()) {
+            userState.onBackground {
+                try {
+                    val driveFiles = driveHelper.listFiles()
+                    
+                    // 1. Download or initialize metadata.json
+                    val remoteMetaId = driveFiles.find { it.name == METADATA_FILE }?.id
+                    val remoteMetadata: SyncMetadata = if (remoteMetaId != null) {
+                        val content = driveHelper.downloadFile(remoteMetaId)
+                        gson.fromJson(content, SyncMetadata::class.java)
+                    } else {
+                        SyncMetadata()
+                    }
+
+                    // 2. Query ObjectBox
+                    val localClips = clipBoxDao.getAllClips()
+                    val localFilters = filterBoxDao.getFilters().getSortedNamedFilters()
+
+                    val updatedRemoteItems = mutableMapOf<String, Long>()
+                    updatedRemoteItems.putAll(remoteMetadata.items)
+
+                    // 3. Sync clips
+                    txHelper.inTx("DriveSync-Clips") {
+                        localClips.forEach { localClip ->
+                            if (localClip.firestoreId == null && localClip.snippetId == null) {
+                                localClip.snippetId = clipto.common.misc.IdUtils.autoId()
+                                clipBoxDao.save(localClip)
+                            }
+                            val uid = localClip.firestoreId ?: localClip.snippetId ?: return@forEach
+                            val localTime = localClip.modifyDate?.time ?: localClip.createDate?.time ?: 0L
+                            val remoteTime = remoteMetadata.items[uid] ?: 0L
+
+                            if (localClip.isDeleted()) {
+                                if (remoteMetadata.items.containsKey(uid)) {
+                                    driveHelper.deleteFileByName("clip_$uid.json")
+                                    updatedRemoteItems.remove(uid)
+                                    remoteMetadata.tombstones.add(uid)
+                                }
+                            } else if (remoteMetadata.tombstones.contains(uid)) {
+                                clipBoxDao.deleteAll(listOf(localClip))
+                            } else if (localTime > remoteTime) {
+                                val clipJson = gson.toJson(localClip, Clip::class.java)
+                                driveHelper.uploadFile("clip_$uid.json", clipJson, "application/json")
+                                updatedRemoteItems[uid] = localTime
+                            } else if (remoteTime > localTime) {
+                                val fileId = driveFiles.find { it.name == "clip_$uid.json" }?.id
+                                if (fileId != null) {
+                                    val remoteJson = driveHelper.downloadFile(fileId)
+                                    val remoteClip = gson.fromJson(remoteJson, ClipBox::class.java)
+                                    localClip.apply(remoteClip)
+                                    clipBoxDao.save(localClip)
+                                }
+                            }
+                        }
+
+                        // Add new remote clips
+                        remoteMetadata.items.forEach { (uid, _) ->
+                            if (uid.startsWith("clip") || driveFiles.any { it.name == "clip_$uid.json" }) {
+                                val local = localClips.find { it.firestoreId == uid || it.snippetId == uid }
+                                if (local == null && !remoteMetadata.tombstones.contains(uid)) {
+                                    val fileId = driveFiles.find { it.name == "clip_$uid.json" }?.id
+                                    if (fileId != null) {
+                                        val remoteJson = driveHelper.downloadFile(fileId)
+                                        val remoteClip = gson.fromJson(remoteJson, ClipBox::class.java)
+                                        clipBoxDao.save(remoteClip)
                                     }
-                                    AppContext.get().onCheckSession()
                                 }
                             }
                         }
                     }
-                    callback.invoke(notSyncedClips)
+
+                    // 4. Sync filters
+                    txHelper.inTx("DriveSync-Filters") {
+                        localFilters.forEach { localFilter ->
+                            val uid = localFilter.uid ?: return@forEach
+                            val localTime = localFilter.updateDate?.time ?: localFilter.createDate?.time ?: 0L
+                            val remoteTime = remoteMetadata.items[uid] ?: 0L
+
+                            if (remoteMetadata.tombstones.contains(uid)) {
+                                filterBoxDao.remove(localFilter.toBox())
+                            } else if (localTime > remoteTime) {
+                                val filterJson = gson.toJson(localFilter, Filter::class.java)
+                                driveHelper.uploadFile("filter_$uid.json", filterJson, "application/json")
+                                updatedRemoteItems[uid] = localTime
+                            } else if (remoteTime > localTime) {
+                                val fileId = driveFiles.find { it.name == "filter_$uid.json" }?.id
+                                if (fileId != null) {
+                                    val remoteJson = driveHelper.downloadFile(fileId)
+                                    val remoteFilter = gson.fromJson(remoteJson, FilterBox::class.java)
+                                    localFilter.apply(remoteFilter)
+                                    filterBoxDao.save(localFilter.toBox())
+                                }
+                            }
+                        }
+
+                        // Add new remote filters
+                        remoteMetadata.items.forEach { (uid, _) ->
+                            if (uid.startsWith("filter") || driveFiles.any { it.name == "filter_$uid.json" }) {
+                                val local = localFilters.find { it.uid == uid }
+                                if (local == null && !remoteMetadata.tombstones.contains(uid)) {
+                                    val fileId = driveFiles.find { it.name == "filter_$uid.json" }?.id
+                                    if (fileId != null) {
+                                        val remoteJson = driveHelper.downloadFile(fileId)
+                                        val remoteFilter = gson.fromJson(remoteJson, FilterBox::class.java)
+                                        filterBoxDao.save(remoteFilter)
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // 5. Upload metadata
+                    remoteMetadata.items = updatedRemoteItems
+                    val updatedMetaJson = gson.toJson(remoteMetadata)
+                    driveHelper.uploadFile(METADATA_FILE, updatedMetaJson, "application/json")
+
+                    callback.invoke(newClips)
+                } catch (e: Exception) {
+                    e.printStackTrace()
                 }
             }
         } else {
-            Analytics.onSyncDisabled()
-            updateCanSyncState()
+            callback.invoke(newClips)
         }
     }
 
@@ -194,12 +256,6 @@ class ClipRepository @Inject constructor(
             val commonTagIds = DomainUtils.getCommonTagIds(clips)
             val removedTagIds = commonTagIds.minus(assignTagIds)
             val addedTagIds = assignTagIds.minus(commonTagIds)
-            log(
-                "assignTags: \ncommon: {} \nremoved: {} \nadded: {}",
-                commonTagIds,
-                removedTagIds,
-                addedTagIds
-            )
             if (removedTagIds.isNotEmpty() || addedTagIds.isNotEmpty()) {
                 txHelper.inTx("assign tags to clips") {
                     clips.map { it.toBox() }.forEach { clip ->
@@ -209,7 +265,6 @@ class ClipRepository @Inject constructor(
                             .plus(addedTagIds)
                             .distinct()
                         if (newClipTagIds != clipTagIds) {
-                            log("assignTag to clip: {} -> {}", clip.tagIds, newClipTagIds)
                             val newClip = ClipBox().apply {
                                 apply(clip)
                                 tagIds = newClipTagIds
@@ -219,24 +274,10 @@ class ClipRepository @Inject constructor(
                         }
                     }
                     clipBoxDao.saveAll(changedClips, modified = true)
-
-                    firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                        firebaseDaoHelper.splitBatches(changedClips.filter { it.isSynced() }) { changed ->
-                            val batch = collection.createBatch()
-                            changed.forEach { clip ->
-                                val changes = mutableMapOf(
-                                    FirebaseDaoHelper.ATTR_CLIP_TAG_IDS to clip.tagIds,
-                                    FirebaseDaoHelper.ATTR_CLIP_UPDATE_DATE to FieldValue.serverTimestamp(),
-                                    FirebaseDaoHelper.ATTR_CLIP_MODIFY_DATE to DateMapper.toTimestamp(clip.modifyDate)
-                                )
-                                clipFirebaseDao.saveInBatch(clip, batch, collection, changes)
-                            }
-                            batch.commit()
-                        }
-                    }
                 }
             }
 
+            syncAll()
             changedClips
         }
 
@@ -264,14 +305,6 @@ class ClipRepository @Inject constructor(
                     deletedClips = recycled.plus(deleted.minus(recycled))
                 }
 
-                firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                    firebaseDaoHelper.splitBatches(deletedClips.filter { it.isSynced() }) { deleted ->
-                        val batch = collection.createBatch()
-                        clipFirebaseDao.deleteAllInBatch(deleted, batch, collection)
-                        batch.commit()
-                    }
-                }
-
                 deletedClips
             }
         }
@@ -286,24 +319,17 @@ class ClipRepository @Inject constructor(
                 mainState.undoDeleteClips.setValue(setOf(it.first()))
             }
             mainState.clearSelection()
+            syncAll()
         }
 
     override fun undoDeleteAll(clips: List<Clip>): Single<List<Clip>> = Single
         .fromCallable {
             txHelper.inTx {
                 val undeletedClips = clipBoxDao.undoDeleteAll(clips)
-
-                firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                    firebaseDaoHelper.splitBatches(undeletedClips.filter { it.isSynced() }) { undeleted ->
-                        val batch = collection.createBatch()
-                        undeleted.forEach { clipFirebaseDao.saveInBatch(it.toBox(), batch, collection) }
-                        batch.commit()
-                    }
-                }
-
                 undeletedClips
             }
         }
+        .doOnSuccess { syncAll() }
 
     override fun deleteAllFromFilters(filters: List<Filter>, clips: List<Clip>?): Single<List<Clip>> = Single
         .fromCallable {
@@ -318,7 +344,7 @@ class ClipRepository @Inject constructor(
                                     snippetSetIds = kitIds,
                                     cleanupRequest = true
                                 )
-                            )
+                             )
                             .find())
                     .filter { clip ->
                         val oldTags = clip.tagIds
@@ -333,22 +359,10 @@ class ClipRepository @Inject constructor(
                             false
                         }
                     }
-                firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                    firebaseDaoHelper.splitBatches(deletedClips) { batchClips ->
-                        txHelper.inTx {
-                            val batch = collection.createBatch()
-                            batchClips.forEach { clip ->
-                                val changes = mutableMapOf<String, Any?>()
-                                changes[FirebaseDaoHelper.ATTR_CLIP_TAG_IDS] = clip.tagIds
-                                changes[FirebaseDaoHelper.ATTR_CLIP_SNIPPET_SETS_IDS] = clip.snippetSetsIds
-                                changes[FirebaseDaoHelper.ATTR_CLIP_UPDATE_DATE] = FirebaseDaoHelper.getServerTimestamp()
-                                clipFirebaseDao.saveInBatch(clip, batch, collection, changes)
-                            }
-                            clipBoxDao.saveAll(batchClips)
-                            batch.commit()
-                        }
-                    }
+                txHelper.inTx {
+                    clipBoxDao.saveAll(deletedClips)
                 }
+                syncAll()
                 deletedClips
             } else {
                 emptyList()
@@ -358,128 +372,18 @@ class ClipRepository @Inject constructor(
     override fun save(clip: Clip, copied: Boolean): Single<Clip> = Single
         .fromCallable {
             txHelper.inTx<Clip> {
-                val prevClip = clip.toBox().let {
-                    if (it.localId != 0L) {
-                        clipBoxDao.getById(it.localId)
-                    } else if (!clip.text.isNullOrBlank() && clip.tracked) {
-                        clipBoxDao.getClipByText(clip.text)
-                    } else {
-                        null
-                    }
-                }
-                var sourceClips = clip.sourceClips ?: emptyList()
-                val prevFileIds = prevClip?.fileIds
-                val prevPublicLink = prevClip?.publicLink
-                val objectType = prevClip?.objectType
-                val usageCount = prevClip?.usageCount
-                val modifyDate = prevClip?.modifyDate
-                val deleteDate = prevClip?.deleteDate
-                val snippetId = prevClip?.snippetId
-                val folderId = prevClip?.folderId
-                val type = prevClip?.textType
-                val tagIds = prevClip?.tagIds
-                val description = prevClip?.description
-                val abbreviation = prevClip?.abbreviation
-                val snippetSetsIds = prevClip?.snippetSetsIds
-                val title = prevClip?.title
-                val text = prevClip?.text
-                val fav = prevClip?.fav
-
                 val clipBox = clipBoxDao.createOrUpdate(clip, copied)
-                sourceClips = clipBox.sourceClips ?: sourceClips
-
-                firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                    val firestoreId = clipBox.firestoreId
-                    if (firestoreId == null) {
-                        val canSyncNotes = userState.canSyncNote(clipBox)
-                        log("create new clip? {}", canSyncNotes)
-                        if (canSyncNotes || sourceClips.isNotEmpty()) {
-                            if (canSyncNotes && clipFirebaseDao.save(clipBox, collection)) {
-                                clipBoxDao.save(clipBox)
-                            }
-                            firebaseDaoHelper.splitBatches(sourceClips) {
-                                val batch = collection.createBatch()
-                                clipFirebaseDao.deleteAllInBatch(it, batch, collection)
-                                batch.commit()
-                            }
-                        }
-                    } else if (prevClip != null) {
-                        val changes = mutableMapOf<String, Any?>()
-                        if (title != clipBox.title) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_TITLE] = clipBox.title
-                        }
-                        if (snippetId != clipBox.snippetId) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_SNIPPET_ID] = clipBox.snippetId
-                        }
-                        if (text != clipBox.text) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_TEXT] = clipBox.text
-                        }
-                        if (usageCount != clipBox.usageCount) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_UPDATE_DATE] = FieldValue.serverTimestamp()
-                            changes[FirebaseDaoHelper.ATTR_CLIP_USAGE_COUNT] = clipBox.usageCount
-                        }
-                        if (type != clipBox.textType) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_TEXT_TYPE] = clipBox.textType.typeId
-                        }
-                        if (objectType != clipBox.objectType) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_OBJECT_TYPE] = clipBox.objectType.id
-                        }
-                        if (tagIds != clipBox.tagIds) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_TAG_IDS] = clipBox.tagIds
-                        }
-                        if (snippetSetsIds != clipBox.snippetSetsIds) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_SNIPPET_SETS_IDS] = clipBox.snippetSetsIds
-                        }
-                        if (abbreviation != clipBox.abbreviation) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_ABBREVIATION] = clipBox.abbreviation
-                        }
-                        if (folderId != clipBox.folderId) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_FOLDER_ID] = clipBox.folderId
-                        }
-                        if (description != clipBox.description) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_DESCRIPTION] = clipBox.description
-                        }
-                        if (fav != clipBox.fav) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_FAV] = clipBox.fav
-                        }
-                        if (modifyDate != clipBox.modifyDate) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_MODIFY_DATE] = DateMapper.toTimestamp(clipBox.modifyDate)
-                        }
-                        if (deleteDate != clipBox.deleteDate) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_DELETE_DATE] = DateMapper.toTimestamp(clipBox.deleteDate, true)
-                        }
-                        if (prevFileIds != clipBox.fileIds) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_FILE_IDS] = clipBox.fileIds
-                        }
-                        if (prevPublicLink != clipBox.publicLink) {
-                            changes[FirebaseDaoHelper.ATTR_CLIP_PUBLIC_LINK] = PublicNoteLinkMapper.toMap(clipBox.publicLink)
-                        }
-                        if (changes.isNotEmpty()) {
-                            log("update clip with id: {}, {}", firestoreId, changes)
-                            if (clipFirebaseDao.save(clipBox, collection, changes)) {
-                                clipBoxDao.save(clipBox)
-                            }
-                            firebaseDaoHelper.splitBatches(sourceClips) { batchClips ->
-                                val batch = collection.createBatch()
-                                clipFirebaseDao.deleteAllInBatch(batchClips, batch, collection)
-                                batch.commit()
-                            }
-                        }
-                    }
-                }
-
                 clipBox
             }
         }
-        .doOnSuccess { if (copied) clipboardState.clip.setValue(it) }
+        .doOnSuccess { 
+            if (copied) clipboardState.clip.setValue(it) 
+            syncAll()
+        }
 
-    override fun createLink(clip: Clip): Single<Clip> = api.get()
-        .createNotePublicLink(clip)
-        .flatMapSingle { save(it, copied = false) }
+    override fun createLink(clip: Clip): Single<Clip> = Single.just(clip)
 
-    override fun removeLink(clip: Clip): Single<Clip> = api.get()
-        .removeNotePublicLink(clip)
-        .flatMapSingle { save(it, copied = false) }
+    override fun removeLink(clip: Clip): Single<Clip> = Single.just(clip)
 
     override fun clearClipboard(): Single<List<Clip>> = Single
         .fromCallable { clipBoxDao.getClipboardClips() }
@@ -512,23 +416,9 @@ class ClipRepository @Inject constructor(
                     }
                 }
                 clipBoxDao.saveAll(changed, modified = true)
-
-                firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                    firebaseDaoHelper.splitBatches(changed.filter { it.isSynced() }) { batchClips ->
-                        val batch = collection.createBatch()
-                        batchClips.forEach { clip ->
-                            val changes = mutableMapOf(
-                                FirebaseDaoHelper.ATTR_CLIP_FOLDER_ID to clip.folderId,
-                                FirebaseDaoHelper.ATTR_CLIP_MODIFY_DATE to DateMapper.toTimestamp(clip.modifyDate)
-                            )
-                            clipFirebaseDao.saveInBatch(clip.toBox(), batch, collection, changes)
-                        }
-                        batch.commit()
-                    }
-                }
-
             }
 
+            syncAll()
             changed
         }
 
@@ -555,136 +445,20 @@ class ClipRepository @Inject constructor(
                 fileIdsWhereType = Filter.WhereType.ANY_OF
             )
             val clips = clipBoxDao.getFiltered(request).find()
-            val fileIdsToRemove = FirebaseDaoHelper.getFieldValueArrayRemove(fileIds)
-            log("unlink clips from files :: clips={}, files={}", clips.size, files.size)
-            firebaseDaoHelper.getAuthUserCollection()?.let { collection ->
-                firebaseDaoHelper.splitBatches(clips) { batchClips ->
-                    txHelper.inTx("unlink files") {
-                        val batch = collection.createBatch()
-                        val modifyDate = Date()
-                        batchClips.forEach { clip ->
-                            clip.modifyDate = modifyDate
-                            clip.fileIds = clip.fileIds.minus(fileIds)
-                            clipBoxDao.save(clip)
-
-                            val changes = mutableMapOf(
-                                FirebaseDaoHelper.ATTR_CLIP_FILE_IDS to fileIdsToRemove,
-                                FirebaseDaoHelper.ATTR_CLIP_MODIFY_DATE to DateMapper.toTimestamp(modifyDate)
-                            )
-                            clipFirebaseDao.saveInBatch(clip.toBox(), batch, collection, changes)
-                        }
-                        batch.commit()
-                    }
+            txHelper.inTx("unlink files") {
+                val modifyDate = Date()
+                clips.forEach { clip ->
+                    clip.modifyDate = modifyDate
+                    clip.fileIds = clip.fileIds.minus(fileIds)
+                    clipBoxDao.save(clip)
                 }
             }
+            syncAll()
             emptyList()
         }
 
-    private fun initialClips(changes: List<DocumentChange>) {
-        val added = changes
-            .filter { it.type == DocumentChange.Type.ADDED }
-            .filter { !it.document.metadata.hasPendingWrites() && !it.document.id.startsWith("b_") }
-            .mapNotNull { clipMapper.fromDocChange(it) }
-            .toList()
-        if (added.isNotEmpty()) {
-            txHelper.inTx("Add clips after sync") {
-                log("add clips: {}", added.size)
-                val allClips = clipBoxDao.getAllClips()
-                val addedClips = mutableListOf<ClipBox>()
-                added.forEach { newClip ->
-                    val prevClip = allClips.find { it.text == newClip.text }
-                    filterBoxDao.update(prevClip, newClip)
-                    newClip.apply {
-                        if (prevClip != null) {
-                            localId = prevClip.localId
-                        }
-                    }
-                    addedClips.add(newClip)
-                }
-                clipBoxDao.saveAll(addedClips)
-            }
-            userState.deletedTags.consumeValue()
-                ?.takeIf { it.isNotEmpty() }
-                ?.let { cleanupFiltersAction.get().execute(it) }
-        }
-        syncAll()
-    }
-
-    private fun snapshotClips(changes: List<DocumentChange>) {
-        val changed = changes
-            .filter { it.type != DocumentChange.Type.REMOVED }
-            .filter { !it.document.metadata.hasPendingWrites() && !it.document.id.startsWith("b_") }
-            .mapNotNull { clipMapper.fromDocChange(it) }
-            .toList()
-
-        if (changed.isNotEmpty()) {
-            log("to be removed: {}", changed.size)
-            val checkForUniversalCopy = changed.size == 1
-            var copiedClip: ClipBox? = null
-            txHelper.inTx("sync with server state") {
-                val changedClips = mutableListOf<ClipBox>()
-                changed.forEach { newClip ->
-                    val prevClip = changedClips.find { it.firestoreId == newClip.firestoreId }
-                        ?: clipBoxDao.getByFirestoreId(newClip.firestoreId)
-                    if (prevClip == null || !Clip.areTheSame(prevClip, newClip)) {
-                        if (prevClip != null && !prevClip.isDeleted() && newClip.isDeleted()) {
-                            filterBoxDao.update(prevClip, null)
-                        } else if (prevClip != null && prevClip.isDeleted() && !newClip.isDeleted()) {
-                            filterBoxDao.update(null, newClip)
-                        } else {
-                            filterBoxDao.update(prevClip, newClip)
-                        }
-                        if (prevClip != null) {
-                            newClip.localId = prevClip.localId
-                        }
-                        log("change or add clip: {}", newClip)
-                        changedClips.add(newClip)
-                        if (checkForUniversalCopy && clipboardState.isUniversalClipboardActivated() && copiedClip == null) {
-                            if (prevClip != null) {
-                                if (prevClip.usageCount < newClip.usageCount) {
-                                    copiedClip = newClip
-                                }
-                            } else if (newClip.tracked) {
-                                copiedClip = newClip
-                            }
-                        }
-                    }
-                }
-                if (changedClips.isNotEmpty()) {
-                    clipBoxDao.saveAll(changedClips)
-                    clipState.screenState.getValue()?.value
-                        ?.takeIf { clip -> clip.firestoreId != null }
-                        ?.let { clip ->
-                            changedClips.firstOrNull { changed -> changed == clip }?.let { changed ->
-                                if (clip.changeTimestamp != changed.changeTimestamp) {
-                                    clipDetailsState.openedClip.setValue(changed)
-                                    clipState.updateState(changed)
-                                }
-                            }
-                        }
-                }
-            }
-            copiedClip?.let { AppContext.get().onUniversalCopy(it) }
-        }
-    }
-
-    private fun deletedClips(changes: List<DocumentChange>) {
-        val removed = changes
-            .filter { it.type != DocumentChange.Type.REMOVED }
-            .filter { !it.document.metadata.hasPendingWrites() }
-            .mapNotNull { clipMapper.fromDocChange(it) }
-            .toList()
-
-        if (removed.isNotEmpty()) {
-            log("to be finally removed: {}", removed.size)
-            txHelper.inTx("sync with server state") {
-                clipBoxDao.deleteAll(removed.mapNotNull { clipBoxDao.getByFirestoreId(it.firestoreId) })
-            }
-        }
-    }
-
-    private fun updateCanSyncState() {
-        userState.canSync.setValue(userState.canSyncNewNotes(), force = true)
-    }
-
+    private data class SyncMetadata(
+        var items: Map<String, Long> = emptyMap(),
+        val tombstones: MutableSet<String> = mutableSetOf()
+    )
 }

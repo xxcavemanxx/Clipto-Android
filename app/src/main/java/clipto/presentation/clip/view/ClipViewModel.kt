@@ -772,7 +772,6 @@ class ClipViewModel @Inject constructor(
             clip.excludedTagIds = newDetails.clip.excludedTagIds
             clip.snippetSetsIds = newDetails.snippetKitIds
             clip.folderId = newDetails.clip.folderId
-            clip.publicLink = newDetails.publicLink
             clip.fileIds = newDetails.fileIds
             clip.textType = newDetails.type
             clip.tagIds = newDetails.tagIds
